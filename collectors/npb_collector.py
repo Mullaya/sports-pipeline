@@ -90,74 +90,86 @@ class NPBCollector:
                 scoreboard_table = tables[0]
 
             if scoreboard_table:
-                rows = scoreboard_table.find_all("tr")
-                if rows:
-                    header_tds = [td.text.strip() for td in rows[0].find_all(["th", "td"]) if td.text.strip()]
-                    
-                    # R(Runs) 또는 Total 컬럼 위치 색인
-                    r_idx = -3
-                    for k in ["R", "Total", "Runs"]:
-                        if k in header_tds:
-                            r_idx = header_tds.index(k)
-                            break
-
-                    # 팀 행 필터링 진행
-                    valid_rows = []
-                    for row in rows[1:]:
-                        tds = row.find_all(["th", "td"])
-                        if tds:
-                            first_token = tds[0].text.strip().replace('.', '')
-                            if first_token not in ["Innings", "Teams", "Totals", "Total", "Team", "Linescore", ""]:
-                                valid_rows.append(tds)
-
-                    if len(valid_rows) >= 2:
-                        away_tds = valid_rows[0]
-                        home_tds = valid_rows[1]
-
-                        if not away_team: away_team = away_tds[0].text.strip().replace('.', '')
-                        if not home_team: home_team = home_tds[0].text.strip().replace('.', '')
-
-                        away_r_cell = None
-                        home_r_cell = None
-
-                        for td in away_tds:
-                            classes = td.get("class", [])
-                            if "r" in classes or "total" in classes:
-                                away_r_cell = td
-                                break
-                        for td in home_tds:
-                            classes = td.get("class", [])
-                            if "r" in classes or "total" in classes:
-                                home_r_cell = td
+                try:
+                    rows = scoreboard_table.find_all("tr")
+                    if rows:
+                        header_tds = [td.text.strip() for td in rows[0].find_all(["th", "td"]) if td.text.strip()]
+                        
+                        r_idx = -3
+                        for k in ["R", "Total", "Runs"]:
+                            if k in header_tds:
+                                r_idx = header_tds.index(k)
                                 break
 
-                        if not away_r_cell and len(away_tds) >= 4: away_r_cell = away_tds[r_idx]
-                        if not home_r_cell and len(home_tds) >= 4: home_r_cell = home_tds[r_idx]
+                        # 팀 행 필터링 진행
+                        valid_rows = []
+                        for row in rows[1:]:
+                            tds = row.find_all(["th", "td"])
+                            if tds:
+                                first_token = tds[0].text.strip().replace('.', '')
+                                if first_token not in ["Innings", "Teams", "Totals", "Total", "Team", "Linescore", ""]:
+                                    valid_rows.append(tds)
 
-                        # 💡 [문법 수정 완료] 삼항 연산자 else 구조 정상 복구
-                        if away_r_cell:
-                            txt = away_r_cell.text.strip()
-                            away_score = int(txt) if txt.isdigit() else 0
-                        if home_r_cell:
-                            txt = home_r_cell.text.strip()
-                            home_score = int(txt) if txt.isdigit() else 0
+                        if len(valid_rows) >= 2:
+                            away_tds = valid_rows[0]
+                            home_tds = valid_rows[1]
 
-                        # 이닝 스코어 파싱
-                        try:
-                            away_r_idx = away_tds.index(away_r_cell) if away_r_cell else len(away_tds) - 3
-                            inning_tds_away = away_tds[1:away_r_idx]
-                            inning_tds_home = home_tds[1:away_r_idx]
+                            if not away_team: away_team = away_tds[0].text.strip().replace('.', '')
+                            if not home_team: home_team = home_tds[0].text.strip().replace('.', '')
 
-                            for i in range(len(inning_tds_away)):
-                                a_txt = inning_tds_away[i].text.strip()
-                                h_txt = inning_tds_home[i].text.strip() if i < len(inning_tds_home) else "0"
+                            away_r_cell = None
+                            home_r_cell = None
 
-                                a_inn = int(a_txt) if a_txt.isdigit() else 0
-                                h_inn = int(h_txt) if h_txt.isdigit() else 0
+                            # class 속성 기반으로 r 찾기 시도
+                            for td in away_tds:
+                                classes = td.get("class", [])
+                                if "r" in classes or "total" in classes:
+                                    away_r_cell = td
+                                    break
+                            for td in home_tds:
+                                classes = td.get("class", [])
+                                if "r" in classes or "total" in classes:
+                                    home_r_cell = td
+                                    break
 
-                                inning_scores.append({"inning": i + 1, "away": a_inn, "home": h_inn})
-                        except:
-                            pass
+                            # 💡 [핵심 수정] 인덱스 유효성 검증 단계를 거쳐 안전하게 셀 바인딩 (Index Error 원천 차단)
+                            if not away_r_cell:
+                                if 0 <= r_idx < len(away_tds):
+                                    away_r_cell = away_tds[r_idx]
+                                elif len(away_tds) >= 4:
+                                    away_r_cell = away_tds[-3]
+
+                            if not home_r_cell:
+                                if 0 <= r_idx < len(home_tds):
+                                    home_r_cell = home_tds[r_idx]
+                                elif len(home_tds) >= 4:
+                                    home_r_cell = home_tds[-3]
+
+                            if away_r_cell:
+                                txt = away_r_cell.text.strip()
+                                away_score = int(txt) if txt.isdigit() else 0
+                            if home_r_cell:
+                                txt = home_r_cell.text.strip()
+                                home_score = int(txt) if txt.isdigit() else 0
+
+                            # 이닝 스코어 파싱
+                            try:
+                                away_r_idx = away_tds.index(away_r_cell) if away_r_cell else len(away_tds) - 3
+                                inning_tds_away = away_tds[1:away_r_idx]
+                                inning_tds_home = home_tds[1:away_r_idx]
+
+                                for i in range(len(inning_tds_away)):
+                                    a_txt = inning_tds_away[i].text.strip()
+                                    h_txt = inning_tds_home[i].text.strip() if i < len(inning_tds_home) else "0"
+
+                                    a_inn = int(a_txt) if a_txt.isdigit() else 0
+                                    h_inn = int(h_txt) if h_txt.isdigit() else 0
+
+                                    inning_scores.append({"inning": i + 1, "away": a_inn, "home": h_inn})
+                            except:
+                                pass
+                except:
+                    pass
 
             if not inning_scores and away_score == 0 and home_score == 0:
                 return {"status": "우천취소"}
