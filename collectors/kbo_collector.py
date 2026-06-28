@@ -1,7 +1,6 @@
 import requests
 import json
 import time
-from datetime import datetime
 
 class KBOCollector:
 
@@ -11,27 +10,44 @@ class KBOCollector:
     }
 
     def get_daily_schedule(self, date: str) -> list:
-        # date: YYYYMMDD
-        url = (
-            "https://sports.naver.com/kbaseball/schedule/index"
-            f"?date={date}"
-        )
+        # YYYYMMDD → YYYY.MM.DD
+        fmt = f"{date[:4]}.{date[4:6]}.{date[6:8]}"
 
-        resp = requests.get(url, headers=self.HEADERS, timeout=10)
-
-        # 네이버 스포츠 JSON API
         api_url = (
-            "https://api-gw.sports.naver.com/schedule/games"
-            f"?sports=kbaseball&date={date}&fields=basic"
+            f"https://sports.naver.com/kbaseball/schedule/index"
+            f"?date={fmt}"
         )
 
-        resp = requests.get(api_url, headers=self.HEADERS, timeout=10)
-        data = resp.json()
+        # 네이버 스포츠 경기 목록 API
+        schedule_api = (
+            f"https://api-gw.sports.naver.com/schedule/games"
+            f"?sports=kbo&date={date}&fields=basic,superMatch"
+        )
+
+        try:
+            resp = requests.get(schedule_api, headers=self.HEADERS, timeout=10)
+            data = resp.json()
+            games_raw = data.get("result", {}).get("games", [])
+        except Exception:
+            # 대안 API
+            try:
+                alt_url = (
+                    f"https://sports.news.naver.com/kbaseball/schedule/index"
+                    f"?category=kbo&date={date}"
+                )
+                resp = requests.get(alt_url, headers=self.HEADERS, timeout=10)
+                data = resp.json()
+                games_raw = data.get("result", {}).get("games", [])
+            except Exception as e:
+                print(f"  ❌ KBO 스케줄 조회 실패: {e}")
+                return []
 
         games = []
-        for game in data.get("result", {}).get("games", []):
-            if game.get("statusCode") != "FINAL":
+        for game in games_raw:
+            status = game.get("statusCode", "")
+            if status not in ["FINAL", "POSTPONED_FINAL"]:
                 continue
+
             games.append({
                 "game_id": game.get("gameId", ""),
                 "home_team": game.get("homeTeamName", ""),
@@ -45,21 +61,46 @@ class KBOCollector:
         return games
 
     def get_boxscore(self, game_id: str) -> dict:
-        api_url = (
-            f"https://api-gw.sports.naver.com/schedule/games/{game_id}"
-            f"/record?fields=pitchers"
-        )
+        # 네이버 스포츠 박스스코어 API
+        apis = [
+            f"https://api-gw.sports.naver.com/game/{game_id}/record?fields=pitchers,batters,innings",
+            f"https://sports.news.naver.com/kbaseball/record/index.nhn?gameId={game_id}"
+        ]
 
-        resp = requests.get(api_url, headers=self.HEADERS, timeout=10)
-        data = resp.json()
+        for api_url in apis:
+            try:
+                resp = requests.get(api_url, headers=self.HEADERS, timeout=10)
+                data = resp.json()
+                result = data.get("result", {})
 
+                if result:
+                    return self._parse_boxscore(result)
+            except Exception:
+                continue
+
+        return {"pitchers": {"home": [], "away": []},
+                "batters": {"home": [], "away": []},
+                "inning_scores": []}
+
+    def _parse_boxscore(self, result: dict) -> dict:
         pitchers = {"home": [], "away": []}
+        batters = {"home": [], "away": []}
+        inning_scores = []
 
-        result = data.get("result", {})
+        # 이닝별 득점
+        for inning in result.get("innings", []):
+            inning_scores.append({
+                "inning": inning.get("num", 0),
+                "home": inning.get("homeScore", 0),
+                "away": inning.get("awayScore", 0)
+            })
+
+        # 투수
         for side in ["home", "away"]:
             for p in result.get(f"{side}Pitchers", []):
                 pitchers[side].append({
                     "name": p.get("playerName", ""),
+                    "is_starter": p.get("startYn", "N") == "Y",
                     "result": p.get("pitchResult", ""),
                     "ip": p.get("inning", "0"),
                     "h": str(p.get("hit", 0)),
@@ -67,10 +108,30 @@ class KBOCollector:
                     "k": str(p.get("strikeOut", 0)),
                     "er": str(p.get("earnedRun", 0)),
                     "era": str(p.get("era", "0.00")),
-                    "is_starter": p.get("startYn", "N") == "Y"
+                    "pitches": p.get("pitchCount", 0)
                 })
 
-        return {"pitchers": pitchers}
+        # 타자
+        for side in ["home", "away"]:
+            for order, b in enumerate(result.get(f"{side}Batters", []), 1):
+                batters[side].append({
+                    "name": b.get("playerName", ""),
+                    "order": order,
+                    "position": b.get("position", ""),
+                    "ab": b.get("ab", 0),
+                    "h": b.get("hit", 0),
+                    "hr": b.get("hr", 0),
+                    "rbi": b.get("rbi", 0),
+                    "bb": b.get("baseOnBall", 0),
+                    "k": b.get("strikeOut", 0),
+                    "avg": str(b.get("avg", ".000"))
+                })
+
+        return {
+            "pitchers": pitchers,
+            "batters": batters,
+            "inning_scores": inning_scores
+        }
 
     def collect_daily(self, date: str) -> dict:
         print(f"[KBO] {date} 수집 시작")
@@ -89,7 +150,11 @@ class KBOCollector:
                 boxscore = self.get_boxscore(game["game_id"])
             except Exception as e:
                 print(f"  ⚠️ 박스스코어 오류: {e}")
-                boxscore = {"pitchers": {"home": [], "away": []}}
+                boxscore = {
+                    "pitchers": {"home": [], "away": []},
+                    "batters": {"home": [], "away": []},
+                    "inning_scores": []
+                }
 
             home_score = int(game["home_score"] or 0)
             away_score = int(game["away_score"] or 0)
@@ -106,6 +171,11 @@ class KBOCollector:
                 **game,
                 "total_runs": total_runs,
                 "winner": game["home_team"] if home_score > away_score else game["away_team"],
+                "inning_scores": boxscore["inning_scores"],
+                "home_pitchers": boxscore["pitchers"]["home"],
+                "away_pitchers": boxscore["pitchers"]["away"],
+                "home_batters": boxscore["batters"]["home"],
+                "away_batters": boxscore["batters"]["away"],
                 "home_starter": home_starter,
                 "away_starter": away_starter,
                 "summary": self._make_summary(game, home_starter, away_starter, total_runs)
