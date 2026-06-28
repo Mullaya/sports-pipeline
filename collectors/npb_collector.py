@@ -67,7 +67,6 @@ class NPBCollector:
 
             if title:
                 title_text = title.text.strip()
-                # 타이틀 매칭 유연화 (괄호 내부 정제 및 공백 유연화)
                 vs_match = re.search(r'(?:\)\s*|\|\s*)(.+?)\s+vs\s+(.+?)(?:\s*\||\s*\()', title_text)
                 if vs_match:
                     away_team = vs_match.group(1).strip()
@@ -77,8 +76,7 @@ class NPBCollector:
             home_score = 0
             inning_scores = []
 
-            # 💡 [핵심 수정] 스코어보드 테이블 매칭 조건 대폭 완화
-            # 테이블 구조에 'Innings'나 'Total', 'R' 중 하나라도 있거나 행이 팀 단위로 쪼개지면 무조건 가져옴
+            # 스코어보드 테이블 매칭
             tables = soup.find_all("table")
             scoreboard_table = None
             
@@ -88,60 +86,64 @@ class NPBCollector:
                     scoreboard_table = t
                     break
 
-            # 만약 적절한 키워드 매칭이 실패했다면 첫 번째 테이블을 스코어보드로 가정 (백업)
             if not scoreboard_table and tables:
                 scoreboard_table = tables[0]
 
             if scoreboard_table:
-                rows = scoreboard_table.find_all("tr")
-                if rows:
-                    header_tds = [td.text.strip() for td in rows[0].find_all(["th", "td"]) if td.text.strip()]
-                    
-                    # 득점(R) 열 인덱스 찾기 기본값 설정
-                    r_idx = -3
-                    for k in ["R", "Total", "Runs"]:
-                        if k in header_tds:
-                            r_idx = header_tds.index(k)
-                            break
+                try:
+                    rows = scoreboard_table.find_all("tr")
+                    if rows:
+                        header_tds = [td.text.strip() for td in rows[0].find_all(["th", "td"]) if td.text.strip()]
+                        
+                        r_idx = -3
+                        for k in ["R", "Total", "Runs"]:
+                            if k in header_tds:
+                                r_idx = header_tds.index(k)
+                                break
 
-                    team_rows = []
-                    for row in rows[1:]:
-                        tds = [td.text.strip().replace('.', '') for td in row.find_all(["th", "td"])]
-                        if tds and tds[0] not in ["Innings", "Teams", "Totals", "Total", "Team", ""]:
-                            team_rows.append(tds)
+                        team_rows = []
+                        for row in rows[1:]:
+                            tds = [td.text.strip().replace('.', '') for td in row.find_all(["th", "td"])]
+                            if tds and tds[0] not in ["Innings", "Teams", "Totals", "Total", "Team", ""]:
+                                team_rows.append(tds)
 
-                    if len(team_rows) >= 2:
-                        away_row = team_rows[0]
-                        home_row = team_rows[1]
+                        if len(team_rows) >= 2:
+                            away_row = team_rows[0]
+                            home_row = team_rows[1]
 
-                        if not away_team: away_team = away_row[0]
-                        if not home_team: home_team = home_row[0]
+                            if not away_team: away_team = away_row[0]
+                            if not home_team: home_team = home_row[0]
 
-                        # 총점 추출 예외 안전 예방
-                        try: away_score = int(away_row[r_idx])
-                        except: away_score = int(away_row[-3]) if len(away_row) >= 4 else 0
-                            
-                        try: home_score = int(home_row[r_idx])
-                        except: home_score = int(home_row[-3]) if len(home_row) >= 4 else 0
+                            # 💡 [핵심 수정] 빈 문자열('') 대처가 가능하도록 정수 변환부 예외처리 차단
+                            try:
+                                away_score = int(away_row[r_idx]) if away_row[r_idx].isdigit() else 0
+                            except:
+                                away_score = int(away_row[-3]) if len(away_row) >= 4 and away_row[-3].isdigit() else 0
+                                
+                            try:
+                                home_score = int(home_row[r_idx]) if home_row[r_idx].isdigit() else 0
+                            except:
+                                home_score = int(home_row[-3]) if len(home_row) >= 4 and home_row[-3].isdigit() else 0
 
-                        actual_r_idx = r_idx if r_idx > 0 else len(away_row) + r_idx
-                        inning_count = actual_r_idx - 1
+                            actual_r_idx = r_idx if r_idx > 0 else len(away_row) + r_idx
+                            inning_count = actual_r_idx - 1
 
-                        for i in range(inning_count):
-                            a_inn, h_inn = 0, 0
-                            if i + 1 < len(away_row):
-                                token = away_row[i + 1]
-                                a_inn = int(token) if token.isdigit() else 0
-                            if i + 1 < len(home_row):
-                                token = home_row[i + 1]
-                                h_inn = int(token) if token.isdigit() else 0
+                            for i in range(inning_count):
+                                a_inn, h_inn = 0, 0
+                                if i + 1 < len(away_row):
+                                    token = away_row[i + 1]
+                                    a_inn = int(token) if token.isdigit() else 0
+                                if i + 1 < len(home_row):
+                                    token = home_row[i + 1]
+                                    h_inn = int(token) if token.isdigit() else 0
 
-                            inning_scores.append({"inning": i + 1, "away": a_inn, "home": h_inn})
+                                inning_scores.append({"inning": i + 1, "away": a_inn, "home": h_inn})
+                except Exception as table_err:
+                    # 테이블 분석하다 에러 나도 멈추지 않고 아래 타이틀 백업 로직으로 토스
+                    pass
 
-            # 💡 [핵심 백업 알고리즘] 테이블 파싱이 깨졌어도 타이틀 텍스트 점수 크롤링 완벽 보완
-            # 타이틀 예시: "Yomiuri 3 vs Chunichi 2" 패턴 구조 강제 스크랩
-            if (not inning_scores or away_score == 0 and home_score == 0) and title:
-                # 숫자 추출 패턴 고도화
+            # 💡 강력한 타이틀 기반 텍스트 점수 스크랩 유지 (취소 안 된 경기는 무조건 여기서 점수 복구)
+            if (not inning_scores or (away_score == 0 and home_score == 0)) and title:
                 title_score_match = re.search(r'([A-Za-z0-9\s\-\.]+?)\s+(\d+)\s+vs\s+([A-Za-z0-9\s\-\.]+?)\s+(\d+)', title.text)
                 if title_score_match:
                     away_team = title_score_match.group(1).strip()
@@ -150,11 +152,11 @@ class NPBCollector:
                     home_score = int(title_score_match.group(4))
                     inning_scores = [{"inning": 1, "away": away_score, "home": home_score}]
 
-            # 💡 진짜 경기 결과가 없는 빈 취소 페이지 확인 분기점
+            # 이닝 스코어도 없고 점수도 복구가 안 된다면 최종 취소로 판단
             if not inning_scores and away_score == 0 and home_score == 0:
                 return {"status": "우천취소"}
 
-            # 투수/타자 스펙 추출 격리 (기록 유실 방지용)
+            # 투수/타자 스펙 추출 격리
             wp, lp, stadium = "", "", ""
             try:
                 wp_match = re.search(r'WP\s*:\s*([^\n\(]+)', page_text)
@@ -308,7 +310,7 @@ class NPBCollector:
                 elif game_data:
                     game_data["date"] = date
                     game_data["summary"] = self._make_summary(game_data)
-                    result["games"].append(game_data)
+                    result["games..append(game_data)"] if "games" in result else result.setdefault("games", []).append(game_data)
                     print(
                         f"  ✅ {game_data['away_team']} vs "
                         f"{game_data['home_team']} "
