@@ -7,7 +7,6 @@ import os
 class DriveUploader:
 
     SCOPES = ["https://www.googleapis.com/auth/drive"]
-    OWNER_EMAIL = "lbs5208@gmail.com"
 
     FOLDER_IDS = {
         "KBO": "1OupJNXwKmIhZKRhD4MGOS47ABFQvW1qn",
@@ -36,7 +35,10 @@ class DriveUploader:
 
         existing = self._find_file(filename, subfolder_id)
         if existing:
-            self.service.files().delete(fileId=existing).execute()
+            self.service.files().delete(
+                fileId=existing,
+                supportsAllDrives=True
+            ).execute()
 
         file_metadata = {
             "name": filename,
@@ -53,34 +55,21 @@ class DriveUploader:
         file = self.service.files().create(
             body=file_metadata,
             media_body=media,
-            fields="id, name"
+            fields="id, name",
+            supportsAllDrives=True
         ).execute()
 
-        file_id = file["id"]
-
-        # 소유권 이전: 서비스 계정 → 개인 구글 계정
-        try:
-            self.service.permissions().create(
-                fileId=file_id,
-                transferOwnership=True,
-                body={
-                    "type": "user",
-                    "role": "owner",
-                    "emailAddress": self.OWNER_EMAIL
-                }
-            ).execute()
-        except Exception as e:
-            print(f"  ⚠️ 소유권 이전 실패 (무시): {e}")
-
         print(f"  📁 {league}/{subfolder}/{filename} 업로드 완료")
-        return file_id
+        return file["id"]
 
     def _get_or_create_folder(self, name: str, parent_id: str) -> str:
         results = self.service.files().list(
             q=(f"name='{name}' and '{parent_id}' in parents "
                f"and mimeType='application/vnd.google-apps.folder' "
                f"and trashed=false"),
-            fields="files(id, name)"
+            fields="files(id, name)",
+            supportsAllDrives=True,
+            includeItemsFromAllDrives=True
         ).execute()
 
         files = results.get("files", [])
@@ -93,7 +82,8 @@ class DriveUploader:
                 "parents": [parent_id],
                 "mimeType": "application/vnd.google-apps.folder"
             },
-            fields="id"
+            fields="id",
+            supportsAllDrives=True
         ).execute()
 
         return folder["id"]
@@ -101,7 +91,9 @@ class DriveUploader:
     def _find_file(self, filename: str, folder_id: str):
         results = self.service.files().list(
             q=f"name='{filename}' and '{folder_id}' in parents and trashed=false",
-            fields="files(id)"
+            fields="files(id)",
+            supportsAllDrives=True,
+            includeItemsFromAllDrives=True
         ).execute()
         files = results.get("files", [])
         return files[0]["id"] if files else None
