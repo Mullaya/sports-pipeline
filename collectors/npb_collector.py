@@ -74,6 +74,11 @@ class NPBCollector:
             # 실제 구조: "- SoftBank 0 0 1 3 2 0 2 0 0 - 8 12 0"
             page_text = soup.get_text(separator='\n')
             lines = [l.strip() for l in page_text.split('\n')]
+            # 디버그: 라인스코어 후보 라인 출력
+            for line in lines:
+             if '-' in line and any(c.isdigit() for c in line):
+                if len(line) > 10 and len(line) < 80:
+                    print(f"    DEBUG: [{line}]")
 
             away_score = 0
             home_score = 0
