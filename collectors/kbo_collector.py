@@ -1,7 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
 import time
-from datetime import datetime
 
 class KBOCollector:
 
@@ -19,7 +18,6 @@ class KBOCollector:
         "Referer": "https://m.koreabaseball.com"
     }
 
-    # 팀코드 매핑
     TEAM_CODES = {
         "HH": "한화", "OB": "두산", "LG": "LG",
         "SS": "삼성", "SK": "SSG", "KT": "KT",
@@ -28,29 +26,29 @@ class KBOCollector:
     }
 
     def get_game_ids(self, date: str) -> list:
-        """날짜로 gameId 목록 수집"""
-        year = date[:4]
-        month = date[4:6]
-        day = date[6:8]
-
-        # 모바일 스케줄 페이지에서 gameId 파싱
-        url = f"{self.MOBILE_URL}/Schedule/Schedule.aspx?date={year}{month}{day}"
+        payload = {
+            "leagueId": "1",
+            "seriesId": "0",
+            "gameDate": date
+        }
 
         try:
-            resp = requests.get(url, headers=self.MOBILE_HEADERS, timeout=15)
-            resp.encoding = "utf-8"
-            soup = BeautifulSoup(resp.text, "html.parser")
+            resp = requests.post(
+                f"{self.BASE_URL}/ws/Schedule.asmx/GetScheduleList",
+                data=payload,
+                headers=self.HEADERS,
+                timeout=15
+            )
+            soup = BeautifulSoup(resp.text, "lxml-xml")
 
             game_ids = []
+            for game in soup.find_all("game"):
+                game_id = game.find("gameId")
+                status = game.find("statusInfo")
+                if game_id and status and status.text == "종료":
+                    game_ids.append(game_id.text)
 
-            # 링크에서 gameId 추출
-            for a in soup.find_all("a", href=True):
-                href = a["href"]
-                if "p_g_id=" in href:
-                    game_id = href.split("p_g_id=")[-1].split("&")[0]
-                    if game_id and game_id not in game_ids:
-                        game_ids.append(game_id)
-
+            print(f"  [KBO] gameId {len(game_ids)}개 수집: {game_ids}")
             return game_ids
 
         except Exception as e:
@@ -58,8 +56,10 @@ class KBOCollector:
             return []
 
     def get_game_result(self, game_id: str) -> dict:
-        """gameId로 경기 결과 + 박스스코어 수집"""
-        url = f"{self.MOBILE_URL}/Kbo/Live/Record.aspx?p_le_id=1&p_sr_id=0&p_g_id={game_id}"
+        url = (
+            f"{self.MOBILE_URL}/Kbo/Live/Record.aspx"
+            f"?p_le_id=1&p_sr_id=0&p_g_id={game_id}"
+        )
 
         try:
             resp = requests.get(url, headers=self.MOBILE_HEADERS, timeout=15)
@@ -70,7 +70,6 @@ class KBOCollector:
             return {}
 
         # gameId에서 팀코드 추출
-        # 형식: YYYYMMDD[원정팀코드][홈팀코드][번호]
         date = game_id[:8]
         away_code = game_id[8:10]
         home_code = game_id[10:12]
@@ -78,32 +77,34 @@ class KBOCollector:
         away_team = self.TEAM_CODES.get(away_code, away_code)
         home_team = self.TEAM_CODES.get(home_code, home_code)
 
-        # 스코어 파싱
+        # 스코어
         home_score = 0
         away_score = 0
 
         score_table = soup.find("table", class_="tbl-score")
         if score_table:
             rows = score_table.find_all("tr")
-            for row in rows:
-                cells = row.find_all("td")
-                if len(cells) >= 2:
-                    try:
-                        scores = [c.text.strip() for c in cells if c.text.strip().isdigit()]
-                        if len(scores) >= 2:
-                            away_score = int(scores[-2])
-                            home_score = int(scores[-1])
-                    except Exception:
-                        pass
+            if len(rows) >= 3:
+                try:
+                    away_cells = rows[1].find_all("td")
+                    home_cells = rows[2].find_all("td")
+                    # R 컬럼 (뒤에서 3번째)
+                    if len(away_cells) >= 3:
+                        away_score = int(away_cells[-3].text.strip() or 0)
+                    if len(home_cells) >= 3:
+                        home_score = int(home_cells[-3].text.strip() or 0)
+                except Exception:
+                    pass
 
-        # 이닝별 득점
         inning_scores = self._parse_innings(soup)
-
-        # 투수 기록
         pitchers = self._parse_pitchers(soup)
-
-        # 타자 기록
         batters = self._parse_batters(soup)
+
+        # 구장 정보
+        stadium = ""
+        stadium_tag = soup.find("span", class_="stadium")
+        if stadium_tag:
+            stadium = stadium_tag.text.strip()
 
         return {
             "game_id": game_id,
@@ -112,7 +113,7 @@ class KBOCollector:
             "away_team": away_team,
             "home_score": str(home_score),
             "away_score": str(away_score),
-            "stadium": "",
+            "stadium": stadium,
             "status": "종료",
             "total_runs": home_score + away_score,
             "winner": home_team if home_score > away_score else away_team,
@@ -132,22 +133,24 @@ class KBOCollector:
     def _parse_innings(self, soup) -> list:
         inning_scores = []
         try:
-            inning_table = soup.find("table", class_="tbl-score")
-            if not inning_table:
+            score_table = soup.find("table", class_="tbl-score")
+            if not score_table:
                 return []
 
-            rows = inning_table.find_all("tr")
+            rows = score_table.find_all("tr")
             if len(rows) < 3:
                 return []
 
-            # 헤더에서 이닝 수 파악
             headers = rows[0].find_all(["th", "td"])
-            num_innings = len(headers) - 3  # R, H, E 제외
+            # 마지막 3개(R, H, E) 제외
+            num_innings = len(headers) - 4  # 팀명 + R + H + E
 
-            away_cells = rows[1].find_all("td") if len(rows) > 1 else []
-            home_cells = rows[2].find_all("td") if len(rows) > 2 else []
+            away_cells = rows[1].find_all("td")
+            home_cells = rows[2].find_all("td")
 
-            for i in range(min(num_innings, len(away_cells), len(home_cells))):
+            for i in range(min(num_innings, 12)):
+                if i >= len(away_cells) or i >= len(home_cells):
+                    break
                 away_val = away_cells[i].text.strip()
                 home_val = home_cells[i].text.strip()
                 inning_scores.append({
@@ -162,21 +165,18 @@ class KBOCollector:
     def _parse_pitchers(self, soup) -> dict:
         pitchers = {"home": [], "away": []}
         try:
-            # 투수 테이블 찾기
             tables = soup.find_all("table")
             pitcher_tables = []
 
             for t in tables:
-                headers = t.find_all("th")
-                header_texts = [h.text.strip() for h in headers]
-                if "이닝" in header_texts or "ERA" in header_texts:
+                headers = [h.text.strip() for h in t.find_all("th")]
+                if "이닝" in headers and "자책" in headers:
                     pitcher_tables.append(t)
 
-            # 첫 번째 = 원정팀 투수, 두 번째 = 홈팀 투수
             sides = ["away", "home"]
             for idx, table in enumerate(pitcher_tables[:2]):
                 side = sides[idx]
-                rows = table.find_all("tr")[1:]  # 헤더 제외
+                rows = table.find_all("tr")[1:]
                 is_first = True
 
                 for row in rows:
@@ -190,13 +190,13 @@ class KBOCollector:
 
                     result_text = cells[1].text.strip() if len(cells) > 1 else ""
                     ip = cells[2].text.strip() if len(cells) > 2 else "0"
-                    bf = cells[3].text.strip() if len(cells) > 3 else "0"
                     h = cells[4].text.strip() if len(cells) > 4 else "0"
                     hr = cells[5].text.strip() if len(cells) > 5 else "0"
                     bb = cells[6].text.strip() if len(cells) > 6 else "0"
                     k = cells[7].text.strip() if len(cells) > 7 else "0"
                     er = cells[8].text.strip() if len(cells) > 8 else "0"
                     era = cells[9].text.strip() if len(cells) > 9 else "0.00"
+                    pitches = cells[10].text.strip() if len(cells) > 10 else "0"
 
                     pitchers[side].append({
                         "name": name,
@@ -209,7 +209,7 @@ class KBOCollector:
                         "k": k,
                         "er": er,
                         "era": era,
-                        "pitches": "0"
+                        "pitches": pitches
                     })
                     is_first = False
 
@@ -224,9 +224,8 @@ class KBOCollector:
             batter_tables = []
 
             for t in tables:
-                headers = t.find_all("th")
-                header_texts = [h.text.strip() for h in headers]
-                if "타수" in header_texts and "안타" in header_texts:
+                headers = [h.text.strip() for h in t.find_all("th")]
+                if "타수" in headers and "안타" in headers:
                     batter_tables.append(t)
 
             sides = ["away", "home"]
@@ -242,27 +241,31 @@ class KBOCollector:
                     order_text = cells[0].text.strip()
                     name = cells[1].text.strip() if len(cells) > 1 else ""
                     pos = cells[2].text.strip() if len(cells) > 2 else ""
+
+                    if not name:
+                        continue
+
                     ab = cells[3].text.strip() if len(cells) > 3 else "0"
                     runs = cells[4].text.strip() if len(cells) > 4 else "0"
                     h = cells[5].text.strip() if len(cells) > 5 else "0"
                     hr = cells[6].text.strip() if len(cells) > 6 else "0"
                     rbi = cells[7].text.strip() if len(cells) > 7 else "0"
                     bb = cells[8].text.strip() if len(cells) > 8 else "0"
-
-                    if not name:
-                        continue
+                    k = cells[9].text.strip() if len(cells) > 9 else "0"
+                    avg = cells[10].text.strip() if len(cells) > 10 else ".000"
 
                     batters[side].append({
                         "name": name,
                         "order": int(order_text) if order_text.isdigit() else 0,
                         "position": pos,
                         "ab": int(ab) if ab.isdigit() else 0,
+                        "runs": int(runs) if runs.isdigit() else 0,
                         "h": int(h) if h.isdigit() else 0,
                         "hr": int(hr) if hr.isdigit() else 0,
                         "rbi": int(rbi) if rbi.isdigit() else 0,
                         "bb": int(bb) if bb.isdigit() else 0,
-                        "k": 0,
-                        "avg": ".000"
+                        "k": int(k) if k.isdigit() else 0,
+                        "avg": avg
                     })
 
         except Exception as e:
@@ -291,8 +294,11 @@ class KBOCollector:
                 if game_data:
                     game_data["summary"] = self._make_summary(game_data)
                     result["games"].append(game_data)
-                    print(f"  ✅ {game_data['away_team']} vs {game_data['home_team']} "
-                          f"{game_data['away_score']}-{game_data['home_score']}")
+                    print(
+                        f"  ✅ {game_data['away_team']} vs "
+                        f"{game_data['home_team']} "
+                        f"{game_data['away_score']}-{game_data['home_score']}"
+                    )
             except Exception as e:
                 print(f"  ❌ {game_id} 오류: {e}")
 
@@ -303,8 +309,10 @@ class KBOCollector:
         a_starter = game.get("away_starter", {})
         return (
             f"[KBO] {game['home_team']} vs {game['away_team']}\n"
-            f"선발: {h_starter.get('name','?')}(홈) vs {a_starter.get('name','?')}(원정)\n"
-            f"결과: {game['home_team']} {game['home_score']}-{game['away_score']} {game['away_team']}\n"
+            f"선발: {h_starter.get('name','?')}(홈) vs "
+            f"{a_starter.get('name','?')}(원정)\n"
+            f"결과: {game['home_team']} {game['home_score']}-"
+            f"{game['away_score']} {game['away_team']}\n"
             f"승자: {game['winner']}\n"
             f"총득점: {game['total_runs']}"
-        )
+                                        )
