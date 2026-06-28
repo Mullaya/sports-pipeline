@@ -15,7 +15,6 @@ def run_daily(date: str = None):
     uploader = GitHubUploader()
 
     collectors = {
-        "KBO": KBOCollector(),
         "NPB": NPBCollector(),
         "MLB": MLBCollector(),
     }
