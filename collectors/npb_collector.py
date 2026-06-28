@@ -54,6 +54,13 @@ class NPBCollector:
 
     def _parse_game(self, soup, game_url: str) -> dict:
         try:
+            page_text = soup.get_text(separator='\n')
+            lines = [l.strip() for l in page_text.split('\n') if l.strip()]
+
+            # 💡 [우천 취소 감지 강화] 페이지 내에 'Postponed'가 있으면 실제 우천취소로 판단
+            if "Postponed" in page_text:
+                return {"status": "우천취소"}
+
             title = soup.find("title")
             away_team = ""
             home_team = ""
@@ -65,47 +72,33 @@ class NPBCollector:
                     away_team = vs_match.group(1).strip()
                     home_team = vs_match.group(2).strip()
 
-            page_text = soup.get_text(separator='\n')
-            lines = [l.strip() for l in page_text.split('\n') if l.strip()]
-
             away_score = 0
             home_score = 0
             inning_scores = []
             linescore_rows = []
 
-            # 💡 [핵심 알고리즘 교체] 까다로운 통짜 정규식 대신, 쪼개서 분석하는 유연한 방식으로 변경
             for line in lines:
                 if any(k in line for k in ["Innings", "Batting", "Pitching", "Totals", "vs"]):
                     continue
                 
-                # 라인 스코어 줄 특징: 하이픈 '-'이 들어가고 마침표 '.'가 여러 개 존재함
                 if '-' in line and line.count('.') >= 4:
-                    # 모든 공백을 없애고 마침표 기준으로 쪼갬
                     clean_line = line.replace(' ', '')
                     tokens = [t for t in clean_line.split('.') if t]
-                    
-                    # 하이픈을 기준으로 이닝 스코어와 총점 분리 시도
                     if '-' in tokens:
                         linescore_rows.append(tokens)
 
-            # 정상적으로 두 팀의 스코어 라인이 검출되었을 때
             if len(linescore_rows) >= 2:
                 for idx, tokens in enumerate(linescore_rows[:2]):
-                    # 구조: [팀명, 1회, 2회, ..., '-', 총점R, 안타H, 실책E]
                     try:
                         dash_index = tokens.index('-')
-                        # 팀명 분리
                         t_name = tokens[0]
-                        # 이닝 리스트 추출
                         innings = tokens[1:dash_index]
-                        # 총 득점(R) 추출
                         total_r = int(tokens[dash_index + 1])
                     except (ValueError, IndexError):
                         continue
 
                     for i, token in enumerate(innings):
                         r = int(token) if token.isdigit() else 0
-                        
                         if idx == 0:
                             if len(inning_scores) <= i:
                                 inning_scores.append({"inning": i+1, "away": r, "home": 0})
@@ -126,9 +119,8 @@ class NPBCollector:
                         if not home_team:
                             home_team = t_name
 
-            # 만약 매칭이 안 됐다면 최소한 타이틀 스코어라도 찾아내는 서브 백업 로직
-            if not inning_scores and title:
-                # 타이틀 예시: "(Jun 21) Yomiuri 3 vs Chunichi 2 | NPB"
+            # 스코어보드 파싱 실패 시 타이틀에서 스코어 추출하는 백업 로직
+            if not inning_scores and title and away_team and home_team:
                 title_score_match = re.search(rf'{away_team}\s+(\d+)\s+vs\s+{home_team}\s+(\d+)', title.text)
                 if title_score_match:
                     away_score = int(title_score_match.group(1))
@@ -138,7 +130,6 @@ class NPBCollector:
             if not inning_scores:
                 return {}
 
-            # 나머지 투수/타자/구장 파싱은 유지
             wp = ""
             lp = ""
             wp_match = re.search(r'WP\s*:\s*([^\n\(]+)', page_text)
@@ -292,7 +283,11 @@ class NPBCollector:
             time.sleep(0.5)
             try:
                 game_data = self.get_game_result(link)
-                if game_data:
+                
+                # 💡 [출력 보완] 우천취소인 경우 로그 분기 처리
+                if game_data and game_data.get("status") == "우천취소":
+                    print(f"  🌧️ 우천 취소 경기: {link.split('/')[-1]}")
+                elif game_data:
                     game_data["date"] = date
                     game_data["summary"] = self._make_summary(game_data)
                     result["games"].append(game_data)
@@ -302,7 +297,7 @@ class NPBCollector:
                         f"{game_data['away_score']}-{game_data['home_score']}"
                     )
                 else:
-                    print(f"  ⚠️ 우천취소 제외: {link.split('/')[-1]}")
+                    print(f"  ⚠️ 파싱 실패 데이터 제외: {link.split('/')[-1]}")
             except Exception as e:
                 print(f"  ❌ {link}: {e}")
 
