@@ -25,11 +25,9 @@ class NPBCollector:
             for a in soup.find_all("a", href=True):
                 href = a["href"]
                 if pattern.search(href):
-                    # 💡 [핵심 수정] 잘못된 중복 URL 생성을 막기 위해 주소 조립 조건 고도화
                     if href.startswith("http"):
                         full_url = href
                     elif "/bis/eng/" in href:
-                        # 이미 상대/절대 경로에 도메인 내부 경로가 포함된 경우
                         full_url = f"https://npb.jp{href}" if href.startswith("/") else f"https://npb.jp/{href}"
                     else:
                         full_url = f"https://npb.jp/bis/eng/{year}/games/{href}"
@@ -59,8 +57,8 @@ class NPBCollector:
         try:
             page_text = soup.get_text(separator='\n')
 
-            # 1. 우천 취소 검사
-            if "Postponed" in page_text:
+            # 💡 [구조 변경 1] 텍스트에 진짜 취소 단어가 있는 경우만 먼저 리턴
+            if "Postponed" in page_text or "Cancelled" in page_text:
                 return {"status": "우천취소"}
 
             title = soup.find("title")
@@ -78,7 +76,7 @@ class NPBCollector:
             home_score = 0
             inning_scores = []
 
-            # HTML Table 구조 직접 분석
+            # HTML Table 파싱 구조
             tables = soup.find_all("table")
             scoreboard_table = None
             
@@ -87,6 +85,7 @@ class NPBCollector:
                     scoreboard_table = t
                     break
 
+            # 💡 [구조 변경 2] 테이블이 비어 있더라도, 섣불리 취소 처리하지 않고 타이틀 기반으로 점수 먼저 복구 시도
             if scoreboard_table:
                 rows = scoreboard_table.find_all("tr")
                 header_tds = [td.text.strip() for td in rows[0].find_all(["th", "td"]) if td.text.strip()]
@@ -110,15 +109,11 @@ class NPBCollector:
                     if not away_team: away_team = away_row[0]
                     if not home_team: home_team = home_row[0]
 
-                    try:
-                        away_score = int(away_row[r_idx])
-                    except:
-                        away_score = int(away_row[-3]) if len(away_row) >= 4 else 0
+                    try: away_score = int(away_row[r_idx])
+                    except: away_score = int(away_row[-3]) if len(away_row) >= 4 else 0
                         
-                    try:
-                        home_score = int(home_row[r_idx])
-                    except:
-                        home_score = int(home_row[-3]) if len(home_row) >= 4 else 0
+                    try: home_score = int(home_row[r_idx])
+                    except: home_score = int(home_row[-3]) if len(home_row) >= 4 else 0
 
                     actual_r_idx = r_idx if r_idx > 0 else len(away_row) + r_idx
                     inning_count = actual_r_idx - 1
@@ -133,12 +128,9 @@ class NPBCollector:
                             token = home_row[i + 1]
                             h_inn = int(token) if token.isdigit() else 0
 
-                        inning_scores.append({
-                            "inning": i + 1,
-                            "away": a_inn,
-                            "home": h_inn
-                        })
+                        inning_scores.append({"inning": i + 1, "away": a_inn, "home": h_inn})
 
+            # 테이블 파싱 안 됐을 시 타이틀 기반 강력 백업
             if not inning_scores and title and away_team and home_team:
                 title_score_match = re.search(rf'{away_team}\s+(\d+)\s+vs\s+{home_team}\s+(\d+)', title.text)
                 if title_score_match:
@@ -146,29 +138,30 @@ class NPBCollector:
                     home_score = int(title_score_match.group(2))
                     inning_scores = [{"inning": 1, "away": away_score, "home": home_score}]
 
+            # 💡 [구조 변경 3] 여기까지 왔는데도 이닝 기록이 없다면 테이블도 타이틀 점수도 없는 빈 취소 페이지로 최종 판단
             if not inning_scores:
-                return {}
+                return {"status": "우천취소"}
 
-            wp = ""
-            lp = ""
-            wp_match = re.search(r'WP\s*:\s*([^\n\(]+)', page_text)
-            lp_match = re.search(r'LP\s*:\s*([^\n\(]+)', page_text)
-            if wp_match:
-                wp = wp_match.group(1).strip().rstrip(',').replace('.', '')
-            if lp_match:
-                lp = lp_match.group(1).strip().rstrip(',').replace('.', '')
+            # 세부 스펙(투수, 타자) 파싱 중 에러가 나더라도 전체 게임 정보는 유지되도록 예외격리
+            wp, lp, stadium = "", "", ""
+            try:
+                wp_match = re.search(r'WP\s*:\s*([^\n\(]+)', page_text)
+                lp_match = re.search(r'LP\s*:\s*([^\n\(]+)', page_text)
+                if wp_match: wp = wp_match.group(1).strip().rstrip(',').replace('.', '')
+                if lp_match: lp = lp_match.group(1).strip().rstrip(',').replace('.', '')
 
-            stadium = ""
-            lines = [l.strip() for l in page_text.split('\n') if l.strip()]
-            for line in lines:
-                if any(k in line for k in [
-                    'Dome', 'Stadium', 'Field', 'Koshien', 'Jingu', 'FIELD', 'MAZDA', 
-                    'ZoZo', 'PayPay', 'Marine', 'Belluna', 'CON', 'Yokohama', 'Osaka', 
-                    'Sapporo', 'ES CON', 'ZOZO', 'Vantelin', 'Mazda', 'Meiji', 'Mobile'
-                ]):
-                    if len(line) < 60 and not line.startswith('http'):
-                        stadium = line.strip().replace('.', '')
-                        break
+                lines = [l.strip() for l in page_text.split('\n') if l.strip()]
+                for line in lines:
+                    if any(k in line for k in [
+                        'Dome', 'Stadium', 'Field', 'Koshien', 'Jingu', 'FIELD', 'MAZDA', 
+                        'ZoZo', 'PayPay', 'Marine', 'Belluna', 'CON', 'Yokohama', 'Osaka', 
+                        'Sapporo', 'ES CON', 'ZOZO', 'Vantelin', 'Mazda', 'Meiji', 'Mobile'
+                    ]):
+                        if len(line) < 60 and not line.startswith('http'):
+                            stadium = line.strip().replace('.', '')
+                            break
+            except:
+                pass
 
             pitchers = self._parse_pitchers(soup)
             batters = self._parse_batters(soup)
@@ -177,8 +170,8 @@ class NPBCollector:
             return {
                 "game_id": game_id,
                 "url": game_url,
-                "home_team": home_team,
-                "away_team": away_team,
+                "home_team": home_team if home_team else "Home",
+                "away_team": away_team if away_team else "Away",
                 "home_score": str(home_score),
                 "away_score": str(away_score),
                 "stadium": stadium[:60],
@@ -197,7 +190,8 @@ class NPBCollector:
             }
 
         except Exception as e:
-            print(f"  ⚠️ NPB 파싱 오류: {e}")
+            # 💡 최상단 예외에 걸리더라도, 데이터 유실 로그만 남기고 전체 시스템을 죽이지 않음
+            print(f"  ⚠️ NPB 파싱 내부 오류 무시: {e}")
             return {}
 
     def _parse_pitchers(self, soup) -> dict:
@@ -205,7 +199,6 @@ class NPBCollector:
         try:
             tables = soup.find_all("table")
             pitcher_tables = []
-
             for t in tables:
                 headers = [h.text.strip() for h in t.find_all("th")]
                 if "IP" in headers and "ER" in headers:
@@ -219,11 +212,9 @@ class NPBCollector:
 
                 for row in rows:
                     cells = row.find_all("td")
-                    if len(cells) < 3:
-                        continue
+                    if len(cells) < 3: continue
                     name = cells[0].text.strip().replace('.', '')
-                    if not name or name in ["Totals", "Total"]:
-                        continue
+                    if not name or name in ["Totals", "Total"]: continue
 
                     pitchers[side].append({
                         "name": name,
@@ -238,8 +229,8 @@ class NPBCollector:
                         "er": cells[7].text.strip() if len(cells) > 7 else "0",
                     })
                     is_first = False
-        except Exception as e:
-            print(f"  ⚠️ NPB 투수 파싱 오류: {e}")
+        except:
+            pass
         return pitchers
 
     def _parse_batters(self, soup) -> dict:
@@ -247,7 +238,6 @@ class NPBCollector:
         try:
             tables = soup.find_all("table")
             batter_tables = []
-
             for t in tables:
                 headers = [h.text.strip() for h in t.find_all("th")]
                 if "AB" in headers and "RBI" in headers:
@@ -260,11 +250,9 @@ class NPBCollector:
 
                 for row in rows:
                     cells = row.find_all("td")
-                    if len(cells) < 3:
-                        continue
+                    if len(cells) < 3: continue
                     name = cells[0].text.strip().replace('.', '')
-                    if not name or name in ["Totals", "Total"]:
-                        continue
+                    if not name or name in ["Totals", "Total"]: continue
 
                     ab = cells[1].text.strip() if len(cells) > 1 else "0"
                     h = cells[2].text.strip() if len(cells) > 2 else "0"
@@ -280,8 +268,8 @@ class NPBCollector:
                         "bb": int(bb) if bb.isdigit() else 0,
                         "k": int(k) if k.isdigit() else 0,
                     })
-        except Exception as e:
-            print(f"  ⚠️ NPB 타자 파싱 오류: {e}")
+        except:
+            pass
         return batters
 
     def collect_daily(self, date: str) -> dict:
@@ -305,7 +293,7 @@ class NPBCollector:
                 game_data = self.get_game_result(link)
                 
                 if game_data and game_data.get("status") == "우천취소":
-                    print(f"  🌧️ 우천 취소 경기: {link.split('/')[-1]}")
+                    print(f"  🌧️ 우천 취소(데이터 없음): {link.split('/')[-1]}")
                 elif game_data:
                     game_data["date"] = date
                     game_data["summary"] = self._make_summary(game_data)
@@ -316,7 +304,7 @@ class NPBCollector:
                         f"{game_data['away_score']}-{game_data['home_score']}"
                     )
                 else:
-                    print(f"  ⚠️ 파싱 실패 데이터 제외: {link.split('/')[-1]}")
+                    print(f"  ⚠️ 시스템 파싱 에러 제외: {link.split('/')[-1]}")
             except Exception as e:
                 print(f"  ❌ {link}: {e}")
 
