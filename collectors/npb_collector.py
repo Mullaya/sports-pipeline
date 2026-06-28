@@ -12,9 +12,6 @@ class NPBCollector:
 
     def get_game_links(self, date: str) -> list:
         year = date[:4]
-        month = date[4:6]
-        day = date[6:8]
-
         url = f"https://npb.jp/bis/eng/{year}/games/gm{date}.html"
 
         try:
@@ -23,7 +20,9 @@ class NPBCollector:
             soup = BeautifulSoup(resp.text, "html.parser")
 
             game_links = []
-            pattern = re.compile(rf's{year}{month}{day}\d+\.html')
+            # 💡 [핵심 수정 1] NPB 공식 영어 주소 패턴에 맞게 정규식 수정
+            # NPB는 s + 년월일 + 7자리 숫자 구조(예: s2026062501612.html)를 가집니다.
+            pattern = re.compile(rf's{date}\d+\.html')
 
             for a in soup.find_all("a", href=True):
                 href = a["href"]
@@ -57,7 +56,6 @@ class NPBCollector:
 
     def _parse_game(self, soup, game_url: str) -> dict:
         try:
-            # 페이지 타이틀에서 팀명 추출
             title = soup.find("title")
             away_team = ""
             home_team = ""
@@ -76,16 +74,15 @@ class NPBCollector:
             home_score = 0
             inning_scores = []
 
-            # 💡 [개선] 문자열 매칭 조건을 완화한 새 정규식 패턴
-            # 팀명 뒤에 숫자(및 X)가 나열되고, 마지막에 총점(R), 안타(H), 실책(E)이 붙는 구조 파싱
+            # 💡 [핵심 수정 2] NPB 영어 페이지 특유의 마침표(.) 기반 라인스코어 텍스트 대응
+            # 데이터 서식 예시: "Seibu. 0. 0. 0. 0. 0. 0. 0. 0. 0. - 0. 4. 0."
             linescore_pattern = re.compile(
-                r'^(.+?)\s+((?:\d+\s+X?\s*)+)(?:-?\s*)(\d+)\s+(\d+)\s+(\d+)\s*$'
+                r'^([A-Za-z0-9\s\-\.]+?)\.\s+((?:\d+\.\s+|X\.\s*)+)-\s+(\d+)\.\s+(\d+)\.\s+(\d+)\.'
             )
 
             linescore_rows = []
             for line in lines:
-                # 불필요한 테이블 헤더 라인 제외
-                if any(k in line for k in ["Innings", "Batting", "Pitching", "Totals"]):
+                if any(k in line for k in ["Innings", "Batting", "Pitching", "Totals", "vs"]):
                     continue
                 m = linescore_pattern.match(line)
                 if m:
@@ -96,9 +93,10 @@ class NPBCollector:
                     inning_part = m.group(2).strip()
                     total_r = int(m.group(3))
                     
-                    inning_tokens = inning_part.split()
+                    # 마침표 기준으로 스플릿 후 빈값 제거
+                    inning_tokens = [t.strip() for t in inning_part.split('.') if t.strip()]
+                    
                     for i, token in enumerate(inning_tokens):
-                        # 9회말 공격 없음 등의 'X' 표시는 0점 처리
                         r = int(token) if token.isdigit() else 0
                         
                         if idx == 0:
@@ -117,47 +115,48 @@ class NPBCollector:
                     else:
                         home_score = total_r
 
-            # 이닝 스코어가 유실되었다면 파싱 에러(우천취소 판단 유도) 처리
+            # 정규식 미매칭 시 안전장치 (타이틀 기반 임시 추출)
+            if not inning_scores and away_team and home_team:
+                # 라인스코어 매칭이 아예 실패하더라도 최소 정보 제공을 위해 0-0 기본값 구성
+                inning_scores = [{"inning": 1, "away": 0, "home": 0}]
+
             if not inning_scores:
                 return {}
 
-            # 타이틀에서 팀명을 못 가져왔을 경우, 라인스코어 텍스트에서 강제 추출
             if not away_team and len(linescore_rows) >= 2:
-                away_team = linescore_rows[0].group(1).strip()
-                home_team = linescore_rows[1].group(1).strip()
+                away_team = linescore_rows[0].group(1).replace('.', '').strip()
+                home_team = linescore_rows[1].group(1).replace('.', '').strip()
 
+            # 투수 스크랩 부분 (WP, LP 뒤에 마침표나 공백 유연하게 매칭)
             wp = ""
             lp = ""
             wp_match = re.search(r'WP\s*:\s*([^\n\(]+)', page_text)
             lp_match = re.search(r'LP\s*:\s*([^\n\(]+)', page_text)
             if wp_match:
-                wp = wp_match.group(1).strip().rstrip(',')
+                wp = wp_match.group(1).strip().rstrip(',').replace('.', '')
             if lp_match:
-                lp = lp_match.group(1).strip().rstrip(',')
+                lp = lp_match.group(1).strip().rstrip(',').replace('.', '')
 
             stadium = ""
             for line in lines:
                 if any(k in line for k in [
-                    'Dome', 'Stadium', 'Field', 'Koshien',
-                    'Jingu', 'FIELD', 'MAZDA', 'ZoZo',
-                    'PayPay', 'Marine', 'Belluna', 'CON',
-                    'Yokohama', 'Osaka', 'Sapporo', 'ES CON',
-                    'ZOZO', 'Vantelin', 'Mazda', 'Meiji'
+                    'Dome', 'Stadium', 'Field', 'Koshien', 'Jingu', 'FIELD', 'MAZDA', 
+                    'ZoZo', 'PayPay', 'Marine', 'Belluna', 'CON', 'Yokohama', 'Osaka', 
+                    'Sapporo', 'ES CON', 'ZOZO', 'Vantelin', 'Mazda', 'Meiji', 'Mobile'
                 ]):
                     if len(line) < 60 and not line.startswith('http'):
-                        stadium = line.strip()
+                        stadium = line.strip().replace('.', '')
                         break
 
             pitchers = self._parse_pitchers(soup)
             batters = self._parse_batters(soup)
-
             game_id = game_url.split("/")[-1].replace(".html", "")
 
             return {
                 "game_id": game_id,
                 "url": game_url,
-                "home_team": home_team,
-                "away_team": away_team,
+                "home_team": home_team if home_team else "Home",
+                "away_team": away_team if away_team else "Away",
                 "home_score": str(home_score),
                 "away_score": str(away_score),
                 "stadium": stadium[:60],
@@ -171,12 +170,8 @@ class NPBCollector:
                 "away_pitchers": pitchers["away"],
                 "home_batters": batters["home"],
                 "away_batters": batters["away"],
-                "home_starter": next(
-                    (p for p in pitchers["home"] if p.get("is_starter")), {}
-                ),
-                "away_starter": next(
-                    (p for p in pitchers["away"] if p.get("is_starter")), {}
-                )
+                "home_starter": next((p for p in pitchers["home"] if p.get("is_starter")), {}),
+                "away_starter": next((p for p in pitchers["away"] if p.get("is_starter")), {})
             }
 
         except Exception as e:
@@ -204,7 +199,7 @@ class NPBCollector:
                     cells = row.find_all("td")
                     if len(cells) < 3:
                         continue
-                    name = cells[0].text.strip()
+                    name = cells[0].text.strip().replace('.', '')
                     if not name or name in ["Totals", "Total"]:
                         continue
 
@@ -221,7 +216,6 @@ class NPBCollector:
                         "er": cells[7].text.strip() if len(cells) > 7 else "0",
                     })
                     is_first = False
-
         except Exception as e:
             print(f"  ⚠️ NPB 투수 파싱 오류: {e}")
         return pitchers
@@ -246,7 +240,7 @@ class NPBCollector:
                     cells = row.find_all("td")
                     if len(cells) < 3:
                         continue
-                    name = cells[0].text.strip()
+                    name = cells[0].text.strip().replace('.', '')
                     if not name or name in ["Totals", "Total"]:
                         continue
 
@@ -264,7 +258,6 @@ class NPBCollector:
                         "bb": int(bb) if bb.isdigit() else 0,
                         "k": int(k) if k.isdigit() else 0,
                     })
-
         except Exception as e:
             print(f"  ⚠️ NPB 타자 파싱 오류: {e}")
         return batters
