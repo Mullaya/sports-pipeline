@@ -1,0 +1,45 @@
+name: Historical Data Load
+
+on:
+  workflow_dispatch:
+    inputs:
+      league:
+        description: '리그 (MLB/KBO/NPB)'
+        required: true
+        default: 'MLB'
+      start_date:
+        description: '시작 날짜 YYYYMMDD'
+        required: true
+      end_date:
+        description: '종료 날짜 YYYYMMDD'
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  load:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+
+    steps:
+      - name: 코드 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Python 설정
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: 패키지 설치
+        run: pip install -r requirements.txt
+
+      - name: 초기적재 실행
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          python historical/load_history.py \
+            ${{ github.event.inputs.league }} \
+            ${{ github.event.inputs.start_date }} \
+            ${{ github.event.inputs.end_date }}
