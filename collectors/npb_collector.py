@@ -25,12 +25,15 @@ class NPBCollector:
             for a in soup.find_all("a", href=True):
                 href = a["href"]
                 if pattern.search(href):
+                    # 💡 [핵심 수정] 잘못된 중복 URL 생성을 막기 위해 주소 조립 조건 고도화
                     if href.startswith("http"):
                         full_url = href
-                    elif href.startswith("/"):
-                        full_url = f"https://npb.jp{href}"
+                    elif "/bis/eng/" in href:
+                        # 이미 상대/절대 경로에 도메인 내부 경로가 포함된 경우
+                        full_url = f"https://npb.jp{href}" if href.startswith("/") else f"https://npb.jp/{href}"
                     else:
                         full_url = f"https://npb.jp/bis/eng/{year}/games/{href}"
+                    
                     if full_url not in game_links:
                         game_links.append(full_url)
 
@@ -75,8 +78,7 @@ class NPBCollector:
             home_score = 0
             inning_scores = []
 
-            # 💡 [핵심 교체] 텍스트 분석 탈피 -> BeautifulSoup을 통한 HTML Table direct 파싱
-            # NPB 스코어보드는 'table' 태그 내 th에 'Innings'가 들어가 있습니다.
+            # HTML Table 구조 직접 분석
             tables = soup.find_all("table")
             scoreboard_table = None
             
@@ -87,34 +89,27 @@ class NPBCollector:
 
             if scoreboard_table:
                 rows = scoreboard_table.find_all("tr")
-                # 헤더(Innings 1 2 3 ... R H E) 분석하여 R(Runs)의 위치 찾기
                 header_tds = [td.text.strip() for td in rows[0].find_all(["th", "td"]) if td.text.strip()]
                 
-                # 보통 R은 뒤에서 3번째 혹은 명시적 'R' 표기 위치에 있음
                 r_idx = -3
                 if "R" in header_tds:
                     r_idx = header_tds.index("R")
                 elif "Total" in header_tds:
                     r_idx = header_tds.index("Total")
 
-                # 팀 스코어 행 추출 (보던 행 중 데이터가 유효한 2개 행 선택)
                 team_rows = []
                 for row in rows[1:]:
                     tds = [td.text.strip().replace('.', '') for td in row.find_all(["th", "td"])]
-                    # 첫 토큰이 이름이고 이닝 숫자들이 나열되는 구조인 경우
                     if tds and tds[0] not in ["Innings", "Teams", "Totals", "Total", ""]:
                         team_rows.append(tds)
 
                 if len(team_rows) >= 2:
-                    # team_rows[0] = 원정팀, team_rows[1] = 홈팀
                     away_row = team_rows[0]
                     home_row = team_rows[1]
 
-                    # 타이틀에서 팀명 못 가져왔을 때 백업
                     if not away_team: away_team = away_row[0]
                     if not home_team: home_team = home_row[0]
 
-                    # 총점 추출
                     try:
                         away_score = int(away_row[r_idx])
                     except:
@@ -125,8 +120,6 @@ class NPBCollector:
                     except:
                         home_score = int(home_row[-3]) if len(home_row) >= 4 else 0
 
-                    # 이닝별 스코어 파싱 (팀명 다음인 1번 인덱스부터 총점 인덱스 직전까지)
-                    # 만약 r_idx가 음수(-3)라면 전체 길이에서 빼서 계산
                     actual_r_idx = r_idx if r_idx > 0 else len(away_row) + r_idx
                     inning_count = actual_r_idx - 1
 
@@ -146,7 +139,6 @@ class NPBCollector:
                             "home": h_inn
                         })
 
-            # 💡 [백업] 테이블 파싱마저 실패할 경우 타이틀 텍스트 점수 스크랩 유지
             if not inning_scores and title and away_team and home_team:
                 title_score_match = re.search(rf'{away_team}\s+(\d+)\s+vs\s+{home_team}\s+(\d+)', title.text)
                 if title_score_match:
@@ -157,7 +149,6 @@ class NPBCollector:
             if not inning_scores:
                 return {}
 
-            # 투수 / 타자 / 구장 정보 추출
             wp = ""
             lp = ""
             wp_match = re.search(r'WP\s*:\s*([^\n\(]+)', page_text)
