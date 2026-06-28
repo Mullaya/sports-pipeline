@@ -57,7 +57,7 @@ class NPBCollector:
         try:
             page_text = soup.get_text(separator='\n')
 
-            # 1. 텍스트에 진짜 취소 단어가 있는 경우만 필터링
+            # 1. 우천 취소 및 미개최 경기 즉시 필터링
             if "Postponed" in page_text or "Cancelled" in page_text:
                 return {"status": "우천취소"}
 
@@ -76,13 +76,13 @@ class NPBCollector:
             home_score = 0
             inning_scores = []
 
-            # 스코어보드 테이블 매칭
+            # 💡 [구조 혁신] NPB 특유의 테이블 클래스 및 태그 직접 추적 구조
             tables = soup.find_all("table")
             scoreboard_table = None
             
             for t in tables:
                 t_txt = t.text
-                if any(k in t_txt for k in ["Innings", "Total", "Batting"]) and any(k in t_txt for k in ["R", "H", "E"]):
+                if "Innings" in t_txt and ("R" in t_txt or "Total" in t_txt):
                     scoreboard_table = t
                     break
 
@@ -90,68 +90,78 @@ class NPBCollector:
                 scoreboard_table = tables[0]
 
             if scoreboard_table:
-                try:
-                    rows = scoreboard_table.find_all("tr")
-                    if rows:
-                        header_tds = [td.text.strip() for td in rows[0].find_all(["th", "td"]) if td.text.strip()]
-                        
-                        r_idx = -3
-                        for k in ["R", "Total", "Runs"]:
-                            if k in header_tds:
-                                r_idx = header_tds.index(k)
-                                break
+                rows = scoreboard_table.find_all("tr")
+                
+                # 💡 팀 행 추출 고도화 (클래스나 빈 칸에 상관없이 tr 내 td 개수로 정상 데이터 확보)
+                valid_rows = []
+                for r in rows:
+                    tds = r.find_all(["td", "th"])
+                    td_texts = [td.text.strip() for td in tds]
+                    if td_texts and td_texts[0] not in ["Innings", "Teams", "Totals", "Total", "Team", "Linescore", ""]:
+                        valid_rows.append(tds)
 
-                        team_rows = []
-                        for row in rows[1:]:
-                            tds = [td.text.strip().replace('.', '') for td in row.find_all(["th", "td"])]
-                            if tds and tds[0] not in ["Innings", "Teams", "Totals", "Total", "Team", ""]:
-                                team_rows.append(tds)
+                if len(valid_rows) >= 2:
+                    # valid_rows[0]: 원정팀 행, valid_rows[1]: 홈팀 행
+                    away_tds = valid_rows[0]
+                    home_tds = valid_rows[1]
 
-                        if len(team_rows) >= 2:
-                            away_row = team_rows[0]
-                            home_row = team_rows[1]
+                    if not away_team: away_team = away_tds[0].text.strip().replace('.', '')
+                    if not home_team: home_team = home_tds[0].text.strip().replace('.', '')
 
-                            if not away_team: away_team = away_row[0]
-                            if not home_team: home_team = home_row[0]
+                    # 💡 NPB 공식 스코어보드는 총점(Runs) 컬럼에 보통 class="r" 또는 class="total"이 지정되어 있습니다.
+                    # 지정이 없을 경우를 대비해 뒤에서 3번째 셀(R, H, E 구조)을 기본 타겟으로 잡습니다.
+                    away_r_cell = None
+                    home_r_cell = None
 
-                            try:
-                                away_score = int(away_row[r_idx]) if away_row[r_idx].isdigit() else 0
-                            except:
-                                away_score = int(away_row[-3]) if len(away_row) >= 4 and away_row[-3].isdigit() else 0
-                                
-                            try:
-                                home_score = int(home_row[r_idx]) if home_row[r_idx].isdigit() else 0
-                            except:
-                                home_score = int(home_row[-3]) if len(home_row) >= 4 and home_row[-3].isdigit() else 0
+                    # class 속성 기반으로 정확하게 R 컬럼 탐색
+                    for td in away_tds:
+                        classes = td.get("class", [])
+                        if "r" in classes or "total" in classes or td.get("title") == "Runs":
+                            away_r_cell = td
+                            break
+                    for td in home_tds:
+                        classes = td.get("class", [])
+                        if "r" in classes or "total" in classes or td.get("title") == "Runs":
+                            home_r_cell = td
+                            break
 
-                            actual_r_idx = r_idx if r_idx > 0 else len(away_row) + r_idx
-                            inning_count = actual_r_idx - 1
+                    # 찾지 못했다면 야구 기본 라인스코어 서식 법칙(우측 끝에서 3번째) 적용
+                    if not away_r_cell and len(away_tds) >= 4: away_r_cell = away_tds[-3]
+                    if not home_r_cell and len(home_tds) >= 4: home_r_cell = home_tds[-3]
 
-                            for i in range(inning_count):
-                                a_inn, h_inn = 0, 0
-                                if i + 1 < len(away_row):
-                                    token = away_row[i + 1]
-                                    a_inn = int(token) if token.isdigit() else 0
-                                if i + 1 < len(home_row):
-                                    token = home_row[i + 1]
-                                    h_inn = int(token) if token.isdigit() else 0
+                    # 총 점수 정수화 변환
+                    if away_r_cell:
+                        txt = away_r_cell.text.strip()
+                        away_score = int(txt) if txt.isdigit() else 0
+                    if home_r_cell:
+                        txt = home_r_cell.text.strip()
+                        home_score = int(txt) if txt.isdigit() else 0
 
-                                inning_scores.append({"inning": i + 1, "away": a_inn, "home": h_inn})
-                except:
-                    pass
+                    # 💡 이닝 점수 동적 추출
+                    # 팀명 셀(인덱스 0) 다음부터, 찾은 R 컬럼 셀 직전까지가 진짜 이닝별 점수 영역입니다.
+                    try:
+                        away_r_idx = away_tds.index(away_r_cell) if away_r_cell else len(away_tds) - 3
+                        inning_tds_away = away_tds[1:away_r_idx]
+                        inning_tds_home = home_tds[1:away_r_idx]
 
-            # 강력한 타이틀 기반 텍스트 점수 스크랩 유지
-            if (not inning_scores or (away_score == 0 and home_score == 0)) and title:
-                title_score_match = re.search(r'([A-Za-z0-9\s\-\.]+?)\s+(\d+)\s+vs\s+([A-Za-z0-9\s\-\.]+?)\s+(\d+)', title.text)
-                if title_score_match:
-                    away_team = title_score_match.group(1).strip()
-                    away_score = int(title_score_match.group(2))
-                    home_team = title_score_match.group(3).strip()
-                    home_score = int(title_score_match.group(4))
-                    inning_scores = [{"inning": 1, "away": away_score, "home": home_score}]
+                        for i in range(len(inning_tds_away)):
+                            a_txt = inning_tds_away[i].text.strip()
+                            h_txt = inning_tds_home[i].text.strip() if i < len(inning_tds_home) else "0"
 
+                            a_inn = int(a_txt) if a_txt.isdigit() else 0
+                            h_inn = int(h_txt) if h_txt.isdigit() else 0
+
+                            inning_scores.append({"inning": i + 1, "away": a_inn, "home": h_inn})
+                    except:
+                        pass
+
+            # 모든 수단을 동원했음에도 경기 데이터(이닝 점수)가 완벽히 빈칸이라면 최종 우천취소 처리
             if not inning_scores and away_score == 0 and home_score == 0:
                 return {"status": "우천취소"}
+
+            # 데이터가 비어있을 때 임시 조치 방지용 하드코딩 필터링 제거
+            if not inning_scores:
+                inning_scores = [{"inning": 1, "away": away_score, "home": home_score}]
 
             # 투수/타자 스펙 추출 격리
             wp, lp, stadium = "", "", ""
@@ -308,7 +318,6 @@ class NPBCollector:
                     game_data["date"] = date
                     game_data["summary"] = self._make_summary(game_data)
                     
-                    # 💡 [오타 완벽 수정] 딕셔너리에 리스트가 없으면 초기화 후 정상 append
                     if "games" not in result:
                         result["games"] = []
                     result["games"].append(game_data)
