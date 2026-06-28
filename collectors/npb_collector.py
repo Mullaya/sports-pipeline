@@ -58,97 +58,88 @@ class NPBCollector:
     def _parse_game(self, soup, game_url: str) -> dict:
         try:
             # 페이지 타이틀에서 팀명 추출
-            # 예: "Sunday, June 21, 2026 (Scores) Nippon-Ham vs SoftBank"
             title = soup.find("title")
             away_team = ""
             home_team = ""
 
             if title:
                 title_text = title.text.strip()
-                vs_match = re.search(r'\)\s+(.+?)\s+vs\s+(.+?)(?:\s*\||\s*$)', title_text)
+                # "Sunday, June 21, 2026 (Scores) Nippon-Ham vs SoftBank"
+                vs_match = re.search(r'\)\s+(.+?)\s+vs\s+(.+?)(?:\s*\|)', title_text)
                 if vs_match:
                     away_team = vs_match.group(1).strip()
                     home_team = vs_match.group(2).strip()
 
             # 라인스코어 파싱
-            # 패턴: "SoftBank 0 0 1 3 2 0 2 0 0 - 8 12 0"
+            # 실제 구조: "- SoftBank 0 0 1 3 2 0 2 0 0 - 8 12 0"
+            page_text = soup.get_text(separator='\n')
+            lines = [l.strip() for l in page_text.split('\n')]
+
             away_score = 0
             home_score = 0
             inning_scores = []
 
-            page_text = soup.get_text()
+            # "팀명 숫자들 - 숫자 숫자 숫자" 패턴
+            linescore_pattern = re.compile(
+                r'^([A-Za-z][A-Za-z\s\-\.]+?)\s+([\d\s]+)-\s*(\d+)\s+(\d+)\s+(\d+)\s*$'
+            )
 
-            # R H E 패턴으로 라인스코어 찾기
-            lines = page_text.split('\n')
-            linescore_lines = []
+            linescore_rows = []
+            for line in lines:
+                m = linescore_pattern.match(line)
+                if m:
+                    linescore_rows.append(m)
 
-            for i, line in enumerate(lines):
-                line = line.strip()
-                if re.match(r'^[A-Za-z\s\-].*\d+\s+\d+\s+\d+\s+\d+.*-\s*\d+\s+\d+\s+\d+$', line):
-                    linescore_lines.append(line)
+            if len(linescore_rows) >= 2:
+                for idx, m in enumerate(linescore_rows[:2]):
+                    inning_part = m.group(2).strip()
+                    total_r = int(m.group(3))
 
-            if len(linescore_lines) >= 2:
-                for idx, ls in enumerate(linescore_lines[:2]):
-                    # 숫자 추출
-                    nums = re.findall(r'\d+', ls)
-                    if '-' in ls:
-                        # 대시 앞이 이닝별, 뒤가 R H E
-                        parts = ls.split('-')
-                        inning_nums = re.findall(r'\d+', parts[0])
-                        rhe_nums = re.findall(r'\d+', parts[1]) if len(parts) > 1 else []
+                    inning_nums = [int(x) for x in inning_part.split() if x.isdigit()]
 
-                        total_r = int(rhe_nums[0]) if rhe_nums else sum(int(n) for n in inning_nums)
+                    for i, r in enumerate(inning_nums):
+                        if idx == 0:  # 원정팀
+                            if len(inning_scores) <= i:
+                                inning_scores.append({"inning": i+1, "away": r, "home": 0})
+                            else:
+                                inning_scores[i]["away"] = r
+                        else:  # 홈팀
+                            if len(inning_scores) <= i:
+                                inning_scores.append({"inning": i+1, "away": 0, "home": r})
+                            else:
+                                inning_scores[i]["home"] = r
 
-                        for i, r in enumerate(inning_nums):
-                            if idx == 0:  # 원정
-                                if len(inning_scores) <= i:
-                                    inning_scores.append({"inning": i+1, "away": int(r), "home": 0})
-                                else:
-                                    inning_scores[i]["away"] = int(r)
-                            else:  # 홈
-                                if len(inning_scores) <= i:
-                                    inning_scores.append({"inning": i+1, "away": 0, "home": int(r)})
-                                else:
-                                    inning_scores[i]["home"] = int(r)
+                    if idx == 0:
+                        away_score = total_r
+                    else:
+                        home_score = total_r
 
-                        if idx == 0:
-                            away_score = total_r
-                        else:
-                            home_score = total_r
-
-            # 우천취소 체크 — 라인스코어 없으면 우천취소
+            # 라인스코어 없으면 우천취소
             if not inning_scores:
                 return {}
-
-            # 투수 기록
-            pitchers = self._parse_pitchers(soup)
-
-            # 타자 기록
-            batters = self._parse_batters(soup)
 
             # 승패투수
             wp = ""
             lp = ""
-            wp_match = re.search(r'WP\s*:\s*([^\(]+)', page_text)
-            lp_match = re.search(r'LP\s*:\s*([^\(]+)', page_text)
+            wp_match = re.search(r'WP\s*:\s*([^\n\(]+)', page_text)
+            lp_match = re.search(r'LP\s*:\s*([^\n\(]+)', page_text)
             if wp_match:
-                wp = wp_match.group(1).strip()
+                wp = wp_match.group(1).strip().rstrip(',')
             if lp_match:
-                lp = lp_match.group(1).strip()
+                lp = lp_match.group(1).strip().rstrip(',')
 
             # 구장
             stadium = ""
-            stadium_patterns = ['Dome', 'Stadium', 'Park', 'Field', 'Koshien',
-                               'ZoZo', 'PayPay', 'MAZDA', 'Jingu', 'Belluna',
-                               'CON FIELD', 'FIELD', 'BANK', 'Marine']
-            for pattern in stadium_patterns:
-                if pattern.lower() in page_text.lower():
-                    for line in lines:
-                        if pattern.lower() in line.lower():
-                            stadium = line.strip()
-                            break
-                    if stadium:
+            for line in lines:
+                if any(k in line for k in ['Dome', 'Stadium', 'Field', 'Koshien',
+                                           'Jingu', 'FIELD', 'MAZDA', 'ZoZo',
+                                           'PayPay', 'Marine', 'Belluna', 'CON']):
+                    if len(line) < 60:
+                        stadium = line.strip()
                         break
+
+            pitchers = self._parse_pitchers(soup)
+            batters = self._parse_batters(soup)
 
             game_id = game_url.split("/")[-1].replace(".html", "")
 
@@ -159,7 +150,7 @@ class NPBCollector:
                 "away_team": away_team,
                 "home_score": str(home_score),
                 "away_score": str(away_score),
-                "stadium": stadium[:50] if stadium else "",
+                "stadium": stadium[:60],
                 "status": "종료",
                 "total_runs": home_score + away_score,
                 "winner": home_team if home_score > away_score else away_team,
@@ -190,7 +181,7 @@ class NPBCollector:
 
             for t in tables:
                 headers = [h.text.strip() for h in t.find_all("th")]
-                if "IP" in headers or ("H" in headers and "ER" in headers and "BB" in headers):
+                if "IP" in headers and "ER" in headers:
                     pitcher_tables.append(t)
 
             sides = ["away", "home"]
@@ -207,18 +198,18 @@ class NPBCollector:
                     if not name or name in ["Totals", "Total"]:
                         continue
 
+                    # IP | BF | H | BB | HB | SO | ER
                     pitchers[side].append({
                         "name": name,
                         "is_starter": is_first,
-                        "result": cells[1].text.strip() if len(cells) > 1 else "",
-                        "ip": cells[2].text.strip() if len(cells) > 2 else "0",
-                        "bf": cells[3].text.strip() if len(cells) > 3 else "0",
-                        "h": cells[4].text.strip() if len(cells) > 4 else "0",
-                        "hr": cells[5].text.strip() if len(cells) > 5 else "0",
-                        "bb": cells[6].text.strip() if len(cells) > 6 else "0",
-                        "k": cells[7].text.strip() if len(cells) > 7 else "0",
-                        "er": cells[8].text.strip() if len(cells) > 8 else "0",
-                        "era": cells[9].text.strip() if len(cells) > 9 else "0.00"
+                        "result": "",
+                        "ip": cells[1].text.strip() if len(cells) > 1 else "0",
+                        "bf": cells[2].text.strip() if len(cells) > 2 else "0",
+                        "h": cells[3].text.strip() if len(cells) > 3 else "0",
+                        "bb": cells[4].text.strip() if len(cells) > 4 else "0",
+                        "hb": cells[5].text.strip() if len(cells) > 5 else "0",
+                        "k": cells[6].text.strip() if len(cells) > 6 else "0",
+                        "er": cells[7].text.strip() if len(cells) > 7 else "0",
                     })
                     is_first = False
 
@@ -234,7 +225,8 @@ class NPBCollector:
 
             for t in tables:
                 headers = [h.text.strip() for h in t.find_all("th")]
-                if "AB" in headers and "H" in headers and "RBI" in headers:
+                # NPB 영문: AB H RBI BB HP SO
+                if "AB" in headers and "RBI" in headers:
                     batter_tables.append(t)
 
             sides = ["away", "home"]
@@ -244,31 +236,26 @@ class NPBCollector:
 
                 for row in rows:
                     cells = row.find_all("td")
-                    if len(cells) < 4:
+                    if len(cells) < 3:
                         continue
                     name = cells[0].text.strip()
                     if not name or name in ["Totals", "Total"]:
                         continue
 
-                    pos = cells[1].text.strip() if len(cells) > 1 else ""
-                    ab = cells[2].text.strip() if len(cells) > 2 else "0"
-                    r = cells[3].text.strip() if len(cells) > 3 else "0"
-                    h = cells[4].text.strip() if len(cells) > 4 else "0"
-                    rbi = cells[5].text.strip() if len(cells) > 5 else "0"
-                    bb = cells[6].text.strip() if len(cells) > 6 else "0"
-                    k = cells[7].text.strip() if len(cells) > 7 else "0"
-                    avg = cells[8].text.strip() if len(cells) > 8 else ".000"
+                    # AB | H | RBI | BB | HP | SO
+                    ab = cells[1].text.strip() if len(cells) > 1 else "0"
+                    h = cells[2].text.strip() if len(cells) > 2 else "0"
+                    rbi = cells[3].text.strip() if len(cells) > 3 else "0"
+                    bb = cells[4].text.strip() if len(cells) > 4 else "0"
+                    k = cells[6].text.strip() if len(cells) > 6 else "0"
 
                     batters[side].append({
                         "name": name,
-                        "position": pos,
                         "ab": int(ab) if ab.isdigit() else 0,
-                        "runs": int(r) if r.isdigit() else 0,
                         "h": int(h) if h.isdigit() else 0,
                         "rbi": int(rbi) if rbi.isdigit() else 0,
                         "bb": int(bb) if bb.isdigit() else 0,
                         "k": int(k) if k.isdigit() else 0,
-                        "avg": avg
                     })
 
         except Exception as e:
@@ -304,7 +291,7 @@ class NPBCollector:
                         f"{game_data['away_score']}-{game_data['home_score']}"
                     )
                 else:
-                    print(f"  ⚠️ 우천취소 또는 파싱 실패 제외: {link.split('/')[-1]}")
+                    print(f"  ⚠️ 우천취소 제외: {link.split('/')[-1]}")
             except Exception as e:
                 print(f"  ❌ {link}: {e}")
 
@@ -321,4 +308,4 @@ class NPBCollector:
             f"{game['away_score']} {game['away_team']}\n"
             f"승자: {game['winner']}\n"
             f"총득점: {game['total_runs']}"
-                    )
+                )
