@@ -20,8 +20,6 @@ class NPBCollector:
             soup = BeautifulSoup(resp.text, "html.parser")
 
             game_links = []
-            # 💡 [핵심 수정 1] NPB 공식 영어 주소 패턴에 맞게 정규식 수정
-            # NPB는 s + 년월일 + 7자리 숫자 구조(예: s2026062501612.html)를 가집니다.
             pattern = re.compile(rf's{date}\d+\.html')
 
             for a in soup.find_all("a", href=True):
@@ -73,30 +71,39 @@ class NPBCollector:
             away_score = 0
             home_score = 0
             inning_scores = []
-
-            # 💡 [핵심 수정 2] NPB 영어 페이지 특유의 마침표(.) 기반 라인스코어 텍스트 대응
-            # 데이터 서식 예시: "Seibu. 0. 0. 0. 0. 0. 0. 0. 0. 0. - 0. 4. 0."
-            linescore_pattern = re.compile(
-                r'^([A-Za-z0-9\s\-\.]+?)\.\s+((?:\d+\.\s+|X\.\s*)+)-\s+(\d+)\.\s+(\d+)\.\s+(\d+)\.'
-            )
-
             linescore_rows = []
+
+            # 💡 [핵심 알고리즘 교체] 까다로운 통짜 정규식 대신, 쪼개서 분석하는 유연한 방식으로 변경
             for line in lines:
                 if any(k in line for k in ["Innings", "Batting", "Pitching", "Totals", "vs"]):
                     continue
-                m = linescore_pattern.match(line)
-                if m:
-                    linescore_rows.append(m)
+                
+                # 라인 스코어 줄 특징: 하이픈 '-'이 들어가고 마침표 '.'가 여러 개 존재함
+                if '-' in line and line.count('.') >= 4:
+                    # 모든 공백을 없애고 마침표 기준으로 쪼갬
+                    clean_line = line.replace(' ', '')
+                    tokens = [t for t in clean_line.split('.') if t]
+                    
+                    # 하이픈을 기준으로 이닝 스코어와 총점 분리 시도
+                    if '-' in tokens:
+                        linescore_rows.append(tokens)
 
+            # 정상적으로 두 팀의 스코어 라인이 검출되었을 때
             if len(linescore_rows) >= 2:
-                for idx, m in enumerate(linescore_rows[:2]):
-                    inning_part = m.group(2).strip()
-                    total_r = int(m.group(3))
-                    
-                    # 마침표 기준으로 스플릿 후 빈값 제거
-                    inning_tokens = [t.strip() for t in inning_part.split('.') if t.strip()]
-                    
-                    for i, token in enumerate(inning_tokens):
+                for idx, tokens in enumerate(linescore_rows[:2]):
+                    # 구조: [팀명, 1회, 2회, ..., '-', 총점R, 안타H, 실책E]
+                    try:
+                        dash_index = tokens.index('-')
+                        # 팀명 분리
+                        t_name = tokens[0]
+                        # 이닝 리스트 추출
+                        innings = tokens[1:dash_index]
+                        # 총 득점(R) 추출
+                        total_r = int(tokens[dash_index + 1])
+                    except (ValueError, IndexError):
+                        continue
+
+                    for i, token in enumerate(innings):
                         r = int(token) if token.isdigit() else 0
                         
                         if idx == 0:
@@ -112,22 +119,26 @@ class NPBCollector:
 
                     if idx == 0:
                         away_score = total_r
+                        if not away_team:
+                            away_team = t_name
                     else:
                         home_score = total_r
+                        if not home_team:
+                            home_team = t_name
 
-            # 정규식 미매칭 시 안전장치 (타이틀 기반 임시 추출)
-            if not inning_scores and away_team and home_team:
-                # 라인스코어 매칭이 아예 실패하더라도 최소 정보 제공을 위해 0-0 기본값 구성
-                inning_scores = [{"inning": 1, "away": 0, "home": 0}]
+            # 만약 매칭이 안 됐다면 최소한 타이틀 스코어라도 찾아내는 서브 백업 로직
+            if not inning_scores and title:
+                # 타이틀 예시: "(Jun 21) Yomiuri 3 vs Chunichi 2 | NPB"
+                title_score_match = re.search(rf'{away_team}\s+(\d+)\s+vs\s+{home_team}\s+(\d+)', title.text)
+                if title_score_match:
+                    away_score = int(title_score_match.group(1))
+                    home_score = int(title_score_match.group(2))
+                    inning_scores = [{"inning": 1, "away": away_score, "home": home_score}]
 
             if not inning_scores:
                 return {}
 
-            if not away_team and len(linescore_rows) >= 2:
-                away_team = linescore_rows[0].group(1).replace('.', '').strip()
-                home_team = linescore_rows[1].group(1).replace('.', '').strip()
-
-            # 투수 스크랩 부분 (WP, LP 뒤에 마침표나 공백 유연하게 매칭)
+            # 나머지 투수/타자/구장 파싱은 유지
             wp = ""
             lp = ""
             wp_match = re.search(r'WP\s*:\s*([^\n\(]+)', page_text)
