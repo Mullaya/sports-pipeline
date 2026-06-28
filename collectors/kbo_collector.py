@@ -26,34 +26,57 @@ class KBOCollector:
     }
 
     def get_game_ids(self, date: str) -> list:
-        payload = {
-            "leagueId": "1",
-            "seriesId": "0",
-            "gameDate": date
-        }
+        year = date[:4]
+        month = date[4:6]
+        day = date[6:8]
 
-        try:
-            resp = requests.post(
-                f"{self.BASE_URL}/ws/Schedule.asmx/GetScheduleList",
-                data=payload,
-                headers=self.HEADERS,
-                timeout=15
-            )
-            soup = BeautifulSoup(resp.text, "lxml-xml")
+        date_formats = [
+            date,
+            f"{year}-{month}-{day}",
+            f"{year}.{month}.{day}",
+            f"{year}/{month}/{day}",
+        ]
 
-            game_ids = []
-            for game in soup.find_all("game"):
-                game_id = game.find("gameId")
-                status = game.find("statusInfo")
-                if game_id and status and status.text == "종료":
-                    game_ids.append(game_id.text)
+        for date_fmt in date_formats:
+            payload = {
+                "leagueId": "1",
+                "seriesId": "0",
+                "gameDate": date_fmt
+            }
 
-            print(f"  [KBO] gameId {len(game_ids)}개 수집: {game_ids}")
-            return game_ids
+            try:
+                resp = requests.post(
+                    f"{self.BASE_URL}/ws/Schedule.asmx/GetScheduleList",
+                    data=payload,
+                    headers=self.HEADERS,
+                    timeout=15
+                )
 
-        except Exception as e:
-            print(f"  ❌ gameId 수집 실패: {e}")
-            return []
+                soup = BeautifulSoup(resp.text, "lxml-xml")
+                all_games = soup.find_all("game")
+
+                print(f"  [KBO] 날짜형식 {date_fmt} → {len(all_games)}개 경기 발견")
+
+                game_ids = []
+                for game in all_games:
+                    game_id = game.find("gameId")
+                    status = game.find("statusInfo")
+                    status_text = status.text if status else ""
+                    print(f"    gameId: {game_id.text if game_id else 'N/A'} | status: {status_text}")
+
+                    if game_id and status and status.text == "종료":
+                        game_ids.append(game_id.text)
+
+                if game_ids:
+                    print(f"  [KBO] gameId {len(game_ids)}개 수집: {game_ids}")
+                    return game_ids
+
+            except Exception as e:
+                print(f"  ⚠️ {date_fmt} 실패: {e}")
+                continue
+
+        print(f"  [KBO] 모든 날짜 형식 실패")
+        return []
 
     def get_game_result(self, game_id: str) -> dict:
         url = (
@@ -69,7 +92,6 @@ class KBOCollector:
             print(f"  ❌ 경기 결과 수집 실패 {game_id}: {e}")
             return {}
 
-        # gameId에서 팀코드 추출
         date = game_id[:8]
         away_code = game_id[8:10]
         home_code = game_id[10:12]
@@ -77,7 +99,6 @@ class KBOCollector:
         away_team = self.TEAM_CODES.get(away_code, away_code)
         home_team = self.TEAM_CODES.get(home_code, home_code)
 
-        # 스코어
         home_score = 0
         away_score = 0
 
@@ -88,7 +109,6 @@ class KBOCollector:
                 try:
                     away_cells = rows[1].find_all("td")
                     home_cells = rows[2].find_all("td")
-                    # R 컬럼 (뒤에서 3번째)
                     if len(away_cells) >= 3:
                         away_score = int(away_cells[-3].text.strip() or 0)
                     if len(home_cells) >= 3:
@@ -100,7 +120,6 @@ class KBOCollector:
         pitchers = self._parse_pitchers(soup)
         batters = self._parse_batters(soup)
 
-        # 구장 정보
         stadium = ""
         stadium_tag = soup.find("span", class_="stadium")
         if stadium_tag:
@@ -142,8 +161,7 @@ class KBOCollector:
                 return []
 
             headers = rows[0].find_all(["th", "td"])
-            # 마지막 3개(R, H, E) 제외
-            num_innings = len(headers) - 4  # 팀명 + R + H + E
+            num_innings = len(headers) - 4
 
             away_cells = rows[1].find_all("td")
             home_cells = rows[2].find_all("td")
@@ -315,4 +333,4 @@ class KBOCollector:
             f"{game['away_score']} {game['away_team']}\n"
             f"승자: {game['winner']}\n"
             f"총득점: {game['total_runs']}"
-                                        )
+                    )
