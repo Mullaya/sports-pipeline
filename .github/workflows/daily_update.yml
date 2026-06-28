@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       date:
-        description: '수집 날짜 YYYYMMDD (미입력시 어제)'
+        description: '수집 날짜 YYYYMMDD'
         required: false
 
 jobs:
@@ -27,9 +27,8 @@ jobs:
 
       - name: 데이터 수집 실행
         env:
-        GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
         run: |
           if [ -n "${{ github.event.inputs.date }}" ]; then
             python main.py ${{ github.event.inputs.date }}
