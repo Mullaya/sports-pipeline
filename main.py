@@ -1,55 +1,77 @@
 import sys
 import os
 from datetime import datetime, timedelta
-from collectors.kbo_collector import KBOCollector
 from collectors.npb_collector import NPBCollector
 from collectors.mlb_collector import MLBCollector
 from uploader.github_uploader import GitHubUploader
 
-def run_daily(date: str = None):
-    if not date:
-        date = (datetime.now() - timedelta(days=1)).strftime("%Y%m%d")
+def get_dates():
+    """
+    KST 기준 어제 날짜 계산
+    MLB는 KST -1일 추가 적용 (시차 보정)
+    """
+    kst_yesterday = (datetime.utcnow() + timedelta(hours=9) - timedelta(days=1))
+    
+    # NPB/KBO: KST 어제
+    base_date = kst_yesterday.strftime("%Y%m%d")
+    
+    # MLB: KST 어제 = 미국 기준 그제 경기
+    # KST 06:00 이후면 미국 전날 경기 종료 확인 가능
+    mlb_date = (kst_yesterday - timedelta(days=1)).strftime("%Y%m%d")
+    
+    return base_date, mlb_date
 
-    print(f"===== {date} 수집 시작 =====")
+def run_daily(date: str = None, mlb_date: str = None):
+    if not date:
+        date, mlb_date = get_dates()
+    if not mlb_date:
+        mlb_date = (datetime.strptime(date, "%Y%m%d") - timedelta(days=1)).strftime("%Y%m%d")
+
+    print(f"===== 수집 시작 =====")
+    print(f"NPB 날짜: {date} (KST 기준)")
+    print(f"MLB 날짜: {mlb_date} (미국 현지 기준)")
 
     uploader = GitHubUploader()
 
-    collectors = {
-        "NPB": NPBCollector(),
-        "MLB": MLBCollector(),
-    }
+    # NPB
+    try:
+        npb = NPBCollector()
+        data = npb.collect_daily(date)
+        if data["games"]:
+            uploader.upload_json(data, "NPB", date, "daily")
+            player_data = extract_player_data(data, "NPB", date)
+            if player_data["players"]:
+                uploader.upload_json(player_data, "NPB", date, "players")
+            print(f"  [NPB] {len(data['games'])}경기 완료")
+        else:
+            print(f"  [NPB] 경기 없음")
+    except Exception as e:
+        print(f"  [NPB] 실패: {e}")
 
-    for league, collector in collectors.items():
-        try:
-            data = collector.collect_daily(date)
+    # MLB (시차 보정 날짜)
+    try:
+        mlb = MLBCollector()
+        data = mlb.collect_daily(mlb_date)
+        if data["games"]:
+            uploader.upload_json(data, "MLB", mlb_date, "daily")
+            player_data = extract_player_data(data, "MLB", mlb_date)
+            if player_data["players"]:
+                uploader.upload_json(player_data, "MLB", mlb_date, "players")
+            print(f"  [MLB] {len(data['games'])}경기 완료")
+        else:
+            print(f"  [MLB] 경기 없음")
+    except Exception as e:
+        print(f"  [MLB] 실패: {e}")
 
-            if data["games"]:
-                # 경기 결과 업로드
-                uploader.upload_json(data, league, date, "daily")
-                print(f"  [{league}] {len(data['games'])}경기 업로드 완료")
-
-                # 선수별 데이터 분리 업로드
-                player_data = extract_player_data(data, league, date)
-                if player_data["players"]:
-                    uploader.upload_json(player_data, league, date, "players")
-                    print(f"  [{league}] 선수 데이터 업로드 완료")
-            else:
-                print(f"  [{league}] 경기 없음")
-
-        except Exception as e:
-            print(f"  [{league}] 실패: {e}")
-
-    print(f"===== {date} 완료 =====")
+    print(f"===== 완료 =====")
 
 def extract_player_data(data: dict, league: str, date: str) -> dict:
-    """경기 데이터에서 선수별 데이터 추출"""
     players = {}
 
     for game in data["games"]:
         home = game.get("home_team", "")
         away = game.get("away_team", "")
 
-        # 투수 데이터
         for side, team in [("home_pitchers", home), ("away_pitchers", away)]:
             for p in game.get(side, []):
                 name = p.get("name", "")
@@ -77,7 +99,6 @@ def extract_player_data(data: dict, league: str, date: str) -> dict:
                     "pitches": p.get("pitches", 0)
                 })
 
-        # 타자 데이터
         for side, team in [("home_batters", home), ("away_batters", away)]:
             for b in game.get(side, []):
                 name = b.get("name", "")
@@ -112,5 +133,9 @@ def extract_player_data(data: dict, league: str, date: str) -> dict:
     }
 
 if __name__ == "__main__":
-    date = sys.argv[1] if len(sys.argv) > 1 else None
-    run_daily(date)
+    if len(sys.argv) == 3:
+        run_daily(sys.argv[1], sys.argv[2])
+    elif len(sys.argv) == 2:
+        run_daily(sys.argv[1])
+    else:
+        run_daily()
