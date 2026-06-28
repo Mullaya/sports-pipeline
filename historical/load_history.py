@@ -1,19 +1,18 @@
 import sys
+import os
 import time
 from datetime import datetime, timedelta
 
-sys.path.append("..")
+# 루트 경로 추가
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from collectors.mlb_collector import MLBCollector
 from collectors.kbo_collector import KBOCollector
 from collectors.npb_collector import NPBCollector
 from uploader.github_uploader import GitHubUploader
+from main import extract_player_data
 
 def load_history(league: str, start: str, end: str):
-    """
-    league: 'MLB' / 'KBO' / 'NPB'
-    start/end: 'YYYYMMDD'
-    """
     collectors = {
         "MLB": MLBCollector(),
         "KBO": KBOCollector(),
@@ -43,15 +42,12 @@ def load_history(league: str, start: str, end: str):
             data = collector.collect_daily(date_str)
 
             if data["games"]:
-                # 경기 결과
                 ok = uploader.upload_json(data, league, date_str, "historical")
                 if ok:
                     success += 1
                 else:
                     fail += 1
 
-                # 선수 데이터
-                from main import extract_player_data
                 player_data = extract_player_data(data, league, date_str)
                 if player_data["players"]:
                     uploader.upload_json(
@@ -65,13 +61,12 @@ def load_history(league: str, start: str, end: str):
             fail += 1
 
         current += timedelta(days=1)
-        time.sleep(1)  # API 부하 방지
+        time.sleep(1)
 
     print(f"\n===== 완료 =====")
     print(f"성공: {success} | 실패: {fail} | 경기없음: {skip}")
 
 if __name__ == "__main__":
-    # 사용법: python load_history.py MLB 20240301 20260626
     league = sys.argv[1]
     start = sys.argv[2]
     end = sys.argv[3]
