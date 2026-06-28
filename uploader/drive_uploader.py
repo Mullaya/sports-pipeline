@@ -7,6 +7,7 @@ import os
 class DriveUploader:
 
     SCOPES = ["https://www.googleapis.com/auth/drive"]
+    OWNER_EMAIL = "lbs5208@gmail.com"
 
     FOLDER_IDS = {
         "KBO": "1OupJNXwKmIhZKRhD4MGOS47ABFQvW1qn",
@@ -55,8 +56,24 @@ class DriveUploader:
             fields="id, name"
         ).execute()
 
+        file_id = file["id"]
+
+        # 소유권 이전: 서비스 계정 → 개인 구글 계정
+        try:
+            self.service.permissions().create(
+                fileId=file_id,
+                transferOwnership=True,
+                body={
+                    "type": "user",
+                    "role": "owner",
+                    "emailAddress": self.OWNER_EMAIL
+                }
+            ).execute()
+        except Exception as e:
+            print(f"  ⚠️ 소유권 이전 실패 (무시): {e}")
+
         print(f"  📁 {league}/{subfolder}/{filename} 업로드 완료")
-        return file["id"]
+        return file_id
 
     def _get_or_create_folder(self, name: str, parent_id: str) -> str:
         results = self.service.files().list(
