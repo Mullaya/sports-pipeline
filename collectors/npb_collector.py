@@ -114,7 +114,6 @@ class NPBCollector:
                             if not away_team: away_team = away_row[0]
                             if not home_team: home_team = home_row[0]
 
-                            # 💡 [핵심 수정] 빈 문자열('') 대처가 가능하도록 정수 변환부 예외처리 차단
                             try:
                                 away_score = int(away_row[r_idx]) if away_row[r_idx].isdigit() else 0
                             except:
@@ -138,11 +137,10 @@ class NPBCollector:
                                     h_inn = int(token) if token.isdigit() else 0
 
                                 inning_scores.append({"inning": i + 1, "away": a_inn, "home": h_inn})
-                except Exception as table_err:
-                    # 테이블 분석하다 에러 나도 멈추지 않고 아래 타이틀 백업 로직으로 토스
+                except:
                     pass
 
-            # 💡 강력한 타이틀 기반 텍스트 점수 스크랩 유지 (취소 안 된 경기는 무조건 여기서 점수 복구)
+            # 강력한 타이틀 기반 텍스트 점수 스크랩 유지
             if (not inning_scores or (away_score == 0 and home_score == 0)) and title:
                 title_score_match = re.search(r'([A-Za-z0-9\s\-\.]+?)\s+(\d+)\s+vs\s+([A-Za-z0-9\s\-\.]+?)\s+(\d+)', title.text)
                 if title_score_match:
@@ -152,7 +150,6 @@ class NPBCollector:
                     home_score = int(title_score_match.group(4))
                     inning_scores = [{"inning": 1, "away": away_score, "home": home_score}]
 
-            # 이닝 스코어도 없고 점수도 복구가 안 된다면 최종 취소로 판단
             if not inning_scores and away_score == 0 and home_score == 0:
                 return {"status": "우천취소"}
 
@@ -310,7 +307,12 @@ class NPBCollector:
                 elif game_data:
                     game_data["date"] = date
                     game_data["summary"] = self._make_summary(game_data)
-                    result["games..append(game_data)"] if "games" in result else result.setdefault("games", []).append(game_data)
+                    
+                    # 💡 [오타 완벽 수정] 딕셔너리에 리스트가 없으면 초기화 후 정상 append
+                    if "games" not in result:
+                        result["games"] = []
+                    result["games"].append(game_data)
+                    
                     print(
                         f"  ✅ {game_data['away_team']} vs "
                         f"{game_data['home_team']} "
