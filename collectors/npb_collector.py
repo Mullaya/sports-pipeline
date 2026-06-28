@@ -76,13 +76,17 @@ class NPBCollector:
             home_score = 0
             inning_scores = []
 
-            # 패턴: "SoftBank 0 0 1 3 2 0 2 0 0 - 8 12 0"
+            # 💡 [개선] 문자열 매칭 조건을 완화한 새 정규식 패턴
+            # 팀명 뒤에 숫자(및 X)가 나열되고, 마지막에 총점(R), 안타(H), 실책(E)이 붙는 구조 파싱
             linescore_pattern = re.compile(
-                r'^([A-Za-z][A-Za-z\s\-\.]+?)\s+((?:\d+\s+)*)- \s*(\d+)\s+(\d+)\s+(\d+)\s*$'
+                r'^(.+?)\s+((?:\d+\s+X?\s*)+)(?:-?\s*)(\d+)\s+(\d+)\s+(\d+)\s*$'
             )
 
             linescore_rows = []
             for line in lines:
+                # 불필요한 테이블 헤더 라인 제외
+                if any(k in line for k in ["Innings", "Batting", "Pitching", "Totals"]):
+                    continue
                 m = linescore_pattern.match(line)
                 if m:
                     linescore_rows.append(m)
@@ -91,9 +95,12 @@ class NPBCollector:
                 for idx, m in enumerate(linescore_rows[:2]):
                     inning_part = m.group(2).strip()
                     total_r = int(m.group(3))
-                    inning_nums = [int(x) for x in inning_part.split() if x.isdigit()]
-
-                    for i, r in enumerate(inning_nums):
+                    
+                    inning_tokens = inning_part.split()
+                    for i, token in enumerate(inning_tokens):
+                        # 9회말 공격 없음 등의 'X' 표시는 0점 처리
+                        r = int(token) if token.isdigit() else 0
+                        
                         if idx == 0:
                             if len(inning_scores) <= i:
                                 inning_scores.append({"inning": i+1, "away": r, "home": 0})
@@ -110,8 +117,14 @@ class NPBCollector:
                     else:
                         home_score = total_r
 
+            # 이닝 스코어가 유실되었다면 파싱 에러(우천취소 판단 유도) 처리
             if not inning_scores:
                 return {}
+
+            # 타이틀에서 팀명을 못 가져왔을 경우, 라인스코어 텍스트에서 강제 추출
+            if not away_team and len(linescore_rows) >= 2:
+                away_team = linescore_rows[0].group(1).strip()
+                home_team = linescore_rows[1].group(1).strip()
 
             wp = ""
             lp = ""
@@ -195,7 +208,6 @@ class NPBCollector:
                     if not name or name in ["Totals", "Total"]:
                         continue
 
-                    # IP | BF | H | BB | HB | SO | ER
                     pitchers[side].append({
                         "name": name,
                         "is_starter": is_first,
@@ -238,7 +250,6 @@ class NPBCollector:
                     if not name or name in ["Totals", "Total"]:
                         continue
 
-                    # AB | H | RBI | BB | HP | SO
                     ab = cells[1].text.strip() if len(cells) > 1 else "0"
                     h = cells[2].text.strip() if len(cells) > 2 else "0"
                     rbi = cells[3].text.strip() if len(cells) > 3 else "0"
