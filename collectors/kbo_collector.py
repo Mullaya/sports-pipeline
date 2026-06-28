@@ -1,120 +1,107 @@
 import requests
-from bs4 import BeautifulSoup
-from datetime import datetime
 import json
 import time
+from datetime import datetime
 
 class KBOCollector:
-    
-    BASE_URL = "https://www.koreabaseball.com"
-    SCHEDULE_URL = f"{BASE_URL}/ws/Schedule.asmx/GetScheduleList"
-    BOXSCORE_URL = f"{BASE_URL}/ws/Game.asmx/GetBoxScore"
-    
+
     HEADERS = {
-        "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
-        "Referer": "https://www.koreabaseball.com/Schedule/GameCenter/Main.aspx",
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+        "Referer": "https://sports.naver.com/kbaseball/schedule/index"
     }
 
     def get_daily_schedule(self, date: str) -> list:
-        payload = {
-            "leagueId": "1",
-            "seriesId": "0",
-            "gameDate": date
-        }
-        
-        resp = requests.post(
-            self.SCHEDULE_URL,
-            data=payload,
-            headers=self.HEADERS,
-            timeout=10
+        # date: YYYYMMDD
+        url = (
+            "https://sports.naver.com/kbaseball/schedule/index"
+            f"?date={date}"
         )
-        
+
+        resp = requests.get(url, headers=self.HEADERS, timeout=10)
+
+        # 네이버 스포츠 JSON API
+        api_url = (
+            "https://api-gw.sports.naver.com/schedule/games"
+            f"?sports=kbaseball&date={date}&fields=basic"
+        )
+
+        resp = requests.get(api_url, headers=self.HEADERS, timeout=10)
+        data = resp.json()
+
         games = []
-        soup = BeautifulSoup(resp.text, "lxml-xml")
-        
-        for game in soup.find_all("game"):
-            game_id = game.find("gameId")
-            if not game_id:
+        for game in data.get("result", {}).get("games", []):
+            if game.get("statusCode") != "FINAL":
                 continue
             games.append({
-                "game_id": game_id.text,
-                "home_team": game.find("homeTeamName").text,
-                "away_team": game.find("awayTeamName").text,
-                "home_score": game.find("homeScore").text,
-                "away_score": game.find("awayScore").text,
-                "stadium": game.find("stadiumName").text,
-                "status": game.find("statusInfo").text
+                "game_id": game.get("gameId", ""),
+                "home_team": game.get("homeTeamName", ""),
+                "away_team": game.get("awayTeamName", ""),
+                "home_score": str(game.get("homeTeamScore", 0)),
+                "away_score": str(game.get("awayTeamScore", 0)),
+                "stadium": game.get("stadiumName", ""),
+                "status": "종료"
             })
-        
+
         return games
 
     def get_boxscore(self, game_id: str) -> dict:
-        payload = {
-            "gameId": game_id,
-            "leagueId": "1"
-        }
-        
-        resp = requests.post(
-            self.BOXSCORE_URL,
-            data=payload,
-            headers=self.HEADERS,
-            timeout=10
+        api_url = (
+            f"https://api-gw.sports.naver.com/schedule/games/{game_id}"
+            f"/record?fields=pitchers"
         )
-        
-        soup = BeautifulSoup(resp.text, "lxml-xml")
-        
+
+        resp = requests.get(api_url, headers=self.HEADERS, timeout=10)
+        data = resp.json()
+
         pitchers = {"home": [], "away": []}
-        for pitcher in soup.find_all("pitcher"):
-            team_type = "home" if pitcher.find("teamType").text == "H" else "away"
-            is_starter = pitcher.find("startYn")
-            pitchers[team_type].append({
-                "name": pitcher.find("playerName").text,
-                "result": pitcher.find("pitchResult").text if pitcher.find("pitchResult") else "",
-                "ip": pitcher.find("inning").text if pitcher.find("inning") else "0",
-                "h": pitcher.find("hit").text if pitcher.find("hit") else "0",
-                "bb": pitcher.find("bb").text if pitcher.find("bb") else "0",
-                "k": pitcher.find("kk").text if pitcher.find("kk") else "0",
-                "er": pitcher.find("er").text if pitcher.find("er") else "0",
-                "era": pitcher.find("era").text if pitcher.find("era") else "0",
-                "is_starter": is_starter.text == "Y" if is_starter else False
-            })
-        
+
+        result = data.get("result", {})
+        for side in ["home", "away"]:
+            for p in result.get(f"{side}Pitchers", []):
+                pitchers[side].append({
+                    "name": p.get("playerName", ""),
+                    "result": p.get("pitchResult", ""),
+                    "ip": p.get("inning", "0"),
+                    "h": str(p.get("hit", 0)),
+                    "bb": str(p.get("baseOnBall", 0)),
+                    "k": str(p.get("strikeOut", 0)),
+                    "er": str(p.get("earnedRun", 0)),
+                    "era": str(p.get("era", "0.00")),
+                    "is_starter": p.get("startYn", "N") == "Y"
+                })
+
         return {"pitchers": pitchers}
 
     def collect_daily(self, date: str) -> dict:
         print(f"[KBO] {date} 수집 시작")
-        
+
         games = self.get_daily_schedule(date)
         result = {
             "date": date,
             "league": "KBO",
             "games": []
         }
-        
+
         for game in games:
-            if game["status"] != "종료":
-                continue
-            
             time.sleep(0.5)
-            
+
             try:
                 boxscore = self.get_boxscore(game["game_id"])
             except Exception as e:
-                print(f"  ⚠️ 박스스코어 오류 {game['game_id']}: {e}")
+                print(f"  ⚠️ 박스스코어 오류: {e}")
                 boxscore = {"pitchers": {"home": [], "away": []}}
-            
-            home_score = int(game["home_score"]) if game["home_score"] else 0
-            away_score = int(game["away_score"]) if game["away_score"] else 0
+
+            home_score = int(game["home_score"] or 0)
+            away_score = int(game["away_score"] or 0)
             total_runs = home_score + away_score
-            
+
             home_starter = next(
                 (p for p in boxscore["pitchers"]["home"] if p["is_starter"]), {}
             )
             away_starter = next(
                 (p for p in boxscore["pitchers"]["away"] if p["is_starter"]), {}
             )
-            
+
             game_data = {
                 **game,
                 "total_runs": total_runs,
@@ -123,10 +110,10 @@ class KBOCollector:
                 "away_starter": away_starter,
                 "summary": self._make_summary(game, home_starter, away_starter, total_runs)
             }
-            
+
             result["games"].append(game_data)
             print(f"  ✅ {game['away_team']} vs {game['home_team']} {away_score}-{home_score}")
-        
+
         return result
 
     def _make_summary(self, game, home_starter, away_starter, total_runs) -> str:
