@@ -1,18 +1,19 @@
 import requests
-from bs4 import BeautifulSoup
+import json
 import time
 from itertools import permutations
 
 class KBOCollector:
 
-    MOBILE_URL = "https://m.koreabaseball.com"
+    BASE_URL = "https://www.koreabaseball.com"
 
-    MOBILE_HEADERS = {
-        "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/605.1.15",
-        "Referer": "https://m.koreabaseball.com"
+    HEADERS = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+        "Referer": "https://www.koreabaseball.com",
+        "X-Requested-With": "XMLHttpRequest",
+        "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8"
     }
 
-    # 모든 팀 코드
     TEAM_CODES = {
         "HH": "한화", "OB": "두산", "LG": "LG",
         "SS": "삼성", "SK": "SSG", "KT": "KT",
@@ -21,224 +22,243 @@ class KBOCollector:
     }
 
     def get_game_ids(self, date: str) -> list:
-        """
-        모든 팀 조합으로 gameId 생성 후 실제 존재하는 경기 필터링
-        """
-        team_codes = list(self.TEAM_CODES.keys())
-        game_ids = []
+        """KBO 내부 JSON API로 당일 경기 목록 수집"""
 
-        for away, home in permutations(team_codes, 2):
-            game_id = f"{date}{away}{home}0"
-            url = (
-                f"{self.MOBILE_URL}/Kbo/Live/Record.aspx"
-                f"?p_le_id=1&p_sr_id=0&p_g_id={game_id}"
-            )
+        # KBO 내부 스케줄 API
+        api_urls = [
+            f"{self.BASE_URL}/ws/Schedule.asmx/GetScheduleList",
+            f"{self.BASE_URL}/ws/game.asmx/GetScheduleList",
+        ]
 
+        payloads = [
+            {"leagueId": "1", "seriesId": "0", "gameDate": date},
+            {"leId": "1", "srId": "0", "gameDate": date},
+            {"leagueId": "1", "seriesId": "0", "gameDate": date,
+             "teamCode": "", "stadiumCode": ""},
+        ]
+
+        for url in api_urls:
+            for payload in payloads:
+                try:
+                    resp = requests.post(
+                        url,
+                        data=payload,
+                        headers=self.HEADERS,
+                        timeout=10
+                    )
+                    text = resp.text.strip()
+
+                    # XML 파싱
+                    if "<game>" in text or "<Game>" in text:
+                        from bs4 import BeautifulSoup
+                        soup = BeautifulSoup(text, "lxml-xml")
+                        games = soup.find_all("game") or soup.find_all("Game")
+                        game_ids = []
+                        for g in games:
+                            gid = g.find("gameId") or g.find("GameId")
+                            status = g.find("statusInfo") or g.find("StatusInfo")
+                            if gid:
+                                status_text = status.text if status else ""
+                                print(f"    {gid.text} | {status_text}")
+                                if "종료" in status_text:
+                                    game_ids.append(gid.text)
+                        if game_ids:
+                            return game_ids
+
+                    # JSON 파싱
+                    if text.startswith("{") or text.startswith("["):
+                        data = json.loads(text)
+                        print(f"    JSON 응답: {str(data)[:200]}")
+
+                except Exception as e:
+                    print(f"    {url} 실패: {e}")
+                    continue
+
+        # 모든 API 실패 시 게임스케줄 페이지 파싱 시도
+        return self._scrape_schedule_page(date)
+
+    def _scrape_schedule_page(self, date: str) -> list:
+        """KBO 경기일정 페이지 직접 파싱"""
+        from bs4 import BeautifulSoup
+
+        year = date[:4]
+        month = date[4:6]
+        day = date[6:8]
+
+        urls = [
+            f"{self.BASE_URL}/Schedule/Schedule.aspx",
+            f"https://m.koreabaseball.com/Kbo/Schedule.aspx",
+        ]
+
+        for url in urls:
             try:
-                resp = requests.get(
-                    url,
-                    headers=self.MOBILE_HEADERS,
-                    timeout=8
-                )
+                headers = {**self.HEADERS,
+                          "Content-Type": "text/html"}
+                resp = requests.get(url, headers=headers, timeout=10)
                 resp.encoding = "utf-8"
                 soup = BeautifulSoup(resp.text, "html.parser")
 
-                # 경기가 존재하면 스코어보드가 있음
-                score_table = soup.find("table", class_="tbl-score")
-                if score_table:
-                    game_ids.append(game_id)
-                    print(f"    ✅ 경기 발견: {game_id}")
+                # gameId 패턴 찾기
+                game_ids = []
+                import re
+                pattern = re.compile(
+                    rf'{date}[A-Z]{{4}}\d'
+                )
+                text = resp.text
+                found = pattern.findall(text)
+                for gid in found:
+                    if gid not in game_ids:
+                        game_ids.append(gid)
+
+                if game_ids:
+                    print(f"  [KBO] 페이지 파싱으로 {len(game_ids)}개 발견: {game_ids}")
+                    return game_ids
+
+            except Exception as e:
+                print(f"    스케줄 페이지 파싱 실패: {e}")
+
+        # 마지막 수단: gameId 직접 생성 + 검증
+        return self._brute_force_game_ids(date)
+
+    def _brute_force_game_ids(self, date: str) -> list:
+        """팀 조합으로 gameId 생성 후 KBO JSON API로 검증"""
+        print(f"  [KBO] 브루트포스 방식으로 gameId 검색...")
+
+        team_codes = list(self.TEAM_CODES.keys())
+        found = []
+
+        for away, home in permutations(team_codes, 2):
+            game_id = f"{date}{away}{home}0"
+
+            # KBO 게임 데이터 API
+            api_url = f"{self.BASE_URL}/ws/Game.asmx/GetScoreBoardScroll"
+            payload = {
+                "leId": "1",
+                "srId": "0",
+                "seasonId": date[:4],
+                "gameId": game_id
+            }
+
+            try:
+                resp = requests.post(
+                    api_url,
+                    data=payload,
+                    headers=self.HEADERS,
+                    timeout=5
+                )
+                text = resp.text.strip()
+
+                # 유효한 응답이면 경기 존재
+                if len(text) > 100 and ("<" in text or "{" in text):
+                    if "오류" not in text and "error" not in text.lower():
+                        found.append(game_id)
+                        print(f"    ✅ 경기 발견: {game_id}")
 
             except Exception:
-                continue
+                pass
 
-            time.sleep(0.2)
+            time.sleep(0.15)
 
-        print(f"  [KBO] {len(game_ids)}개 경기 발견")
-        return game_ids
+        print(f"  [KBO] {len(found)}개 경기 발견")
+        return found
 
-    def get_game_result(self, game_id: str) -> dict:
-        url = (
-            f"{self.MOBILE_URL}/Kbo/Live/Record.aspx"
-            f"?p_le_id=1&p_sr_id=0&p_g_id={game_id}"
-        )
+    def get_boxscore(self, game_id: str) -> dict:
+        """KBO 박스스코어 JSON API"""
 
-        try:
-            resp = requests.get(url, headers=self.MOBILE_HEADERS, timeout=15)
-            resp.encoding = "utf-8"
-            soup = BeautifulSoup(resp.text, "html.parser")
-        except Exception as e:
-            print(f"  ❌ {game_id}: {e}")
-            return {}
-
-        date = game_id[:8]
-        away_code = game_id[8:10]
-        home_code = game_id[10:12]
-
-        away_team = self.TEAM_CODES.get(away_code, away_code)
-        home_team = self.TEAM_CODES.get(home_code, home_code)
-
-        home_score = 0
-        away_score = 0
-
-        score_table = soup.find("table", class_="tbl-score")
-        if score_table:
-            rows = score_table.find_all("tr")
-            if len(rows) >= 3:
-                try:
-                    away_cells = rows[1].find_all("td")
-                    home_cells = rows[2].find_all("td")
-                    if len(away_cells) >= 3:
-                        v = away_cells[-3].text.strip()
-                        away_score = int(v) if v.isdigit() else 0
-                    if len(home_cells) >= 3:
-                        v = home_cells[-3].text.strip()
-                        home_score = int(v) if v.isdigit() else 0
-                except Exception:
-                    pass
-
-        inning_scores = self._parse_innings(soup)
-        pitchers = self._parse_pitchers(soup)
-        batters = self._parse_batters(soup)
-
-        return {
-            "game_id": game_id,
-            "date": date,
-            "home_team": home_team,
-            "away_team": away_team,
-            "home_score": str(home_score),
-            "away_score": str(away_score),
-            "stadium": "",
-            "status": "종료",
-            "total_runs": home_score + away_score,
-            "winner": home_team if home_score > away_score else away_team,
-            "inning_scores": inning_scores,
-            "home_pitchers": pitchers["home"],
-            "away_pitchers": pitchers["away"],
-            "home_batters": batters["home"],
-            "away_batters": batters["away"],
-            "home_starter": next(
-                (p for p in pitchers["home"] if p.get("is_starter")), {}
-            ),
-            "away_starter": next(
-                (p for p in pitchers["away"] if p.get("is_starter")), {}
-            )
+        result = {
+            "pitchers": {"home": [], "away": []},
+            "batters": {"home": [], "away": []},
+            "inning_scores": []
         }
 
-    def _parse_innings(self, soup) -> list:
-        inning_scores = []
+        season_id = game_id[:4]
+
+        payload_base = {
+            "leId": "1",
+            "srId": "0",
+            "seasonId": season_id,
+            "gameId": game_id
+        }
+
+        # 이닝별 득점
         try:
-            score_table = soup.find("table", class_="tbl-score")
-            if not score_table:
-                return []
-            rows = score_table.find_all("tr")
-            if len(rows) < 3:
-                return []
-            headers = rows[0].find_all(["th", "td"])
-            num_innings = len(headers) - 4
-            away_cells = rows[1].find_all("td")
-            home_cells = rows[2].find_all("td")
-            for i in range(min(num_innings, 12)):
-                if i >= len(away_cells) or i >= len(home_cells):
-                    break
-                av = away_cells[i].text.strip()
-                hv = home_cells[i].text.strip()
-                inning_scores.append({
-                    "inning": i + 1,
-                    "away": int(av) if av.isdigit() else 0,
-                    "home": int(hv) if hv.isdigit() else 0
+            resp = requests.post(
+                f"{self.BASE_URL}/ws/Schedule.asmx/GetScoreBoardScroll",
+                data=payload_base,
+                headers=self.HEADERS,
+                timeout=10
+            )
+            from bs4 import BeautifulSoup
+            soup = BeautifulSoup(resp.text, "lxml-xml")
+            for i, inning in enumerate(soup.find_all("inning"), 1):
+                home_s = inning.find("homeScore")
+                away_s = inning.find("awayScore")
+                result["inning_scores"].append({
+                    "inning": i,
+                    "home": int(home_s.text) if home_s and home_s.text.isdigit() else 0,
+                    "away": int(away_s.text) if away_s and away_s.text.isdigit() else 0
                 })
         except Exception as e:
-            print(f"  ⚠️ 이닝 파싱 오류: {e}")
-        return inning_scores
+            print(f"  ⚠️ 이닝 수집 오류: {e}")
 
-    def _parse_pitchers(self, soup) -> dict:
-        pitchers = {"home": [], "away": []}
+        # 박스스코어 (투수/타자)
         try:
-            tables = soup.find_all("table")
-            pitcher_tables = []
-            for t in tables:
-                headers = [h.text.strip() for h in t.find_all("th")]
-                if "이닝" in headers and "자책" in headers:
-                    pitcher_tables.append(t)
+            resp = requests.post(
+                f"{self.BASE_URL}/ws/Schedule.asmx/GetBoxScoreScroll",
+                data=payload_base,
+                headers=self.HEADERS,
+                timeout=10
+            )
+            from bs4 import BeautifulSoup
+            soup = BeautifulSoup(resp.text, "lxml-xml")
 
-            sides = ["away", "home"]
-            for idx, table in enumerate(pitcher_tables[:2]):
-                side = sides[idx]
-                rows = table.find_all("tr")[1:]
-                is_first = True
-                for row in rows:
-                    cells = row.find_all("td")
-                    if len(cells) < 3:
-                        continue
-                    name = cells[0].text.strip()
-                    if not name:
-                        continue
-                    pitchers[side].append({
-                        "name": name,
-                        "is_starter": is_first,
-                        "result": cells[1].text.strip() if len(cells) > 1 else "",
-                        "ip": cells[2].text.strip() if len(cells) > 2 else "0",
-                        "h": cells[4].text.strip() if len(cells) > 4 else "0",
-                        "hr": cells[5].text.strip() if len(cells) > 5 else "0",
-                        "bb": cells[6].text.strip() if len(cells) > 6 else "0",
-                        "k": cells[7].text.strip() if len(cells) > 7 else "0",
-                        "er": cells[8].text.strip() if len(cells) > 8 else "0",
-                        "era": cells[9].text.strip() if len(cells) > 9 else "0.00",
-                        "pitches": cells[10].text.strip() if len(cells) > 10 else "0"
-                    })
-                    is_first = False
+            for pitcher in soup.find_all("pitcher"):
+                team_type = pitcher.find("teamType")
+                side = "home" if team_type and team_type.text == "H" else "away"
+                start_yn = pitcher.find("startYn")
+                name = pitcher.find("playerName")
+                if not name:
+                    continue
+
+                result["pitchers"][side].append({
+                    "name": name.text,
+                    "is_starter": start_yn.text == "Y" if start_yn else False,
+                    "result": pitcher.find("pitchResult").text if pitcher.find("pitchResult") else "",
+                    "ip": pitcher.find("inning").text if pitcher.find("inning") else "0",
+                    "h": pitcher.find("hit").text if pitcher.find("hit") else "0",
+                    "hr": pitcher.find("hr").text if pitcher.find("hr") else "0",
+                    "bb": pitcher.find("bb").text if pitcher.find("bb") else "0",
+                    "k": pitcher.find("kk").text if pitcher.find("kk") else "0",
+                    "er": pitcher.find("er").text if pitcher.find("er") else "0",
+                    "era": pitcher.find("era").text if pitcher.find("era") else "0.00",
+                    "pitches": pitcher.find("pitchCount").text if pitcher.find("pitchCount") else "0"
+                })
+
+            for batter in soup.find_all("batter"):
+                team_type = batter.find("teamType")
+                side = "home" if team_type and team_type.text == "H" else "away"
+                name = batter.find("playerName")
+                if not name:
+                    continue
+                order = batter.find("battingOrder")
+
+                result["batters"][side].append({
+                    "name": name.text,
+                    "order": int(order.text) if order else 0,
+                    "position": batter.find("position").text if batter.find("position") else "",
+                    "ab": int(batter.find("ab").text) if batter.find("ab") else 0,
+                    "h": int(batter.find("hit").text) if batter.find("hit") else 0,
+                    "hr": int(batter.find("hr").text) if batter.find("hr") else 0,
+                    "rbi": int(batter.find("rbi").text) if batter.find("rbi") else 0,
+                    "bb": int(batter.find("bb").text) if batter.find("bb") else 0,
+                    "k": int(batter.find("kk").text) if batter.find("kk") else 0,
+                    "avg": batter.find("avg").text if batter.find("avg") else ".000"
+                })
+
         except Exception as e:
-            print(f"  ⚠️ 투수 파싱 오류: {e}")
-        return pitchers
+            print(f"  ⚠️ 박스스코어 오류: {e}")
 
-    def _parse_batters(self, soup) -> dict:
-        batters = {"home": [], "away": []}
-        try:
-            tables = soup.find_all("table")
-            batter_tables = []
-            for t in tables:
-                headers = [h.text.strip() for h in t.find_all("th")]
-                if "타수" in headers and "안타" in headers:
-                    batter_tables.append(t)
-
-            sides = ["away", "home"]
-            for idx, table in enumerate(batter_tables[:2]):
-                side = sides[idx]
-                rows = table.find_all("tr")[1:]
-                for row in rows:
-                    cells = row.find_all("td")
-                    if len(cells) < 4:
-                        continue
-                    order_text = cells[0].text.strip()
-                    name = cells[1].text.strip() if len(cells) > 1 else ""
-                    if not name:
-                        continue
-                    pos = cells[2].text.strip() if len(cells) > 2 else ""
-                    ab = cells[3].text.strip() if len(cells) > 3 else "0"
-                    runs = cells[4].text.strip() if len(cells) > 4 else "0"
-                    h = cells[5].text.strip() if len(cells) > 5 else "0"
-                    hr = cells[6].text.strip() if len(cells) > 6 else "0"
-                    rbi = cells[7].text.strip() if len(cells) > 7 else "0"
-                    bb = cells[8].text.strip() if len(cells) > 8 else "0"
-                    k = cells[9].text.strip() if len(cells) > 9 else "0"
-                    avg = cells[10].text.strip() if len(cells) > 10 else ".000"
-                    batters[side].append({
-                        "name": name,
-                        "order": int(order_text) if order_text.isdigit() else 0,
-                        "position": pos,
-                        "ab": int(ab) if ab.isdigit() else 0,
-                        "runs": int(runs) if runs.isdigit() else 0,
-                        "h": int(h) if h.isdigit() else 0,
-                        "hr": int(hr) if hr.isdigit() else 0,
-                        "rbi": int(rbi) if rbi.isdigit() else 0,
-                        "bb": int(bb) if bb.isdigit() else 0,
-                        "k": int(k) if k.isdigit() else 0,
-                        "avg": avg
-                    })
-        except Exception as e:
-            print(f"  ⚠️ 타자 파싱 오류: {e}")
-        return batters
+        return result
 
     def collect_daily(self, date: str) -> dict:
         print(f"[KBO] {date} 수집 시작")
@@ -251,18 +271,78 @@ class KBOCollector:
 
         game_ids = self.get_game_ids(date)
 
+        if not game_ids:
+            print(f"  [KBO] 경기 없음")
+            return result
+
         for game_id in game_ids:
-            time.sleep(0.3)
+            time.sleep(0.5)
             try:
-                game_data = self.get_game_result(game_id)
-                if game_data:
-                    game_data["summary"] = self._make_summary(game_data)
-                    result["games"].append(game_data)
-                    print(
-                        f"  ✅ {game_data['away_team']} vs "
-                        f"{game_data['home_team']} "
-                        f"{game_data['away_score']}-{game_data['home_score']}"
-                    )
+                # gameId에서 팀 정보 추출
+                away_code = game_id[8:10]
+                home_code = game_id[10:12]
+                away_team = self.TEAM_CODES.get(away_code, away_code)
+                home_team = self.TEAM_CODES.get(home_code, home_code)
+
+                # 스코어 수집
+                score_resp = requests.post(
+                    f"{self.BASE_URL}/ws/Schedule.asmx/GetScoreBoardScroll",
+                    data={
+                        "leId": "1", "srId": "0",
+                        "seasonId": date[:4], "gameId": game_id
+                    },
+                    headers=self.HEADERS, timeout=10
+                )
+                from bs4 import BeautifulSoup
+                score_soup = BeautifulSoup(score_resp.text, "lxml-xml")
+
+                home_score = 0
+                away_score = 0
+                total_tag = score_soup.find("totalScore") or \
+                            score_soup.find("TotalScore")
+                if total_tag:
+                    h = total_tag.find("home") or total_tag.find("homeScore")
+                    a = total_tag.find("away") or total_tag.find("awayScore")
+                    if h:
+                        home_score = int(h.text) if h.text.isdigit() else 0
+                    if a:
+                        away_score = int(a.text) if a.text.isdigit() else 0
+
+                boxscore = self.get_boxscore(game_id)
+
+                home_starter = next(
+                    (p for p in boxscore["pitchers"]["home"] if p.get("is_starter")), {}
+                )
+                away_starter = next(
+                    (p for p in boxscore["pitchers"]["away"] if p.get("is_starter")), {}
+                )
+
+                game_data = {
+                    "game_id": game_id,
+                    "date": date,
+                    "home_team": home_team,
+                    "away_team": away_team,
+                    "home_score": str(home_score),
+                    "away_score": str(away_score),
+                    "stadium": "",
+                    "status": "종료",
+                    "total_runs": home_score + away_score,
+                    "winner": home_team if home_score > away_score else away_team,
+                    "inning_scores": boxscore["inning_scores"],
+                    "home_pitchers": boxscore["pitchers"]["home"],
+                    "away_pitchers": boxscore["pitchers"]["away"],
+                    "home_batters": boxscore["batters"]["home"],
+                    "away_batters": boxscore["batters"]["away"],
+                    "home_starter": home_starter,
+                    "away_starter": away_starter,
+                }
+                game_data["summary"] = self._make_summary(game_data)
+                result["games"].append(game_data)
+                print(
+                    f"  ✅ {away_team} vs {home_team} "
+                    f"{away_score}-{home_score}"
+                )
+
             except Exception as e:
                 print(f"  ❌ {game_id}: {e}")
 
@@ -279,4 +359,4 @@ class KBOCollector:
             f"{game['away_score']} {game['away_team']}\n"
             f"승자: {game['winner']}\n"
             f"총득점: {game['total_runs']}"
-                        )
+        )
