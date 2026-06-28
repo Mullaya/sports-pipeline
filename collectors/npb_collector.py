@@ -64,29 +64,21 @@ class NPBCollector:
 
             if title:
                 title_text = title.text.strip()
-                # "Sunday, June 21, 2026 (Scores) Nippon-Ham vs SoftBank"
                 vs_match = re.search(r'\)\s+(.+?)\s+vs\s+(.+?)(?:\s*\|)', title_text)
                 if vs_match:
                     away_team = vs_match.group(1).strip()
                     home_team = vs_match.group(2).strip()
 
-            # 라인스코어 파싱
-            # 실제 구조: "- SoftBank 0 0 1 3 2 0 2 0 0 - 8 12 0"
             page_text = soup.get_text(separator='\n')
-            lines = [l.strip() for l in page_text.split('\n')]
-            # 디버그: 라인스코어 후보 라인 출력
-            for line in lines:
-             if '-' in line and any(c.isdigit() for c in line):
-                if len(line) > 10 and len(line) < 80:
-                    print(f"    DEBUG: [{line}]")
+            lines = [l.strip() for l in page_text.split('\n') if l.strip()]
 
             away_score = 0
             home_score = 0
             inning_scores = []
 
-            # "팀명 숫자들 - 숫자 숫자 숫자" 패턴
+            # 패턴: "SoftBank 0 0 1 3 2 0 2 0 0 - 8 12 0"
             linescore_pattern = re.compile(
-                r'^([A-Za-z][A-Za-z\s\-\.]+?)\s+([\d\s]+)-\s*(\d+)\s+(\d+)\s+(\d+)\s*$'
+                r'^([A-Za-z][A-Za-z\s\-\.]+?)\s+((?:\d+\s+)*)- \s*(\d+)\s+(\d+)\s+(\d+)\s*$'
             )
 
             linescore_rows = []
@@ -99,16 +91,15 @@ class NPBCollector:
                 for idx, m in enumerate(linescore_rows[:2]):
                     inning_part = m.group(2).strip()
                     total_r = int(m.group(3))
-
                     inning_nums = [int(x) for x in inning_part.split() if x.isdigit()]
 
                     for i, r in enumerate(inning_nums):
-                        if idx == 0:  # 원정팀
+                        if idx == 0:
                             if len(inning_scores) <= i:
                                 inning_scores.append({"inning": i+1, "away": r, "home": 0})
                             else:
                                 inning_scores[i]["away"] = r
-                        else:  # 홈팀
+                        else:
                             if len(inning_scores) <= i:
                                 inning_scores.append({"inning": i+1, "away": 0, "home": r})
                             else:
@@ -119,11 +110,9 @@ class NPBCollector:
                     else:
                         home_score = total_r
 
-            # 라인스코어 없으면 우천취소
             if not inning_scores:
                 return {}
 
-            # 승패투수
             wp = ""
             lp = ""
             wp_match = re.search(r'WP\s*:\s*([^\n\(]+)', page_text)
@@ -133,13 +122,16 @@ class NPBCollector:
             if lp_match:
                 lp = lp_match.group(1).strip().rstrip(',')
 
-            # 구장
             stadium = ""
             for line in lines:
-                if any(k in line for k in ['Dome', 'Stadium', 'Field', 'Koshien',
-                                           'Jingu', 'FIELD', 'MAZDA', 'ZoZo',
-                                           'PayPay', 'Marine', 'Belluna', 'CON']):
-                    if len(line) < 60:
+                if any(k in line for k in [
+                    'Dome', 'Stadium', 'Field', 'Koshien',
+                    'Jingu', 'FIELD', 'MAZDA', 'ZoZo',
+                    'PayPay', 'Marine', 'Belluna', 'CON',
+                    'Yokohama', 'Osaka', 'Sapporo', 'ES CON',
+                    'ZOZO', 'Vantelin', 'Mazda', 'Meiji'
+                ]):
+                    if len(line) < 60 and not line.startswith('http'):
                         stadium = line.strip()
                         break
 
@@ -230,7 +222,6 @@ class NPBCollector:
 
             for t in tables:
                 headers = [h.text.strip() for h in t.find_all("th")]
-                # NPB 영문: AB H RBI BB HP SO
                 if "AB" in headers and "RBI" in headers:
                     batter_tables.append(t)
 
@@ -313,4 +304,4 @@ class NPBCollector:
             f"{game['away_score']} {game['away_team']}\n"
             f"승자: {game['winner']}\n"
             f"총득점: {game['total_runs']}"
-                )
+        )
