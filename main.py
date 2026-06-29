@@ -1,54 +1,37 @@
 import sys
 import os
 from datetime import datetime, timedelta
-from collectors.npb_collector import NPBCollector
 from collectors.mlb_collector import MLBCollector
 from uploader.github_uploader import GitHubUploader
 
-def get_dates():
-    """
-    KST 기준 어제 날짜 계산
-    MLB는 KST -1일 추가 적용 (시차 보정)
-    """
-    kst_yesterday = (datetime.utcnow() + timedelta(hours=9) - timedelta(days=1))
-    
-    # NPB/KBO: KST 어제
-    base_date = kst_yesterday.strftime("%Y%m%d")
-    
-    # MLB: KST 어제 = 미국 기준 그제 경기
-    # KST 06:00 이후면 미국 전날 경기 종료 확인 가능
-    mlb_date = (kst_yesterday - timedelta(days=1)).strftime("%Y%m%d")
-    
-    return base_date, mlb_date
+def get_dates(manual_date: str = None, manual_mlb_date: str = None):
+    kst_now = datetime.utcnow() + timedelta(hours=9)
+
+    if manual_date and manual_mlb_date:
+        return manual_date, manual_mlb_date
+
+    if manual_date:
+        # 수동 날짜 입력 시 MLB는 같은 날짜
+        return manual_date, manual_date
+
+    # 자동 실행 시
+    # NPB: KST 어제
+    npb_date = (kst_now - timedelta(days=1)).strftime("%Y%m%d")
+    # MLB: KST 오늘 -1일 (미국 어제 경기)
+    mlb_date = (kst_now - timedelta(days=1)).strftime("%Y%m%d")
+
+    return npb_date, mlb_date
 
 def run_daily(date: str = None, mlb_date: str = None):
-    if not date:
-        date, mlb_date = get_dates()
-    if not mlb_date:
-        mlb_date = (datetime.strptime(date, "%Y%m%d") - timedelta(days=1)).strftime("%Y%m%d")
+    npb_date, mlb_date = get_dates(date, mlb_date)
 
     print(f"===== 수집 시작 =====")
-    print(f"NPB 날짜: {date} (KST 기준)")
+    print(f"NPB/KBO 날짜: {npb_date} (KST 기준)")
     print(f"MLB 날짜: {mlb_date} (미국 현지 기준)")
 
     uploader = GitHubUploader()
 
-    # NPB
-    try:
-        npb = NPBCollector()
-        data = npb.collect_daily(date)
-        if data["games"]:
-            uploader.upload_json(data, "NPB", date, "daily")
-            player_data = extract_player_data(data, "NPB", date)
-            if player_data["players"]:
-                uploader.upload_json(player_data, "NPB", date, "players")
-            print(f"  [NPB] {len(data['games'])}경기 완료")
-        else:
-            print(f"  [NPB] 경기 없음")
-    except Exception as e:
-        print(f"  [NPB] 실패: {e}")
-
-    # MLB (시차 보정 날짜)
+    # MLB 수집
     try:
         mlb = MLBCollector()
         data = mlb.collect_daily(mlb_date)
@@ -62,6 +45,10 @@ def run_daily(date: str = None, mlb_date: str = None):
             print(f"  [MLB] 경기 없음")
     except Exception as e:
         print(f"  [MLB] 실패: {e}")
+
+    # NPB/KBO는 별도 스크래퍼 구성 예정
+    print(f"  [NPB] 별도 스크래퍼 구성 예정")
+    print(f"  [KBO] Playwright 기반 별도 구성 예정")
 
     print(f"===== 완료 =====")
 
