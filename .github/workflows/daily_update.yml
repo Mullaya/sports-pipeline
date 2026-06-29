@@ -38,3 +38,9 @@ jobs:
           else
             python main.py
           fi
+      - name: 통계 집계
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          python analytics/build_stats.py
