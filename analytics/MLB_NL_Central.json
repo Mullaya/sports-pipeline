@@ -178,27 +178,20 @@
     },
     "Milwaukee Brewers": {
       "team": "Milwaukee Brewers",
-      "games": 513,
-      "wins": 294,
+      "games": 514,
+      "wins": 295,
       "losses": 219,
-      "total_runs": 2583,
-      "total_allowed": 2115,
-      "win_pct": 0.573,
-      "rpg": 5.04,
+      "total_runs": 2587,
+      "total_allowed": 2118,
+      "win_pct": 0.574,
+      "rpg": 5.03,
       "rapg": 4.12,
-      "run_diff": 468,
+      "run_diff": 469,
       "home_wins": 158,
       "home_losses": 102,
-      "away_wins": 136,
+      "away_wins": 137,
       "away_losses": 117,
       "last10": [
-        {
-          "date": "20260626",
-          "opponent": "Chicago Cubs",
-          "runs": 6,
-          "allowed": 2,
-          "result": "W"
-        },
         {
           "date": "20260627",
           "opponent": "Chicago Cubs",
@@ -260,6 +253,13 @@
           "opponent": "Arizona Diamondbacks",
           "runs": 3,
           "allowed": 2,
+          "result": "W"
+        },
+        {
+          "date": "20260706",
+          "opponent": "St. Louis Cardinals",
+          "runs": 4,
+          "allowed": 3,
           "result": "W"
         }
       ]
@@ -354,27 +354,20 @@
     },
     "St. Louis Cardinals": {
       "team": "St. Louis Cardinals",
-      "games": 495,
+      "games": 496,
       "wins": 251,
-      "losses": 244,
-      "total_runs": 2125,
-      "total_allowed": 2227,
-      "win_pct": 0.507,
+      "losses": 245,
+      "total_runs": 2128,
+      "total_allowed": 2231,
+      "win_pct": 0.506,
       "rpg": 4.29,
       "rapg": 4.5,
-      "run_diff": -102,
+      "run_diff": -103,
       "home_wins": 134,
-      "home_losses": 114,
+      "home_losses": 115,
       "away_wins": 117,
       "away_losses": 130,
       "last10": [
-        {
-          "date": "20260626",
-          "opponent": "Miami Marlins",
-          "runs": 0,
-          "allowed": 4,
-          "result": "L"
-        },
         {
           "date": "20260626",
           "opponent": "Miami Marlins",
@@ -436,6 +429,13 @@
           "opponent": "Chicago Cubs",
           "runs": 4,
           "allowed": 6,
+          "result": "L"
+        },
+        {
+          "date": "20260706",
+          "opponent": "Milwaukee Brewers",
+          "runs": 3,
+          "allowed": 4,
           "result": "L"
         }
       ]
@@ -1217,41 +1217,29 @@
     "Gordon Graceffo": {
       "name": "Gordon Graceffo",
       "team": "St. Louis Cardinals",
-      "games": 72,
+      "games": 73,
       "starts": 2,
       "wins": 9,
       "losses": 3,
-      "total_ip": 105.3,
+      "total_ip": 107.3,
       "total_er": 58,
       "total_h": 100,
-      "total_bb": 39,
-      "total_k": 79,
+      "total_bb": 40,
+      "total_k": 81,
       "total_hr": 9,
-      "total_pitches": 1687,
-      "era": 4.96,
-      "whip": 1.32,
-      "k9": 6.75,
-      "bb9": 3.33,
-      "hr9": 0.77,
-      "home_ip": 56.33333333333333,
+      "total_pitches": 1712,
+      "era": 4.86,
+      "whip": 1.3,
+      "k9": 6.79,
+      "bb9": 3.35,
+      "hr9": 0.75,
+      "home_ip": 58.33333333333333,
       "home_er": 19,
-      "home_era": 3.04,
+      "home_era": 2.93,
       "away_ip": 48.999999999999986,
       "away_er": 39,
       "away_era": 7.16,
       "last5": [
-        {
-          "date": "20260621",
-          "opponent": "Kansas City Royals",
-          "is_starter": false,
-          "ip": 1.0,
-          "er": 0,
-          "h": 0,
-          "bb": 0,
-          "k": 0,
-          "hr": 0,
-          "pitches": 10
-        },
         {
           "date": "20260623",
           "opponent": "Arizona Diamondbacks",
@@ -1299,21 +1287,21 @@
           "k": 0,
           "hr": 0,
           "pitches": 9
+        },
+        {
+          "date": "20260706",
+          "opponent": "Milwaukee Brewers",
+          "is_starter": false,
+          "ip": 2.0,
+          "er": 0,
+          "h": 0,
+          "bb": 1,
+          "k": 2,
+          "hr": 0,
+          "pitches": 25
         }
       ],
       "last10": [
-        {
-          "date": "20260602",
-          "opponent": "Texas Rangers",
-          "is_starter": false,
-          "ip": 0.67,
-          "er": 0,
-          "h": 0,
-          "bb": 0,
-          "k": 1,
-          "hr": 0,
-          "pitches": 10
-        },
         {
           "date": "20260606",
           "opponent": "Cincinnati Reds",
@@ -1421,6 +1409,18 @@
           "k": 0,
           "hr": 0,
           "pitches": 9
+        },
+        {
+          "date": "20260706",
+          "opponent": "Milwaukee Brewers",
+          "is_starter": false,
+          "ip": 2.0,
+          "er": 0,
+          "h": 0,
+          "bb": 1,
+          "k": 2,
+          "hr": 0,
+          "pitches": 25
         }
       ],
       "vs_teams": {
@@ -1533,10 +1533,10 @@
           "era": 7.36
         },
         "Milwaukee Brewers": {
-          "games": 2,
+          "games": 3,
           "er": 2,
-          "ip": 2.3333333333333335,
-          "era": 7.71
+          "ip": 4.333333333333334,
+          "era": 4.15
         },
         "Cleveland Guardians": {
           "games": 1,
@@ -2207,41 +2207,29 @@
     "Ryan Fernandez": {
       "name": "Ryan Fernandez",
       "team": "St. Louis Cardinals",
-      "games": 126,
+      "games": 127,
       "starts": 0,
       "wins": 3,
-      "losses": 12,
+      "losses": 13,
       "total_ip": 132.0,
-      "total_er": 68,
-      "total_h": 121,
+      "total_er": 70,
+      "total_h": 123,
       "total_bb": 61,
       "total_k": 143,
       "total_hr": 15,
-      "total_pitches": 2235,
-      "era": 4.64,
-      "whip": 1.38,
+      "total_pitches": 2252,
+      "era": 4.77,
+      "whip": 1.39,
       "k9": 9.75,
       "bb9": 4.16,
       "hr9": 1.02,
       "home_ip": 61.0,
-      "home_er": 23,
-      "home_era": 3.39,
+      "home_er": 25,
+      "home_era": 3.69,
       "away_ip": 71.00000000000001,
       "away_er": 45,
       "away_era": 5.7,
       "last5": [
-        {
-          "date": "20260526",
-          "opponent": "Milwaukee Brewers",
-          "is_starter": false,
-          "ip": 1.0,
-          "er": 1,
-          "h": 1,
-          "bb": 1,
-          "k": 3,
-          "hr": 1,
-          "pitches": 21
-        },
         {
           "date": "20260530",
           "opponent": "Chicago Cubs",
@@ -2289,21 +2277,21 @@
           "k": 2,
           "hr": 0,
           "pitches": 15
+        },
+        {
+          "date": "20260706",
+          "opponent": "Milwaukee Brewers",
+          "is_starter": false,
+          "ip": 0.0,
+          "er": 2,
+          "h": 2,
+          "bb": 0,
+          "k": 0,
+          "hr": 0,
+          "pitches": 17
         }
       ],
       "last10": [
-        {
-          "date": "20260413",
-          "opponent": "Cleveland Guardians",
-          "is_starter": false,
-          "ip": 1.67,
-          "er": 0,
-          "h": 4,
-          "bb": 0,
-          "k": 2,
-          "hr": 0,
-          "pitches": 31
-        },
         {
           "date": "20260420",
           "opponent": "Miami Marlins",
@@ -2411,6 +2399,18 @@
           "k": 2,
           "hr": 0,
           "pitches": 15
+        },
+        {
+          "date": "20260706",
+          "opponent": "Milwaukee Brewers",
+          "is_starter": false,
+          "ip": 0.0,
+          "er": 2,
+          "h": 2,
+          "bb": 0,
+          "k": 0,
+          "hr": 0,
+          "pitches": 17
         }
       ],
       "vs_teams": {
@@ -2463,10 +2463,10 @@
           "era": 9.0
         },
         "Milwaukee Brewers": {
-          "games": 8,
-          "er": 3,
+          "games": 9,
+          "er": 5,
           "ip": 8.666666666666666,
-          "era": 3.12
+          "era": 5.19
         },
         "Detroit Tigers": {
           "games": 1,
@@ -26119,41 +26119,29 @@
     "Trevor Megill": {
       "name": "Trevor Megill",
       "team": "Milwaukee Brewers",
-      "games": 162,
+      "games": 163,
       "starts": 1,
       "wins": 9,
       "losses": 9,
-      "total_ip": 154.7,
+      "total_ip": 155.7,
       "total_er": 47,
-      "total_h": 112,
+      "total_h": 113,
       "total_bb": 49,
-      "total_k": 189,
+      "total_k": 191,
       "total_hr": 11,
-      "total_pitches": 2412,
-      "era": 2.73,
+      "total_pitches": 2427,
+      "era": 2.72,
       "whip": 1.04,
-      "k9": 11.0,
-      "bb9": 2.85,
+      "k9": 11.04,
+      "bb9": 2.83,
       "hr9": 0.64,
       "home_ip": 75.33333333333333,
       "home_er": 26,
       "home_era": 3.11,
-      "away_ip": 79.33333333333334,
+      "away_ip": 80.33333333333334,
       "away_er": 21,
-      "away_era": 2.38,
+      "away_era": 2.35,
       "last5": [
-        {
-          "date": "20260628",
-          "opponent": "Chicago Cubs",
-          "is_starter": false,
-          "ip": 1.0,
-          "er": 0,
-          "h": 1,
-          "bb": 0,
-          "k": 3,
-          "hr": 0,
-          "pitches": 19
-        },
         {
           "date": "20260629",
           "opponent": "Cincinnati Reds",
@@ -26201,21 +26189,21 @@
           "k": 0,
           "hr": 0,
           "pitches": 16
-        }
-      ],
-      "last10": [
+        },
         {
-          "date": "20260620",
-          "opponent": "Atlanta Braves",
+          "date": "20260706",
+          "opponent": "St. Louis Cardinals",
           "is_starter": false,
           "ip": 1.0,
           "er": 0,
-          "h": 0,
+          "h": 1,
           "bb": 0,
-          "k": 1,
+          "k": 2,
           "hr": 0,
-          "pitches": 8
-        },
+          "pitches": 15
+        }
+      ],
+      "last10": [
         {
           "date": "20260622",
           "opponent": "Cincinnati Reds",
@@ -26323,6 +26311,18 @@
           "k": 0,
           "hr": 0,
           "pitches": 16
+        },
+        {
+          "date": "20260706",
+          "opponent": "St. Louis Cardinals",
+          "is_starter": false,
+          "ip": 1.0,
+          "er": 0,
+          "h": 1,
+          "bb": 0,
+          "k": 2,
+          "hr": 0,
+          "pitches": 15
         }
       ],
       "vs_teams": {
@@ -26369,10 +26369,10 @@
           "era": 0.0
         },
         "St. Louis Cardinals": {
-          "games": 10,
+          "games": 11,
           "er": 7,
-          "ip": 9.666666666666666,
-          "era": 6.52
+          "ip": 10.666666666666666,
+          "era": 5.91
         },
         "Pittsburgh Pirates": {
           "games": 8,
@@ -37611,41 +37611,29 @@
     "Justin Bruihl": {
       "name": "Justin Bruihl",
       "team": "St. Louis Cardinals",
-      "games": 60,
+      "games": 61,
       "starts": 0,
       "wins": 1,
       "losses": 0,
-      "total_ip": 59.0,
-      "total_er": 30,
-      "total_h": 63,
-      "total_bb": 22,
+      "total_ip": 60.3,
+      "total_er": 31,
+      "total_h": 64,
+      "total_bb": 23,
       "total_k": 44,
       "total_hr": 3,
-      "total_pitches": 970,
-      "era": 4.58,
+      "total_pitches": 993,
+      "era": 4.62,
       "whip": 1.44,
-      "k9": 6.71,
-      "bb9": 3.36,
-      "hr9": 0.46,
-      "home_ip": 27.66666666666666,
-      "home_er": 15,
-      "home_era": 4.88,
+      "k9": 6.56,
+      "bb9": 3.43,
+      "hr9": 0.45,
+      "home_ip": 28.999999999999993,
+      "home_er": 16,
+      "home_era": 4.97,
       "away_ip": 31.333333333333332,
       "away_er": 15,
       "away_era": 4.31,
       "last5": [
-        {
-          "date": "20260626",
-          "opponent": "Miami Marlins",
-          "is_starter": false,
-          "ip": 0.33,
-          "er": 0,
-          "h": 0,
-          "bb": 0,
-          "k": 0,
-          "hr": 0,
-          "pitches": 2
-        },
         {
           "date": "20260626",
           "opponent": "Miami Marlins",
@@ -37693,21 +37681,21 @@
           "k": 2,
           "hr": 0,
           "pitches": 40
+        },
+        {
+          "date": "20260706",
+          "opponent": "Milwaukee Brewers",
+          "is_starter": false,
+          "ip": 1.33,
+          "er": 1,
+          "h": 1,
+          "bb": 1,
+          "k": 0,
+          "hr": 0,
+          "pitches": 23
         }
       ],
       "last10": [
-        {
-          "date": "20260609",
-          "opponent": "New York Mets",
-          "is_starter": false,
-          "ip": 2.0,
-          "er": 0,
-          "h": 1,
-          "bb": 0,
-          "k": 2,
-          "hr": 0,
-          "pitches": 21
-        },
         {
           "date": "20260611",
           "opponent": "New York Mets",
@@ -37815,14 +37803,26 @@
           "k": 2,
           "hr": 0,
           "pitches": 40
+        },
+        {
+          "date": "20260706",
+          "opponent": "Milwaukee Brewers",
+          "is_starter": false,
+          "ip": 1.33,
+          "er": 1,
+          "h": 1,
+          "bb": 1,
+          "k": 0,
+          "hr": 0,
+          "pitches": 23
         }
       ],
       "vs_teams": {
         "Milwaukee Brewers": {
-          "games": 2,
-          "er": 0,
-          "ip": 3.0,
-          "era": 0.0
+          "games": 3,
+          "er": 1,
+          "ip": 4.333333333333333,
+          "era": 2.08
         },
         "Cleveland Guardians": {
           "games": 3,
@@ -73663,41 +73663,29 @@
     "Chad Patrick": {
       "name": "Chad Patrick",
       "team": "Milwaukee Brewers",
-      "games": 67,
+      "games": 68,
       "starts": 34,
       "wins": 9,
       "losses": 15,
-      "total_ip": 218.0,
+      "total_ip": 220.0,
       "total_er": 97,
       "total_h": 205,
       "total_bb": 77,
-      "total_k": 218,
+      "total_k": 220,
       "total_hr": 28,
-      "total_pitches": 3650,
-      "era": 4.0,
-      "whip": 1.29,
+      "total_pitches": 3670,
+      "era": 3.97,
+      "whip": 1.28,
       "k9": 9.0,
-      "bb9": 3.18,
-      "hr9": 1.16,
+      "bb9": 3.15,
+      "hr9": 1.15,
       "home_ip": 115.66666666666666,
       "home_er": 38,
       "home_era": 2.96,
-      "away_ip": 102.33333333333333,
+      "away_ip": 104.33333333333333,
       "away_er": 59,
-      "away_era": 5.19,
+      "away_era": 5.09,
       "last5": [
-        {
-          "date": "20260624",
-          "opponent": "Cincinnati Reds",
-          "is_starter": false,
-          "ip": 1.67,
-          "er": 1,
-          "h": 1,
-          "bb": 3,
-          "k": 1,
-          "hr": 0,
-          "pitches": 40
-        },
         {
           "date": "20260627",
           "opponent": "Chicago Cubs",
@@ -73745,21 +73733,21 @@
           "k": 2,
           "hr": 0,
           "pitches": 34
+        },
+        {
+          "date": "20260706",
+          "opponent": "St. Louis Cardinals",
+          "is_starter": false,
+          "ip": 2.0,
+          "er": 0,
+          "h": 0,
+          "bb": 0,
+          "k": 2,
+          "hr": 0,
+          "pitches": 20
         }
       ],
       "last10": [
-        {
-          "date": "20260608",
-          "opponent": "Athletics",
-          "is_starter": false,
-          "ip": 1.0,
-          "er": 0,
-          "h": 0,
-          "bb": 1,
-          "k": 2,
-          "hr": 0,
-          "pitches": 8
-        },
         {
           "date": "20260610",
           "opponent": "Athletics",
@@ -73867,6 +73855,18 @@
           "k": 2,
           "hr": 0,
           "pitches": 34
+        },
+        {
+          "date": "20260706",
+          "opponent": "St. Louis Cardinals",
+          "is_starter": false,
+          "ip": 2.0,
+          "er": 0,
+          "h": 0,
+          "bb": 0,
+          "k": 2,
+          "hr": 0,
+          "pitches": 20
         }
       ],
       "vs_teams": {
@@ -73919,10 +73919,10 @@
           "era": 2.3
         },
         "St. Louis Cardinals": {
-          "games": 5,
+          "games": 6,
           "er": 9,
-          "ip": 17.0,
-          "era": 4.76
+          "ip": 19.0,
+          "era": 4.26
         },
         "Houston Astros": {
           "games": 1,
@@ -103277,41 +103277,29 @@
     "Shane Drohan": {
       "name": "Shane Drohan",
       "team": "Milwaukee Brewers",
-      "games": 21,
-      "starts": 8,
-      "wins": 4,
+      "games": 22,
+      "starts": 9,
+      "wins": 5,
       "losses": 4,
-      "total_ip": 70.3,
-      "total_er": 26,
-      "total_h": 65,
-      "total_bb": 22,
-      "total_k": 74,
+      "total_ip": 76.3,
+      "total_er": 27,
+      "total_h": 71,
+      "total_bb": 24,
+      "total_k": 76,
       "total_hr": 6,
-      "total_pitches": 1143,
-      "era": 3.33,
+      "total_pitches": 1228,
+      "era": 3.18,
       "whip": 1.24,
-      "k9": 9.47,
-      "bb9": 2.82,
-      "hr9": 0.77,
+      "k9": 8.96,
+      "bb9": 2.83,
+      "hr9": 0.71,
       "home_ip": 47.33333333333333,
       "home_er": 16,
       "home_era": 3.04,
-      "away_ip": 22.999999999999996,
-      "away_er": 10,
-      "away_era": 3.91,
+      "away_ip": 28.999999999999996,
+      "away_er": 11,
+      "away_era": 3.41,
       "last5": [
-        {
-          "date": "20260607",
-          "opponent": "Colorado Rockies",
-          "is_starter": true,
-          "ip": 6.33,
-          "er": 3,
-          "h": 5,
-          "bb": 1,
-          "k": 4,
-          "hr": 0,
-          "pitches": 83
-        },
         {
           "date": "20260613",
           "opponent": "Philadelphia Phillies",
@@ -103359,21 +103347,21 @@
           "k": 7,
           "hr": 1,
           "pitches": 78
+        },
+        {
+          "date": "20260706",
+          "opponent": "St. Louis Cardinals",
+          "is_starter": true,
+          "ip": 6.0,
+          "er": 1,
+          "h": 6,
+          "bb": 2,
+          "k": 2,
+          "hr": 0,
+          "pitches": 85
         }
       ],
       "last10": [
-        {
-          "date": "20260518",
-          "opponent": "Chicago Cubs",
-          "is_starter": false,
-          "ip": 4.33,
-          "er": 0,
-          "h": 4,
-          "bb": 0,
-          "k": 5,
-          "hr": 0,
-          "pitches": 42
-        },
         {
           "date": "20260522",
           "opponent": "Los Angeles Dodgers",
@@ -103481,6 +103469,18 @@
           "k": 7,
           "hr": 1,
           "pitches": 78
+        },
+        {
+          "date": "20260706",
+          "opponent": "St. Louis Cardinals",
+          "is_starter": true,
+          "ip": 6.0,
+          "er": 1,
+          "h": 6,
+          "bb": 2,
+          "k": 2,
+          "hr": 0,
+          "pitches": 85
         }
       ],
       "vs_teams": {
@@ -103527,10 +103527,10 @@
           "era": 1.8
         },
         "St. Louis Cardinals": {
-          "games": 2,
-          "er": 1,
-          "ip": 3.333333333333333,
-          "era": 2.7
+          "games": 3,
+          "er": 2,
+          "ip": 9.333333333333332,
+          "era": 1.93
         },
         "New York Yankees": {
           "games": 1,
@@ -103573,41 +103573,29 @@
     "Ryne Stanek": {
       "name": "Ryne Stanek",
       "team": "St. Louis Cardinals",
-      "games": 44,
+      "games": 45,
       "starts": 0,
       "wins": 2,
       "losses": 1,
-      "total_ip": 40.7,
+      "total_ip": 41.7,
       "total_er": 19,
-      "total_h": 34,
-      "total_bb": 20,
+      "total_h": 35,
+      "total_bb": 21,
       "total_k": 49,
       "total_hr": 6,
-      "total_pitches": 699,
-      "era": 4.2,
-      "whip": 1.33,
-      "k9": 10.84,
-      "bb9": 4.43,
-      "hr9": 1.33,
-      "home_ip": 22.333333333333336,
+      "total_pitches": 710,
+      "era": 4.1,
+      "whip": 1.34,
+      "k9": 10.58,
+      "bb9": 4.54,
+      "hr9": 1.3,
+      "home_ip": 23.333333333333336,
       "home_er": 6,
-      "home_era": 2.42,
+      "home_era": 2.31,
       "away_ip": 18.333333333333336,
       "away_er": 13,
       "away_era": 6.38,
       "last5": [
-        {
-          "date": "20260621",
-          "opponent": "Kansas City Royals",
-          "is_starter": false,
-          "ip": 1.0,
-          "er": 0,
-          "h": 1,
-          "bb": 0,
-          "k": 1,
-          "hr": 0,
-          "pitches": 11
-        },
         {
           "date": "20260622",
           "opponent": "Arizona Diamondbacks",
@@ -103655,21 +103643,21 @@
           "k": 1,
           "hr": 0,
           "pitches": 11
-        }
-      ],
-      "last10": [
+        },
         {
-          "date": "20260606",
-          "opponent": "Cincinnati Reds",
+          "date": "20260706",
+          "opponent": "Milwaukee Brewers",
           "is_starter": false,
           "ip": 1.0,
           "er": 0,
-          "h": 0,
-          "bb": 0,
+          "h": 1,
+          "bb": 1,
           "k": 0,
           "hr": 0,
-          "pitches": 6
-        },
+          "pitches": 11
+        }
+      ],
+      "last10": [
         {
           "date": "20260607",
           "opponent": "Cincinnati Reds",
@@ -103777,6 +103765,18 @@
           "k": 1,
           "hr": 0,
           "pitches": 11
+        },
+        {
+          "date": "20260706",
+          "opponent": "Milwaukee Brewers",
+          "is_starter": false,
+          "ip": 1.0,
+          "er": 0,
+          "h": 1,
+          "bb": 1,
+          "k": 0,
+          "hr": 0,
+          "pitches": 11
         }
       ],
       "vs_teams": {
@@ -103859,9 +103859,9 @@
           "era": 0.0
         },
         "Milwaukee Brewers": {
-          "games": 1,
+          "games": 2,
           "er": 0,
-          "ip": 1.0,
+          "ip": 2.0,
           "era": 0.0
         },
         "San Diego Padres": {
@@ -104959,41 +104959,29 @@
     "Dustin May": {
       "name": "Dustin May",
       "team": "St. Louis Cardinals",
-      "games": 19,
-      "starts": 19,
+      "games": 20,
+      "starts": 20,
       "wins": 5,
       "losses": 6,
-      "total_ip": 96.7,
+      "total_ip": 101.3,
       "total_er": 40,
-      "total_h": 86,
+      "total_h": 90,
       "total_bb": 26,
-      "total_k": 85,
+      "total_k": 92,
       "total_hr": 5,
-      "total_pitches": 1495,
-      "era": 3.72,
-      "whip": 1.16,
-      "k9": 7.91,
-      "bb9": 2.42,
-      "hr9": 0.47,
-      "home_ip": 48.0,
+      "total_pitches": 1576,
+      "era": 3.55,
+      "whip": 1.14,
+      "k9": 8.17,
+      "bb9": 2.31,
+      "hr9": 0.44,
+      "home_ip": 52.666666666666664,
       "home_er": 21,
-      "home_era": 3.94,
+      "home_era": 3.59,
       "away_ip": 48.666666666666664,
       "away_er": 19,
       "away_era": 3.51,
       "last5": [
-        {
-          "date": "20260602",
-          "opponent": "Texas Rangers",
-          "is_starter": true,
-          "ip": 5.67,
-          "er": 3,
-          "h": 5,
-          "bb": 2,
-          "k": 9,
-          "hr": 0,
-          "pitches": 90
-        },
         {
           "date": "20260609",
           "opponent": "New York Mets",
@@ -105041,21 +105029,21 @@
           "k": 1,
           "hr": 0,
           "pitches": 34
+        },
+        {
+          "date": "20260706",
+          "opponent": "Milwaukee Brewers",
+          "is_starter": true,
+          "ip": 4.67,
+          "er": 0,
+          "h": 4,
+          "bb": 0,
+          "k": 7,
+          "hr": 0,
+          "pitches": 81
         }
       ],
       "last10": [
-        {
-          "date": "20260503",
-          "opponent": "Los Angeles Dodgers",
-          "is_starter": true,
-          "ip": 6.0,
-          "er": 3,
-          "h": 7,
-          "bb": 2,
-          "k": 3,
-          "hr": 0,
-          "pitches": 95
-        },
         {
           "date": "20260509",
           "opponent": "San Diego Padres",
@@ -105163,6 +105151,18 @@
           "k": 1,
           "hr": 0,
           "pitches": 34
+        },
+        {
+          "date": "20260706",
+          "opponent": "Milwaukee Brewers",
+          "is_starter": true,
+          "ip": 4.67,
+          "er": 0,
+          "h": 4,
+          "bb": 0,
+          "k": 7,
+          "hr": 0,
+          "pitches": 81
         }
       ],
       "vs_teams": {
@@ -105227,10 +105227,10 @@
           "era": 10.12
         },
         "Milwaukee Brewers": {
-          "games": 1,
+          "games": 2,
           "er": 1,
-          "ip": 7.0,
-          "era": 1.29
+          "ip": 11.666666666666668,
+          "era": 0.77
         },
         "Texas Rangers": {
           "games": 1,
@@ -110634,26 +110634,16 @@
     "Pedro Pagés": {
       "name": "Pedro Pagés",
       "team": "St. Louis Cardinals",
-      "games": 271,
-      "total_ab": 786,
-      "total_h": 178,
+      "games": 272,
+      "total_ab": 789,
+      "total_h": 179,
       "total_hr": 24,
       "total_rbi": 90,
       "total_bb": 45,
       "total_k": 221,
-      "avg": 0.226,
+      "avg": 0.227,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260613",
-          "opponent": "Minnesota Twins",
-          "ab": 4,
-          "h": 3,
-          "hr": 0,
-          "rbi": 1,
-          "bb": 0,
-          "k": 1
-        },
         {
           "date": "20260617",
           "opponent": "San Diego Padres",
@@ -110743,12 +110733,22 @@
           "rbi": 0,
           "bb": 0,
           "k": 2
+        },
+        {
+          "date": "20260706",
+          "opponent": "Milwaukee Brewers",
+          "ab": 3,
+          "h": 1,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
         }
       ],
-      "last10_ab": 21,
-      "last10_h": 5,
-      "last10_avg": 0.238,
-      "k_pct": 0.281
+      "last10_ab": 20,
+      "last10_h": 3,
+      "last10_avg": 0.15,
+      "k_pct": 0.28
     },
     "Matt Carpenter": {
       "name": "Matt Carpenter",
@@ -110991,26 +110991,16 @@
     "Jordan Walker": {
       "name": "Jordan Walker",
       "team": "St. Louis Cardinals",
-      "games": 291,
-      "total_ab": 976,
+      "games": 292,
+      "total_ab": 978,
       "total_h": 232,
       "total_hr": 32,
       "total_rbi": 138,
-      "total_bb": 82,
-      "total_k": 308,
-      "avg": 0.238,
+      "total_bb": 84,
+      "total_k": 309,
+      "avg": 0.237,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260624",
-          "opponent": "Arizona Diamondbacks",
-          "ab": 3,
-          "h": 1,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 2
-        },
         {
           "date": "20260626",
           "opponent": "Miami Marlins",
@@ -111100,11 +111090,21 @@
           "rbi": 4,
           "bb": 1,
           "k": 0
+        },
+        {
+          "date": "20260706",
+          "opponent": "Milwaukee Brewers",
+          "ab": 2,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 2,
+          "k": 1
         }
       ],
-      "last10_ab": 33,
-      "last10_h": 10,
-      "last10_avg": 0.303,
+      "last10_ab": 32,
+      "last10_h": 9,
+      "last10_avg": 0.281,
       "k_pct": 0.316
     },
     "Matt Koperniak": {
@@ -111229,26 +111229,16 @@
     "Alec Burleson": {
       "name": "Alec Burleson",
       "team": "St. Louis Cardinals",
-      "games": 429,
-      "total_ab": 1512,
+      "games": 430,
+      "total_ab": 1513,
       "total_h": 424,
       "total_hr": 59,
       "total_rbi": 232,
       "total_bb": 123,
-      "total_k": 229,
+      "total_k": 230,
       "avg": 0.28,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260626",
-          "opponent": "Miami Marlins",
-          "ab": 3,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 1,
-          "k": 1
-        },
         {
           "date": "20260626",
           "opponent": "Miami Marlins",
@@ -111338,12 +111328,22 @@
           "rbi": 0,
           "bb": 0,
           "k": 0
+        },
+        {
+          "date": "20260706",
+          "opponent": "Milwaukee Brewers",
+          "ab": 1,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 1
         }
       ],
-      "last10_ab": 35,
+      "last10_ab": 33,
       "last10_h": 7,
-      "last10_avg": 0.2,
-      "k_pct": 0.151
+      "last10_avg": 0.212,
+      "k_pct": 0.152
     },
     "Alfonso Rivas III": {
       "name": "Alfonso Rivas III",
@@ -111467,26 +111467,16 @@
     "José Fermín": {
       "name": "José Fermín",
       "team": "St. Louis Cardinals",
-      "games": 187,
-      "total_ab": 403,
-      "total_h": 98,
+      "games": 188,
+      "total_ab": 406,
+      "total_h": 100,
       "total_hr": 7,
-      "total_rbi": 45,
+      "total_rbi": 46,
       "total_bb": 40,
       "total_k": 54,
-      "avg": 0.243,
+      "avg": 0.246,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260624",
-          "opponent": "Arizona Diamondbacks",
-          "ab": 3,
-          "h": 2,
-          "hr": 1,
-          "rbi": 1,
-          "bb": 1,
-          "k": 0
-        },
         {
           "date": "20260626",
           "opponent": "Miami Marlins",
@@ -111576,12 +111566,22 @@
           "rbi": 0,
           "bb": 1,
           "k": 1
+        },
+        {
+          "date": "20260706",
+          "opponent": "Milwaukee Brewers",
+          "ab": 3,
+          "h": 2,
+          "hr": 0,
+          "rbi": 1,
+          "bb": 0,
+          "k": 0
         }
       ],
       "last10_ab": 30,
       "last10_h": 8,
       "last10_avg": 0.267,
-      "k_pct": 0.134
+      "k_pct": 0.133
     },
     "Jeremy Rivas": {
       "name": "Jeremy Rivas",
@@ -111941,7 +111941,7 @@
     "Gordon Graceffo": {
       "name": "Gordon Graceffo",
       "team": "St. Louis Cardinals",
-      "games": 72,
+      "games": 73,
       "total_ab": 0,
       "total_h": 0,
       "total_hr": 0,
@@ -111951,16 +111951,6 @@
       "avg": 0.0,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260602",
-          "opponent": "Texas Rangers",
-          "ab": 0,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 0
-        },
         {
           "date": "20260606",
           "opponent": "Cincinnati Reds",
@@ -112044,6 +112034,16 @@
         {
           "date": "20260702",
           "opponent": "Atlanta Braves",
+          "ab": 0,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
+        },
+        {
+          "date": "20260706",
+          "opponent": "Milwaukee Brewers",
           "ab": 0,
           "h": 0,
           "hr": 0,
@@ -112295,7 +112295,7 @@
     "Ryan Fernandez": {
       "name": "Ryan Fernandez",
       "team": "St. Louis Cardinals",
-      "games": 126,
+      "games": 127,
       "total_ab": 0,
       "total_h": 0,
       "total_hr": 0,
@@ -112305,16 +112305,6 @@
       "avg": 0.0,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260413",
-          "opponent": "Cleveland Guardians",
-          "ab": 0,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 0
-        },
         {
           "date": "20260420",
           "opponent": "Miami Marlins",
@@ -112398,6 +112388,16 @@
         {
           "date": "20260705",
           "opponent": "Chicago Cubs",
+          "ab": 0,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
+        },
+        {
+          "date": "20260706",
+          "opponent": "Milwaukee Brewers",
           "ab": 0,
           "h": 0,
           "hr": 0,
@@ -117800,26 +117800,16 @@
     "Garrett Mitchell": {
       "name": "Garrett Mitchell",
       "team": "Milwaukee Brewers",
-      "games": 217,
-      "total_ab": 640,
-      "total_h": 158,
+      "games": 218,
+      "total_ab": 643,
+      "total_h": 160,
       "total_hr": 21,
       "total_rbi": 91,
-      "total_bb": 82,
-      "total_k": 249,
-      "avg": 0.247,
+      "total_bb": 83,
+      "total_k": 250,
+      "avg": 0.249,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260626",
-          "opponent": "Chicago Cubs",
-          "ab": 4,
-          "h": 1,
-          "hr": 1,
-          "rbi": 2,
-          "bb": 0,
-          "k": 2
-        },
         {
           "date": "20260627",
           "opponent": "Chicago Cubs",
@@ -117909,11 +117899,21 @@
           "rbi": 0,
           "bb": 0,
           "k": 3
+        },
+        {
+          "date": "20260706",
+          "opponent": "St. Louis Cardinals",
+          "ab": 3,
+          "h": 2,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 1,
+          "k": 1
         }
       ],
-      "last10_ab": 28,
-      "last10_h": 11,
-      "last10_avg": 0.393,
+      "last10_ab": 27,
+      "last10_h": 12,
+      "last10_avg": 0.444,
       "k_pct": 0.389
     },
     "Luis Lara": {
@@ -118038,26 +118038,16 @@
     "William Contreras": {
       "name": "William Contreras",
       "team": "Milwaukee Brewers",
-      "games": 437,
-      "total_ab": 1640,
+      "games": 438,
+      "total_ab": 1644,
       "total_h": 459,
       "total_hr": 59,
       "total_rbi": 249,
       "total_bb": 204,
-      "total_k": 336,
-      "avg": 0.28,
+      "total_k": 337,
+      "avg": 0.279,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260626",
-          "opponent": "Chicago Cubs",
-          "ab": 3,
-          "h": 2,
-          "hr": 1,
-          "rbi": 2,
-          "bb": 1,
-          "k": 1
-        },
         {
           "date": "20260626",
           "opponent": "Chicago Cubs",
@@ -118147,11 +118137,21 @@
           "rbi": 0,
           "bb": 0,
           "k": 1
+        },
+        {
+          "date": "20260706",
+          "opponent": "St. Louis Cardinals",
+          "ab": 4,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 1
         }
       ],
-      "last10_ab": 37,
-      "last10_h": 10,
-      "last10_avg": 0.27,
+      "last10_ab": 38,
+      "last10_h": 8,
+      "last10_avg": 0.211,
       "k_pct": 0.205
     },
     "Ramón Rodríguez": {
@@ -118276,26 +118276,16 @@
     "Christian Yelich": {
       "name": "Christian Yelich",
       "team": "Milwaukee Brewers",
-      "games": 323,
-      "total_ab": 1194,
+      "games": 324,
+      "total_ab": 1198,
       "total_h": 322,
       "total_hr": 53,
       "total_rbi": 195,
-      "total_bb": 145,
-      "total_k": 335,
-      "avg": 0.27,
+      "total_bb": 146,
+      "total_k": 337,
+      "avg": 0.269,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260626",
-          "opponent": "Chicago Cubs",
-          "ab": 5,
-          "h": 2,
-          "hr": 0,
-          "rbi": 1,
-          "bb": 0,
-          "k": 1
-        },
         {
           "date": "20260626",
           "opponent": "Chicago Cubs",
@@ -118385,11 +118375,21 @@
           "rbi": 0,
           "bb": 0,
           "k": 0
+        },
+        {
+          "date": "20260706",
+          "opponent": "St. Louis Cardinals",
+          "ab": 4,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 1,
+          "k": 2
         }
       ],
-      "last10_ab": 36,
-      "last10_h": 7,
-      "last10_avg": 0.194,
+      "last10_ab": 35,
+      "last10_h": 5,
+      "last10_avg": 0.143,
       "k_pct": 0.281
     },
     "Brewer Hicklen": {
@@ -119436,26 +119436,16 @@
     "Brice Turang": {
       "name": "Brice Turang",
       "team": "Milwaukee Brewers",
-      "games": 442,
-      "total_ab": 1613,
-      "total_h": 427,
+      "games": 443,
+      "total_ab": 1617,
+      "total_h": 428,
       "total_hr": 42,
-      "total_rbi": 206,
+      "total_rbi": 208,
       "total_bb": 178,
       "total_k": 384,
       "avg": 0.265,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260626",
-          "opponent": "Chicago Cubs",
-          "ab": 4,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 3
-        },
         {
           "date": "20260627",
           "opponent": "Chicago Cubs",
@@ -119545,12 +119535,22 @@
           "rbi": 0,
           "bb": 0,
           "k": 0
+        },
+        {
+          "date": "20260706",
+          "opponent": "St. Louis Cardinals",
+          "ab": 4,
+          "h": 1,
+          "hr": 0,
+          "rbi": 2,
+          "bb": 0,
+          "k": 0
         }
       ],
       "last10_ab": 45,
-      "last10_h": 14,
-      "last10_avg": 0.311,
-      "k_pct": 0.238
+      "last10_h": 15,
+      "last10_avg": 0.333,
+      "k_pct": 0.237
     },
     "Owen Miller": {
       "name": "Owen Miller",
@@ -124995,8 +124995,8 @@
     "Lars Nootbaar": {
       "name": "Lars Nootbaar",
       "team": "St. Louis Cardinals",
-      "games": 291,
-      "total_ab": 994,
+      "games": 292,
+      "total_ab": 995,
       "total_h": 243,
       "total_hr": 28,
       "total_rbi": 108,
@@ -125005,16 +125005,6 @@
       "avg": 0.244,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260624",
-          "opponent": "Arizona Diamondbacks",
-          "ab": 4,
-          "h": 1,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 1
-        },
         {
           "date": "20260626",
           "opponent": "Miami Marlins",
@@ -125104,11 +125094,21 @@
           "rbi": 0,
           "bb": 0,
           "k": 0
+        },
+        {
+          "date": "20260706",
+          "opponent": "Milwaukee Brewers",
+          "ab": 1,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
         }
       ],
-      "last10_ab": 36,
-      "last10_h": 9,
-      "last10_avg": 0.25,
+      "last10_ab": 33,
+      "last10_h": 8,
+      "last10_avg": 0.242,
       "k_pct": 0.236
     },
     "Wade Stauss": {
@@ -125173,26 +125173,16 @@
     "Masyn Winn": {
       "name": "Masyn Winn",
       "team": "St. Louis Cardinals",
-      "games": 407,
-      "total_ab": 1500,
-      "total_h": 370,
+      "games": 408,
+      "total_ab": 1504,
+      "total_h": 372,
       "total_hr": 28,
-      "total_rbi": 147,
+      "total_rbi": 148,
       "total_bb": 122,
-      "total_k": 313,
+      "total_k": 314,
       "avg": 0.247,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260626",
-          "opponent": "Miami Marlins",
-          "ab": 3,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 0
-        },
         {
           "date": "20260626",
           "opponent": "Miami Marlins",
@@ -125282,11 +125272,21 @@
           "rbi": 0,
           "bb": 1,
           "k": 0
+        },
+        {
+          "date": "20260706",
+          "opponent": "Milwaukee Brewers",
+          "ab": 4,
+          "h": 2,
+          "hr": 0,
+          "rbi": 1,
+          "bb": 0,
+          "k": 1
         }
       ],
-      "last10_ab": 34,
-      "last10_h": 9,
-      "last10_avg": 0.265,
+      "last10_ab": 35,
+      "last10_h": 11,
+      "last10_avg": 0.314,
       "k_pct": 0.209
     },
     "Victor Scott II": {
@@ -130257,26 +130257,16 @@
     "Sal Frelick": {
       "name": "Sal Frelick",
       "team": "Milwaukee Brewers",
-      "games": 428,
-      "total_ab": 1434,
-      "total_h": 385,
+      "games": 429,
+      "total_ab": 1438,
+      "total_h": 386,
       "total_hr": 22,
       "total_rbi": 148,
       "total_bb": 129,
-      "total_k": 207,
+      "total_k": 209,
       "avg": 0.268,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260626",
-          "opponent": "Chicago Cubs",
-          "ab": 1,
-          "h": 1,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 0
-        },
         {
           "date": "20260626",
           "opponent": "Chicago Cubs",
@@ -130366,12 +130356,22 @@
           "rbi": 0,
           "bb": 0,
           "k": 0
+        },
+        {
+          "date": "20260706",
+          "opponent": "St. Louis Cardinals",
+          "ab": 4,
+          "h": 1,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 2
         }
       ],
-      "last10_ab": 25,
+      "last10_ab": 28,
       "last10_h": 9,
-      "last10_avg": 0.36,
-      "k_pct": 0.144
+      "last10_avg": 0.321,
+      "k_pct": 0.145
     },
     "Oliver Dunn": {
       "name": "Oliver Dunn",
@@ -130703,26 +130703,16 @@
     "Jackson Chourio": {
       "name": "Jackson Chourio",
       "team": "Milwaukee Brewers",
-      "games": 386,
-      "total_ab": 1480,
+      "games": 387,
+      "total_ab": 1484,
       "total_h": 424,
       "total_hr": 61,
       "total_rbi": 216,
-      "total_bb": 101,
-      "total_k": 334,
+      "total_bb": 102,
+      "total_k": 335,
       "avg": 0.286,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260626",
-          "opponent": "Chicago Cubs",
-          "ab": 5,
-          "h": 2,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 0
-        },
         {
           "date": "20260627",
           "opponent": "Chicago Cubs",
@@ -130812,11 +130802,21 @@
           "rbi": 0,
           "bb": 0,
           "k": 1
+        },
+        {
+          "date": "20260706",
+          "opponent": "St. Louis Cardinals",
+          "ab": 4,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 1,
+          "k": 1
         }
       ],
-      "last10_ab": 40,
-      "last10_h": 12,
-      "last10_avg": 0.3,
+      "last10_ab": 39,
+      "last10_h": 10,
+      "last10_avg": 0.256,
       "k_pct": 0.226
     },
     "Carlos Rodríguez": {
@@ -131040,8 +131040,8 @@
     "Joey Ortiz": {
       "name": "Joey Ortiz",
       "team": "Milwaukee Brewers",
-      "games": 421,
-      "total_ab": 1238,
+      "games": 422,
+      "total_ab": 1239,
       "total_h": 290,
       "total_hr": 24,
       "total_rbi": 143,
@@ -131050,16 +131050,6 @@
       "avg": 0.234,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260623",
-          "opponent": "Cincinnati Reds",
-          "ab": 4,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 3
-        },
         {
           "date": "20260627",
           "opponent": "Chicago Cubs",
@@ -131149,11 +131139,21 @@
           "rbi": 1,
           "bb": 0,
           "k": 0
+        },
+        {
+          "date": "20260706",
+          "opponent": "St. Louis Cardinals",
+          "ab": 1,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
         }
       ],
-      "last10_ab": 28,
+      "last10_ab": 25,
       "last10_h": 7,
-      "last10_avg": 0.25,
+      "last10_avg": 0.28,
       "k_pct": 0.2
     },
     "Vinny Capra": {
@@ -136971,7 +136971,7 @@
     "Trevor Megill": {
       "name": "Trevor Megill",
       "team": "Milwaukee Brewers",
-      "games": 162,
+      "games": 163,
       "total_ab": 0,
       "total_h": 0,
       "total_hr": 0,
@@ -136981,16 +136981,6 @@
       "avg": 0.0,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260620",
-          "opponent": "Atlanta Braves",
-          "ab": 0,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 0
-        },
         {
           "date": "20260622",
           "opponent": "Cincinnati Reds",
@@ -137074,6 +137064,16 @@
         {
           "date": "20260705",
           "opponent": "Arizona Diamondbacks",
+          "ab": 0,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
+        },
+        {
+          "date": "20260706",
+          "opponent": "St. Louis Cardinals",
           "ab": 0,
           "h": 0,
           "hr": 0,
@@ -140571,26 +140571,16 @@
     "Iván Herrera": {
       "name": "Iván Herrera",
       "team": "St. Louis Cardinals",
-      "games": 302,
-      "total_ab": 1017,
+      "games": 303,
+      "total_ab": 1021,
       "total_h": 285,
       "total_hr": 38,
       "total_rbi": 148,
       "total_bb": 128,
-      "total_k": 224,
-      "avg": 0.28,
+      "total_k": 225,
+      "avg": 0.279,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260626",
-          "opponent": "Miami Marlins",
-          "ab": 3,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 2
-        },
         {
           "date": "20260626",
           "opponent": "Miami Marlins",
@@ -140680,11 +140670,21 @@
           "rbi": 0,
           "bb": 0,
           "k": 3
+        },
+        {
+          "date": "20260706",
+          "opponent": "Milwaukee Brewers",
+          "ab": 4,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 1
         }
       ],
-      "last10_ab": 37,
+      "last10_ab": 38,
       "last10_h": 7,
-      "last10_avg": 0.189,
+      "last10_avg": 0.184,
       "k_pct": 0.22
     },
     "Miles Mikolas": {
@@ -140926,26 +140926,16 @@
     "Jake Bauers": {
       "name": "Jake Bauers",
       "team": "Milwaukee Brewers",
-      "games": 335,
-      "total_ab": 894,
-      "total_h": 218,
+      "games": 336,
+      "total_ab": 898,
+      "total_h": 219,
       "total_hr": 48,
       "total_rbi": 157,
       "total_bb": 131,
-      "total_k": 296,
+      "total_k": 297,
       "avg": 0.244,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260626",
-          "opponent": "Chicago Cubs",
-          "ab": 2,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 2,
-          "k": 1
-        },
         {
           "date": "20260627",
           "opponent": "Chicago Cubs",
@@ -141035,11 +141025,21 @@
           "rbi": 2,
           "bb": 0,
           "k": 0
+        },
+        {
+          "date": "20260706",
+          "opponent": "St. Louis Cardinals",
+          "ab": 4,
+          "h": 1,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 1
         }
       ],
-      "last10_ab": 35,
-      "last10_h": 8,
-      "last10_avg": 0.229,
+      "last10_ab": 37,
+      "last10_h": 9,
+      "last10_avg": 0.243,
       "k_pct": 0.331
     },
     "Hedbert Perez": {
@@ -142433,7 +142433,7 @@
     "Justin Bruihl": {
       "name": "Justin Bruihl",
       "team": "St. Louis Cardinals",
-      "games": 60,
+      "games": 61,
       "total_ab": 0,
       "total_h": 0,
       "total_hr": 0,
@@ -142443,16 +142443,6 @@
       "avg": 0.0,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260609",
-          "opponent": "New York Mets",
-          "ab": 0,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 0
-        },
         {
           "date": "20260611",
           "opponent": "New York Mets",
@@ -142536,6 +142526,16 @@
         {
           "date": "20260702",
           "opponent": "Atlanta Braves",
+          "ab": 0,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
+        },
+        {
+          "date": "20260706",
+          "opponent": "Milwaukee Brewers",
           "ab": 0,
           "h": 0,
           "hr": 0,
@@ -147082,26 +147082,16 @@
     "Cooper Pratt": {
       "name": "Cooper Pratt",
       "team": "Milwaukee Brewers",
-      "games": 54,
-      "total_ab": 112,
-      "total_h": 31,
+      "games": 55,
+      "total_ab": 116,
+      "total_h": 32,
       "total_hr": 0,
       "total_rbi": 12,
       "total_bb": 18,
       "total_k": 27,
-      "avg": 0.277,
+      "avg": 0.276,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260624",
-          "opponent": "Cincinnati Reds",
-          "ab": 4,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 1
-        },
         {
           "date": "20260626",
           "opponent": "Chicago Cubs",
@@ -147191,12 +147181,22 @@
           "rbi": 0,
           "bb": 1,
           "k": 0
+        },
+        {
+          "date": "20260706",
+          "opponent": "St. Louis Cardinals",
+          "ab": 4,
+          "h": 1,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
         }
       ],
       "last10_ab": 29,
-      "last10_h": 4,
-      "last10_avg": 0.138,
-      "k_pct": 0.241
+      "last10_h": 5,
+      "last10_avg": 0.172,
+      "k_pct": 0.233
     },
     "James Meeker": {
       "name": "James Meeker",
@@ -153479,9 +153479,9 @@
     "Nathan Church": {
       "name": "Nathan Church",
       "team": "St. Louis Cardinals",
-      "games": 138,
-      "total_ab": 335,
-      "total_h": 79,
+      "games": 139,
+      "total_ab": 339,
+      "total_h": 80,
       "total_hr": 9,
       "total_rbi": 41,
       "total_bb": 30,
@@ -153489,16 +153489,6 @@
       "avg": 0.236,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260626",
-          "opponent": "Miami Marlins",
-          "ab": 3,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 0
-        },
         {
           "date": "20260626",
           "opponent": "Miami Marlins",
@@ -153588,12 +153578,22 @@
           "rbi": 0,
           "bb": 0,
           "k": 1
+        },
+        {
+          "date": "20260706",
+          "opponent": "Milwaukee Brewers",
+          "ab": 4,
+          "h": 1,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
         }
       ],
-      "last10_ab": 35,
-      "last10_h": 6,
-      "last10_avg": 0.171,
-      "k_pct": 0.227
+      "last10_ab": 36,
+      "last10_h": 7,
+      "last10_avg": 0.194,
+      "k_pct": 0.224
     },
     "Brody Moore": {
       "name": "Brody Moore",
@@ -157891,26 +157891,16 @@
     "Bryan Torres": {
       "name": "Bryan Torres",
       "team": "St. Louis Cardinals",
-      "games": 42,
-      "total_ab": 76,
+      "games": 43,
+      "total_ab": 77,
       "total_h": 16,
       "total_hr": 4,
       "total_rbi": 10,
       "total_bb": 11,
-      "total_k": 15,
-      "avg": 0.211,
+      "total_k": 16,
+      "avg": 0.208,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260614",
-          "opponent": "Minnesota Twins",
-          "ab": 3,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 0
-        },
         {
           "date": "20260618",
           "opponent": "Kansas City Royals",
@@ -158000,12 +157990,22 @@
           "rbi": 0,
           "bb": 0,
           "k": 0
+        },
+        {
+          "date": "20260706",
+          "opponent": "Milwaukee Brewers",
+          "ab": 1,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 1
         }
       ],
-      "last10_ab": 12,
+      "last10_ab": 10,
       "last10_h": 2,
-      "last10_avg": 0.167,
-      "k_pct": 0.197
+      "last10_avg": 0.2,
+      "k_pct": 0.208
     },
     "Alex Iadisernia": {
       "name": "Alex Iadisernia",
@@ -169785,26 +169785,16 @@
     "JJ Wetherholt": {
       "name": "JJ Wetherholt",
       "team": "St. Louis Cardinals",
-      "games": 108,
-      "total_ab": 383,
+      "games": 109,
+      "total_ab": 387,
       "total_h": 96,
       "total_hr": 16,
       "total_rbi": 46,
       "total_bb": 50,
-      "total_k": 71,
-      "avg": 0.251,
+      "total_k": 72,
+      "avg": 0.248,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260626",
-          "opponent": "Miami Marlins",
-          "ab": 4,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 1
-        },
         {
           "date": "20260626",
           "opponent": "Miami Marlins",
@@ -169894,12 +169884,22 @@
           "rbi": 0,
           "bb": 0,
           "k": 0
+        },
+        {
+          "date": "20260706",
+          "opponent": "Milwaukee Brewers",
+          "ab": 4,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 1
         }
       ],
       "last10_ab": 41,
       "last10_h": 12,
       "last10_avg": 0.293,
-      "k_pct": 0.185
+      "k_pct": 0.186
     },
     "Ryan Vilade": {
       "name": "Ryan Vilade",
@@ -172927,7 +172927,7 @@
     "Chad Patrick": {
       "name": "Chad Patrick",
       "team": "Milwaukee Brewers",
-      "games": 67,
+      "games": 68,
       "total_ab": 0,
       "total_h": 0,
       "total_hr": 0,
@@ -172937,16 +172937,6 @@
       "avg": 0.0,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260608",
-          "opponent": "Athletics",
-          "ab": 0,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 0
-        },
         {
           "date": "20260610",
           "opponent": "Athletics",
@@ -173030,6 +173020,16 @@
         {
           "date": "20260703",
           "opponent": "Arizona Diamondbacks",
+          "ab": 0,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
+        },
+        {
+          "date": "20260706",
+          "opponent": "St. Louis Cardinals",
           "ab": 0,
           "h": 0,
           "hr": 0,
@@ -186740,26 +186740,16 @@
     "Nelson Velázquez": {
       "name": "Nelson Velázquez",
       "team": "St. Louis Cardinals",
-      "games": 35,
-      "total_ab": 89,
-      "total_h": 27,
+      "games": 36,
+      "total_ab": 92,
+      "total_h": 28,
       "total_hr": 7,
-      "total_rbi": 19,
+      "total_rbi": 20,
       "total_bb": 13,
       "total_k": 16,
-      "avg": 0.303,
+      "avg": 0.304,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260613",
-          "opponent": "Minnesota Twins",
-          "ab": 3,
-          "h": 1,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 1
-        },
         {
           "date": "20260617",
           "opponent": "San Diego Padres",
@@ -186849,36 +186839,36 @@
           "rbi": 0,
           "bb": 0,
           "k": 0
+        },
+        {
+          "date": "20260706",
+          "opponent": "Milwaukee Brewers",
+          "ab": 3,
+          "h": 1,
+          "hr": 0,
+          "rbi": 1,
+          "bb": 0,
+          "k": 0
         }
       ],
       "last10_ab": 21,
       "last10_h": 4,
       "last10_avg": 0.19,
-      "k_pct": 0.18
+      "k_pct": 0.174
     },
     "Blaze Jordan": {
       "name": "Blaze Jordan",
       "team": "St. Louis Cardinals",
-      "games": 36,
-      "total_ab": 99,
+      "games": 37,
+      "total_ab": 102,
       "total_h": 19,
       "total_hr": 2,
       "total_rbi": 15,
       "total_bb": 6,
       "total_k": 18,
-      "avg": 0.192,
+      "avg": 0.186,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260622",
-          "opponent": "Arizona Diamondbacks",
-          "ab": 2,
-          "h": 0,
-          "hr": 0,
-          "rbi": 1,
-          "bb": 0,
-          "k": 0
-        },
         {
           "date": "20260623",
           "opponent": "Arizona Diamondbacks",
@@ -186968,12 +186958,22 @@
           "rbi": 0,
           "bb": 0,
           "k": 1
+        },
+        {
+          "date": "20260706",
+          "opponent": "Milwaukee Brewers",
+          "ab": 3,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
         }
       ],
-      "last10_ab": 29,
+      "last10_ab": 30,
       "last10_h": 5,
-      "last10_avg": 0.172,
-      "k_pct": 0.182
+      "last10_avg": 0.167,
+      "k_pct": 0.176
     },
     "Josh Kross": {
       "name": "Josh Kross",
@@ -192887,26 +192887,16 @@
     "David Hamilton": {
       "name": "David Hamilton",
       "team": "Milwaukee Brewers",
-      "games": 93,
-      "total_ab": 256,
-      "total_h": 66,
+      "games": 94,
+      "total_ab": 259,
+      "total_h": 68,
       "total_hr": 5,
-      "total_rbi": 26,
+      "total_rbi": 28,
       "total_bb": 27,
-      "total_k": 60,
-      "avg": 0.258,
+      "total_k": 61,
+      "avg": 0.263,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260624",
-          "opponent": "Cincinnati Reds",
-          "ab": 4,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 4
-        },
         {
           "date": "20260626",
           "opponent": "Chicago Cubs",
@@ -192996,12 +192986,22 @@
           "rbi": 0,
           "bb": 0,
           "k": 0
+        },
+        {
+          "date": "20260706",
+          "opponent": "St. Louis Cardinals",
+          "ab": 3,
+          "h": 2,
+          "hr": 0,
+          "rbi": 2,
+          "bb": 0,
+          "k": 1
         }
       ],
-      "last10_ab": 25,
-      "last10_h": 7,
-      "last10_avg": 0.28,
-      "k_pct": 0.234
+      "last10_ab": 24,
+      "last10_h": 9,
+      "last10_avg": 0.375,
+      "k_pct": 0.236
     },
     "Eddys Leonard": {
       "name": "Eddys Leonard",
@@ -197633,7 +197633,7 @@
     "Shane Drohan": {
       "name": "Shane Drohan",
       "team": "Milwaukee Brewers",
-      "games": 21,
+      "games": 22,
       "total_ab": 0,
       "total_h": 0,
       "total_hr": 0,
@@ -197643,16 +197643,6 @@
       "avg": 0.0,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260518",
-          "opponent": "Chicago Cubs",
-          "ab": 0,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 0
-        },
         {
           "date": "20260522",
           "opponent": "Los Angeles Dodgers",
@@ -197742,6 +197732,16 @@
           "rbi": 0,
           "bb": 0,
           "k": 0
+        },
+        {
+          "date": "20260706",
+          "opponent": "St. Louis Cardinals",
+          "ab": 0,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
         }
       ],
       "last10_ab": 0,
@@ -197800,7 +197800,7 @@
     "Ryne Stanek": {
       "name": "Ryne Stanek",
       "team": "St. Louis Cardinals",
-      "games": 44,
+      "games": 45,
       "total_ab": 0,
       "total_h": 0,
       "total_hr": 0,
@@ -197810,16 +197810,6 @@
       "avg": 0.0,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260606",
-          "opponent": "Cincinnati Reds",
-          "ab": 0,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 0
-        },
         {
           "date": "20260607",
           "opponent": "Cincinnati Reds",
@@ -197903,6 +197893,16 @@
         {
           "date": "20260704",
           "opponent": "Chicago Cubs",
+          "ab": 0,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
+        },
+        {
+          "date": "20260706",
+          "opponent": "Milwaukee Brewers",
           "ab": 0,
           "h": 0,
           "hr": 0,
@@ -198776,7 +198776,7 @@
     "Dustin May": {
       "name": "Dustin May",
       "team": "St. Louis Cardinals",
-      "games": 19,
+      "games": 20,
       "total_ab": 0,
       "total_h": 0,
       "total_hr": 0,
@@ -198786,16 +198786,6 @@
       "avg": 0.0,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260503",
-          "opponent": "Los Angeles Dodgers",
-          "ab": 0,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 0
-        },
         {
           "date": "20260509",
           "opponent": "San Diego Padres",
@@ -198879,6 +198869,16 @@
         {
           "date": "20260702",
           "opponent": "Atlanta Braves",
+          "ab": 0,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
+        },
+        {
+          "date": "20260706",
+          "opponent": "Milwaukee Brewers",
           "ab": 0,
           "h": 0,
           "hr": 0,
