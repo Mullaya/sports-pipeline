@@ -673,18 +673,18 @@
     },
     "American League All-Stars": {
       "team": "American League All-Stars",
-      "games": 2,
-      "wins": 1,
+      "games": 3,
+      "wins": 2,
       "losses": 1,
-      "total_runs": 11,
+      "total_runs": 15,
       "total_allowed": 10,
-      "win_pct": 0.5,
-      "rpg": 5.5,
-      "rapg": 5.0,
-      "run_diff": 1,
+      "win_pct": 0.667,
+      "rpg": 5.0,
+      "rapg": 3.33,
+      "run_diff": 5,
       "home_wins": 1,
       "home_losses": 0,
-      "away_wins": 0,
+      "away_wins": 1,
       "away_losses": 1,
       "last10": [
         {
@@ -700,22 +700,29 @@
           "runs": 6,
           "allowed": 7,
           "result": "L"
+        },
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
+          "runs": 4,
+          "allowed": 0,
+          "result": "W"
         }
       ]
     },
     "National League All-Stars": {
       "team": "National League All-Stars",
-      "games": 2,
+      "games": 3,
       "wins": 1,
-      "losses": 1,
+      "losses": 2,
       "total_runs": 10,
-      "total_allowed": 11,
-      "win_pct": 0.5,
-      "rpg": 5.0,
-      "rapg": 5.5,
-      "run_diff": -1,
+      "total_allowed": 15,
+      "win_pct": 0.333,
+      "rpg": 3.33,
+      "rapg": 5.0,
+      "run_diff": -5,
       "home_wins": 1,
-      "home_losses": 0,
+      "home_losses": 1,
       "away_wins": 0,
       "away_losses": 1,
       "last10": [
@@ -732,6 +739,13 @@
           "runs": 7,
           "allowed": 6,
           "result": "W"
+        },
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
+          "runs": 0,
+          "allowed": 4,
+          "result": "L"
         }
       ]
     },
@@ -19446,42 +19460,30 @@
     },
     "Bryan Baker": {
       "name": "Bryan Baker",
-      "team": "Tampa Bay Rays",
-      "games": 150,
+      "team": "American League All-Stars",
+      "games": 151,
       "starts": 0,
       "wins": 6,
       "losses": 5,
-      "total_ip": 149.0,
+      "total_ip": 149.3,
       "total_er": 63,
-      "total_h": 121,
+      "total_h": 122,
       "total_bb": 43,
       "total_k": 166,
       "total_hr": 23,
-      "total_pitches": 2349,
-      "era": 3.81,
+      "total_pitches": 2354,
+      "era": 3.8,
       "whip": 1.1,
-      "k9": 10.03,
-      "bb9": 2.6,
+      "k9": 10.0,
+      "bb9": 2.59,
       "hr9": 1.39,
       "home_ip": 79.66666666666666,
       "home_er": 35,
       "home_era": 3.95,
-      "away_ip": 69.33333333333334,
+      "away_ip": 69.66666666666667,
       "away_er": 28,
-      "away_era": 3.63,
+      "away_era": 3.62,
       "last5": [
-        {
-          "date": "20260627",
-          "opponent": "Arizona Diamondbacks",
-          "is_starter": false,
-          "ip": 1.0,
-          "er": 0,
-          "h": 0,
-          "bb": 0,
-          "k": 0,
-          "hr": 0,
-          "pitches": 10
-        },
         {
           "date": "20260702",
           "opponent": "Kansas City Royals",
@@ -19529,21 +19531,21 @@
           "k": 3,
           "hr": 0,
           "pitches": 16
-        }
-      ],
-      "last10": [
+        },
         {
-          "date": "20260609",
-          "opponent": "Boston Red Sox",
+          "date": "20260714",
+          "opponent": "National League All-Stars",
           "is_starter": false,
-          "ip": 1.0,
+          "ip": 0.33,
           "er": 0,
-          "h": 0,
+          "h": 1,
           "bb": 0,
           "k": 0,
           "hr": 0,
-          "pitches": 13
-        },
+          "pitches": 5
+        }
+      ],
+      "last10": [
         {
           "date": "20260614",
           "opponent": "Los Angeles Angels",
@@ -19651,6 +19653,18 @@
           "k": 3,
           "hr": 0,
           "pitches": 16
+        },
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
+          "is_starter": false,
+          "ip": 0.33,
+          "er": 0,
+          "h": 1,
+          "bb": 0,
+          "k": 0,
+          "hr": 0,
+          "pitches": 5
         }
       ],
       "vs_teams": {
@@ -19826,6 +19840,12 @@
           "games": 3,
           "er": 0,
           "ip": 3.0,
+          "era": 0.0
+        },
+        "National League All-Stars": {
+          "games": 1,
+          "er": 0,
+          "ip": 0.3333333333333333,
           "era": 0.0
         }
       }
@@ -45864,27 +45884,27 @@
     },
     "Cade Smith": {
       "name": "Cade Smith",
-      "team": "New York Yankees",
-      "games": 1,
+      "team": "American League All-Stars",
+      "games": 2,
       "starts": 0,
       "wins": 0,
       "losses": 0,
-      "total_ip": 1.0,
+      "total_ip": 2.0,
       "total_er": 0,
       "total_h": 0,
       "total_bb": 0,
-      "total_k": 0,
+      "total_k": 2,
       "total_hr": 0,
-      "total_pitches": 6,
+      "total_pitches": 18,
       "era": 0.0,
       "whip": 0.0,
-      "k9": 0.0,
+      "k9": 9.0,
       "bb9": 0.0,
       "hr9": 0.0,
       "home_ip": 0.0,
       "home_er": 0,
       "home_era": 0.0,
-      "away_ip": 1.0,
+      "away_ip": 2.0,
       "away_er": 0,
       "away_era": 0.0,
       "last5": [
@@ -45899,6 +45919,18 @@
           "k": 0,
           "hr": 0,
           "pitches": 6
+        },
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
+          "is_starter": false,
+          "ip": 1.0,
+          "er": 0,
+          "h": 0,
+          "bb": 0,
+          "k": 2,
+          "hr": 0,
+          "pitches": 12
         }
       ],
       "last10": [
@@ -45913,10 +45945,28 @@
           "k": 0,
           "hr": 0,
           "pitches": 6
+        },
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
+          "is_starter": false,
+          "ip": 1.0,
+          "er": 0,
+          "h": 0,
+          "bb": 0,
+          "k": 2,
+          "hr": 0,
+          "pitches": 12
         }
       ],
       "vs_teams": {
         "Toronto Blue Jays": {
+          "games": 1,
+          "er": 0,
+          "ip": 1.0,
+          "era": 0.0
+        },
+        "National League All-Stars": {
           "games": 1,
           "er": 0,
           "ip": 1.0,
@@ -63348,24 +63398,24 @@
     },
     "Mason Miller": {
       "name": "Mason Miller",
-      "team": "United States",
-      "games": 2,
+      "team": "National League All-Stars",
+      "games": 3,
       "starts": 0,
       "wins": 1,
       "losses": 0,
-      "total_ip": 2.0,
+      "total_ip": 2.3,
       "total_er": 0,
       "total_h": 0,
       "total_bb": 0,
-      "total_k": 3,
+      "total_k": 4,
       "total_hr": 0,
-      "total_pitches": 19,
+      "total_pitches": 23,
       "era": 0.0,
       "whip": 0.0,
-      "k9": 13.5,
+      "k9": 15.43,
       "bb9": 0.0,
       "hr9": 0.0,
-      "home_ip": 1.0,
+      "home_ip": 1.3333333333333333,
       "home_er": 0,
       "home_era": 0.0,
       "away_ip": 1.0,
@@ -63395,6 +63445,18 @@
           "k": 1,
           "hr": 0,
           "pitches": 7
+        },
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
+          "is_starter": false,
+          "ip": 0.33,
+          "er": 0,
+          "h": 0,
+          "bb": 0,
+          "k": 1,
+          "hr": 0,
+          "pitches": 4
         }
       ],
       "last10": [
@@ -63421,6 +63483,18 @@
           "k": 1,
           "hr": 0,
           "pitches": 7
+        },
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
+          "is_starter": false,
+          "ip": 0.33,
+          "er": 0,
+          "h": 0,
+          "bb": 0,
+          "k": 1,
+          "hr": 0,
+          "pitches": 4
         }
       ],
       "vs_teams": {
@@ -63434,6 +63508,12 @@
           "games": 1,
           "er": 0,
           "ip": 1.0,
+          "era": 0.0
+        },
+        "American League All-Stars": {
+          "games": 1,
+          "er": 0,
+          "ip": 0.3333333333333333,
           "era": 0.0
         }
       }
@@ -64383,25 +64463,25 @@
     "Cristopher Sánchez": {
       "name": "Cristopher Sánchez",
       "team": "National League All-Stars",
-      "games": 1,
-      "starts": 0,
+      "games": 2,
+      "starts": 1,
       "wins": 0,
-      "losses": 0,
-      "total_ip": 0.7,
-      "total_er": 0,
-      "total_h": 0,
-      "total_bb": 0,
-      "total_k": 0,
+      "losses": 1,
+      "total_ip": 1.7,
+      "total_er": 3,
+      "total_h": 3,
+      "total_bb": 2,
+      "total_k": 2,
       "total_hr": 0,
-      "total_pitches": 2,
-      "era": 0.0,
-      "whip": 0.0,
-      "k9": 0.0,
-      "bb9": 0.0,
+      "total_pitches": 36,
+      "era": 16.2,
+      "whip": 3.0,
+      "k9": 10.8,
+      "bb9": 10.8,
       "hr9": 0.0,
-      "home_ip": 0.0,
-      "home_er": 0,
-      "home_era": 0.0,
+      "home_ip": 1.0,
+      "home_er": 3,
+      "home_era": 27.0,
       "away_ip": 0.6666666666666666,
       "away_er": 0,
       "away_era": 0.0,
@@ -64417,6 +64497,18 @@
           "k": 0,
           "hr": 0,
           "pitches": 2
+        },
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
+          "is_starter": true,
+          "ip": 1.0,
+          "er": 3,
+          "h": 3,
+          "bb": 2,
+          "k": 2,
+          "hr": 0,
+          "pitches": 34
         }
       ],
       "last10": [
@@ -64431,14 +64523,26 @@
           "k": 0,
           "hr": 0,
           "pitches": 2
+        },
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
+          "is_starter": true,
+          "ip": 1.0,
+          "er": 3,
+          "h": 3,
+          "bb": 2,
+          "k": 2,
+          "hr": 0,
+          "pitches": 34
         }
       ],
       "vs_teams": {
         "American League All-Stars": {
-          "games": 1,
-          "er": 0,
-          "ip": 0.6666666666666666,
-          "era": 0.0
+          "games": 2,
+          "er": 3,
+          "ip": 1.6666666666666665,
+          "era": 16.2
         }
       }
     },
@@ -68218,42 +68322,30 @@
     },
     "Drew Rasmussen": {
       "name": "Drew Rasmussen",
-      "team": "Tampa Bay Rays",
-      "games": 73,
+      "team": "American League All-Stars",
+      "games": 74,
       "starts": 60,
       "wins": 17,
       "losses": 13,
-      "total_ip": 304.3,
+      "total_ip": 305.0,
       "total_er": 102,
       "total_h": 244,
-      "total_bb": 66,
-      "total_k": 280,
+      "total_bb": 67,
+      "total_k": 281,
       "total_hr": 33,
-      "total_pitches": 4703,
-      "era": 3.02,
+      "total_pitches": 4721,
+      "era": 3.01,
       "whip": 1.02,
-      "k9": 8.28,
-      "bb9": 1.95,
-      "hr9": 0.98,
+      "k9": 8.29,
+      "bb9": 1.98,
+      "hr9": 0.97,
       "home_ip": 163.33333333333334,
       "home_er": 55,
       "home_era": 3.03,
-      "away_ip": 141.0,
+      "away_ip": 141.66666666666666,
       "away_er": 47,
-      "away_era": 3.0,
+      "away_era": 2.99,
       "last5": [
-        {
-          "date": "20260616",
-          "opponent": "Los Angeles Dodgers",
-          "is_starter": true,
-          "ip": 7.0,
-          "er": 1,
-          "h": 6,
-          "bb": 0,
-          "k": 7,
-          "hr": 1,
-          "pitches": 102
-        },
         {
           "date": "20260622",
           "opponent": "Kansas City Royals",
@@ -68301,21 +68393,21 @@
           "k": 2,
           "hr": 1,
           "pitches": 61
+        },
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
+          "is_starter": false,
+          "ip": 0.67,
+          "er": 0,
+          "h": 0,
+          "bb": 1,
+          "k": 1,
+          "hr": 0,
+          "pitches": 18
         }
       ],
       "last10": [
-        {
-          "date": "20260517",
-          "opponent": "Miami Marlins",
-          "is_starter": true,
-          "ip": 5.33,
-          "er": 2,
-          "h": 7,
-          "bb": 2,
-          "k": 2,
-          "hr": 0,
-          "pitches": 93
-        },
         {
           "date": "20260524",
           "opponent": "New York Yankees",
@@ -68423,6 +68515,18 @@
           "k": 2,
           "hr": 1,
           "pitches": 61
+        },
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
+          "is_starter": false,
+          "ip": 0.67,
+          "er": 0,
+          "h": 0,
+          "bb": 1,
+          "k": 1,
+          "hr": 0,
+          "pitches": 18
         }
       ],
       "vs_teams": {
@@ -68565,9 +68669,9 @@
           "era": 5.0
         },
         "National League All-Stars": {
-          "games": 1,
+          "games": 2,
           "er": 0,
-          "ip": 1.0,
+          "ip": 1.6666666666666665,
           "era": 0.0
         },
         "Chicago White Sox": {
@@ -85840,42 +85944,30 @@
     },
     "Aroldis Chapman": {
       "name": "Aroldis Chapman",
-      "team": "Boston Red Sox",
-      "games": 116,
+      "team": "American League All-Stars",
+      "games": 117,
       "starts": 0,
       "wins": 7,
       "losses": 7,
-      "total_ip": 108.3,
+      "total_ip": 109.0,
       "total_er": 21,
       "total_h": 67,
       "total_bb": 35,
-      "total_k": 154,
+      "total_k": 155,
       "total_hr": 5,
-      "total_pitches": 1686,
-      "era": 1.74,
+      "total_pitches": 1692,
+      "era": 1.73,
       "whip": 0.94,
-      "k9": 12.79,
-      "bb9": 2.91,
-      "hr9": 0.42,
+      "k9": 12.8,
+      "bb9": 2.89,
+      "hr9": 0.41,
       "home_ip": 55.66666666666666,
       "home_er": 10,
       "home_era": 1.62,
-      "away_ip": 52.66666666666667,
+      "away_ip": 53.333333333333336,
       "away_er": 11,
-      "away_era": 1.88,
+      "away_era": 1.86,
       "last5": [
-        {
-          "date": "20260628",
-          "opponent": "New York Yankees",
-          "is_starter": false,
-          "ip": 1.0,
-          "er": 1,
-          "h": 1,
-          "bb": 1,
-          "k": 2,
-          "hr": 0,
-          "pitches": 23
-        },
         {
           "date": "20260703",
           "opponent": "Los Angeles Angels",
@@ -85923,21 +86015,21 @@
           "k": 1,
           "hr": 0,
           "pitches": 15
+        },
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
+          "is_starter": false,
+          "ip": 0.67,
+          "er": 0,
+          "h": 0,
+          "bb": 0,
+          "k": 1,
+          "hr": 0,
+          "pitches": 6
         }
       ],
       "last10": [
-        {
-          "date": "20260613",
-          "opponent": "Texas Rangers",
-          "is_starter": false,
-          "ip": 1.0,
-          "er": 0,
-          "h": 1,
-          "bb": 0,
-          "k": 2,
-          "hr": 0,
-          "pitches": 15
-        },
         {
           "date": "20260618",
           "opponent": "Toronto Blue Jays",
@@ -86045,6 +86137,18 @@
           "k": 1,
           "hr": 0,
           "pitches": 15
+        },
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
+          "is_starter": false,
+          "ip": 0.67,
+          "er": 0,
+          "h": 0,
+          "bb": 0,
+          "k": 1,
+          "hr": 0,
+          "pitches": 6
         }
       ],
       "vs_teams": {
@@ -86175,9 +86279,9 @@
           "era": 0.0
         },
         "National League All-Stars": {
-          "games": 1,
+          "games": 2,
           "er": 0,
-          "ip": 1.0,
+          "ip": 1.6666666666666665,
           "era": 0.0
         },
         "Philadelphia Phillies": {
@@ -96576,26 +96680,26 @@
     },
     "Foster Griffin": {
       "name": "Foster Griffin",
-      "team": "Tokyo Yomiuri Giants",
-      "games": 1,
+      "team": "National League All-Stars",
+      "games": 2,
       "starts": 1,
       "wins": 0,
       "losses": 1,
-      "total_ip": 5.0,
+      "total_ip": 6.0,
       "total_er": 4,
       "total_h": 5,
       "total_bb": 3,
-      "total_k": 6,
+      "total_k": 8,
       "total_hr": 0,
-      "total_pitches": 83,
-      "era": 7.2,
-      "whip": 1.6,
-      "k9": 10.8,
-      "bb9": 5.4,
+      "total_pitches": 93,
+      "era": 6.0,
+      "whip": 1.33,
+      "k9": 12.0,
+      "bb9": 4.5,
       "hr9": 0.0,
-      "home_ip": 5.0,
+      "home_ip": 6.0,
       "home_er": 4,
-      "home_era": 7.2,
+      "home_era": 6.0,
       "away_ip": 0.0,
       "away_er": 0,
       "away_era": 0.0,
@@ -96611,6 +96715,18 @@
           "k": 6,
           "hr": 0,
           "pitches": 83
+        },
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
+          "is_starter": false,
+          "ip": 1.0,
+          "er": 0,
+          "h": 0,
+          "bb": 0,
+          "k": 2,
+          "hr": 0,
+          "pitches": 10
         }
       ],
       "last10": [
@@ -96625,6 +96741,18 @@
           "k": 6,
           "hr": 0,
           "pitches": 83
+        },
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
+          "is_starter": false,
+          "ip": 1.0,
+          "er": 0,
+          "h": 0,
+          "bb": 0,
+          "k": 2,
+          "hr": 0,
+          "pitches": 10
         }
       ],
       "vs_teams": {
@@ -96633,6 +96761,12 @@
           "er": 4,
           "ip": 5.0,
           "era": 7.2
+        },
+        "American League All-Stars": {
+          "games": 1,
+          "er": 0,
+          "ip": 1.0,
+          "era": 0.0
         }
       }
     },
@@ -98898,24 +99032,24 @@
     },
     "Riley O'Brien": {
       "name": "Riley O'Brien",
-      "team": "Memphis Redbirds",
-      "games": 1,
+      "team": "National League All-Stars",
+      "games": 2,
       "starts": 0,
       "wins": 0,
       "losses": 0,
-      "total_ip": 1.0,
+      "total_ip": 2.0,
       "total_er": 0,
-      "total_h": 2,
+      "total_h": 3,
       "total_bb": 0,
-      "total_k": 1,
+      "total_k": 2,
       "total_hr": 0,
-      "total_pitches": 22,
+      "total_pitches": 35,
       "era": 0.0,
-      "whip": 2.0,
+      "whip": 1.5,
       "k9": 9.0,
       "bb9": 0.0,
       "hr9": 0.0,
-      "home_ip": 1.0,
+      "home_ip": 2.0,
       "home_er": 0,
       "home_era": 0.0,
       "away_ip": 0.0,
@@ -98933,6 +99067,18 @@
           "k": 1,
           "hr": 0,
           "pitches": 22
+        },
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
+          "is_starter": false,
+          "ip": 1.0,
+          "er": 0,
+          "h": 1,
+          "bb": 0,
+          "k": 1,
+          "hr": 0,
+          "pitches": 13
         }
       ],
       "last10": [
@@ -98947,10 +99093,28 @@
           "k": 1,
           "hr": 0,
           "pitches": 22
+        },
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
+          "is_starter": false,
+          "ip": 1.0,
+          "er": 0,
+          "h": 1,
+          "bb": 0,
+          "k": 1,
+          "hr": 0,
+          "pitches": 13
         }
       ],
       "vs_teams": {
         "St. Louis Cardinals": {
+          "games": 1,
+          "er": 0,
+          "ip": 1.0,
+          "era": 0.0
+        },
+        "American League All-Stars": {
           "games": 1,
           "er": 0,
           "ip": 1.0,
@@ -104823,26 +104987,26 @@
     "Joe Ryan": {
       "name": "Joe Ryan",
       "team": "American League All-Stars",
-      "games": 1,
+      "games": 2,
       "starts": 0,
       "wins": 0,
       "losses": 0,
-      "total_ip": 1.0,
+      "total_ip": 2.0,
       "total_er": 0,
-      "total_h": 0,
+      "total_h": 1,
       "total_bb": 0,
-      "total_k": 2,
+      "total_k": 4,
       "total_hr": 0,
-      "total_pitches": 10,
+      "total_pitches": 26,
       "era": 0.0,
-      "whip": 0.0,
+      "whip": 0.5,
       "k9": 18.0,
       "bb9": 0.0,
       "hr9": 0.0,
       "home_ip": 0.0,
       "home_er": 0,
       "home_era": 0.0,
-      "away_ip": 1.0,
+      "away_ip": 2.0,
       "away_er": 0,
       "away_era": 0.0,
       "last5": [
@@ -104857,6 +105021,18 @@
           "k": 2,
           "hr": 0,
           "pitches": 10
+        },
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
+          "is_starter": false,
+          "ip": 1.0,
+          "er": 0,
+          "h": 1,
+          "bb": 0,
+          "k": 2,
+          "hr": 0,
+          "pitches": 16
         }
       ],
       "last10": [
@@ -104871,13 +105047,25 @@
           "k": 2,
           "hr": 0,
           "pitches": 10
+        },
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
+          "is_starter": false,
+          "ip": 1.0,
+          "er": 0,
+          "h": 1,
+          "bb": 0,
+          "k": 2,
+          "hr": 0,
+          "pitches": 16
         }
       ],
       "vs_teams": {
         "National League All-Stars": {
-          "games": 1,
+          "games": 2,
           "er": 0,
-          "ip": 1.0,
+          "ip": 2.0,
           "era": 0.0
         }
       }
@@ -105704,42 +105892,30 @@
     },
     "Louis Varland": {
       "name": "Louis Varland",
-      "team": "Toronto Blue Jays",
-      "games": 89,
+      "team": "American League All-Stars",
+      "games": 90,
       "starts": 2,
       "wins": 4,
       "losses": 4,
-      "total_ip": 97.0,
+      "total_ip": 98.0,
       "total_er": 30,
-      "total_h": 78,
+      "total_h": 79,
       "total_bb": 27,
-      "total_k": 120,
+      "total_k": 121,
       "total_hr": 10,
-      "total_pitches": 1518,
-      "era": 2.78,
+      "total_pitches": 1529,
+      "era": 2.76,
       "whip": 1.08,
-      "k9": 11.13,
-      "bb9": 2.51,
-      "hr9": 0.93,
+      "k9": 11.11,
+      "bb9": 2.48,
+      "hr9": 0.92,
       "home_ip": 55.333333333333336,
       "home_er": 18,
       "home_era": 2.93,
-      "away_ip": 41.66666666666667,
+      "away_ip": 42.66666666666667,
       "away_er": 12,
-      "away_era": 2.59,
+      "away_era": 2.53,
       "last5": [
-        {
-          "date": "20260628",
-          "opponent": "Texas Rangers",
-          "is_starter": false,
-          "ip": 1.0,
-          "er": 1,
-          "h": 1,
-          "bb": 0,
-          "k": 3,
-          "hr": 0,
-          "pitches": 23
-        },
         {
           "date": "20260629",
           "opponent": "New York Mets",
@@ -105787,21 +105963,21 @@
           "k": 1,
           "hr": 0,
           "pitches": 26
+        },
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
+          "is_starter": false,
+          "ip": 1.0,
+          "er": 0,
+          "h": 1,
+          "bb": 0,
+          "k": 1,
+          "hr": 0,
+          "pitches": 11
         }
       ],
       "last10": [
-        {
-          "date": "20260620",
-          "opponent": "Chicago Cubs",
-          "is_starter": false,
-          "ip": 2.0,
-          "er": 0,
-          "h": 0,
-          "bb": 0,
-          "k": 2,
-          "hr": 0,
-          "pitches": 28
-        },
         {
           "date": "20260620",
           "opponent": "Chicago Cubs",
@@ -105909,6 +106085,18 @@
           "k": 1,
           "hr": 0,
           "pitches": 26
+        },
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
+          "is_starter": false,
+          "ip": 1.0,
+          "er": 0,
+          "h": 1,
+          "bb": 0,
+          "k": 1,
+          "hr": 0,
+          "pitches": 11
         }
       ],
       "vs_teams": {
@@ -106067,6 +106255,12 @@
           "er": 1,
           "ip": 1.0,
           "era": 9.0
+        },
+        "National League All-Stars": {
+          "games": 1,
+          "er": 0,
+          "ip": 1.0,
+          "era": 0.0
         }
       }
     },
@@ -125086,42 +125280,30 @@
     },
     "Nick Martinez": {
       "name": "Nick Martinez",
-      "team": "Tampa Bay Rays",
-      "games": 23,
+      "team": "American League All-Stars",
+      "games": 24,
       "starts": 23,
       "wins": 9,
       "losses": 6,
-      "total_ip": 124.7,
+      "total_ip": 125.7,
       "total_er": 54,
       "total_h": 134,
       "total_bb": 25,
-      "total_k": 72,
+      "total_k": 73,
       "total_hr": 17,
-      "total_pitches": 1829,
-      "era": 3.9,
-      "whip": 1.28,
-      "k9": 5.2,
-      "bb9": 1.8,
-      "hr9": 1.23,
+      "total_pitches": 1841,
+      "era": 3.87,
+      "whip": 1.27,
+      "k9": 5.23,
+      "bb9": 1.79,
+      "hr9": 1.22,
       "home_ip": 67.33333333333333,
       "home_er": 24,
       "home_era": 3.21,
-      "away_ip": 57.333333333333336,
+      "away_ip": 58.333333333333336,
       "away_er": 30,
-      "away_era": 4.71,
+      "away_era": 4.63,
       "last5": [
-        {
-          "date": "20260621",
-          "opponent": "Washington Nationals",
-          "is_starter": true,
-          "ip": 6.0,
-          "er": 3,
-          "h": 4,
-          "bb": 3,
-          "k": 5,
-          "hr": 1,
-          "pitches": 88
-        },
         {
           "date": "20260626",
           "opponent": "Arizona Diamondbacks",
@@ -125169,21 +125351,21 @@
           "k": 1,
           "hr": 1,
           "pitches": 70
+        },
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
+          "is_starter": false,
+          "ip": 1.0,
+          "er": 0,
+          "h": 0,
+          "bb": 0,
+          "k": 1,
+          "hr": 0,
+          "pitches": 12
         }
       ],
       "last10": [
-        {
-          "date": "20260522",
-          "opponent": "New York Yankees",
-          "is_starter": true,
-          "ip": 6.0,
-          "er": 1,
-          "h": 9,
-          "bb": 1,
-          "k": 1,
-          "hr": 1,
-          "pitches": 94
-        },
         {
           "date": "20260529",
           "opponent": "Los Angeles Angels",
@@ -125291,6 +125473,18 @@
           "k": 1,
           "hr": 1,
           "pitches": 70
+        },
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
+          "is_starter": false,
+          "ip": 1.0,
+          "er": 0,
+          "h": 0,
+          "bb": 0,
+          "k": 1,
+          "hr": 0,
+          "pitches": 12
         }
       ],
       "vs_teams": {
@@ -125395,6 +125589,12 @@
           "er": 2,
           "ip": 5.333333333333333,
           "era": 3.38
+        },
+        "National League All-Stars": {
+          "games": 1,
+          "er": 0,
+          "ip": 1.0,
+          "era": 0.0
         }
       }
     },
@@ -125770,42 +125970,30 @@
     },
     "Dylan Cease": {
       "name": "Dylan Cease",
-      "team": "Toronto Blue Jays",
-      "games": 20,
-      "starts": 20,
-      "wins": 7,
+      "team": "American League All-Stars",
+      "games": 21,
+      "starts": 21,
+      "wins": 8,
       "losses": 4,
-      "total_ip": 108.0,
+      "total_ip": 109.0,
       "total_er": 29,
       "total_h": 73,
-      "total_bb": 47,
-      "total_k": 160,
+      "total_bb": 48,
+      "total_k": 163,
       "total_hr": 6,
-      "total_pitches": 1888,
-      "era": 2.42,
+      "total_pitches": 1913,
+      "era": 2.39,
       "whip": 1.11,
-      "k9": 13.33,
-      "bb9": 3.92,
+      "k9": 13.46,
+      "bb9": 3.96,
       "hr9": 0.5,
       "home_ip": 60.666666666666664,
       "home_er": 17,
       "home_era": 2.52,
-      "away_ip": 47.33333333333333,
+      "away_ip": 48.33333333333333,
       "away_er": 12,
-      "away_era": 2.28,
+      "away_era": 2.23,
       "last5": [
-        {
-          "date": "20260616",
-          "opponent": "Boston Red Sox",
-          "is_starter": true,
-          "ip": 5.0,
-          "er": 0,
-          "h": 4,
-          "bb": 4,
-          "k": 7,
-          "hr": 0,
-          "pitches": 108
-        },
         {
           "date": "20260622",
           "opponent": "Houston Astros",
@@ -125853,21 +126041,21 @@
           "k": 11,
           "hr": 0,
           "pitches": 118
+        },
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
+          "is_starter": true,
+          "ip": 1.0,
+          "er": 0,
+          "h": 0,
+          "bb": 1,
+          "k": 3,
+          "hr": 0,
+          "pitches": 25
         }
       ],
       "last10": [
-        {
-          "date": "20260508",
-          "opponent": "Los Angeles Angels",
-          "is_starter": true,
-          "ip": 7.0,
-          "er": 0,
-          "h": 5,
-          "bb": 0,
-          "k": 10,
-          "hr": 0,
-          "pitches": 97
-        },
         {
           "date": "20260513",
           "opponent": "Tampa Bay Rays",
@@ -125975,6 +126163,18 @@
           "k": 11,
           "hr": 0,
           "pitches": 118
+        },
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
+          "is_starter": true,
+          "ip": 1.0,
+          "er": 0,
+          "h": 0,
+          "bb": 1,
+          "k": 3,
+          "hr": 0,
+          "pitches": 25
         }
       ],
       "vs_teams": {
@@ -126072,6 +126272,12 @@
           "games": 1,
           "er": 0,
           "ip": 8.0,
+          "era": 0.0
+        },
+        "National League All-Stars": {
+          "games": 1,
+          "er": 0,
+          "ip": 1.0,
           "era": 0.0
         }
       }
@@ -135016,24 +135222,24 @@
     },
     "Eduardo Rodriguez": {
       "name": "Eduardo Rodriguez",
-      "team": "Venezuela",
-      "games": 1,
+      "team": "National League All-Stars",
+      "games": 2,
       "starts": 1,
       "wins": 0,
       "losses": 1,
-      "total_ip": 1.7,
+      "total_ip": 2.7,
       "total_er": 2,
       "total_h": 1,
       "total_bb": 3,
       "total_k": 2,
       "total_hr": 0,
-      "total_pitches": 43,
-      "era": 10.8,
-      "whip": 2.4,
-      "k9": 10.8,
-      "bb9": 16.2,
+      "total_pitches": 51,
+      "era": 6.75,
+      "whip": 1.5,
+      "k9": 6.75,
+      "bb9": 10.12,
       "hr9": 0.0,
-      "home_ip": 0.0,
+      "home_ip": 1.0,
       "home_er": 0,
       "home_era": 0.0,
       "away_ip": 1.6666666666666665,
@@ -135051,6 +135257,18 @@
           "k": 2,
           "hr": 0,
           "pitches": 43
+        },
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
+          "is_starter": false,
+          "ip": 1.0,
+          "er": 0,
+          "h": 0,
+          "bb": 0,
+          "k": 0,
+          "hr": 0,
+          "pitches": 8
         }
       ],
       "last10": [
@@ -135065,6 +135283,18 @@
           "k": 2,
           "hr": 0,
           "pitches": 43
+        },
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
+          "is_starter": false,
+          "ip": 1.0,
+          "er": 0,
+          "h": 0,
+          "bb": 0,
+          "k": 0,
+          "hr": 0,
+          "pitches": 8
         }
       ],
       "vs_teams": {
@@ -135073,6 +135303,12 @@
           "er": 2,
           "ip": 1.6666666666666665,
           "era": 10.8
+        },
+        "American League All-Stars": {
+          "games": 1,
+          "er": 0,
+          "ip": 1.0,
+          "era": 0.0
         }
       }
     },
@@ -140123,6 +140359,440 @@
           "era": 2.08
         }
       }
+    },
+    "Jesús Luzardo": {
+      "name": "Jesús Luzardo",
+      "team": "National League All-Stars",
+      "games": 1,
+      "starts": 0,
+      "wins": 0,
+      "losses": 0,
+      "total_ip": 1.0,
+      "total_er": 0,
+      "total_h": 0,
+      "total_bb": 0,
+      "total_k": 1,
+      "total_hr": 0,
+      "total_pitches": 6,
+      "era": 0.0,
+      "whip": 0.0,
+      "k9": 9.0,
+      "bb9": 0.0,
+      "hr9": 0.0,
+      "home_ip": 1.0,
+      "home_er": 0,
+      "home_era": 0.0,
+      "away_ip": 0.0,
+      "away_er": 0,
+      "away_era": 0.0,
+      "last5": [
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
+          "is_starter": false,
+          "ip": 1.0,
+          "er": 0,
+          "h": 0,
+          "bb": 0,
+          "k": 1,
+          "hr": 0,
+          "pitches": 6
+        }
+      ],
+      "last10": [
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
+          "is_starter": false,
+          "ip": 1.0,
+          "er": 0,
+          "h": 0,
+          "bb": 0,
+          "k": 1,
+          "hr": 0,
+          "pitches": 6
+        }
+      ],
+      "vs_teams": {
+        "American League All-Stars": {
+          "games": 1,
+          "er": 0,
+          "ip": 1.0,
+          "era": 0.0
+        }
+      }
+    },
+    "Raisel Iglesias": {
+      "name": "Raisel Iglesias",
+      "team": "National League All-Stars",
+      "games": 1,
+      "starts": 0,
+      "wins": 0,
+      "losses": 0,
+      "total_ip": 1.0,
+      "total_er": 0,
+      "total_h": 1,
+      "total_bb": 0,
+      "total_k": 0,
+      "total_hr": 0,
+      "total_pitches": 14,
+      "era": 0.0,
+      "whip": 1.0,
+      "k9": 0.0,
+      "bb9": 0.0,
+      "hr9": 0.0,
+      "home_ip": 1.0,
+      "home_er": 0,
+      "home_era": 0.0,
+      "away_ip": 0.0,
+      "away_er": 0,
+      "away_era": 0.0,
+      "last5": [
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
+          "is_starter": false,
+          "ip": 1.0,
+          "er": 0,
+          "h": 1,
+          "bb": 0,
+          "k": 0,
+          "hr": 0,
+          "pitches": 14
+        }
+      ],
+      "last10": [
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
+          "is_starter": false,
+          "ip": 1.0,
+          "er": 0,
+          "h": 1,
+          "bb": 0,
+          "k": 0,
+          "hr": 0,
+          "pitches": 14
+        }
+      ],
+      "vs_teams": {
+        "American League All-Stars": {
+          "games": 1,
+          "er": 0,
+          "ip": 1.0,
+          "era": 0.0
+        }
+      }
+    },
+    "Justin Wrobleski": {
+      "name": "Justin Wrobleski",
+      "team": "National League All-Stars",
+      "games": 1,
+      "starts": 0,
+      "wins": 0,
+      "losses": 0,
+      "total_ip": 2.0,
+      "total_er": 1,
+      "total_h": 1,
+      "total_bb": 0,
+      "total_k": 5,
+      "total_hr": 1,
+      "total_pitches": 29,
+      "era": 4.5,
+      "whip": 0.5,
+      "k9": 22.5,
+      "bb9": 0.0,
+      "hr9": 4.5,
+      "home_ip": 2.0,
+      "home_er": 1,
+      "home_era": 4.5,
+      "away_ip": 0.0,
+      "away_er": 0,
+      "away_era": 0.0,
+      "last5": [
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
+          "is_starter": false,
+          "ip": 2.0,
+          "er": 1,
+          "h": 1,
+          "bb": 0,
+          "k": 5,
+          "hr": 1,
+          "pitches": 29
+        }
+      ],
+      "last10": [
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
+          "is_starter": false,
+          "ip": 2.0,
+          "er": 1,
+          "h": 1,
+          "bb": 0,
+          "k": 5,
+          "hr": 1,
+          "pitches": 29
+        }
+      ],
+      "vs_teams": {
+        "American League All-Stars": {
+          "games": 1,
+          "er": 1,
+          "ip": 2.0,
+          "era": 4.5
+        }
+      }
+    },
+    "Jhoan Duran": {
+      "name": "Jhoan Duran",
+      "team": "National League All-Stars",
+      "games": 1,
+      "starts": 0,
+      "wins": 0,
+      "losses": 0,
+      "total_ip": 0.7,
+      "total_er": 0,
+      "total_h": 1,
+      "total_bb": 0,
+      "total_k": 0,
+      "total_hr": 0,
+      "total_pitches": 4,
+      "era": 0.0,
+      "whip": 1.5,
+      "k9": 0.0,
+      "bb9": 0.0,
+      "hr9": 0.0,
+      "home_ip": 0.6666666666666666,
+      "home_er": 0,
+      "home_era": 0.0,
+      "away_ip": 0.0,
+      "away_er": 0,
+      "away_era": 0.0,
+      "last5": [
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
+          "is_starter": false,
+          "ip": 0.67,
+          "er": 0,
+          "h": 1,
+          "bb": 0,
+          "k": 0,
+          "hr": 0,
+          "pitches": 4
+        }
+      ],
+      "last10": [
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
+          "is_starter": false,
+          "ip": 0.67,
+          "er": 0,
+          "h": 1,
+          "bb": 0,
+          "k": 0,
+          "hr": 0,
+          "pitches": 4
+        }
+      ],
+      "vs_teams": {
+        "American League All-Stars": {
+          "games": 1,
+          "er": 0,
+          "ip": 0.6666666666666666,
+          "era": 0.0
+        }
+      }
+    },
+    "Parker Messick": {
+      "name": "Parker Messick",
+      "team": "American League All-Stars",
+      "games": 1,
+      "starts": 0,
+      "wins": 0,
+      "losses": 0,
+      "total_ip": 1.0,
+      "total_er": 0,
+      "total_h": 0,
+      "total_bb": 0,
+      "total_k": 1,
+      "total_hr": 0,
+      "total_pitches": 10,
+      "era": 0.0,
+      "whip": 0.0,
+      "k9": 9.0,
+      "bb9": 0.0,
+      "hr9": 0.0,
+      "home_ip": 0.0,
+      "home_er": 0,
+      "home_era": 0.0,
+      "away_ip": 1.0,
+      "away_er": 0,
+      "away_era": 0.0,
+      "last5": [
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
+          "is_starter": false,
+          "ip": 1.0,
+          "er": 0,
+          "h": 0,
+          "bb": 0,
+          "k": 1,
+          "hr": 0,
+          "pitches": 10
+        }
+      ],
+      "last10": [
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
+          "is_starter": false,
+          "ip": 1.0,
+          "er": 0,
+          "h": 0,
+          "bb": 0,
+          "k": 1,
+          "hr": 0,
+          "pitches": 10
+        }
+      ],
+      "vs_teams": {
+        "National League All-Stars": {
+          "games": 1,
+          "er": 0,
+          "ip": 1.0,
+          "era": 0.0
+        }
+      }
+    },
+    "Michael Wacha": {
+      "name": "Michael Wacha",
+      "team": "American League All-Stars",
+      "games": 1,
+      "starts": 0,
+      "wins": 0,
+      "losses": 0,
+      "total_ip": 1.0,
+      "total_er": 0,
+      "total_h": 0,
+      "total_bb": 0,
+      "total_k": 2,
+      "total_hr": 0,
+      "total_pitches": 17,
+      "era": 0.0,
+      "whip": 0.0,
+      "k9": 18.0,
+      "bb9": 0.0,
+      "hr9": 0.0,
+      "home_ip": 0.0,
+      "home_er": 0,
+      "home_era": 0.0,
+      "away_ip": 1.0,
+      "away_er": 0,
+      "away_era": 0.0,
+      "last5": [
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
+          "is_starter": false,
+          "ip": 1.0,
+          "er": 0,
+          "h": 0,
+          "bb": 0,
+          "k": 2,
+          "hr": 0,
+          "pitches": 17
+        }
+      ],
+      "last10": [
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
+          "is_starter": false,
+          "ip": 1.0,
+          "er": 0,
+          "h": 0,
+          "bb": 0,
+          "k": 2,
+          "hr": 0,
+          "pitches": 17
+        }
+      ],
+      "vs_teams": {
+        "National League All-Stars": {
+          "games": 1,
+          "er": 0,
+          "ip": 1.0,
+          "era": 0.0
+        }
+      }
+    },
+    "Jacob Latz": {
+      "name": "Jacob Latz",
+      "team": "American League All-Stars",
+      "games": 1,
+      "starts": 0,
+      "wins": 0,
+      "losses": 0,
+      "total_ip": 0.3,
+      "total_er": 0,
+      "total_h": 0,
+      "total_bb": 0,
+      "total_k": 1,
+      "total_hr": 0,
+      "total_pitches": 6,
+      "era": 0.0,
+      "whip": 0.0,
+      "k9": 27.0,
+      "bb9": 0.0,
+      "hr9": 0.0,
+      "home_ip": 0.0,
+      "home_er": 0,
+      "home_era": 0.0,
+      "away_ip": 0.3333333333333333,
+      "away_er": 0,
+      "away_era": 0.0,
+      "last5": [
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
+          "is_starter": false,
+          "ip": 0.33,
+          "er": 0,
+          "h": 0,
+          "bb": 0,
+          "k": 1,
+          "hr": 0,
+          "pitches": 6
+        }
+      ],
+      "last10": [
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
+          "is_starter": false,
+          "ip": 0.33,
+          "er": 0,
+          "h": 0,
+          "bb": 0,
+          "k": 1,
+          "hr": 0,
+          "pitches": 6
+        }
+      ],
+      "vs_teams": {
+        "National League All-Stars": {
+          "games": 1,
+          "er": 0,
+          "ip": 0.3333333333333333,
+          "era": 0.0
+        }
+      }
     }
   },
   "batters": {
@@ -142081,27 +142751,17 @@
     },
     "Tristan Peters": {
       "name": "Tristan Peters",
-      "team": "Tampa Bay Rays",
-      "games": 27,
-      "total_ab": 52,
+      "team": "American League All-Stars",
+      "games": 28,
+      "total_ab": 53,
       "total_h": 14,
       "total_hr": 1,
       "total_rbi": 3,
       "total_bb": 3,
-      "total_k": 14,
-      "avg": 0.269,
+      "total_k": 15,
+      "avg": 0.264,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20250315",
-          "opponent": "New York Yankees",
-          "ab": 2,
-          "h": 1,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 0
-        },
         {
           "date": "20250316",
           "opponent": "Washington Nationals",
@@ -142191,12 +142851,22 @@
           "rbi": 0,
           "bb": 0,
           "k": 2
+        },
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
+          "ab": 1,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 1
         }
       ],
-      "last10_ab": 21,
-      "last10_h": 3,
-      "last10_avg": 0.143,
-      "k_pct": 0.269
+      "last10_ab": 20,
+      "last10_h": 2,
+      "last10_avg": 0.1,
+      "k_pct": 0.283
     },
     "Jacob Lopez": {
       "name": "Jacob Lopez",
@@ -142886,27 +143556,17 @@
     },
     "Ceddanne Rafaela": {
       "name": "Ceddanne Rafaela",
-      "team": "Boston Red Sox",
-      "games": 453,
-      "total_ab": 1581,
+      "team": "American League All-Stars",
+      "games": 454,
+      "total_ab": 1583,
       "total_h": 407,
       "total_hr": 48,
       "total_rbi": 210,
       "total_bb": 74,
-      "total_k": 371,
+      "total_k": 372,
       "avg": 0.257,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260701",
-          "opponent": "Washington Nationals",
-          "ab": 4,
-          "h": 2,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 1,
-          "k": 1
-        },
         {
           "date": "20260703",
           "opponent": "Los Angeles Angels",
@@ -142996,11 +143656,21 @@
           "rbi": 0,
           "bb": 0,
           "k": 2
+        },
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
+          "ab": 2,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 1
         }
       ],
-      "last10_ab": 45,
-      "last10_h": 13,
-      "last10_avg": 0.289,
+      "last10_ab": 43,
+      "last10_h": 11,
+      "last10_avg": 0.256,
       "k_pct": 0.235
     },
     "Chase Meidroth": {
@@ -147997,27 +148667,17 @@
     },
     "Juan Soto": {
       "name": "Juan Soto",
-      "team": "Dominican Republic",
-      "games": 187,
-      "total_ab": 671,
-      "total_h": 198,
+      "team": "National League All-Stars",
+      "games": 188,
+      "total_ab": 673,
+      "total_h": 199,
       "total_hr": 50,
       "total_rbi": 128,
       "total_bb": 148,
-      "total_k": 135,
-      "avg": 0.295,
+      "total_k": 136,
+      "avg": 0.296,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20241017",
-          "opponent": "Cleveland Guardians",
-          "ab": 4,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 1,
-          "k": 1
-        },
         {
           "date": "20241018",
           "opponent": "Cleveland Guardians",
@@ -148107,12 +148767,22 @@
           "rbi": 3,
           "bb": 0,
           "k": 0
+        },
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
+          "ab": 2,
+          "h": 1,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 1
         }
       ],
-      "last10_ab": 36,
-      "last10_h": 13,
-      "last10_avg": 0.361,
-      "k_pct": 0.201
+      "last10_ab": 34,
+      "last10_h": 14,
+      "last10_avg": 0.412,
+      "k_pct": 0.202
     },
     "J.C. Escarra": {
       "name": "J.C. Escarra",
@@ -151479,9 +152149,9 @@
     },
     "Ernie Clement": {
       "name": "Ernie Clement",
-      "team": "Toronto Blue Jays",
-      "games": 447,
-      "total_ab": 1512,
+      "team": "American League All-Stars",
+      "games": 448,
+      "total_ab": 1514,
       "total_h": 439,
       "total_hr": 35,
       "total_rbi": 160,
@@ -151490,16 +152160,6 @@
       "avg": 0.29,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260701",
-          "opponent": "New York Mets",
-          "ab": 4,
-          "h": 2,
-          "hr": 0,
-          "rbi": 1,
-          "bb": 0,
-          "k": 1
-        },
         {
           "date": "20260703",
           "opponent": "Seattle Mariners",
@@ -151589,11 +152249,21 @@
           "rbi": 2,
           "bb": 0,
           "k": 1
+        },
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
+          "ab": 2,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
         }
       ],
-      "last10_ab": 41,
-      "last10_h": 12,
-      "last10_avg": 0.293,
+      "last10_ab": 39,
+      "last10_h": 10,
+      "last10_avg": 0.256,
       "k_pct": 0.103
     },
     "Damiano Palmegiani": {
@@ -155697,27 +156367,17 @@
     },
     "Yandy Díaz": {
       "name": "Yandy Díaz",
-      "team": "Tampa Bay Rays",
-      "games": 427,
-      "total_ab": 1608,
+      "team": "American League All-Stars",
+      "games": 428,
+      "total_ab": 1610,
       "total_h": 483,
       "total_hr": 58,
       "total_rbi": 221,
       "total_bb": 159,
-      "total_k": 258,
+      "total_k": 260,
       "avg": 0.3,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260702",
-          "opponent": "Kansas City Royals",
-          "ab": 3,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 2,
-          "k": 0
-        },
         {
           "date": "20260703",
           "opponent": "Houston Astros",
@@ -155807,12 +156467,22 @@
           "rbi": 0,
           "bb": 0,
           "k": 0
+        },
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
+          "ab": 2,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 2
         }
       ],
-      "last10_ab": 41,
+      "last10_ab": 40,
       "last10_h": 11,
-      "last10_avg": 0.268,
-      "k_pct": 0.16
+      "last10_avg": 0.275,
+      "k_pct": 0.161
     },
     "Brandon Lowe": {
       "name": "Brandon Lowe",
@@ -156054,27 +156724,17 @@
     },
     "Randy Arozarena": {
       "name": "Randy Arozarena",
-      "team": "Mexico",
-      "games": 115,
-      "total_ab": 390,
-      "total_h": 80,
+      "team": "American League All-Stars",
+      "games": 116,
+      "total_ab": 392,
+      "total_h": 81,
       "total_hr": 19,
       "total_rbi": 43,
       "total_bb": 48,
       "total_k": 113,
-      "avg": 0.205,
+      "avg": 0.207,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20240714",
-          "opponent": "Cleveland Guardians",
-          "ab": 3,
-          "h": 1,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 1,
-          "k": 0
-        },
         {
           "date": "20240719",
           "opponent": "New York Yankees",
@@ -156164,18 +156824,28 @@
           "rbi": 0,
           "bb": 0,
           "k": 0
+        },
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
+          "ab": 2,
+          "h": 1,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
         }
       ],
-      "last10_ab": 33,
+      "last10_ab": 32,
       "last10_h": 9,
-      "last10_avg": 0.273,
-      "k_pct": 0.29
+      "last10_avg": 0.281,
+      "k_pct": 0.288
     },
     "Junior Caminero": {
       "name": "Junior Caminero",
-      "team": "Tampa Bay Rays",
-      "games": 325,
-      "total_ab": 1220,
+      "team": "American League All-Stars",
+      "games": 326,
+      "total_ab": 1221,
       "total_h": 327,
       "total_hr": 85,
       "total_rbi": 207,
@@ -156184,16 +156854,6 @@
       "avg": 0.268,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260703",
-          "opponent": "Houston Astros",
-          "ab": 4,
-          "h": 1,
-          "hr": 1,
-          "rbi": 1,
-          "bb": 0,
-          "k": 1
-        },
         {
           "date": "20260704",
           "opponent": "Houston Astros",
@@ -156283,11 +156943,21 @@
           "rbi": 0,
           "bb": 1,
           "k": 3
+        },
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
+          "ab": 1,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
         }
       ],
-      "last10_ab": 36,
-      "last10_h": 7,
-      "last10_avg": 0.194,
+      "last10_ab": 33,
+      "last10_h": 6,
+      "last10_avg": 0.182,
       "k_pct": 0.21
     },
     "Tanner Murray": {
@@ -159166,9 +159836,9 @@
     },
     "Adley Rutschman": {
       "name": "Adley Rutschman",
-      "team": "Baltimore Orioles",
-      "games": 350,
-      "total_ab": 1259,
+      "team": "American League All-Stars",
+      "games": 351,
+      "total_ab": 1260,
       "total_h": 312,
       "total_hr": 43,
       "total_rbi": 175,
@@ -159177,16 +159847,6 @@
       "avg": 0.248,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260629",
-          "opponent": "Chicago White Sox",
-          "ab": 2,
-          "h": 0,
-          "hr": 0,
-          "rbi": 2,
-          "bb": 0,
-          "k": 1
-        },
         {
           "date": "20260701",
           "opponent": "Chicago White Sox",
@@ -159276,11 +159936,21 @@
           "rbi": 0,
           "bb": 0,
           "k": 0
+        },
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
+          "ab": 1,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
         }
       ],
-      "last10_ab": 37,
+      "last10_ab": 36,
       "last10_h": 9,
-      "last10_avg": 0.243,
+      "last10_avg": 0.25,
       "k_pct": 0.179
     },
     "Michael Pérez": {
@@ -162220,27 +162890,17 @@
     },
     "Ben Rice": {
       "name": "Ben Rice",
-      "team": "New York Yankees",
-      "games": 327,
-      "total_ab": 1091,
-      "total_h": 269,
+      "team": "American League All-Stars",
+      "games": 328,
+      "total_ab": 1093,
+      "total_h": 270,
       "total_hr": 70,
-      "total_rbi": 175,
+      "total_rbi": 176,
       "total_bb": 132,
-      "total_k": 281,
+      "total_k": 282,
       "avg": 0.247,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260703",
-          "opponent": "Minnesota Twins",
-          "ab": 3,
-          "h": 1,
-          "hr": 1,
-          "rbi": 2,
-          "bb": 1,
-          "k": 0
-        },
         {
           "date": "20260704",
           "opponent": "Minnesota Twins",
@@ -162330,11 +162990,21 @@
           "rbi": 2,
           "bb": 0,
           "k": 2
+        },
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
+          "ab": 2,
+          "h": 1,
+          "hr": 0,
+          "rbi": 1,
+          "bb": 0,
+          "k": 1
         }
       ],
-      "last10_ab": 36,
+      "last10_ab": 35,
       "last10_h": 13,
-      "last10_avg": 0.361,
+      "last10_avg": 0.371,
       "k_pct": 0.258
     },
     "Agustín Ramírez": {
@@ -166019,8 +166689,8 @@
     },
     "Bryan Baker": {
       "name": "Bryan Baker",
-      "team": "Tampa Bay Rays",
-      "games": 150,
+      "team": "American League All-Stars",
+      "games": 151,
       "total_ab": 0,
       "total_h": 0,
       "total_hr": 0,
@@ -166030,16 +166700,6 @@
       "avg": 0.0,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260609",
-          "opponent": "Boston Red Sox",
-          "ab": 0,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 0
-        },
         {
           "date": "20260614",
           "opponent": "Los Angeles Angels",
@@ -166123,6 +166783,16 @@
         {
           "date": "20260708",
           "opponent": "New York Yankees",
+          "ab": 0,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
+        },
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
           "ab": 0,
           "h": 0,
           "hr": 0,
@@ -180548,8 +181218,8 @@
     },
     "Cade Smith": {
       "name": "Cade Smith",
-      "team": "New York Yankees",
-      "games": 1,
+      "team": "American League All-Stars",
+      "games": 2,
       "total_ab": 0,
       "total_h": 0,
       "total_hr": 0,
@@ -180562,6 +181232,16 @@
         {
           "date": "20240312",
           "opponent": "Toronto Blue Jays",
+          "ab": 0,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
+        },
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
           "ab": 0,
           "h": 0,
           "hr": 0,
@@ -190017,15 +190697,15 @@
     },
     "Otto Lopez": {
       "name": "Otto Lopez",
-      "team": "Canada",
-      "games": 3,
-      "total_ab": 11,
-      "total_h": 1,
+      "team": "National League All-Stars",
+      "games": 4,
+      "total_ab": 13,
+      "total_h": 2,
       "total_hr": 0,
       "total_rbi": 0,
       "total_bb": 1,
-      "total_k": 3,
-      "avg": 0.091,
+      "total_k": 4,
+      "avg": 0.154,
       "obp": 0.0,
       "last10": [
         {
@@ -190057,12 +190737,22 @@
           "rbi": 0,
           "bb": 0,
           "k": 1
+        },
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
+          "ab": 2,
+          "h": 1,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 1
         }
       ],
-      "last10_ab": 11,
-      "last10_h": 1,
-      "last10_avg": 0.091,
-      "k_pct": 0.273
+      "last10_ab": 13,
+      "last10_h": 2,
+      "last10_avg": 0.154,
+      "k_pct": 0.308
     },
     "Yusniel Díaz": {
       "name": "Yusniel Díaz",
@@ -196903,13 +197593,13 @@
     "Riley Greene": {
       "name": "Riley Greene",
       "team": "American League All-Stars",
-      "games": 2,
-      "total_ab": 5,
+      "games": 3,
+      "total_ab": 7,
       "total_h": 0,
       "total_hr": 0,
       "total_rbi": 0,
       "total_bb": 0,
-      "total_k": 3,
+      "total_k": 5,
       "avg": 0.0,
       "obp": 0.0,
       "last10": [
@@ -196932,12 +197622,22 @@
           "rbi": 0,
           "bb": 0,
           "k": 2
+        },
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
+          "ab": 2,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 2
         }
       ],
-      "last10_ab": 5,
+      "last10_ab": 7,
       "last10_h": 0,
       "last10_avg": 0.0,
-      "k_pct": 0.6
+      "k_pct": 0.714
     },
     "Corey Seager": {
       "name": "Corey Seager",
@@ -196970,15 +197670,15 @@
     },
     "Bobby Witt Jr.": {
       "name": "Bobby Witt Jr.",
-      "team": "United States",
-      "games": 3,
-      "total_ab": 6,
+      "team": "American League All-Stars",
+      "games": 4,
+      "total_ab": 7,
       "total_h": 3,
       "total_hr": 0,
       "total_rbi": 2,
-      "total_bb": 0,
+      "total_bb": 1,
       "total_k": 1,
-      "avg": 0.5,
+      "avg": 0.429,
       "obp": 0.0,
       "last10": [
         {
@@ -197010,24 +197710,34 @@
           "rbi": 0,
           "bb": 0,
           "k": 0
+        },
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
+          "ab": 1,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 1,
+          "k": 0
         }
       ],
-      "last10_ab": 6,
+      "last10_ab": 7,
       "last10_h": 3,
-      "last10_avg": 0.5,
-      "k_pct": 0.167
+      "last10_avg": 0.429,
+      "k_pct": 0.143
     },
     "Yordan Alvarez": {
       "name": "Yordan Alvarez",
       "team": "American League All-Stars",
-      "games": 1,
-      "total_ab": 0,
-      "total_h": 0,
+      "games": 2,
+      "total_ab": 2,
+      "total_h": 1,
       "total_hr": 0,
       "total_rbi": 0,
       "total_bb": 1,
       "total_k": 0,
-      "avg": 0.0,
+      "avg": 0.5,
       "obp": 0.0,
       "last10": [
         {
@@ -197039,11 +197749,22 @@
           "rbi": 0,
           "bb": 1,
           "k": 0
+        },
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
+          "ab": 2,
+          "h": 1,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
         }
       ],
-      "last10_ab": 0,
-      "last10_h": 0,
-      "last10_avg": 0.0
+      "last10_ab": 2,
+      "last10_h": 1,
+      "last10_avg": 0.5,
+      "k_pct": 0.0
     },
     "David Fry": {
       "name": "David Fry",
@@ -197437,8 +198158,8 @@
     },
     "Mason Miller": {
       "name": "Mason Miller",
-      "team": "United States",
-      "games": 2,
+      "team": "National League All-Stars",
+      "games": 3,
       "total_ab": 0,
       "total_h": 0,
       "total_hr": 0,
@@ -197461,6 +198182,16 @@
         {
           "date": "20260303",
           "opponent": "San Francisco Giants",
+          "ab": 0,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
+        },
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
           "ab": 0,
           "h": 0,
           "hr": 0,
@@ -197863,13 +198594,13 @@
     "CJ Abrams": {
       "name": "CJ Abrams",
       "team": "National League All-Stars",
-      "games": 1,
-      "total_ab": 1,
+      "games": 2,
+      "total_ab": 3,
       "total_h": 0,
       "total_hr": 0,
       "total_rbi": 0,
       "total_bb": 0,
-      "total_k": 1,
+      "total_k": 3,
       "avg": 0.0,
       "obp": 0.0,
       "last10": [
@@ -197882,24 +198613,34 @@
           "rbi": 0,
           "bb": 0,
           "k": 1
+        },
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
+          "ab": 2,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 2
         }
       ],
-      "last10_ab": 1,
+      "last10_ab": 3,
       "last10_h": 0,
       "last10_avg": 0.0,
       "k_pct": 1.0
     },
     "Bryce Harper": {
       "name": "Bryce Harper",
-      "team": "United States",
-      "games": 2,
-      "total_ab": 6,
+      "team": "National League All-Stars",
+      "games": 3,
+      "total_ab": 7,
       "total_h": 3,
       "total_hr": 0,
       "total_rbi": 2,
       "total_bb": 0,
-      "total_k": 0,
-      "avg": 0.5,
+      "total_k": 1,
+      "avg": 0.429,
       "obp": 0.0,
       "last10": [
         {
@@ -197921,24 +198662,34 @@
           "rbi": 2,
           "bb": 0,
           "k": 0
+        },
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
+          "ab": 1,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 1
         }
       ],
-      "last10_ab": 6,
+      "last10_ab": 7,
       "last10_h": 3,
-      "last10_avg": 0.5,
-      "k_pct": 0.0
+      "last10_avg": 0.429,
+      "k_pct": 0.143
     },
     "William Contreras": {
       "name": "William Contreras",
-      "team": "Venezuela",
-      "games": 2,
-      "total_ab": 5,
+      "team": "National League All-Stars",
+      "games": 3,
+      "total_ab": 6,
       "total_h": 1,
       "total_hr": 0,
       "total_rbi": 0,
       "total_bb": 0,
       "total_k": 2,
-      "avg": 0.2,
+      "avg": 0.167,
       "obp": 0.0,
       "last10": [
         {
@@ -197960,12 +198711,22 @@
           "rbi": 0,
           "bb": 0,
           "k": 1
+        },
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
+          "ab": 1,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
         }
       ],
-      "last10_ab": 5,
+      "last10_ab": 6,
       "last10_h": 1,
-      "last10_avg": 0.2,
-      "k_pct": 0.4
+      "last10_avg": 0.167,
+      "k_pct": 0.333
     },
     "Will Smith": {
       "name": "Will Smith",
@@ -198038,13 +198799,13 @@
     "Freddie Freeman": {
       "name": "Freddie Freeman",
       "team": "National League All-Stars",
-      "games": 2,
-      "total_ab": 2,
+      "games": 3,
+      "total_ab": 3,
       "total_h": 0,
       "total_hr": 0,
       "total_rbi": 0,
-      "total_bb": 0,
-      "total_k": 0,
+      "total_bb": 1,
+      "total_k": 1,
       "avg": 0.0,
       "obp": 0.0,
       "last10": [
@@ -198067,12 +198828,22 @@
           "rbi": 0,
           "bb": 0,
           "k": 0
+        },
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
+          "ab": 1,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 1,
+          "k": 1
         }
       ],
-      "last10_ab": 2,
+      "last10_ab": 3,
       "last10_h": 0,
       "last10_avg": 0.0,
-      "k_pct": 0.0
+      "k_pct": 0.333
     },
     "Pete Alonso": {
       "name": "Pete Alonso",
@@ -198640,7 +199411,7 @@
     "Cristopher Sánchez": {
       "name": "Cristopher Sánchez",
       "team": "National League All-Stars",
-      "games": 1,
+      "games": 2,
       "total_ab": 0,
       "total_h": 0,
       "total_hr": 0,
@@ -198652,6 +199423,16 @@
       "last10": [
         {
           "date": "20240716",
+          "opponent": "American League All-Stars",
+          "ab": 0,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
+        },
+        {
+          "date": "20260714",
           "opponent": "American League All-Stars",
           "ab": 0,
           "h": 0,
@@ -200638,8 +201419,8 @@
     },
     "Drew Rasmussen": {
       "name": "Drew Rasmussen",
-      "team": "Tampa Bay Rays",
-      "games": 73,
+      "team": "American League All-Stars",
+      "games": 74,
       "total_ab": 0,
       "total_h": 0,
       "total_hr": 0,
@@ -200649,16 +201430,6 @@
       "avg": 0.0,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260517",
-          "opponent": "Miami Marlins",
-          "ab": 0,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 0
-        },
         {
           "date": "20260524",
           "opponent": "New York Yankees",
@@ -200742,6 +201513,16 @@
         {
           "date": "20260709",
           "opponent": "New York Yankees",
+          "ab": 0,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
+        },
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
           "ab": 0,
           "h": 0,
           "hr": 0,
@@ -202536,27 +203317,17 @@
     },
     "Cody Bellinger": {
       "name": "Cody Bellinger",
-      "team": "New York Yankees",
-      "games": 286,
-      "total_ab": 1053,
-      "total_h": 286,
+      "team": "American League All-Stars",
+      "games": 287,
+      "total_ab": 1056,
+      "total_h": 287,
       "total_hr": 45,
-      "total_rbi": 164,
+      "total_rbi": 166,
       "total_bb": 113,
       "total_k": 170,
       "avg": 0.272,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260703",
-          "opponent": "Minnesota Twins",
-          "ab": 3,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 1,
-          "k": 0
-        },
         {
           "date": "20260704",
           "opponent": "Minnesota Twins",
@@ -202646,11 +203417,21 @@
           "rbi": 0,
           "bb": 1,
           "k": 0
+        },
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
+          "ab": 3,
+          "h": 1,
+          "hr": 0,
+          "rbi": 2,
+          "bb": 0,
+          "k": 0
         }
       ],
       "last10_ab": 40,
-      "last10_h": 10,
-      "last10_avg": 0.25,
+      "last10_h": 11,
+      "last10_avg": 0.275,
       "k_pct": 0.161
     },
     "Paul Goldschmidt": {
@@ -213301,8 +214082,8 @@
     },
     "Aroldis Chapman": {
       "name": "Aroldis Chapman",
-      "team": "Boston Red Sox",
-      "games": 116,
+      "team": "American League All-Stars",
+      "games": 117,
       "total_ab": 0,
       "total_h": 0,
       "total_hr": 0,
@@ -213312,16 +214093,6 @@
       "avg": 0.0,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260613",
-          "opponent": "Texas Rangers",
-          "ab": 0,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 0
-        },
         {
           "date": "20260618",
           "opponent": "Toronto Blue Jays",
@@ -213405,6 +214176,16 @@
         {
           "date": "20260712",
           "opponent": "New York Mets",
+          "ab": 0,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
+        },
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
           "ab": 0,
           "h": 0,
           "hr": 0,
@@ -222385,8 +223166,8 @@
     },
     "Foster Griffin": {
       "name": "Foster Griffin",
-      "team": "Tokyo Yomiuri Giants",
-      "games": 1,
+      "team": "National League All-Stars",
+      "games": 2,
       "total_ab": 0,
       "total_h": 0,
       "total_hr": 0,
@@ -222399,6 +223180,16 @@
         {
           "date": "20250316",
           "opponent": "Chicago Cubs",
+          "ab": 0,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
+        },
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
           "ab": 0,
           "h": 0,
           "hr": 0,
@@ -225038,8 +225829,8 @@
     },
     "Riley O'Brien": {
       "name": "Riley O'Brien",
-      "team": "Memphis Redbirds",
-      "games": 1,
+      "team": "National League All-Stars",
+      "games": 2,
       "total_ab": 0,
       "total_h": 0,
       "total_hr": 0,
@@ -225052,6 +225843,16 @@
         {
           "date": "20250324",
           "opponent": "St. Louis Cardinals",
+          "ab": 0,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
+        },
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
           "ab": 0,
           "h": 0,
           "hr": 0,
@@ -229022,14 +229823,14 @@
     },
     "Kyle Schwarber": {
       "name": "Kyle Schwarber",
-      "team": "United States",
-      "games": 2,
-      "total_ab": 4,
+      "team": "National League All-Stars",
+      "games": 3,
+      "total_ab": 6,
       "total_h": 0,
       "total_hr": 0,
       "total_rbi": 0,
       "total_bb": 2,
-      "total_k": 1,
+      "total_k": 2,
       "avg": 0.0,
       "obp": 0.0,
       "last10": [
@@ -229052,12 +229853,22 @@
           "rbi": 0,
           "bb": 1,
           "k": 1
+        },
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
+          "ab": 2,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 1
         }
       ],
-      "last10_ab": 4,
+      "last10_ab": 6,
       "last10_h": 0,
       "last10_avg": 0.0,
-      "k_pct": 0.25
+      "k_pct": 0.333
     },
     "Ronald Acuña Jr.": {
       "name": "Ronald Acuña Jr.",
@@ -229189,8 +230000,8 @@
     "Matt Olson": {
       "name": "Matt Olson",
       "team": "National League All-Stars",
-      "games": 1,
-      "total_ab": 1,
+      "games": 2,
+      "total_ab": 3,
       "total_h": 0,
       "total_hr": 0,
       "total_rbi": 0,
@@ -229208,12 +230019,22 @@
           "rbi": 0,
           "bb": 0,
           "k": 1
+        },
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
+          "ab": 2,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
         }
       ],
-      "last10_ab": 1,
+      "last10_ab": 3,
       "last10_h": 0,
       "last10_avg": 0.0,
-      "k_pct": 1.0
+      "k_pct": 0.333
     },
     "Manny Machado": {
       "name": "Manny Machado",
@@ -229316,8 +230137,8 @@
     "Hunter Goodman": {
       "name": "Hunter Goodman",
       "team": "National League All-Stars",
-      "games": 1,
-      "total_ab": 1,
+      "games": 2,
+      "total_ab": 2,
       "total_h": 0,
       "total_hr": 0,
       "total_rbi": 0,
@@ -229335,9 +230156,19 @@
           "rbi": 0,
           "bb": 0,
           "k": 0
+        },
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
+          "ab": 1,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
         }
       ],
-      "last10_ab": 1,
+      "last10_ab": 2,
       "last10_h": 0,
       "last10_avg": 0.0,
       "k_pct": 0.0
@@ -229345,13 +230176,13 @@
     "James Wood": {
       "name": "James Wood",
       "team": "National League All-Stars",
-      "games": 1,
-      "total_ab": 1,
+      "games": 2,
+      "total_ab": 2,
       "total_h": 0,
       "total_hr": 0,
       "total_rbi": 0,
       "total_bb": 0,
-      "total_k": 0,
+      "total_k": 1,
       "avg": 0.0,
       "obp": 0.0,
       "last10": [
@@ -229364,12 +230195,22 @@
           "rbi": 0,
           "bb": 0,
           "k": 0
+        },
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
+          "ab": 1,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 1
         }
       ],
-      "last10_ab": 1,
+      "last10_ab": 2,
       "last10_h": 0,
       "last10_avg": 0.0,
-      "k_pct": 0.0
+      "k_pct": 0.5
     },
     "Kyle Tucker": {
       "name": "Kyle Tucker",
@@ -229403,14 +230244,14 @@
     "Corbin Carroll": {
       "name": "Corbin Carroll",
       "team": "National League All-Stars",
-      "games": 1,
-      "total_ab": 1,
+      "games": 2,
+      "total_ab": 2,
       "total_h": 1,
       "total_hr": 1,
       "total_rbi": 1,
       "total_bb": 1,
-      "total_k": 0,
-      "avg": 1.0,
+      "total_k": 1,
+      "avg": 0.5,
       "obp": 0.0,
       "last10": [
         {
@@ -229422,12 +230263,22 @@
           "rbi": 1,
           "bb": 1,
           "k": 0
+        },
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
+          "ab": 1,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 1
         }
       ],
-      "last10_ab": 1,
+      "last10_ab": 2,
       "last10_h": 1,
-      "last10_avg": 1.0,
-      "k_pct": 0.0
+      "last10_avg": 0.5,
+      "k_pct": 0.5
     },
     "Francisco Lindor": {
       "name": "Francisco Lindor",
@@ -229460,15 +230311,15 @@
     },
     "Pete Crow-Armstrong": {
       "name": "Pete Crow-Armstrong",
-      "team": "United States",
-      "games": 2,
-      "total_ab": 5,
-      "total_h": 2,
+      "team": "National League All-Stars",
+      "games": 3,
+      "total_ab": 6,
+      "total_h": 3,
       "total_hr": 0,
       "total_rbi": 1,
       "total_bb": 0,
       "total_k": 1,
-      "avg": 0.4,
+      "avg": 0.5,
       "obp": 0.0,
       "last10": [
         {
@@ -229490,12 +230341,22 @@
           "rbi": 1,
           "bb": 0,
           "k": 1
+        },
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
+          "ab": 1,
+          "h": 1,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
         }
       ],
-      "last10_ab": 5,
-      "last10_h": 2,
-      "last10_avg": 0.4,
-      "k_pct": 0.2
+      "last10_ab": 6,
+      "last10_h": 3,
+      "last10_avg": 0.5,
+      "k_pct": 0.167
     },
     "Clayton Kershaw": {
       "name": "Clayton Kershaw",
@@ -230051,7 +230912,7 @@
     "Joe Ryan": {
       "name": "Joe Ryan",
       "team": "American League All-Stars",
-      "games": 1,
+      "games": 2,
       "total_ab": 0,
       "total_h": 0,
       "total_hr": 0,
@@ -230063,6 +230924,16 @@
       "last10": [
         {
           "date": "20250715",
+          "opponent": "National League All-Stars",
+          "ab": 0,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
+        },
+        {
+          "date": "20260714",
           "opponent": "National League All-Stars",
           "ab": 0,
           "h": 0,
@@ -230731,8 +231602,8 @@
     },
     "Louis Varland": {
       "name": "Louis Varland",
-      "team": "Toronto Blue Jays",
-      "games": 89,
+      "team": "American League All-Stars",
+      "games": 90,
       "total_ab": 0,
       "total_h": 0,
       "total_hr": 0,
@@ -230742,16 +231613,6 @@
       "avg": 0.0,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260620",
-          "opponent": "Chicago Cubs",
-          "ab": 0,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 0
-        },
         {
           "date": "20260620",
           "opponent": "Chicago Cubs",
@@ -230835,6 +231696,16 @@
         {
           "date": "20260710",
           "opponent": "San Diego Padres",
+          "ab": 0,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
+        },
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
           "ab": 0,
           "h": 0,
           "hr": 0,
@@ -236891,27 +237762,17 @@
     },
     "Willson Contreras": {
       "name": "Willson Contreras",
-      "team": "Boston Red Sox",
-      "games": 102,
-      "total_ab": 343,
-      "total_h": 100,
+      "team": "American League All-Stars",
+      "games": 103,
+      "total_ab": 344,
+      "total_h": 101,
       "total_hr": 23,
       "total_rbi": 70,
       "total_bb": 44,
       "total_k": 98,
-      "avg": 0.292,
+      "avg": 0.294,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260627",
-          "opponent": "New York Yankees",
-          "ab": 3,
-          "h": 1,
-          "hr": 0,
-          "rbi": 2,
-          "bb": 1,
-          "k": 0
-        },
         {
           "date": "20260628",
           "opponent": "New York Yankees",
@@ -237001,12 +237862,22 @@
           "rbi": 0,
           "bb": 0,
           "k": 0
+        },
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
+          "ab": 1,
+          "h": 1,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
         }
       ],
-      "last10_ab": 34,
+      "last10_ab": 32,
       "last10_h": 11,
-      "last10_avg": 0.324,
-      "k_pct": 0.286
+      "last10_avg": 0.344,
+      "k_pct": 0.285
     },
     "Jason Delay": {
       "name": "Jason Delay",
@@ -244887,8 +245758,8 @@
     },
     "Nick Martinez": {
       "name": "Nick Martinez",
-      "team": "Tampa Bay Rays",
-      "games": 23,
+      "team": "American League All-Stars",
+      "games": 24,
       "total_ab": 0,
       "total_h": 0,
       "total_hr": 0,
@@ -244898,16 +245769,6 @@
       "avg": 0.0,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260522",
-          "opponent": "New York Yankees",
-          "ab": 0,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 0
-        },
         {
           "date": "20260529",
           "opponent": "Los Angeles Angels",
@@ -244991,6 +245852,16 @@
         {
           "date": "20260710",
           "opponent": "Seattle Mariners",
+          "ab": 0,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
+        },
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
           "ab": 0,
           "h": 0,
           "hr": 0,
@@ -245308,8 +246179,8 @@
     },
     "Dylan Cease": {
       "name": "Dylan Cease",
-      "team": "Toronto Blue Jays",
-      "games": 20,
+      "team": "American League All-Stars",
+      "games": 21,
       "total_ab": 0,
       "total_h": 0,
       "total_hr": 0,
@@ -245319,16 +246190,6 @@
       "avg": 0.0,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260508",
-          "opponent": "Los Angeles Angels",
-          "ab": 0,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 0
-        },
         {
           "date": "20260513",
           "opponent": "Tampa Bay Rays",
@@ -245412,6 +246273,16 @@
         {
           "date": "20260708",
           "opponent": "San Francisco Giants",
+          "ab": 0,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
+        },
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
           "ab": 0,
           "h": 0,
           "hr": 0,
@@ -246859,15 +247730,15 @@
     },
     "Ozzie Albies": {
       "name": "Ozzie Albies",
-      "team": "Kingdom of the Netherlands",
-      "games": 1,
-      "total_ab": 4,
+      "team": "National League All-Stars",
+      "games": 2,
+      "total_ab": 6,
       "total_h": 1,
       "total_hr": 1,
       "total_rbi": 1,
       "total_bb": 0,
       "total_k": 1,
-      "avg": 0.25,
+      "avg": 0.167,
       "obp": 0.0,
       "last10": [
         {
@@ -246879,12 +247750,22 @@
           "rbi": 1,
           "bb": 0,
           "k": 1
+        },
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
+          "ab": 2,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
         }
       ],
-      "last10_ab": 4,
+      "last10_ab": 6,
       "last10_h": 1,
-      "last10_avg": 0.25,
-      "k_pct": 0.25
+      "last10_avg": 0.167,
+      "k_pct": 0.167
     },
     "Didi Gregorius": {
       "name": "Didi Gregorius",
@@ -252576,15 +253457,15 @@
     },
     "Luis Arraez": {
       "name": "Luis Arraez",
-      "team": "Venezuela",
-      "games": 2,
-      "total_ab": 7,
+      "team": "National League All-Stars",
+      "games": 3,
+      "total_ab": 8,
       "total_h": 3,
       "total_hr": 0,
       "total_rbi": 0,
       "total_bb": 0,
-      "total_k": 0,
-      "avg": 0.429,
+      "total_k": 1,
+      "avg": 0.375,
       "obp": 0.0,
       "last10": [
         {
@@ -252606,12 +253487,22 @@
           "rbi": 0,
           "bb": 0,
           "k": 0
+        },
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
+          "ab": 1,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 1
         }
       ],
-      "last10_ab": 7,
+      "last10_ab": 8,
       "last10_h": 3,
-      "last10_avg": 0.429,
-      "k_pct": 0.0
+      "last10_avg": 0.375,
+      "k_pct": 0.125
     },
     "Jackson Chourio": {
       "name": "Jackson Chourio",
@@ -255921,8 +256812,8 @@
     },
     "Eduardo Rodriguez": {
       "name": "Eduardo Rodriguez",
-      "team": "Venezuela",
-      "games": 1,
+      "team": "National League All-Stars",
+      "games": 2,
       "total_ab": 0,
       "total_h": 0,
       "total_hr": 0,
@@ -255935,6 +256826,16 @@
         {
           "date": "20260304",
           "opponent": "Washington Nationals",
+          "ab": 0,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
+        },
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
           "ab": 0,
           "h": 0,
           "hr": 0,
@@ -261494,6 +262395,608 @@
         {
           "date": "20260709",
           "opponent": "Chicago White Sox",
+          "ab": 0,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
+        }
+      ],
+      "last10_ab": 0,
+      "last10_h": 0,
+      "last10_avg": 0.0
+    },
+    "Iván Herrera": {
+      "name": "Iván Herrera",
+      "team": "National League All-Stars",
+      "games": 1,
+      "total_ab": 1,
+      "total_h": 0,
+      "total_hr": 0,
+      "total_rbi": 0,
+      "total_bb": 0,
+      "total_k": 0,
+      "avg": 0.0,
+      "obp": 0.0,
+      "last10": [
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
+          "ab": 1,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
+        }
+      ],
+      "last10_ab": 1,
+      "last10_h": 0,
+      "last10_avg": 0.0,
+      "k_pct": 0.0
+    },
+    "Jordan Walker": {
+      "name": "Jordan Walker",
+      "team": "National League All-Stars",
+      "games": 1,
+      "total_ab": 1,
+      "total_h": 0,
+      "total_hr": 0,
+      "total_rbi": 0,
+      "total_bb": 0,
+      "total_k": 1,
+      "avg": 0.0,
+      "obp": 0.0,
+      "last10": [
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
+          "ab": 1,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 1
+        }
+      ],
+      "last10_ab": 1,
+      "last10_h": 0,
+      "last10_avg": 0.0,
+      "k_pct": 1.0
+    },
+    "Max Muncy": {
+      "name": "Max Muncy",
+      "team": "National League All-Stars",
+      "games": 1,
+      "total_ab": 2,
+      "total_h": 0,
+      "total_hr": 0,
+      "total_rbi": 0,
+      "total_bb": 0,
+      "total_k": 0,
+      "avg": 0.0,
+      "obp": 0.0,
+      "last10": [
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
+          "ab": 2,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
+        }
+      ],
+      "last10_ab": 2,
+      "last10_h": 0,
+      "last10_avg": 0.0,
+      "k_pct": 0.0
+    },
+    "Sal Stewart": {
+      "name": "Sal Stewart",
+      "team": "National League All-Stars",
+      "games": 1,
+      "total_ab": 1,
+      "total_h": 0,
+      "total_hr": 0,
+      "total_rbi": 0,
+      "total_bb": 1,
+      "total_k": 0,
+      "avg": 0.0,
+      "obp": 0.0,
+      "last10": [
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
+          "ab": 1,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 1,
+          "k": 0
+        }
+      ],
+      "last10_ab": 1,
+      "last10_h": 0,
+      "last10_avg": 0.0,
+      "k_pct": 0.0
+    },
+    "Brandon Marsh": {
+      "name": "Brandon Marsh",
+      "team": "National League All-Stars",
+      "games": 1,
+      "total_ab": 2,
+      "total_h": 0,
+      "total_hr": 0,
+      "total_rbi": 0,
+      "total_bb": 0,
+      "total_k": 2,
+      "avg": 0.0,
+      "obp": 0.0,
+      "last10": [
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
+          "ab": 2,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 2
+        }
+      ],
+      "last10_ab": 2,
+      "last10_h": 0,
+      "last10_avg": 0.0,
+      "k_pct": 1.0
+    },
+    "Andy Pages": {
+      "name": "Andy Pages",
+      "team": "National League All-Stars",
+      "games": 1,
+      "total_ab": 2,
+      "total_h": 0,
+      "total_hr": 0,
+      "total_rbi": 0,
+      "total_bb": 0,
+      "total_k": 1,
+      "avg": 0.0,
+      "obp": 0.0,
+      "last10": [
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
+          "ab": 2,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 1
+        }
+      ],
+      "last10_ab": 2,
+      "last10_h": 0,
+      "last10_avg": 0.0,
+      "k_pct": 0.5
+    },
+    "Drake Baldwin": {
+      "name": "Drake Baldwin",
+      "team": "National League All-Stars",
+      "games": 1,
+      "total_ab": 1,
+      "total_h": 0,
+      "total_hr": 0,
+      "total_rbi": 0,
+      "total_bb": 0,
+      "total_k": 1,
+      "avg": 0.0,
+      "obp": 0.0,
+      "last10": [
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
+          "ab": 1,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 1
+        }
+      ],
+      "last10_ab": 1,
+      "last10_h": 0,
+      "last10_avg": 0.0,
+      "k_pct": 1.0
+    },
+    "Jesús Luzardo": {
+      "name": "Jesús Luzardo",
+      "team": "National League All-Stars",
+      "games": 1,
+      "total_ab": 0,
+      "total_h": 0,
+      "total_hr": 0,
+      "total_rbi": 0,
+      "total_bb": 0,
+      "total_k": 0,
+      "avg": 0.0,
+      "obp": 0.0,
+      "last10": [
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
+          "ab": 0,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
+        }
+      ],
+      "last10_ab": 0,
+      "last10_h": 0,
+      "last10_avg": 0.0
+    },
+    "Raisel Iglesias": {
+      "name": "Raisel Iglesias",
+      "team": "National League All-Stars",
+      "games": 1,
+      "total_ab": 0,
+      "total_h": 0,
+      "total_hr": 0,
+      "total_rbi": 0,
+      "total_bb": 0,
+      "total_k": 0,
+      "avg": 0.0,
+      "obp": 0.0,
+      "last10": [
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
+          "ab": 0,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
+        }
+      ],
+      "last10_ab": 0,
+      "last10_h": 0,
+      "last10_avg": 0.0
+    },
+    "Justin Wrobleski": {
+      "name": "Justin Wrobleski",
+      "team": "National League All-Stars",
+      "games": 1,
+      "total_ab": 0,
+      "total_h": 0,
+      "total_hr": 0,
+      "total_rbi": 0,
+      "total_bb": 0,
+      "total_k": 0,
+      "avg": 0.0,
+      "obp": 0.0,
+      "last10": [
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
+          "ab": 0,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
+        }
+      ],
+      "last10_ab": 0,
+      "last10_h": 0,
+      "last10_avg": 0.0
+    },
+    "Jhoan Duran": {
+      "name": "Jhoan Duran",
+      "team": "National League All-Stars",
+      "games": 1,
+      "total_ab": 0,
+      "total_h": 0,
+      "total_hr": 0,
+      "total_rbi": 0,
+      "total_bb": 0,
+      "total_k": 0,
+      "avg": 0.0,
+      "obp": 0.0,
+      "last10": [
+        {
+          "date": "20260714",
+          "opponent": "American League All-Stars",
+          "ab": 0,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
+        }
+      ],
+      "last10_ab": 0,
+      "last10_h": 0,
+      "last10_avg": 0.0
+    },
+    "Mike Trout": {
+      "name": "Mike Trout",
+      "team": "American League All-Stars",
+      "games": 1,
+      "total_ab": 3,
+      "total_h": 0,
+      "total_hr": 0,
+      "total_rbi": 0,
+      "total_bb": 0,
+      "total_k": 1,
+      "avg": 0.0,
+      "obp": 0.0,
+      "last10": [
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
+          "ab": 3,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 1
+        }
+      ],
+      "last10_ab": 3,
+      "last10_h": 0,
+      "last10_avg": 0.0,
+      "k_pct": 0.333
+    },
+    "Shea Langeliers": {
+      "name": "Shea Langeliers",
+      "team": "American League All-Stars",
+      "games": 1,
+      "total_ab": 1,
+      "total_h": 1,
+      "total_hr": 0,
+      "total_rbi": 0,
+      "total_bb": 1,
+      "total_k": 0,
+      "avg": 1.0,
+      "obp": 0.0,
+      "last10": [
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
+          "ab": 1,
+          "h": 1,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 1,
+          "k": 0
+        }
+      ],
+      "last10_ab": 1,
+      "last10_h": 1,
+      "last10_avg": 1.0,
+      "k_pct": 0.0
+    },
+    "Dillon Dingler": {
+      "name": "Dillon Dingler",
+      "team": "American League All-Stars",
+      "games": 1,
+      "total_ab": 1,
+      "total_h": 0,
+      "total_hr": 0,
+      "total_rbi": 0,
+      "total_bb": 0,
+      "total_k": 1,
+      "avg": 0.0,
+      "obp": 0.0,
+      "last10": [
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
+          "ab": 1,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 1
+        }
+      ],
+      "last10_ab": 1,
+      "last10_h": 0,
+      "last10_avg": 0.0,
+      "k_pct": 1.0
+    },
+    "Miguel Vargas": {
+      "name": "Miguel Vargas",
+      "team": "American League All-Stars",
+      "games": 1,
+      "total_ab": 2,
+      "total_h": 1,
+      "total_hr": 1,
+      "total_rbi": 1,
+      "total_bb": 0,
+      "total_k": 0,
+      "avg": 0.5,
+      "obp": 0.0,
+      "last10": [
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
+          "ab": 2,
+          "h": 1,
+          "hr": 1,
+          "rbi": 1,
+          "bb": 0,
+          "k": 0
+        }
+      ],
+      "last10_ab": 2,
+      "last10_h": 1,
+      "last10_avg": 0.5,
+      "k_pct": 0.0
+    },
+    "Kevin McGonigle": {
+      "name": "Kevin McGonigle",
+      "team": "American League All-Stars",
+      "games": 1,
+      "total_ab": 2,
+      "total_h": 0,
+      "total_hr": 0,
+      "total_rbi": 0,
+      "total_bb": 0,
+      "total_k": 1,
+      "avg": 0.0,
+      "obp": 0.0,
+      "last10": [
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
+          "ab": 2,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 1
+        }
+      ],
+      "last10_ab": 2,
+      "last10_h": 0,
+      "last10_avg": 0.0,
+      "k_pct": 0.5
+    },
+    "Munetaka Murakami": {
+      "name": "Munetaka Murakami",
+      "team": "American League All-Stars",
+      "games": 1,
+      "total_ab": 1,
+      "total_h": 0,
+      "total_hr": 0,
+      "total_rbi": 0,
+      "total_bb": 0,
+      "total_k": 1,
+      "avg": 0.0,
+      "obp": 0.0,
+      "last10": [
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
+          "ab": 1,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 1
+        }
+      ],
+      "last10_ab": 1,
+      "last10_h": 0,
+      "last10_avg": 0.0,
+      "k_pct": 1.0
+    },
+    "Travis Bazzana": {
+      "name": "Travis Bazzana",
+      "team": "American League All-Stars",
+      "games": 1,
+      "total_ab": 2,
+      "total_h": 0,
+      "total_hr": 0,
+      "total_rbi": 0,
+      "total_bb": 0,
+      "total_k": 1,
+      "avg": 0.0,
+      "obp": 0.0,
+      "last10": [
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
+          "ab": 2,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 1
+        }
+      ],
+      "last10_ab": 2,
+      "last10_h": 0,
+      "last10_avg": 0.0,
+      "k_pct": 0.5
+    },
+    "Parker Messick": {
+      "name": "Parker Messick",
+      "team": "American League All-Stars",
+      "games": 1,
+      "total_ab": 0,
+      "total_h": 0,
+      "total_hr": 0,
+      "total_rbi": 0,
+      "total_bb": 0,
+      "total_k": 0,
+      "avg": 0.0,
+      "obp": 0.0,
+      "last10": [
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
+          "ab": 0,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
+        }
+      ],
+      "last10_ab": 0,
+      "last10_h": 0,
+      "last10_avg": 0.0
+    },
+    "Michael Wacha": {
+      "name": "Michael Wacha",
+      "team": "American League All-Stars",
+      "games": 1,
+      "total_ab": 0,
+      "total_h": 0,
+      "total_hr": 0,
+      "total_rbi": 0,
+      "total_bb": 0,
+      "total_k": 0,
+      "avg": 0.0,
+      "obp": 0.0,
+      "last10": [
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
+          "ab": 0,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
+        }
+      ],
+      "last10_ab": 0,
+      "last10_h": 0,
+      "last10_avg": 0.0
+    },
+    "Jacob Latz": {
+      "name": "Jacob Latz",
+      "team": "American League All-Stars",
+      "games": 1,
+      "total_ab": 0,
+      "total_h": 0,
+      "total_hr": 0,
+      "total_rbi": 0,
+      "total_bb": 0,
+      "total_k": 0,
+      "avg": 0.0,
+      "obp": 0.0,
+      "last10": [
+        {
+          "date": "20260714",
+          "opponent": "National League All-Stars",
           "ab": 0,
           "h": 0,
           "hr": 0,
