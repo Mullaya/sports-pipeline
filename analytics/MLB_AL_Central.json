@@ -2,27 +2,20 @@
   "teams": {
     "Chicago White Sox": {
       "team": "Chicago White Sox",
-      "games": 510,
+      "games": 511,
       "wins": 184,
-      "losses": 326,
-      "total_runs": 2061,
-      "total_allowed": 2440,
-      "win_pct": 0.361,
+      "losses": 327,
+      "total_runs": 2066,
+      "total_allowed": 2449,
+      "win_pct": 0.36,
       "rpg": 4.04,
-      "rapg": 4.78,
-      "run_diff": -379,
+      "rapg": 4.79,
+      "run_diff": -383,
       "home_wins": 104,
-      "home_losses": 145,
+      "home_losses": 146,
       "away_wins": 80,
       "away_losses": 181,
       "last10": [
-        {
-          "date": "20260712",
-          "opponent": "Athletics",
-          "runs": 9,
-          "allowed": 1,
-          "result": "W"
-        },
         {
           "date": "20260717",
           "opponent": "Toronto Blue Jays",
@@ -85,6 +78,13 @@
           "runs": 12,
           "allowed": 3,
           "result": "W"
+        },
+        {
+          "date": "20260727",
+          "opponent": "New York Yankees",
+          "runs": 5,
+          "allowed": 9,
+          "result": "L"
         }
       ]
     },
@@ -178,27 +178,20 @@
     },
     "Detroit Tigers": {
       "team": "Detroit Tigers",
-      "games": 530,
+      "games": 531,
       "wins": 271,
-      "losses": 259,
-      "total_runs": 2360,
-      "total_allowed": 2149,
-      "win_pct": 0.511,
+      "losses": 260,
+      "total_runs": 2365,
+      "total_allowed": 2157,
+      "win_pct": 0.51,
       "rpg": 4.45,
-      "rapg": 4.05,
-      "run_diff": 211,
+      "rapg": 4.06,
+      "run_diff": 208,
       "home_wins": 141,
-      "home_losses": 122,
+      "home_losses": 123,
       "away_wins": 130,
       "away_losses": 137,
       "last10": [
-        {
-          "date": "20260717",
-          "opponent": "Los Angeles Angels",
-          "runs": 2,
-          "allowed": 1,
-          "result": "W"
-        },
         {
           "date": "20260718",
           "opponent": "Los Angeles Angels",
@@ -260,6 +253,13 @@
           "opponent": "Kansas City Royals",
           "runs": 4,
           "allowed": 5,
+          "result": "L"
+        },
+        {
+          "date": "20260727",
+          "opponent": "Baltimore Orioles",
+          "runs": 5,
+          "allowed": 8,
           "result": "L"
         }
       ]
@@ -3891,41 +3891,29 @@
     "Brenan Hanifee": {
       "name": "Brenan Hanifee",
       "team": "Detroit Tigers",
-      "games": 116,
+      "games": 117,
       "starts": 5,
       "wins": 5,
       "losses": 4,
-      "total_ip": 135.3,
-      "total_er": 46,
-      "total_h": 141,
+      "total_ip": 136.0,
+      "total_er": 47,
+      "total_h": 142,
       "total_bb": 34,
       "total_k": 98,
-      "total_hr": 10,
-      "total_pitches": 2080,
-      "era": 3.06,
+      "total_hr": 11,
+      "total_pitches": 2088,
+      "era": 3.11,
       "whip": 1.29,
-      "k9": 6.52,
-      "bb9": 2.26,
-      "hr9": 0.67,
-      "home_ip": 66.33333333333333,
-      "home_er": 18,
-      "home_era": 2.44,
+      "k9": 6.49,
+      "bb9": 2.25,
+      "hr9": 0.73,
+      "home_ip": 67.0,
+      "home_er": 19,
+      "home_era": 2.55,
       "away_ip": 69.0,
       "away_er": 28,
       "away_era": 3.65,
       "last5": [
-        {
-          "date": "20260718",
-          "opponent": "Los Angeles Angels",
-          "is_starter": false,
-          "ip": 1.0,
-          "er": 0,
-          "h": 1,
-          "bb": 0,
-          "k": 0,
-          "hr": 0,
-          "pitches": 18
-        },
         {
           "date": "20260719",
           "opponent": "Los Angeles Angels",
@@ -3973,21 +3961,21 @@
           "k": 1,
           "hr": 0,
           "pitches": 15
+        },
+        {
+          "date": "20260727",
+          "opponent": "Baltimore Orioles",
+          "is_starter": false,
+          "ip": 0.67,
+          "er": 1,
+          "h": 1,
+          "bb": 0,
+          "k": 0,
+          "hr": 1,
+          "pitches": 8
         }
       ],
       "last10": [
-        {
-          "date": "20260528",
-          "opponent": "Los Angeles Angels",
-          "is_starter": false,
-          "ip": 1.0,
-          "er": 0,
-          "h": 1,
-          "bb": 0,
-          "k": 1,
-          "hr": 0,
-          "pitches": 10
-        },
         {
           "date": "20260531",
           "opponent": "Chicago White Sox",
@@ -4095,6 +4083,18 @@
           "k": 1,
           "hr": 0,
           "pitches": 15
+        },
+        {
+          "date": "20260727",
+          "opponent": "Baltimore Orioles",
+          "is_starter": false,
+          "ip": 0.67,
+          "er": 1,
+          "h": 1,
+          "bb": 0,
+          "k": 0,
+          "hr": 1,
+          "pitches": 8
         }
       ],
       "vs_teams": {
@@ -4183,10 +4183,10 @@
           "era": 5.4
         },
         "Baltimore Orioles": {
-          "games": 6,
-          "er": 3,
-          "ip": 6.666666666666666,
-          "era": 4.05
+          "games": 7,
+          "er": 4,
+          "ip": 7.333333333333333,
+          "era": 4.91
         },
         "Tampa Bay Rays": {
           "games": 6,
@@ -4283,41 +4283,29 @@
     "Keider Montero": {
       "name": "Keider Montero",
       "team": "Detroit Tigers",
-      "games": 76,
-      "starts": 51,
+      "games": 77,
+      "starts": 52,
       "wins": 19,
-      "losses": 15,
-      "total_ip": 335.7,
-      "total_er": 145,
-      "total_h": 306,
-      "total_bb": 95,
-      "total_k": 260,
-      "total_hr": 47,
-      "total_pitches": 5112,
-      "era": 3.89,
-      "whip": 1.19,
-      "k9": 6.97,
-      "bb9": 2.55,
-      "hr9": 1.26,
-      "home_ip": 207.3333333333333,
-      "home_er": 89,
-      "home_era": 3.86,
+      "losses": 16,
+      "total_ip": 340.0,
+      "total_er": 149,
+      "total_h": 315,
+      "total_bb": 96,
+      "total_k": 261,
+      "total_hr": 48,
+      "total_pitches": 5192,
+      "era": 3.94,
+      "whip": 1.21,
+      "k9": 6.91,
+      "bb9": 2.54,
+      "hr9": 1.27,
+      "home_ip": 211.66666666666663,
+      "home_er": 93,
+      "home_era": 3.95,
       "away_ip": 128.33333333333331,
       "away_er": 56,
       "away_era": 3.93,
       "last5": [
-        {
-          "date": "20260704",
-          "opponent": "Texas Rangers",
-          "is_starter": false,
-          "ip": 3.0,
-          "er": 0,
-          "h": 0,
-          "bb": 1,
-          "k": 0,
-          "hr": 0,
-          "pitches": 36
-        },
         {
           "date": "20260708",
           "opponent": "Athletics",
@@ -4365,21 +4353,21 @@
           "k": 8,
           "hr": 1,
           "pitches": 81
+        },
+        {
+          "date": "20260727",
+          "opponent": "Baltimore Orioles",
+          "is_starter": true,
+          "ip": 4.33,
+          "er": 4,
+          "h": 9,
+          "bb": 1,
+          "k": 1,
+          "hr": 1,
+          "pitches": 80
         }
       ],
       "last10": [
-        {
-          "date": "20260616",
-          "opponent": "Houston Astros",
-          "is_starter": false,
-          "ip": 1.33,
-          "er": 1,
-          "h": 2,
-          "bb": 0,
-          "k": 2,
-          "hr": 0,
-          "pitches": 30
-        },
         {
           "date": "20260621",
           "opponent": "Chicago White Sox",
@@ -4487,6 +4475,18 @@
           "k": 8,
           "hr": 1,
           "pitches": 81
+        },
+        {
+          "date": "20260727",
+          "opponent": "Baltimore Orioles",
+          "is_starter": true,
+          "ip": 4.33,
+          "er": 4,
+          "h": 9,
+          "bb": 1,
+          "k": 1,
+          "hr": 1,
+          "pitches": 80
         }
       ],
       "vs_teams": {
@@ -4497,10 +4497,10 @@
           "era": 7.15
         },
         "Baltimore Orioles": {
-          "games": 7,
-          "er": 14,
-          "ip": 22.666666666666668,
-          "era": 5.56
+          "games": 8,
+          "er": 18,
+          "ip": 27.0,
+          "era": 6.0
         },
         "Toronto Blue Jays": {
           "games": 3,
@@ -24425,41 +24425,29 @@
     "Drew Anderson": {
       "name": "Drew Anderson",
       "team": "Detroit Tigers",
-      "games": 47,
+      "games": 48,
       "starts": 3,
       "wins": 6,
       "losses": 5,
-      "total_ip": 77.3,
+      "total_ip": 79.0,
       "total_er": 35,
-      "total_h": 73,
+      "total_h": 74,
       "total_bb": 33,
       "total_k": 102,
       "total_hr": 8,
-      "total_pitches": 1327,
-      "era": 4.07,
-      "whip": 1.37,
-      "k9": 11.87,
-      "bb9": 3.84,
-      "hr9": 0.93,
-      "home_ip": 35.66666666666667,
+      "total_pitches": 1349,
+      "era": 3.99,
+      "whip": 1.35,
+      "k9": 11.62,
+      "bb9": 3.76,
+      "hr9": 0.91,
+      "home_ip": 37.333333333333336,
       "home_er": 13,
-      "home_era": 3.28,
+      "home_era": 3.13,
       "away_ip": 41.66666666666667,
       "away_er": 22,
       "away_era": 4.75,
       "last5": [
-        {
-          "date": "20260707",
-          "opponent": "Athletics",
-          "is_starter": false,
-          "ip": 1.0,
-          "er": 0,
-          "h": 1,
-          "bb": 0,
-          "k": 2,
-          "hr": 0,
-          "pitches": 29
-        },
         {
           "date": "20260711",
           "opponent": "Philadelphia Phillies",
@@ -24507,21 +24495,21 @@
           "k": 1,
           "hr": 0,
           "pitches": 18
+        },
+        {
+          "date": "20260727",
+          "opponent": "Baltimore Orioles",
+          "is_starter": false,
+          "ip": 1.67,
+          "er": 0,
+          "h": 1,
+          "bb": 0,
+          "k": 0,
+          "hr": 0,
+          "pitches": 22
         }
       ],
       "last10": [
-        {
-          "date": "20260622",
-          "opponent": "New York Yankees",
-          "is_starter": false,
-          "ip": 1.33,
-          "er": 2,
-          "h": 1,
-          "bb": 0,
-          "k": 2,
-          "hr": 1,
-          "pitches": 19
-        },
         {
           "date": "20260627",
           "opponent": "Houston Astros",
@@ -24629,6 +24617,18 @@
           "k": 1,
           "hr": 0,
           "pitches": 18
+        },
+        {
+          "date": "20260727",
+          "opponent": "Baltimore Orioles",
+          "is_starter": false,
+          "ip": 1.67,
+          "er": 0,
+          "h": 1,
+          "bb": 0,
+          "k": 0,
+          "hr": 0,
+          "pitches": 22
         }
       ],
       "vs_teams": {
@@ -24723,9 +24723,9 @@
           "era": 1.59
         },
         "Baltimore Orioles": {
-          "games": 1,
+          "games": 2,
           "er": 0,
-          "ip": 2.0,
+          "ip": 3.6666666666666665,
           "era": 0.0
         },
         "Los Angeles Angels": {
@@ -33033,41 +33033,29 @@
     "Tyler Holton": {
       "name": "Tyler Holton",
       "team": "Detroit Tigers",
-      "games": 211,
+      "games": 212,
       "starts": 19,
       "wins": 15,
       "losses": 12,
-      "total_ip": 251.7,
-      "total_er": 84,
-      "total_h": 202,
-      "total_bb": 50,
+      "total_ip": 252.0,
+      "total_er": 85,
+      "total_h": 203,
+      "total_bb": 51,
       "total_k": 208,
-      "total_hr": 31,
-      "total_pitches": 3726,
-      "era": 3.0,
-      "whip": 1.0,
-      "k9": 7.44,
-      "bb9": 1.79,
-      "hr9": 1.11,
-      "home_ip": 125.66666666666664,
-      "home_er": 44,
-      "home_era": 3.15,
+      "total_hr": 32,
+      "total_pitches": 3736,
+      "era": 3.04,
+      "whip": 1.01,
+      "k9": 7.43,
+      "bb9": 1.82,
+      "hr9": 1.14,
+      "home_ip": 125.99999999999997,
+      "home_er": 45,
+      "home_era": 3.21,
       "away_ip": 126.0,
       "away_er": 40,
       "away_era": 2.86,
       "last5": [
-        {
-          "date": "20260711",
-          "opponent": "Philadelphia Phillies",
-          "is_starter": false,
-          "ip": 1.0,
-          "er": 0,
-          "h": 1,
-          "bb": 0,
-          "k": 1,
-          "hr": 0,
-          "pitches": 9
-        },
         {
           "date": "20260719",
           "opponent": "Los Angeles Angels",
@@ -33115,21 +33103,21 @@
           "k": 0,
           "hr": 0,
           "pitches": 11
+        },
+        {
+          "date": "20260727",
+          "opponent": "Baltimore Orioles",
+          "is_starter": false,
+          "ip": 0.33,
+          "er": 1,
+          "h": 1,
+          "bb": 1,
+          "k": 0,
+          "hr": 1,
+          "pitches": 10
         }
       ],
       "last10": [
-        {
-          "date": "20260625",
-          "opponent": "Houston Astros",
-          "is_starter": false,
-          "ip": 1.0,
-          "er": 0,
-          "h": 1,
-          "bb": 0,
-          "k": 0,
-          "hr": 0,
-          "pitches": 18
-        },
         {
           "date": "20260628",
           "opponent": "Houston Astros",
@@ -33237,6 +33225,18 @@
           "k": 0,
           "hr": 0,
           "pitches": 11
+        },
+        {
+          "date": "20260727",
+          "opponent": "Baltimore Orioles",
+          "is_starter": false,
+          "ip": 0.33,
+          "er": 1,
+          "h": 1,
+          "bb": 1,
+          "k": 0,
+          "hr": 1,
+          "pitches": 10
         }
       ],
       "vs_teams": {
@@ -33409,10 +33409,10 @@
           "era": 3.38
         },
         "Baltimore Orioles": {
-          "games": 8,
-          "er": 5,
-          "ip": 10.0,
-          "era": 4.5
+          "games": 9,
+          "er": 6,
+          "ip": 10.333333333333334,
+          "era": 5.23
         },
         "Athletics": {
           "games": 3,
@@ -56207,41 +56207,29 @@
     "Trevor Richards": {
       "name": "Trevor Richards",
       "team": "Chicago White Sox",
-      "games": 42,
+      "games": 43,
       "starts": 0,
       "wins": 0,
       "losses": 1,
-      "total_ip": 56.3,
+      "total_ip": 58.3,
       "total_er": 28,
       "total_h": 47,
       "total_bb": 22,
-      "total_k": 56,
+      "total_k": 60,
       "total_hr": 9,
-      "total_pitches": 965,
-      "era": 4.47,
-      "whip": 1.22,
-      "k9": 8.95,
-      "bb9": 3.51,
-      "hr9": 1.44,
-      "home_ip": 28.33333333333333,
+      "total_pitches": 994,
+      "era": 4.32,
+      "whip": 1.18,
+      "k9": 9.26,
+      "bb9": 3.39,
+      "hr9": 1.39,
+      "home_ip": 30.33333333333333,
       "home_er": 9,
-      "home_era": 2.86,
+      "home_era": 2.67,
       "away_ip": 28.0,
       "away_er": 19,
       "away_era": 6.11,
       "last5": [
-        {
-          "date": "20260717",
-          "opponent": "Toronto Blue Jays",
-          "is_starter": false,
-          "ip": 1.67,
-          "er": 2,
-          "h": 4,
-          "bb": 0,
-          "k": 1,
-          "hr": 2,
-          "pitches": 36
-        },
         {
           "date": "20260720",
           "opponent": "Texas Rangers",
@@ -56289,21 +56277,21 @@
           "k": 2,
           "hr": 0,
           "pitches": 33
+        },
+        {
+          "date": "20260727",
+          "opponent": "New York Yankees",
+          "is_starter": false,
+          "ip": 2.0,
+          "er": 0,
+          "h": 0,
+          "bb": 0,
+          "k": 4,
+          "hr": 0,
+          "pitches": 29
         }
       ],
       "last10": [
-        {
-          "date": "20260701",
-          "opponent": "Baltimore Orioles",
-          "is_starter": false,
-          "ip": 1.33,
-          "er": 1,
-          "h": 1,
-          "bb": 2,
-          "k": 2,
-          "hr": 0,
-          "pitches": 31
-        },
         {
           "date": "20260703",
           "opponent": "Cleveland Guardians",
@@ -56411,6 +56399,18 @@
           "k": 2,
           "hr": 0,
           "pitches": 33
+        },
+        {
+          "date": "20260727",
+          "opponent": "New York Yankees",
+          "is_starter": false,
+          "ip": 2.0,
+          "er": 0,
+          "h": 0,
+          "bb": 0,
+          "k": 4,
+          "hr": 0,
+          "pitches": 29
         }
       ],
       "vs_teams": {
@@ -56463,10 +56463,10 @@
           "era": 4.5
         },
         "New York Yankees": {
-          "games": 2,
+          "games": 3,
           "er": 1,
-          "ip": 4.0,
-          "era": 2.25
+          "ip": 6.0,
+          "era": 1.5
         },
         "Seattle Mariners": {
           "games": 2,
@@ -74497,41 +74497,29 @@
     "Noah Schultz": {
       "name": "Noah Schultz",
       "team": "Chicago White Sox",
-      "games": 17,
-      "starts": 13,
+      "games": 18,
+      "starts": 14,
       "wins": 3,
       "losses": 8,
-      "total_ip": 65.7,
-      "total_er": 41,
-      "total_h": 59,
-      "total_bb": 37,
-      "total_k": 58,
+      "total_ip": 69.0,
+      "total_er": 44,
+      "total_h": 61,
+      "total_bb": 39,
+      "total_k": 63,
       "total_hr": 9,
-      "total_pitches": 1136,
-      "era": 5.62,
-      "whip": 1.46,
-      "k9": 7.95,
-      "bb9": 5.07,
-      "hr9": 1.23,
-      "home_ip": 27.666666666666664,
-      "home_er": 13,
-      "home_era": 4.23,
+      "total_pitches": 1208,
+      "era": 5.74,
+      "whip": 1.45,
+      "k9": 8.22,
+      "bb9": 5.09,
+      "hr9": 1.17,
+      "home_ip": 30.999999999999996,
+      "home_er": 16,
+      "home_era": 4.65,
       "away_ip": 38.0,
       "away_er": 28,
       "away_era": 6.63,
       "last5": [
-        {
-          "date": "20260524",
-          "opponent": "San Francisco Giants",
-          "is_starter": true,
-          "ip": 4.0,
-          "er": 6,
-          "h": 6,
-          "bb": 1,
-          "k": 1,
-          "hr": 1,
-          "pitches": 70
-        },
         {
           "date": "20260701",
           "opponent": "Baltimore Orioles",
@@ -74579,21 +74567,21 @@
           "k": 2,
           "hr": 1,
           "pitches": 80
+        },
+        {
+          "date": "20260727",
+          "opponent": "New York Yankees",
+          "is_starter": true,
+          "ip": 3.33,
+          "er": 3,
+          "h": 2,
+          "bb": 2,
+          "k": 5,
+          "hr": 0,
+          "pitches": 72
         }
       ],
       "last10": [
-        {
-          "date": "20260425",
-          "opponent": "Washington Nationals",
-          "is_starter": true,
-          "ip": 6.0,
-          "er": 2,
-          "h": 4,
-          "bb": 4,
-          "k": 8,
-          "hr": 0,
-          "pitches": 85
-        },
         {
           "date": "20260501",
           "opponent": "San Diego Padres",
@@ -74701,6 +74689,18 @@
           "k": 2,
           "hr": 1,
           "pitches": 80
+        },
+        {
+          "date": "20260727",
+          "opponent": "New York Yankees",
+          "is_starter": true,
+          "ip": 3.33,
+          "er": 3,
+          "h": 2,
+          "bb": 2,
+          "k": 5,
+          "hr": 0,
+          "pitches": 72
         }
       ],
       "vs_teams": {
@@ -74787,6 +74787,12 @@
           "er": 5,
           "ip": 3.6666666666666665,
           "era": 12.27
+        },
+        "New York Yankees": {
+          "games": 1,
+          "er": 3,
+          "ip": 3.3333333333333335,
+          "era": 8.1
         }
       }
     },
@@ -90061,41 +90067,29 @@
     "Bryan Hudson": {
       "name": "Bryan Hudson",
       "team": "Chicago White Sox",
-      "games": 49,
+      "games": 50,
       "starts": 6,
       "wins": 3,
-      "losses": 3,
-      "total_ip": 48.7,
-      "total_er": 17,
-      "total_h": 46,
+      "losses": 4,
+      "total_ip": 49.7,
+      "total_er": 18,
+      "total_h": 48,
       "total_bb": 18,
-      "total_k": 49,
+      "total_k": 50,
       "total_hr": 4,
-      "total_pitches": 804,
-      "era": 3.14,
-      "whip": 1.32,
+      "total_pitches": 828,
+      "era": 3.26,
+      "whip": 1.33,
       "k9": 9.06,
-      "bb9": 3.33,
-      "hr9": 0.74,
-      "home_ip": 26.999999999999996,
-      "home_er": 8,
-      "home_era": 2.67,
+      "bb9": 3.26,
+      "hr9": 0.72,
+      "home_ip": 27.999999999999996,
+      "home_er": 9,
+      "home_era": 2.89,
       "away_ip": 21.666666666666664,
       "away_er": 9,
       "away_era": 3.74,
       "last5": [
-        {
-          "date": "20260708",
-          "opponent": "Boston Red Sox",
-          "is_starter": false,
-          "ip": 1.0,
-          "er": 0,
-          "h": 0,
-          "bb": 0,
-          "k": 2,
-          "hr": 0,
-          "pitches": 24
-        },
         {
           "date": "20260711",
           "opponent": "Athletics",
@@ -90143,21 +90137,21 @@
           "k": 1,
           "hr": 1,
           "pitches": 23
-        }
-      ],
-      "last10": [
+        },
         {
-          "date": "20260621",
-          "opponent": "Detroit Tigers",
+          "date": "20260727",
+          "opponent": "New York Yankees",
           "is_starter": false,
           "ip": 1.0,
-          "er": 0,
-          "h": 1,
+          "er": 1,
+          "h": 2,
           "bb": 0,
           "k": 1,
           "hr": 0,
-          "pitches": 10
-        },
+          "pitches": 24
+        }
+      ],
+      "last10": [
         {
           "date": "20260622",
           "opponent": "Cleveland Guardians",
@@ -90265,6 +90259,18 @@
           "k": 1,
           "hr": 1,
           "pitches": 23
+        },
+        {
+          "date": "20260727",
+          "opponent": "New York Yankees",
+          "is_starter": false,
+          "ip": 1.0,
+          "er": 1,
+          "h": 2,
+          "bb": 0,
+          "k": 1,
+          "hr": 0,
+          "pitches": 24
         }
       ],
       "vs_teams": {
@@ -90389,10 +90395,10 @@
           "era": 4.5
         },
         "New York Yankees": {
-          "games": 1,
-          "er": 0,
-          "ip": 1.6666666666666665,
-          "era": 0.0
+          "games": 2,
+          "er": 1,
+          "ip": 2.6666666666666665,
+          "era": 3.38
         },
         "Boston Red Sox": {
           "games": 1,
@@ -98155,41 +98161,29 @@
     "Seranthony Domínguez": {
       "name": "Seranthony Domínguez",
       "team": "Chicago White Sox",
-      "games": 43,
+      "games": 44,
       "starts": 0,
       "wins": 3,
       "losses": 3,
-      "total_ip": 38.3,
+      "total_ip": 39.3,
       "total_er": 17,
-      "total_h": 30,
+      "total_h": 31,
       "total_bb": 24,
       "total_k": 48,
       "total_hr": 6,
-      "total_pitches": 729,
-      "era": 3.99,
-      "whip": 1.41,
-      "k9": 11.27,
-      "bb9": 5.63,
-      "hr9": 1.41,
-      "home_ip": 24.33333333333333,
+      "total_pitches": 742,
+      "era": 3.89,
+      "whip": 1.4,
+      "k9": 10.98,
+      "bb9": 5.49,
+      "hr9": 1.37,
+      "home_ip": 25.33333333333333,
       "home_er": 11,
-      "home_era": 4.07,
+      "home_era": 3.91,
       "away_ip": 14.000000000000002,
       "away_er": 6,
       "away_era": 3.86,
       "last5": [
-        {
-          "date": "20260712",
-          "opponent": "Athletics",
-          "is_starter": false,
-          "ip": 1.0,
-          "er": 0,
-          "h": 0,
-          "bb": 0,
-          "k": 1,
-          "hr": 0,
-          "pitches": 14
-        },
         {
           "date": "20260717",
           "opponent": "Toronto Blue Jays",
@@ -98237,21 +98231,21 @@
           "k": 1,
           "hr": 0,
           "pitches": 13
+        },
+        {
+          "date": "20260727",
+          "opponent": "New York Yankees",
+          "is_starter": false,
+          "ip": 1.0,
+          "er": 0,
+          "h": 1,
+          "bb": 0,
+          "k": 0,
+          "hr": 0,
+          "pitches": 13
         }
       ],
       "last10": [
-        {
-          "date": "20260622",
-          "opponent": "Cleveland Guardians",
-          "is_starter": false,
-          "ip": 0.33,
-          "er": 2,
-          "h": 2,
-          "bb": 1,
-          "k": 1,
-          "hr": 0,
-          "pitches": 22
-        },
         {
           "date": "20260628",
           "opponent": "Kansas City Royals",
@@ -98357,6 +98351,18 @@
           "h": 1,
           "bb": 0,
           "k": 1,
+          "hr": 0,
+          "pitches": 13
+        },
+        {
+          "date": "20260727",
+          "opponent": "New York Yankees",
+          "is_starter": false,
+          "ip": 1.0,
+          "er": 0,
+          "h": 1,
+          "bb": 0,
+          "k": 0,
           "hr": 0,
           "pitches": 13
         }
@@ -98498,6 +98504,12 @@
           "games": 2,
           "er": 0,
           "ip": 1.3333333333333333,
+          "era": 0.0
+        },
+        "New York Yankees": {
+          "games": 1,
+          "er": 0,
+          "ip": 1.0,
           "era": 0.0
         }
       }
@@ -104997,41 +105009,29 @@
     "Sean Newcomb": {
       "name": "Sean Newcomb",
       "team": "Chicago White Sox",
-      "games": 45,
+      "games": 46,
       "starts": 4,
       "wins": 2,
       "losses": 2,
-      "total_ip": 73.7,
-      "total_er": 28,
-      "total_h": 62,
+      "total_ip": 74.7,
+      "total_er": 32,
+      "total_h": 66,
       "total_bb": 26,
       "total_k": 72,
-      "total_hr": 5,
-      "total_pitches": 1205,
-      "era": 3.42,
-      "whip": 1.19,
-      "k9": 8.8,
-      "bb9": 3.18,
-      "hr9": 0.61,
-      "home_ip": 39.33333333333333,
-      "home_er": 8,
-      "home_era": 1.83,
+      "total_hr": 6,
+      "total_pitches": 1224,
+      "era": 3.86,
+      "whip": 1.23,
+      "k9": 8.68,
+      "bb9": 3.13,
+      "hr9": 0.72,
+      "home_ip": 40.33333333333333,
+      "home_er": 12,
+      "home_era": 2.68,
       "away_ip": 34.333333333333336,
       "away_er": 20,
       "away_era": 5.24,
       "last5": [
-        {
-          "date": "20260705",
-          "opponent": "Cleveland Guardians",
-          "is_starter": false,
-          "ip": 1.67,
-          "er": 0,
-          "h": 0,
-          "bb": 1,
-          "k": 2,
-          "hr": 0,
-          "pitches": 22
-        },
         {
           "date": "20260711",
           "opponent": "Athletics",
@@ -105079,21 +105079,21 @@
           "k": 0,
           "hr": 0,
           "pitches": 25
+        },
+        {
+          "date": "20260727",
+          "opponent": "New York Yankees",
+          "is_starter": false,
+          "ip": 1.0,
+          "er": 4,
+          "h": 4,
+          "bb": 0,
+          "k": 0,
+          "hr": 1,
+          "pitches": 19
         }
       ],
       "last10": [
-        {
-          "date": "20260620",
-          "opponent": "Detroit Tigers",
-          "is_starter": true,
-          "ip": 3.0,
-          "er": 0,
-          "h": 0,
-          "bb": 0,
-          "k": 4,
-          "hr": 0,
-          "pitches": 42
-        },
         {
           "date": "20260623",
           "opponent": "Cleveland Guardians",
@@ -105201,6 +105201,18 @@
           "k": 0,
           "hr": 0,
           "pitches": 25
+        },
+        {
+          "date": "20260727",
+          "opponent": "New York Yankees",
+          "is_starter": false,
+          "ip": 1.0,
+          "er": 4,
+          "h": 4,
+          "bb": 0,
+          "k": 0,
+          "hr": 1,
+          "pitches": 19
         }
       ],
       "vs_teams": {
@@ -105319,10 +105331,10 @@
           "era": 0.0
         },
         "New York Yankees": {
-          "games": 1,
-          "er": 3,
-          "ip": 0.6666666666666666,
-          "era": 40.5
+          "games": 2,
+          "er": 7,
+          "ip": 1.6666666666666665,
+          "era": 37.8
         },
         "Cleveland Guardians": {
           "games": 4,
@@ -105347,41 +105359,29 @@
     "Chris Murphy": {
       "name": "Chris Murphy",
       "team": "Chicago White Sox",
-      "games": 31,
+      "games": 32,
       "starts": 2,
       "wins": 3,
       "losses": 0,
-      "total_ip": 37.0,
-      "total_er": 14,
-      "total_h": 30,
-      "total_bb": 15,
+      "total_ip": 37.7,
+      "total_er": 15,
+      "total_h": 31,
+      "total_bb": 16,
       "total_k": 36,
       "total_hr": 3,
-      "total_pitches": 608,
-      "era": 3.41,
-      "whip": 1.22,
-      "k9": 8.76,
-      "bb9": 3.65,
-      "hr9": 0.73,
-      "home_ip": 18.666666666666664,
-      "home_er": 3,
-      "home_era": 1.45,
+      "total_pitches": 623,
+      "era": 3.58,
+      "whip": 1.25,
+      "k9": 8.6,
+      "bb9": 3.82,
+      "hr9": 0.72,
+      "home_ip": 19.333333333333332,
+      "home_er": 4,
+      "home_era": 1.86,
       "away_ip": 18.33333333333333,
       "away_er": 11,
       "away_era": 5.4,
       "last5": [
-        {
-          "date": "20260708",
-          "opponent": "Boston Red Sox",
-          "is_starter": false,
-          "ip": 1.0,
-          "er": 0,
-          "h": 1,
-          "bb": 0,
-          "k": 2,
-          "hr": 0,
-          "pitches": 26
-        },
         {
           "date": "20260711",
           "opponent": "Athletics",
@@ -105429,21 +105429,21 @@
           "k": 2,
           "hr": 0,
           "pitches": 18
+        },
+        {
+          "date": "20260727",
+          "opponent": "New York Yankees",
+          "is_starter": false,
+          "ip": 0.67,
+          "er": 1,
+          "h": 1,
+          "bb": 1,
+          "k": 0,
+          "hr": 0,
+          "pitches": 15
         }
       ],
       "last10": [
-        {
-          "date": "20260628",
-          "opponent": "Kansas City Royals",
-          "is_starter": false,
-          "ip": 0.67,
-          "er": 0,
-          "h": 1,
-          "bb": 0,
-          "k": 0,
-          "hr": 0,
-          "pitches": 7
-        },
         {
           "date": "20260629",
           "opponent": "Baltimore Orioles",
@@ -105551,6 +105551,18 @@
           "k": 2,
           "hr": 0,
           "pitches": 18
+        },
+        {
+          "date": "20260727",
+          "opponent": "New York Yankees",
+          "is_starter": false,
+          "ip": 0.67,
+          "er": 1,
+          "h": 1,
+          "bb": 1,
+          "k": 0,
+          "hr": 0,
+          "pitches": 15
         }
       ],
       "vs_teams": {
@@ -105627,9 +105639,9 @@
           "era": 0.0
         },
         "New York Yankees": {
-          "games": 1,
-          "er": 1,
-          "ip": 0.6666666666666666,
+          "games": 2,
+          "er": 2,
+          "ip": 1.3333333333333333,
           "era": 13.5
         },
         "Cleveland Guardians": {
@@ -112143,41 +112155,29 @@
     "Jacob Waguespack": {
       "name": "Jacob Waguespack",
       "team": "Detroit Tigers",
-      "games": 13,
+      "games": 14,
       "starts": 0,
       "wins": 0,
       "losses": 1,
-      "total_ip": 16.3,
+      "total_ip": 18.3,
       "total_er": 3,
       "total_h": 9,
-      "total_bb": 4,
-      "total_k": 11,
+      "total_bb": 6,
+      "total_k": 13,
       "total_hr": 3,
-      "total_pitches": 232,
-      "era": 1.65,
-      "whip": 0.8,
-      "k9": 6.06,
-      "bb9": 2.2,
-      "hr9": 1.65,
-      "home_ip": 8.0,
+      "total_pitches": 267,
+      "era": 1.47,
+      "whip": 0.82,
+      "k9": 6.38,
+      "bb9": 2.95,
+      "hr9": 1.47,
+      "home_ip": 10.0,
       "home_er": 1,
-      "home_era": 1.12,
+      "home_era": 0.9,
       "away_ip": 8.333333333333334,
       "away_er": 2,
       "away_era": 2.16,
       "last5": [
-        {
-          "date": "20260710",
-          "opponent": "Philadelphia Phillies",
-          "is_starter": false,
-          "ip": 0.67,
-          "er": 0,
-          "h": 1,
-          "bb": 0,
-          "k": 0,
-          "hr": 0,
-          "pitches": 16
-        },
         {
           "date": "20260718",
           "opponent": "Los Angeles Angels",
@@ -112225,21 +112225,21 @@
           "k": 1,
           "hr": 1,
           "pitches": 24
+        },
+        {
+          "date": "20260727",
+          "opponent": "Baltimore Orioles",
+          "is_starter": false,
+          "ip": 2.0,
+          "er": 0,
+          "h": 0,
+          "bb": 2,
+          "k": 2,
+          "hr": 0,
+          "pitches": 35
         }
       ],
       "last10": [
-        {
-          "date": "20260624",
-          "opponent": "New York Yankees",
-          "is_starter": false,
-          "ip": 1.67,
-          "er": 0,
-          "h": 0,
-          "bb": 0,
-          "k": 2,
-          "hr": 0,
-          "pitches": 20
-        },
         {
           "date": "20260627",
           "opponent": "Houston Astros",
@@ -112347,6 +112347,18 @@
           "k": 1,
           "hr": 1,
           "pitches": 24
+        },
+        {
+          "date": "20260727",
+          "opponent": "Baltimore Orioles",
+          "is_starter": false,
+          "ip": 2.0,
+          "er": 0,
+          "h": 0,
+          "bb": 2,
+          "k": 2,
+          "hr": 0,
+          "pitches": 35
         }
       ],
       "vs_teams": {
@@ -112397,6 +112409,12 @@
           "er": 1,
           "ip": 1.9999999999999998,
           "era": 4.5
+        },
+        "Baltimore Orioles": {
+          "games": 1,
+          "er": 0,
+          "ip": 2.0,
+          "era": 0.0
         }
       }
     },
@@ -115798,26 +115816,16 @@
     "Matt Vierling": {
       "name": "Matt Vierling",
       "team": "Detroit Tigers",
-      "games": 306,
-      "total_ab": 985,
+      "games": 307,
+      "total_ab": 988,
       "total_h": 236,
       "total_hr": 25,
-      "total_rbi": 115,
+      "total_rbi": 116,
       "total_bb": 82,
-      "total_k": 223,
-      "avg": 0.24,
+      "total_k": 224,
+      "avg": 0.239,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260712",
-          "opponent": "Philadelphia Phillies",
-          "ab": 3,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 2
-        },
         {
           "date": "20260717",
           "opponent": "Los Angeles Angels",
@@ -115907,12 +115915,22 @@
           "rbi": 0,
           "bb": 0,
           "k": 1
+        },
+        {
+          "date": "20260727",
+          "opponent": "Baltimore Orioles",
+          "ab": 3,
+          "h": 0,
+          "hr": 0,
+          "rbi": 1,
+          "bb": 0,
+          "k": 1
         }
       ],
       "last10_ab": 26,
       "last10_h": 4,
       "last10_avg": 0.154,
-      "k_pct": 0.226
+      "k_pct": 0.227
     },
     "Jace Jung": {
       "name": "Jace Jung",
@@ -116274,26 +116292,16 @@
     "Riley Greene": {
       "name": "Riley Greene",
       "team": "Detroit Tigers",
-      "games": 466,
-      "total_ab": 1692,
-      "total_h": 447,
+      "games": 467,
+      "total_ab": 1696,
+      "total_h": 448,
       "total_hr": 82,
       "total_rbi": 261,
       "total_bb": 181,
-      "total_k": 528,
+      "total_k": 529,
       "avg": 0.264,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260717",
-          "opponent": "Los Angeles Angels",
-          "ab": 3,
-          "h": 1,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 1,
-          "k": 1
-        },
         {
           "date": "20260718",
           "opponent": "Los Angeles Angels",
@@ -116383,11 +116391,21 @@
           "rbi": 1,
           "bb": 0,
           "k": 1
+        },
+        {
+          "date": "20260727",
+          "opponent": "Baltimore Orioles",
+          "ab": 4,
+          "h": 1,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 1
         }
       ],
-      "last10_ab": 36,
+      "last10_ab": 37,
       "last10_h": 8,
-      "last10_avg": 0.222,
+      "last10_avg": 0.216,
       "k_pct": 0.312
     },
     "Justice Bigbie": {
@@ -116512,26 +116530,16 @@
     "Spencer Torkelson": {
       "name": "Spencer Torkelson",
       "team": "Detroit Tigers",
-      "games": 420,
-      "total_ab": 1454,
-      "total_h": 322,
+      "games": 421,
+      "total_ab": 1457,
+      "total_h": 324,
       "total_hr": 67,
-      "total_rbi": 192,
+      "total_rbi": 193,
       "total_bb": 169,
       "total_k": 469,
-      "avg": 0.221,
+      "avg": 0.222,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260717",
-          "opponent": "Los Angeles Angels",
-          "ab": 4,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 1
-        },
         {
           "date": "20260718",
           "opponent": "Los Angeles Angels",
@@ -116621,12 +116629,22 @@
           "rbi": 0,
           "bb": 2,
           "k": 0
+        },
+        {
+          "date": "20260727",
+          "opponent": "Baltimore Orioles",
+          "ab": 3,
+          "h": 2,
+          "hr": 0,
+          "rbi": 1,
+          "bb": 0,
+          "k": 0
         }
       ],
-      "last10_ab": 33,
-      "last10_h": 6,
-      "last10_avg": 0.182,
-      "k_pct": 0.323
+      "last10_ab": 32,
+      "last10_h": 8,
+      "last10_avg": 0.25,
+      "k_pct": 0.322
     },
     "Bligh Madris": {
       "name": "Bligh Madris",
@@ -117583,26 +117601,16 @@
     "Dillon Dingler": {
       "name": "Dillon Dingler",
       "team": "Detroit Tigers",
-      "games": 303,
-      "total_ab": 1002,
-      "total_h": 263,
+      "games": 304,
+      "total_ab": 1007,
+      "total_h": 264,
       "total_hr": 43,
       "total_rbi": 157,
       "total_bb": 61,
-      "total_k": 254,
+      "total_k": 255,
       "avg": 0.262,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260717",
-          "opponent": "Los Angeles Angels",
-          "ab": 3,
-          "h": 1,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 1
-        },
         {
           "date": "20260718",
           "opponent": "Los Angeles Angels",
@@ -117692,11 +117700,21 @@
           "rbi": 2,
           "bb": 1,
           "k": 0
+        },
+        {
+          "date": "20260727",
+          "opponent": "Baltimore Orioles",
+          "ab": 5,
+          "h": 1,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 1
         }
       ],
-      "last10_ab": 32,
+      "last10_ab": 34,
       "last10_h": 13,
-      "last10_avg": 0.406,
+      "last10_avg": 0.382,
       "k_pct": 0.253
     },
     "Parker Meadows": {
@@ -118294,7 +118312,7 @@
     "Brenan Hanifee": {
       "name": "Brenan Hanifee",
       "team": "Detroit Tigers",
-      "games": 116,
+      "games": 117,
       "total_ab": 0,
       "total_h": 0,
       "total_hr": 0,
@@ -118304,16 +118322,6 @@
       "avg": 0.0,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260528",
-          "opponent": "Los Angeles Angels",
-          "ab": 0,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 0
-        },
         {
           "date": "20260531",
           "opponent": "Chicago White Sox",
@@ -118403,6 +118411,16 @@
           "rbi": 0,
           "bb": 0,
           "k": 0
+        },
+        {
+          "date": "20260727",
+          "opponent": "Baltimore Orioles",
+          "ab": 0,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
         }
       ],
       "last10_ab": 0,
@@ -118412,7 +118430,7 @@
     "Keider Montero": {
       "name": "Keider Montero",
       "team": "Detroit Tigers",
-      "games": 76,
+      "games": 77,
       "total_ab": 0,
       "total_h": 0,
       "total_hr": 0,
@@ -118422,16 +118440,6 @@
       "avg": 0.0,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260616",
-          "opponent": "Houston Astros",
-          "ab": 0,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 0
-        },
         {
           "date": "20260621",
           "opponent": "Chicago White Sox",
@@ -118515,6 +118523,16 @@
         {
           "date": "20260722",
           "opponent": "Chicago Cubs",
+          "ab": 0,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
+        },
+        {
+          "date": "20260727",
+          "opponent": "Baltimore Orioles",
           "ab": 0,
           "h": 0,
           "hr": 0,
@@ -126752,26 +126770,16 @@
     "Zach McKinstry": {
       "name": "Zach McKinstry",
       "team": "Detroit Tigers",
-      "games": 408,
-      "total_ab": 1139,
-      "total_h": 264,
+      "games": 409,
+      "total_ab": 1142,
+      "total_h": 266,
       "total_hr": 22,
-      "total_rbi": 101,
-      "total_bb": 119,
+      "total_rbi": 102,
+      "total_bb": 120,
       "total_k": 254,
-      "avg": 0.232,
+      "avg": 0.233,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260717",
-          "opponent": "Los Angeles Angels",
-          "ab": 3,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 3
-        },
         {
           "date": "20260718",
           "opponent": "Los Angeles Angels",
@@ -126861,12 +126869,22 @@
           "rbi": 0,
           "bb": 1,
           "k": 0
+        },
+        {
+          "date": "20260727",
+          "opponent": "Baltimore Orioles",
+          "ab": 3,
+          "h": 2,
+          "hr": 0,
+          "rbi": 1,
+          "bb": 1,
+          "k": 0
         }
       ],
       "last10_ab": 27,
-      "last10_h": 6,
-      "last10_avg": 0.222,
-      "k_pct": 0.223
+      "last10_h": 8,
+      "last10_avg": 0.296,
+      "k_pct": 0.222
     },
     "Gage Workman": {
       "name": "Gage Workman",
@@ -127099,26 +127117,16 @@
     "Colt Keith": {
       "name": "Colt Keith",
       "team": "Detroit Tigers",
-      "games": 446,
-      "total_ab": 1381,
-      "total_h": 349,
+      "games": 447,
+      "total_ab": 1384,
+      "total_h": 351,
       "total_hr": 35,
       "total_rbi": 145,
       "total_bb": 120,
       "total_k": 311,
-      "avg": 0.253,
+      "avg": 0.254,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260717",
-          "opponent": "Los Angeles Angels",
-          "ab": 1,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 1
-        },
         {
           "date": "20260718",
           "opponent": "Los Angeles Angels",
@@ -127208,11 +127216,21 @@
           "rbi": 0,
           "bb": 1,
           "k": 0
+        },
+        {
+          "date": "20260727",
+          "opponent": "Baltimore Orioles",
+          "ab": 3,
+          "h": 2,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
         }
       ],
-      "last10_ab": 27,
-      "last10_h": 9,
-      "last10_avg": 0.333,
+      "last10_ab": 29,
+      "last10_h": 11,
+      "last10_avg": 0.379,
       "k_pct": 0.225
     },
     "Andy Ibáñez": {
@@ -136309,26 +136327,16 @@
     "Andrew Benintendi": {
       "name": "Andrew Benintendi",
       "team": "Chicago White Sox",
-      "games": 374,
-      "total_ab": 1272,
+      "games": 375,
+      "total_ab": 1273,
       "total_h": 303,
       "total_hr": 52,
       "total_rbi": 190,
       "total_bb": 118,
-      "total_k": 278,
+      "total_k": 279,
       "avg": 0.238,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260712",
-          "opponent": "Athletics",
-          "ab": 2,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 2,
-          "k": 0
-        },
         {
           "date": "20260717",
           "opponent": "Toronto Blue Jays",
@@ -136418,11 +136426,21 @@
           "rbi": 1,
           "bb": 0,
           "k": 1
+        },
+        {
+          "date": "20260727",
+          "opponent": "New York Yankees",
+          "ab": 1,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 1
         }
       ],
-      "last10_ab": 28,
+      "last10_ab": 27,
       "last10_h": 6,
-      "last10_avg": 0.214,
+      "last10_avg": 0.222,
       "k_pct": 0.219
     },
     "Max Stassi": {
@@ -137241,26 +137259,16 @@
     "Colson Montgomery": {
       "name": "Colson Montgomery",
       "team": "Chicago White Sox",
-      "games": 197,
-      "total_ab": 697,
-      "total_h": 153,
+      "games": 198,
+      "total_ab": 701,
+      "total_h": 156,
       "total_hr": 49,
-      "total_rbi": 118,
-      "total_bb": 64,
+      "total_rbi": 120,
+      "total_bb": 65,
       "total_k": 243,
-      "avg": 0.22,
+      "avg": 0.223,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260710",
-          "opponent": "Athletics",
-          "ab": 5,
-          "h": 1,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 1
-        },
         {
           "date": "20260711",
           "opponent": "Athletics",
@@ -137350,12 +137358,22 @@
           "rbi": 1,
           "bb": 0,
           "k": 1
+        },
+        {
+          "date": "20260727",
+          "opponent": "New York Yankees",
+          "ab": 4,
+          "h": 3,
+          "hr": 0,
+          "rbi": 2,
+          "bb": 1,
+          "k": 0
         }
       ],
-      "last10_ab": 38,
-      "last10_h": 7,
-      "last10_avg": 0.184,
-      "k_pct": 0.349
+      "last10_ab": 37,
+      "last10_h": 9,
+      "last10_avg": 0.243,
+      "k_pct": 0.347
     },
     "Brett Phillips": {
       "name": "Brett Phillips",
@@ -139993,7 +140011,7 @@
     "Drew Anderson": {
       "name": "Drew Anderson",
       "team": "Detroit Tigers",
-      "games": 47,
+      "games": 48,
       "total_ab": 0,
       "total_h": 0,
       "total_hr": 0,
@@ -140003,16 +140021,6 @@
       "avg": 0.0,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260622",
-          "opponent": "New York Yankees",
-          "ab": 0,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 0
-        },
         {
           "date": "20260627",
           "opponent": "Houston Astros",
@@ -140096,6 +140104,16 @@
         {
           "date": "20260723",
           "opponent": "Kansas City Royals",
+          "ab": 0,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
+        },
+        {
+          "date": "20260727",
+          "opponent": "Baltimore Orioles",
           "ab": 0,
           "h": 0,
           "hr": 0,
@@ -143758,7 +143776,7 @@
     "Tyler Holton": {
       "name": "Tyler Holton",
       "team": "Detroit Tigers",
-      "games": 211,
+      "games": 212,
       "total_ab": 0,
       "total_h": 0,
       "total_hr": 0,
@@ -143768,16 +143786,6 @@
       "avg": 0.0,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260625",
-          "opponent": "Houston Astros",
-          "ab": 0,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 0
-        },
         {
           "date": "20260628",
           "opponent": "Houston Astros",
@@ -143861,6 +143869,16 @@
         {
           "date": "20260725",
           "opponent": "Kansas City Royals",
+          "ab": 0,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
+        },
+        {
+          "date": "20260727",
+          "opponent": "Baltimore Orioles",
           "ab": 0,
           "h": 0,
           "hr": 0,
@@ -149489,26 +149507,16 @@
     "Hao-Yu Lee": {
       "name": "Hao-Yu Lee",
       "team": "Detroit Tigers",
-      "games": 49,
-      "total_ab": 140,
-      "total_h": 39,
+      "games": 50,
+      "total_ab": 143,
+      "total_h": 40,
       "total_hr": 4,
-      "total_rbi": 15,
+      "total_rbi": 17,
       "total_bb": 7,
-      "total_k": 33,
-      "avg": 0.279,
+      "total_k": 34,
+      "avg": 0.28,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260711",
-          "opponent": "Philadelphia Phillies",
-          "ab": 3,
-          "h": 2,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 0
-        },
         {
           "date": "20260717",
           "opponent": "Los Angeles Angels",
@@ -149598,12 +149606,22 @@
           "rbi": 0,
           "bb": 1,
           "k": 0
+        },
+        {
+          "date": "20260727",
+          "opponent": "Baltimore Orioles",
+          "ab": 3,
+          "h": 1,
+          "hr": 0,
+          "rbi": 2,
+          "bb": 0,
+          "k": 1
         }
       ],
       "last10_ab": 33,
-      "last10_h": 13,
-      "last10_avg": 0.394,
-      "k_pct": 0.236
+      "last10_h": 12,
+      "last10_avg": 0.364,
+      "k_pct": 0.238
     },
     "Cristian Santana": {
       "name": "Cristian Santana",
@@ -160664,26 +160682,16 @@
     "Miguel Vargas": {
       "name": "Miguel Vargas",
       "team": "Chicago White Sox",
-      "games": 316,
-      "total_ab": 1114,
-      "total_h": 252,
+      "games": 317,
+      "total_ab": 1119,
+      "total_h": 253,
       "total_hr": 43,
       "total_rbi": 144,
       "total_bb": 144,
-      "total_k": 233,
+      "total_k": 235,
       "avg": 0.226,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260712",
-          "opponent": "Athletics",
-          "ab": 4,
-          "h": 2,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 1
-        },
         {
           "date": "20260717",
           "opponent": "Toronto Blue Jays",
@@ -160773,12 +160781,22 @@
           "rbi": 2,
           "bb": 0,
           "k": 2
+        },
+        {
+          "date": "20260727",
+          "opponent": "New York Yankees",
+          "ab": 5,
+          "h": 1,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 2
         }
       ],
-      "last10_ab": 41,
-      "last10_h": 10,
-      "last10_avg": 0.244,
-      "k_pct": 0.209
+      "last10_ab": 42,
+      "last10_h": 9,
+      "last10_avg": 0.214,
+      "k_pct": 0.21
     },
     "Randy Dobnak": {
       "name": "Randy Dobnak",
@@ -161019,7 +161037,7 @@
     "Trevor Richards": {
       "name": "Trevor Richards",
       "team": "Chicago White Sox",
-      "games": 42,
+      "games": 43,
       "total_ab": 0,
       "total_h": 0,
       "total_hr": 0,
@@ -161029,16 +161047,6 @@
       "avg": 0.0,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260701",
-          "opponent": "Baltimore Orioles",
-          "ab": 0,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 0
-        },
         {
           "date": "20260703",
           "opponent": "Cleveland Guardians",
@@ -161122,6 +161130,16 @@
         {
           "date": "20260725",
           "opponent": "Houston Astros",
+          "ab": 0,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
+        },
+        {
+          "date": "20260727",
+          "opponent": "New York Yankees",
           "ab": 0,
           "h": 0,
           "hr": 0,
@@ -167300,26 +167318,16 @@
     "Chase Meidroth": {
       "name": "Chase Meidroth",
       "team": "Chicago White Sox",
-      "games": 257,
-      "total_ab": 915,
-      "total_h": 241,
+      "games": 258,
+      "total_ab": 919,
+      "total_h": 242,
       "total_hr": 14,
-      "total_rbi": 73,
+      "total_rbi": 74,
       "total_bb": 100,
-      "total_k": 191,
+      "total_k": 192,
       "avg": 0.263,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260711",
-          "opponent": "Athletics",
-          "ab": 3,
-          "h": 2,
-          "hr": 0,
-          "rbi": 1,
-          "bb": 0,
-          "k": 0
-        },
         {
           "date": "20260712",
           "opponent": "Athletics",
@@ -167409,11 +167417,21 @@
           "rbi": 1,
           "bb": 1,
           "k": 1
+        },
+        {
+          "date": "20260727",
+          "opponent": "New York Yankees",
+          "ab": 4,
+          "h": 1,
+          "hr": 0,
+          "rbi": 1,
+          "bb": 0,
+          "k": 1
         }
       ],
-      "last10_ab": 34,
-      "last10_h": 12,
-      "last10_avg": 0.353,
+      "last10_ab": 35,
+      "last10_h": 11,
+      "last10_avg": 0.314,
       "k_pct": 0.209
     },
     "Nick Maton": {
@@ -170351,26 +170369,16 @@
     "Braden Montgomery": {
       "name": "Braden Montgomery",
       "team": "Chicago White Sox",
-      "games": 61,
-      "total_ab": 175,
-      "total_h": 45,
+      "games": 62,
+      "total_ab": 178,
+      "total_h": 46,
       "total_hr": 4,
-      "total_rbi": 23,
-      "total_bb": 18,
-      "total_k": 41,
-      "avg": 0.257,
+      "total_rbi": 24,
+      "total_bb": 19,
+      "total_k": 42,
+      "avg": 0.258,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260712",
-          "opponent": "Athletics",
-          "ab": 4,
-          "h": 2,
-          "hr": 1,
-          "rbi": 4,
-          "bb": 0,
-          "k": 0
-        },
         {
           "date": "20260717",
           "opponent": "Toronto Blue Jays",
@@ -170460,19 +170468,29 @@
           "rbi": 0,
           "bb": 1,
           "k": 0
+        },
+        {
+          "date": "20260727",
+          "opponent": "New York Yankees",
+          "ab": 3,
+          "h": 1,
+          "hr": 0,
+          "rbi": 1,
+          "bb": 1,
+          "k": 1
         }
       ],
-      "last10_ab": 38,
-      "last10_h": 12,
-      "last10_avg": 0.316,
-      "k_pct": 0.234
+      "last10_ab": 37,
+      "last10_h": 11,
+      "last10_avg": 0.297,
+      "k_pct": 0.236
     },
     "Edgar Quero": {
       "name": "Edgar Quero",
       "team": "Chicago White Sox",
-      "games": 190,
-      "total_ab": 577,
-      "total_h": 138,
+      "games": 191,
+      "total_ab": 581,
+      "total_h": 139,
       "total_hr": 8,
       "total_rbi": 60,
       "total_bb": 50,
@@ -170480,16 +170498,6 @@
       "avg": 0.239,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260613",
-          "opponent": "Los Angeles Dodgers",
-          "ab": 3,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 0
-        },
         {
           "date": "20260616",
           "opponent": "New York Yankees",
@@ -170579,12 +170587,22 @@
           "rbi": 0,
           "bb": 0,
           "k": 0
+        },
+        {
+          "date": "20260727",
+          "opponent": "New York Yankees",
+          "ab": 4,
+          "h": 1,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
         }
       ],
-      "last10_ab": 27,
-      "last10_h": 4,
-      "last10_avg": 0.148,
-      "k_pct": 0.218
+      "last10_ab": 28,
+      "last10_h": 5,
+      "last10_avg": 0.179,
+      "k_pct": 0.217
     },
     "Josh Rojas": {
       "name": "Josh Rojas",
@@ -173699,26 +173717,16 @@
     "Gleyber Torres": {
       "name": "Gleyber Torres",
       "team": "Detroit Tigers",
-      "games": 224,
-      "total_ab": 799,
+      "games": 225,
+      "total_ab": 800,
       "total_h": 206,
       "total_hr": 23,
       "total_rbi": 105,
       "total_bb": 128,
-      "total_k": 167,
+      "total_k": 168,
       "avg": 0.258,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260611",
-          "opponent": "Minnesota Twins",
-          "ab": 4,
-          "h": 1,
-          "hr": 1,
-          "rbi": 1,
-          "bb": 0,
-          "k": 0
-        },
         {
           "date": "20260612",
           "opponent": "Cleveland Guardians",
@@ -173808,12 +173816,22 @@
           "rbi": 0,
           "bb": 0,
           "k": 2
+        },
+        {
+          "date": "20260727",
+          "opponent": "Baltimore Orioles",
+          "ab": 1,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 1
         }
       ],
-      "last10_ab": 33,
-      "last10_h": 7,
-      "last10_avg": 0.212,
-      "k_pct": 0.209
+      "last10_ab": 30,
+      "last10_h": 6,
+      "last10_avg": 0.2,
+      "k_pct": 0.21
     },
     "David Hensley": {
       "name": "David Hensley",
@@ -174730,7 +174748,7 @@
     "Noah Schultz": {
       "name": "Noah Schultz",
       "team": "Chicago White Sox",
-      "games": 17,
+      "games": 18,
       "total_ab": 0,
       "total_h": 0,
       "total_hr": 0,
@@ -174740,16 +174758,6 @@
       "avg": 0.0,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260425",
-          "opponent": "Washington Nationals",
-          "ab": 0,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 0
-        },
         {
           "date": "20260501",
           "opponent": "San Diego Padres",
@@ -174833,6 +174841,16 @@
         {
           "date": "20260721",
           "opponent": "Texas Rangers",
+          "ab": 0,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
+        },
+        {
+          "date": "20260727",
+          "opponent": "New York Yankees",
           "ab": 0,
           "h": 0,
           "hr": 0,
@@ -178074,26 +178092,16 @@
     "Kevin McGonigle": {
       "name": "Kevin McGonigle",
       "team": "Detroit Tigers",
-      "games": 132,
-      "total_ab": 443,
-      "total_h": 126,
+      "games": 133,
+      "total_ab": 448,
+      "total_h": 128,
       "total_hr": 13,
       "total_rbi": 47,
       "total_bb": 82,
-      "total_k": 75,
-      "avg": 0.284,
+      "total_k": 77,
+      "avg": 0.286,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260712",
-          "opponent": "Philadelphia Phillies",
-          "ab": 3,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 1,
-          "k": 0
-        },
         {
           "date": "20260717",
           "opponent": "Los Angeles Angels",
@@ -178183,12 +178191,22 @@
           "rbi": 0,
           "bb": 1,
           "k": 0
+        },
+        {
+          "date": "20260727",
+          "opponent": "Baltimore Orioles",
+          "ab": 5,
+          "h": 2,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 2
         }
       ],
-      "last10_ab": 38,
-      "last10_h": 9,
-      "last10_avg": 0.237,
-      "k_pct": 0.169
+      "last10_ab": 40,
+      "last10_h": 11,
+      "last10_avg": 0.275,
+      "k_pct": 0.172
     },
     "Max Clark": {
       "name": "Max Clark",
@@ -182161,26 +182179,16 @@
     "Sam Antonacci": {
       "name": "Sam Antonacci",
       "team": "Chicago White Sox",
-      "games": 96,
-      "total_ab": 320,
+      "games": 97,
+      "total_ab": 322,
       "total_h": 95,
       "total_hr": 10,
       "total_rbi": 37,
       "total_bb": 34,
       "total_k": 53,
-      "avg": 0.297,
+      "avg": 0.295,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260712",
-          "opponent": "Athletics",
-          "ab": 4,
-          "h": 1,
-          "hr": 1,
-          "rbi": 1,
-          "bb": 0,
-          "k": 1
-        },
         {
           "date": "20260717",
           "opponent": "Toronto Blue Jays",
@@ -182270,12 +182278,22 @@
           "rbi": 0,
           "bb": 1,
           "k": 0
+        },
+        {
+          "date": "20260727",
+          "opponent": "New York Yankees",
+          "ab": 2,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
         }
       ],
-      "last10_ab": 36,
-      "last10_h": 9,
-      "last10_avg": 0.25,
-      "k_pct": 0.166
+      "last10_ab": 34,
+      "last10_h": 8,
+      "last10_avg": 0.235,
+      "k_pct": 0.165
     },
     "Joseph Yabbour": {
       "name": "Joseph Yabbour",
@@ -185574,26 +185592,16 @@
     "Randal Grichuk": {
       "name": "Randal Grichuk",
       "team": "Chicago White Sox",
-      "games": 96,
-      "total_ab": 219,
-      "total_h": 51,
+      "games": 97,
+      "total_ab": 222,
+      "total_h": 52,
       "total_hr": 11,
       "total_rbi": 27,
       "total_bb": 12,
-      "total_k": 50,
-      "avg": 0.233,
+      "total_k": 51,
+      "avg": 0.234,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260708",
-          "opponent": "Boston Red Sox",
-          "ab": 4,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 0
-        },
         {
           "date": "20260709",
           "opponent": "Boston Red Sox",
@@ -185683,12 +185691,22 @@
           "rbi": 0,
           "bb": 0,
           "k": 0
+        },
+        {
+          "date": "20260727",
+          "opponent": "New York Yankees",
+          "ab": 3,
+          "h": 1,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 1
         }
       ],
-      "last10_ab": 22,
-      "last10_h": 4,
-      "last10_avg": 0.182,
-      "k_pct": 0.228
+      "last10_ab": 21,
+      "last10_h": 5,
+      "last10_avg": 0.238,
+      "k_pct": 0.23
     },
     "Pierson Ohl": {
       "name": "Pierson Ohl",
@@ -186864,7 +186882,7 @@
     "Bryan Hudson": {
       "name": "Bryan Hudson",
       "team": "Chicago White Sox",
-      "games": 49,
+      "games": 50,
       "total_ab": 0,
       "total_h": 0,
       "total_hr": 0,
@@ -186874,16 +186892,6 @@
       "avg": 0.0,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260621",
-          "opponent": "Detroit Tigers",
-          "ab": 0,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 0
-        },
         {
           "date": "20260622",
           "opponent": "Cleveland Guardians",
@@ -186967,6 +186975,16 @@
         {
           "date": "20260724",
           "opponent": "Houston Astros",
+          "ab": 0,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
+        },
+        {
+          "date": "20260727",
+          "opponent": "New York Yankees",
           "ab": 0,
           "h": 0,
           "hr": 0,
@@ -187256,26 +187274,16 @@
     "James Outman": {
       "name": "James Outman",
       "team": "Detroit Tigers",
-      "games": 138,
-      "total_ab": 291,
+      "games": 139,
+      "total_ab": 295,
       "total_h": 51,
       "total_hr": 12,
       "total_rbi": 35,
       "total_bb": 26,
-      "total_k": 128,
-      "avg": 0.175,
+      "total_k": 131,
+      "avg": 0.173,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260710",
-          "opponent": "Philadelphia Phillies",
-          "ab": 4,
-          "h": 1,
-          "hr": 0,
-          "rbi": 2,
-          "bb": 0,
-          "k": 1
-        },
         {
           "date": "20260712",
           "opponent": "Philadelphia Phillies",
@@ -187365,12 +187373,22 @@
           "rbi": 0,
           "bb": 0,
           "k": 1
+        },
+        {
+          "date": "20260727",
+          "opponent": "Baltimore Orioles",
+          "ab": 4,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 3
         }
       ],
       "last10_ab": 31,
-      "last10_h": 6,
-      "last10_avg": 0.194,
-      "k_pct": 0.44
+      "last10_h": 5,
+      "last10_avg": 0.161,
+      "k_pct": 0.444
     },
     "Génesis Cabrera": {
       "name": "Génesis Cabrera",
@@ -189811,26 +189829,16 @@
     "Munetaka Murakami": {
       "name": "Munetaka Murakami",
       "team": "Chicago White Sox",
-      "games": 78,
-      "total_ab": 272,
-      "total_h": 66,
+      "games": 79,
+      "total_ab": 275,
+      "total_h": 67,
       "total_hr": 23,
       "total_rbi": 51,
-      "total_bb": 56,
-      "total_k": 105,
-      "avg": 0.243,
+      "total_bb": 58,
+      "total_k": 106,
+      "avg": 0.244,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260712",
-          "opponent": "Athletics",
-          "ab": 3,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 1,
-          "k": 2
-        },
         {
           "date": "20260717",
           "opponent": "Toronto Blue Jays",
@@ -189920,12 +189928,22 @@
           "rbi": 6,
           "bb": 0,
           "k": 0
+        },
+        {
+          "date": "20260727",
+          "opponent": "New York Yankees",
+          "ab": 3,
+          "h": 1,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 2,
+          "k": 1
         }
       ],
       "last10_ab": 35,
-      "last10_h": 9,
-      "last10_avg": 0.257,
-      "k_pct": 0.386
+      "last10_h": 10,
+      "last10_avg": 0.286,
+      "k_pct": 0.385
     },
     "Ryan Galanie": {
       "name": "Ryan Galanie",
@@ -190168,26 +190186,16 @@
     "Tristan Peters": {
       "name": "Tristan Peters",
       "team": "Chicago White Sox",
-      "games": 118,
-      "total_ab": 322,
+      "games": 119,
+      "total_ab": 324,
       "total_h": 91,
       "total_hr": 8,
       "total_rbi": 50,
       "total_bb": 26,
       "total_k": 64,
-      "avg": 0.283,
+      "avg": 0.281,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260712",
-          "opponent": "Athletics",
-          "ab": 4,
-          "h": 1,
-          "hr": 0,
-          "rbi": 1,
-          "bb": 0,
-          "k": 0
-        },
         {
           "date": "20260717",
           "opponent": "Toronto Blue Jays",
@@ -190277,12 +190285,22 @@
           "rbi": 0,
           "bb": 0,
           "k": 1
+        },
+        {
+          "date": "20260727",
+          "opponent": "New York Yankees",
+          "ab": 2,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
         }
       ],
-      "last10_ab": 34,
-      "last10_h": 5,
-      "last10_avg": 0.147,
-      "k_pct": 0.199
+      "last10_ab": 32,
+      "last10_h": 4,
+      "last10_avg": 0.125,
+      "k_pct": 0.198
     },
     "Tanner Murray": {
       "name": "Tanner Murray",
@@ -194220,26 +194238,16 @@
     "Luisangel Acuña": {
       "name": "Luisangel Acuña",
       "team": "Chicago White Sox",
-      "games": 90,
-      "total_ab": 202,
-      "total_h": 58,
+      "games": 91,
+      "total_ab": 205,
+      "total_h": 59,
       "total_hr": 2,
       "total_rbi": 15,
       "total_bb": 10,
       "total_k": 38,
-      "avg": 0.287,
+      "avg": 0.288,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260708",
-          "opponent": "Boston Red Sox",
-          "ab": 2,
-          "h": 2,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 0
-        },
         {
           "date": "20260709",
           "opponent": "Boston Red Sox",
@@ -194329,12 +194337,22 @@
           "rbi": 0,
           "bb": 0,
           "k": 1
+        },
+        {
+          "date": "20260727",
+          "opponent": "New York Yankees",
+          "ab": 3,
+          "h": 1,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
         }
       ],
-      "last10_ab": 17,
-      "last10_h": 8,
-      "last10_avg": 0.471,
-      "k_pct": 0.188
+      "last10_ab": 18,
+      "last10_h": 7,
+      "last10_avg": 0.389,
+      "k_pct": 0.185
     },
     "Caleb Bonemer": {
       "name": "Caleb Bonemer",
@@ -194654,7 +194672,7 @@
     "Seranthony Domínguez": {
       "name": "Seranthony Domínguez",
       "team": "Chicago White Sox",
-      "games": 43,
+      "games": 44,
       "total_ab": 0,
       "total_h": 0,
       "total_hr": 0,
@@ -194664,16 +194682,6 @@
       "avg": 0.0,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260622",
-          "opponent": "Cleveland Guardians",
-          "ab": 0,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 0
-        },
         {
           "date": "20260628",
           "opponent": "Kansas City Royals",
@@ -194757,6 +194765,16 @@
         {
           "date": "20260726",
           "opponent": "Houston Astros",
+          "ab": 0,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
+        },
+        {
+          "date": "20260727",
+          "opponent": "New York Yankees",
           "ab": 0,
           "h": 0,
           "hr": 0,
@@ -198025,7 +198043,7 @@
     "Sean Newcomb": {
       "name": "Sean Newcomb",
       "team": "Chicago White Sox",
-      "games": 45,
+      "games": 46,
       "total_ab": 0,
       "total_h": 0,
       "total_hr": 0,
@@ -198035,16 +198053,6 @@
       "avg": 0.0,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260620",
-          "opponent": "Detroit Tigers",
-          "ab": 0,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 0
-        },
         {
           "date": "20260623",
           "opponent": "Cleveland Guardians",
@@ -198134,6 +198142,16 @@
           "rbi": 0,
           "bb": 0,
           "k": 0
+        },
+        {
+          "date": "20260727",
+          "opponent": "New York Yankees",
+          "ab": 0,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
         }
       ],
       "last10_ab": 0,
@@ -198143,7 +198161,7 @@
     "Chris Murphy": {
       "name": "Chris Murphy",
       "team": "Chicago White Sox",
-      "games": 31,
+      "games": 32,
       "total_ab": 0,
       "total_h": 0,
       "total_hr": 0,
@@ -198153,16 +198171,6 @@
       "avg": 0.0,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260628",
-          "opponent": "Kansas City Royals",
-          "ab": 0,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 0
-        },
         {
           "date": "20260629",
           "opponent": "Baltimore Orioles",
@@ -198246,6 +198254,16 @@
         {
           "date": "20260726",
           "opponent": "Houston Astros",
+          "ab": 0,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
+        },
+        {
+          "date": "20260727",
+          "opponent": "New York Yankees",
           "ab": 0,
           "h": 0,
           "hr": 0,
@@ -201591,26 +201609,16 @@
     "Everson Pereira": {
       "name": "Everson Pereira",
       "team": "Chicago White Sox",
-      "games": 29,
-      "total_ab": 93,
+      "games": 30,
+      "total_ab": 95,
       "total_h": 22,
       "total_hr": 5,
       "total_rbi": 12,
       "total_bb": 8,
-      "total_k": 30,
-      "avg": 0.237,
+      "total_k": 32,
+      "avg": 0.232,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260422",
-          "opponent": "Arizona Diamondbacks",
-          "ab": 4,
-          "h": 2,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 1,
-          "k": 0
-        },
         {
           "date": "20260423",
           "opponent": "Arizona Diamondbacks",
@@ -201700,12 +201708,22 @@
           "rbi": 0,
           "bb": 1,
           "k": 1
+        },
+        {
+          "date": "20260727",
+          "opponent": "New York Yankees",
+          "ab": 2,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 2
         }
       ],
-      "last10_ab": 29,
-      "last10_h": 5,
-      "last10_avg": 0.172,
-      "k_pct": 0.323
+      "last10_ab": 27,
+      "last10_h": 3,
+      "last10_avg": 0.111,
+      "k_pct": 0.337
     },
     "Zach MacDonald": {
       "name": "Zach MacDonald",
@@ -204601,7 +204619,7 @@
     "Jacob Waguespack": {
       "name": "Jacob Waguespack",
       "team": "Detroit Tigers",
-      "games": 13,
+      "games": 14,
       "total_ab": 0,
       "total_h": 0,
       "total_hr": 0,
@@ -204611,16 +204629,6 @@
       "avg": 0.0,
       "obp": 0.0,
       "last10": [
-        {
-          "date": "20260624",
-          "opponent": "New York Yankees",
-          "ab": 0,
-          "h": 0,
-          "hr": 0,
-          "rbi": 0,
-          "bb": 0,
-          "k": 0
-        },
         {
           "date": "20260627",
           "opponent": "Houston Astros",
@@ -204704,6 +204712,16 @@
         {
           "date": "20260725",
           "opponent": "Kansas City Royals",
+          "ab": 0,
+          "h": 0,
+          "hr": 0,
+          "rbi": 0,
+          "bb": 0,
+          "k": 0
+        },
+        {
+          "date": "20260727",
+          "opponent": "Baltimore Orioles",
           "ab": 0,
           "h": 0,
           "hr": 0,
