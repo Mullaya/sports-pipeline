@@ -2,6 +2,7 @@ import sys
 import os
 from datetime import datetime, timedelta
 from collectors.mlb_collector import MLBCollector
+from collectors.nhl_collector import NHLCollector
 from uploader.github_uploader import GitHubUploader
 
 def get_dates(manual_date: str = None, manual_mlb_date: str = None):
@@ -45,6 +46,18 @@ def run_daily(date: str = None, mlb_date: str = None):
             print(f"  [MLB] 경기 없음")
     except Exception as e:
         print(f"  [MLB] 실패: {e}")
+
+    # NHL 수집 (북미 현지 날짜 = MLB와 동일 기준)
+    try:
+        nhl = NHLCollector()
+        nhl_data = nhl.collect_daily(mlb_date)
+        if nhl_data["games"]:
+            uploader.upload_json(nhl_data, "NHL", mlb_date, "daily")
+            print(f"  [NHL] {len(nhl_data['games'])}경기 완료")
+        else:
+            print(f"  [NHL] 경기 없음")
+    except Exception as e:
+        print(f"  [NHL] 실패: {e}")
 
     # NPB/KBO는 별도 스크래퍼 구성 예정
     print(f"  [NPB] 별도 스크래퍼 구성 예정")

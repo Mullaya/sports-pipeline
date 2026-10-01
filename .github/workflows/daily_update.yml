@@ -44,3 +44,11 @@ jobs:
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: |
           python analytics/build_stats.py
+      - name: NHL 통계 집계
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          # 수집 단계가 API로 커밋한 최신 일별 파일을 반영
+          git pull --ff-only origin main || git pull origin main
+          python analytics/build_nhl_stats.py
