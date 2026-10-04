@@ -3,6 +3,8 @@ import os
 from datetime import datetime, timedelta
 from collectors.mlb_collector import MLBCollector
 from collectors.nhl_collector import NHLCollector
+from collectors.nfl_collector import NFLCollector
+from collectors.khl_collector import KHLCollector
 from uploader.github_uploader import GitHubUploader
 
 def get_dates(manual_date: str = None, manual_mlb_date: str = None):
@@ -58,6 +60,30 @@ def run_daily(date: str = None, mlb_date: str = None):
             print(f"  [NHL] 경기 없음")
     except Exception as e:
         print(f"  [NHL] 실패: {e}")
+
+    # NFL 수집 (미국 현지 날짜 = MLB와 동일 기준, 경기 있는 날만 파일 생성)
+    try:
+        nfl = NFLCollector()
+        nfl_data = nfl.collect_daily(mlb_date)
+        if nfl_data["games"]:
+            uploader.upload_json(nfl_data, "NFL", mlb_date, "daily")
+            print(f"  [NFL] {len(nfl_data['games'])}경기 완료")
+        else:
+            print(f"  [NFL] 경기 없음")
+    except Exception as e:
+        print(f"  [NFL] 실패: {e}")
+
+    # KHL 수집 (모스크바 날짜 = KST 어제, NPB와 동일 기준)
+    try:
+        khl = KHLCollector()
+        khl_data = khl.collect_daily(npb_date)
+        if khl_data["games"]:
+            uploader.upload_json(khl_data, "KHL", npb_date, "daily")
+            print(f"  [KHL] {len(khl_data['games'])}경기 완료")
+        else:
+            print(f"  [KHL] 경기 없음")
+    except Exception as e:
+        print(f"  [KHL] 실패: {e}")
 
     # NPB/KBO는 별도 스크래퍼 구성 예정
     print(f"  [NPB] 별도 스크래퍼 구성 예정")

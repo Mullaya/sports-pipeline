@@ -8,6 +8,8 @@ from datetime import datetime
 # 예: NHL → "20261001 nhl.json"
 FILE_SUFFIX = {
     "NHL": " nhl",
+    "NFL": " nfl",
+    "KHL": " khl",
 }
 
 
