@@ -1,38 +1,38 @@
 {
  "meta": {
-  "generated_kst": "2026-10-03 20:24",
+  "generated_kst": "2026-10-04 21:05",
   "season_start": "20260901",
-  "games": 21,
-  "last_game_date": "20261002",
+  "games": 34,
+  "last_game_date": "20261003",
   "notes": "reg_* = 정규시간(60분) 기준 / sv_pct 빈골문 실점 제외 / shot_share = 유효슈팅 점유율"
  },
  "teams": {
   "CAR": {
-   "gp": 2,
-   "w": 0,
+   "gp": 3,
+   "w": 1,
    "l": 1,
    "otl": 1,
-   "pts": 1,
+   "pts": 3,
    "reg_w": 0,
-   "reg_d": 1,
+   "reg_d": 2,
    "reg_l": 1,
-   "gf_pg": 1.0,
-   "ga_pg": 3.0,
-   "sf_pg": 24.0,
-   "sa_pg": 23.5,
-   "shot_share": 0.505,
-   "sh_pct": 0.042,
-   "sv_pct": 0.872,
-   "pdo": 91.4,
-   "pp_pct": 0.083,
-   "pk_pct": 0.889,
-   "reg_draw_rate": 0.5,
-   "avg_total": 4.0,
-   "avg_reg_total": 3.5,
+   "gf_pg": 1.67,
+   "ga_pg": 2.67,
+   "sf_pg": 29.3,
+   "sa_pg": 21.7,
+   "shot_share": 0.575,
+   "sh_pct": 0.057,
+   "sv_pct": 0.877,
+   "pdo": 93.4,
+   "pp_pct": 0.188,
+   "pk_pct": 0.923,
+   "reg_draw_rate": 0.667,
+   "avg_total": 4.33,
+   "avg_reg_total": 3.67,
    "over_rate_reg": {
-    "4.5": 0.5,
-    "5.5": 0.5,
-    "6.5": 0.5
+    "4.5": 0.333,
+    "5.5": 0.333,
+    "6.5": 0.333
    },
    "home": {
     "gp": 2,
@@ -49,28 +49,40 @@
     "sa_pg": 23.5
    },
    "away": {
-    "gp": 0
-   },
-   "last10": {
-    "gp": 2,
-    "w": 0,
-    "l": 1,
-    "otl": 1,
-    "pts": 1,
+    "gp": 1,
+    "w": 1,
+    "l": 0,
+    "otl": 0,
+    "pts": 2,
     "reg_w": 0,
     "reg_d": 1,
+    "reg_l": 0,
+    "gf_pg": 3.0,
+    "ga_pg": 2.0,
+    "sf_pg": 40.0,
+    "sa_pg": 18.0
+   },
+   "last10": {
+    "gp": 3,
+    "w": 1,
+    "l": 1,
+    "otl": 1,
+    "pts": 3,
+    "reg_w": 0,
+    "reg_d": 2,
     "reg_l": 1,
-    "gf_pg": 1.0,
-    "ga_pg": 3.0,
-    "sf_pg": 24.0,
-    "sa_pg": 23.5
+    "gf_pg": 1.67,
+    "ga_pg": 2.67,
+    "sf_pg": 29.3,
+    "sa_pg": 21.7
    },
    "last10_log": [
     "20260929 vs FLA 0-1 OTL(OT)",
-    "20261002 vs WSH 2-5 L"
+    "20261002 vs WSH 2-5 L",
+    "20261003 @ PHI 3-2 W(OT)"
    ],
-   "streak": "L2",
-   "last_game_date": "20261002",
+   "streak": "W1",
+   "last_game_date": "20261003",
    "name": "Hurricanes"
   },
   "FLA": {
@@ -140,161 +152,163 @@
    "name": "Panthers"
   },
   "TOR": {
-   "gp": 2,
+   "gp": 3,
    "w": 1,
-   "l": 1,
+   "l": 2,
    "otl": 0,
    "pts": 2,
    "reg_w": 1,
    "reg_d": 0,
-   "reg_l": 1,
+   "reg_l": 2,
    "gf_pg": 2.0,
-   "ga_pg": 2.0,
-   "sf_pg": 27.0,
-   "sa_pg": 25.5,
-   "shot_share": 0.514,
-   "sh_pct": 0.074,
-   "sv_pct": 0.922,
-   "pdo": 99.6,
-   "pp_pct": 0.143,
+   "ga_pg": 2.33,
+   "sf_pg": 27.7,
+   "sa_pg": 26.7,
+   "shot_share": 0.509,
+   "sh_pct": 0.072,
+   "sv_pct": 0.912,
+   "pdo": 98.4,
+   "pp_pct": 0.182,
    "pk_pct": 1.0,
    "reg_draw_rate": 0.0,
-   "avg_total": 4.0,
-   "avg_reg_total": 4.0,
+   "avg_total": 4.33,
+   "avg_reg_total": 4.33,
    "over_rate_reg": {
-    "4.5": 0.5,
+    "4.5": 0.667,
     "5.5": 0.0,
     "6.5": 0.0
    },
    "home": {
-    "gp": 2,
+    "gp": 3,
     "w": 1,
-    "l": 1,
+    "l": 2,
     "otl": 0,
     "pts": 2,
     "reg_w": 1,
     "reg_d": 0,
-    "reg_l": 1,
+    "reg_l": 2,
     "gf_pg": 2.0,
-    "ga_pg": 2.0,
-    "sf_pg": 27.0,
-    "sa_pg": 25.5
+    "ga_pg": 2.33,
+    "sf_pg": 27.7,
+    "sa_pg": 26.7
    },
    "away": {
     "gp": 0
    },
    "last10": {
-    "gp": 2,
+    "gp": 3,
     "w": 1,
-    "l": 1,
+    "l": 2,
     "otl": 0,
     "pts": 2,
     "reg_w": 1,
     "reg_d": 0,
-    "reg_l": 1,
+    "reg_l": 2,
     "gf_pg": 2.0,
-    "ga_pg": 2.0,
-    "sf_pg": 27.0,
-    "sa_pg": 25.5
+    "ga_pg": 2.33,
+    "sf_pg": 27.7,
+    "sa_pg": 26.7
    },
    "last10_log": [
     "20260929 vs MTL 2-3 L",
-    "20260930 vs NYI 2-1 W"
+    "20260930 vs NYI 2-1 W",
+    "20261003 vs OTT 2-3 L"
    ],
-   "streak": "W1",
-   "last_game_date": "20260930",
+   "streak": "L1",
+   "last_game_date": "20261003",
    "name": "Maple Leafs"
   },
   "MTL": {
-   "gp": 1,
+   "gp": 2,
    "w": 1,
    "l": 0,
-   "otl": 0,
-   "pts": 2,
+   "otl": 1,
+   "pts": 3,
    "reg_w": 1,
-   "reg_d": 0,
+   "reg_d": 1,
    "reg_l": 0,
-   "gf_pg": 3.0,
-   "ga_pg": 2.0,
-   "sf_pg": 24.0,
-   "sa_pg": 28.0,
-   "shot_share": 0.462,
-   "sh_pct": 0.125,
-   "sv_pct": 0.929,
-   "pdo": 105.4,
+   "gf_pg": 4.0,
+   "ga_pg": 4.0,
+   "sf_pg": 24.5,
+   "sa_pg": 29.0,
+   "shot_share": 0.458,
+   "sh_pct": 0.163,
+   "sv_pct": 0.862,
+   "pdo": 102.5,
    "pp_pct": 0.0,
-   "pk_pct": 1.0,
-   "reg_draw_rate": 0.0,
-   "avg_total": 5.0,
-   "avg_reg_total": 5.0,
+   "pk_pct": 0.714,
+   "reg_draw_rate": 0.5,
+   "avg_total": 8.0,
+   "avg_reg_total": 7.5,
    "over_rate_reg": {
     "4.5": 1.0,
-    "5.5": 0.0,
-    "6.5": 0.0
+    "5.5": 0.5,
+    "6.5": 0.5
    },
    "home": {
     "gp": 0
    },
    "away": {
-    "gp": 1,
+    "gp": 2,
     "w": 1,
     "l": 0,
-    "otl": 0,
-    "pts": 2,
+    "otl": 1,
+    "pts": 3,
     "reg_w": 1,
-    "reg_d": 0,
+    "reg_d": 1,
     "reg_l": 0,
-    "gf_pg": 3.0,
-    "ga_pg": 2.0,
-    "sf_pg": 24.0,
-    "sa_pg": 28.0
+    "gf_pg": 4.0,
+    "ga_pg": 4.0,
+    "sf_pg": 24.5,
+    "sa_pg": 29.0
    },
    "last10": {
-    "gp": 1,
+    "gp": 2,
     "w": 1,
     "l": 0,
-    "otl": 0,
-    "pts": 2,
+    "otl": 1,
+    "pts": 3,
     "reg_w": 1,
-    "reg_d": 0,
+    "reg_d": 1,
     "reg_l": 0,
-    "gf_pg": 3.0,
-    "ga_pg": 2.0,
-    "sf_pg": 24.0,
-    "sa_pg": 28.0
+    "gf_pg": 4.0,
+    "ga_pg": 4.0,
+    "sf_pg": 24.5,
+    "sa_pg": 29.0
    },
    "last10_log": [
-    "20260929 @ TOR 3-2 W"
+    "20260929 @ TOR 3-2 W",
+    "20261003 @ PIT 5-6 OTL(OT)"
    ],
-   "streak": "W1",
-   "last_game_date": "20260929",
+   "streak": "L1",
+   "last_game_date": "20261003",
    "name": "Canadiens"
   },
   "BOS": {
-   "gp": 2,
+   "gp": 3,
    "w": 2,
-   "l": 0,
+   "l": 1,
    "otl": 0,
    "pts": 4,
    "reg_w": 1,
    "reg_d": 1,
-   "reg_l": 0,
-   "gf_pg": 3.5,
-   "ga_pg": 1.5,
-   "sf_pg": 26.5,
-   "sa_pg": 28.5,
-   "shot_share": 0.482,
-   "sh_pct": 0.132,
-   "sv_pct": 0.947,
-   "pdo": 107.9,
+   "reg_l": 1,
+   "gf_pg": 2.67,
+   "ga_pg": 2.33,
+   "sf_pg": 26.7,
+   "sa_pg": 29.0,
+   "shot_share": 0.479,
+   "sh_pct": 0.1,
+   "sv_pct": 0.93,
+   "pdo": 103.0,
    "pp_pct": 0.0,
-   "pk_pct": 0.75,
-   "reg_draw_rate": 0.5,
+   "pk_pct": 0.571,
+   "reg_draw_rate": 0.333,
    "avg_total": 5.0,
-   "avg_reg_total": 4.5,
+   "avg_reg_total": 4.67,
    "over_rate_reg": {
-    "4.5": 0.5,
-    "5.5": 0.5,
+    "4.5": 0.667,
+    "5.5": 0.333,
     "6.5": 0.0
    },
    "home": {
@@ -312,39 +326,40 @@
     "sa_pg": 24.0
    },
    "away": {
-    "gp": 1,
+    "gp": 2,
     "w": 1,
-    "l": 0,
+    "l": 1,
     "otl": 0,
     "pts": 2,
     "reg_w": 0,
     "reg_d": 1,
-    "reg_l": 0,
-    "gf_pg": 4.0,
-    "ga_pg": 3.0,
-    "sf_pg": 30.0,
-    "sa_pg": 33.0
+    "reg_l": 1,
+    "gf_pg": 2.5,
+    "ga_pg": 3.5,
+    "sf_pg": 28.5,
+    "sa_pg": 31.5
    },
    "last10": {
-    "gp": 2,
+    "gp": 3,
     "w": 2,
-    "l": 0,
+    "l": 1,
     "otl": 0,
     "pts": 4,
     "reg_w": 1,
     "reg_d": 1,
-    "reg_l": 0,
-    "gf_pg": 3.5,
-    "ga_pg": 1.5,
-    "sf_pg": 26.5,
-    "sa_pg": 28.5
+    "reg_l": 1,
+    "gf_pg": 2.67,
+    "ga_pg": 2.33,
+    "sf_pg": 26.7,
+    "sa_pg": 29.0
    },
    "last10_log": [
     "20260929 vs NYR 3-0 W",
-    "20261002 @ WPG 4-3 W(OT)"
+    "20261002 @ WPG 4-3 W(OT)",
+    "20261003 @ MIN 1-4 L"
    ],
-   "streak": "W2",
-   "last_game_date": "20261002",
+   "streak": "L1",
+   "last_game_date": "20261003",
    "name": "Bruins"
   },
   "NYR": {
@@ -426,45 +441,45 @@
    "name": "Rangers"
   },
   "EDM": {
-   "gp": 2,
-   "w": 1,
+   "gp": 3,
+   "w": 2,
    "l": 0,
    "otl": 1,
-   "pts": 3,
-   "reg_w": 1,
+   "pts": 5,
+   "reg_w": 2,
    "reg_d": 1,
    "reg_l": 0,
-   "gf_pg": 7.0,
-   "ga_pg": 6.5,
-   "sf_pg": 34.0,
-   "sa_pg": 22.5,
-   "shot_share": 0.602,
-   "sh_pct": 0.206,
-   "sv_pct": 0.711,
-   "pdo": 91.7,
-   "pp_pct": 0.333,
-   "pk_pct": 0.6,
-   "reg_draw_rate": 0.5,
-   "avg_total": 13.5,
-   "avg_reg_total": 13.0,
+   "gf_pg": 5.67,
+   "ga_pg": 4.67,
+   "sf_pg": 31.0,
+   "sa_pg": 21.7,
+   "shot_share": 0.589,
+   "sh_pct": 0.183,
+   "sv_pct": 0.785,
+   "pdo": 96.8,
+   "pp_pct": 0.25,
+   "pk_pct": 0.571,
+   "reg_draw_rate": 0.333,
+   "avg_total": 10.33,
+   "avg_reg_total": 10.0,
    "over_rate_reg": {
-    "4.5": 1.0,
-    "5.5": 1.0,
-    "6.5": 1.0
+    "4.5": 0.667,
+    "5.5": 0.667,
+    "6.5": 0.667
    },
    "home": {
-    "gp": 1,
-    "w": 0,
+    "gp": 2,
+    "w": 1,
     "l": 0,
     "otl": 1,
-    "pts": 1,
-    "reg_w": 0,
+    "pts": 3,
+    "reg_w": 1,
     "reg_d": 1,
     "reg_l": 0,
-    "gf_pg": 5.0,
-    "ga_pg": 6.0,
-    "sf_pg": 37.0,
-    "sa_pg": 23.0
+    "gf_pg": 4.0,
+    "ga_pg": 3.5,
+    "sf_pg": 31.0,
+    "sa_pg": 21.5
    },
    "away": {
     "gp": 1,
@@ -481,67 +496,68 @@
     "sa_pg": 22.0
    },
    "last10": {
-    "gp": 2,
-    "w": 1,
+    "gp": 3,
+    "w": 2,
     "l": 0,
     "otl": 1,
-    "pts": 3,
-    "reg_w": 1,
+    "pts": 5,
+    "reg_w": 2,
     "reg_d": 1,
     "reg_l": 0,
-    "gf_pg": 7.0,
-    "ga_pg": 6.5,
-    "sf_pg": 34.0,
-    "sa_pg": 22.5
+    "gf_pg": 5.67,
+    "ga_pg": 4.67,
+    "sf_pg": 31.0,
+    "sa_pg": 21.7
    },
    "last10_log": [
     "20260929 vs VAN 5-6 OTL(OT)",
-    "20261001 @ VAN 9-7 W"
+    "20261001 @ VAN 9-7 W",
+    "20261003 vs SEA 3-1 W"
    ],
-   "streak": "W1",
-   "last_game_date": "20261001",
+   "streak": "W2",
+   "last_game_date": "20261003",
    "name": "Oilers"
   },
   "VAN": {
-   "gp": 2,
-   "w": 1,
+   "gp": 3,
+   "w": 2,
    "l": 1,
    "otl": 0,
-   "pts": 2,
-   "reg_w": 0,
+   "pts": 4,
+   "reg_w": 1,
    "reg_d": 1,
    "reg_l": 1,
-   "gf_pg": 6.5,
-   "ga_pg": 7.0,
-   "sf_pg": 22.5,
-   "sa_pg": 34.0,
-   "shot_share": 0.398,
-   "sh_pct": 0.289,
-   "sv_pct": 0.794,
-   "pdo": 108.3,
-   "pp_pct": 0.4,
-   "pk_pct": 0.667,
-   "reg_draw_rate": 0.5,
-   "avg_total": 13.5,
-   "avg_reg_total": 13.0,
+   "gf_pg": 5.67,
+   "ga_pg": 5.0,
+   "sf_pg": 23.7,
+   "sa_pg": 30.7,
+   "shot_share": 0.436,
+   "sh_pct": 0.239,
+   "sv_pct": 0.837,
+   "pdo": 107.6,
+   "pp_pct": 0.2,
+   "pk_pct": 0.636,
+   "reg_draw_rate": 0.333,
+   "avg_total": 10.67,
+   "avg_reg_total": 10.33,
    "over_rate_reg": {
     "4.5": 1.0,
-    "5.5": 1.0,
-    "6.5": 1.0
+    "5.5": 0.667,
+    "6.5": 0.667
    },
    "home": {
-    "gp": 1,
-    "w": 0,
+    "gp": 2,
+    "w": 1,
     "l": 1,
     "otl": 0,
-    "pts": 0,
-    "reg_w": 0,
+    "pts": 2,
+    "reg_w": 1,
     "reg_d": 0,
     "reg_l": 1,
-    "gf_pg": 7.0,
-    "ga_pg": 9.0,
-    "sf_pg": 22.0,
-    "sa_pg": 31.0
+    "gf_pg": 5.5,
+    "ga_pg": 5.0,
+    "sf_pg": 24.0,
+    "sa_pg": 27.5
    },
    "away": {
     "gp": 1,
@@ -558,25 +574,26 @@
     "sa_pg": 37.0
    },
    "last10": {
-    "gp": 2,
-    "w": 1,
+    "gp": 3,
+    "w": 2,
     "l": 1,
     "otl": 0,
-    "pts": 2,
-    "reg_w": 0,
+    "pts": 4,
+    "reg_w": 1,
     "reg_d": 1,
     "reg_l": 1,
-    "gf_pg": 6.5,
-    "ga_pg": 7.0,
-    "sf_pg": 22.5,
-    "sa_pg": 34.0
+    "gf_pg": 5.67,
+    "ga_pg": 5.0,
+    "sf_pg": 23.7,
+    "sa_pg": 30.7
    },
    "last10_log": [
     "20260929 @ EDM 6-5 W(OT)",
-    "20261001 vs EDM 7-9 L"
+    "20261001 vs EDM 7-9 L",
+    "20261003 vs CGY 4-1 W"
    ],
-   "streak": "L1",
-   "last_game_date": "20261001",
+   "streak": "W1",
+   "last_game_date": "20261003",
    "name": "Canucks"
   },
   "VGK": {
@@ -646,111 +663,112 @@
    "name": "Golden Knights"
   },
   "CHI": {
-   "gp": 2,
+   "gp": 3,
    "w": 0,
-   "l": 2,
+   "l": 3,
    "otl": 0,
    "pts": 0,
    "reg_w": 0,
    "reg_d": 0,
-   "reg_l": 2,
-   "gf_pg": 1.0,
-   "ga_pg": 5.5,
-   "sf_pg": 20.5,
-   "sa_pg": 34.5,
-   "shot_share": 0.373,
-   "sh_pct": 0.049,
-   "sv_pct": 0.853,
-   "pdo": 90.2,
+   "reg_l": 3,
+   "gf_pg": 1.67,
+   "ga_pg": 5.0,
+   "sf_pg": 18.7,
+   "sa_pg": 32.3,
+   "shot_share": 0.366,
+   "sh_pct": 0.089,
+   "sv_pct": 0.854,
+   "pdo": 94.3,
    "pp_pct": 0.0,
-   "pk_pct": 0.5,
+   "pk_pct": 0.667,
    "reg_draw_rate": 0.0,
-   "avg_total": 6.5,
-   "avg_reg_total": 6.5,
+   "avg_total": 6.67,
+   "avg_reg_total": 6.67,
    "over_rate_reg": {
     "4.5": 1.0,
     "5.5": 1.0,
-    "6.5": 0.5
+    "6.5": 0.667
    },
    "home": {
     "gp": 0
    },
    "away": {
-    "gp": 2,
+    "gp": 3,
     "w": 0,
-    "l": 2,
+    "l": 3,
     "otl": 0,
     "pts": 0,
     "reg_w": 0,
     "reg_d": 0,
-    "reg_l": 2,
-    "gf_pg": 1.0,
-    "ga_pg": 5.5,
-    "sf_pg": 20.5,
-    "sa_pg": 34.5
+    "reg_l": 3,
+    "gf_pg": 1.67,
+    "ga_pg": 5.0,
+    "sf_pg": 18.7,
+    "sa_pg": 32.3
    },
    "last10": {
-    "gp": 2,
+    "gp": 3,
     "w": 0,
-    "l": 2,
+    "l": 3,
     "otl": 0,
     "pts": 0,
     "reg_w": 0,
     "reg_d": 0,
-    "reg_l": 2,
-    "gf_pg": 1.0,
-    "ga_pg": 5.5,
-    "sf_pg": 20.5,
-    "sa_pg": 34.5
+    "reg_l": 3,
+    "gf_pg": 1.67,
+    "ga_pg": 5.0,
+    "sf_pg": 18.7,
+    "sa_pg": 32.3
    },
    "last10_log": [
     "20260929 @ VGK 2-5 L",
-    "20261001 @ UTA 0-6 L"
+    "20261001 @ UTA 0-6 L",
+    "20261003 @ BUF 3-4 L"
    ],
-   "streak": "L2",
-   "last_game_date": "20261001",
+   "streak": "L3",
+   "last_game_date": "20261003",
    "name": "Blackhawks"
   },
   "PHI": {
-   "gp": 2,
+   "gp": 3,
    "w": 0,
    "l": 1,
-   "otl": 1,
-   "pts": 1,
+   "otl": 2,
+   "pts": 2,
    "reg_w": 0,
-   "reg_d": 1,
+   "reg_d": 2,
    "reg_l": 1,
-   "gf_pg": 1.0,
-   "ga_pg": 5.0,
-   "sf_pg": 22.0,
-   "sa_pg": 41.0,
-   "shot_share": 0.349,
-   "sh_pct": 0.045,
-   "sv_pct": 0.878,
-   "pdo": 92.3,
+   "gf_pg": 1.33,
+   "ga_pg": 4.33,
+   "sf_pg": 20.7,
+   "sa_pg": 40.7,
+   "shot_share": 0.337,
+   "sh_pct": 0.065,
+   "sv_pct": 0.893,
+   "pdo": 95.8,
    "pp_pct": 0.0,
-   "pk_pct": 0.75,
-   "reg_draw_rate": 0.5,
-   "avg_total": 6.0,
-   "avg_reg_total": 5.5,
+   "pk_pct": 0.667,
+   "reg_draw_rate": 0.667,
+   "avg_total": 5.67,
+   "avg_reg_total": 5.0,
    "over_rate_reg": {
-    "4.5": 0.5,
-    "5.5": 0.5,
-    "6.5": 0.5
+    "4.5": 0.333,
+    "5.5": 0.333,
+    "6.5": 0.333
    },
    "home": {
-    "gp": 1,
+    "gp": 2,
     "w": 0,
     "l": 1,
-    "otl": 0,
-    "pts": 0,
+    "otl": 1,
+    "pts": 1,
     "reg_w": 0,
-    "reg_d": 0,
+    "reg_d": 1,
     "reg_l": 1,
-    "gf_pg": 0.0,
-    "ga_pg": 7.0,
-    "sf_pg": 19.0,
-    "sa_pg": 38.0
+    "gf_pg": 1.0,
+    "ga_pg": 5.0,
+    "sf_pg": 18.5,
+    "sa_pg": 39.0
    },
    "away": {
     "gp": 1,
@@ -767,6 +785,279 @@
     "sa_pg": 44.0
    },
    "last10": {
+    "gp": 3,
+    "w": 0,
+    "l": 1,
+    "otl": 2,
+    "pts": 2,
+    "reg_w": 0,
+    "reg_d": 2,
+    "reg_l": 1,
+    "gf_pg": 1.33,
+    "ga_pg": 4.33,
+    "sf_pg": 20.7,
+    "sa_pg": 40.7
+   },
+   "last10_log": [
+    "20260930 vs PIT 0-7 L",
+    "20261001 @ NJD 2-3 OTL(OT)",
+    "20261003 vs CAR 2-3 OTL(OT)"
+   ],
+   "streak": "L3",
+   "last_game_date": "20261003",
+   "name": "Flyers"
+  },
+  "PIT": {
+   "gp": 2,
+   "w": 2,
+   "l": 0,
+   "otl": 0,
+   "pts": 4,
+   "reg_w": 1,
+   "reg_d": 1,
+   "reg_l": 0,
+   "gf_pg": 6.5,
+   "ga_pg": 2.5,
+   "sf_pg": 34.0,
+   "sa_pg": 22.0,
+   "shot_share": 0.607,
+   "sh_pct": 0.191,
+   "sv_pct": 0.886,
+   "pdo": 107.7,
+   "pp_pct": 0.5,
+   "pk_pct": 1.0,
+   "reg_draw_rate": 0.5,
+   "avg_total": 9.0,
+   "avg_reg_total": 8.5,
+   "over_rate_reg": {
+    "4.5": 1.0,
+    "5.5": 1.0,
+    "6.5": 1.0
+   },
+   "home": {
+    "gp": 1,
+    "w": 1,
+    "l": 0,
+    "otl": 0,
+    "pts": 2,
+    "reg_w": 0,
+    "reg_d": 1,
+    "reg_l": 0,
+    "gf_pg": 6.0,
+    "ga_pg": 5.0,
+    "sf_pg": 30.0,
+    "sa_pg": 25.0
+   },
+   "away": {
+    "gp": 1,
+    "w": 1,
+    "l": 0,
+    "otl": 0,
+    "pts": 2,
+    "reg_w": 1,
+    "reg_d": 0,
+    "reg_l": 0,
+    "gf_pg": 7.0,
+    "ga_pg": 0.0,
+    "sf_pg": 38.0,
+    "sa_pg": 19.0
+   },
+   "last10": {
+    "gp": 2,
+    "w": 2,
+    "l": 0,
+    "otl": 0,
+    "pts": 4,
+    "reg_w": 1,
+    "reg_d": 1,
+    "reg_l": 0,
+    "gf_pg": 6.5,
+    "ga_pg": 2.5,
+    "sf_pg": 34.0,
+    "sa_pg": 22.0
+   },
+   "last10_log": [
+    "20260930 @ PHI 7-0 W",
+    "20261003 vs MTL 6-5 W(OT)"
+   ],
+   "streak": "W2",
+   "last_game_date": "20261003",
+   "name": "Penguins"
+  },
+  "NYI": {
+   "gp": 2,
+   "w": 1,
+   "l": 1,
+   "otl": 0,
+   "pts": 2,
+   "reg_w": 1,
+   "reg_d": 0,
+   "reg_l": 1,
+   "gf_pg": 3.5,
+   "ga_pg": 1.0,
+   "sf_pg": 29.5,
+   "sa_pg": 31.5,
+   "shot_share": 0.484,
+   "sh_pct": 0.119,
+   "sv_pct": 0.968,
+   "pdo": 108.7,
+   "pp_pct": 0.143,
+   "pk_pct": 0.889,
+   "reg_draw_rate": 0.0,
+   "avg_total": 4.5,
+   "avg_reg_total": 4.5,
+   "over_rate_reg": {
+    "4.5": 0.5,
+    "5.5": 0.5,
+    "6.5": 0.0
+   },
+   "home": {
+    "gp": 1,
+    "w": 1,
+    "l": 0,
+    "otl": 0,
+    "pts": 2,
+    "reg_w": 1,
+    "reg_d": 0,
+    "reg_l": 0,
+    "gf_pg": 6.0,
+    "ga_pg": 0.0,
+    "sf_pg": 32.0,
+    "sa_pg": 37.0
+   },
+   "away": {
+    "gp": 1,
+    "w": 0,
+    "l": 1,
+    "otl": 0,
+    "pts": 0,
+    "reg_w": 0,
+    "reg_d": 0,
+    "reg_l": 1,
+    "gf_pg": 1.0,
+    "ga_pg": 2.0,
+    "sf_pg": 27.0,
+    "sa_pg": 26.0
+   },
+   "last10": {
+    "gp": 2,
+    "w": 1,
+    "l": 1,
+    "otl": 0,
+    "pts": 2,
+    "reg_w": 1,
+    "reg_d": 0,
+    "reg_l": 1,
+    "gf_pg": 3.5,
+    "ga_pg": 1.0,
+    "sf_pg": 29.5,
+    "sa_pg": 31.5
+   },
+   "last10_log": [
+    "20260930 @ TOR 1-2 L",
+    "20261003 vs NJD 6-0 W"
+   ],
+   "streak": "W1",
+   "last_game_date": "20261003",
+   "name": "Islanders"
+  },
+  "COL": {
+   "gp": 2,
+   "w": 2,
+   "l": 0,
+   "otl": 0,
+   "pts": 4,
+   "reg_w": 2,
+   "reg_d": 0,
+   "reg_l": 0,
+   "gf_pg": 7.0,
+   "ga_pg": 2.5,
+   "sf_pg": 32.5,
+   "sa_pg": 28.5,
+   "shot_share": 0.533,
+   "sh_pct": 0.215,
+   "sv_pct": 0.912,
+   "pdo": 112.7,
+   "pp_pct": 0.444,
+   "pk_pct": 1.0,
+   "reg_draw_rate": 0.0,
+   "avg_total": 9.5,
+   "avg_reg_total": 9.5,
+   "over_rate_reg": {
+    "4.5": 1.0,
+    "5.5": 1.0,
+    "6.5": 1.0
+   },
+   "home": {
+    "gp": 2,
+    "w": 2,
+    "l": 0,
+    "otl": 0,
+    "pts": 4,
+    "reg_w": 2,
+    "reg_d": 0,
+    "reg_l": 0,
+    "gf_pg": 7.0,
+    "ga_pg": 2.5,
+    "sf_pg": 32.5,
+    "sa_pg": 28.5
+   },
+   "away": {
+    "gp": 0
+   },
+   "last10": {
+    "gp": 2,
+    "w": 2,
+    "l": 0,
+    "otl": 0,
+    "pts": 4,
+    "reg_w": 2,
+    "reg_d": 0,
+    "reg_l": 0,
+    "gf_pg": 7.0,
+    "ga_pg": 2.5,
+    "sf_pg": 32.5,
+    "sa_pg": 28.5
+   },
+   "last10_log": [
+    "20260930 vs LAK 8-4 W",
+    "20261003 vs STL 6-1 W"
+   ],
+   "streak": "W2",
+   "last_game_date": "20261003",
+   "name": "Avalanche"
+  },
+  "LAK": {
+   "gp": 2,
+   "w": 0,
+   "l": 1,
+   "otl": 1,
+   "pts": 1,
+   "reg_w": 0,
+   "reg_d": 1,
+   "reg_l": 1,
+   "gf_pg": 4.0,
+   "ga_pg": 6.5,
+   "sf_pg": 33.0,
+   "sa_pg": 27.0,
+   "shot_share": 0.55,
+   "sh_pct": 0.121,
+   "sv_pct": 0.759,
+   "pdo": 88.0,
+   "pp_pct": 0.286,
+   "pk_pct": 0.286,
+   "reg_draw_rate": 0.5,
+   "avg_total": 10.5,
+   "avg_reg_total": 10.0,
+   "over_rate_reg": {
+    "4.5": 1.0,
+    "5.5": 1.0,
+    "6.5": 1.0
+   },
+   "home": {
+    "gp": 0
+   },
+   "away": {
     "gp": 2,
     "w": 0,
     "l": 1,
@@ -775,304 +1066,58 @@
     "reg_w": 0,
     "reg_d": 1,
     "reg_l": 1,
-    "gf_pg": 1.0,
-    "ga_pg": 5.0,
-    "sf_pg": 22.0,
-    "sa_pg": 41.0
+    "gf_pg": 4.0,
+    "ga_pg": 6.5,
+    "sf_pg": 33.0,
+    "sa_pg": 27.0
+   },
+   "last10": {
+    "gp": 2,
+    "w": 0,
+    "l": 1,
+    "otl": 1,
+    "pts": 1,
+    "reg_w": 0,
+    "reg_d": 1,
+    "reg_l": 1,
+    "gf_pg": 4.0,
+    "ga_pg": 6.5,
+    "sf_pg": 33.0,
+    "sa_pg": 27.0
    },
    "last10_log": [
-    "20260930 vs PIT 0-7 L",
-    "20261001 @ NJD 2-3 OTL(OT)"
+    "20260930 @ COL 4-8 L",
+    "20261003 @ SJS 4-5 OTL(OT)"
    ],
    "streak": "L2",
-   "last_game_date": "20261001",
-   "name": "Flyers"
-  },
-  "PIT": {
-   "gp": 1,
-   "w": 1,
-   "l": 0,
-   "otl": 0,
-   "pts": 2,
-   "reg_w": 1,
-   "reg_d": 0,
-   "reg_l": 0,
-   "gf_pg": 7.0,
-   "ga_pg": 0.0,
-   "sf_pg": 38.0,
-   "sa_pg": 19.0,
-   "shot_share": 0.667,
-   "sh_pct": 0.184,
-   "sv_pct": 1.0,
-   "pdo": 118.4,
-   "pp_pct": 0.5,
-   "pk_pct": 1.0,
-   "reg_draw_rate": 0.0,
-   "avg_total": 7.0,
-   "avg_reg_total": 7.0,
-   "over_rate_reg": {
-    "4.5": 1.0,
-    "5.5": 1.0,
-    "6.5": 1.0
-   },
-   "home": {
-    "gp": 0
-   },
-   "away": {
-    "gp": 1,
-    "w": 1,
-    "l": 0,
-    "otl": 0,
-    "pts": 2,
-    "reg_w": 1,
-    "reg_d": 0,
-    "reg_l": 0,
-    "gf_pg": 7.0,
-    "ga_pg": 0.0,
-    "sf_pg": 38.0,
-    "sa_pg": 19.0
-   },
-   "last10": {
-    "gp": 1,
-    "w": 1,
-    "l": 0,
-    "otl": 0,
-    "pts": 2,
-    "reg_w": 1,
-    "reg_d": 0,
-    "reg_l": 0,
-    "gf_pg": 7.0,
-    "ga_pg": 0.0,
-    "sf_pg": 38.0,
-    "sa_pg": 19.0
-   },
-   "last10_log": [
-    "20260930 @ PHI 7-0 W"
-   ],
-   "streak": "W1",
-   "last_game_date": "20260930",
-   "name": "Penguins"
-  },
-  "NYI": {
-   "gp": 1,
-   "w": 0,
-   "l": 1,
-   "otl": 0,
-   "pts": 0,
-   "reg_w": 0,
-   "reg_d": 0,
-   "reg_l": 1,
-   "gf_pg": 1.0,
-   "ga_pg": 2.0,
-   "sf_pg": 27.0,
-   "sa_pg": 26.0,
-   "shot_share": 0.509,
-   "sh_pct": 0.037,
-   "sv_pct": 0.923,
-   "pdo": 96.0,
-   "pp_pct": 0.0,
-   "pk_pct": 0.75,
-   "reg_draw_rate": 0.0,
-   "avg_total": 3.0,
-   "avg_reg_total": 3.0,
-   "over_rate_reg": {
-    "4.5": 0.0,
-    "5.5": 0.0,
-    "6.5": 0.0
-   },
-   "home": {
-    "gp": 0
-   },
-   "away": {
-    "gp": 1,
-    "w": 0,
-    "l": 1,
-    "otl": 0,
-    "pts": 0,
-    "reg_w": 0,
-    "reg_d": 0,
-    "reg_l": 1,
-    "gf_pg": 1.0,
-    "ga_pg": 2.0,
-    "sf_pg": 27.0,
-    "sa_pg": 26.0
-   },
-   "last10": {
-    "gp": 1,
-    "w": 0,
-    "l": 1,
-    "otl": 0,
-    "pts": 0,
-    "reg_w": 0,
-    "reg_d": 0,
-    "reg_l": 1,
-    "gf_pg": 1.0,
-    "ga_pg": 2.0,
-    "sf_pg": 27.0,
-    "sa_pg": 26.0
-   },
-   "last10_log": [
-    "20260930 @ TOR 1-2 L"
-   ],
-   "streak": "L1",
-   "last_game_date": "20260930",
-   "name": "Islanders"
-  },
-  "COL": {
-   "gp": 1,
-   "w": 1,
-   "l": 0,
-   "otl": 0,
-   "pts": 2,
-   "reg_w": 1,
-   "reg_d": 0,
-   "reg_l": 0,
-   "gf_pg": 8.0,
-   "ga_pg": 4.0,
-   "sf_pg": 29.0,
-   "sa_pg": 31.0,
-   "shot_share": 0.483,
-   "sh_pct": 0.276,
-   "sv_pct": 0.871,
-   "pdo": 114.7,
-   "pp_pct": 0.8,
-   "pk_pct": 1.0,
-   "reg_draw_rate": 0.0,
-   "avg_total": 12.0,
-   "avg_reg_total": 12.0,
-   "over_rate_reg": {
-    "4.5": 1.0,
-    "5.5": 1.0,
-    "6.5": 1.0
-   },
-   "home": {
-    "gp": 1,
-    "w": 1,
-    "l": 0,
-    "otl": 0,
-    "pts": 2,
-    "reg_w": 1,
-    "reg_d": 0,
-    "reg_l": 0,
-    "gf_pg": 8.0,
-    "ga_pg": 4.0,
-    "sf_pg": 29.0,
-    "sa_pg": 31.0
-   },
-   "away": {
-    "gp": 0
-   },
-   "last10": {
-    "gp": 1,
-    "w": 1,
-    "l": 0,
-    "otl": 0,
-    "pts": 2,
-    "reg_w": 1,
-    "reg_d": 0,
-    "reg_l": 0,
-    "gf_pg": 8.0,
-    "ga_pg": 4.0,
-    "sf_pg": 29.0,
-    "sa_pg": 31.0
-   },
-   "last10_log": [
-    "20260930 vs LAK 8-4 W"
-   ],
-   "streak": "W1",
-   "last_game_date": "20260930",
-   "name": "Avalanche"
-  },
-  "LAK": {
-   "gp": 1,
-   "w": 0,
-   "l": 1,
-   "otl": 0,
-   "pts": 0,
-   "reg_w": 0,
-   "reg_d": 0,
-   "reg_l": 1,
-   "gf_pg": 4.0,
-   "ga_pg": 8.0,
-   "sf_pg": 31.0,
-   "sa_pg": 29.0,
-   "shot_share": 0.517,
-   "sh_pct": 0.129,
-   "sv_pct": 0.724,
-   "pdo": 85.3,
-   "pp_pct": 0.0,
-   "pk_pct": 0.2,
-   "reg_draw_rate": 0.0,
-   "avg_total": 12.0,
-   "avg_reg_total": 12.0,
-   "over_rate_reg": {
-    "4.5": 1.0,
-    "5.5": 1.0,
-    "6.5": 1.0
-   },
-   "home": {
-    "gp": 0
-   },
-   "away": {
-    "gp": 1,
-    "w": 0,
-    "l": 1,
-    "otl": 0,
-    "pts": 0,
-    "reg_w": 0,
-    "reg_d": 0,
-    "reg_l": 1,
-    "gf_pg": 4.0,
-    "ga_pg": 8.0,
-    "sf_pg": 31.0,
-    "sa_pg": 29.0
-   },
-   "last10": {
-    "gp": 1,
-    "w": 0,
-    "l": 1,
-    "otl": 0,
-    "pts": 0,
-    "reg_w": 0,
-    "reg_d": 0,
-    "reg_l": 1,
-    "gf_pg": 4.0,
-    "ga_pg": 8.0,
-    "sf_pg": 31.0,
-    "sa_pg": 29.0
-   },
-   "last10_log": [
-    "20260930 @ COL 4-8 L"
-   ],
-   "streak": "L1",
-   "last_game_date": "20260930",
+   "last_game_date": "20261003",
    "name": "Kings"
   },
   "NJD": {
-   "gp": 1,
+   "gp": 2,
    "w": 1,
-   "l": 0,
+   "l": 1,
    "otl": 0,
    "pts": 2,
    "reg_w": 0,
    "reg_d": 1,
-   "reg_l": 0,
-   "gf_pg": 3.0,
-   "ga_pg": 2.0,
-   "sf_pg": 44.0,
-   "sa_pg": 25.0,
-   "shot_share": 0.638,
-   "sh_pct": 0.068,
-   "sv_pct": 0.92,
-   "pdo": 98.8,
+   "reg_l": 1,
+   "gf_pg": 1.5,
+   "ga_pg": 4.0,
+   "sf_pg": 40.5,
+   "sa_pg": 28.5,
+   "shot_share": 0.587,
+   "sh_pct": 0.037,
+   "sv_pct": 0.86,
+   "pdo": 89.7,
    "pp_pct": 0.0,
-   "pk_pct": 1.0,
-   "reg_draw_rate": 1.0,
-   "avg_total": 5.0,
-   "avg_reg_total": 4.0,
+   "pk_pct": 0.75,
+   "reg_draw_rate": 0.5,
+   "avg_total": 5.5,
+   "avg_reg_total": 5.0,
    "over_rate_reg": {
-    "4.5": 0.0,
-    "5.5": 0.0,
+    "4.5": 0.5,
+    "5.5": 0.5,
     "6.5": 0.0
    },
    "home": {
@@ -1090,269 +1135,83 @@
     "sa_pg": 25.0
    },
    "away": {
-    "gp": 0
+    "gp": 1,
+    "w": 0,
+    "l": 1,
+    "otl": 0,
+    "pts": 0,
+    "reg_w": 0,
+    "reg_d": 0,
+    "reg_l": 1,
+    "gf_pg": 0.0,
+    "ga_pg": 6.0,
+    "sf_pg": 37.0,
+    "sa_pg": 32.0
    },
    "last10": {
-    "gp": 1,
+    "gp": 2,
     "w": 1,
-    "l": 0,
+    "l": 1,
     "otl": 0,
     "pts": 2,
     "reg_w": 0,
     "reg_d": 1,
-    "reg_l": 0,
-    "gf_pg": 3.0,
-    "ga_pg": 2.0,
-    "sf_pg": 44.0,
-    "sa_pg": 25.0
+    "reg_l": 1,
+    "gf_pg": 1.5,
+    "ga_pg": 4.0,
+    "sf_pg": 40.5,
+    "sa_pg": 28.5
    },
    "last10_log": [
-    "20261001 vs PHI 3-2 W(OT)"
+    "20261001 vs PHI 3-2 W(OT)",
+    "20261003 @ NYI 0-6 L"
    ],
-   "streak": "W1",
-   "last_game_date": "20261001",
+   "streak": "L1",
+   "last_game_date": "20261003",
    "name": "Devils"
   },
   "TBL": {
-   "gp": 1,
-   "w": 0,
-   "l": 1,
-   "otl": 0,
-   "pts": 0,
-   "reg_w": 0,
-   "reg_d": 0,
-   "reg_l": 1,
-   "gf_pg": 1.0,
-   "ga_pg": 5.0,
-   "sf_pg": 25.0,
-   "sa_pg": 25.0,
-   "shot_share": 0.5,
-   "sh_pct": 0.04,
-   "sv_pct": 0.833,
-   "pdo": 87.3,
-   "pp_pct": 0.0,
-   "pk_pct": 0.5,
-   "reg_draw_rate": 0.0,
-   "avg_total": 6.0,
-   "avg_reg_total": 6.0,
-   "over_rate_reg": {
-    "4.5": 1.0,
-    "5.5": 1.0,
-    "6.5": 0.0
-   },
-   "home": {
-    "gp": 0
-   },
-   "away": {
-    "gp": 1,
-    "w": 0,
-    "l": 1,
-    "otl": 0,
-    "pts": 0,
-    "reg_w": 0,
-    "reg_d": 0,
-    "reg_l": 1,
-    "gf_pg": 1.0,
-    "ga_pg": 5.0,
-    "sf_pg": 25.0,
-    "sa_pg": 25.0
-   },
-   "last10": {
-    "gp": 1,
-    "w": 0,
-    "l": 1,
-    "otl": 0,
-    "pts": 0,
-    "reg_w": 0,
-    "reg_d": 0,
-    "reg_l": 1,
-    "gf_pg": 1.0,
-    "ga_pg": 5.0,
-    "sf_pg": 25.0,
-    "sa_pg": 25.0
-   },
-   "last10_log": [
-    "20261001 @ NYR 1-5 L"
-   ],
-   "streak": "L1",
-   "last_game_date": "20261001",
-   "name": "Lightning"
-  },
-  "CBJ": {
-   "gp": 1,
+   "gp": 2,
    "w": 1,
-   "l": 0,
+   "l": 1,
    "otl": 0,
    "pts": 2,
    "reg_w": 1,
    "reg_d": 0,
-   "reg_l": 0,
-   "gf_pg": 6.0,
-   "ga_pg": 3.0,
-   "sf_pg": 23.0,
-   "sa_pg": 26.0,
-   "shot_share": 0.469,
-   "sh_pct": 0.261,
-   "sv_pct": 0.885,
-   "pdo": 114.6,
-   "pp_pct": 0.667,
-   "pk_pct": 1.0,
-   "reg_draw_rate": 0.0,
-   "avg_total": 9.0,
-   "avg_reg_total": 9.0,
-   "over_rate_reg": {
-    "4.5": 1.0,
-    "5.5": 1.0,
-    "6.5": 1.0
-   },
-   "home": {
-    "gp": 1,
-    "w": 1,
-    "l": 0,
-    "otl": 0,
-    "pts": 2,
-    "reg_w": 1,
-    "reg_d": 0,
-    "reg_l": 0,
-    "gf_pg": 6.0,
-    "ga_pg": 3.0,
-    "sf_pg": 23.0,
-    "sa_pg": 26.0
-   },
-   "away": {
-    "gp": 0
-   },
-   "last10": {
-    "gp": 1,
-    "w": 1,
-    "l": 0,
-    "otl": 0,
-    "pts": 2,
-    "reg_w": 1,
-    "reg_d": 0,
-    "reg_l": 0,
-    "gf_pg": 6.0,
-    "ga_pg": 3.0,
-    "sf_pg": 23.0,
-    "sa_pg": 26.0
-   },
-   "last10_log": [
-    "20261001 vs BUF 6-3 W"
-   ],
-   "streak": "W1",
-   "last_game_date": "20261001",
-   "name": "Blue Jackets"
-  },
-  "BUF": {
-   "gp": 1,
-   "w": 0,
-   "l": 1,
-   "otl": 0,
-   "pts": 0,
-   "reg_w": 0,
-   "reg_d": 0,
    "reg_l": 1,
-   "gf_pg": 3.0,
-   "ga_pg": 6.0,
-   "sf_pg": 26.0,
+   "gf_pg": 2.0,
+   "ga_pg": 3.0,
+   "sf_pg": 27.5,
    "sa_pg": 23.0,
-   "shot_share": 0.531,
-   "sh_pct": 0.115,
-   "sv_pct": 0.773,
-   "pdo": 88.8,
-   "pp_pct": 0.0,
-   "pk_pct": 0.333,
-   "reg_draw_rate": 0.0,
-   "avg_total": 9.0,
-   "avg_reg_total": 9.0,
-   "over_rate_reg": {
-    "4.5": 1.0,
-    "5.5": 1.0,
-    "6.5": 1.0
-   },
-   "home": {
-    "gp": 0
-   },
-   "away": {
-    "gp": 1,
-    "w": 0,
-    "l": 1,
-    "otl": 0,
-    "pts": 0,
-    "reg_w": 0,
-    "reg_d": 0,
-    "reg_l": 1,
-    "gf_pg": 3.0,
-    "ga_pg": 6.0,
-    "sf_pg": 26.0,
-    "sa_pg": 23.0
-   },
-   "last10": {
-    "gp": 1,
-    "w": 0,
-    "l": 1,
-    "otl": 0,
-    "pts": 0,
-    "reg_w": 0,
-    "reg_d": 0,
-    "reg_l": 1,
-    "gf_pg": 3.0,
-    "ga_pg": 6.0,
-    "sf_pg": 26.0,
-    "sa_pg": 23.0
-   },
-   "last10_log": [
-    "20261001 @ CBJ 3-6 L"
-   ],
-   "streak": "L1",
-   "last_game_date": "20261001",
-   "name": "Sabres"
-  },
-  "NSH": {
-   "gp": 1,
-   "w": 0,
-   "l": 1,
-   "otl": 0,
-   "pts": 0,
-   "reg_w": 0,
-   "reg_d": 0,
-   "reg_l": 1,
-   "gf_pg": 1.0,
-   "ga_pg": 3.0,
-   "sf_pg": 20.0,
-   "sa_pg": 30.0,
-   "shot_share": 0.4,
-   "sh_pct": 0.05,
-   "sv_pct": 0.9,
-   "pdo": 95.0,
+   "shot_share": 0.545,
+   "sh_pct": 0.073,
+   "sv_pct": 0.889,
+   "pdo": 96.2,
    "pp_pct": 0.0,
    "pk_pct": 0.75,
    "reg_draw_rate": 0.0,
-   "avg_total": 4.0,
-   "avg_reg_total": 4.0,
+   "avg_total": 5.0,
+   "avg_reg_total": 5.0,
    "over_rate_reg": {
-    "4.5": 0.0,
-    "5.5": 0.0,
+    "4.5": 0.5,
+    "5.5": 0.5,
     "6.5": 0.0
    },
    "home": {
     "gp": 1,
-    "w": 0,
-    "l": 1,
+    "w": 1,
+    "l": 0,
     "otl": 0,
-    "pts": 0,
-    "reg_w": 0,
+    "pts": 2,
+    "reg_w": 1,
     "reg_d": 0,
-    "reg_l": 1,
-    "gf_pg": 1.0,
-    "ga_pg": 3.0,
-    "sf_pg": 20.0,
-    "sa_pg": 30.0
+    "reg_l": 0,
+    "gf_pg": 3.0,
+    "ga_pg": 1.0,
+    "sf_pg": 30.0,
+    "sa_pg": 21.0
    },
    "away": {
-    "gp": 0
-   },
-   "last10": {
     "gp": 1,
     "w": 0,
     "l": 1,
@@ -1362,46 +1221,281 @@
     "reg_d": 0,
     "reg_l": 1,
     "gf_pg": 1.0,
+    "ga_pg": 5.0,
+    "sf_pg": 25.0,
+    "sa_pg": 25.0
+   },
+   "last10": {
+    "gp": 2,
+    "w": 1,
+    "l": 1,
+    "otl": 0,
+    "pts": 2,
+    "reg_w": 1,
+    "reg_d": 0,
+    "reg_l": 1,
+    "gf_pg": 2.0,
     "ga_pg": 3.0,
-    "sf_pg": 20.0,
-    "sa_pg": 30.0
+    "sf_pg": 27.5,
+    "sa_pg": 23.0
    },
    "last10_log": [
-    "20261001 vs MIN 1-3 L"
+    "20261001 @ NYR 1-5 L",
+    "20261003 vs WSH 3-1 W"
    ],
-   "streak": "L1",
-   "last_game_date": "20261001",
-   "name": "Predators"
+   "streak": "W1",
+   "last_game_date": "20261003",
+   "name": "Lightning"
   },
-  "MIN": {
-   "gp": 1,
+  "CBJ": {
+   "gp": 2,
    "w": 1,
-   "l": 0,
+   "l": 1,
    "otl": 0,
    "pts": 2,
    "reg_w": 1,
    "reg_d": 0,
-   "reg_l": 0,
-   "gf_pg": 3.0,
-   "ga_pg": 1.0,
-   "sf_pg": 30.0,
-   "sa_pg": 20.0,
-   "shot_share": 0.6,
-   "sh_pct": 0.1,
-   "sv_pct": 0.95,
-   "pdo": 105.0,
-   "pp_pct": 0.25,
-   "pk_pct": 1.0,
+   "reg_l": 1,
+   "gf_pg": 3.5,
+   "ga_pg": 3.5,
+   "sf_pg": 20.5,
+   "sa_pg": 28.5,
+   "shot_share": 0.418,
+   "sh_pct": 0.171,
+   "sv_pct": 0.877,
+   "pdo": 104.8,
+   "pp_pct": 0.4,
+   "pk_pct": 0.667,
    "reg_draw_rate": 0.0,
-   "avg_total": 4.0,
-   "avg_reg_total": 4.0,
+   "avg_total": 7.0,
+   "avg_reg_total": 7.0,
+   "over_rate_reg": {
+    "4.5": 1.0,
+    "5.5": 0.5,
+    "6.5": 0.5
+   },
+   "home": {
+    "gp": 2,
+    "w": 1,
+    "l": 1,
+    "otl": 0,
+    "pts": 2,
+    "reg_w": 1,
+    "reg_d": 0,
+    "reg_l": 1,
+    "gf_pg": 3.5,
+    "ga_pg": 3.5,
+    "sf_pg": 20.5,
+    "sa_pg": 28.5
+   },
+   "away": {
+    "gp": 0
+   },
+   "last10": {
+    "gp": 2,
+    "w": 1,
+    "l": 1,
+    "otl": 0,
+    "pts": 2,
+    "reg_w": 1,
+    "reg_d": 0,
+    "reg_l": 1,
+    "gf_pg": 3.5,
+    "ga_pg": 3.5,
+    "sf_pg": 20.5,
+    "sa_pg": 28.5
+   },
+   "last10_log": [
+    "20261001 vs BUF 6-3 W",
+    "20261003 vs UTA 1-4 L"
+   ],
+   "streak": "L1",
+   "last_game_date": "20261003",
+   "name": "Blue Jackets"
+  },
+  "BUF": {
+   "gp": 2,
+   "w": 1,
+   "l": 1,
+   "otl": 0,
+   "pts": 2,
+   "reg_w": 1,
+   "reg_d": 0,
+   "reg_l": 1,
+   "gf_pg": 3.5,
+   "ga_pg": 4.5,
+   "sf_pg": 27.0,
+   "sa_pg": 19.0,
+   "shot_share": 0.587,
+   "sh_pct": 0.13,
+   "sv_pct": 0.784,
+   "pdo": 91.4,
+   "pp_pct": 0.0,
+   "pk_pct": 0.6,
+   "reg_draw_rate": 0.0,
+   "avg_total": 8.0,
+   "avg_reg_total": 8.0,
+   "over_rate_reg": {
+    "4.5": 1.0,
+    "5.5": 1.0,
+    "6.5": 1.0
+   },
+   "home": {
+    "gp": 1,
+    "w": 1,
+    "l": 0,
+    "otl": 0,
+    "pts": 2,
+    "reg_w": 1,
+    "reg_d": 0,
+    "reg_l": 0,
+    "gf_pg": 4.0,
+    "ga_pg": 3.0,
+    "sf_pg": 28.0,
+    "sa_pg": 15.0
+   },
+   "away": {
+    "gp": 1,
+    "w": 0,
+    "l": 1,
+    "otl": 0,
+    "pts": 0,
+    "reg_w": 0,
+    "reg_d": 0,
+    "reg_l": 1,
+    "gf_pg": 3.0,
+    "ga_pg": 6.0,
+    "sf_pg": 26.0,
+    "sa_pg": 23.0
+   },
+   "last10": {
+    "gp": 2,
+    "w": 1,
+    "l": 1,
+    "otl": 0,
+    "pts": 2,
+    "reg_w": 1,
+    "reg_d": 0,
+    "reg_l": 1,
+    "gf_pg": 3.5,
+    "ga_pg": 4.5,
+    "sf_pg": 27.0,
+    "sa_pg": 19.0
+   },
+   "last10_log": [
+    "20261001 @ CBJ 3-6 L",
+    "20261003 vs CHI 4-3 W"
+   ],
+   "streak": "W1",
+   "last_game_date": "20261003",
+   "name": "Sabres"
+  },
+  "NSH": {
+   "gp": 2,
+   "w": 1,
+   "l": 1,
+   "otl": 0,
+   "pts": 2,
+   "reg_w": 1,
+   "reg_d": 0,
+   "reg_l": 1,
+   "gf_pg": 1.5,
+   "ga_pg": 2.0,
+   "sf_pg": 23.0,
+   "sa_pg": 30.0,
+   "shot_share": 0.434,
+   "sh_pct": 0.065,
+   "sv_pct": 0.933,
+   "pdo": 99.8,
+   "pp_pct": 0.286,
+   "pk_pct": 0.8,
+   "reg_draw_rate": 0.0,
+   "avg_total": 3.5,
+   "avg_reg_total": 3.5,
    "over_rate_reg": {
     "4.5": 0.0,
     "5.5": 0.0,
     "6.5": 0.0
    },
    "home": {
+    "gp": 2,
+    "w": 1,
+    "l": 1,
+    "otl": 0,
+    "pts": 2,
+    "reg_w": 1,
+    "reg_d": 0,
+    "reg_l": 1,
+    "gf_pg": 1.5,
+    "ga_pg": 2.0,
+    "sf_pg": 23.0,
+    "sa_pg": 30.0
+   },
+   "away": {
     "gp": 0
+   },
+   "last10": {
+    "gp": 2,
+    "w": 1,
+    "l": 1,
+    "otl": 0,
+    "pts": 2,
+    "reg_w": 1,
+    "reg_d": 0,
+    "reg_l": 1,
+    "gf_pg": 1.5,
+    "ga_pg": 2.0,
+    "sf_pg": 23.0,
+    "sa_pg": 30.0
+   },
+   "last10_log": [
+    "20261001 vs MIN 1-3 L",
+    "20261003 vs DAL 2-1 W"
+   ],
+   "streak": "W1",
+   "last_game_date": "20261003",
+   "name": "Predators"
+  },
+  "MIN": {
+   "gp": 2,
+   "w": 2,
+   "l": 0,
+   "otl": 0,
+   "pts": 4,
+   "reg_w": 2,
+   "reg_d": 0,
+   "reg_l": 0,
+   "gf_pg": 3.5,
+   "ga_pg": 1.0,
+   "sf_pg": 30.0,
+   "sa_pg": 23.5,
+   "shot_share": 0.561,
+   "sh_pct": 0.117,
+   "sv_pct": 0.957,
+   "pdo": 107.4,
+   "pp_pct": 0.429,
+   "pk_pct": 1.0,
+   "reg_draw_rate": 0.0,
+   "avg_total": 4.5,
+   "avg_reg_total": 4.5,
+   "over_rate_reg": {
+    "4.5": 0.5,
+    "5.5": 0.0,
+    "6.5": 0.0
+   },
+   "home": {
+    "gp": 1,
+    "w": 1,
+    "l": 0,
+    "otl": 0,
+    "pts": 2,
+    "reg_w": 1,
+    "reg_d": 0,
+    "reg_l": 0,
+    "gf_pg": 4.0,
+    "ga_pg": 1.0,
+    "sf_pg": 30.0,
+    "sa_pg": 27.0
    },
    "away": {
     "gp": 1,
@@ -1418,181 +1512,195 @@
     "sa_pg": 20.0
    },
    "last10": {
-    "gp": 1,
-    "w": 1,
+    "gp": 2,
+    "w": 2,
     "l": 0,
     "otl": 0,
-    "pts": 2,
-    "reg_w": 1,
+    "pts": 4,
+    "reg_w": 2,
     "reg_d": 0,
     "reg_l": 0,
-    "gf_pg": 3.0,
+    "gf_pg": 3.5,
     "ga_pg": 1.0,
     "sf_pg": 30.0,
-    "sa_pg": 20.0
+    "sa_pg": 23.5
    },
    "last10_log": [
-    "20261001 @ NSH 3-1 W"
+    "20261001 @ NSH 3-1 W",
+    "20261003 vs BOS 4-1 W"
    ],
-   "streak": "W1",
-   "last_game_date": "20261001",
+   "streak": "W2",
+   "last_game_date": "20261003",
    "name": "Wild"
   },
   "CGY": {
-   "gp": 1,
+   "gp": 2,
    "w": 0,
-   "l": 1,
+   "l": 2,
    "otl": 0,
    "pts": 0,
    "reg_w": 0,
    "reg_d": 0,
-   "reg_l": 1,
+   "reg_l": 2,
    "gf_pg": 1.0,
-   "ga_pg": 6.0,
-   "sf_pg": 25.0,
-   "sa_pg": 32.0,
-   "shot_share": 0.439,
-   "sh_pct": 0.04,
-   "sv_pct": 0.812,
-   "pdo": 85.2,
-   "pp_pct": 0.0,
-   "pk_pct": 0.8,
-   "reg_draw_rate": 0.0,
-   "avg_total": 7.0,
-   "avg_reg_total": 7.0,
-   "over_rate_reg": {
-    "4.5": 1.0,
-    "5.5": 1.0,
-    "6.5": 1.0
-   },
-   "home": {
-    "gp": 1,
-    "w": 0,
-    "l": 1,
-    "otl": 0,
-    "pts": 0,
-    "reg_w": 0,
-    "reg_d": 0,
-    "reg_l": 1,
-    "gf_pg": 1.0,
-    "ga_pg": 6.0,
-    "sf_pg": 25.0,
-    "sa_pg": 32.0
-   },
-   "away": {
-    "gp": 0
-   },
-   "last10": {
-    "gp": 1,
-    "w": 0,
-    "l": 1,
-    "otl": 0,
-    "pts": 0,
-    "reg_w": 0,
-    "reg_d": 0,
-    "reg_l": 1,
-    "gf_pg": 1.0,
-    "ga_pg": 6.0,
-    "sf_pg": 25.0,
-    "sa_pg": 32.0
-   },
-   "last10_log": [
-    "20261001 vs SEA 1-6 L"
-   ],
-   "streak": "L1",
-   "last_game_date": "20261001",
-   "name": "Flames"
-  },
-  "SEA": {
-   "gp": 1,
-   "w": 1,
-   "l": 0,
-   "otl": 0,
-   "pts": 2,
-   "reg_w": 1,
-   "reg_d": 0,
-   "reg_l": 0,
-   "gf_pg": 6.0,
-   "ga_pg": 1.0,
-   "sf_pg": 32.0,
-   "sa_pg": 25.0,
-   "shot_share": 0.561,
-   "sh_pct": 0.188,
-   "sv_pct": 0.96,
-   "pdo": 114.8,
-   "pp_pct": 0.2,
-   "pk_pct": 1.0,
-   "reg_draw_rate": 0.0,
-   "avg_total": 7.0,
-   "avg_reg_total": 7.0,
-   "over_rate_reg": {
-    "4.5": 1.0,
-    "5.5": 1.0,
-    "6.5": 1.0
-   },
-   "home": {
-    "gp": 0
-   },
-   "away": {
-    "gp": 1,
-    "w": 1,
-    "l": 0,
-    "otl": 0,
-    "pts": 2,
-    "reg_w": 1,
-    "reg_d": 0,
-    "reg_l": 0,
-    "gf_pg": 6.0,
-    "ga_pg": 1.0,
-    "sf_pg": 32.0,
-    "sa_pg": 25.0
-   },
-   "last10": {
-    "gp": 1,
-    "w": 1,
-    "l": 0,
-    "otl": 0,
-    "pts": 2,
-    "reg_w": 1,
-    "reg_d": 0,
-    "reg_l": 0,
-    "gf_pg": 6.0,
-    "ga_pg": 1.0,
-    "sf_pg": 32.0,
-    "sa_pg": 25.0
-   },
-   "last10_log": [
-    "20261001 @ CGY 6-1 W"
-   ],
-   "streak": "W1",
-   "last_game_date": "20261001",
-   "name": "Kraken"
-  },
-  "UTA": {
-   "gp": 1,
-   "w": 1,
-   "l": 0,
-   "otl": 0,
-   "pts": 2,
-   "reg_w": 1,
-   "reg_d": 0,
-   "reg_l": 0,
-   "gf_pg": 6.0,
-   "ga_pg": 0.0,
-   "sf_pg": 32.0,
-   "sa_pg": 15.0,
-   "shot_share": 0.681,
-   "sh_pct": 0.188,
-   "sv_pct": 1.0,
-   "pdo": 118.8,
-   "pp_pct": 0.667,
-   "pk_pct": 1.0,
+   "ga_pg": 5.0,
+   "sf_pg": 24.5,
+   "sa_pg": 29.0,
+   "shot_share": 0.458,
+   "sh_pct": 0.041,
+   "sv_pct": 0.842,
+   "pdo": 88.3,
+   "pp_pct": 0.333,
+   "pk_pct": 0.9,
    "reg_draw_rate": 0.0,
    "avg_total": 6.0,
    "avg_reg_total": 6.0,
    "over_rate_reg": {
     "4.5": 1.0,
-    "5.5": 1.0,
+    "5.5": 0.5,
+    "6.5": 0.5
+   },
+   "home": {
+    "gp": 1,
+    "w": 0,
+    "l": 1,
+    "otl": 0,
+    "pts": 0,
+    "reg_w": 0,
+    "reg_d": 0,
+    "reg_l": 1,
+    "gf_pg": 1.0,
+    "ga_pg": 6.0,
+    "sf_pg": 25.0,
+    "sa_pg": 32.0
+   },
+   "away": {
+    "gp": 1,
+    "w": 0,
+    "l": 1,
+    "otl": 0,
+    "pts": 0,
+    "reg_w": 0,
+    "reg_d": 0,
+    "reg_l": 1,
+    "gf_pg": 1.0,
+    "ga_pg": 4.0,
+    "sf_pg": 24.0,
+    "sa_pg": 26.0
+   },
+   "last10": {
+    "gp": 2,
+    "w": 0,
+    "l": 2,
+    "otl": 0,
+    "pts": 0,
+    "reg_w": 0,
+    "reg_d": 0,
+    "reg_l": 2,
+    "gf_pg": 1.0,
+    "ga_pg": 5.0,
+    "sf_pg": 24.5,
+    "sa_pg": 29.0
+   },
+   "last10_log": [
+    "20261001 vs SEA 1-6 L",
+    "20261003 @ VAN 1-4 L"
+   ],
+   "streak": "L2",
+   "last_game_date": "20261003",
+   "name": "Flames"
+  },
+  "SEA": {
+   "gp": 2,
+   "w": 1,
+   "l": 1,
+   "otl": 0,
+   "pts": 2,
+   "reg_w": 1,
+   "reg_d": 0,
+   "reg_l": 1,
+   "gf_pg": 3.5,
+   "ga_pg": 2.0,
+   "sf_pg": 26.0,
+   "sa_pg": 25.0,
+   "shot_share": 0.51,
+   "sh_pct": 0.135,
+   "sv_pct": 0.939,
+   "pdo": 107.4,
+   "pp_pct": 0.286,
+   "pk_pct": 1.0,
+   "reg_draw_rate": 0.0,
+   "avg_total": 5.5,
+   "avg_reg_total": 5.5,
+   "over_rate_reg": {
+    "4.5": 0.5,
+    "5.5": 0.5,
+    "6.5": 0.5
+   },
+   "home": {
+    "gp": 0
+   },
+   "away": {
+    "gp": 2,
+    "w": 1,
+    "l": 1,
+    "otl": 0,
+    "pts": 2,
+    "reg_w": 1,
+    "reg_d": 0,
+    "reg_l": 1,
+    "gf_pg": 3.5,
+    "ga_pg": 2.0,
+    "sf_pg": 26.0,
+    "sa_pg": 25.0
+   },
+   "last10": {
+    "gp": 2,
+    "w": 1,
+    "l": 1,
+    "otl": 0,
+    "pts": 2,
+    "reg_w": 1,
+    "reg_d": 0,
+    "reg_l": 1,
+    "gf_pg": 3.5,
+    "ga_pg": 2.0,
+    "sf_pg": 26.0,
+    "sa_pg": 25.0
+   },
+   "last10_log": [
+    "20261001 @ CGY 6-1 W",
+    "20261003 @ EDM 1-3 L"
+   ],
+   "streak": "L1",
+   "last_game_date": "20261003",
+   "name": "Kraken"
+  },
+  "UTA": {
+   "gp": 2,
+   "w": 2,
+   "l": 0,
+   "otl": 0,
+   "pts": 4,
+   "reg_w": 2,
+   "reg_d": 0,
+   "reg_l": 0,
+   "gf_pg": 5.0,
+   "ga_pg": 0.5,
+   "sf_pg": 31.5,
+   "sa_pg": 16.5,
+   "shot_share": 0.656,
+   "sh_pct": 0.159,
+   "sv_pct": 0.97,
+   "pdo": 112.9,
+   "pp_pct": 0.714,
+   "pk_pct": 1.0,
+   "reg_draw_rate": 0.0,
+   "avg_total": 5.5,
+   "avg_reg_total": 5.5,
+   "over_rate_reg": {
+    "4.5": 1.0,
+    "5.5": 0.5,
     "6.5": 0.0
    },
    "home": {
@@ -1610,9 +1718,6 @@
     "sa_pg": 15.0
    },
    "away": {
-    "gp": 0
-   },
-   "last10": {
     "gp": 1,
     "w": 1,
     "l": 0,
@@ -1621,81 +1726,97 @@
     "reg_w": 1,
     "reg_d": 0,
     "reg_l": 0,
-    "gf_pg": 6.0,
-    "ga_pg": 0.0,
-    "sf_pg": 32.0,
-    "sa_pg": 15.0
+    "gf_pg": 4.0,
+    "ga_pg": 1.0,
+    "sf_pg": 31.0,
+    "sa_pg": 18.0
+   },
+   "last10": {
+    "gp": 2,
+    "w": 2,
+    "l": 0,
+    "otl": 0,
+    "pts": 4,
+    "reg_w": 2,
+    "reg_d": 0,
+    "reg_l": 0,
+    "gf_pg": 5.0,
+    "ga_pg": 0.5,
+    "sf_pg": 31.5,
+    "sa_pg": 16.5
    },
    "last10_log": [
-    "20261001 vs CHI 6-0 W"
+    "20261001 vs CHI 6-0 W",
+    "20261003 @ CBJ 4-1 W"
    ],
-   "streak": "W1",
-   "last_game_date": "20261001",
+   "streak": "W2",
+   "last_game_date": "20261003",
    "name": "Mammoth"
   },
   "SJS": {
-   "gp": 1,
-   "w": 1,
+   "gp": 2,
+   "w": 2,
    "l": 0,
    "otl": 0,
-   "pts": 2,
+   "pts": 4,
    "reg_w": 0,
-   "reg_d": 1,
+   "reg_d": 2,
    "reg_l": 0,
-   "gf_pg": 4.0,
-   "ga_pg": 3.0,
-   "sf_pg": 32.0,
-   "sa_pg": 26.0,
-   "shot_share": 0.552,
-   "sh_pct": 0.125,
+   "gf_pg": 4.5,
+   "ga_pg": 3.5,
+   "sf_pg": 28.5,
+   "sa_pg": 30.5,
+   "shot_share": 0.483,
+   "sh_pct": 0.158,
    "sv_pct": 0.885,
-   "pdo": 101.0,
-   "pp_pct": 0.25,
-   "pk_pct": 0.833,
+   "pdo": 104.3,
+   "pp_pct": 0.333,
+   "pk_pct": 0.667,
    "reg_draw_rate": 1.0,
-   "avg_total": 7.0,
-   "avg_reg_total": 6.0,
+   "avg_total": 8.0,
+   "avg_reg_total": 7.0,
    "over_rate_reg": {
     "4.5": 1.0,
     "5.5": 1.0,
-    "6.5": 0.0
+    "6.5": 0.5
    },
    "home": {
-    "gp": 1,
-    "w": 1,
+    "gp": 2,
+    "w": 2,
     "l": 0,
     "otl": 0,
-    "pts": 2,
+    "pts": 4,
     "reg_w": 0,
-    "reg_d": 1,
+    "reg_d": 2,
     "reg_l": 0,
-    "gf_pg": 4.0,
-    "ga_pg": 3.0,
-    "sf_pg": 32.0,
-    "sa_pg": 26.0
+    "gf_pg": 4.5,
+    "ga_pg": 3.5,
+    "sf_pg": 28.5,
+    "sa_pg": 30.5
    },
    "away": {
     "gp": 0
    },
    "last10": {
-    "gp": 1,
-    "w": 1,
+    "gp": 2,
+    "w": 2,
     "l": 0,
     "otl": 0,
-    "pts": 2,
+    "pts": 4,
     "reg_w": 0,
-    "reg_d": 1,
+    "reg_d": 2,
     "reg_l": 0,
-    "gf_pg": 4.0,
-    "ga_pg": 3.0,
-    "sf_pg": 32.0,
-    "sa_pg": 26.0
+    "gf_pg": 4.5,
+    "ga_pg": 3.5,
+    "sf_pg": 28.5,
+    "sa_pg": 30.5
    },
    "last10_log": [
-    "20261001 vs FLA 4-3 W(OT)"
+    "20261001 vs FLA 4-3 W(OT)",
+    "20261003 vs LAK 5-4 W(OT)"
    ],
-   "streak": "W1",
-   "last_game_date": "20261001",
+   "streak": "W2",
+   "last_game_date": "20261003",
    "name": "Sharks"
   },
   "DET": {
@@ -1764,68 +1885,69 @@
    "name": "Red Wings"
   },
   "WSH": {
-   "gp": 1,
+   "gp": 2,
    "w": 1,
-   "l": 0,
+   "l": 1,
    "otl": 0,
    "pts": 2,
    "reg_w": 1,
    "reg_d": 0,
-   "reg_l": 0,
-   "gf_pg": 5.0,
-   "ga_pg": 2.0,
-   "sf_pg": 27.0,
-   "sa_pg": 33.0,
-   "shot_share": 0.45,
-   "sh_pct": 0.185,
-   "sv_pct": 0.939,
-   "pdo": 112.4,
-   "pp_pct": 0.5,
-   "pk_pct": 0.833,
+   "reg_l": 1,
+   "gf_pg": 3.0,
+   "ga_pg": 2.5,
+   "sf_pg": 24.0,
+   "sa_pg": 31.5,
+   "shot_share": 0.432,
+   "sh_pct": 0.125,
+   "sv_pct": 0.935,
+   "pdo": 106.0,
+   "pp_pct": 0.25,
+   "pk_pct": 0.889,
    "reg_draw_rate": 0.0,
-   "avg_total": 7.0,
-   "avg_reg_total": 7.0,
+   "avg_total": 5.5,
+   "avg_reg_total": 5.5,
    "over_rate_reg": {
-    "4.5": 1.0,
-    "5.5": 1.0,
-    "6.5": 1.0
+    "4.5": 0.5,
+    "5.5": 0.5,
+    "6.5": 0.5
    },
    "home": {
     "gp": 0
    },
    "away": {
-    "gp": 1,
+    "gp": 2,
     "w": 1,
-    "l": 0,
+    "l": 1,
     "otl": 0,
     "pts": 2,
     "reg_w": 1,
     "reg_d": 0,
-    "reg_l": 0,
-    "gf_pg": 5.0,
-    "ga_pg": 2.0,
-    "sf_pg": 27.0,
-    "sa_pg": 33.0
+    "reg_l": 1,
+    "gf_pg": 3.0,
+    "ga_pg": 2.5,
+    "sf_pg": 24.0,
+    "sa_pg": 31.5
    },
    "last10": {
-    "gp": 1,
+    "gp": 2,
     "w": 1,
-    "l": 0,
+    "l": 1,
     "otl": 0,
     "pts": 2,
     "reg_w": 1,
     "reg_d": 0,
-    "reg_l": 0,
-    "gf_pg": 5.0,
-    "ga_pg": 2.0,
-    "sf_pg": 27.0,
-    "sa_pg": 33.0
+    "reg_l": 1,
+    "gf_pg": 3.0,
+    "ga_pg": 2.5,
+    "sf_pg": 24.0,
+    "sa_pg": 31.5
    },
    "last10_log": [
-    "20261002 @ CAR 5-2 W"
+    "20261002 @ CAR 5-2 W",
+    "20261003 @ TBL 1-3 L"
    ],
-   "streak": "W1",
-   "last_game_date": "20261002",
+   "streak": "L1",
+   "last_game_date": "20261003",
    "name": "Capitals"
   },
   "WPG": {
@@ -1894,27 +2016,27 @@
    "name": "Jets"
   },
   "DAL": {
-   "gp": 1,
+   "gp": 2,
    "w": 0,
-   "l": 1,
+   "l": 2,
    "otl": 0,
    "pts": 0,
    "reg_w": 0,
    "reg_d": 0,
-   "reg_l": 1,
-   "gf_pg": 0.0,
-   "ga_pg": 4.0,
-   "sf_pg": 25.0,
-   "sa_pg": 24.0,
-   "shot_share": 0.51,
-   "sh_pct": 0.0,
-   "sv_pct": 0.909,
-   "pdo": 90.9,
+   "reg_l": 2,
+   "gf_pg": 0.5,
+   "ga_pg": 3.0,
+   "sf_pg": 27.5,
+   "sa_pg": 25.0,
+   "shot_share": 0.524,
+   "sh_pct": 0.018,
+   "sv_pct": 0.917,
+   "pdo": 93.5,
    "pp_pct": 0.0,
-   "pk_pct": 1.0,
+   "pk_pct": 0.714,
    "reg_draw_rate": 0.0,
-   "avg_total": 4.0,
-   "avg_reg_total": 4.0,
+   "avg_total": 3.5,
+   "avg_reg_total": 3.5,
    "over_rate_reg": {
     "4.5": 0.0,
     "5.5": 0.0,
@@ -1935,9 +2057,6 @@
     "sa_pg": 24.0
    },
    "away": {
-    "gp": 0
-   },
-   "last10": {
     "gp": 1,
     "w": 0,
     "l": 1,
@@ -1946,81 +2065,97 @@
     "reg_w": 0,
     "reg_d": 0,
     "reg_l": 1,
-    "gf_pg": 0.0,
-    "ga_pg": 4.0,
-    "sf_pg": 25.0,
-    "sa_pg": 24.0
+    "gf_pg": 1.0,
+    "ga_pg": 2.0,
+    "sf_pg": 30.0,
+    "sa_pg": 26.0
+   },
+   "last10": {
+    "gp": 2,
+    "w": 0,
+    "l": 2,
+    "otl": 0,
+    "pts": 0,
+    "reg_w": 0,
+    "reg_d": 0,
+    "reg_l": 2,
+    "gf_pg": 0.5,
+    "ga_pg": 3.0,
+    "sf_pg": 27.5,
+    "sa_pg": 25.0
    },
    "last10_log": [
-    "20261002 vs STL 0-4 L"
+    "20261002 vs STL 0-4 L",
+    "20261003 @ NSH 1-2 L"
    ],
-   "streak": "L1",
-   "last_game_date": "20261002",
+   "streak": "L2",
+   "last_game_date": "20261003",
    "name": "Stars"
   },
   "STL": {
-   "gp": 1,
+   "gp": 2,
    "w": 1,
-   "l": 0,
+   "l": 1,
    "otl": 0,
    "pts": 2,
    "reg_w": 1,
    "reg_d": 0,
-   "reg_l": 0,
-   "gf_pg": 4.0,
-   "ga_pg": 0.0,
-   "sf_pg": 24.0,
-   "sa_pg": 25.0,
-   "shot_share": 0.49,
-   "sh_pct": 0.167,
-   "sv_pct": 1.0,
-   "pdo": 116.7,
+   "reg_l": 1,
+   "gf_pg": 2.5,
+   "ga_pg": 3.0,
+   "sf_pg": 25.0,
+   "sa_pg": 30.5,
+   "shot_share": 0.45,
+   "sh_pct": 0.1,
+   "sv_pct": 0.902,
+   "pdo": 100.2,
    "pp_pct": 0.0,
    "pk_pct": 1.0,
    "reg_draw_rate": 0.0,
-   "avg_total": 4.0,
-   "avg_reg_total": 4.0,
+   "avg_total": 5.5,
+   "avg_reg_total": 5.5,
    "over_rate_reg": {
-    "4.5": 0.0,
-    "5.5": 0.0,
-    "6.5": 0.0
+    "4.5": 0.5,
+    "5.5": 0.5,
+    "6.5": 0.5
    },
    "home": {
     "gp": 0
    },
    "away": {
-    "gp": 1,
+    "gp": 2,
     "w": 1,
-    "l": 0,
+    "l": 1,
     "otl": 0,
     "pts": 2,
     "reg_w": 1,
     "reg_d": 0,
-    "reg_l": 0,
-    "gf_pg": 4.0,
-    "ga_pg": 0.0,
-    "sf_pg": 24.0,
-    "sa_pg": 25.0
+    "reg_l": 1,
+    "gf_pg": 2.5,
+    "ga_pg": 3.0,
+    "sf_pg": 25.0,
+    "sa_pg": 30.5
    },
    "last10": {
-    "gp": 1,
+    "gp": 2,
     "w": 1,
-    "l": 0,
+    "l": 1,
     "otl": 0,
     "pts": 2,
     "reg_w": 1,
     "reg_d": 0,
-    "reg_l": 0,
-    "gf_pg": 4.0,
-    "ga_pg": 0.0,
-    "sf_pg": 24.0,
-    "sa_pg": 25.0
+    "reg_l": 1,
+    "gf_pg": 2.5,
+    "ga_pg": 3.0,
+    "sf_pg": 25.0,
+    "sa_pg": 30.5
    },
    "last10_log": [
-    "20261002 @ DAL 4-0 W"
+    "20261002 @ DAL 4-0 W",
+    "20261003 @ COL 1-6 L"
    ],
-   "streak": "W1",
-   "last_game_date": "20261002",
+   "streak": "L1",
+   "last_game_date": "20261003",
    "name": "Blues"
   },
   "ANA": {
@@ -2087,6 +2222,71 @@
    "streak": "W1",
    "last_game_date": "20261002",
    "name": "Ducks"
+  },
+  "OTT": {
+   "gp": 1,
+   "w": 1,
+   "l": 0,
+   "otl": 0,
+   "pts": 2,
+   "reg_w": 1,
+   "reg_d": 0,
+   "reg_l": 0,
+   "gf_pg": 3.0,
+   "ga_pg": 2.0,
+   "sf_pg": 29.0,
+   "sa_pg": 29.0,
+   "shot_share": 0.5,
+   "sh_pct": 0.103,
+   "sv_pct": 0.931,
+   "pdo": 103.4,
+   "pp_pct": 0.0,
+   "pk_pct": 0.75,
+   "reg_draw_rate": 0.0,
+   "avg_total": 5.0,
+   "avg_reg_total": 5.0,
+   "over_rate_reg": {
+    "4.5": 1.0,
+    "5.5": 0.0,
+    "6.5": 0.0
+   },
+   "home": {
+    "gp": 0
+   },
+   "away": {
+    "gp": 1,
+    "w": 1,
+    "l": 0,
+    "otl": 0,
+    "pts": 2,
+    "reg_w": 1,
+    "reg_d": 0,
+    "reg_l": 0,
+    "gf_pg": 3.0,
+    "ga_pg": 2.0,
+    "sf_pg": 29.0,
+    "sa_pg": 29.0
+   },
+   "last10": {
+    "gp": 1,
+    "w": 1,
+    "l": 0,
+    "otl": 0,
+    "pts": 2,
+    "reg_w": 1,
+    "reg_d": 0,
+    "reg_l": 0,
+    "gf_pg": 3.0,
+    "ga_pg": 2.0,
+    "sf_pg": 29.0,
+    "sa_pg": 29.0
+   },
+   "last10_log": [
+    "20261003 @ TOR 3-2 W"
+   ],
+   "streak": "W1",
+   "last_game_date": "20261003",
+   "name": "Senators"
   }
  },
  "goalies": {
@@ -2154,21 +2354,21 @@
   "8475683": {
    "name": "S. Bobrovsky",
    "team": "TOR",
-   "gp": 1,
-   "sv_pct": 0.875,
+   "gp": 2,
+   "sv_pct": 0.887,
    "gaa": 3.06,
-   "starts": 1,
+   "starts": 2,
    "w": 0,
-   "l": 1,
+   "l": 2,
    "o": 0,
    "last5_starts": {
-    "gp": 1,
-    "sv_pct": 0.875,
+    "gp": 2,
+    "sv_pct": 0.887,
     "gaa": 3.06
    },
    "home": {
-    "gp": 1,
-    "sv_pct": 0.875,
+    "gp": 2,
+    "sv_pct": 0.887,
     "gaa": 3.06
    },
    "away": {
@@ -2176,25 +2376,26 @@
     "sv_pct": null,
     "gaa": null
    },
-   "last_start_date": "20260929",
+   "last_start_date": "20261003",
    "log": [
-    "20260929 vs MTL 21/24 L"
+    "20260929 vs MTL 21/24 L",
+    "20261003 vs OTT 26/29 L"
    ]
   },
   "8482487": {
    "name": "J. Dobes",
    "team": "MTL",
-   "gp": 1,
-   "sv_pct": 0.929,
-   "gaa": 2.01,
-   "starts": 1,
+   "gp": 2,
+   "sv_pct": 0.862,
+   "gaa": 4.04,
+   "starts": 2,
    "w": 1,
    "l": 0,
-   "o": 0,
+   "o": 1,
    "last5_starts": {
-    "gp": 1,
-    "sv_pct": 0.929,
-    "gaa": 2.01
+    "gp": 2,
+    "sv_pct": 0.862,
+    "gaa": 4.04
    },
    "home": {
     "gp": 0,
@@ -2202,13 +2403,14 @@
     "gaa": null
    },
    "away": {
-    "gp": 1,
-    "sv_pct": 0.929,
-    "gaa": 2.01
+    "gp": 2,
+    "sv_pct": 0.862,
+    "gaa": 4.04
    },
-   "last_start_date": "20260929",
+   "last_start_date": "20261003",
    "log": [
-    "20260929 @ TOR 26/28 W"
+    "20260929 @ TOR 26/28 W",
+    "20261003 @ PIT 24/30 O"
    ]
   },
   "8480280": {
@@ -2368,17 +2570,17 @@
   "8481519": {
    "name": "S. Knight",
    "team": "CHI",
-   "gp": 1,
-   "sv_pct": 0.889,
-   "gaa": 4.01,
-   "starts": 1,
+   "gp": 2,
+   "sv_pct": 0.875,
+   "gaa": 4.04,
+   "starts": 2,
    "w": 0,
-   "l": 1,
+   "l": 2,
    "o": 0,
    "last5_starts": {
-    "gp": 1,
-    "sv_pct": 0.889,
-    "gaa": 4.01
+    "gp": 2,
+    "sv_pct": 0.875,
+    "gaa": 4.04
    },
    "home": {
     "gp": 0,
@@ -2386,13 +2588,14 @@
     "gaa": null
    },
    "away": {
-    "gp": 1,
-    "sv_pct": 0.889,
-    "gaa": 4.01
+    "gp": 2,
+    "sv_pct": 0.875,
+    "gaa": 4.04
    },
-   "last_start_date": "20260929",
+   "last_start_date": "20261003",
    "log": [
-    "20260929 @ VGK 32/36 L"
+    "20260929 @ VGK 32/36 L",
+    "20261003 @ BUF 24/28 L"
    ]
   },
   "8478435": {
@@ -2428,31 +2631,32 @@
   "8481668": {
    "name": "A. Silovs",
    "team": "PIT",
-   "gp": 1,
-   "sv_pct": 1.0,
-   "gaa": 0.0,
-   "starts": 1,
-   "w": 1,
+   "gp": 2,
+   "sv_pct": 0.886,
+   "gaa": 2.47,
+   "starts": 2,
+   "w": 2,
    "l": 0,
    "o": 0,
    "last5_starts": {
-    "gp": 1,
-    "sv_pct": 1.0,
-    "gaa": 0.0
+    "gp": 2,
+    "sv_pct": 0.886,
+    "gaa": 2.47
    },
    "home": {
-    "gp": 0,
-    "sv_pct": null,
-    "gaa": null
+    "gp": 1,
+    "sv_pct": 0.8,
+    "gaa": 4.87
    },
    "away": {
     "gp": 1,
     "sv_pct": 1.0,
     "gaa": 0.0
    },
-   "last_start_date": "20260930",
+   "last_start_date": "20261003",
    "log": [
-    "20260930 @ PHI 19/19 W"
+    "20260930 @ PHI 19/19 W",
+    "20261003 vs MTL 20/25 W"
    ]
   },
   "8476932": {
@@ -2488,61 +2692,63 @@
   "8478009": {
    "name": "I. Sorokin",
    "team": "NYI",
-   "gp": 1,
-   "sv_pct": 0.923,
-   "gaa": 2.07,
-   "starts": 1,
-   "w": 0,
+   "gp": 2,
+   "sv_pct": 0.968,
+   "gaa": 1.02,
+   "starts": 2,
+   "w": 1,
    "l": 1,
    "o": 0,
    "last5_starts": {
-    "gp": 1,
-    "sv_pct": 0.923,
-    "gaa": 2.07
+    "gp": 2,
+    "sv_pct": 0.968,
+    "gaa": 1.02
    },
    "home": {
-    "gp": 0,
-    "sv_pct": null,
-    "gaa": null
+    "gp": 1,
+    "sv_pct": 1.0,
+    "gaa": 0.0
    },
    "away": {
     "gp": 1,
     "sv_pct": 0.923,
     "gaa": 2.07
    },
-   "last_start_date": "20260930",
+   "last_start_date": "20261003",
    "log": [
-    "20260930 @ TOR 24/26 L"
+    "20260930 @ TOR 24/26 L",
+    "20261003 vs NJD 37/37 W"
    ]
   },
   "8478406": {
    "name": "M. Blackwood",
    "team": "COL",
-   "gp": 1,
-   "sv_pct": 0.871,
-   "gaa": 4.0,
-   "starts": 1,
-   "w": 1,
+   "gp": 2,
+   "sv_pct": 0.912,
+   "gaa": 2.5,
+   "starts": 2,
+   "w": 2,
    "l": 0,
    "o": 0,
    "last5_starts": {
-    "gp": 1,
-    "sv_pct": 0.871,
-    "gaa": 4.0
+    "gp": 2,
+    "sv_pct": 0.912,
+    "gaa": 2.5
    },
    "home": {
-    "gp": 1,
-    "sv_pct": 0.871,
-    "gaa": 4.0
+    "gp": 2,
+    "sv_pct": 0.912,
+    "gaa": 2.5
    },
    "away": {
     "gp": 0,
     "sv_pct": null,
     "gaa": null
    },
-   "last_start_date": "20260930",
+   "last_start_date": "20261003",
    "log": [
-    "20260930 vs LAK 27/31 W"
+    "20260930 vs LAK 27/31 W",
+    "20261003 vs STL 25/26 W"
    ]
   },
   "8475311": {
@@ -2608,181 +2814,187 @@
   "8479361": {
    "name": "J. Woll",
    "team": "PHI",
-   "gp": 1,
-   "sv_pct": 0.932,
+   "gp": 2,
+   "sv_pct": 0.929,
    "gaa": 2.87,
-   "starts": 1,
+   "starts": 2,
    "w": 0,
    "l": 0,
-   "o": 1,
+   "o": 2,
    "last5_starts": {
-    "gp": 1,
-    "sv_pct": 0.932,
+    "gp": 2,
+    "sv_pct": 0.929,
     "gaa": 2.87
    },
    "home": {
-    "gp": 0,
-    "sv_pct": null,
-    "gaa": null
+    "gp": 1,
+    "sv_pct": 0.925,
+    "gaa": 2.87
    },
    "away": {
     "gp": 1,
     "sv_pct": 0.932,
     "gaa": 2.87
    },
-   "last_start_date": "20261001",
+   "last_start_date": "20261003",
    "log": [
-    "20261001 @ NJD 41/44 O"
+    "20261001 @ NJD 41/44 O",
+    "20261003 vs CAR 37/40 O"
    ]
   },
   "8476883": {
    "name": "A. Vasilevskiy",
    "team": "TBL",
-   "gp": 1,
-   "sv_pct": 0.833,
-   "gaa": 4.3,
-   "starts": 1,
-   "w": 0,
+   "gp": 2,
+   "sv_pct": 0.889,
+   "gaa": 2.59,
+   "starts": 2,
+   "w": 1,
    "l": 1,
    "o": 0,
    "last5_starts": {
-    "gp": 1,
-    "sv_pct": 0.833,
-    "gaa": 4.3
+    "gp": 2,
+    "sv_pct": 0.889,
+    "gaa": 2.59
    },
    "home": {
-    "gp": 0,
-    "sv_pct": null,
-    "gaa": null
+    "gp": 1,
+    "sv_pct": 0.952,
+    "gaa": 1.0
    },
    "away": {
     "gp": 1,
     "sv_pct": 0.833,
     "gaa": 4.3
    },
-   "last_start_date": "20261001",
+   "last_start_date": "20261003",
    "log": [
-    "20261001 @ NYR 20/24 L"
+    "20261001 @ NYR 20/24 L",
+    "20261003 vs WSH 20/21 W"
    ]
   },
   "8482982": {
    "name": "J. Greaves",
    "team": "CBJ",
-   "gp": 1,
-   "sv_pct": 0.885,
-   "gaa": 3.0,
-   "starts": 1,
+   "gp": 2,
+   "sv_pct": 0.877,
+   "gaa": 3.5,
+   "starts": 2,
    "w": 1,
-   "l": 0,
+   "l": 1,
    "o": 0,
    "last5_starts": {
-    "gp": 1,
-    "sv_pct": 0.885,
-    "gaa": 3.0
+    "gp": 2,
+    "sv_pct": 0.877,
+    "gaa": 3.5
    },
    "home": {
-    "gp": 1,
-    "sv_pct": 0.885,
-    "gaa": 3.0
+    "gp": 2,
+    "sv_pct": 0.877,
+    "gaa": 3.5
    },
    "away": {
     "gp": 0,
     "sv_pct": null,
     "gaa": null
    },
-   "last_start_date": "20261001",
+   "last_start_date": "20261003",
    "log": [
-    "20261001 vs BUF 23/26 W"
+    "20261001 vs BUF 23/26 W",
+    "20261003 vs UTA 27/31 L"
    ]
   },
   "8480045": {
    "name": "U. Luukkonen",
    "team": "BUF",
-   "gp": 1,
-   "sv_pct": 0.773,
-   "gaa": 5.07,
-   "starts": 1,
-   "w": 0,
+   "gp": 2,
+   "sv_pct": 0.784,
+   "gaa": 4.03,
+   "starts": 2,
+   "w": 1,
    "l": 1,
    "o": 0,
    "last5_starts": {
-    "gp": 1,
-    "sv_pct": 0.773,
-    "gaa": 5.07
+    "gp": 2,
+    "sv_pct": 0.784,
+    "gaa": 4.03
    },
    "home": {
-    "gp": 0,
-    "sv_pct": null,
-    "gaa": null
+    "gp": 1,
+    "sv_pct": 0.8,
+    "gaa": 3.0
    },
    "away": {
     "gp": 1,
     "sv_pct": 0.773,
     "gaa": 5.07
    },
-   "last_start_date": "20261001",
+   "last_start_date": "20261003",
    "log": [
-    "20261001 @ CBJ 17/22 L"
+    "20261001 @ CBJ 17/22 L",
+    "20261003 vs CHI 12/15 W"
    ]
   },
   "8477424": {
    "name": "J. Saros",
    "team": "NSH",
-   "gp": 1,
-   "sv_pct": 0.9,
-   "gaa": 3.09,
-   "starts": 1,
-   "w": 0,
+   "gp": 2,
+   "sv_pct": 0.933,
+   "gaa": 2.03,
+   "starts": 2,
+   "w": 1,
    "l": 1,
    "o": 0,
    "last5_starts": {
-    "gp": 1,
-    "sv_pct": 0.9,
-    "gaa": 3.09
+    "gp": 2,
+    "sv_pct": 0.933,
+    "gaa": 2.03
    },
    "home": {
-    "gp": 1,
-    "sv_pct": 0.9,
-    "gaa": 3.09
+    "gp": 2,
+    "sv_pct": 0.933,
+    "gaa": 2.03
    },
    "away": {
     "gp": 0,
     "sv_pct": null,
     "gaa": null
    },
-   "last_start_date": "20261001",
+   "last_start_date": "20261003",
    "log": [
-    "20261001 vs MIN 27/30 L"
+    "20261001 vs MIN 27/30 L",
+    "20261003 vs DAL 29/30 W"
    ]
   },
   "8482661": {
    "name": "J. Wallstedt",
    "team": "MIN",
-   "gp": 1,
-   "sv_pct": 0.95,
+   "gp": 2,
+   "sv_pct": 0.957,
    "gaa": 1.01,
-   "starts": 1,
-   "w": 1,
+   "starts": 2,
+   "w": 2,
    "l": 0,
    "o": 0,
    "last5_starts": {
-    "gp": 1,
-    "sv_pct": 0.95,
+    "gp": 2,
+    "sv_pct": 0.957,
     "gaa": 1.01
    },
    "home": {
-    "gp": 0,
-    "sv_pct": null,
-    "gaa": null
+    "gp": 1,
+    "sv_pct": 0.963,
+    "gaa": 1.0
    },
    "away": {
     "gp": 1,
     "sv_pct": 0.95,
     "gaa": 1.01
    },
-   "last_start_date": "20261001",
+   "last_start_date": "20261003",
    "log": [
-    "20261001 @ NSH 19/20 W"
+    "20261001 @ NSH 19/20 W",
+    "20261003 vs BOS 26/27 W"
    ]
   },
   "8481692": {
@@ -2908,91 +3120,94 @@
   "8482447": {
    "name": "L. Meriläinen",
    "team": "VAN",
-   "gp": 1,
-   "sv_pct": 0.909,
-   "gaa": 1.96,
-   "starts": 0,
-   "w": 0,
+   "gp": 2,
+   "sv_pct": 0.943,
+   "gaa": 1.32,
+   "starts": 1,
+   "w": 1,
    "l": 0,
    "o": 0,
    "last5_starts": {
-    "gp": 0,
-    "sv_pct": null,
-    "gaa": null
+    "gp": 1,
+    "sv_pct": 0.958,
+    "gaa": 1.0
    },
    "home": {
-    "gp": 1,
-    "sv_pct": 0.909,
-    "gaa": 1.96
+    "gp": 2,
+    "sv_pct": 0.943,
+    "gaa": 1.32
    },
    "away": {
     "gp": 0,
     "sv_pct": null,
     "gaa": null
    },
-   "last_start_date": null,
+   "last_start_date": "20261003",
    "log": [
-    "20261001 vs EDM 10/11 "
+    "20261001 vs EDM 10/11 ",
+    "20261003 vs CGY 23/24 W"
    ]
   },
   "8482221": {
    "name": "D. Levi",
    "team": "EDM",
-   "gp": 1,
-   "sv_pct": 0.682,
-   "gaa": 7.02,
-   "starts": 1,
-   "w": 1,
+   "gp": 2,
+   "sv_pct": 0.81,
+   "gaa": 4.02,
+   "starts": 2,
+   "w": 2,
    "l": 0,
    "o": 0,
    "last5_starts": {
-    "gp": 1,
-    "sv_pct": 0.682,
-    "gaa": 7.02
+    "gp": 2,
+    "sv_pct": 0.81,
+    "gaa": 4.02
    },
    "home": {
-    "gp": 0,
-    "sv_pct": null,
-    "gaa": null
+    "gp": 1,
+    "sv_pct": 0.95,
+    "gaa": 1.01
    },
    "away": {
     "gp": 1,
     "sv_pct": 0.682,
     "gaa": 7.02
    },
-   "last_start_date": "20261001",
+   "last_start_date": "20261003",
    "log": [
-    "20261001 @ VAN 15/22 W"
+    "20261001 @ VAN 15/22 W",
+    "20261003 vs SEA 19/20 W"
    ]
   },
   "8482137": {
    "name": "Y. Askarov",
    "team": "SJS",
-   "gp": 1,
+   "gp": 2,
    "sv_pct": 0.885,
-   "gaa": 2.85,
-   "starts": 1,
-   "w": 1,
+   "gaa": 3.32,
+   "starts": 2,
+   "w": 2,
    "l": 0,
    "o": 0,
    "last5_starts": {
-    "gp": 1,
+    "gp": 2,
     "sv_pct": 0.885,
-    "gaa": 2.85
+    "gaa": 3.32
    },
    "home": {
-    "gp": 1,
+    "gp": 2,
     "sv_pct": 0.885,
-    "gaa": 2.85
+    "gaa": 3.32
    },
    "away": {
     "gp": 0,
     "sv_pct": null,
     "gaa": null
    },
-   "last_start_date": "20261001",
+   "last_start_date": "20261003",
    "log": [
-    "20261001 vs FLA 23/26 W"
+    "20261001 vs FLA 23/26 W",
+    "20261003 vs LAK 31/35 W"
    ]
   },
   "8481033": {
@@ -3234,63 +3449,393 @@
    "log": [
     "20261002 @ VGK 27/30 W"
    ]
+  },
+  "8476999": {
+   "name": "L. Ullmark",
+   "team": "OTT",
+   "gp": 1,
+   "sv_pct": 0.931,
+   "gaa": 2.0,
+   "starts": 1,
+   "w": 1,
+   "l": 0,
+   "o": 0,
+   "last5_starts": {
+    "gp": 1,
+    "sv_pct": 0.931,
+    "gaa": 2.0
+   },
+   "home": {
+    "gp": 0,
+    "sv_pct": null,
+    "gaa": null
+   },
+   "away": {
+    "gp": 1,
+    "sv_pct": 0.931,
+    "gaa": 2.0
+   },
+   "last_start_date": "20261003",
+   "log": [
+    "20261003 @ TOR 27/29 W"
+   ]
+  },
+  "8479292": {
+   "name": "C. Lindgren",
+   "team": "WSH",
+   "gp": 1,
+   "sv_pct": 0.931,
+   "gaa": 2.08,
+   "starts": 1,
+   "w": 0,
+   "l": 1,
+   "o": 0,
+   "last5_starts": {
+    "gp": 1,
+    "sv_pct": 0.931,
+    "gaa": 2.08
+   },
+   "home": {
+    "gp": 0,
+    "sv_pct": null,
+    "gaa": null
+   },
+   "away": {
+    "gp": 1,
+    "sv_pct": 0.931,
+    "gaa": 2.08
+   },
+   "last_start_date": "20261003",
+   "log": [
+    "20261003 @ TBL 27/29 L"
+   ]
+  },
+  "8481611": {
+   "name": "P. Kochetkov",
+   "team": "CAR",
+   "gp": 1,
+   "sv_pct": 0.889,
+   "gaa": 1.91,
+   "starts": 1,
+   "w": 1,
+   "l": 0,
+   "o": 0,
+   "last5_starts": {
+    "gp": 1,
+    "sv_pct": 0.889,
+    "gaa": 1.91
+   },
+   "home": {
+    "gp": 0,
+    "sv_pct": null,
+    "gaa": null
+   },
+   "away": {
+    "gp": 1,
+    "sv_pct": 0.889,
+    "gaa": 1.91
+   },
+   "last_start_date": "20261003",
+   "log": [
+    "20261003 @ PHI 16/18 W"
+   ]
+  },
+  "8482657": {
+   "name": "S. Cossa",
+   "team": "UTA",
+   "gp": 1,
+   "sv_pct": 0.944,
+   "gaa": 1.0,
+   "starts": 1,
+   "w": 1,
+   "l": 0,
+   "o": 0,
+   "last5_starts": {
+    "gp": 1,
+    "sv_pct": 0.944,
+    "gaa": 1.0
+   },
+   "home": {
+    "gp": 0,
+    "sv_pct": null,
+    "gaa": null
+   },
+   "away": {
+    "gp": 1,
+    "sv_pct": 0.944,
+    "gaa": 1.0
+   },
+   "last_start_date": "20261003",
+   "log": [
+    "20261003 @ CBJ 17/18 W"
+   ]
+  },
+  "8475831": {
+   "name": "P. Grubauer",
+   "team": "SEA",
+   "gp": 1,
+   "sv_pct": 0.917,
+   "gaa": 2.03,
+   "starts": 1,
+   "w": 0,
+   "l": 1,
+   "o": 0,
+   "last5_starts": {
+    "gp": 1,
+    "sv_pct": 0.917,
+    "gaa": 2.03
+   },
+   "home": {
+    "gp": 0,
+    "sv_pct": null,
+    "gaa": null
+   },
+   "away": {
+    "gp": 1,
+    "sv_pct": 0.917,
+    "gaa": 2.03
+   },
+   "last_start_date": "20261003",
+   "log": [
+    "20261003 @ EDM 22/24 L"
+   ]
+  },
+  "8482076": {
+   "name": "N. Daws",
+   "team": "NJD",
+   "gp": 1,
+   "sv_pct": 0.812,
+   "gaa": 6.01,
+   "starts": 1,
+   "w": 0,
+   "l": 1,
+   "o": 0,
+   "last5_starts": {
+    "gp": 1,
+    "sv_pct": 0.812,
+    "gaa": 6.01
+   },
+   "home": {
+    "gp": 0,
+    "sv_pct": null,
+    "gaa": null
+   },
+   "away": {
+    "gp": 1,
+    "sv_pct": 0.812,
+    "gaa": 6.01
+   },
+   "last_start_date": "20261003",
+   "log": [
+    "20261003 @ NYI 26/32 L"
+   ]
+  },
+  "8479193": {
+   "name": "C. DeSmith",
+   "team": "DAL",
+   "gp": 1,
+   "sv_pct": 0.923,
+   "gaa": 2.05,
+   "starts": 1,
+   "w": 0,
+   "l": 1,
+   "o": 0,
+   "last5_starts": {
+    "gp": 1,
+    "sv_pct": 0.923,
+    "gaa": 2.05
+   },
+   "home": {
+    "gp": 0,
+    "sv_pct": null,
+    "gaa": null
+   },
+   "away": {
+    "gp": 1,
+    "sv_pct": 0.923,
+    "gaa": 2.05
+   },
+   "last_start_date": "20261003",
+   "log": [
+    "20261003 @ NSH 24/26 L"
+   ]
+  },
+  "8480022": {
+   "name": "M. DiPietro",
+   "team": "BOS",
+   "gp": 1,
+   "sv_pct": 0.897,
+   "gaa": 3.11,
+   "starts": 1,
+   "w": 0,
+   "l": 1,
+   "o": 0,
+   "last5_starts": {
+    "gp": 1,
+    "sv_pct": 0.897,
+    "gaa": 3.11
+   },
+   "home": {
+    "gp": 0,
+    "sv_pct": null,
+    "gaa": null
+   },
+   "away": {
+    "gp": 1,
+    "sv_pct": 0.897,
+    "gaa": 3.11
+   },
+   "last_start_date": "20261003",
+   "log": [
+    "20261003 @ MIN 26/29 L"
+   ]
+  },
+  "8476412": {
+   "name": "J. Binnington",
+   "team": "STL",
+   "gp": 1,
+   "sv_pct": 0.833,
+   "gaa": 6.0,
+   "starts": 1,
+   "w": 0,
+   "l": 1,
+   "o": 0,
+   "last5_starts": {
+    "gp": 1,
+    "sv_pct": 0.833,
+    "gaa": 6.0
+   },
+   "home": {
+    "gp": 0,
+    "sv_pct": null,
+    "gaa": null
+   },
+   "away": {
+    "gp": 1,
+    "sv_pct": 0.833,
+    "gaa": 6.0
+   },
+   "last_start_date": "20261003",
+   "log": [
+    "20261003 @ COL 30/36 L"
+   ]
+  },
+  "8482445": {
+   "name": "D. Cooley",
+   "team": "CGY",
+   "gp": 1,
+   "sv_pct": 0.88,
+   "gaa": 3.01,
+   "starts": 1,
+   "w": 0,
+   "l": 1,
+   "o": 0,
+   "last5_starts": {
+    "gp": 1,
+    "sv_pct": 0.88,
+    "gaa": 3.01
+   },
+   "home": {
+    "gp": 0,
+    "sv_pct": null,
+    "gaa": null
+   },
+   "away": {
+    "gp": 1,
+    "sv_pct": 0.88,
+    "gaa": 3.01
+   },
+   "last_start_date": "20261003",
+   "log": [
+    "20261003 @ VAN 22/25 L"
+   ]
+  },
+  "8476341": {
+   "name": "A. Forsberg",
+   "team": "LAK",
+   "gp": 1,
+   "sv_pct": 0.8,
+   "gaa": 4.77,
+   "starts": 1,
+   "w": 0,
+   "l": 0,
+   "o": 1,
+   "last5_starts": {
+    "gp": 1,
+    "sv_pct": 0.8,
+    "gaa": 4.77
+   },
+   "home": {
+    "gp": 0,
+    "sv_pct": null,
+    "gaa": null
+   },
+   "away": {
+    "gp": 1,
+    "sv_pct": 0.8,
+    "gaa": 4.77
+   },
+   "last_start_date": "20261003",
+   "log": [
+    "20261003 @ SJS 20/25 O"
+   ]
   }
  },
  "leaders": {
   "CAR": [
    {
-    "gp": 2,
+    "gp": 3,
+    "g": 3,
+    "a": 1,
+    "pts": 4,
+    "name": "S. Aho",
+    "pos": "C",
+    "toi_pg": 20.0
+   },
+   {
+    "gp": 3,
+    "g": 0,
+    "a": 3,
+    "pts": 3,
+    "name": "A. Svechnikov",
+    "pos": "R",
+    "toi_pg": 18.0
+   },
+   {
+    "gp": 3,
+    "g": 0,
+    "a": 2,
+    "pts": 2,
+    "name": "J. Blake",
+    "pos": "R",
+    "toi_pg": 19.9
+   },
+   {
+    "gp": 3,
+    "g": 0,
+    "a": 2,
+    "pts": 2,
+    "name": "W. Carrier",
+    "pos": "L",
+    "toi_pg": 10.4
+   },
+   {
+    "gp": 3,
     "g": 0,
     "a": 1,
     "pts": 1,
     "name": "K. Miller",
     "pos": "D",
-    "toi_pg": 23.7
+    "toi_pg": 23.6
    },
    {
-    "gp": 2,
-    "g": 0,
-    "a": 1,
-    "pts": 1,
-    "name": "J. Blake",
-    "pos": "R",
-    "toi_pg": 20.5
-   },
-   {
-    "gp": 2,
+    "gp": 3,
     "g": 1,
     "a": 0,
     "pts": 1,
-    "name": "L. Stankoven",
-    "pos": "C",
-    "toi_pg": 20.1
-   },
-   {
-    "gp": 2,
-    "g": 1,
-    "a": 0,
-    "pts": 1,
-    "name": "S. Aho",
-    "pos": "C",
-    "toi_pg": 19.8
-   },
-   {
-    "gp": 2,
-    "g": 0,
-    "a": 1,
-    "pts": 1,
-    "name": "A. Svechnikov",
-    "pos": "R",
-    "toi_pg": 18.1
-   },
-   {
-    "gp": 2,
-    "g": 0,
-    "a": 1,
-    "pts": 1,
-    "name": "W. Carrier",
-    "pos": "L",
-    "toi_pg": 9.1
+    "name": "S. Gostisbehere",
+    "pos": "D",
+    "toi_pg": 19.2
    }
   ],
   "FLA": [
@@ -3351,170 +3896,170 @@
   ],
   "TOR": [
    {
-    "gp": 2,
+    "gp": 3,
+    "g": 0,
+    "a": 3,
+    "pts": 3,
+    "name": "M. Rielly",
+    "pos": "D",
+    "toi_pg": 19.9
+   },
+   {
+    "gp": 3,
+    "g": 2,
+    "a": 1,
+    "pts": 3,
+    "name": "W. Nylander",
+    "pos": "R",
+    "toi_pg": 19.3
+   },
+   {
+    "gp": 3,
     "g": 1,
     "a": 2,
     "pts": 3,
     "name": "E. Cowan",
     "pos": "R",
-    "toi_pg": 14.7
+    "toi_pg": 13.8
+   },
+   {
+    "gp": 3,
+    "g": 1,
+    "a": 1,
+    "pts": 2,
+    "name": "K. Marchenko",
+    "pos": "R",
+    "toi_pg": 19.3
+   },
+   {
+    "gp": 3,
+    "g": 0,
+    "a": 2,
+    "pts": 2,
+    "name": "J. Tavares",
+    "pos": "C",
+    "toi_pg": 17.2
+   },
+   {
+    "gp": 3,
+    "g": 0,
+    "a": 1,
+    "pts": 1,
+    "name": "D. Raddysh",
+    "pos": "D",
+    "toi_pg": 22.4
+   }
+  ],
+  "MTL": [
+   {
+    "gp": 2,
+    "g": 1,
+    "a": 3,
+    "pts": 4,
+    "name": "N. Suzuki",
+    "pos": "C",
+    "toi_pg": 20.7
    },
    {
     "gp": 2,
     "g": 0,
-    "a": 2,
-    "pts": 2,
-    "name": "M. Rielly",
+    "a": 3,
+    "pts": 3,
+    "name": "L. Hutson",
     "pos": "D",
-    "toi_pg": 20.7
+    "toi_pg": 26.6
    },
    {
     "gp": 2,
     "g": 2,
     "a": 0,
     "pts": 2,
-    "name": "W. Nylander",
+    "name": "C. Caufield",
     "pos": "R",
-    "toi_pg": 18.2
+    "toi_pg": 19.4
    },
    {
     "gp": 2,
-    "g": 0,
+    "g": 1,
     "a": 1,
-    "pts": 1,
-    "name": "K. Marchenko",
+    "pts": 2,
+    "name": "I. Demidov",
     "pos": "R",
-    "toi_pg": 19.2
+    "toi_pg": 15.6
    },
    {
     "gp": 2,
-    "g": 0,
-    "a": 1,
-    "pts": 1,
-    "name": "J. Tavares",
-    "pos": "C",
-    "toi_pg": 16.8
-   },
-   {
-    "gp": 2,
-    "g": 0,
-    "a": 1,
-    "pts": 1,
-    "name": "J. Roslovic",
-    "pos": "C",
-    "toi_pg": 16.6
-   }
-  ],
-  "MTL": [
-   {
-    "gp": 1,
     "g": 1,
     "a": 1,
     "pts": 2,
     "name": "A. Carrier",
     "pos": "D",
-    "toi_pg": 21.9
+    "toi_pg": 15.2
    },
    {
-    "gp": 1,
+    "gp": 2,
     "g": 1,
     "a": 1,
     "pts": 2,
-    "name": "J. Anderson",
-    "pos": "R",
-    "toi_pg": 12.9
-   },
-   {
-    "gp": 1,
-    "g": 0,
-    "a": 1,
-    "pts": 1,
-    "name": "M. Matheson",
-    "pos": "D",
-    "toi_pg": 25.1
-   },
-   {
-    "gp": 1,
-    "g": 1,
-    "a": 0,
-    "pts": 1,
-    "name": "Z. Bolduc",
-    "pos": "R",
-    "toi_pg": 11.1
-   },
-   {
-    "gp": 1,
-    "g": 0,
-    "a": 1,
-    "pts": 1,
-    "name": "K. Dach",
-    "pos": "C",
-    "toi_pg": 11.1
-   },
-   {
-    "gp": 1,
-    "g": 0,
-    "a": 0,
-    "pts": 0,
-    "name": "L. Hutson",
-    "pos": "D",
-    "toi_pg": 24.1
+    "name": "C. Kreider",
+    "pos": "L",
+    "toi_pg": 14.6
    }
   ],
   "BOS": [
    {
-    "gp": 2,
-    "g": 0,
+    "gp": 3,
+    "g": 1,
     "a": 2,
-    "pts": 2,
-    "name": "N. Zadorov",
-    "pos": "D",
-    "toi_pg": 21.4
+    "pts": 3,
+    "name": "M. Kastelic",
+    "pos": "C",
+    "toi_pg": 11.1
    },
    {
-    "gp": 2,
+    "gp": 3,
     "g": 0,
     "a": 2,
     "pts": 2,
     "name": "M. Lohrei",
     "pos": "D",
-    "toi_pg": 20.6
+    "toi_pg": 20.7
    },
    {
-    "gp": 2,
+    "gp": 3,
     "g": 1,
     "a": 1,
     "pts": 2,
     "name": "H. Lindholm",
     "pos": "D",
-    "toi_pg": 20.2
+    "toi_pg": 20.7
    },
    {
-    "gp": 2,
+    "gp": 3,
     "g": 0,
     "a": 2,
     "pts": 2,
     "name": "D. Pastrnak",
     "pos": "R",
-    "toi_pg": 19.8
+    "toi_pg": 20.2
    },
    {
-    "gp": 2,
+    "gp": 3,
+    "g": 0,
+    "a": 2,
+    "pts": 2,
+    "name": "N. Zadorov",
+    "pos": "D",
+    "toi_pg": 19.5
+   },
+   {
+    "gp": 3,
     "g": 2,
     "a": 0,
     "pts": 2,
     "name": "J. Peterka",
     "pos": "R",
-    "toi_pg": 18.6
-   },
-   {
-    "gp": 2,
-    "g": 1,
-    "a": 1,
-    "pts": 2,
-    "name": "E. Lindholm",
-    "pos": "C",
-    "toi_pg": 15.9
+    "toi_pg": 19.3
    }
   ],
   "NYR": [
@@ -3575,114 +4120,114 @@
   ],
   "EDM": [
    {
-    "gp": 2,
+    "gp": 3,
+    "g": 2,
+    "a": 7,
+    "pts": 9,
+    "name": "C. McDavid",
+    "pos": "C",
+    "toi_pg": 23.7
+   },
+   {
+    "gp": 3,
     "g": 4,
     "a": 4,
     "pts": 8,
     "name": "E. Bouchard",
     "pos": "D",
-    "toi_pg": 25.0
+    "toi_pg": 25.7
    },
    {
-    "gp": 2,
-    "g": 1,
-    "a": 6,
-    "pts": 7,
-    "name": "C. McDavid",
-    "pos": "C",
-    "toi_pg": 22.5
-   },
-   {
-    "gp": 2,
-    "g": 2,
+    "gp": 3,
+    "g": 3,
     "a": 2,
-    "pts": 4,
+    "pts": 5,
     "name": "L. Draisaitl",
     "pos": "C",
-    "toi_pg": 20.8
+    "toi_pg": 21.9
    },
    {
-    "gp": 2,
+    "gp": 3,
     "g": 3,
-    "a": 1,
-    "pts": 4,
+    "a": 2,
+    "pts": 5,
     "name": "V. Podkolzin",
     "pos": "R",
-    "toi_pg": 18.2
+    "toi_pg": 18.9
    },
    {
-    "gp": 2,
+    "gp": 3,
     "g": 1,
-    "a": 1,
-    "pts": 2,
+    "a": 2,
+    "pts": 3,
     "name": "R. Shea",
     "pos": "D",
-    "toi_pg": 22.9
+    "toi_pg": 22.4
    },
    {
-    "gp": 2,
+    "gp": 3,
     "g": 1,
     "a": 1,
     "pts": 2,
     "name": "K. Kapanen",
     "pos": "R",
-    "toi_pg": 18.4
+    "toi_pg": 18.2
    }
   ],
   "VAN": [
    {
-    "gp": 2,
-    "g": 0,
-    "a": 4,
-    "pts": 4,
-    "name": "F. Hronek",
-    "pos": "D",
-    "toi_pg": 24.1
-   },
-   {
-    "gp": 2,
+    "gp": 3,
     "g": 2,
-    "a": 2,
-    "pts": 4,
+    "a": 3,
+    "pts": 5,
     "name": "E. Pettersson",
     "pos": "C",
-    "toi_pg": 18.5
+    "toi_pg": 19.8
    },
    {
-    "gp": 2,
+    "gp": 3,
     "g": 3,
-    "a": 1,
-    "pts": 4,
-    "name": "M. Rossi",
-    "pos": "C",
-    "toi_pg": 15.1
-   },
-   {
-    "gp": 2,
-    "g": 3,
-    "a": 1,
-    "pts": 4,
+    "a": 2,
+    "pts": 5,
     "name": "P. Cotter",
     "pos": "L",
     "toi_pg": 14.0
    },
    {
-    "gp": 2,
+    "gp": 3,
+    "g": 0,
+    "a": 4,
+    "pts": 4,
+    "name": "F. Hronek",
+    "pos": "D",
+    "toi_pg": 25.7
+   },
+   {
+    "gp": 3,
+    "g": 1,
+    "a": 3,
+    "pts": 4,
+    "name": "L. Ohgren",
+    "pos": "L",
+    "toi_pg": 17.8
+   },
+   {
+    "gp": 3,
+    "g": 3,
+    "a": 1,
+    "pts": 4,
+    "name": "M. Rossi",
+    "pos": "C",
+    "toi_pg": 16.8
+   },
+   {
+    "gp": 3,
     "g": 1,
     "a": 2,
     "pts": 3,
     "name": "J. Oleksiak",
     "pos": "D",
-    "toi_pg": 22.5
-   },
-   {
-    "gp": 2,
-    "g": 1,
-    "a": 2,
-    "pts": 3,
-    "name": "B. Boeser",
-    "pos": "R",
-    "toi_pg": 16.7
+    "toi_pg": 20.9
    }
   ],
   "VGK": [
@@ -3743,67 +4288,356 @@
   ],
   "CHI": [
    {
-    "gp": 2,
-    "g": 1,
-    "a": 0,
-    "pts": 1,
-    "name": "P. Kane",
-    "pos": "R",
-    "toi_pg": 20.5
+    "gp": 3,
+    "g": 0,
+    "a": 2,
+    "pts": 2,
+    "name": "A. Vlasic",
+    "pos": "D",
+    "toi_pg": 20.3
    },
    {
-    "gp": 2,
+    "gp": 3,
+    "g": 0,
+    "a": 2,
+    "pts": 2,
+    "name": "A. Frondell",
+    "pos": "C",
+    "toi_pg": 17.3
+   },
+   {
+    "gp": 3,
     "g": 0,
     "a": 1,
     "pts": 1,
     "name": "W. Kaiser",
     "pos": "D",
-    "toi_pg": 20.2
+    "toi_pg": 21.1
    },
    {
-    "gp": 2,
+    "gp": 3,
+    "g": 1,
+    "a": 0,
+    "pts": 1,
+    "name": "P. Kane",
+    "pos": "R",
+    "toi_pg": 20.0
+   },
+   {
+    "gp": 3,
+    "g": 1,
+    "a": 0,
+    "pts": 1,
+    "name": "T. Bertuzzi",
+    "pos": "L",
+    "toi_pg": 17.1
+   },
+   {
+    "gp": 3,
     "g": 0,
     "a": 1,
     "pts": 1,
     "name": "R. Greene",
     "pos": "C",
-    "toi_pg": 15.9
+    "toi_pg": 15.8
+   }
+  ],
+  "PHI": [
+   {
+    "gp": 3,
+    "g": 1,
+    "a": 1,
+    "pts": 2,
+    "name": "T. Sanheim",
+    "pos": "D",
+    "toi_pg": 24.4
+   },
+   {
+    "gp": 3,
+    "g": 0,
+    "a": 2,
+    "pts": 2,
+    "name": "T. Konecny",
+    "pos": "R",
+    "toi_pg": 16.0
+   },
+   {
+    "gp": 3,
+    "g": 0,
+    "a": 1,
+    "pts": 1,
+    "name": "T. Zegras",
+    "pos": "C",
+    "toi_pg": 18.8
+   },
+   {
+    "gp": 3,
+    "g": 1,
+    "a": 0,
+    "pts": 1,
+    "name": "R. Ristolainen",
+    "pos": "D",
+    "toi_pg": 18.3
+   },
+   {
+    "gp": 3,
+    "g": 0,
+    "a": 1,
+    "pts": 1,
+    "name": "C. Dvorak",
+    "pos": "C",
+    "toi_pg": 16.7
+   },
+   {
+    "gp": 3,
+    "g": 0,
+    "a": 1,
+    "pts": 1,
+    "name": "S. Couturier",
+    "pos": "C",
+    "toi_pg": 16.0
+   }
+  ],
+  "PIT": [
+   {
+    "gp": 2,
+    "g": 2,
+    "a": 2,
+    "pts": 4,
+    "name": "E. Malkin",
+    "pos": "C",
+    "toi_pg": 17.7
+   },
+   {
+    "gp": 2,
+    "g": 2,
+    "a": 2,
+    "pts": 4,
+    "name": "T. Novak",
+    "pos": "C",
+    "toi_pg": 15.4
+   },
+   {
+    "gp": 2,
+    "g": 1,
+    "a": 2,
+    "pts": 3,
+    "name": "S. Girard",
+    "pos": "D",
+    "toi_pg": 21.1
+   },
+   {
+    "gp": 2,
+    "g": 0,
+    "a": 3,
+    "pts": 3,
+    "name": "E. Karlsson",
+    "pos": "D",
+    "toi_pg": 19.8
+   },
+   {
+    "gp": 2,
+    "g": 0,
+    "a": 3,
+    "pts": 3,
+    "name": "K. Letang",
+    "pos": "D",
+    "toi_pg": 19.1
+   },
+   {
+    "gp": 2,
+    "g": 0,
+    "a": 3,
+    "pts": 3,
+    "name": "K. Korczak",
+    "pos": "D",
+    "toi_pg": 18.1
+   }
+  ],
+  "NYI": [
+   {
+    "gp": 2,
+    "g": 0,
+    "a": 2,
+    "pts": 2,
+    "name": "M. Schaefer",
+    "pos": "D",
+    "toi_pg": 24.2
+   },
+   {
+    "gp": 2,
+    "g": 1,
+    "a": 1,
+    "pts": 2,
+    "name": "B. Horvat",
+    "pos": "C",
+    "toi_pg": 20.5
+   },
+   {
+    "gp": 2,
+    "g": 1,
+    "a": 1,
+    "pts": 2,
+    "name": "S. Holmstrom",
+    "pos": "R",
+    "toi_pg": 18.5
+   },
+   {
+    "gp": 2,
+    "g": 0,
+    "a": 2,
+    "pts": 2,
+    "name": "L. Stanley",
+    "pos": "D",
+    "toi_pg": 17.1
+   },
+   {
+    "gp": 2,
+    "g": 1,
+    "a": 1,
+    "pts": 2,
+    "name": "B. Schenn",
+    "pos": "C",
+    "toi_pg": 14.6
+   },
+   {
+    "gp": 2,
+    "g": 1,
+    "a": 1,
+    "pts": 2,
+    "name": "V. Eklund",
+    "pos": "R",
+    "toi_pg": 12.2
+   }
+  ],
+  "COL": [
+   {
+    "gp": 2,
+    "g": 2,
+    "a": 3,
+    "pts": 5,
+    "name": "N. MacKinnon",
+    "pos": "C",
+    "toi_pg": 18.0
+   },
+   {
+    "gp": 2,
+    "g": 3,
+    "a": 1,
+    "pts": 4,
+    "name": "A. Lehkonen",
+    "pos": "L",
+    "toi_pg": 19.4
+   },
+   {
+    "gp": 2,
+    "g": 2,
+    "a": 2,
+    "pts": 4,
+    "name": "M. Necas",
+    "pos": "C",
+    "toi_pg": 19.3
+   },
+   {
+    "gp": 2,
+    "g": 1,
+    "a": 3,
+    "pts": 4,
+    "name": "P. Kelly",
+    "pos": "C",
+    "toi_pg": 14.2
+   },
+   {
+    "gp": 2,
+    "g": 1,
+    "a": 2,
+    "pts": 3,
+    "name": "C. Makar",
+    "pos": "D",
+    "toi_pg": 19.1
+   },
+   {
+    "gp": 2,
+    "g": 1,
+    "a": 2,
+    "pts": 3,
+    "name": "B. Nelson",
+    "pos": "C",
+    "toi_pg": 17.7
+   }
+  ],
+  "LAK": [
+   {
+    "gp": 2,
+    "g": 2,
+    "a": 1,
+    "pts": 3,
+    "name": "A. Panarin",
+    "pos": "L",
+    "toi_pg": 21.3
+   },
+   {
+    "gp": 2,
+    "g": 1,
+    "a": 1,
+    "pts": 2,
+    "name": "Q. Byfield",
+    "pos": "R",
+    "toi_pg": 20.8
+   },
+   {
+    "gp": 2,
+    "g": 1,
+    "a": 1,
+    "pts": 2,
+    "name": "A. Kempe",
+    "pos": "R",
+    "toi_pg": 20.7
+   },
+   {
+    "gp": 2,
+    "g": 0,
+    "a": 2,
+    "pts": 2,
+    "name": "B. Clarke",
+    "pos": "D",
+    "toi_pg": 19.8
+   },
+   {
+    "gp": 2,
+    "g": 0,
+    "a": 2,
+    "pts": 2,
+    "name": "A. Laferriere",
+    "pos": "R",
+    "toi_pg": 16.1
+   },
+   {
+    "gp": 2,
+    "g": 1,
+    "a": 1,
+    "pts": 2,
+    "name": "E. Haula",
+    "pos": "L",
+    "toi_pg": 15.1
+   }
+  ],
+  "NJD": [
+   {
+    "gp": 2,
+    "g": 1,
+    "a": 0,
+    "pts": 1,
+    "name": "J. Hughes",
+    "pos": "C",
+    "toi_pg": 23.4
    },
    {
     "gp": 2,
     "g": 1,
     "a": 0,
     "pts": 1,
-    "name": "J. Greenway",
-    "pos": "L",
-    "toi_pg": 14.0
-   },
-   {
-    "gp": 2,
-    "g": 0,
-    "a": 0,
-    "pts": 0,
-    "name": "B. Byram",
-    "pos": "D",
-    "toi_pg": 25.0
-   },
-   {
-    "gp": 2,
-    "g": 0,
-    "a": 0,
-    "pts": 0,
-    "name": "A. Levshunov",
-    "pos": "D",
-    "toi_pg": 19.5
-   }
-  ],
-  "PHI": [
-   {
-    "gp": 2,
-    "g": 1,
-    "a": 1,
-    "pts": 2,
-    "name": "T. Sanheim",
+    "name": "L. Hughes",
     "pos": "D",
     "toi_pg": 23.0
    },
@@ -3812,625 +4646,363 @@
     "g": 1,
     "a": 0,
     "pts": 1,
-    "name": "R. Ristolainen",
-    "pos": "D",
-    "toi_pg": 20.2
-   },
-   {
-    "gp": 2,
-    "g": 0,
-    "a": 1,
-    "pts": 1,
-    "name": "S. Couturier",
-    "pos": "C",
-    "toi_pg": 16.1
-   },
-   {
-    "gp": 2,
-    "g": 0,
-    "a": 1,
-    "pts": 1,
-    "name": "T. Konecny",
-    "pos": "R",
-    "toi_pg": 15.9
-   },
-   {
-    "gp": 2,
-    "g": 0,
-    "a": 0,
-    "pts": 0,
-    "name": "C. York",
-    "pos": "D",
-    "toi_pg": 22.6
-   },
-   {
-    "gp": 2,
-    "g": 0,
-    "a": 0,
-    "pts": 0,
-    "name": "J. Drysdale",
-    "pos": "D",
-    "toi_pg": 19.0
-   }
-  ],
-  "PIT": [
-   {
-    "gp": 1,
-    "g": 1,
-    "a": 2,
-    "pts": 3,
-    "name": "F. Hallander",
-    "pos": "C",
-    "toi_pg": 10.9
-   },
-   {
-    "gp": 1,
-    "g": 0,
-    "a": 2,
-    "pts": 2,
-    "name": "S. Girard",
-    "pos": "D",
-    "toi_pg": 21.0
-   },
-   {
-    "gp": 1,
-    "g": 0,
-    "a": 2,
-    "pts": 2,
-    "name": "K. Korczak",
-    "pos": "D",
-    "toi_pg": 18.5
-   },
-   {
-    "gp": 1,
-    "g": 2,
-    "a": 0,
-    "pts": 2,
-    "name": "N. Robertson",
-    "pos": "L",
-    "toi_pg": 15.0
-   },
-   {
-    "gp": 1,
-    "g": 1,
-    "a": 1,
-    "pts": 2,
-    "name": "H. Lapierre",
-    "pos": "C",
-    "toi_pg": 13.0
-   },
-   {
-    "gp": 1,
-    "g": 0,
-    "a": 1,
-    "pts": 1,
-    "name": "E. Karlsson",
-    "pos": "D",
-    "toi_pg": 20.0
-   }
-  ],
-  "NYI": [
-   {
-    "gp": 1,
-    "g": 0,
-    "a": 1,
-    "pts": 1,
-    "name": "B. Horvat",
-    "pos": "C",
-    "toi_pg": 22.5
-   },
-   {
-    "gp": 1,
-    "g": 1,
-    "a": 0,
-    "pts": 1,
-    "name": "E. Heineman",
-    "pos": "L",
-    "toi_pg": 13.4
-   },
-   {
-    "gp": 1,
-    "g": 0,
-    "a": 0,
-    "pts": 0,
-    "name": "M. Schaefer",
-    "pos": "D",
-    "toi_pg": 27.8
-   },
-   {
-    "gp": 1,
-    "g": 0,
-    "a": 0,
-    "pts": 0,
-    "name": "S. Holmstrom",
-    "pos": "R",
-    "toi_pg": 20.3
-   },
-   {
-    "gp": 1,
-    "g": 0,
-    "a": 0,
-    "pts": 0,
-    "name": "A. Pelech",
-    "pos": "D",
-    "toi_pg": 19.9
-   },
-   {
-    "gp": 1,
-    "g": 0,
-    "a": 0,
-    "pts": 0,
-    "name": "K. Palmieri",
-    "pos": "C",
-    "toi_pg": 18.6
-   }
-  ],
-  "COL": [
-   {
-    "gp": 1,
-    "g": 1,
-    "a": 2,
-    "pts": 3,
-    "name": "B. Nelson",
-    "pos": "C",
-    "toi_pg": 19.2
-   },
-   {
-    "gp": 1,
-    "g": 0,
-    "a": 2,
-    "pts": 2,
-    "name": "D. Toews",
-    "pos": "D",
-    "toi_pg": 20.1
-   },
-   {
-    "gp": 1,
-    "g": 2,
-    "a": 0,
-    "pts": 2,
-    "name": "A. Lehkonen",
-    "pos": "L",
-    "toi_pg": 19.4
-   },
-   {
-    "gp": 1,
-    "g": 0,
-    "a": 2,
-    "pts": 2,
-    "name": "C. Makar",
-    "pos": "D",
-    "toi_pg": 18.2
-   },
-   {
-    "gp": 1,
-    "g": 0,
-    "a": 2,
-    "pts": 2,
-    "name": "N. Kadri",
-    "pos": "C",
-    "toi_pg": 17.9
-   },
-   {
-    "gp": 1,
-    "g": 2,
-    "a": 0,
-    "pts": 2,
-    "name": "N. MacKinnon",
-    "pos": "C",
-    "toi_pg": 17.7
-   }
-  ],
-  "LAK": [
-   {
-    "gp": 1,
-    "g": 0,
-    "a": 2,
-    "pts": 2,
-    "name": "A. Laferriere",
-    "pos": "R",
-    "toi_pg": 15.5
-   },
-   {
-    "gp": 1,
-    "g": 0,
-    "a": 1,
-    "pts": 1,
-    "name": "D. Doughty",
-    "pos": "D",
-    "toi_pg": 22.7
-   },
-   {
-    "gp": 1,
-    "g": 1,
-    "a": 0,
-    "pts": 1,
-    "name": "A. Panarin",
-    "pos": "L",
-    "toi_pg": 20.3
-   },
-   {
-    "gp": 1,
-    "g": 0,
-    "a": 1,
-    "pts": 1,
-    "name": "C. Ceci",
-    "pos": "D",
-    "toi_pg": 19.4
-   },
-   {
-    "gp": 1,
-    "g": 0,
-    "a": 1,
-    "pts": 1,
-    "name": "M. Anderson",
-    "pos": "D",
-    "toi_pg": 19.4
-   },
-   {
-    "gp": 1,
-    "g": 1,
-    "a": 0,
-    "pts": 1,
-    "name": "B. Dumoulin",
-    "pos": "D",
-    "toi_pg": 16.5
-   }
-  ],
-  "NJD": [
-   {
-    "gp": 1,
-    "g": 1,
-    "a": 0,
-    "pts": 1,
-    "name": "J. Hughes",
-    "pos": "C",
-    "toi_pg": 25.8
-   },
-   {
-    "gp": 1,
-    "g": 1,
-    "a": 0,
-    "pts": 1,
-    "name": "L. Hughes",
-    "pos": "D",
-    "toi_pg": 24.3
-   },
-   {
-    "gp": 1,
-    "g": 1,
-    "a": 0,
-    "pts": 1,
     "name": "D. Hamilton",
     "pos": "D",
-    "toi_pg": 21.5
+    "toi_pg": 21.9
    },
    {
-    "gp": 1,
+    "gp": 2,
     "g": 0,
     "a": 1,
     "pts": 1,
     "name": "J. Bratt",
     "pos": "L",
-    "toi_pg": 21.3
+    "toi_pg": 18.6
    },
    {
-    "gp": 1,
+    "gp": 2,
     "g": 0,
     "a": 1,
     "pts": 1,
     "name": "L. Evangelista",
     "pos": "R",
-    "toi_pg": 18.2
+    "toi_pg": 18.5
    },
    {
-    "gp": 1,
+    "gp": 2,
     "g": 0,
     "a": 0,
     "pts": 0,
     "name": "J. Siegenthaler",
     "pos": "D",
-    "toi_pg": 20.7
+    "toi_pg": 20.9
    }
   ],
   "TBL": [
    {
-    "gp": 1,
+    "gp": 2,
     "g": 1,
-    "a": 0,
-    "pts": 1,
-    "name": "N. Kucherov",
-    "pos": "R",
-    "toi_pg": 24.1
+    "a": 2,
+    "pts": 3,
+    "name": "J. Guentzel",
+    "pos": "C",
+    "toi_pg": 21.2
    },
    {
-    "gp": 1,
+    "gp": 2,
+    "g": 1,
+    "a": 1,
+    "pts": 2,
+    "name": "N. Kucherov",
+    "pos": "R",
+    "toi_pg": 23.4
+   },
+   {
+    "gp": 2,
+    "g": 0,
+    "a": 2,
+    "pts": 2,
+    "name": "B. Hagel",
+    "pos": "L",
+    "toi_pg": 22.9
+   },
+   {
+    "gp": 2,
+    "g": 0,
+    "a": 1,
+    "pts": 1,
+    "name": "J. Carlson",
+    "pos": "D",
+    "toi_pg": 22.1
+   },
+   {
+    "gp": 2,
     "g": 0,
     "a": 1,
     "pts": 1,
     "name": "B. Point",
     "pos": "C",
-    "toi_pg": 22.6
+    "toi_pg": 21.6
    },
    {
-    "gp": 1,
-    "g": 0,
-    "a": 1,
+    "gp": 2,
+    "g": 1,
+    "a": 0,
     "pts": 1,
-    "name": "I. Mikheyev",
-    "pos": "R",
-    "toi_pg": 10.9
-   },
-   {
-    "gp": 1,
-    "g": 0,
-    "a": 0,
-    "pts": 0,
-    "name": "J. Guentzel",
-    "pos": "C",
-    "toi_pg": 24.0
-   },
-   {
-    "gp": 1,
-    "g": 0,
-    "a": 0,
-    "pts": 0,
-    "name": "B. Hagel",
-    "pos": "L",
-    "toi_pg": 23.7
-   },
-   {
-    "gp": 1,
-    "g": 0,
-    "a": 0,
-    "pts": 0,
-    "name": "J. Carlson",
+    "name": "C. D'Astous",
     "pos": "D",
-    "toi_pg": 23.7
+    "toi_pg": 16.4
    }
   ],
   "CBJ": [
    {
-    "gp": 1,
+    "gp": 2,
+    "g": 2,
+    "a": 2,
+    "pts": 4,
+    "name": "M. Knies",
+    "pos": "L",
+    "toi_pg": 16.9
+   },
+   {
+    "gp": 2,
     "g": 0,
     "a": 3,
     "pts": 3,
     "name": "C. Coyle",
     "pos": "C",
-    "toi_pg": 19.1
+    "toi_pg": 17.2
    },
    {
-    "gp": 1,
-    "g": 2,
-    "a": 1,
-    "pts": 3,
-    "name": "M. Knies",
-    "pos": "L",
-    "toi_pg": 16.1
-   },
-   {
-    "gp": 1,
+    "gp": 2,
     "g": 0,
     "a": 2,
     "pts": 2,
     "name": "Z. Werenski",
     "pos": "D",
-    "toi_pg": 28.8
+    "toi_pg": 30.2
    },
    {
-    "gp": 1,
+    "gp": 2,
+    "g": 1,
+    "a": 1,
+    "pts": 2,
+    "name": "K. Johnson",
+    "pos": "C",
+    "toi_pg": 16.1
+   },
+   {
+    "gp": 2,
     "g": 0,
     "a": 1,
     "pts": 1,
     "name": "D. Mateychuk",
     "pos": "D",
-    "toi_pg": 27.5
+    "toi_pg": 27.8
    },
    {
-    "gp": 1,
+    "gp": 2,
     "g": 1,
     "a": 0,
     "pts": 1,
     "name": "A. Fantilli",
     "pos": "C",
-    "toi_pg": 17.5
-   },
-   {
-    "gp": 1,
-    "g": 0,
-    "a": 1,
-    "pts": 1,
-    "name": "V. Nichushkin",
-    "pos": "R",
-    "toi_pg": 15.8
+    "toi_pg": 19.0
    }
   ],
   "BUF": [
    {
-    "gp": 1,
+    "gp": 2,
     "g": 0,
-    "a": 2,
-    "pts": 2,
+    "a": 3,
+    "pts": 3,
     "name": "O. Power",
     "pos": "D",
-    "toi_pg": 25.4
+    "toi_pg": 25.3
    },
    {
-    "gp": 1,
+    "gp": 2,
+    "g": 1,
+    "a": 1,
+    "pts": 2,
+    "name": "M. Samuelsson",
+    "pos": "D",
+    "toi_pg": 21.3
+   },
+   {
+    "gp": 2,
+    "g": 2,
+    "a": 0,
+    "pts": 2,
+    "name": "J. Quinn",
+    "pos": "R",
+    "toi_pg": 19.9
+   },
+   {
+    "gp": 2,
+    "g": 1,
+    "a": 1,
+    "pts": 2,
+    "name": "T. Thompson",
+    "pos": "C",
+    "toi_pg": 19.7
+   },
+   {
+    "gp": 2,
     "g": 0,
     "a": 2,
     "pts": 2,
     "name": "N. Ostlund",
     "pos": "C",
-    "toi_pg": 16.7
+    "toi_pg": 17.0
    },
    {
-    "gp": 1,
+    "gp": 2,
     "g": 1,
     "a": 0,
     "pts": 1,
-    "name": "J. Quinn",
-    "pos": "R",
-    "toi_pg": 20.8
-   },
-   {
-    "gp": 1,
-    "g": 0,
-    "a": 1,
-    "pts": 1,
-    "name": "Z. Benson",
-    "pos": "L",
-    "toi_pg": 18.6
-   },
-   {
-    "gp": 1,
-    "g": 1,
-    "a": 0,
-    "pts": 1,
-    "name": "M. Samuelsson",
+    "name": "R. Dahlin",
     "pos": "D",
-    "toi_pg": 18.4
-   },
-   {
-    "gp": 1,
-    "g": 0,
-    "a": 1,
-    "pts": 1,
-    "name": "R. McLeod",
-    "pos": "C",
-    "toi_pg": 16.7
+    "toi_pg": 25.7
    }
   ],
   "NSH": [
    {
-    "gp": 1,
+    "gp": 2,
     "g": 1,
-    "a": 0,
-    "pts": 1,
+    "a": 1,
+    "pts": 2,
     "name": "R. Josi",
     "pos": "D",
-    "toi_pg": 24.9
+    "toi_pg": 24.8
    },
    {
-    "gp": 1,
+    "gp": 2,
+    "g": 1,
+    "a": 1,
+    "pts": 2,
+    "name": "S. Stamkos",
+    "pos": "C",
+    "toi_pg": 19.4
+   },
+   {
+    "gp": 2,
+    "g": 0,
+    "a": 1,
+    "pts": 1,
+    "name": "R. O'Reilly",
+    "pos": "C",
+    "toi_pg": 20.7
+   },
+   {
+    "gp": 2,
     "g": 0,
     "a": 1,
     "pts": 1,
     "name": "F. Forsberg",
     "pos": "L",
-    "toi_pg": 19.5
+    "toi_pg": 20.6
    },
    {
-    "gp": 1,
+    "gp": 2,
     "g": 0,
     "a": 1,
     "pts": 1,
-    "name": "S. Stamkos",
+    "name": "A. Kerfoot",
     "pos": "C",
-    "toi_pg": 18.8
+    "toi_pg": 14.9
    },
    {
-    "gp": 1,
-    "g": 0,
+    "gp": 2,
+    "g": 1,
     "a": 0,
-    "pts": 0,
-    "name": "R. O'Reilly",
-    "pos": "C",
-    "toi_pg": 21.5
-   },
-   {
-    "gp": 1,
-    "g": 0,
-    "a": 0,
-    "pts": 0,
-    "name": "B. Skjei",
-    "pos": "D",
-    "toi_pg": 20.9
-   },
-   {
-    "gp": 1,
-    "g": 0,
-    "a": 0,
-    "pts": 0,
-    "name": "N. Perbix",
-    "pos": "D",
-    "toi_pg": 18.1
+    "pts": 1,
+    "name": "N. Hoglander",
+    "pos": "L",
+    "toi_pg": 11.1
    }
   ],
   "MIN": [
    {
-    "gp": 1,
-    "g": 0,
-    "a": 1,
-    "pts": 1,
+    "gp": 2,
+    "g": 1,
+    "a": 2,
+    "pts": 3,
     "name": "Q. Hughes",
     "pos": "D",
-    "toi_pg": 27.5
+    "toi_pg": 24.9
    },
    {
-    "gp": 1,
+    "gp": 2,
+    "g": 3,
+    "a": 0,
+    "pts": 3,
+    "name": "K. Kaprizov",
+    "pos": "L",
+    "toi_pg": 19.9
+   },
+   {
+    "gp": 2,
+    "g": 1,
+    "a": 1,
+    "pts": 2,
+    "name": "J. Spurgeon",
+    "pos": "D",
+    "toi_pg": 19.6
+   },
+   {
+    "gp": 2,
+    "g": 0,
+    "a": 2,
+    "pts": 2,
+    "name": "M. McCarron",
+    "pos": "C",
+    "toi_pg": 15.2
+   },
+   {
+    "gp": 2,
+    "g": 0,
+    "a": 2,
+    "pts": 2,
+    "name": "B. Brink",
+    "pos": "R",
+    "toi_pg": 11.4
+   },
+   {
+    "gp": 2,
     "g": 0,
     "a": 1,
     "pts": 1,
     "name": "O. Maatta",
     "pos": "D",
-    "toi_pg": 21.6
-   },
-   {
-    "gp": 1,
-    "g": 1,
-    "a": 0,
-    "pts": 1,
-    "name": "K. Kaprizov",
-    "pos": "L",
-    "toi_pg": 20.9
-   },
-   {
-    "gp": 1,
-    "g": 0,
-    "a": 1,
-    "pts": 1,
-    "name": "J. Spurgeon",
-    "pos": "D",
-    "toi_pg": 19.1
-   },
-   {
-    "gp": 1,
-    "g": 1,
-    "a": 0,
-    "pts": 1,
-    "name": "B. Coleman",
-    "pos": "L",
-    "toi_pg": 13.7
-   },
-   {
-    "gp": 1,
-    "g": 0,
-    "a": 1,
-    "pts": 1,
-    "name": "M. McCarron",
-    "pos": "C",
-    "toi_pg": 13.4
+    "toi_pg": 22.4
    }
   ],
   "CGY": [
    {
-    "gp": 1,
+    "gp": 2,
+    "g": 0,
+    "a": 1,
+    "pts": 1,
+    "name": "Z. Parekh",
+    "pos": "D",
+    "toi_pg": 17.4
+   },
+   {
+    "gp": 2,
     "g": 0,
     "a": 1,
     "pts": 1,
     "name": "Y. Sharangovich",
     "pos": "C",
-    "toi_pg": 17.2
+    "toi_pg": 17.1
    },
    {
-    "gp": 1,
+    "gp": 2,
+    "g": 0,
+    "a": 1,
+    "pts": 1,
+    "name": "J. Farabee",
+    "pos": "L",
+    "toi_pg": 15.9
+   },
+   {
+    "gp": 2,
+    "g": 1,
+    "a": 0,
+    "pts": 1,
+    "name": "M. Coronato",
+    "pos": "R",
+    "toi_pg": 15.2
+   },
+   {
+    "gp": 2,
     "g": 1,
     "a": 0,
     "pts": 1,
     "name": "R. Strome",
     "pos": "C",
-    "toi_pg": 16.0
+    "toi_pg": 13.8
    },
    {
     "gp": 1,
@@ -4440,168 +5012,150 @@
     "name": "C. Zary",
     "pos": "C",
     "toi_pg": 13.3
-   },
-   {
-    "gp": 1,
-    "g": 0,
-    "a": 0,
-    "pts": 0,
-    "name": "S. Nemec",
-    "pos": "D",
-    "toi_pg": 21.3
-   },
-   {
-    "gp": 1,
-    "g": 0,
-    "a": 0,
-    "pts": 0,
-    "name": "K. Bahl",
-    "pos": "D",
-    "toi_pg": 21.1
-   },
-   {
-    "gp": 1,
-    "g": 0,
-    "a": 0,
-    "pts": 0,
-    "name": "J. Middleton",
-    "pos": "D",
-    "toi_pg": 20.9
    }
   ],
   "SEA": [
    {
-    "gp": 1,
+    "gp": 2,
     "g": 1,
     "a": 2,
     "pts": 3,
     "name": "V. Dunn",
     "pos": "D",
-    "toi_pg": 20.6
+    "toi_pg": 22.2
    },
    {
-    "gp": 1,
+    "gp": 2,
     "g": 0,
     "a": 3,
     "pts": 3,
     "name": "J. McCann",
     "pos": "L",
-    "toi_pg": 17.9
+    "toi_pg": 16.2
    },
    {
-    "gp": 1,
+    "gp": 2,
+    "g": 1,
+    "a": 1,
+    "pts": 2,
+    "name": "C. Stephenson",
+    "pos": "C",
+    "toi_pg": 17.6
+   },
+   {
+    "gp": 2,
+    "g": 1,
+    "a": 1,
+    "pts": 2,
+    "name": "J. Eberle",
+    "pos": "R",
+    "toi_pg": 17.5
+   },
+   {
+    "gp": 2,
     "g": 1,
     "a": 1,
     "pts": 2,
     "name": "M. Beniers",
     "pos": "C",
-    "toi_pg": 17.0
+    "toi_pg": 16.5
    },
    {
-    "gp": 1,
+    "gp": 2,
     "g": 1,
     "a": 1,
     "pts": 2,
     "name": "K. Kakko",
     "pos": "R",
-    "toi_pg": 16.8
-   },
-   {
-    "gp": 1,
-    "g": 0,
-    "a": 1,
-    "pts": 1,
-    "name": "R. Evans",
-    "pos": "D",
-    "toi_pg": 20.7
-   },
-   {
-    "gp": 1,
-    "g": 1,
-    "a": 0,
-    "pts": 1,
-    "name": "J. Eberle",
-    "pos": "R",
-    "toi_pg": 17.9
+    "toi_pg": 15.0
    }
   ],
   "UTA": [
    {
-    "gp": 1,
-    "g": 0,
+    "gp": 2,
+    "g": 3,
     "a": 2,
-    "pts": 2,
-    "name": "C. Keller",
-    "pos": "R",
-    "toi_pg": 17.7
-   },
-   {
-    "gp": 1,
-    "g": 2,
-    "a": 0,
-    "pts": 2,
+    "pts": 5,
     "name": "D. Guenther",
     "pos": "R",
-    "toi_pg": 14.6
+    "toi_pg": 15.7
    },
    {
-    "gp": 1,
+    "gp": 2,
+    "g": 0,
+    "a": 4,
+    "pts": 4,
+    "name": "C. Keller",
+    "pos": "R",
+    "toi_pg": 17.4
+   },
+   {
+    "gp": 2,
+    "g": 1,
+    "a": 2,
+    "pts": 3,
+    "name": "M. Sergachev",
+    "pos": "D",
+    "toi_pg": 22.5
+   },
+   {
+    "gp": 2,
+    "g": 3,
+    "a": 0,
+    "pts": 3,
+    "name": "N. Schmaltz",
+    "pos": "C",
+    "toi_pg": 17.9
+   },
+   {
+    "gp": 2,
+    "g": 0,
+    "a": 3,
+    "pts": 3,
+    "name": "L. Cooley",
+    "pos": "C",
+    "toi_pg": 16.5
+   },
+   {
+    "gp": 2,
     "g": 1,
     "a": 1,
     "pts": 2,
     "name": "M. Carcone",
     "pos": "L",
-    "toi_pg": 12.7
-   },
-   {
-    "gp": 1,
-    "g": 0,
-    "a": 1,
-    "pts": 1,
-    "name": "M. Sergachev",
-    "pos": "D",
-    "toi_pg": 22.9
-   },
-   {
-    "gp": 1,
-    "g": 0,
-    "a": 1,
-    "pts": 1,
-    "name": "N. Schmidt",
-    "pos": "D",
-    "toi_pg": 18.9
-   },
-   {
-    "gp": 1,
-    "g": 1,
-    "a": 0,
-    "pts": 1,
-    "name": "N. Schmaltz",
-    "pos": "C",
-    "toi_pg": 18.2
+    "toi_pg": 12.9
    }
   ],
   "SJS": [
    {
-    "gp": 1,
+    "gp": 2,
     "g": 0,
-    "a": 3,
-    "pts": 3,
+    "a": 5,
+    "pts": 5,
     "name": "M. Celebrini",
     "pos": "C",
-    "toi_pg": 22.9
+    "toi_pg": 22.3
    },
    {
-    "gp": 1,
+    "gp": 2,
     "g": 2,
     "a": 1,
     "pts": 3,
     "name": "W. Smith",
     "pos": "C",
-    "toi_pg": 20.1
+    "toi_pg": 19.4
    },
    {
-    "gp": 1,
+    "gp": 2,
+    "g": 2,
+    "a": 1,
+    "pts": 3,
+    "name": "I. Chernyshov",
+    "pos": "L",
+    "toi_pg": 14.3
+   },
+   {
+    "gp": 2,
     "g": 1,
     "a": 1,
     "pts": 2,
@@ -4610,30 +5164,21 @@
     "toi_pg": 21.3
    },
    {
-    "gp": 1,
+    "gp": 2,
     "g": 1,
-    "a": 0,
-    "pts": 1,
-    "name": "M. Marchment",
-    "pos": "L",
-    "toi_pg": 12.7
+    "a": 1,
+    "pts": 2,
+    "name": "T. Toffoli",
+    "pos": "C",
+    "toi_pg": 12.0
    },
    {
-    "gp": 1,
+    "gp": 2,
     "g": 0,
-    "a": 0,
-    "pts": 0,
+    "a": 1,
+    "pts": 1,
     "name": "J. Trouba",
     "pos": "D",
-    "toi_pg": 22.6
-   },
-   {
-    "gp": 1,
-    "g": 0,
-    "a": 0,
-    "pts": 0,
-    "name": "A. Wennberg",
-    "pos": "C",
     "toi_pg": 21.7
    }
   ],
@@ -4695,58 +5240,58 @@
   ],
   "WSH": [
    {
-    "gp": 1,
+    "gp": 2,
     "g": 1,
-    "a": 1,
-    "pts": 2,
+    "a": 2,
+    "pts": 3,
     "name": "J. Chychrun",
     "pos": "D",
-    "toi_pg": 18.9
+    "toi_pg": 23.0
    },
    {
-    "gp": 1,
+    "gp": 2,
     "g": 2,
     "a": 0,
     "pts": 2,
     "name": "A. Tuch",
     "pos": "R",
-    "toi_pg": 16.6
+    "toi_pg": 17.3
    },
    {
-    "gp": 1,
+    "gp": 2,
     "g": 0,
     "a": 2,
     "pts": 2,
     "name": "D. Strome",
     "pos": "C",
-    "toi_pg": 13.2
+    "toi_pg": 15.6
    },
    {
-    "gp": 1,
+    "gp": 2,
     "g": 0,
     "a": 2,
     "pts": 2,
     "name": "P. Dubois",
     "pos": "C",
-    "toi_pg": 12.1
+    "toi_pg": 15.4
    },
    {
-    "gp": 1,
-    "g": 0,
-    "a": 1,
-    "pts": 1,
-    "name": "A. Protas",
-    "pos": "L",
-    "toi_pg": 17.6
-   },
-   {
-    "gp": 1,
+    "gp": 2,
     "g": 1,
     "a": 0,
     "pts": 1,
     "name": "C. Hutson",
     "pos": "D",
-    "toi_pg": 17.1
+    "toi_pg": 19.1
+   },
+   {
+    "gp": 2,
+    "g": 0,
+    "a": 1,
+    "pts": 1,
+    "name": "T. Wilson",
+    "pos": "R",
+    "toi_pg": 17.2
    }
   ],
   "WPG": [
@@ -4807,114 +5352,114 @@
   ],
   "DAL": [
    {
-    "gp": 1,
-    "g": 0,
+    "gp": 2,
+    "g": 1,
     "a": 0,
-    "pts": 0,
+    "pts": 1,
     "name": "M. Heiskanen",
     "pos": "D",
-    "toi_pg": 26.8
+    "toi_pg": 25.7
    },
    {
-    "gp": 1,
+    "gp": 2,
     "g": 0,
-    "a": 0,
-    "pts": 0,
+    "a": 1,
+    "pts": 1,
     "name": "M. Rantanen",
     "pos": "R",
-    "toi_pg": 22.2
+    "toi_pg": 23.0
    },
    {
-    "gp": 1,
+    "gp": 2,
     "g": 0,
-    "a": 0,
-    "pts": 0,
+    "a": 1,
+    "pts": 1,
     "name": "W. Johnston",
     "pos": "C",
-    "toi_pg": 21.8
+    "toi_pg": 22.3
    },
    {
-    "gp": 1,
+    "gp": 2,
     "g": 0,
     "a": 0,
     "pts": 0,
     "name": "T. Harley",
     "pos": "D",
-    "toi_pg": 21.0
+    "toi_pg": 23.5
    },
    {
-    "gp": 1,
+    "gp": 2,
     "g": 0,
     "a": 0,
     "pts": 0,
     "name": "J. Robertson",
     "pos": "L",
-    "toi_pg": 19.6
+    "toi_pg": 19.2
    },
    {
-    "gp": 1,
+    "gp": 2,
     "g": 0,
     "a": 0,
     "pts": 0,
     "name": "E. Lindell",
     "pos": "D",
-    "toi_pg": 18.7
+    "toi_pg": 18.9
    }
   ],
   "STL": [
    {
-    "gp": 1,
+    "gp": 2,
     "g": 1,
     "a": 1,
     "pts": 2,
     "name": "J. Snuggerud",
     "pos": "R",
-    "toi_pg": 19.0
+    "toi_pg": 16.9
    },
    {
-    "gp": 1,
+    "gp": 2,
     "g": 1,
     "a": 1,
     "pts": 2,
     "name": "P. Suter",
     "pos": "C",
-    "toi_pg": 14.4
+    "toi_pg": 15.3
    },
    {
-    "gp": 1,
+    "gp": 2,
+    "g": 2,
+    "a": 0,
+    "pts": 2,
+    "name": "D. Dvorsky",
+    "pos": "R",
+    "toi_pg": 12.7
+   },
+   {
+    "gp": 2,
     "g": 0,
     "a": 1,
     "pts": 1,
     "name": "P. Broberg",
     "pos": "D",
-    "toi_pg": 23.1
+    "toi_pg": 21.7
    },
    {
-    "gp": 1,
+    "gp": 2,
     "g": 0,
     "a": 1,
     "pts": 1,
     "name": "C. Parayko",
     "pos": "D",
-    "toi_pg": 20.4
+    "toi_pg": 20.6
    },
    {
-    "gp": 1,
+    "gp": 2,
     "g": 1,
     "a": 0,
     "pts": 1,
     "name": "M. McTavish",
     "pos": "C",
-    "toi_pg": 14.6
-   },
-   {
-    "gp": 1,
-    "g": 1,
-    "a": 0,
-    "pts": 1,
-    "name": "D. Dvorsky",
-    "pos": "R",
-    "toi_pg": 13.1
+    "toi_pg": 14.8
    }
   ],
   "ANA": [
@@ -4971,6 +5516,62 @@
     "name": "C. Gauthier",
     "pos": "L",
     "toi_pg": 17.9
+   }
+  ],
+  "OTT": [
+   {
+    "gp": 1,
+    "g": 1,
+    "a": 1,
+    "pts": 2,
+    "name": "T. Chabot",
+    "pos": "D",
+    "toi_pg": 27.1
+   },
+   {
+    "gp": 1,
+    "g": 0,
+    "a": 2,
+    "pts": 2,
+    "name": "C. Giroux",
+    "pos": "R",
+    "toi_pg": 18.3
+   },
+   {
+    "gp": 1,
+    "g": 0,
+    "a": 1,
+    "pts": 1,
+    "name": "T. Stützle",
+    "pos": "C",
+    "toi_pg": 22.9
+   },
+   {
+    "gp": 1,
+    "g": 0,
+    "a": 1,
+    "pts": 1,
+    "name": "S. Pinto",
+    "pos": "C",
+    "toi_pg": 20.4
+   },
+   {
+    "gp": 1,
+    "g": 1,
+    "a": 0,
+    "pts": 1,
+    "name": "M. Amadio",
+    "pos": "R",
+    "toi_pg": 19.2
+   },
+   {
+    "gp": 1,
+    "g": 0,
+    "a": 1,
+    "pts": 1,
+    "name": "F. Zetterlund",
+    "pos": "L",
+    "toi_pg": 12.1
    }
   ]
  },
@@ -5075,7 +5676,8 @@
   "CGY-VAN": [
    "20251009 CGY 1-5 VAN",
    "20251123 CGY 5-2 VAN",
-   "20260328 VAN 3-7 CGY"
+   "20260328 VAN 3-7 CGY",
+   "20261003 CGY 1-4 VAN"
   ],
   "SJS-VGK": [
    "20251009 VGK 4-3 SJS (OT)",
@@ -5130,11 +5732,11 @@
    "20260202 NYI 1-4 WSH"
   ],
   "CAR-PHI": [
-   "20260413 CAR 2-3 PHI (SO)",
    "20260502 PHI 0-3 CAR",
    "20260504 PHI 2-3 CAR (OT)",
    "20260507 CAR 4-1 PHI",
-   "20260509 CAR 3-2 PHI (OT)"
+   "20260509 CAR 3-2 PHI (OT)",
+   "20261003 CAR 3-2 PHI (OT)"
   ],
   "CHI-MTL": [
    "20251011 MTL 3-2 CHI",
@@ -5237,7 +5839,8 @@
   "TBL-WSH": [
    "20251014 TBL 2-3 WSH (OT)",
    "20251108 WSH 2-3 TBL",
-   "20251122 TBL 5-3 WSH"
+   "20251122 TBL 5-3 WSH",
+   "20261003 WSH 1-3 TBL"
   ],
   "CGY-VGK": [
    "20251014 VGK 4-2 CGY",
@@ -5626,7 +6229,8 @@
    "20251025 EDM 2-3 SEA",
    "20251129 EDM 4-0 SEA",
    "20251204 SEA 4-9 EDM",
-   "20260331 SEA 0-3 EDM"
+   "20260331 SEA 0-3 EDM",
+   "20261003 SEA 1-3 EDM"
   ],
   "COL-NJD": [
    "20251026 COL 3-4 NJD (OT)",
@@ -5654,7 +6258,8 @@
   "DAL-NSH": [
    "20251026 DAL 3-2 NSH",
    "20251108 DAL 5-4 NSH",
-   "20260228 NSH 2-3 DAL (OT)"
+   "20260228 NSH 2-3 DAL (OT)",
+   "20261003 DAL 1-2 NSH"
   ],
   "CGY-NYR": [
    "20251026 NYR 1-5 CGY",
@@ -5726,7 +6331,8 @@
   "LAK-SJS": [
    "20251028 LAK 4-3 SJS",
    "20251120 LAK 3-4 SJS (SO)",
-   "20260107 SJS 4-3 LAK (OT)"
+   "20260107 SJS 4-3 LAK (OT)",
+   "20261003 LAK 4-5 SJS (OT)"
   ],
   "CBJ-TOR": [
    "20251029 TOR 3-6 CBJ",
@@ -6061,7 +6667,8 @@
    "20251110 NYI 3-2 NJD (OT)",
    "20251223 NJD 1-2 NYI",
    "20260106 NJD 0-9 NYI",
-   "20260205 NYI 3-1 NJD"
+   "20260205 NYI 3-1 NJD",
+   "20261003 NJD 0-6 NYI"
   ],
   "NSH-NYR": [
    "20251110 NSH 3-6 NYR",
@@ -6290,7 +6897,8 @@
   ],
   "BUF-CHI": [
    "20251121 CHI 3-9 BUF",
-   "20260413 BUF 5-1 CHI"
+   "20260413 BUF 5-1 CHI",
+   "20261003 CHI 3-4 BUF"
   ],
   "CAR-WPG": [
    "20251121 CAR 4-3 WPG",
@@ -6687,7 +7295,8 @@
   "MTL-PIT": [
    "20251211 MTL 4-2 PIT",
    "20251220 PIT 0-4 MTL",
-   "20251221 MTL 3-4 PIT (SO)"
+   "20251221 MTL 3-4 PIT (SO)",
+   "20261003 MTL 5-6 PIT (OT)"
   ],
   "CBJ-OTT": [
    "20251211 OTT 6-3 CBJ",
@@ -6746,7 +7355,8 @@
   ],
   "BOS-MIN": [
    "20251214 BOS 2-6 MIN",
-   "20260328 MIN 3-6 BOS"
+   "20260328 MIN 3-6 BOS",
+   "20261003 BOS 1-4 MIN"
   ],
   "BUF-SEA": [
    "20251214 BUF 3-1 SEA",
@@ -6885,7 +7495,8 @@
    "20251227 OTT 5-7 TOR",
    "20260228 OTT 5-2 TOR",
    "20260321 TOR 2-5 OTT",
-   "20260415 TOR 1-3 OTT"
+   "20260415 TOR 1-3 OTT",
+   "20261003 OTT 3-2 TOR"
   ],
   "CAR-DET": [
    "20251227 DET 2-5 CAR",
@@ -6942,7 +7553,8 @@
   "COL-STL": [
    "20251231 STL 1-6 COL",
    "20260405 STL 3-2 COL",
-   "20260407 COL 3-1 STL"
+   "20260407 COL 3-1 STL",
+   "20261003 STL 1-6 COL"
   ],
   "TOR-WPG": [
    "20260101 WPG 5-6 TOR",
@@ -7056,7 +7668,8 @@
   ],
   "CBJ-UTA": [
    "20260111 CBJ 3-2 UTA (OT)",
-   "20260307 UTA 5-4 CBJ (OT)"
+   "20260307 UTA 5-4 CBJ (OT)",
+   "20261003 UTA 4-1 CBJ"
   ],
   "COL-TOR": [
    "20260112 TOR 4-3 COL (OT)",
