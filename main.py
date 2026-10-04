@@ -5,6 +5,7 @@ from collectors.mlb_collector import MLBCollector
 from collectors.nhl_collector import NHLCollector
 from collectors.nfl_collector import NFLCollector
 from collectors.khl_collector import KHLCollector
+from collectors.nba_collector import NBACollector
 from uploader.github_uploader import GitHubUploader
 
 def get_dates(manual_date: str = None, manual_mlb_date: str = None):
@@ -72,6 +73,18 @@ def run_daily(date: str = None, mlb_date: str = None):
             print(f"  [NFL] 경기 없음")
     except Exception as e:
         print(f"  [NFL] 실패: {e}")
+
+    # NBA 수집 (미국 현지 날짜 = MLB와 동일 기준)
+    try:
+        nba = NBACollector()
+        nba_data = nba.collect_daily(mlb_date)
+        if nba_data["games"]:
+            uploader.upload_json(nba_data, "NBA", mlb_date, "daily")
+            print(f"  [NBA] {len(nba_data['games'])}경기 완료")
+        else:
+            print(f"  [NBA] 경기 없음")
+    except Exception as e:
+        print(f"  [NBA] 실패: {e}")
 
     # KHL 수집 (모스크바 날짜 = KST 어제, NPB와 동일 기준)
     try:

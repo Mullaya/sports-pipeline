@@ -12,6 +12,7 @@ from collectors.npb_collector import NPBCollector
 from collectors.nhl_collector import NHLCollector
 from collectors.nfl_collector import NFLCollector
 from collectors.khl_collector import KHLCollector
+from collectors.nba_collector import NBACollector
 from uploader.github_uploader import GitHubUploader
 from main import extract_player_data
 
@@ -23,6 +24,7 @@ def load_history(league: str, start: str, end: str):
         "NHL": NHLCollector(),
         "NFL": NFLCollector(),
         "KHL": KHLCollector(),
+        "NBA": NBACollector(),
     }
 
     collector = collectors.get(league)
@@ -54,8 +56,8 @@ def load_history(league: str, start: str, end: str):
                 else:
                     fail += 1
 
-                # NHL/NFL/KHL은 선수 기록이 일별 파일에 포함되어 있어 별도 추출 불필요
-                player_data = extract_player_data(data, league, date_str) if league not in ("NHL", "NFL", "KHL") else {"players": []}
+                # NHL/NFL/KHL/NBA는 선수 기록이 일별 파일에 포함되어 있어 별도 추출 불필요
+                player_data = extract_player_data(data, league, date_str) if league not in ("NHL", "NFL", "KHL", "NBA") else {"players": []}
                 if player_data["players"]:
                     uploader.upload_json(
                         player_data, league, date_str, "historical_players"
