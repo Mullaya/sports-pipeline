@@ -191,6 +191,37 @@ class KHLCollector:
                 return {"period": p["period"], "type": p["type"], "home": p["b"], "away": p["a"]}
             return {"period": p["period"], "type": p["type"], "home": p["a"], "away": p["b"]}
 
+        goals = [
+            {
+                "period": x.get("period"),
+                "time_s": x.get("time"),
+                "score": x.get("score"),
+                "type": x.get("status_abbr", ""),
+                "author": (x.get("author") or {}).get("name", ""),
+            }
+            for x in g.get("goals", []) or []
+        ]
+        # 골리 실점 계산용: SO 결승골 제외한 실제 득점 - 엠티넷 골
+        def real_goals(score, won):
+            return score - (1 if end_type == "SO" and won else 0)
+        # 엠티넷 골의 득점 팀은 직전 대비 스코어("a:b") 변화로 판정
+        en = {"home": 0, "away": 0}
+        prev = (0, 0)
+        for x in sorted(g.get("goals", []) or [],
+                        key=lambda x: (_int(x.get("period")), _int(x.get("time")))):
+            cur = _pair(x.get("score"))
+            if not cur:
+                continue
+            a_scored = cur[0] > prev[0]
+            if str(x.get("status_abbr", "")).upper() == "EN":
+                is_home = a_scored if home_check != "team_b" else not a_scored
+                en["home" if is_home else "away"] += 1
+            prev = cur
+        h_goalies = self._goalies(home, opp_shots=away.get("shots"),
+                                  opp_goals=real_goals(as_, as_ > hs) - en["away"])
+        a_goalies = self._goalies(away, opp_shots=home.get("shots"),
+                                  opp_goals=real_goals(hs, hs > as_) - en["home"])
+
         return {
             "game_id": g.get("id"),
             "khl_id": g.get("khl_id"),
@@ -215,21 +246,29 @@ class KHLCollector:
             "period_scores": [flip(p) for p in periods],
             "home_stats": side(home),
             "away_stats": side(away),
-            "home_goalies": self._players(home, goalies=True),
-            "away_goalies": self._players(away, goalies=True),
+            "home_goalies": h_goalies,
+            "away_goalies": a_goalies,
             "home_skaters": self._players(home, goalies=False),
             "away_skaters": self._players(away, goalies=False),
-            "goals": [
-                {
-                    "period": x.get("period"),
-                    "time_s": x.get("time"),
-                    "score": x.get("score"),
-                    "type": x.get("status_abbr", ""),
-                    "author": (x.get("author") or {}).get("name", ""),
-                }
-                for x in g.get("goals", []) or []
-            ],
+            "goals": goals,
         }
+
+    def _goalies(self, team: dict, opp_shots, opp_goals) -> list:
+        """출전 골리만. 골리가 1명이면 상대 슈팅/득점으로 SA·GA·SV% 계산
+        (KHL API는 세이브 수를 주지 않음. 2명 출전 시 분리 불가 → None)"""
+        played = [p for p in self._players(team, goalies=True)
+                  if (_int(p["stats"].get("toi")) or 0) > 0 or float(p["stats"].get("toi") or 0) > 0]
+        played.sort(key=lambda p: float(p["stats"].get("toi") or 0), reverse=True)
+        for i, p in enumerate(played):
+            p["toi"] = round(float(p["stats"].get("toi") or 0), 2)
+            p["starter"] = i == 0
+            if len(played) == 1 and opp_shots is not None:
+                sa, ga = _int(opp_shots), max(_int(opp_goals), 0)
+                p.update(shots_against=sa, goals_against=ga, saves=sa - ga,
+                         sv_pct=round((sa - ga) / sa, 3) if sa else None)
+            else:
+                p.update(shots_against=None, goals_against=None, saves=None, sv_pct=None)
+        return played
 
     @staticmethod
     def _players(team: dict, goalies: bool) -> list:
