@@ -4,6 +4,13 @@ import base64
 import requests
 from datetime import datetime
 
+# 리그별 파일명 접미사 — MLB 파일(20261001.json)과 구분되도록
+# 예: NHL → "20261001 nhl.json"
+FILE_SUFFIX = {
+    "NHL": " nhl",
+}
+
+
 class GitHubUploader:
 
     def __init__(self):
@@ -16,7 +23,7 @@ class GitHubUploader:
         self.api_base = f"https://api.github.com/repos/{self.repo}"
 
     def upload_json(self, data: dict, league: str, date: str, subfolder: str = "daily"):
-        filename = f"{date}.json"
+        filename = f"{date}{FILE_SUFFIX.get(league, '')}.json"
         path = f"data/{league}/{subfolder}/{filename}"
         content = json.dumps(data, ensure_ascii=False, indent=2)
         content_b64 = base64.b64encode(content.encode("utf-8")).decode("utf-8")
