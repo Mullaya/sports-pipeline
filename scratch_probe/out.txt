@@ -1,255 +1,33 @@
+season list 300 total count 300
+status Counter({'RESULT': 300})
+months [('2025-09', 10), ('2025-10', 48), ('2025-11', 35), ('2025-12', 49), ('2026-01', 50), ('2026-02', 33), ('2026-03', 42), ('2026-04', 28), ('2026-05', 5)]
+2025-09 2025-09-20 kbl_e 0 울산 현대모비스 부산 KCC
+2025-10 2025-10-03 kbl_r 0 서울 삼성 부산 KCC
+2025-11 2025-11-01 kbl_r 0 서울 삼성 부산 KCC
+2025-12 2025-12-04 kbl_r 0 창원 LG 대구 한국가스공사
+2026-01 2026-01-01 kbl_r 0 고양 소노 대구 한국가스공사
+2026-02 2026-02-01 kbl_r 0 수원 KT 원주 DB
+2026-03 2026-03-05 kbl_r 0 원주 DB 부산 KCC
+2026-04 2026-04-01 kbl_r 0 부산 KCC 서울 SK
+2026-05 2026-05-05 kbl_ps_cp 1 고양 소노 부산 KCC
 
-### https://api-gw.sports.naver.com/schedule/games/202511013560470150 None -> 200
-.code [int] 200
-.success [bool] True
-.result [dict] 
-.result.game [dict] 
-.result.game.gameId [str] '202511013560470150'
-.result.game.serviceGameId [NoneType] None
-.result.game.eventGameId [NoneType] None
-.result.game.superCategoryId [str] 'basketball'
-.result.game.upperCategoryId [str] 'kbasketball'
-.result.game.upperCategoryName [str] '국내농구'
-.result.game.categoryId [str] 'kbl'
-.result.game.categoryName [str] '프로농구'
-.result.game.gameDate [str] '2025-11-01'
-.result.game.gameDateTime [str] '2025-11-01T14:00:00'
-.result.game.timeTbd [bool] False
-.result.game.stadium [str] '잠실실내체육관'
-.result.game.title [NoneType] None
-.result.game.homeTeamCode [str] '35'
-.result.game.homeTeamName [str] '서울 삼성'
-.result.game.homeTeamScore [int] 100
-.result.game.awayTeamCode [str] '60'
-.result.game.awayTeamName [str] '부산 KCC'
-.result.game.awayTeamScore [int] 77
-.result.game.winner [str] 'HOME'
-.result.game.statusCode [str] 'RESULT'
-.result.game.statusNum [int] 4
-.result.game.statusInfo [str] '4쿼터'
-.result.game.cancel [bool] False
-.result.game.suspended [bool] False
-.result.game.hasVideo [bool] True
-.result.game.seasonCode [str] '47'
-.result.game.seasonYear [int] 2025
-.result.game.roundCode [str] 'kbl_r'
-.result.game.generalTitle [NoneType] None
-.result.game.generalInfo3 [NoneType] None
-.result.game.manualRelayUrl [NoneType] None
-.result.game.emptyScoreBeforeResult [bool] False
-.result.game.reversedHomeAway [bool] False
-.result.game.neutralGround [bool] False
-.result.game.homeTeamEmblemUrl [str] 'https://sports-phinf.pstatic.net/team/kbl/default
-.result.game.awayTeamEmblemUrl [str] 'https://sports-phinf.pstatic.net/team/kbl/default
-.result.game.homeTeamShortName [str] '삼성'
-.result.game.awayTeamShortName [str] 'KCC'
-.result.game.homeTeamFullName [str] '서울 삼성 썬더스'
-.result.game.awayTeamFullName [str] '부산 KCC 이지스'
-.result.game.scheduledTv [bool] False
-.result.game.gameOnAir [bool] False
-.result.game.pv [int] 0
-.result.game.cv [int] 0
-.result.game.peak [int] 0
-.result.game.embedUrl [NoneType] None
-.result.game.gameCenterUrl [dict] 
-.result.game.gameCenterUrl.baseUrl [str] 'https://m.sports.naver.com/game/20251101356047015
-.result.game.gameCenterUrl.cheerTabUrl [str] 'https://m.sports.naver.com/game/20251101356047015
-.result.game.liveList [list] 
-.result.game.hasLiveStream [bool] False
-.result.game.chzzkLive [NoneType] None
-.result.game.chzzkLives [NoneType] None
-.result.game.broadcastChzzkLives [NoneType] None
-.result.game.competitionStartDate [NoneType] None
-.result.game.competitionEndDate [NoneType] None
-.result.game.leaderBoardEnable [bool] False
-.result.game.widgetEnable [bool] False
-.result.game.enable [bool] True
-.result.game.commentInfo [dict] 
-.result.game.commentInfo.title [str] '서울 삼성 vs 부산 KCC 11월 01일'
-.result.game.commentInfo.description [str] '프로농구 이야기를 함께 해요!'
-.result.game.commentInfo.templateId [str] 'basketball'
-.result.game.commentInfo.categoryLogo [str] 'https://sports-phinf.pstatic.net/category/super/d
-.result.game.commentInfo.hasTeamInfo [bool] True
-.result.game.commentInfo.expose [dict] 
-.result.game.commentInfo.expose.state [bool] False
-.result.game.commentInfo.expose.endDateTime [str] '2025-11-02T14:00:00'
-.result.game.specialMatchInfo [NoneType] None
-.result.game.seriesOutcome [NoneType] None
-.result.game.latestSeriesOutcome [NoneType] None
-.result.game.currentQuarter [str] '4쿼터'
-.result.game.conference [NoneType] None
-.result.game.homeTeamScoreByQuarter [list] 
-.result.game.homeTeamScoreByQuarter[] len=5
-.result.game.awayTeamScoreByQuarter [list] 
-.result.game.awayTeamScoreByQuarter[] len=5
-.result.game.seriesGameNo [int] 0
-.result.game.round [int] 2
+== 20250920 3
+  kbl_e  울산 현대모비스 90-61 부산 KCC OT=False reg=90-61 q=[{'q': 'Q1', 'home': 27, 'away': 14}, {'q': 'Q2', 'home': 14, 'away': 18}, {'q': 'Q3', 'home': 29, 'away': 22}, {'q': 'Q4', 'home': 20, 'away': 7}] player_sum=90/61 fga=83 n_pl=12
+  kbl_e  원주 DB 69-85 수원 KT OT=False reg=69-85 q=[{'q': 'Q1', 'home': 16, 'away': 27}, {'q': 'Q2', 'home': 23, 'away': 22}, {'q': 'Q3', 'home': 15, 'away': 13}, {'q': 'Q4', 'home': 15, 'away': 23}] player_sum=69/85 fga=75 n_pl=12
+  kbl_e  안양 정관장 77-66 고양 소노 OT=False reg=77-66 q=[{'q': 'Q1', 'home': 16, 'away': 24}, {'q': 'Q2', 'home': 18, 'away': 10}, {'q': 'Q3', 'home': 23, 'away': 16}, {'q': 'Q4', 'home': 20, 'away': 16}] player_sum=77/66 fga=84 n_pl=12
 
-### https://api-gw.sports.naver.com/schedule/games/202511013560470150/record None -> 200
-.code [int] 200
-.success [bool] True
-.result [dict] 
-.result.recordData [dict] 
-.result.recordData.homeQ1Score [int] 13
-.result.recordData.away [dict] 
-.result.recordData.away.fg [int] 21
-.result.recordData.away.sT [int] 5
-.result.recordData.away.ftP [int] 66
-.result.recordData.away.normalFg [int] 30
-.result.recordData.away.oR [int] 9
-.result.recordData.away.dk [int] 5
-.result.recordData.away.ft [int] 8
-.result.recordData.away.normalFgP [int] 42
-.result.recordData.away.foulTot [int] 22
-.result.recordData.away.score [int] 77
-.result.recordData.away.rebound [int] 32
-.result.recordData.away.aS [int] 17
-.result.recordData.away.dkA [int] 6
-.result.recordData.away.threepScore [int] 27
-.result.recordData.away.pScore [int] 32
-.result.recordData.away.tR [int] 3
-.result.recordData.away.normalFgA [int] 70
-.result.recordData.away.pdScore [int] 0
-.result.recordData.away.fgA [int] 50
-.result.recordData.away.dkP [int] 83
-.result.recordData.away.fgP [int] 42
-.result.recordData.away.dR [int] 23
-.result.recordData.away.threepA [int] 20
-.result.recordData.away.bS [int] 1
-.result.recordData.away.ftA [int] 12
-.result.recordData.away.threep [int] 9
-.result.recordData.away.to [int] 13
-.result.recordData.away.threepP [int] 45
-.result.recordData.homeScore [int] 100
-.result.recordData.awayQ3Score [int] 19
-.result.recordData.homeQ3Score [int] 33
-.result.recordData.home [dict] 
-.result.recordData.home.fg [int] 22
-.result.recordData.home.sT [int] 8
-.result.recordData.home.ftP [int] 85
-.result.recordData.home.normalFg [int] 35
-.result.recordData.home.oR [int] 10
-.result.recordData.home.dk [int] 0
-.result.recordData.home.ft [int] 17
-.result.recordData.home.normalFgP [int] 50
-.result.recordData.home.foulTot [int] 16
-.result.recordData.home.score [int] 100
-.result.recordData.home.rebound [int] 40
-.result.recordData.home.aS [int] 23
-.result.recordData.home.dkA [int] 0
-.result.recordData.home.threepScore [int] 39
-.result.recordData.home.pScore [int] 32
-.result.recordData.home.tR [int] 2
-.result.recordData.home.normalFgA [int] 70
-.result.recordData.home.pdScore [int] 0
-.result.recordData.home.fgA [int] 44
-.result.recordData.home.dkP [int] 0
-.result.recordData.home.fgP [int] 50
-.result.recordData.home.dR [int] 30
-.result.recordData.home.threepA [int] 26
-.result.recordData.home.bS [int] 3
-.result.recordData.home.ftA [int] 20
-.result.recordData.home.threep [int] 13
-.result.recordData.home.to [int] 8
-.result.recordData.home.threepP [int] 50
-.result.recordData.awayQ2Score [int] 17
-.result.recordData.awayScore [int] 77
-.result.recordData.homeQ2Score [int] 24
-.result.recordData.awayXScore [int] 0
-.result.recordData.awayQ1Score [int] 13
-.result.recordData.homeXScore [int] 0
-.result.recordData.currentHalf [str] 'Q4'
-.result.recordData.homePlayerStats [list] 
-.result.recordData.homePlayerStats[] len=12
-.result.recordData.homePlayerStats[0].as [int] 2
-.result.recordData.homePlayerStats[0].backNum [str] '11'
-.result.recordData.homePlayerStats[0].bs [int] 0
-.result.recordData.homePlayerStats[0].dr [int] 3
-.result.recordData.homePlayerStats[0].fg [int] 5
-.result.recordData.homePlayerStats[0].fgA [int] 5
-.result.recordData.homePlayerStats[0].fgP [float] 55.55555555555556
-.result.recordData.homePlayerStats[0].fgPA [int] 9
-.result.recordData.homePlayerStats[0].foulTot [int] 1
-.result.recordData.homePlayerStats[0].ft [int] 4
-.result.recordData.homePlayerStats[0].ftA [int] 5
-.result.recordData.homePlayerStats[0].ftP [int] 80
-.result.recordData.homePlayerStats[0].gameCount [int] 9
-.result.recordData.homePlayerStats[0].or [int] 0
-.result.recordData.homePlayerStats[0].playTimeSec [int] 1458
-.result.recordData.homePlayerStats[0].playTimeStr [str] '24:18'
-.result.recordData.homePlayerStats[0].playerId [str] '290440'
-.result.recordData.homePlayerStats[0].playerName [str] '이관희'
-.result.recordData.homePlayerStats[0].playerShortName [str] '이관희'
-.result.recordData.homePlayerStats[0].position [str] 'GD'
-.result.recordData.homePlayerStats[0].reboundTot [int] 3
-.result.recordData.homePlayerStats[0].scoreTot [int] 16
-.result.recordData.homePlayerStats[0].st [int] 0
-.result.recordData.homePlayerStats[0].startFlag [bool] False
-.result.recordData.homePlayerStats[0].teamCode [str] '35'
-.result.recordData.homePlayerStats[0].threeP [int] 2
-.result.recordData.homePlayerStats[0].threePA [int] 5
-.result.recordData.homePlayerStats[0].threePP [int] 40
-.result.recordData.homePlayerStats[0].to [int] 1
-.result.recordData.homePlayerStats[0].twoP [int] 3
-.result.recordData.homePlayerStats[0].twoPA [int] 4
-.result.recordData.homePlayerStats[0].twoPP [int] 75
-.result.recordData.awayQ4Score [int] 28
-.result.recordData.awayPlayerStats [list] 
-.result.recordData.awayPlayerStats[] len=12
-.result.recordData.awayPlayerStats[0].as [int] 1
-.result.recordData.awayPlayerStats[0].backNum [str] '31'
-.result.recordData.awayPlayerStats[0].bs [int] 0
-.result.recordData.awayPlayerStats[0].dr [int] 1
-.result.recordData.awayPlayerStats[0].fg [int] 1
-.result.recordData.awayPlayerStats[0].fgA [int] 1
-.result.recordData.awayPlayerStats[0].fgP [int] 50
-.result.recordData.awayPlayerStats[0].fgPA [int] 2
-.result.recordData.awayPlayerStats[0].foulTot [int] 3
-.result.recordData.awayPlayerStats[0].ft [int] 1
-.result.recordData.awayPlayerStats[0].ftA [int] 2
-.result.recordData.awayPlayerStats[0].ftP [int] 50
-.result.recordData.awayPlayerStats[0].gameCount [int] 9
-.result.recordData.awayPlayerStats[0].or [int] 0
-.result.recordData.awayPlayerStats[0].playTimeSec [int] 772
-.result.recordData.awayPlayerStats[0].playTimeStr [str] '12:52'
-.result.recordData.awayPlayerStats[0].playerId [str] '290539'
-.result.recordData.awayPlayerStats[0].playerName [str] '장재석'
-.result.recordData.awayPlayerStats[0].playerShortName [str] '장재석'
-.result.recordData.awayPlayerStats[0].position [str] 'C'
-.result.recordData.awayPlayerStats[0].reboundTot [int] 1
-.result.recordData.awayPlayerStats[0].scoreTot [int] 3
-.result.recordData.awayPlayerStats[0].st [int] 0
-.result.recordData.awayPlayerStats[0].startFlag [bool] True
-.result.recordData.awayPlayerStats[0].teamCode [str] '60'
-.result.recordData.awayPlayerStats[0].threeP [int] 0
-.result.recordData.awayPlayerStats[0].threePA [int] 0
-.result.recordData.awayPlayerStats[0].threePP [int] 0
-.result.recordData.awayPlayerStats[0].to [int] 2
-.result.recordData.awayPlayerStats[0].twoP [int] 1
-.result.recordData.awayPlayerStats[0].twoPA [int] 2
-.result.recordData.awayPlayerStats[0].twoPP [int] 50
-.result.recordData.homeQ4Score [int] 30
+== 20251003 3
+  REG    서울 삼성 82-89 부산 KCC OT=False reg=82-89 q=[{'q': 'Q1', 'home': 18, 'away': 24}, {'q': 'Q2', 'home': 19, 'away': 20}, {'q': 'Q3', 'home': 29, 'away': 22}, {'q': 'Q4', 'home': 16, 'away': 23}] player_sum=82/89 fga=61 n_pl=12
+  REG    창원 LG 81-89 서울 SK OT=True reg=77-77 q=[{'q': 'Q1', 'home': 29, 'away': 19}, {'q': 'Q2', 'home': 13, 'away': 14}, {'q': 'Q3', 'home': 19, 'away': 21}, {'q': 'Q4', 'home': 16, 'away': 23}, {'q': 'OT', 'home': 4, 'away': 12}] player_sum=81/89 fga=77 n_pl=12
+  REG    울산 현대모비스 68-71 원주 DB OT=False reg=68-71 q=[{'q': 'Q1', 'home': 19, 'away': 20}, {'q': 'Q2', 'home': 16, 'away': 20}, {'q': 'Q3', 'home': 15, 'away': 19}, {'q': 'Q4', 'home': 18, 'away': 12}] player_sum=68/71 fga=71 n_pl=12
 
-### https://api-gw.sports.naver.com/schedule/games {'fields': 'basic', 'categoryId': 'kbl', 'fromDate': '2025-09-20', 'toDate': '2025-10-10', 'size': 500} -> 200
-count 25 first 2025-09-20 last 2025-10-10
-   2025-09-20 울산 현대모비스 부산 KCC RESULT 90 61 {'gameId': '20250920106047142', 'categoryId': 'kbl', 'gameDate': '2025-09-20', 'gameDateTime': '2025-09-20T14:00:00', 'homeTeamCode': '10', 'homeTeamName': '울산 현대모비스', 'homeTeamScore': 90, 'awayTeamCode': '60', 'awayTeamName': '부산 KCC', 'awayTeamScore': 61, 'winner': 'HOME', 'statusCode': 'RESULT', 'statusInfo': '4쿼터', 'cancel': False, 'suspended': False, 'reversedHomeAway': False, 'neutralGround': False, 'widgetEnable': False}
-   2025-09-20 원주 DB 수원 KT RESULT 69 85 
-   2025-10-08 고양 소노 서울 SK RESULT 82 78 
-   2025-10-09 수원 KT 서울 삼성 RESULT 74 66 
-   2025-10-10 고양 소노 창원 LG RESULT 74 80 
+== 20260325 1
+  REG    서울 SK 77-78 고양 소노 OT=False reg=77-78 q=[{'q': 'Q1', 'home': 17, 'away': 18}, {'q': 'Q2', 'home': 31, 'away': 23}, {'q': 'Q3', 'home': 16, 'away': 22}, {'q': 'Q4', 'home': 13, 'away': 15}] player_sum=77/78 fga=67 n_pl=12
 
-### https://api-gw.sports.naver.com/schedule/games {'fields': 'basic', 'categoryId': 'kbl', 'fromDate': '2026-03-25', 'toDate': '2026-05-31', 'size': 500} -> 200
-count 44 first 2026-03-25 last 2026-05-13
-   2026-03-25 서울 SK 고양 소노 RESULT 77 78 {'gameId': '2026032555664701245', 'categoryId': 'kbl', 'gameDate': '2026-03-25', 'gameDateTime': '2026-03-25T19:00:00', 'homeTeamCode': '55', 'homeTeamName': '서울 SK', 'homeTeamScore': 77, 'awayTeamCode': '66', 'awayTeamName': '고양 소노', 'awayTeamScore': 78, 'winner': 'AWAY', 'statusCode': 'RESULT', 'statusInfo': '4쿼터', 'cancel': False, 'suspended': False, 'reversedHomeAway': False, 'neutralGround': False, 'widgetEnable': False}
-   2026-03-26 대구 한국가스공사 창원 LG RESULT 67 80 
-   2026-05-09 부산 KCC 고양 소노 RESULT 88 87 
-   2026-05-10 부산 KCC 고양 소노 RESULT 80 81 
-   2026-05-13 고양 소노 부산 KCC RESULT 68 76 
-
-### https://api-gw.sports.naver.com/schedule/games {'fields': 'basic', 'categoryId': 'kbl', 'fromDate': '2026-09-25', 'toDate': '2026-10-31', 'size': 500} -> 200
-count 54 first 2026-09-25 last 2026-10-31
-   2026-09-25 부산 KCC 창원 LG RESULT 82 88 {'gameId': '20260925605049144', 'categoryId': 'kbl', 'gameDate': '2026-09-25', 'gameDateTime': '2026-09-25T14:00:00', 'homeTeamCode': '60', 'homeTeamName': '부산 KCC', 'homeTeamScore': 82, 'awayTeamCode': '50', 'awayTeamName': '창원 LG', 'awayTeamScore': 88, 'winner': 'AWAY', 'statusCode': 'RESULT', 'statusInfo': '4쿼터', 'cancel': False, 'suspended': False, 'reversedHomeAway': False, 'neutralGround': False, 'widgetEnable': False}
-   2026-09-25 안양 정관장 수원 KT RESULT 75 72 
-   2026-10-31 부산 KCC 원주 DB BEFORE 0 0 
-   2026-10-31 안양 정관장 수원 KT BEFORE 0 0 
-   2026-10-31 대구 한국가스공사 울산 현대모비스 BEFORE 0 0 
+== 20260513 1
+  kbl_ps_cp 고양 소노 68-76 부산 KCC OT=False reg=68-76 q=[{'q': 'Q1', 'home': 12, 'away': 25}, {'q': 'Q2', 'home': 11, 'away': 17}, {'q': 'Q3', 'home': 18, 'away': 14}, {'q': 'Q4', 'home': 27, 'away': 20}] player_sum=68/76 fga=72 n_pl=12
+Traceback (most recent call last):
+  File "/home/runner/work/sports-pipeline/sports-pipeline/scratch_probe/probe_kbl.py", line 46, in <module>
+    if hq and sum(hq[:4]) != info.get("homeTeamScore"):
+              ^^^^^^^^^^^
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
