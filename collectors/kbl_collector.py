@@ -80,10 +80,15 @@ class KBLCollector:
         for g in res.get("games", []):
             if g.get("statusCode") != "RESULT" or g.get("cancel") or g.get("suspended"):
                 continue
-            try:
-                games.append(self._build_game(g["gameId"]))
-            except Exception as e:
-                print(f"  [KBL] 경기 {g.get('gameId')} 파싱 실패: {e}")
+            # 일시 오류로 경기 하나가 조용히 빠지는 일이 있어 경기 단위로 한 번 더 시도
+            for attempt in range(2):
+                try:
+                    games.append(self._build_game(g["gameId"]))
+                    break
+                except Exception as e:
+                    if attempt:
+                        print(f"  [KBL] 경기 {g.get('gameId')} 파싱 실패: {e}")
+                    time.sleep(5)
             time.sleep(self.sleep)
 
         return {"date": date, "league": "KBL", "games": games}
