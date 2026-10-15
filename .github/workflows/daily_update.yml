@@ -2,7 +2,8 @@ name: Daily Sports Data Pipeline
 
 on:
   schedule:
-    - cron: '0 6 * * *'
+    # 정각(:00)은 Actions 혼잡으로 수 시간 지연이 잦아 분을 비켜 둠 (KST 15:17)
+    - cron: '17 6 * * *'
   workflow_dispatch:
     inputs:
       date:

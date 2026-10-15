@@ -53,6 +53,10 @@ class GitHubUploader:
             print(f"  ❌ 업로드 실패: {resp.status_code} {resp.text[:200]}")
             return False
 
+    def file_exists(self, league: str, date: str, subfolder: str = "daily") -> bool:
+        filename = f"{date}{FILE_SUFFIX.get(league, '')}.json"
+        return self._get_file_sha(f"data/{league}/{subfolder}/{filename}") is not None
+
     def _get_file_sha(self, path: str) -> str:
         url = f"{self.api_base}/contents/{path}"
         resp = requests.get(url, headers=self.headers)

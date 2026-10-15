@@ -62,6 +62,10 @@ def run_daily(date: str = None, mlb_date: str = None):
     except Exception as e:
         print(f"  [NHL] 실패: {e}")
 
+    # 자동 실행일 때만: 최근 며칠 중 파일이 없는 날짜를 재수집 (크론 지연·스킵 대비)
+    if not date:
+        catch_up(uploader, mlb_date, {"NHL": NHLCollector, "NBA": NBACollector})
+
     # NFL 수집 (미국 현지 날짜 = MLB와 동일 기준, 경기 있는 날만 파일 생성)
     try:
         nfl = NFLCollector()
@@ -103,6 +107,31 @@ def run_daily(date: str = None, mlb_date: str = None):
     print(f"  [KBO] Playwright 기반 별도 구성 예정")
 
     print(f"===== 완료 =====")
+
+CATCH_UP_DAYS = 3
+
+
+def catch_up(uploader, base_date: str, collectors: dict, days: int = CATCH_UP_DAYS):
+    """base_date 이전 N일 중 daily 파일이 없는 날짜를 다시 수집.
+
+    GitHub Actions 크론은 수 시간씩 밀리거나 건너뛰는 일이 있고,
+    실행이 KST 자정을 넘기면 대상 날짜가 하루 밀려 그 날짜가 영구 누락된다.
+    경기 없는 날은 파일이 안 생기므로 매번 API 1회만 조회하고 넘어간다.
+    """
+    base = datetime.strptime(base_date, "%Y%m%d")
+    for league, cls in collectors.items():
+        for i in range(1, days + 1):
+            d = (base - timedelta(days=i)).strftime("%Y%m%d")
+            if uploader.file_exists(league, d, "daily"):
+                continue
+            try:
+                data = cls().collect_daily(d)
+                if data["games"]:
+                    uploader.upload_json(data, league, d, "daily")
+                    print(f"  [{league}] 누락분 {d} 재수집 {len(data['games'])}경기")
+            except Exception as e:
+                print(f"  [{league}] 누락분 {d} 재수집 실패: {e}")
+
 
 def extract_player_data(data: dict, league: str, date: str) -> dict:
     players = {}
