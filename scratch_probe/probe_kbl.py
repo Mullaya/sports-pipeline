@@ -8,37 +8,43 @@ S.headers.update({
     "Referer": "https://m.sports.naver.com/basketball/schedule/index",
     "Origin": "https://m.sports.naver.com",
 })
-U = "https://api-gw.sports.naver.com/schedule/games"
+B = "https://api-gw.sports.naver.com/schedule/games"
+GID = "202511013560470150"
 
 
-def show(label, url, params=None, n=1500):
-    print(f"\n===== {label} =====\n{url} {params}")
+def get(url, params=None):
+    r = S.get(url, params=params, timeout=20)
+    print(f"\n### {url} {params} -> {r.status_code}")
     try:
-        r = S.get(url, params=params, timeout=20)
-        print("status", r.status_code)
-        try:
-            j = r.json()
-            print(json.dumps(j, ensure_ascii=False)[:n])
-            return j
-        except Exception:
-            print(r.text[:800])
-    except Exception as e:
-        print("ERR", e)
+        return r.json()
+    except Exception:
+        print(r.text[:300])
 
 
-for cat in ("kbl", "KBL"):
-    for rng in (("2025-11-01", "2025-11-03"), ("2026-01-10", "2026-01-12")):
-        show(f"{cat} {rng}", U, {"fields": "basic", "upperCategoryId": "basketball",
-                                  "categoryId": cat, "fromDate": rng[0], "toDate": rng[1]})
-show("no cat", U, {"fields": "basic", "upperCategoryId": "basketball",
-                   "fromDate": "2025-11-01", "toDate": "2025-11-02"}, n=2500)
-show("cat only", U, {"fields": "basic", "categoryId": "kbl",
-                     "fromDate": "2025-11-01", "toDate": "2025-11-02"}, n=2500)
-show("upcoming 2026", U, {"fields": "basic", "upperCategoryId": "basketball", "categoryId": "kbl",
-                          "fromDate": "2026-10-01", "toDate": "2026-10-20"}, n=2500)
+def walk(o, p="", depth=0, maxd=7):
+    if depth > maxd:
+        return
+    if isinstance(o, dict):
+        for k, v in o.items():
+            ex = "" if isinstance(v, (dict, list)) else repr(v)[:50]
+            print(f"{p}.{k} [{type(v).__name__}] {ex}")
+            walk(v, p + "." + k, depth + 1, maxd)
+    elif isinstance(o, list) and o:
+        print(f"{p}[] len={len(o)}")
+        walk(o[0], p + "[0]", depth + 1, maxd)
 
-# KBL 공식 사이트 후보
-for u in ("https://api.kbl.or.kr/match/list?fromDate=20251101&toDate=20251103",
-          "https://www.kbl.or.kr/match/schedule?type=SCHEDULE&season_code=S43&month=11",
-          "https://www.kbl.or.kr/"):
-    show("kbl official", u, n=800)
+
+g = get(f"{B}/{GID}")
+walk(g)
+rec = get(f"{B}/{GID}/record")
+walk(rec)
+
+# 현재 시즌 / 지난 시즌 범위
+for fr, to in (("2025-09-20", "2025-10-10"), ("2026-03-25", "2026-05-31"), ("2026-09-25", "2026-10-31")):
+    j = get(B, {"fields": "basic", "categoryId": "kbl", "fromDate": fr, "toDate": to, "size": 500}) or {}
+    gs = (j.get("result") or {}).get("games", [])
+    print("count", len(gs), "first", gs[0]["gameDate"] if gs else None, "last", gs[-1]["gameDate"] if gs else None)
+    for x in gs[:2] + gs[-3:]:
+        print("  ", x.get("gameDate"), x.get("homeTeamName"), x.get("awayTeamName"),
+              x.get("statusCode"), x.get("homeTeamScore"), x.get("awayTeamScore"),
+              {k: x.get(k) for k in x if k not in ("homeTeamEmblemUrl", "awayTeamEmblemUrl")} if x is gs[0] else "")
