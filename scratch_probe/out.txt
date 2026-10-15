@@ -1,50 +1,255 @@
 
-===== kbl ('2025-11-01', '2025-11-03') =====
-https://api-gw.sports.naver.com/schedule/games {'fields': 'basic', 'upperCategoryId': 'basketball', 'categoryId': 'kbl', 'fromDate': '2025-11-01', 'toDate': '2025-11-03'}
-status 200
-{"code": 200, "success": true, "result": {"games": [], "gameTotalCount": 0}}
+### https://api-gw.sports.naver.com/schedule/games/202511013560470150 None -> 200
+.code [int] 200
+.success [bool] True
+.result [dict] 
+.result.game [dict] 
+.result.game.gameId [str] '202511013560470150'
+.result.game.serviceGameId [NoneType] None
+.result.game.eventGameId [NoneType] None
+.result.game.superCategoryId [str] 'basketball'
+.result.game.upperCategoryId [str] 'kbasketball'
+.result.game.upperCategoryName [str] '국내농구'
+.result.game.categoryId [str] 'kbl'
+.result.game.categoryName [str] '프로농구'
+.result.game.gameDate [str] '2025-11-01'
+.result.game.gameDateTime [str] '2025-11-01T14:00:00'
+.result.game.timeTbd [bool] False
+.result.game.stadium [str] '잠실실내체육관'
+.result.game.title [NoneType] None
+.result.game.homeTeamCode [str] '35'
+.result.game.homeTeamName [str] '서울 삼성'
+.result.game.homeTeamScore [int] 100
+.result.game.awayTeamCode [str] '60'
+.result.game.awayTeamName [str] '부산 KCC'
+.result.game.awayTeamScore [int] 77
+.result.game.winner [str] 'HOME'
+.result.game.statusCode [str] 'RESULT'
+.result.game.statusNum [int] 4
+.result.game.statusInfo [str] '4쿼터'
+.result.game.cancel [bool] False
+.result.game.suspended [bool] False
+.result.game.hasVideo [bool] True
+.result.game.seasonCode [str] '47'
+.result.game.seasonYear [int] 2025
+.result.game.roundCode [str] 'kbl_r'
+.result.game.generalTitle [NoneType] None
+.result.game.generalInfo3 [NoneType] None
+.result.game.manualRelayUrl [NoneType] None
+.result.game.emptyScoreBeforeResult [bool] False
+.result.game.reversedHomeAway [bool] False
+.result.game.neutralGround [bool] False
+.result.game.homeTeamEmblemUrl [str] 'https://sports-phinf.pstatic.net/team/kbl/default
+.result.game.awayTeamEmblemUrl [str] 'https://sports-phinf.pstatic.net/team/kbl/default
+.result.game.homeTeamShortName [str] '삼성'
+.result.game.awayTeamShortName [str] 'KCC'
+.result.game.homeTeamFullName [str] '서울 삼성 썬더스'
+.result.game.awayTeamFullName [str] '부산 KCC 이지스'
+.result.game.scheduledTv [bool] False
+.result.game.gameOnAir [bool] False
+.result.game.pv [int] 0
+.result.game.cv [int] 0
+.result.game.peak [int] 0
+.result.game.embedUrl [NoneType] None
+.result.game.gameCenterUrl [dict] 
+.result.game.gameCenterUrl.baseUrl [str] 'https://m.sports.naver.com/game/20251101356047015
+.result.game.gameCenterUrl.cheerTabUrl [str] 'https://m.sports.naver.com/game/20251101356047015
+.result.game.liveList [list] 
+.result.game.hasLiveStream [bool] False
+.result.game.chzzkLive [NoneType] None
+.result.game.chzzkLives [NoneType] None
+.result.game.broadcastChzzkLives [NoneType] None
+.result.game.competitionStartDate [NoneType] None
+.result.game.competitionEndDate [NoneType] None
+.result.game.leaderBoardEnable [bool] False
+.result.game.widgetEnable [bool] False
+.result.game.enable [bool] True
+.result.game.commentInfo [dict] 
+.result.game.commentInfo.title [str] '서울 삼성 vs 부산 KCC 11월 01일'
+.result.game.commentInfo.description [str] '프로농구 이야기를 함께 해요!'
+.result.game.commentInfo.templateId [str] 'basketball'
+.result.game.commentInfo.categoryLogo [str] 'https://sports-phinf.pstatic.net/category/super/d
+.result.game.commentInfo.hasTeamInfo [bool] True
+.result.game.commentInfo.expose [dict] 
+.result.game.commentInfo.expose.state [bool] False
+.result.game.commentInfo.expose.endDateTime [str] '2025-11-02T14:00:00'
+.result.game.specialMatchInfo [NoneType] None
+.result.game.seriesOutcome [NoneType] None
+.result.game.latestSeriesOutcome [NoneType] None
+.result.game.currentQuarter [str] '4쿼터'
+.result.game.conference [NoneType] None
+.result.game.homeTeamScoreByQuarter [list] 
+.result.game.homeTeamScoreByQuarter[] len=5
+.result.game.awayTeamScoreByQuarter [list] 
+.result.game.awayTeamScoreByQuarter[] len=5
+.result.game.seriesGameNo [int] 0
+.result.game.round [int] 2
 
-===== kbl ('2026-01-10', '2026-01-12') =====
-https://api-gw.sports.naver.com/schedule/games {'fields': 'basic', 'upperCategoryId': 'basketball', 'categoryId': 'kbl', 'fromDate': '2026-01-10', 'toDate': '2026-01-12'}
-status 200
-{"code": 200, "success": true, "result": {"games": [], "gameTotalCount": 0}}
+### https://api-gw.sports.naver.com/schedule/games/202511013560470150/record None -> 200
+.code [int] 200
+.success [bool] True
+.result [dict] 
+.result.recordData [dict] 
+.result.recordData.homeQ1Score [int] 13
+.result.recordData.away [dict] 
+.result.recordData.away.fg [int] 21
+.result.recordData.away.sT [int] 5
+.result.recordData.away.ftP [int] 66
+.result.recordData.away.normalFg [int] 30
+.result.recordData.away.oR [int] 9
+.result.recordData.away.dk [int] 5
+.result.recordData.away.ft [int] 8
+.result.recordData.away.normalFgP [int] 42
+.result.recordData.away.foulTot [int] 22
+.result.recordData.away.score [int] 77
+.result.recordData.away.rebound [int] 32
+.result.recordData.away.aS [int] 17
+.result.recordData.away.dkA [int] 6
+.result.recordData.away.threepScore [int] 27
+.result.recordData.away.pScore [int] 32
+.result.recordData.away.tR [int] 3
+.result.recordData.away.normalFgA [int] 70
+.result.recordData.away.pdScore [int] 0
+.result.recordData.away.fgA [int] 50
+.result.recordData.away.dkP [int] 83
+.result.recordData.away.fgP [int] 42
+.result.recordData.away.dR [int] 23
+.result.recordData.away.threepA [int] 20
+.result.recordData.away.bS [int] 1
+.result.recordData.away.ftA [int] 12
+.result.recordData.away.threep [int] 9
+.result.recordData.away.to [int] 13
+.result.recordData.away.threepP [int] 45
+.result.recordData.homeScore [int] 100
+.result.recordData.awayQ3Score [int] 19
+.result.recordData.homeQ3Score [int] 33
+.result.recordData.home [dict] 
+.result.recordData.home.fg [int] 22
+.result.recordData.home.sT [int] 8
+.result.recordData.home.ftP [int] 85
+.result.recordData.home.normalFg [int] 35
+.result.recordData.home.oR [int] 10
+.result.recordData.home.dk [int] 0
+.result.recordData.home.ft [int] 17
+.result.recordData.home.normalFgP [int] 50
+.result.recordData.home.foulTot [int] 16
+.result.recordData.home.score [int] 100
+.result.recordData.home.rebound [int] 40
+.result.recordData.home.aS [int] 23
+.result.recordData.home.dkA [int] 0
+.result.recordData.home.threepScore [int] 39
+.result.recordData.home.pScore [int] 32
+.result.recordData.home.tR [int] 2
+.result.recordData.home.normalFgA [int] 70
+.result.recordData.home.pdScore [int] 0
+.result.recordData.home.fgA [int] 44
+.result.recordData.home.dkP [int] 0
+.result.recordData.home.fgP [int] 50
+.result.recordData.home.dR [int] 30
+.result.recordData.home.threepA [int] 26
+.result.recordData.home.bS [int] 3
+.result.recordData.home.ftA [int] 20
+.result.recordData.home.threep [int] 13
+.result.recordData.home.to [int] 8
+.result.recordData.home.threepP [int] 50
+.result.recordData.awayQ2Score [int] 17
+.result.recordData.awayScore [int] 77
+.result.recordData.homeQ2Score [int] 24
+.result.recordData.awayXScore [int] 0
+.result.recordData.awayQ1Score [int] 13
+.result.recordData.homeXScore [int] 0
+.result.recordData.currentHalf [str] 'Q4'
+.result.recordData.homePlayerStats [list] 
+.result.recordData.homePlayerStats[] len=12
+.result.recordData.homePlayerStats[0].as [int] 2
+.result.recordData.homePlayerStats[0].backNum [str] '11'
+.result.recordData.homePlayerStats[0].bs [int] 0
+.result.recordData.homePlayerStats[0].dr [int] 3
+.result.recordData.homePlayerStats[0].fg [int] 5
+.result.recordData.homePlayerStats[0].fgA [int] 5
+.result.recordData.homePlayerStats[0].fgP [float] 55.55555555555556
+.result.recordData.homePlayerStats[0].fgPA [int] 9
+.result.recordData.homePlayerStats[0].foulTot [int] 1
+.result.recordData.homePlayerStats[0].ft [int] 4
+.result.recordData.homePlayerStats[0].ftA [int] 5
+.result.recordData.homePlayerStats[0].ftP [int] 80
+.result.recordData.homePlayerStats[0].gameCount [int] 9
+.result.recordData.homePlayerStats[0].or [int] 0
+.result.recordData.homePlayerStats[0].playTimeSec [int] 1458
+.result.recordData.homePlayerStats[0].playTimeStr [str] '24:18'
+.result.recordData.homePlayerStats[0].playerId [str] '290440'
+.result.recordData.homePlayerStats[0].playerName [str] '이관희'
+.result.recordData.homePlayerStats[0].playerShortName [str] '이관희'
+.result.recordData.homePlayerStats[0].position [str] 'GD'
+.result.recordData.homePlayerStats[0].reboundTot [int] 3
+.result.recordData.homePlayerStats[0].scoreTot [int] 16
+.result.recordData.homePlayerStats[0].st [int] 0
+.result.recordData.homePlayerStats[0].startFlag [bool] False
+.result.recordData.homePlayerStats[0].teamCode [str] '35'
+.result.recordData.homePlayerStats[0].threeP [int] 2
+.result.recordData.homePlayerStats[0].threePA [int] 5
+.result.recordData.homePlayerStats[0].threePP [int] 40
+.result.recordData.homePlayerStats[0].to [int] 1
+.result.recordData.homePlayerStats[0].twoP [int] 3
+.result.recordData.homePlayerStats[0].twoPA [int] 4
+.result.recordData.homePlayerStats[0].twoPP [int] 75
+.result.recordData.awayQ4Score [int] 28
+.result.recordData.awayPlayerStats [list] 
+.result.recordData.awayPlayerStats[] len=12
+.result.recordData.awayPlayerStats[0].as [int] 1
+.result.recordData.awayPlayerStats[0].backNum [str] '31'
+.result.recordData.awayPlayerStats[0].bs [int] 0
+.result.recordData.awayPlayerStats[0].dr [int] 1
+.result.recordData.awayPlayerStats[0].fg [int] 1
+.result.recordData.awayPlayerStats[0].fgA [int] 1
+.result.recordData.awayPlayerStats[0].fgP [int] 50
+.result.recordData.awayPlayerStats[0].fgPA [int] 2
+.result.recordData.awayPlayerStats[0].foulTot [int] 3
+.result.recordData.awayPlayerStats[0].ft [int] 1
+.result.recordData.awayPlayerStats[0].ftA [int] 2
+.result.recordData.awayPlayerStats[0].ftP [int] 50
+.result.recordData.awayPlayerStats[0].gameCount [int] 9
+.result.recordData.awayPlayerStats[0].or [int] 0
+.result.recordData.awayPlayerStats[0].playTimeSec [int] 772
+.result.recordData.awayPlayerStats[0].playTimeStr [str] '12:52'
+.result.recordData.awayPlayerStats[0].playerId [str] '290539'
+.result.recordData.awayPlayerStats[0].playerName [str] '장재석'
+.result.recordData.awayPlayerStats[0].playerShortName [str] '장재석'
+.result.recordData.awayPlayerStats[0].position [str] 'C'
+.result.recordData.awayPlayerStats[0].reboundTot [int] 1
+.result.recordData.awayPlayerStats[0].scoreTot [int] 3
+.result.recordData.awayPlayerStats[0].st [int] 0
+.result.recordData.awayPlayerStats[0].startFlag [bool] True
+.result.recordData.awayPlayerStats[0].teamCode [str] '60'
+.result.recordData.awayPlayerStats[0].threeP [int] 0
+.result.recordData.awayPlayerStats[0].threePA [int] 0
+.result.recordData.awayPlayerStats[0].threePP [int] 0
+.result.recordData.awayPlayerStats[0].to [int] 2
+.result.recordData.awayPlayerStats[0].twoP [int] 1
+.result.recordData.awayPlayerStats[0].twoPA [int] 2
+.result.recordData.awayPlayerStats[0].twoPP [int] 50
+.result.recordData.homeQ4Score [int] 30
 
-===== KBL ('2025-11-01', '2025-11-03') =====
-https://api-gw.sports.naver.com/schedule/games {'fields': 'basic', 'upperCategoryId': 'basketball', 'categoryId': 'KBL', 'fromDate': '2025-11-01', 'toDate': '2025-11-03'}
-status 400
-{"code": 400, "message": "Bad Request", "success": false}
+### https://api-gw.sports.naver.com/schedule/games {'fields': 'basic', 'categoryId': 'kbl', 'fromDate': '2025-09-20', 'toDate': '2025-10-10', 'size': 500} -> 200
+count 25 first 2025-09-20 last 2025-10-10
+   2025-09-20 울산 현대모비스 부산 KCC RESULT 90 61 {'gameId': '20250920106047142', 'categoryId': 'kbl', 'gameDate': '2025-09-20', 'gameDateTime': '2025-09-20T14:00:00', 'homeTeamCode': '10', 'homeTeamName': '울산 현대모비스', 'homeTeamScore': 90, 'awayTeamCode': '60', 'awayTeamName': '부산 KCC', 'awayTeamScore': 61, 'winner': 'HOME', 'statusCode': 'RESULT', 'statusInfo': '4쿼터', 'cancel': False, 'suspended': False, 'reversedHomeAway': False, 'neutralGround': False, 'widgetEnable': False}
+   2025-09-20 원주 DB 수원 KT RESULT 69 85 
+   2025-10-08 고양 소노 서울 SK RESULT 82 78 
+   2025-10-09 수원 KT 서울 삼성 RESULT 74 66 
+   2025-10-10 고양 소노 창원 LG RESULT 74 80 
 
-===== KBL ('2026-01-10', '2026-01-12') =====
-https://api-gw.sports.naver.com/schedule/games {'fields': 'basic', 'upperCategoryId': 'basketball', 'categoryId': 'KBL', 'fromDate': '2026-01-10', 'toDate': '2026-01-12'}
-status 400
-{"code": 400, "message": "Bad Request", "success": false}
+### https://api-gw.sports.naver.com/schedule/games {'fields': 'basic', 'categoryId': 'kbl', 'fromDate': '2026-03-25', 'toDate': '2026-05-31', 'size': 500} -> 200
+count 44 first 2026-03-25 last 2026-05-13
+   2026-03-25 서울 SK 고양 소노 RESULT 77 78 {'gameId': '2026032555664701245', 'categoryId': 'kbl', 'gameDate': '2026-03-25', 'gameDateTime': '2026-03-25T19:00:00', 'homeTeamCode': '55', 'homeTeamName': '서울 SK', 'homeTeamScore': 77, 'awayTeamCode': '66', 'awayTeamName': '고양 소노', 'awayTeamScore': 78, 'winner': 'AWAY', 'statusCode': 'RESULT', 'statusInfo': '4쿼터', 'cancel': False, 'suspended': False, 'reversedHomeAway': False, 'neutralGround': False, 'widgetEnable': False}
+   2026-03-26 대구 한국가스공사 창원 LG RESULT 67 80 
+   2026-05-09 부산 KCC 고양 소노 RESULT 88 87 
+   2026-05-10 부산 KCC 고양 소노 RESULT 80 81 
+   2026-05-13 고양 소노 부산 KCC RESULT 68 76 
 
-===== no cat =====
-https://api-gw.sports.naver.com/schedule/games {'fields': 'basic', 'upperCategoryId': 'basketball', 'fromDate': '2025-11-01', 'toDate': '2025-11-02'}
-status 200
-{"code": 200, "success": true, "result": {"games": [], "gameTotalCount": 0}}
-
-===== cat only =====
-https://api-gw.sports.naver.com/schedule/games {'fields': 'basic', 'categoryId': 'kbl', 'fromDate': '2025-11-01', 'toDate': '2025-11-02'}
-status 200
-{"code": 200, "success": true, "result": {"games": [{"gameId": "202511013560470150", "categoryId": "kbl", "gameDate": "2025-11-01", "gameDateTime": "2025-11-01T14:00:00", "homeTeamCode": "35", "homeTeamName": "서울 삼성", "homeTeamScore": 100, "awayTeamCode": "60", "awayTeamName": "부산 KCC", "awayTeamScore": 77, "winner": "HOME", "statusCode": "RESULT", "statusInfo": "4쿼터", "cancel": false, "suspended": false, "reversedHomeAway": false, "neutralGround": false, "homeTeamEmblemUrl": "https://sports-phinf.pstatic.net/team/kbl/default/35.png", "awayTeamEmblemUrl": "https://sports-phinf.pstatic.net/team/kbl/default/60.png", "widgetEnable": false}, {"gameId": "202511016650470149", "categoryId": "kbl", "gameDate": "2025-11-01", "gameDateTime": "2025-11-01T14:00:00", "homeTeamCode": "66", "homeTeamName": "고양 소노", "homeTeamScore": 74, "awayTeamCode": "50", "awayTeamName": "창원 LG", "awayTeamScore": 64, "winner": "HOME", "statusCode": "RESULT", "statusInfo": "4쿼터", "cancel": false, "suspended": false, "reversedHomeAway": false, "neutralGround": false, "homeTeamEmblemUrl": "https://sports-phinf.pstatic.net/team/kbl/default/66.png", "awayTeamEmblemUrl": "https://sports-phinf.pstatic.net/team/kbl/default/50.png", "widgetEnable": false}, {"gameId": "202511011610470151", "categoryId": "kbl", "gameDate": "2025-11-01", "gameDateTime": "2025-11-01T16:30:00", "homeTeamCode": "16", "homeTeamName": "원주 DB", "homeTeamScore": 86, "awayTeamCode": "10", "awayTeamName": "울산 현대모비스", "awayTeamScore": 81, "winner": "HOME", "statusCode": "RESULT", "statusInfo": "4쿼터", "cancel": false, "suspended": false, "reversedHomeAway": false, "neutralGround": false, "homeTeamEmblemUrl": "https://sports-phinf.pstatic.net/team/kbl/default/16.png", "awayTeamEmblemUrl": "https://sports-phinf.pstatic.net/team/kbl/default/10.png", "widgetEnable": false}, {"gameId": "202511020664470152", "categoryId": "kbl", "gameDate": "2025-11-02", "gameDateTime": "2025-11-02T14:00:00", "homeTeamCode": "06", "homeTeamName": "수원 KT", "homeTeamScore": 60, "awayTeamCode": "64", "awayTeamName": "대구 한국가스공사", "awayTeamScore": 71, "winner": "AWAY", "statusCode": "RESULT", "statusInfo": "4쿼터", "cancel": false, "suspended": false, "reversedHomeAway": false, "neutralGround": false, "homeTeamEmblemUrl": "https://sports-phinf.pstatic.net/team/kbl/default/06.png", "awayTeamEmblemUrl": "https://sports-phinf.pstatic.net/team/kbl/default/64.png", "widgetEnable": false}, {"gameId": "202511027066470153", "categoryId": "kbl", "gameDate": "2025
-
-===== upcoming 2026 =====
-https://api-gw.sports.naver.com/schedule/games {'fields': 'basic', 'upperCategoryId': 'basketball', 'categoryId': 'kbl', 'fromDate': '2026-10-01', 'toDate': '2026-10-20'}
-status 200
-{"code": 200, "success": true, "result": {"games": [], "gameTotalCount": 0}}
-
-===== kbl official =====
-https://api.kbl.or.kr/match/list?fromDate=20251101&toDate=20251103 None
-status 400
-{"resultCode": "Fail", "message": "필수 헤더 정보가 누락되었습니다.", "object": -1101, "errorCode": 400}
-
-===== kbl official =====
-https://www.kbl.or.kr/match/schedule?type=SCHEDULE&season_code=S43&month=11 None
-status 200
-<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0"><title>KBL ê³µì ííì´ì§</title><link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg"><link rel="stylesheet" href="https://kbl-data.sports2i.com/kbl/main.css"><link rel="stylesheet" href="/assets/css/reset.css"><link rel="stylesheet" href="/assets/css/font.css"><link rel="stylesheet" href="/assets/css/ico.css"><link rel="stylesheet" href="/assets/css/common.css"><link rel="stylesheet" href="/assets/css/style.css"><script id="flutterHelper" src="/js/flutterHelper.js"></script><script id="flutterHelper" src="https://mediaprosports.com/sdk/kpsa-media.js" async></script><script>(function(f,d,k,h){var b;var a=m()+"ver="+c(d);g();funct
-
-===== kbl official =====
-https://www.kbl.or.kr/ None
-status 200
-<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0"><title>KBL ê³µì ííì´ì§</title><link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg"><link rel="stylesheet" href="https://kbl-data.sports2i.com/kbl/main.css"><link rel="stylesheet" href="/assets/css/reset.css"><link rel="stylesheet" href="/assets/css/font.css"><link rel="stylesheet" href="/assets/css/ico.css"><link rel="stylesheet" href="/assets/css/common.css"><link rel="stylesheet" href="/assets/css/style.css"><script id="flutterHelper" src="/js/flutterHelper.js"></script><script id="flutterHelper" src="https://mediaprosports.com/sdk/kpsa-media.js" async></script><script>(function(f,d,k,h){var b;var a=m()+"ver="+c(d);g();funct
+### https://api-gw.sports.naver.com/schedule/games {'fields': 'basic', 'categoryId': 'kbl', 'fromDate': '2026-09-25', 'toDate': '2026-10-31', 'size': 500} -> 200
+count 54 first 2026-09-25 last 2026-10-31
+   2026-09-25 부산 KCC 창원 LG RESULT 82 88 {'gameId': '20260925605049144', 'categoryId': 'kbl', 'gameDate': '2026-09-25', 'gameDateTime': '2026-09-25T14:00:00', 'homeTeamCode': '60', 'homeTeamName': '부산 KCC', 'homeTeamScore': 82, 'awayTeamCode': '50', 'awayTeamName': '창원 LG', 'awayTeamScore': 88, 'winner': 'AWAY', 'statusCode': 'RESULT', 'statusInfo': '4쿼터', 'cancel': False, 'suspended': False, 'reversedHomeAway': False, 'neutralGround': False, 'widgetEnable': False}
+   2026-09-25 안양 정관장 수원 KT RESULT 75 72 
+   2026-10-31 부산 KCC 원주 DB BEFORE 0 0 
+   2026-10-31 안양 정관장 수원 KT BEFORE 0 0 
+   2026-10-31 대구 한국가스공사 울산 현대모비스 BEFORE 0 0 
