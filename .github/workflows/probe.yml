@@ -1,0 +1,19 @@
+name: Probe (temporary)
+
+on:
+  workflow_dispatch:
+    inputs:
+      script:
+        description: '실행할 프로브 스크립트 경로'
+        required: true
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - run: pip install requests
+      - run: python ${{ github.event.inputs.script }}
