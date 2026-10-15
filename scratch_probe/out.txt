@@ -1,33 +1,13 @@
-season list 300 total count 300
-status Counter({'RESULT': 300})
-months [('2025-09', 10), ('2025-10', 48), ('2025-11', 35), ('2025-12', 49), ('2026-01', 50), ('2026-02', 33), ('2026-03', 42), ('2026-04', 28), ('2026-05', 5)]
-2025-09 2025-09-20 kbl_e 0 울산 현대모비스 부산 KCC
-2025-10 2025-10-03 kbl_r 0 서울 삼성 부산 KCC
-2025-11 2025-11-01 kbl_r 0 서울 삼성 부산 KCC
-2025-12 2025-12-04 kbl_r 0 창원 LG 대구 한국가스공사
-2026-01 2026-01-01 kbl_r 0 고양 소노 대구 한국가스공사
-2026-02 2026-02-01 kbl_r 0 수원 KT 원주 DB
-2026-03 2026-03-05 kbl_r 0 원주 DB 부산 KCC
-2026-04 2026-04-01 kbl_r 0 부산 KCC 서울 SK
-2026-05 2026-05-05 kbl_ps_cp 1 고양 소노 부산 KCC
-
-== 20250920 3
-  kbl_e  울산 현대모비스 90-61 부산 KCC OT=False reg=90-61 q=[{'q': 'Q1', 'home': 27, 'away': 14}, {'q': 'Q2', 'home': 14, 'away': 18}, {'q': 'Q3', 'home': 29, 'away': 22}, {'q': 'Q4', 'home': 20, 'away': 7}] player_sum=90/61 fga=83 n_pl=12
-  kbl_e  원주 DB 69-85 수원 KT OT=False reg=69-85 q=[{'q': 'Q1', 'home': 16, 'away': 27}, {'q': 'Q2', 'home': 23, 'away': 22}, {'q': 'Q3', 'home': 15, 'away': 13}, {'q': 'Q4', 'home': 15, 'away': 23}] player_sum=69/85 fga=75 n_pl=12
-  kbl_e  안양 정관장 77-66 고양 소노 OT=False reg=77-66 q=[{'q': 'Q1', 'home': 16, 'away': 24}, {'q': 'Q2', 'home': 18, 'away': 10}, {'q': 'Q3', 'home': 23, 'away': 16}, {'q': 'Q4', 'home': 20, 'away': 16}] player_sum=77/66 fga=84 n_pl=12
-
-== 20251003 3
-  REG    서울 삼성 82-89 부산 KCC OT=False reg=82-89 q=[{'q': 'Q1', 'home': 18, 'away': 24}, {'q': 'Q2', 'home': 19, 'away': 20}, {'q': 'Q3', 'home': 29, 'away': 22}, {'q': 'Q4', 'home': 16, 'away': 23}] player_sum=82/89 fga=61 n_pl=12
-  REG    창원 LG 81-89 서울 SK OT=True reg=77-77 q=[{'q': 'Q1', 'home': 29, 'away': 19}, {'q': 'Q2', 'home': 13, 'away': 14}, {'q': 'Q3', 'home': 19, 'away': 21}, {'q': 'Q4', 'home': 16, 'away': 23}, {'q': 'OT', 'home': 4, 'away': 12}] player_sum=81/89 fga=77 n_pl=12
-  REG    울산 현대모비스 68-71 원주 DB OT=False reg=68-71 q=[{'q': 'Q1', 'home': 19, 'away': 20}, {'q': 'Q2', 'home': 16, 'away': 20}, {'q': 'Q3', 'home': 15, 'away': 19}, {'q': 'Q4', 'home': 18, 'away': 12}] player_sum=68/71 fga=71 n_pl=12
-
-== 20260325 1
-  REG    서울 SK 77-78 고양 소노 OT=False reg=77-78 q=[{'q': 'Q1', 'home': 17, 'away': 18}, {'q': 'Q2', 'home': 31, 'away': 23}, {'q': 'Q3', 'home': 16, 'away': 22}, {'q': 'Q4', 'home': 13, 'away': 15}] player_sum=77/78 fga=67 n_pl=12
-
-== 20260513 1
-  kbl_ps_cp 고양 소노 68-76 부산 KCC OT=False reg=68-76 q=[{'q': 'Q1', 'home': 12, 'away': 25}, {'q': 'Q2', 'home': 11, 'away': 17}, {'q': 'Q3', 'home': 18, 'away': 14}, {'q': 'Q4', 'home': 27, 'away': 20}] player_sum=68/76 fga=72 n_pl=12
-Traceback (most recent call last):
-  File "/home/runner/work/sports-pipeline/sports-pipeline/scratch_probe/probe_kbl.py", line 46, in <module>
-    if hq and sum(hq[:4]) != info.get("homeTeamScore"):
-              ^^^^^^^^^^^
-TypeError: unsupported operand type(s) for +: 'int' and 'str'
+missing 6
+2025-10-07 202510070610470111 수원 KT 울산 현대모비스 False False
+   build ok REG 74 73
+2025-10-10 202510106650470115 고양 소노 창원 LG False False
+   build ok REG 74 80
+2025-10-13 202510135560470122 서울 SK 부산 KCC False False
+   build ok REG 67 75
+2025-10-14 202510141064470123 울산 현대모비스 대구 한국가스공사 False False
+   build ok REG 82 77
+2025-10-16 202510161660470125 원주 DB 부산 KCC False False
+   build ok REG 84 86
+2026-10-13 202610137066490119 안양 정관장 고양 소노 False False
+   build ok REG 85 81
