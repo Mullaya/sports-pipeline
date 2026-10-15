@@ -11,6 +11,7 @@ FILE_SUFFIX = {
     "NFL": " nfl",
     "KHL": " khl",
     "NBA": " nba",
+    "KBL": " kbl",
 }
 
 

@@ -13,15 +13,18 @@ import requests
 
 API = "https://api-gw.sports.naver.com/schedule/games"
 
-# 네이버 roundCode → 경기 구분. 모르는 코드는 원문 그대로 남겨 집계에서 걸러낸다.
-ROUND_TYPES = {
-    "kbl_r": "REG",     # 정규리그
-    "kbl_p": "PO",      # 플레이오프(6강·4강)
-    "kbl_6": "PO",
-    "kbl_4": "PO",
-    "kbl_f": "FINAL",   # 챔피언결정전
-    "kbl_c": "CUP",     # 컵대회
-}
+# 네이버 roundCode → 경기 구분 (2025-26 시즌 실데이터로 확인)
+#   kbl_r 정규리그 / kbl_e 컵대회(시즌 전) / kbl_ps_* 포스트시즌, kbl_ps_cp 챔피언결정전
+def _game_type(round_code: str) -> str:
+    if round_code == "kbl_r":
+        return "REG"
+    if round_code == "kbl_e":
+        return "CUP"
+    if round_code == "kbl_ps_cp":
+        return "FINAL"
+    if round_code.startswith("kbl_ps"):
+        return "PO"
+    return round_code or "UNKNOWN"
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X)",
@@ -114,7 +117,7 @@ class KBLCollector:
 
         return {
             "game_id": gid,
-            "game_type": ROUND_TYPES.get(round_code, round_code or "UNKNOWN"),
+            "game_type": _game_type(round_code),   # REG / CUP / PO / FINAL
             "round_code": round_code,
             "season": info.get("seasonYear"),
             "start_kst": info.get("gameDateTime", ""),
