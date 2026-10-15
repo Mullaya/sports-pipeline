@@ -20,6 +20,8 @@ def _game_type(round_code: str) -> str:
         return "REG"
     if round_code == "kbl_e":
         return "CUP"
+    if round_code == "kbl_as":
+        return "ALLSTAR"
     if round_code == "kbl_ps_cp":
         return "FINAL"
     if round_code.startswith("kbl_ps"):
