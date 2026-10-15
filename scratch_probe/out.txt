@@ -1,0 +1,11 @@
+
+===== naver schedule =====
+https://api-gw.sports.naver.com/schedule/games {'fields': 'basic,schedule', 'upperCategoryId': 'basketball', 'categoryId': 'kbl', 'fromDate': '2025-10-03', 'toDate': '2025-10-05', 'size': 50}
+status 200
+{"code": 200, "success": true, "result": {"games": [], "gameTotalCount": 0}}
+GAME_ID None
+
+===== naver season range =====
+https://api-gw.sports.naver.com/schedule/games {'fields': 'basic', 'upperCategoryId': 'basketball', 'categoryId': 'kbl', 'fromDate': '2026-04-01', 'toDate': '2026-05-31', 'size': 500}
+status 200
+{"code": 200, "success": true, "result": {"games": [], "gameTotalCount": 0}}
