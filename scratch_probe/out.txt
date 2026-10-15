@@ -1,11 +1,50 @@
 
-===== naver schedule =====
-https://api-gw.sports.naver.com/schedule/games {'fields': 'basic,schedule', 'upperCategoryId': 'basketball', 'categoryId': 'kbl', 'fromDate': '2025-10-03', 'toDate': '2025-10-05', 'size': 50}
+===== kbl ('2025-11-01', '2025-11-03') =====
+https://api-gw.sports.naver.com/schedule/games {'fields': 'basic', 'upperCategoryId': 'basketball', 'categoryId': 'kbl', 'fromDate': '2025-11-01', 'toDate': '2025-11-03'}
 status 200
 {"code": 200, "success": true, "result": {"games": [], "gameTotalCount": 0}}
-GAME_ID None
 
-===== naver season range =====
-https://api-gw.sports.naver.com/schedule/games {'fields': 'basic', 'upperCategoryId': 'basketball', 'categoryId': 'kbl', 'fromDate': '2026-04-01', 'toDate': '2026-05-31', 'size': 500}
+===== kbl ('2026-01-10', '2026-01-12') =====
+https://api-gw.sports.naver.com/schedule/games {'fields': 'basic', 'upperCategoryId': 'basketball', 'categoryId': 'kbl', 'fromDate': '2026-01-10', 'toDate': '2026-01-12'}
 status 200
 {"code": 200, "success": true, "result": {"games": [], "gameTotalCount": 0}}
+
+===== KBL ('2025-11-01', '2025-11-03') =====
+https://api-gw.sports.naver.com/schedule/games {'fields': 'basic', 'upperCategoryId': 'basketball', 'categoryId': 'KBL', 'fromDate': '2025-11-01', 'toDate': '2025-11-03'}
+status 400
+{"code": 400, "message": "Bad Request", "success": false}
+
+===== KBL ('2026-01-10', '2026-01-12') =====
+https://api-gw.sports.naver.com/schedule/games {'fields': 'basic', 'upperCategoryId': 'basketball', 'categoryId': 'KBL', 'fromDate': '2026-01-10', 'toDate': '2026-01-12'}
+status 400
+{"code": 400, "message": "Bad Request", "success": false}
+
+===== no cat =====
+https://api-gw.sports.naver.com/schedule/games {'fields': 'basic', 'upperCategoryId': 'basketball', 'fromDate': '2025-11-01', 'toDate': '2025-11-02'}
+status 200
+{"code": 200, "success": true, "result": {"games": [], "gameTotalCount": 0}}
+
+===== cat only =====
+https://api-gw.sports.naver.com/schedule/games {'fields': 'basic', 'categoryId': 'kbl', 'fromDate': '2025-11-01', 'toDate': '2025-11-02'}
+status 200
+{"code": 200, "success": true, "result": {"games": [{"gameId": "202511013560470150", "categoryId": "kbl", "gameDate": "2025-11-01", "gameDateTime": "2025-11-01T14:00:00", "homeTeamCode": "35", "homeTeamName": "서울 삼성", "homeTeamScore": 100, "awayTeamCode": "60", "awayTeamName": "부산 KCC", "awayTeamScore": 77, "winner": "HOME", "statusCode": "RESULT", "statusInfo": "4쿼터", "cancel": false, "suspended": false, "reversedHomeAway": false, "neutralGround": false, "homeTeamEmblemUrl": "https://sports-phinf.pstatic.net/team/kbl/default/35.png", "awayTeamEmblemUrl": "https://sports-phinf.pstatic.net/team/kbl/default/60.png", "widgetEnable": false}, {"gameId": "202511016650470149", "categoryId": "kbl", "gameDate": "2025-11-01", "gameDateTime": "2025-11-01T14:00:00", "homeTeamCode": "66", "homeTeamName": "고양 소노", "homeTeamScore": 74, "awayTeamCode": "50", "awayTeamName": "창원 LG", "awayTeamScore": 64, "winner": "HOME", "statusCode": "RESULT", "statusInfo": "4쿼터", "cancel": false, "suspended": false, "reversedHomeAway": false, "neutralGround": false, "homeTeamEmblemUrl": "https://sports-phinf.pstatic.net/team/kbl/default/66.png", "awayTeamEmblemUrl": "https://sports-phinf.pstatic.net/team/kbl/default/50.png", "widgetEnable": false}, {"gameId": "202511011610470151", "categoryId": "kbl", "gameDate": "2025-11-01", "gameDateTime": "2025-11-01T16:30:00", "homeTeamCode": "16", "homeTeamName": "원주 DB", "homeTeamScore": 86, "awayTeamCode": "10", "awayTeamName": "울산 현대모비스", "awayTeamScore": 81, "winner": "HOME", "statusCode": "RESULT", "statusInfo": "4쿼터", "cancel": false, "suspended": false, "reversedHomeAway": false, "neutralGround": false, "homeTeamEmblemUrl": "https://sports-phinf.pstatic.net/team/kbl/default/16.png", "awayTeamEmblemUrl": "https://sports-phinf.pstatic.net/team/kbl/default/10.png", "widgetEnable": false}, {"gameId": "202511020664470152", "categoryId": "kbl", "gameDate": "2025-11-02", "gameDateTime": "2025-11-02T14:00:00", "homeTeamCode": "06", "homeTeamName": "수원 KT", "homeTeamScore": 60, "awayTeamCode": "64", "awayTeamName": "대구 한국가스공사", "awayTeamScore": 71, "winner": "AWAY", "statusCode": "RESULT", "statusInfo": "4쿼터", "cancel": false, "suspended": false, "reversedHomeAway": false, "neutralGround": false, "homeTeamEmblemUrl": "https://sports-phinf.pstatic.net/team/kbl/default/06.png", "awayTeamEmblemUrl": "https://sports-phinf.pstatic.net/team/kbl/default/64.png", "widgetEnable": false}, {"gameId": "202511027066470153", "categoryId": "kbl", "gameDate": "2025
+
+===== upcoming 2026 =====
+https://api-gw.sports.naver.com/schedule/games {'fields': 'basic', 'upperCategoryId': 'basketball', 'categoryId': 'kbl', 'fromDate': '2026-10-01', 'toDate': '2026-10-20'}
+status 200
+{"code": 200, "success": true, "result": {"games": [], "gameTotalCount": 0}}
+
+===== kbl official =====
+https://api.kbl.or.kr/match/list?fromDate=20251101&toDate=20251103 None
+status 400
+{"resultCode": "Fail", "message": "필수 헤더 정보가 누락되었습니다.", "object": -1101, "errorCode": 400}
+
+===== kbl official =====
+https://www.kbl.or.kr/match/schedule?type=SCHEDULE&season_code=S43&month=11 None
+status 200
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0"><title>KBL ê³µì ííì´ì§</title><link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg"><link rel="stylesheet" href="https://kbl-data.sports2i.com/kbl/main.css"><link rel="stylesheet" href="/assets/css/reset.css"><link rel="stylesheet" href="/assets/css/font.css"><link rel="stylesheet" href="/assets/css/ico.css"><link rel="stylesheet" href="/assets/css/common.css"><link rel="stylesheet" href="/assets/css/style.css"><script id="flutterHelper" src="/js/flutterHelper.js"></script><script id="flutterHelper" src="https://mediaprosports.com/sdk/kpsa-media.js" async></script><script>(function(f,d,k,h){var b;var a=m()+"ver="+c(d);g();funct
+
+===== kbl official =====
+https://www.kbl.or.kr/ None
+status 200
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0"><title>KBL ê³µì ííì´ì§</title><link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg"><link rel="stylesheet" href="https://kbl-data.sports2i.com/kbl/main.css"><link rel="stylesheet" href="/assets/css/reset.css"><link rel="stylesheet" href="/assets/css/font.css"><link rel="stylesheet" href="/assets/css/ico.css"><link rel="stylesheet" href="/assets/css/common.css"><link rel="stylesheet" href="/assets/css/style.css"><script id="flutterHelper" src="/js/flutterHelper.js"></script><script id="flutterHelper" src="https://mediaprosports.com/sdk/kpsa-media.js" async></script><script>(function(f,d,k,h){var b;var a=m()+"ver="+c(d);g();funct
