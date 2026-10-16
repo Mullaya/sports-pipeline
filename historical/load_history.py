@@ -51,6 +51,13 @@ def load_history(league: str, start: str, end: str):
     while current <= end_dt:
         date_str = current.strftime("%Y%m%d")
 
+        # SKIP_EXISTING=1: 이미 적재된 날짜는 건너뛰고 누락분만 채운다
+        if os.getenv("SKIP_EXISTING") == "1" and (
+                uploader.file_exists(league, date_str, "historical")
+                or uploader.file_exists(league, date_str, "daily")):
+            current += timedelta(days=1)
+            continue
+
         try:
             data = collector.collect_daily(date_str)
 

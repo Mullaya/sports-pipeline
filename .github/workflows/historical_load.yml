@@ -13,6 +13,10 @@ on:
       end_date:
         description: '종료 날짜 YYYYMMDD'
         required: true
+      skip_existing:
+        description: '이미 적재된 날짜 건너뛰기 (1=누락분만)'
+        required: false
+        default: '0'
 
 permissions:
   contents: write
@@ -38,6 +42,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
+          SKIP_EXISTING: ${{ github.event.inputs.skip_existing }}
         run: |
           python historical/load_history.py \
             ${{ github.event.inputs.league }} \

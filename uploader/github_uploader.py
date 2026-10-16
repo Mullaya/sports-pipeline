@@ -1,6 +1,7 @@
 import os
 import json
 import base64
+import time
 import requests
 from datetime import datetime
 
@@ -34,27 +35,28 @@ class GitHubUploader:
         content = json.dumps(data, ensure_ascii=False, indent=2)
         content_b64 = base64.b64encode(content.encode("utf-8")).decode("utf-8")
 
-        # 기존 파일 SHA 확인 (업데이트 시 필요)
-        sha = self._get_file_sha(path)
-
-        payload = {
-            "message": f"[{league}] {date} 데이터 업데이트",
-            "content": content_b64,
-            "branch": "main"
-        }
-
-        if sha:
-            payload["sha"] = sha
-
         url = f"{self.api_base}/contents/{path}"
-        resp = requests.put(url, headers=self.headers, json=payload)
-
-        if resp.status_code in [200, 201]:
-            print(f"  📁 {league}/{subfolder}/{filename} 업로드 완료")
-            return True
-        else:
-            print(f"  ❌ 업로드 실패: {resp.status_code} {resp.text[:200]}")
-            return False
+        # 여러 워크플로우가 동시에 main에 커밋하면 409(브랜치 이동)·422(sha 불일치)가 난다
+        # → sha를 다시 읽고 재시도 (이전엔 조용히 실패해 일부 날짜가 누락됐음)
+        for attempt in range(5):
+            sha = self._get_file_sha(path)   # 기존 파일 SHA 확인 (업데이트 시 필요)
+            payload = {
+                "message": f"[{league}] {date} 데이터 업데이트",
+                "content": content_b64,
+                "branch": "main"
+            }
+            if sha:
+                payload["sha"] = sha
+            resp = requests.put(url, headers=self.headers, json=payload)
+            if resp.status_code in [200, 201]:
+                print(f"  📁 {league}/{subfolder}/{filename} 업로드 완료")
+                return True
+            if resp.status_code in (409, 422, 500, 502, 503) and attempt < 4:
+                time.sleep(2 * (attempt + 1))
+                continue
+            break
+        print(f"  ❌ 업로드 실패: {resp.status_code} {resp.text[:200]}")
+        return False
 
     def file_exists(self, league: str, date: str, subfolder: str = "daily") -> bool:
         filename = f"{date}{FILE_SUFFIX.get(league, '')}.json"
