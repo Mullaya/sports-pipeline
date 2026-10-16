@@ -60,3 +60,10 @@ jobs:
         run: |
           git pull --ff-only origin main || git pull origin main
           python analytics/build_kbl_stats.py
+      - name: V-리그(KOVO·WKOVO) 통계 집계
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          git pull --ff-only origin main || git pull origin main
+          python analytics/build_kovo_stats.py

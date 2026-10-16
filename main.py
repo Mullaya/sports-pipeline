@@ -7,6 +7,7 @@ from collectors.nfl_collector import NFLCollector
 from collectors.khl_collector import KHLCollector
 from collectors.nba_collector import NBACollector
 from collectors.kbl_collector import KBLCollector
+from collectors.kovo_collector import KOVOCollector
 from uploader.github_uploader import GitHubUploader
 
 def get_dates(manual_date: str = None, manual_mlb_date: str = None):
@@ -115,8 +116,22 @@ def run_daily(date: str = None, mlb_date: str = None):
     except Exception as e:
         print(f"  [KBL] 실패: {e}")
 
+    # V-리그 남자부(KOVO)·여자부(WKOVO) 수집 (한국 날짜 = KST 어제, 컵대회 포함)
+    for league in ("KOVO", "WKOVO"):
+        try:
+            v_data = KOVOCollector(league).collect_daily(npb_date)
+            if v_data["games"]:
+                uploader.upload_json(v_data, league, npb_date, "daily")
+                print(f"  [{league}] {len(v_data['games'])}경기 완료")
+            else:
+                print(f"  [{league}] 경기 없음")
+        except Exception as e:
+            print(f"  [{league}] 실패: {e}")
+
     if not date:
-        catch_up(uploader, npb_date, {"KBL": KBLCollector})
+        catch_up(uploader, npb_date, {"KBL": KBLCollector,
+                                      "KOVO": lambda: KOVOCollector("KOVO"),
+                                      "WKOVO": lambda: KOVOCollector("WKOVO")})
 
     # NPB/KBO는 별도 스크래퍼 구성 예정
     print(f"  [NPB] 별도 스크래퍼 구성 예정")

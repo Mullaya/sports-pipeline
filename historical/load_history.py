@@ -14,6 +14,7 @@ from collectors.nfl_collector import NFLCollector
 from collectors.khl_collector import KHLCollector
 from collectors.nba_collector import NBACollector
 from collectors.kbl_collector import KBLCollector
+from collectors.kovo_collector import KOVOCollector
 from uploader.github_uploader import GitHubUploader
 from main import extract_player_data
 
@@ -27,6 +28,8 @@ def load_history(league: str, start: str, end: str):
         "KHL": KHLCollector(),
         "NBA": NBACollector(),
         "KBL": KBLCollector(),
+        "KOVO": KOVOCollector("KOVO"),
+        "WKOVO": KOVOCollector("WKOVO"),
     }
 
     collector = collectors.get(league)
@@ -59,7 +62,7 @@ def load_history(league: str, start: str, end: str):
                     fail += 1
 
                 # NHL/NFL/KHL/NBA/KBL은 선수 기록이 일별 파일에 포함되어 있어 별도 추출 불필요
-                player_data = extract_player_data(data, league, date_str) if league not in ("NHL", "NFL", "KHL", "NBA", "KBL") else {"players": []}
+                player_data = extract_player_data(data, league, date_str) if league not in ("NHL", "NFL", "KHL", "NBA", "KBL", "KOVO", "WKOVO") else {"players": []}
                 if player_data["players"]:
                     uploader.upload_json(
                         player_data, league, date_str, "historical_players"

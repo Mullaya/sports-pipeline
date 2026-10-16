@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       league:
-        description: '리그 (MLB/KBO/NPB/NHL/NFL/KHL/NBA/KBL)'
+        description: '리그 (MLB/KBO/NPB/NHL/NFL/KHL/NBA/KBL/KOVO/WKOVO)'
         required: true
         default: 'MLB'
       start_date:
