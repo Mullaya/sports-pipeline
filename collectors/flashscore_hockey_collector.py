@@ -3,6 +3,7 @@
 대상 리그 (LEAGUES):
   DEL : 독일 PENNY DEL
   CZE : 체코 Tipsport Extraliga  (공식 hokej.cz는 GitHub Actions IP를 403 차단)
+  KHL : 지난 시즌 백필 전용 (KHL 모바일 API는 현재 시즌만 조회됨). 팀명은 KHL API 표기로 변환
 
 수집 단위: 현지(중부유럽) 날짜 YYYYMMDD 하루치 완료 경기
 - 경기 결과: 최종/정규시간 스코어, REG/OT/SO, 피리어드별 득점, 스테이지(정규/PO 등)
@@ -29,11 +30,25 @@ import requests
 SITE = "https://www.flashscore.com"
 FEED = "https://global.flashscore.ninja/2/x/feed/"
 FSIGN = "SW9D1eZo"          # 사이트 설정(feed_sign)에 노출된 공개 값. 바뀌면 결과 페이지에서 재추출
-LOCAL_TZ = ZoneInfo("Europe/Berlin")   # DEL·체코 공통 (CET/CEST)
-
 LEAGUES = {
-    "DEL": {"path": "hockey/germany/del", "country": "81", "tournament": "nVp0wiqd"},
-    "CZE": {"path": "hockey/czech-republic/extraliga", "country": "62", "tournament": "QR1GYbvD"},
+    "DEL": {"path": "hockey/germany/del", "country": "81", "tournament": "nVp0wiqd",
+            "tz": "Europe/Berlin"},
+    "CZE": {"path": "hockey/czech-republic/extraliga", "country": "62", "tournament": "QR1GYbvD",
+            "tz": "Europe/Prague"},
+    # 파일 날짜는 기존 KHL 수집기와 같은 모스크바 날짜, 팀명은 KHL API 표기
+    "KHL": {"path": "hockey/russia/khl", "country": "158", "tournament": "v9k3aY5F",
+            "tz": "Europe/Moscow", "exhibition_teams": {"Russia"},
+            "names": {
+                "Avangard Omsk": "Avangard", "Bars Kazan": "Ak Bars", "Barys Astana": "Barys",
+                "CSKA Moscow": "CSKA", "Cherepovets": "Severstal", "Dinamo Minsk": "Dinamo Mn",
+                "Dynamo Moscow": "Dynamo Msk", "Khabarovsk": "Amur", "Lada": "Lada",
+                "Lokomotiv Yaroslavl": "Lokomotiv", "Magnitogorsk": "Metallurg Mg",
+                "Nizhny Novgorod": "Torpedo", "Niznekamsk": "Neftekhimik", "Novosibirsk": "Sibir",
+                "SKA St. Petersburg": "SKA", "Salavat Ufa": "Salavat Yulaev", "Shanghai": "Dragons",
+                "Kunlun": "Dragons", "Sochi": "HC Sochi", "Spartak Moscow": "Spartak",
+                "Tractor Chelyabinsk": "Traktor", "Vladivostok": "Admiral",
+                "Yekaterinburg": "Avtomobilist",
+            }},
 }
 
 UA = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
@@ -91,6 +106,9 @@ class FlashscoreHockeyCollector:
             raise ValueError(f"지원하지 않는 리그: {league}")
         self.league = league
         self.cfg = LEAGUES[league]
+        self.tz = ZoneInfo(self.cfg["tz"])
+        self.names = self.cfg.get("names", {})
+        self._unmapped = set()
         self.sleep = sleep
         self.session = requests.Session()
         self.session.headers.update({"User-Agent": UA, "Accept": "*/*"})
@@ -155,7 +173,7 @@ class FlashscoreHockeyCollector:
             st = _int(rec.get("AD"))
             if not st:
                 continue
-            local = datetime.fromtimestamp(st, timezone.utc).astimezone(LOCAL_TZ)
+            local = datetime.fromtimestamp(st, timezone.utc).astimezone(self.tz)
             if local.strftime("%Y%m%d") != date:
                 continue
             try:
@@ -163,7 +181,16 @@ class FlashscoreHockeyCollector:
             except Exception as e:
                 print(f"  [{self.league}] 경기 {rec.get('AA')} 파싱 실패: {e}")
             time.sleep(self.sleep)
+        if self._unmapped:
+            print(f"  [{self.league}] ⚠️ 팀명 매핑 없음(원문 유지): {sorted(self._unmapped)}")
         return {"date": date, "league": self.league, "source": "flashscore", "games": games}
+
+    def _name(self, raw: str) -> str:
+        if not self.names:
+            return raw
+        if raw not in self.names and raw not in self.cfg.get("exhibition_teams", ()):
+            self._unmapped.add(raw)
+        return self.names.get(raw, raw)
 
     # ------------------------------------------------------------------
     def _build_game(self, r: dict) -> dict:
@@ -195,14 +222,18 @@ class FlashscoreHockeyCollector:
         goals = self._goals(mid)
 
         h_st, a_st = stats.get("home", {}), stats.get("away", {})
+        home, away = self._name(r.get("AE", "")), self._name(r.get("AF", ""))
+        gtype = _stage_type(r.get("ZA"))
+        if {r.get("AE"), r.get("AF")} & set(self.cfg.get("exhibition_teams", ())):
+            gtype = "EXHIB"      # 대표팀 친선 등 — 집계 제외
         return {
             "game_id": mid,
-            "game_type": _stage_type(r.get("ZA")),
+            "game_type": gtype,
             "stage": r.get("ZA", ""),
             "round": r.get("ER", ""),
             "start_utc": datetime.fromtimestamp(_int(r["AD"]), timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-            "home_team": r.get("AE", ""),
-            "away_team": r.get("AF", ""),
+            "home_team": home,
+            "away_team": away,
             "home_team_id": r.get("PX"),
             "away_team_id": r.get("PY"),
             "home_score": hs,
@@ -212,7 +243,7 @@ class FlashscoreHockeyCollector:
             "reg_home_score": reg_h,            # 3-way(정규 60분) 판정용
             "reg_away_score": reg_a,
             "reg_total_goals": reg_h + reg_a,
-            "winner": r.get("AE") if hs > as_ else r.get("AF"),
+            "winner": home if hs > as_ else away,
             "period_scores": periods,
             "home_stats": h_st,
             "away_stats": a_st,

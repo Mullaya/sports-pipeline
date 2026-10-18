@@ -33,6 +33,8 @@ def load_history(league: str, start: str, end: str):
         "WKOVO": KOVOCollector("WKOVO"),
         "DEL": FlashscoreHockeyCollector("DEL"),
         "CZE": FlashscoreHockeyCollector("CZE"),
+        # KHL 지난 시즌 백필: KHL 모바일 API는 현재 시즌만 조회되므로 Flashscore 사용, 저장은 KHL 폴더
+        "KHL_FS": FlashscoreHockeyCollector("KHL"),
     }
 
     collector = collectors.get(league)
@@ -41,6 +43,7 @@ def load_history(league: str, start: str, end: str):
         return
 
     uploader = GitHubUploader()
+    folder = "KHL" if league == "KHL_FS" else league
 
     current = datetime.strptime(start, "%Y%m%d")
     end_dt = datetime.strptime(end, "%Y%m%d")
@@ -56,8 +59,8 @@ def load_history(league: str, start: str, end: str):
 
         # SKIP_EXISTING=1: 이미 적재된 날짜는 건너뛰고 누락분만 채운다
         if os.getenv("SKIP_EXISTING") == "1" and (
-                uploader.file_exists(league, date_str, "historical")
-                or uploader.file_exists(league, date_str, "daily")):
+                uploader.file_exists(folder, date_str, "historical")
+                or uploader.file_exists(folder, date_str, "daily")):
             current += timedelta(days=1)
             continue
 
@@ -65,14 +68,14 @@ def load_history(league: str, start: str, end: str):
             data = collector.collect_daily(date_str)
 
             if data["games"]:
-                ok = uploader.upload_json(data, league, date_str, "historical")
+                ok = uploader.upload_json(data, folder, date_str, "historical")
                 if ok:
                     success += 1
                 else:
                     fail += 1
 
                 # NHL/NFL/KHL/NBA/KBL은 선수 기록이 일별 파일에 포함되어 있어 별도 추출 불필요
-                player_data = extract_player_data(data, league, date_str) if league not in ("NHL", "NFL", "KHL", "NBA", "KBL", "KOVO", "WKOVO", "DEL", "CZE") else {"players": []}
+                player_data = extract_player_data(data, league, date_str) if league not in ("NHL", "NFL", "KHL", "NBA", "KBL", "KOVO", "WKOVO", "DEL", "CZE", "KHL_FS") else {"players": []}
                 if player_data["players"]:
                     uploader.upload_json(
                         player_data, league, date_str, "historical_players"

@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       league:
-        description: '리그 (MLB/KBO/NPB/NHL/NFL/KHL/NBA/KBL/KOVO/WKOVO/DEL/CZE)'
+        description: '리그 (MLB/KBO/NPB/NHL/NFL/KHL/NBA/KBL/KOVO/WKOVO/DEL/CZE, KHL 지난 시즌은 KHL_FS)'
         required: true
         default: 'MLB'
       start_date:

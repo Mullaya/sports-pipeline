@@ -325,6 +325,7 @@ def build(league: str) -> bool:
     all_games = load_games(league)
     if league == "KHL":
         khl_goal_sides(all_games)
+    all_games = [g for g in all_games if g.get("game_type", "REG") not in ("EXHIB", "PRE")]   # 친선·시범 제외
     season = [g for g in all_games if g["date"] >= start]
     past = [g for g in all_games if g["date"] < start]
     reg = [g for g in season if g.get("game_type", "REG") == "REG"]
