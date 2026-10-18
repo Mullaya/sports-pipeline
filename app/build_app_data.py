@@ -323,6 +323,14 @@ def main():
                 }
                 if ab in ("2", "3") and r.get("AG") is not None:
                     g["score"] = {"home": r.get("AG"), "away": r.get("AH")}
+                    # 피리어드/세트/쿼터별 점수 (BA/BB, BC/BD, ... 홈/원정 쌍)
+                    parts = []
+                    for hk, ak in (("BA", "BB"), ("BC", "BD"), ("BE", "BF"), ("BG", "BH"), ("BI", "BJ")):
+                        if r.get(hk) is None and r.get(ak) is None:
+                            break
+                        parts.append([r.get(hk, ""), r.get(ak, "")])
+                    if parts:
+                        g["score"]["parts"] = parts
                 if stats_name:
                     for side in ("home", "away"):
                         k = st.team_key(code, stats_name, g[side]["name"])
@@ -336,6 +344,8 @@ def main():
                                   for g in games if g["league"] == "MLB"}))
 
     today = now.strftime("%Y%m%d")
+    # 수동 갱신(픽 데스크 '갱신' 버튼): 지정 경기는 시간창과 무관하게 라인업을 다시 확인
+    force_ids = {x.strip() for x in os.environ.get("FORCE_IDS", "").split(",") if x.strip()}
     for g in games:
         p = prev.get(g["id"], {})
         mins_to_start = (g["start"] - now.timestamp()) / 60
@@ -345,7 +355,8 @@ def main():
         else:
             g["form"], g["form_date"] = parse_h2h(fs.get(f"df_hh_1_{g['id']}")), today
         # 라인업: 시작 4시간 전 ~ 시작 후 30분 갱신, 그 밖은 이전 값 유지
-        if -30 <= mins_to_start <= 240 or (not p.get("lineup") and g["status"] != "예정"):
+        forced = g["id"] in force_ids and g["status"] != "종료"
+        if forced or -30 <= mins_to_start <= 240 or (not p.get("lineup") and g["status"] != "예정"):
             groups = parse_lineup(fs.get(f"df_li_1_{g['id']}"))
             avail = any(v["home"] or v["away"] for k, v in groups.items() if k != "Substitutes")
             g["lineup"] = {"available": avail, "checked_kst": now.strftime("%m/%d %H:%M"), "groups": groups}
@@ -370,6 +381,7 @@ def main():
     out = {
         "meta": {
             "generated_kst": now.strftime("%Y-%m-%d %H:%M"),
+            "trigger": os.environ.get("RUN_REASON", "schedule"),
             "dates_kst": [now.strftime("%Y-%m-%d"), (now + timedelta(days=1)).strftime("%Y-%m-%d")],
             "games": len(games),
             "flashscore_calls": fs.calls,
