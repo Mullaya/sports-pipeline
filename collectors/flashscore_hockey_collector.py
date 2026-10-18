@@ -145,9 +145,11 @@ class FlashscoreHockeyCollector:
         total = re.search(r"allEventsCount:\s*(\d+)", html)
 
         recs = {}
-        m = re.search(r'initialFeeds\["summary-results"\]\s*=\s*\{\s*data:\s*`(.*?)`', html, re.S)
-        for r in _records(m.group(1) if m else ""):
-            recs[r["AA"]] = r
+        # 결과 페이지에는 initialFeeds["summary-results"](최근 스테이지 일부)와
+        # initialFeeds['results'](최근 ~100경기)가 함께 심어져 있다 → 둘 다 읽는다
+        for m in re.finditer(r"""initialFeeds\[["'](?:summary-)?results["']\]\s*=\s*\{\s*data:\s*`(.*?)`""", html, re.S):
+            for r in _records(m.group(1)):
+                recs.setdefault(r["AA"], r)
         for page in range(1, 30):
             text = self._get(f"{FEED}tr_4_{self.cfg['country']}_{tour}_{sid}_{page}_0_en_2", feed=True)
             batch = _records(text)
