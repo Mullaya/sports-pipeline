@@ -1,27 +1,26 @@
-import re,sys,requests
-UA={"User-Agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/124 Safari/537.36","Accept-Language":"en"}
-def get(u,**k):
+import re,requests,json
+UA={"User-Agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/124 Safari/537.36","Accept":"*/*"}
+def show(u,n=500,**k):
     try:
-        r=requests.get(u,headers=UA,timeout=25,**k); return r
-    except Exception as e:
-        print("ERR",u,e); return None
-for u in ["https://www.penny-del.org/spielplan","https://www.penny-del.org/","https://www.hokej.cz/tipsport-extraliga/zapasy","https://www.hokej.cz/"]:
-    r=get(u)
-    if r is None: continue
-    print("\n#####",u,r.status_code,len(r.text))
-    t=r.text
-    urls=set(re.findall(r'https?://[a-zA-Z0-9.\-]+(?:/[^\s"\'<>\\)]*)?',t))
-    for x in sorted(urls):
-        if any(k in x.lower() for k in ("api","json","stats","data","live","match","game","feed")): print("  U",x[:160])
-    for x in sorted(set(re.findall(r'["\'](/[^"\']*(?:api|json|feed)[^"\']*)["\']',t)))[:40]: print("  P",x[:160])
-    js=sorted(set(re.findall(r'src="([^"]+\.js[^"]*)"',t)))[:25]
-    for j in js:
-        ju=j if j.startswith("http") else requests.compat.urljoin(u,j)
-        jr=get(ju)
-        if not jr: continue
-        hits=set(re.findall(r'["\'`](https?://[^"\'`\s]{5,140})["\'`]',jr.text))|set(re.findall(r'["\'`](/api[^"\'`\s]{1,120})["\'`]',jr.text))
-        hits=[h for h in hits if any(k in h.lower() for k in ("api","json","feed","stats","live"))]
-        if hits: print("  JS",ju[:100]); [print("     ",h) for h in sorted(hits)[:30]]
-    nd=re.search(r'__NEXT_DATA__"[^>]*>(.{0,1500})',t,re.S)
-    if nd: print("  NEXT_DATA",nd.group(1)[:1500])
-
+        r=requests.get(u,headers={**UA,**k.pop('h',{})},timeout=25,**k)
+        ct=r.headers.get('content-type','')
+        print(f"\n### {r.status_code} {ct[:30]} {len(r.text)} {u}")
+        print("   ",r.text[:n].replace("\n"," "))
+        return r
+    except Exception as e: print("\n### ERR",u,e)
+r=show("https://www.penny-del.org/",0)
+if r is not None:
+    hrefs=sorted(set(re.findall(r'href="([^"#]+)"',r.text)))
+    print("HREFS",[h for h in hrefs if h.startswith('/') and len(h)<60][:80])
+    print("DATA",sorted(set(re.findall(r'data-[a-z\-]+="(https?://[^"]+|/[^"]{3,100})"',r.text)))[:40])
+for u in ["https://www.penny-del.org/api/v1/games","https://api.del.org/","https://www.penny-del.org/statistik","https://www.penny-del.org/spiele"]: show(u,300)
+# Sofascore
+show("https://api.sofascore.com/api/v1/sport/ice-hockey/scheduled-events/2026-10-17",400)
+show("https://www.sofascore.com/api/v1/sport/ice-hockey/scheduled-events/2026-10-17",400)
+# TheSportsDB
+show("https://www.thesportsdb.com/api/v1/json/3/eventsday.php?d=2026-10-17&s=Ice_Hockey",600)
+# Livesport / flashscore
+show("https://www.livesport.cz/hokej/cesko/extraliga/vysledky/",300)
+show("https://www.flashscore.com/hockey/czech-republic/extraliga/results/",300)
+# Czech others
+for u in ["https://www.tipsportextraliga.cz/","https://www.hokej.cz/api/","https://www.eliteprospects.com/league/czechia/games","https://www.eurohockey.com/league/schedule/40-czech-extraliga.html?season=2026","https://sport.ceskatelevize.cz/","https://www.isport.cz/hokej/extraliga/"]: show(u,300)
