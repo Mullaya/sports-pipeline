@@ -15,6 +15,8 @@ FILE_SUFFIX = {
     "KBL": " kbl",
     "KOVO": " kovo",
     "WKOVO": " wkovo",
+    "DEL": " del",
+    "CZE": " cze",
 }
 
 

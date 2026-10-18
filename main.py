@@ -8,6 +8,7 @@ from collectors.khl_collector import KHLCollector
 from collectors.nba_collector import NBACollector
 from collectors.kbl_collector import KBLCollector
 from collectors.kovo_collector import KOVOCollector
+from collectors.flashscore_hockey_collector import FlashscoreHockeyCollector
 from uploader.github_uploader import GitHubUploader
 
 def get_dates(manual_date: str = None, manual_mlb_date: str = None):
@@ -128,8 +129,22 @@ def run_daily(date: str = None, mlb_date: str = None):
         except Exception as e:
             print(f"  [{league}] 실패: {e}")
 
+    # 독일 DEL · 체코 엑스트라리가 (중부유럽 날짜 = KST 어제, Flashscore 피드)
+    for league in ("DEL", "CZE"):
+        try:
+            eu = FlashscoreHockeyCollector(league).collect_daily(npb_date)
+            if eu["games"]:
+                uploader.upload_json(eu, league, npb_date, "daily")
+                print(f"  [{league}] {len(eu['games'])}경기 완료")
+            else:
+                print(f"  [{league}] 경기 없음")
+        except Exception as e:
+            print(f"  [{league}] 실패: {e}")
+
     if not date:
         catch_up(uploader, npb_date, {"KHL": KHLCollector,
+                                      "DEL": lambda: FlashscoreHockeyCollector("DEL"),
+                                      "CZE": lambda: FlashscoreHockeyCollector("CZE"),
                                       "KBL": KBLCollector,
                                       "KOVO": lambda: KOVOCollector("KOVO"),
                                       "WKOVO": lambda: KOVOCollector("WKOVO")})
@@ -153,12 +168,14 @@ def catch_up(uploader, base_date: str, collectors: dict, days: int = CATCH_UP_DA
     """
     base = datetime.strptime(base_date, "%Y%m%d")
     for league, cls in collectors.items():
+        col = None   # 리그당 한 번만 생성 (Flashscore 수집기는 시즌 목록을 인스턴스에 캐시)
         for i in range(1, days + 1):
             d = (base - timedelta(days=i)).strftime("%Y%m%d")
             if uploader.file_exists(league, d, "daily"):
                 continue
             try:
-                data = cls().collect_daily(d)
+                col = col or cls()
+                data = col.collect_daily(d)
                 if data["games"]:
                     uploader.upload_json(data, league, d, "daily")
                     print(f"  [{league}] 누락분 {d} 재수집 {len(data['games'])}경기")
