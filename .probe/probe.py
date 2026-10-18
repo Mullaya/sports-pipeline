@@ -24,3 +24,4 @@ for u in ["https://www.penny-del.org/spielplan","https://www.penny-del.org/","ht
         if hits: print("  JS",ju[:100]); [print("     ",h) for h in sorted(hits)[:30]]
     nd=re.search(r'__NEXT_DATA__"[^>]*>(.{0,1500})',t,re.S)
     if nd: print("  NEXT_DATA",nd.group(1)[:1500])
+
