@@ -1,0 +1,158 @@
+{
+  "date": "20260125",
+  "league": "KHL",
+  "source": "flashscore",
+  "games": [
+    {
+      "game_id": "t0glHnVb",
+      "game_type": "REG",
+      "stage": "RUSSIA: KHL",
+      "round": "",
+      "start_utc": "2026-01-25T14:00:00Z",
+      "home_team": "Spartak",
+      "away_team": "Lokomotiv",
+      "home_team_id": "vkRSHRYi",
+      "away_team_id": "MNZan6lB",
+      "home_score": 2,
+      "away_score": 3,
+      "total_goals": 5,
+      "end_type": "OT",
+      "reg_home_score": 2,
+      "reg_away_score": 2,
+      "reg_total_goals": 4,
+      "winner": "Lokomotiv",
+      "period_scores": [
+        {
+          "period": 1,
+          "type": "REG",
+          "home": 1,
+          "away": 1
+        },
+        {
+          "period": 2,
+          "type": "REG",
+          "home": 0,
+          "away": 1
+        },
+        {
+          "period": 3,
+          "type": "REG",
+          "home": 1,
+          "away": 0
+        },
+        {
+          "period": 4,
+          "type": "OT",
+          "home": 0,
+          "away": 1
+        }
+      ],
+      "home_stats": {
+        "shots": 30,
+        "blocked": 19,
+        "saves": 32,
+        "penalties": 5,
+        "pim": 10,
+        "pp_goals": 1,
+        "sh_goals": 0,
+        "pp_opps": 4,
+        "hits": 10,
+        "fo_won": 29,
+        "en_goals": 0
+      },
+      "away_stats": {
+        "shots": 35,
+        "blocked": 9,
+        "saves": 28,
+        "penalties": 4,
+        "pim": 8,
+        "pp_goals": 1,
+        "sh_goals": 0,
+        "pp_opps": 5,
+        "hits": 16,
+        "fo_won": 27,
+        "en_goals": 0
+      },
+      "home_goalies": [
+        {
+          "name": "Georgiyev A.",
+          "player_id": "QmpHZGp6",
+          "starter": true,
+          "shots_against": 35,
+          "goals_against": 3,
+          "saves": 32,
+          "sv_pct": 0.914,
+          "note": "팀 세이브 기준(골리 교체 시 합산값)"
+        }
+      ],
+      "away_goalies": [
+        {
+          "name": "Isayev D.",
+          "player_id": "bPChxJM3",
+          "starter": true,
+          "shots_against": 30,
+          "goals_against": 2,
+          "saves": 28,
+          "sv_pct": 0.933,
+          "note": "팀 세이브 기준(골리 교체 시 합산값)"
+        }
+      ],
+      "goals": [
+        {
+          "period": "1st Period",
+          "time": "03:52",
+          "team": "away",
+          "score": "0:1",
+          "author": "Beryozkin M.",
+          "assists": [
+            "Panik R.",
+            "Kayumov A."
+          ]
+        },
+        {
+          "period": "1st Period",
+          "time": "11:53",
+          "team": "home",
+          "score": "1:1",
+          "author": "Korostelev N.",
+          "assists": [
+            "Morozov I.",
+            "Poryadin P."
+          ]
+        },
+        {
+          "period": "2nd Period",
+          "time": "16:42",
+          "team": "away",
+          "score": "1:2",
+          "author": "Kayumov A.",
+          "assists": [
+            "Ivanov G.",
+            "Beryozkin M."
+          ]
+        },
+        {
+          "period": "3rd Period",
+          "time": "03:54",
+          "team": "home",
+          "score": "2:2",
+          "author": "Gutik D.",
+          "assists": [
+            "Vishnevsky D."
+          ]
+        },
+        {
+          "period": "Overtime",
+          "time": "01:43",
+          "team": "away",
+          "score": "2:3",
+          "author": "Froese B.",
+          "assists": [
+            "Surin Y.",
+            "Yelesin A."
+          ]
+        }
+      ]
+    }
+  ]
+}
