@@ -1,0 +1,126 @@
+{
+  "date": "20251004",
+  "league": "DEL",
+  "source": "flashscore",
+  "games": [
+    {
+      "game_id": "ImJ55R3D",
+      "game_type": "REG",
+      "stage": "GERMANY: DEL",
+      "round": "Round 8",
+      "start_utc": "2025-10-04T17:00:00Z",
+      "home_team": "Frankfurt Lowen",
+      "away_team": "Kolner",
+      "home_team_id": "6a3n9gMm",
+      "away_team_id": "va2irFDJ",
+      "home_score": 2,
+      "away_score": 1,
+      "total_goals": 3,
+      "end_type": "REG",
+      "reg_home_score": 2,
+      "reg_away_score": 1,
+      "reg_total_goals": 3,
+      "winner": "Frankfurt Lowen",
+      "period_scores": [
+        {
+          "period": 1,
+          "type": "REG",
+          "home": 0,
+          "away": 0
+        },
+        {
+          "period": 2,
+          "type": "REG",
+          "home": 1,
+          "away": 0
+        },
+        {
+          "period": 3,
+          "type": "REG",
+          "home": 1,
+          "away": 1
+        }
+      ],
+      "home_stats": {
+        "shots": 19,
+        "blocked": 5,
+        "saves": 28,
+        "penalties": 4,
+        "pim": 8,
+        "pp_goals": 0,
+        "sh_goals": 0,
+        "pp_opps": 4,
+        "fo_won": 19,
+        "en_goals": 0
+      },
+      "away_stats": {
+        "shots": 29,
+        "blocked": 13,
+        "saves": 17,
+        "penalties": 4,
+        "pim": 8,
+        "pp_goals": 0,
+        "sh_goals": 0,
+        "pp_opps": 4,
+        "fo_won": 32,
+        "en_goals": 0
+      },
+      "home_goalies": [
+        {
+          "name": "Pantkowski M.",
+          "player_id": "fiWncKso",
+          "starter": true,
+          "shots_against": 29,
+          "goals_against": 1,
+          "saves": 28,
+          "sv_pct": 0.966,
+          "note": "팀 세이브 기준(골리 교체 시 합산값)"
+        }
+      ],
+      "away_goalies": [
+        {
+          "name": "Bruckmann F.",
+          "player_id": "lGxxodU8",
+          "starter": true,
+          "shots_against": 19,
+          "goals_against": 2,
+          "saves": 17,
+          "sv_pct": 0.895,
+          "note": "팀 세이브 기준(골리 교체 시 합산값)"
+        }
+      ],
+      "goals": [
+        {
+          "period": "2nd Period",
+          "time": "06:54",
+          "team": "home",
+          "score": "1:0",
+          "author": "Glover T.",
+          "assists": []
+        },
+        {
+          "period": "3rd Period",
+          "time": "09:19",
+          "team": "home",
+          "score": "2:0",
+          "author": "Lobach D.",
+          "assists": [
+            "Burns N.",
+            "Glover T."
+          ]
+        },
+        {
+          "period": "3rd Period",
+          "time": "13:18",
+          "team": "away",
+          "score": "2:1",
+          "author": "MacLeod G.",
+          "assists": [
+            "Russell P.",
+            "Kaski O."
+          ]
+        }
+      ]
+    }
+  ]
+}
