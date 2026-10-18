@@ -1,6 +1,74 @@
-DEL 2025 total 406 finished 406 {'202509': 42, '202510': 70, '202511': 57, '202512': 70, '202601': 69, '202602': 14, '202603': 63, '202604': 20, '202605': 1}
-DEL 2026 total 64 finished 64 {'202609': 29, '202610': 35}
-CZE 2025 total 425 finished 425 {'202509': 68, '202510': 71, '202511': 55, '202512': 56, '202601': 76, '202602': 17, '202603': 59, '202604': 23}
-CZE 2026 total 75 finished 75 {'202609': 41, '202610': 34}
-KHL 2025 total 828 finished 828 {'202509': 103, '202510': 122, '202511': 119, '202512': 98, '202601': 120, '202602': 102, '202603': 124, '202604': 29, '202605': 11}
-KHL 2026 total 173 finished 173 {'202609': 108, '202610': 65}
+
+### NHL schedule
+ [[2026020135, "2026-10-18T22:00:00Z", "CBJ", "MIN", "FUT"], [2026020136, "2026-10-19T00:00:00Z", "CAR", "CGY", "FUT"], [2026020137, "2026-10-19T23:00:00Z", "ANA", "NYR", "FUT"], [2026020138, "2026-10-19T23:00:00Z", "COL", "PHI", "FUT"], [2026020139, "2026-10-19T23:30:00Z", "SJS", "TOR", "FUT"], [2026020140, "2026-10-20T01:00:00Z", "PIT", "UTA", "FUT"]]
+
+### NHL landing keys
+ ["id", "season", "gameType", "limitedScoring", "gameDate", "venue", "venueLocation", "startTimeUTC", "easternUTCOffset", "venueUTCOffset", "venueTimezone", "tvBroadcasts", "gameState", "gameScheduleState", "awayTeam", "homeTeam", "shootoutInUse", "maxPeriods", "regPeriods", "otInUse", "tiesInUse", "ticketsLink", "ticketsLinkFr", "matchup"]
+
+### NHL matchup
+ {"season": 20262027, "gameType": 2, "skaterComparison": {"contextLabel": "last_5_games", "contextSeason": 20262027, "leaders": [{"category": "points", "awayLeader": {"playerId": 8482660, "name": {"default": "K. Johnson"}, "firstName": {"default": "Kent"}, "lastName": {"default": "Johnson"}, "sweaterNumber": 91, "positionCode": "C", "headshot": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8482660.png", "value": 4}, "homeLeader": {"playerId": 8478864, "name": {"default": "K. Kaprizov"}, "firstName": {"default": "Kirill"}, "lastName": {"default": "Kaprizov"}, "sweaterNumber": 97, "positionCode": "L", "headshot": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8478864.png", "value": 11}}, {"category": "goals", "awayLeader": {"playerId": 8482660, "name": {"default": "K. Johnson"}, "firstName": {"default": "Kent"}, "lastName": {"default": "Johnson"}, "sweaterNumber": 91, "positionCode": "C", "headshot": "https://assets.nhle.com/mugs/nhl/20262027/CBJ/8482660.png", "value": 4}, "homeLeader": {"playerId": 8478864, "name": {"default": "K. Kaprizov"}, "firstName": {"default": "Kirill"}, "lastName": {"default": "Kaprizov"}, "sweaterNumber": 97, "positionCode": "L", "headshot": "https://assets.nhle.com/mugs/nhl/20262027/MIN/8478864.png", "value": 6}}, {"category": "assists", "awayLeader": {"playerId": 8478460, "name": {"default": "Z. Werenski"}, "firstName": {"default": "Zach"}, "lastName": {"default": "Werenski"}, "sweaterNumber": 8, "positionCode": "D", "headshot": "https://assets.nhle
+
+### NBA scoreboard
+ {"leagues": [{"id": "46", "uid": "s:40~l:46", "name": "National Basketball Association", "abbreviation": "NBA", "slug": "nba", "season": {"year": 2027, "startDate": "2026-09-30T07:00Z", "endDate": "2027-06-26T06:59Z", "displayName": "2026-27", "type": {"id": "1", "type": 1, "name": "Preseason", "abbreviation": "pre"}}, "logos": [{"href": "https://a.espncdn.com/i/teamlogos/leagues/500/nba.png", "width": 500, "height": 500, "alt": "", "rel": ["full", "default"], "lastUpdated": "2018-06-05T12:07Z"}
+
+### MLB game
+ {"pk": 849817, "date": "2026-10-18T21:08:00Z", "away": "Tampa Bay Rays", "pp_away": "Drew Rasmussen", "pp_home": "Parker Messick", "lineups": {}}
+
+### naver kbl
+ [["202610180610490127", "2026-10-18T14:00:00", "수원 KT", "울산 현대모비스", "RESULT"], ["202610185566490126", "2026-10-18T14:00:00", "서울 SK", "고양 소노", "RESULT"], ["202610187060490128", "2026-10-18T16:30:00", "안양 정관장", "부산 KCC", "RESULT"], ["202610191664490129", "2026-10-19T19:00:00", "원주 DB", "대구 한국가스공사", "BEFORE"]]
+
+### naver kbl schedule/games/202610180610490127 200
+ ["game"]
+
+### naver kbl schedule/games/202610180610490127/preview 200
+ ["previewData"]
+
+### naver kbl schedule/games/202610180610490127/lineup 200
+ ["lineUpData"]
+
+### naver kbl schedule/games/202610180610490127/record 200
+ ["recordData"]
+
+### naver kovo
+ [["20261019824M13", "2026-10-19T13:00:00", "OK저축은행", "현대캐피탈", "BEFORE"], ["20261019824M14", "2026-10-19T15:30:00", "한국전력", "KB손해보험", "BEFORE"], ["20261019824M15", "2026-10-19T19:00:00", "대한항공", "삼성화재", "BEFORE"], ["20261020824M16", "2026-10-20T13:00:00", "대한항공", "OK저축은행", "BEFORE"]]
+
+### naver kovo schedule/games/20261019824M13 200
+ ["game"]
+
+### naver kovo schedule/games/20261019824M13/preview 200
+ ["previewData"]
+
+### naver kovo schedule/games/20261019824M13/lineup 200
+ ["lineUpData"]
+
+### naver kovo schedule/games/20261019824M13/record 200
+ ["recordData"]
+
+### naver wkovo
+ [["20261018824F12", "2026-10-18T13:30:00", "GS칼텍스", "한국도로공사", "RESULT"]]
+
+### naver wkovo schedule/games/20261018824F12 200
+ ["game"]
+
+### naver wkovo schedule/games/20261018824F12/preview 200
+ ["previewData"]
+
+### naver wkovo schedule/games/20261018824F12/lineup 200
+ ["lineUpData"]
+
+### naver wkovo schedule/games/20261018824F12/record 200
+ ["recordData"]
+
+### FS soccer +1day total tours 255 matches 635 [('AFRICA: CAF Champions League - Qualification', 'EcZwBi3N'), ('ENGLAND: Premier League', 'dYlOSQOD'), ('FRANCE: Ligue 1', 'KIShoMk3'), ('GERMANY: Bundesliga', 'W6BOzpK2'), ('GERMANY: Bundesliga Women', 'x6Lam4Z8'), ('ITALY: Serie A', 'COuk57Ci'), ('ITALY: Serie A Women', 'dMXaGPOf'), ('NETHERLANDS: Eredivisie', 'Or1bBrWD'), ('NETHERLANDS: Eredivisie Women', 'ADZjR3us'), ('SPAIN: LaLiga', 'QVmLl54o'), ('SPAIN: LaLiga2', 'vZiPmPJi')]
+
+### FS hockey +1day total tours 38 matches 121 [('CZECH REPUBLIC: Extraliga', 'QR1GYbvD'), ('GERMANY: DEL', 'nVp0wiqd'), ('GERMANY: DEL2', '8vndvXTk'), ('RUSSIA: KHL', 'v9k3aY5F'), ('USA: NHL', 'G2Op923t')]
+
+### FS basketball +1day total tours 80 matches 161 [('ITALY: Serie A2', 'KIp7TtZc'), ('ITALY: Serie A1 Women', '0WGBKorb'), ('ITALY: Serie A2 Women - Gr. A', 'QLCx1Cfs'), ('ITALY: Serie A2 Women - Gr. B', '4CBt0W9m'), ('JAPAN: B.League Premier', 'U7cYtT88'), ('JAPAN: B.League One', 'lQIgwaIP'), ('SOUTH KOREA: KBL', 'QulwZyP2')]
+
+### FS volleyball +1day total tours 43 matches 90 [('ITALY: Serie A2', 'G2bcAvno'), ('ITALY: Serie A1 Women', 'tA7VEKwU'), ('ITALY: Serie A2 Women', 'MP0lZNOo'), ('SOUTH KOREA: KOVO Cup', 'vVd2RMKO')]
+
+### FS baseball +1day total tours 4 matches 13 [('USA: MLB - Play Offs', 'zcDLaZ3b')]
+
+FS DEL/CZE today [('tSjzynFs', '1792332000', '1'), ('EukrZPqf', '1792332000', '1'), ('0dmjX3E6', '1792333800', '1'), ('0GwpgoyQ', '1792335600', '1'), ('WbUFmPbm', '1792335600', '1')]
+lineup len 13264 LA÷Formation¬LB÷Line 1¬LGT÷3¬LC÷1¬~LD÷1-2-3¬LH÷0¬LP÷lnucTSSq¬LI÷Furch D.¬LPG÷men¬LPI÷Ik4gcJuh-61GDaew3.png¬LPL÷nP8cdweb-61GDaew3.png¬LPX÷QF71ecA4-61GDaew3.png¬LPZ÷bNflngXj-61GDaew3.png¬LPY÷CQrWAxAi-61GDaew3.png¬LPQ÷QTnzAdPc-61GDaew3.png¬LR÷(G)¬LS÷Goalkeeper¬NU÷/player/furch-dominik/lnucTSSq/¬LN÷Furc
+h2h len 77970 SA÷4¬~KA÷Overall¬IS÷¬~KB÷Last matches: Mlada Boleslav¬~KC÷1792162800¬KP÷0bCV7moe¬KF÷Extraliga¬AC÷3¬KG÷62¬KH÷Czech Republic¬KI÷EL¬UQ÷UJFDTRxD¬UO÷YeGlkuUb¬KJ÷*Trinec¬UE÷trinec¬FH÷Trinec¬FJ÷¬KK÷Mlada Boleslav¬UG÷mlada-boleslav¬FK÷Mlada Boleslav¬FL÷¬KL÷3:0¬KU÷3¬KT÷0¬EC÷f94OvFCa-CbJfA5RB.png¬ED÷fmNVpdyS-hhuZJcqF.png¬WIS÷l¬KS÷away¬~KC÷1791727200¬KP÷CY3AFvm4¬KF÷Extraliga¬AC÷3¬KG÷62¬KH÷Czech Republic¬KI÷EL¬UQ÷YeGlkuUb¬UO÷rgfiJkOs¬KJ÷*Mlada Boleslav¬UE÷mlada-boleslav¬FH÷Mlada Boleslav¬FJ÷¬KK÷Litvinov¬UG÷litvinov¬FK÷Litvinov¬FL÷¬KL÷2:1¬KU÷2¬KT÷1¬EC÷fmNVpdyS-hhuZJcqF.png¬ED÷pSXwjoe5-Ia2xiNaT.png¬WIS÷w¬KS÷home¬~KC÷1791561600¬KP÷bBDGgcQp¬KF÷Extraliga¬AC÷3¬KG÷62¬KH÷Czech Republic¬KI÷EL¬UQ÷bLIKOB0K¬UO÷YeGlkuUb¬KJ÷*Kladno¬UE÷kladno¬FH÷Kladno¬FJ÷¬KK÷Mlada Boleslav¬UG÷mlada-boleslav¬FK÷Mlada Boleslav¬FL÷¬KL÷4:3¬KU÷4¬KT÷3¬EC÷SpvcDNZA-vHeka813.png¬ED÷fmNVpdyS-hhuZJcqF.png¬WIS÷l¬KS÷away¬~KC÷1791122400¬KP÷Wvd
