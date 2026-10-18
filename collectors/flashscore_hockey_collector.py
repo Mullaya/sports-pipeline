@@ -190,7 +190,7 @@ class FlashscoreHockeyCollector:
     def _name(self, raw: str) -> str:
         if not self.names:
             return raw
-        if raw not in self.names and raw not in self.cfg.get("exhibition_teams", ()):
+        if raw not in self.names and raw not in self.cfg.get("exhibition_teams", ()) and "Stars" not in raw:
             self._unmapped.add(raw)
         return self.names.get(raw, raw)
 
@@ -226,8 +226,9 @@ class FlashscoreHockeyCollector:
         h_st, a_st = stats.get("home", {}), stats.get("away", {})
         home, away = self._name(r.get("AE", "")), self._name(r.get("AF", ""))
         gtype = _stage_type(r.get("ZA"))
-        if {r.get("AE"), r.get("AF")} & set(self.cfg.get("exhibition_teams", ())):
-            gtype = "EXHIB"      # 대표팀 친선 등 — 집계 제외
+        if ({r.get("AE"), r.get("AF")} & set(self.cfg.get("exhibition_teams", ()))
+                or any("Stars" in (r.get(k) or "") for k in ("AE", "AF"))):
+            gtype = "EXHIB"      # 대표팀 친선·올스타전 — 집계 제외
         return {
             "game_id": mid,
             "game_type": gtype,
