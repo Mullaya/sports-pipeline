@@ -1,0 +1,152 @@
+{
+  "date": "20260417",
+  "league": "CZE",
+  "source": "flashscore",
+  "games": [
+    {
+      "game_id": "v5RABa0n",
+      "game_type": "RELEG",
+      "stage": "CZECH REPUBLIC: Extraliga - Relegation",
+      "round": "Final",
+      "start_utc": "2026-04-17T17:00:00Z",
+      "home_team": "Litvinov",
+      "away_team": "Jihlava",
+      "home_team_id": "rgfiJkOs",
+      "away_team_id": "OUaeDQl7",
+      "home_score": 3,
+      "away_score": 2,
+      "total_goals": 5,
+      "end_type": "OT",
+      "reg_home_score": 2,
+      "reg_away_score": 2,
+      "reg_total_goals": 4,
+      "winner": "Litvinov",
+      "period_scores": [
+        {
+          "period": 1,
+          "type": "REG",
+          "home": 0,
+          "away": 1
+        },
+        {
+          "period": 2,
+          "type": "REG",
+          "home": 1,
+          "away": 1
+        },
+        {
+          "period": 3,
+          "type": "REG",
+          "home": 1,
+          "away": 0
+        },
+        {
+          "period": 4,
+          "type": "OT",
+          "home": 1,
+          "away": 0
+        }
+      ],
+      "home_stats": {
+        "shots": 52,
+        "blocked": 22,
+        "saves": 25,
+        "penalties": 3,
+        "pim": 6,
+        "pp_goals": 0,
+        "sh_goals": 0,
+        "pp_opps": 4,
+        "hits": 7,
+        "fo_won": 34,
+        "en_goals": 0
+      },
+      "away_stats": {
+        "shots": 27,
+        "blocked": 19,
+        "saves": 49,
+        "penalties": 4,
+        "pim": 8,
+        "pp_goals": 0,
+        "sh_goals": 0,
+        "pp_opps": 3,
+        "hits": 7,
+        "fo_won": 42,
+        "en_goals": 0
+      },
+      "home_goalies": [
+        {
+          "name": "Cajan P.",
+          "player_id": "6HEzAfJ7",
+          "starter": true,
+          "shots_against": 27,
+          "goals_against": 2,
+          "saves": 25,
+          "sv_pct": 0.926,
+          "note": "팀 세이브 기준(골리 교체 시 합산값)"
+        }
+      ],
+      "away_goalies": [
+        {
+          "name": "Beran A.",
+          "player_id": "Sf5vW4tQ",
+          "starter": true,
+          "shots_against": 52,
+          "goals_against": 3,
+          "saves": 49,
+          "sv_pct": 0.942,
+          "note": "팀 세이브 기준(골리 교체 시 합산값)"
+        }
+      ],
+      "goals": [
+        {
+          "period": "1st Period",
+          "time": "19:26",
+          "team": "away",
+          "score": "0:1",
+          "author": "Ozols P.",
+          "assists": [
+            "Dlapa O.",
+            "Jachym T."
+          ]
+        },
+        {
+          "period": "2nd Period",
+          "time": "03:40",
+          "team": "home",
+          "score": "1:1",
+          "author": "Kase D.",
+          "assists": []
+        },
+        {
+          "period": "2nd Period",
+          "time": "14:07",
+          "team": "away",
+          "score": "1:2",
+          "author": "Lhotak L.",
+          "assists": [
+            "Michnac A."
+          ]
+        },
+        {
+          "period": "3rd Period",
+          "time": "12:25",
+          "team": "home",
+          "score": "2:2",
+          "author": "Czuczman K.",
+          "assists": [
+            "Kase O.",
+            "Kase D."
+          ]
+        },
+        {
+          "period": "Overtime",
+          "time": "09:15",
+          "team": "home",
+          "score": "3:2",
+          "author": "Balaz O.",
+          "assists": []
+        }
+      ]
+    }
+  ]
+}
