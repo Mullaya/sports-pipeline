@@ -9,3 +9,4 @@ for lg in ("DEL","CZE","KHL"):
     fin=[r for r in recs.values() if r.get("AB")=="3"]
     mon=collections.Counter(datetime.fromtimestamp(int(r["AD"]),timezone.utc).strftime("%Y%m") for r in fin)
     print(lg,y,"total",len(recs),"finished",len(fin),dict(sorted(mon.items())))
+# rerun
