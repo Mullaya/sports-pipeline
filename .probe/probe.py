@@ -1,17 +1,12 @@
-import re,requests
-UA={"User-Agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/124 Safari/537.36","Accept":"*/*"}
-H={"x-fsign":"SW9D1eZo","Referer":"https://www.flashscore.com/","Origin":"https://www.flashscore.com"}
-S=requests.Session(); S.headers.update(UA)
-F="https://global.flashscore.ninja/2/x/feed/"
-mid="rw8II4aD"
-for f in ["df_ps_1_","df_pst_1_","df_lu_1_","dc_1_","df_ss_1_"]:
-    r=S.get(F+f+mid,headers=H,timeout=20); print("\n##",f,r.status_code,len(r.text)); print(r.text[:1500])
-r=S.get(F+"df_li_1_"+mid,headers=H,timeout=20)
-blocks=r.text.split("~")
-print("\n## LI blocks",len(blocks))
-for b in blocks:
-    if b.startswith(("LA","LB","LC","LD","LE","LF")) or "Goalkeeper" in b or "(G)" in b:
-        print("  ",b[:260])
-r=S.get(F+"df_sui_1_"+mid,headers=H,timeout=20)
-print("\n## SUI tail", r.text[-1500:])
-r=S.get(F+"dc_1_"+mid,headers=H,timeout=20); print("\n## dc",r.text[:800])
+import requests,re
+H={"x-fsign":"SW9D1eZo","Referer":"https://www.flashscore.com/","Origin":"https://www.flashscore.com","User-Agent":"Mozilla/5.0"}
+t=requests.get("https://global.flashscore.ninja/2/x/feed/df_st_1_OMYslka3",headers=H,timeout=20).text
+sec=None
+for b in t.split("~"):
+    d=dict(kv.split("÷",1) for kv in b.split("¬") if "÷" in kv)
+    if "SE" in d: sec=d["SE"]
+    elif "SG" in d and sec=="Match": print(d["SG"],"|",d.get("SH"),"|",d.get("SI"))
+t=requests.get("https://global.flashscore.ninja/2/x/feed/df_sui_1_OMYslka3",headers=H,timeout=20).text
+print("penalty events home/away", t.count("IA÷1¬")-0, t.count("IA÷2¬"), "PEN", len(re.findall(r"IK÷Penalty",t)))
+for b in t.split("~"):
+    if "Penalty" in b: print("  ",re.search(r"IA÷(\d)",b).group(1), re.search(r"IB÷([^¬]*)",b).group(1), re.search(r"IK÷([^¬]*)",b).group(1))
