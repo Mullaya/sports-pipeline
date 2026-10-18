@@ -1,12 +1,4 @@
-20251010 200 list 0
-20260115 200 list 0
-20261016 200 list 5
-    3000723 1792143000000 finished 407 Admiral
-
- stages_v2.json 404 
-
- seasons.json 404 
-
- stages.json 200 {"error":"Missed required params"}
-stage 386 200 0 []
-stage 407 200 16 [(1788602400000, 'finished'), (1788607800000, 'finished')]
+stages [('season', '2025')] 200 {"error":"Missed required params"}
+stages [('q[season_eq]', '2025')] 200 {"error":"Missed required params"}
+stages [('tournament_id', '1')] 200 {"error":"Missed required params"}
+stages [('q[id_in][]', '407')] 200 {"error":"Missed required params"}
