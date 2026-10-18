@@ -1,0 +1,130 @@
+{
+  "date": "20260312",
+  "league": "KHL",
+  "source": "flashscore",
+  "games": [
+    {
+      "game_id": "WQ18X2rh",
+      "game_type": "REG",
+      "stage": "RUSSIA: KHL",
+      "round": "",
+      "start_utc": "2026-03-12T09:30:00Z",
+      "home_team": "Admiral",
+      "away_team": "Barys",
+      "home_team_id": "QLc00bkK",
+      "away_team_id": "p6y9BkfP",
+      "home_score": 1,
+      "away_score": 2,
+      "total_goals": 3,
+      "end_type": "REG",
+      "reg_home_score": 1,
+      "reg_away_score": 2,
+      "reg_total_goals": 3,
+      "winner": "Barys",
+      "period_scores": [
+        {
+          "period": 1,
+          "type": "REG",
+          "home": 0,
+          "away": 0
+        },
+        {
+          "period": 2,
+          "type": "REG",
+          "home": 0,
+          "away": 1
+        },
+        {
+          "period": 3,
+          "type": "REG",
+          "home": 1,
+          "away": 1
+        }
+      ],
+      "home_stats": {
+        "shots": 32,
+        "blocked": 17,
+        "saves": 26,
+        "penalties": 4,
+        "pim": 10,
+        "pp_goals": 1,
+        "sh_goals": 0,
+        "pp_opps": 6,
+        "hits": 6,
+        "fo_won": 31,
+        "en_goals": 0
+      },
+      "away_stats": {
+        "shots": 28,
+        "blocked": 11,
+        "saves": 31,
+        "penalties": 6,
+        "pim": 12,
+        "pp_goals": 0,
+        "sh_goals": 0,
+        "pp_opps": 4,
+        "hits": 11,
+        "fo_won": 22,
+        "en_goals": 0
+      },
+      "home_goalies": [
+        {
+          "name": "Kulbakov I.",
+          "player_id": "fcLMApPp",
+          "starter": true,
+          "shots_against": 28,
+          "goals_against": 2,
+          "saves": 26,
+          "sv_pct": 0.929,
+          "note": "팀 세이브 기준(골리 교체 시 합산값)"
+        }
+      ],
+      "away_goalies": [
+        {
+          "name": "Boyarkin N.",
+          "player_id": "jNZYMaT8",
+          "starter": true,
+          "shots_against": 32,
+          "goals_against": 1,
+          "saves": 31,
+          "sv_pct": 0.969,
+          "note": "팀 세이브 기준(골리 교체 시 합산값)"
+        }
+      ],
+      "goals": [
+        {
+          "period": "2nd Period",
+          "time": "13:31",
+          "team": "away",
+          "score": "0:1",
+          "author": "Willman M.",
+          "assists": [
+            "Massie J."
+          ]
+        },
+        {
+          "period": "3rd Period",
+          "time": "03:34",
+          "team": "home",
+          "score": "1:1",
+          "author": "Tertyshny N.",
+          "assists": [
+            "Starkov S.",
+            "Sulak L."
+          ]
+        },
+        {
+          "period": "3rd Period",
+          "time": "16:32",
+          "team": "away",
+          "score": "1:2",
+          "author": "Thompson T.",
+          "assists": [
+            "Willman M.",
+            "Massie J."
+          ]
+        }
+      ]
+    }
+  ]
+}
