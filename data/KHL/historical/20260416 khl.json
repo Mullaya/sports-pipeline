@@ -1,0 +1,130 @@
+{
+  "date": "20260416",
+  "league": "KHL",
+  "source": "flashscore",
+  "games": [
+    {
+      "game_id": "8Qp2Lkn1",
+      "game_type": "PO",
+      "stage": "RUSSIA: KHL - Play Offs",
+      "round": "Quarter-finals",
+      "start_utc": "2026-04-16T13:30:00Z",
+      "home_team": "Avangard",
+      "away_team": "CSKA",
+      "home_team_id": "6PtiwUZu",
+      "away_team_id": "pGuexlkn",
+      "home_score": 2,
+      "away_score": 1,
+      "total_goals": 3,
+      "end_type": "REG",
+      "reg_home_score": 2,
+      "reg_away_score": 1,
+      "reg_total_goals": 3,
+      "winner": "Avangard",
+      "period_scores": [
+        {
+          "period": 1,
+          "type": "REG",
+          "home": 2,
+          "away": 0
+        },
+        {
+          "period": 2,
+          "type": "REG",
+          "home": 0,
+          "away": 0
+        },
+        {
+          "period": 3,
+          "type": "REG",
+          "home": 0,
+          "away": 1
+        }
+      ],
+      "home_stats": {
+        "shots": 23,
+        "blocked": 11,
+        "saves": 33,
+        "penalties": 1,
+        "pim": 2,
+        "pp_goals": 0,
+        "sh_goals": 0,
+        "pp_opps": 2,
+        "hits": 12,
+        "fo_won": 31,
+        "en_goals": 0
+      },
+      "away_stats": {
+        "shots": 34,
+        "blocked": 24,
+        "saves": 21,
+        "penalties": 2,
+        "pim": 4,
+        "pp_goals": 0,
+        "sh_goals": 0,
+        "pp_opps": 1,
+        "hits": 24,
+        "fo_won": 32,
+        "en_goals": 0
+      },
+      "home_goalies": [
+        {
+          "name": "Serebryakov N.",
+          "player_id": "CKI3JfsI",
+          "starter": true,
+          "shots_against": 34,
+          "goals_against": 1,
+          "saves": 33,
+          "sv_pct": 0.971,
+          "note": "팀 세이브 기준(골리 교체 시 합산값)"
+        }
+      ],
+      "away_goalies": [
+        {
+          "name": "Gamzin D.",
+          "player_id": "QwpDackb",
+          "starter": true,
+          "shots_against": 23,
+          "goals_against": 2,
+          "saves": 21,
+          "sv_pct": 0.913,
+          "note": "팀 세이브 기준(골리 교체 시 합산값)"
+        }
+      ],
+      "goals": [
+        {
+          "period": "1st Period",
+          "time": "00:35",
+          "team": "home",
+          "score": "1:0",
+          "author": "Fiore G.",
+          "assists": [
+            "Okulov K.",
+            "Cecconi J."
+          ]
+        },
+        {
+          "period": "1st Period",
+          "time": "12:14",
+          "team": "home",
+          "score": "2:0",
+          "author": "Rashevsky D.",
+          "assists": [
+            "Prokhorkin N.",
+            "Gulyaev M."
+          ]
+        },
+        {
+          "period": "3rd Period",
+          "time": "04:06",
+          "team": "away",
+          "score": "2:1",
+          "author": "Drozdov I.",
+          "assists": [
+            "Nesterov N."
+          ]
+        }
+      ]
+    }
+  ]
+}
