@@ -1,0 +1,4453 @@
+{
+ "meta": {
+  "generated_kst": "2026-10-18 22:36",
+  "league": "DEL",
+  "season_start": "20260801",
+  "games": 64,
+  "last_game_date": "20261016",
+  "points_rule": {
+   "reg_win": 3,
+   "ot_win": 2,
+   "ot_loss": 1
+  },
+  "league_avg": {
+   "avg_reg_total": 5.81,
+   "reg_draw_rate": 0.188,
+   "home_win_rate": 0.531,
+   "home_reg_win_rate": 0.438,
+   "over_rate_reg": {
+    "4.5": 0.719,
+    "5.5": 0.5,
+    "6.5": 0.312
+   }
+  },
+  "notes": "reg_* = 정규시간(60분) 기준 (하키 언오버 사이트 정산 기준) / w = 정규승+연장승 / shot_share = 유효슈팅 점유율 / rank_pts = 전체 승점 순위"
+ },
+ "teams": {
+  "Eisbaren Berlin": {
+   "gp": 9,
+   "w": 7,
+   "reg_wins": 6,
+   "ot_wins": 1,
+   "otl": 0,
+   "l": 2,
+   "pts": 20,
+   "reg_w": 6,
+   "reg_d": 1,
+   "reg_l": 2,
+   "gf_pg": 3.78,
+   "ga_pg": 1.78,
+   "avg_reg_total": 5.44,
+   "sf_pg": 28.3,
+   "sa_pg": 27.6,
+   "shot_share": 0.507,
+   "sh_pct": 0.133,
+   "sv_pct": 0.935,
+   "pdo": 106.8,
+   "pp_pct": 0.139,
+   "pk_pct": 0.917,
+   "reg_draw_rate": 0.111,
+   "over_rate_reg": {
+    "4.5": 0.667,
+    "5.5": 0.444,
+    "6.5": 0.333
+   },
+   "home": {
+    "gp": 5,
+    "w": 4,
+    "reg_wins": 4,
+    "ot_wins": 0,
+    "otl": 0,
+    "l": 1,
+    "pts": 12,
+    "reg_w": 4,
+    "reg_d": 0,
+    "reg_l": 1,
+    "gf_pg": 4.0,
+    "ga_pg": 1.4,
+    "avg_reg_total": 5.4
+   },
+   "away": {
+    "gp": 4,
+    "w": 3,
+    "reg_wins": 2,
+    "ot_wins": 1,
+    "otl": 0,
+    "l": 1,
+    "pts": 8,
+    "reg_w": 2,
+    "reg_d": 1,
+    "reg_l": 1,
+    "gf_pg": 3.5,
+    "ga_pg": 2.25,
+    "avg_reg_total": 5.5
+   },
+   "last10": {
+    "gp": 9,
+    "w": 7,
+    "reg_wins": 6,
+    "ot_wins": 1,
+    "otl": 0,
+    "l": 2,
+    "pts": 20,
+    "reg_w": 6,
+    "reg_d": 1,
+    "reg_l": 2,
+    "gf_pg": 3.78,
+    "ga_pg": 1.78,
+    "avg_reg_total": 5.44
+   },
+   "last10_log": [
+    "20260917 vs Straubing Tigers 4-2 W",
+    "20260920 @ Adler Mannheim 3-4 L",
+    "20260925 @ Kolner 6-5 OTW",
+    "20260927 vs Iserlohn Roosters 4-0 W",
+    "20261002 @ Frankfurt Lowen 2-0 W",
+    "20261004 vs Nurnberg Ice Tigers 4-1 W",
+    "20261009 vs Grizzly Wolfsburg 5-0 W",
+    "20261011 @ Bremerhaven 3-0 W",
+    "20261016 vs Munchen 3-4 L"
+   ],
+   "streak": "L1",
+   "last_game_date": "20261016",
+   "days_since_last": 2,
+   "last_was_b2b": false,
+   "rank_pts": 1
+  },
+  "Adler Mannheim": {
+   "gp": 10,
+   "w": 6,
+   "reg_wins": 6,
+   "ot_wins": 0,
+   "otl": 2,
+   "l": 2,
+   "pts": 20,
+   "reg_w": 6,
+   "reg_d": 2,
+   "reg_l": 2,
+   "gf_pg": 3.6,
+   "ga_pg": 2.7,
+   "avg_reg_total": 6.1,
+   "sf_pg": 34.1,
+   "sa_pg": 25.9,
+   "shot_share": 0.568,
+   "sh_pct": 0.106,
+   "sv_pct": 0.9,
+   "pdo": 100.6,
+   "pp_pct": 0.154,
+   "pk_pct": 0.9,
+   "reg_draw_rate": 0.2,
+   "over_rate_reg": {
+    "4.5": 0.8,
+    "5.5": 0.6,
+    "6.5": 0.5
+   },
+   "home": {
+    "gp": 4,
+    "w": 4,
+    "reg_wins": 4,
+    "ot_wins": 0,
+    "otl": 0,
+    "l": 0,
+    "pts": 12,
+    "reg_w": 4,
+    "reg_d": 0,
+    "reg_l": 0,
+    "gf_pg": 4.0,
+    "ga_pg": 1.5,
+    "avg_reg_total": 5.5
+   },
+   "away": {
+    "gp": 6,
+    "w": 2,
+    "reg_wins": 2,
+    "ot_wins": 0,
+    "otl": 2,
+    "l": 2,
+    "pts": 8,
+    "reg_w": 2,
+    "reg_d": 2,
+    "reg_l": 2,
+    "gf_pg": 3.33,
+    "ga_pg": 3.5,
+    "avg_reg_total": 6.5
+   },
+   "last10": {
+    "gp": 10,
+    "w": 6,
+    "reg_wins": 6,
+    "ot_wins": 0,
+    "otl": 2,
+    "l": 2,
+    "pts": 20,
+    "reg_w": 6,
+    "reg_d": 2,
+    "reg_l": 2,
+    "gf_pg": 3.6,
+    "ga_pg": 2.7,
+    "avg_reg_total": 6.1
+   },
+   "last10_log": [
+    "20260918 @ Munchen 3-4 OTL",
+    "20260920 vs Eisbaren Berlin 4-3 W",
+    "20260922 @ Nurnberg Ice Tigers 3-5 L",
+    "20260925 vs Krefeld Pinguine 4-1 W",
+    "20260927 @ ERC Ingolstadt 2-3 OTL",
+    "20261001 vs Iserlohn Roosters 6-1 W",
+    "20261004 @ Grizzly Wolfsburg 1-4 L",
+    "20261009 @ Nurnberg Ice Tigers 5-2 W",
+    "20261011 vs Straubing Tigers 2-1 W",
+    "20261016 @ Augsburger Panther 6-3 W"
+   ],
+   "streak": "W3",
+   "last_game_date": "20261016",
+   "days_since_last": 2,
+   "last_was_b2b": false,
+   "rank_pts": 2
+  },
+  "Munchen": {
+   "gp": 9,
+   "w": 6,
+   "reg_wins": 5,
+   "ot_wins": 1,
+   "otl": 1,
+   "l": 2,
+   "pts": 18,
+   "reg_w": 5,
+   "reg_d": 2,
+   "reg_l": 2,
+   "gf_pg": 3.22,
+   "ga_pg": 3.0,
+   "avg_reg_total": 6.0,
+   "sf_pg": 36.1,
+   "sa_pg": 30.7,
+   "shot_share": 0.541,
+   "sh_pct": 0.089,
+   "sv_pct": 0.902,
+   "pdo": 99.1,
+   "pp_pct": 0.205,
+   "pk_pct": 0.909,
+   "reg_draw_rate": 0.222,
+   "over_rate_reg": {
+    "4.5": 1.0,
+    "5.5": 0.778,
+    "6.5": 0.222
+   },
+   "home": {
+    "gp": 4,
+    "w": 2,
+    "reg_wins": 1,
+    "ot_wins": 1,
+    "otl": 0,
+    "l": 2,
+    "pts": 5,
+    "reg_w": 1,
+    "reg_d": 1,
+    "reg_l": 2,
+    "gf_pg": 2.5,
+    "ga_pg": 3.5,
+    "avg_reg_total": 5.75
+   },
+   "away": {
+    "gp": 5,
+    "w": 4,
+    "reg_wins": 4,
+    "ot_wins": 0,
+    "otl": 1,
+    "l": 0,
+    "pts": 13,
+    "reg_w": 4,
+    "reg_d": 1,
+    "reg_l": 0,
+    "gf_pg": 3.8,
+    "ga_pg": 2.6,
+    "avg_reg_total": 6.2
+   },
+   "last10": {
+    "gp": 9,
+    "w": 6,
+    "reg_wins": 5,
+    "ot_wins": 1,
+    "otl": 1,
+    "l": 2,
+    "pts": 18,
+    "reg_w": 5,
+    "reg_d": 2,
+    "reg_l": 2,
+    "gf_pg": 3.22,
+    "ga_pg": 3.0,
+    "avg_reg_total": 6.0
+   },
+   "last10_log": [
+    "20260918 vs Adler Mannheim 4-3 OTW",
+    "20260920 @ Grizzly Wolfsburg 3-4 OTL",
+    "20260925 @ Bremerhaven 4-1 W",
+    "20260927 vs Frankfurt Lowen 1-4 L",
+    "20261002 @ Kolner 4-2 W",
+    "20261004 vs Augsburger Panther 4-2 W",
+    "20261009 vs ERC Ingolstadt 1-5 L",
+    "20261011 @ Schwenninger 4-3 W",
+    "20261016 @ Eisbaren Berlin 4-3 W"
+   ],
+   "streak": "W2",
+   "last_game_date": "20261016",
+   "days_since_last": 2,
+   "last_was_b2b": false,
+   "rank_pts": 3
+  },
+  "Straubing Tigers": {
+   "gp": 9,
+   "w": 6,
+   "reg_wins": 5,
+   "ot_wins": 1,
+   "otl": 0,
+   "l": 3,
+   "pts": 17,
+   "reg_w": 5,
+   "reg_d": 1,
+   "reg_l": 3,
+   "gf_pg": 4.0,
+   "ga_pg": 2.78,
+   "avg_reg_total": 6.67,
+   "sf_pg": 27.2,
+   "sa_pg": 25.9,
+   "shot_share": 0.513,
+   "sh_pct": 0.147,
+   "sv_pct": 0.901,
+   "pdo": 104.8,
+   "pp_pct": 0.143,
+   "pk_pct": 0.886,
+   "reg_draw_rate": 0.111,
+   "over_rate_reg": {
+    "4.5": 0.778,
+    "5.5": 0.556,
+    "6.5": 0.333
+   },
+   "home": {
+    "gp": 4,
+    "w": 3,
+    "reg_wins": 3,
+    "ot_wins": 0,
+    "otl": 0,
+    "l": 1,
+    "pts": 9,
+    "reg_w": 3,
+    "reg_d": 0,
+    "reg_l": 1,
+    "gf_pg": 5.5,
+    "ga_pg": 3.5,
+    "avg_reg_total": 9.0
+   },
+   "away": {
+    "gp": 5,
+    "w": 3,
+    "reg_wins": 2,
+    "ot_wins": 1,
+    "otl": 0,
+    "l": 2,
+    "pts": 8,
+    "reg_w": 2,
+    "reg_d": 1,
+    "reg_l": 2,
+    "gf_pg": 2.8,
+    "ga_pg": 2.2,
+    "avg_reg_total": 4.8
+   },
+   "last10": {
+    "gp": 9,
+    "w": 6,
+    "reg_wins": 5,
+    "ot_wins": 1,
+    "otl": 0,
+    "l": 3,
+    "pts": 17,
+    "reg_w": 5,
+    "reg_d": 1,
+    "reg_l": 3,
+    "gf_pg": 4.0,
+    "ga_pg": 2.78,
+    "avg_reg_total": 6.67
+   },
+   "last10_log": [
+    "20260917 @ Eisbaren Berlin 2-4 L",
+    "20260920 vs Krefeld Pinguine 3-6 L",
+    "20260925 vs ERC Ingolstadt 4-1 W",
+    "20260927 @ Nurnberg Ice Tigers 3-2 OTW",
+    "20261002 vs Bremerhaven 4-3 W",
+    "20261004 @ Schwenninger 4-2 W",
+    "20261009 vs Iserlohn Roosters 11-4 W",
+    "20261011 @ Adler Mannheim 1-2 L",
+    "20261016 @ Frankfurt Lowen 4-1 W"
+   ],
+   "streak": "W1",
+   "last_game_date": "20261016",
+   "days_since_last": 2,
+   "last_was_b2b": false,
+   "rank_pts": 4
+  },
+  "Nurnberg Ice Tigers": {
+   "gp": 10,
+   "w": 5,
+   "reg_wins": 5,
+   "ot_wins": 0,
+   "otl": 1,
+   "l": 4,
+   "pts": 16,
+   "reg_w": 5,
+   "reg_d": 1,
+   "reg_l": 4,
+   "gf_pg": 3.0,
+   "ga_pg": 2.5,
+   "avg_reg_total": 5.4,
+   "sf_pg": 25.1,
+   "sa_pg": 29.6,
+   "shot_share": 0.459,
+   "sh_pct": 0.12,
+   "sv_pct": 0.919,
+   "pdo": 103.9,
+   "pp_pct": 0.149,
+   "pk_pct": 0.941,
+   "reg_draw_rate": 0.1,
+   "over_rate_reg": {
+    "4.5": 0.7,
+    "5.5": 0.4,
+    "6.5": 0.3
+   },
+   "home": {
+    "gp": 5,
+    "w": 3,
+    "reg_wins": 3,
+    "ot_wins": 0,
+    "otl": 1,
+    "l": 1,
+    "pts": 10,
+    "reg_w": 3,
+    "reg_d": 1,
+    "reg_l": 1,
+    "gf_pg": 3.6,
+    "ga_pg": 2.4,
+    "avg_reg_total": 5.8
+   },
+   "away": {
+    "gp": 5,
+    "w": 2,
+    "reg_wins": 2,
+    "ot_wins": 0,
+    "otl": 0,
+    "l": 3,
+    "pts": 6,
+    "reg_w": 2,
+    "reg_d": 0,
+    "reg_l": 3,
+    "gf_pg": 2.4,
+    "ga_pg": 2.6,
+    "avg_reg_total": 5.0
+   },
+   "last10": {
+    "gp": 10,
+    "w": 5,
+    "reg_wins": 5,
+    "ot_wins": 0,
+    "otl": 1,
+    "l": 4,
+    "pts": 16,
+    "reg_w": 5,
+    "reg_d": 1,
+    "reg_l": 4,
+    "gf_pg": 3.0,
+    "ga_pg": 2.5,
+    "avg_reg_total": 5.4
+   },
+   "last10_log": [
+    "20260918 vs Augsburger Panther 4-1 W",
+    "20260920 @ ERC Ingolstadt 6-2 W",
+    "20260922 vs Adler Mannheim 5-3 W",
+    "20260925 @ Frankfurt Lowen 2-1 W",
+    "20260927 vs Straubing Tigers 2-3 OTL",
+    "20261002 vs Schwenninger 5-0 W",
+    "20261004 @ Eisbaren Berlin 1-4 L",
+    "20261009 vs Adler Mannheim 2-5 L",
+    "20261011 @ Kolner 2-4 L",
+    "20261016 @ Bremerhaven 1-2 L"
+   ],
+   "streak": "L4",
+   "last_game_date": "20261016",
+   "days_since_last": 2,
+   "last_was_b2b": false,
+   "rank_pts": 5
+  },
+  "Grizzly Wolfsburg": {
+   "gp": 9,
+   "w": 5,
+   "reg_wins": 3,
+   "ot_wins": 2,
+   "otl": 2,
+   "l": 2,
+   "pts": 15,
+   "reg_w": 3,
+   "reg_d": 4,
+   "reg_l": 2,
+   "gf_pg": 3.11,
+   "ga_pg": 3.11,
+   "avg_reg_total": 5.78,
+   "sf_pg": 27.0,
+   "sa_pg": 33.7,
+   "shot_share": 0.445,
+   "sh_pct": 0.115,
+   "sv_pct": 0.908,
+   "pdo": 102.3,
+   "pp_pct": 0.081,
+   "pk_pct": 0.868,
+   "reg_draw_rate": 0.444,
+   "over_rate_reg": {
+    "4.5": 0.778,
+    "5.5": 0.444,
+    "6.5": 0.222
+   },
+   "home": {
+    "gp": 5,
+    "w": 4,
+    "reg_wins": 2,
+    "ot_wins": 2,
+    "otl": 1,
+    "l": 0,
+    "pts": 11,
+    "reg_w": 2,
+    "reg_d": 3,
+    "reg_l": 0,
+    "gf_pg": 3.2,
+    "ga_pg": 2.2,
+    "avg_reg_total": 4.8
+   },
+   "away": {
+    "gp": 4,
+    "w": 1,
+    "reg_wins": 1,
+    "ot_wins": 0,
+    "otl": 1,
+    "l": 2,
+    "pts": 4,
+    "reg_w": 1,
+    "reg_d": 1,
+    "reg_l": 2,
+    "gf_pg": 3.0,
+    "ga_pg": 4.25,
+    "avg_reg_total": 7.0
+   },
+   "last10": {
+    "gp": 9,
+    "w": 5,
+    "reg_wins": 3,
+    "ot_wins": 2,
+    "otl": 2,
+    "l": 2,
+    "pts": 15,
+    "reg_w": 3,
+    "reg_d": 4,
+    "reg_l": 2,
+    "gf_pg": 3.11,
+    "ga_pg": 3.11,
+    "avg_reg_total": 5.78
+   },
+   "last10_log": [
+    "20260918 @ Kolner 8-4 W",
+    "20260920 vs Munchen 4-3 OTW",
+    "20260925 vs Schwenninger 3-4 OTL",
+    "20260927 vs Bremerhaven 3-2 W",
+    "20261002 @ Augsburger Panther 2-5 L",
+    "20261004 vs Adler Mannheim 4-1 W",
+    "20261009 @ Eisbaren Berlin 0-5 L",
+    "20261011 @ Iserlohn Roosters 2-3 OTL",
+    "20261015 vs Krefeld Pinguine 2-1 OTW"
+   ],
+   "streak": "W1",
+   "last_game_date": "20261015",
+   "days_since_last": 3,
+   "last_was_b2b": false,
+   "rank_pts": 6
+  },
+  "Augsburger Panther": {
+   "gp": 9,
+   "w": 5,
+   "reg_wins": 4,
+   "ot_wins": 1,
+   "otl": 0,
+   "l": 4,
+   "pts": 14,
+   "reg_w": 4,
+   "reg_d": 1,
+   "reg_l": 4,
+   "gf_pg": 3.33,
+   "ga_pg": 3.11,
+   "avg_reg_total": 6.33,
+   "sf_pg": 31.2,
+   "sa_pg": 32.1,
+   "shot_share": 0.493,
+   "sh_pct": 0.107,
+   "sv_pct": 0.903,
+   "pdo": 101.0,
+   "pp_pct": 0.2,
+   "pk_pct": 0.763,
+   "reg_draw_rate": 0.111,
+   "over_rate_reg": {
+    "4.5": 0.667,
+    "5.5": 0.556,
+    "6.5": 0.444
+   },
+   "home": {
+    "gp": 5,
+    "w": 3,
+    "reg_wins": 3,
+    "ot_wins": 0,
+    "otl": 0,
+    "l": 2,
+    "pts": 9,
+    "reg_w": 3,
+    "reg_d": 0,
+    "reg_l": 2,
+    "gf_pg": 4.4,
+    "ga_pg": 3.4,
+    "avg_reg_total": 7.8
+   },
+   "away": {
+    "gp": 4,
+    "w": 2,
+    "reg_wins": 1,
+    "ot_wins": 1,
+    "otl": 0,
+    "l": 2,
+    "pts": 5,
+    "reg_w": 1,
+    "reg_d": 1,
+    "reg_l": 2,
+    "gf_pg": 2.0,
+    "ga_pg": 2.75,
+    "avg_reg_total": 4.5
+   },
+   "last10": {
+    "gp": 9,
+    "w": 5,
+    "reg_wins": 4,
+    "ot_wins": 1,
+    "otl": 0,
+    "l": 4,
+    "pts": 14,
+    "reg_w": 4,
+    "reg_d": 1,
+    "reg_l": 4,
+    "gf_pg": 3.33,
+    "ga_pg": 3.11,
+    "avg_reg_total": 6.33
+   },
+   "last10_log": [
+    "20260918 @ Nurnberg Ice Tigers 1-4 L",
+    "20260920 vs Schwenninger 7-3 W",
+    "20260924 @ Iserlohn Roosters 3-2 OTW",
+    "20260927 vs Kolner 4-6 L",
+    "20261002 vs Grizzly Wolfsburg 5-2 W",
+    "20261004 @ Munchen 2-4 L",
+    "20261009 vs Bremerhaven 3-0 W",
+    "20261011 @ Krefeld Pinguine 2-1 W",
+    "20261016 vs Adler Mannheim 3-6 L"
+   ],
+   "streak": "L1",
+   "last_game_date": "20261016",
+   "days_since_last": 2,
+   "last_was_b2b": false,
+   "rank_pts": 7
+  },
+  "Krefeld Pinguine": {
+   "gp": 9,
+   "w": 4,
+   "reg_wins": 4,
+   "ot_wins": 0,
+   "otl": 1,
+   "l": 4,
+   "pts": 13,
+   "reg_w": 4,
+   "reg_d": 1,
+   "reg_l": 4,
+   "gf_pg": 2.78,
+   "ga_pg": 2.44,
+   "avg_reg_total": 5.11,
+   "sf_pg": 31.8,
+   "sa_pg": 29.8,
+   "shot_share": 0.516,
+   "sh_pct": 0.087,
+   "sv_pct": 0.922,
+   "pdo": 100.9,
+   "pp_pct": 0.062,
+   "pk_pct": 0.909,
+   "reg_draw_rate": 0.111,
+   "over_rate_reg": {
+    "4.5": 0.556,
+    "5.5": 0.333,
+    "6.5": 0.333
+   },
+   "home": {
+    "gp": 4,
+    "w": 2,
+    "reg_wins": 2,
+    "ot_wins": 0,
+    "otl": 0,
+    "l": 2,
+    "pts": 6,
+    "reg_w": 2,
+    "reg_d": 0,
+    "reg_l": 2,
+    "gf_pg": 2.5,
+    "ga_pg": 2.0,
+    "avg_reg_total": 4.5
+   },
+   "away": {
+    "gp": 5,
+    "w": 2,
+    "reg_wins": 2,
+    "ot_wins": 0,
+    "otl": 1,
+    "l": 2,
+    "pts": 7,
+    "reg_w": 2,
+    "reg_d": 1,
+    "reg_l": 2,
+    "gf_pg": 3.0,
+    "ga_pg": 2.8,
+    "avg_reg_total": 5.6
+   },
+   "last10": {
+    "gp": 9,
+    "w": 4,
+    "reg_wins": 4,
+    "ot_wins": 0,
+    "otl": 1,
+    "l": 4,
+    "pts": 13,
+    "reg_w": 4,
+    "reg_d": 1,
+    "reg_l": 4,
+    "gf_pg": 2.78,
+    "ga_pg": 2.44,
+    "avg_reg_total": 5.11
+   },
+   "last10_log": [
+    "20260918 vs Bremerhaven 1-3 L",
+    "20260920 @ Straubing Tigers 6-3 W",
+    "20260925 @ Adler Mannheim 1-4 L",
+    "20260927 vs Schwenninger 5-2 W",
+    "20261002 vs ERC Ingolstadt 3-1 W",
+    "20261004 @ Iserlohn Roosters 2-3 L",
+    "20261008 @ Frankfurt Lowen 5-2 W",
+    "20261011 vs Augsburger Panther 1-2 L",
+    "20261015 @ Grizzly Wolfsburg 1-2 OTL"
+   ],
+   "streak": "L2",
+   "last_game_date": "20261015",
+   "days_since_last": 3,
+   "last_was_b2b": false,
+   "rank_pts": 8
+  },
+  "Kolner": {
+   "gp": 9,
+   "w": 4,
+   "reg_wins": 3,
+   "ot_wins": 1,
+   "otl": 1,
+   "l": 4,
+   "pts": 12,
+   "reg_w": 3,
+   "reg_d": 2,
+   "reg_l": 4,
+   "gf_pg": 3.78,
+   "ga_pg": 4.22,
+   "avg_reg_total": 7.78,
+   "sf_pg": 31.2,
+   "sa_pg": 27.8,
+   "shot_share": 0.529,
+   "sh_pct": 0.121,
+   "sv_pct": 0.852,
+   "pdo": 97.3,
+   "pp_pct": 0.233,
+   "pk_pct": 0.812,
+   "reg_draw_rate": 0.222,
+   "over_rate_reg": {
+    "4.5": 1.0,
+    "5.5": 0.889,
+    "6.5": 0.444
+   },
+   "home": {
+    "gp": 6,
+    "w": 2,
+    "reg_wins": 1,
+    "ot_wins": 1,
+    "otl": 1,
+    "l": 3,
+    "pts": 6,
+    "reg_w": 1,
+    "reg_d": 2,
+    "reg_l": 3,
+    "gf_pg": 3.33,
+    "ga_pg": 4.5,
+    "avg_reg_total": 7.5
+   },
+   "away": {
+    "gp": 3,
+    "w": 2,
+    "reg_wins": 2,
+    "ot_wins": 0,
+    "otl": 0,
+    "l": 1,
+    "pts": 6,
+    "reg_w": 2,
+    "reg_d": 0,
+    "reg_l": 1,
+    "gf_pg": 4.67,
+    "ga_pg": 3.67,
+    "avg_reg_total": 8.33
+   },
+   "last10": {
+    "gp": 9,
+    "w": 4,
+    "reg_wins": 3,
+    "ot_wins": 1,
+    "otl": 1,
+    "l": 4,
+    "pts": 12,
+    "reg_w": 3,
+    "reg_d": 2,
+    "reg_l": 4,
+    "gf_pg": 3.78,
+    "ga_pg": 4.22,
+    "avg_reg_total": 7.78
+   },
+   "last10_log": [
+    "20260918 vs Grizzly Wolfsburg 4-8 L",
+    "20260920 vs Frankfurt Lowen 4-3 OTW",
+    "20260925 vs Eisbaren Berlin 5-6 OTL",
+    "20260927 @ Augsburger Panther 6-4 W",
+    "20261002 vs Munchen 2-4 L",
+    "20261004 @ ERC Ingolstadt 6-3 W",
+    "20261009 vs Schwenninger 1-4 L",
+    "20261011 vs Nurnberg Ice Tigers 4-2 W",
+    "20261016 @ Iserlohn Roosters 2-4 L"
+   ],
+   "streak": "L1",
+   "last_game_date": "20261016",
+   "days_since_last": 2,
+   "last_was_b2b": false,
+   "rank_pts": 9
+  },
+  "Bremerhaven": {
+   "gp": 9,
+   "w": 4,
+   "reg_wins": 4,
+   "ot_wins": 0,
+   "otl": 0,
+   "l": 5,
+   "pts": 12,
+   "reg_w": 4,
+   "reg_d": 0,
+   "reg_l": 5,
+   "gf_pg": 1.67,
+   "ga_pg": 2.33,
+   "avg_reg_total": 4.0,
+   "sf_pg": 25.7,
+   "sa_pg": 25.2,
+   "shot_share": 0.504,
+   "sh_pct": 0.065,
+   "sv_pct": 0.921,
+   "pdo": 98.6,
+   "pp_pct": 0.043,
+   "pk_pct": 0.905,
+   "reg_draw_rate": 0.0,
+   "over_rate_reg": {
+    "4.5": 0.333,
+    "5.5": 0.111,
+    "6.5": 0.111
+   },
+   "home": {
+    "gp": 5,
+    "w": 3,
+    "reg_wins": 3,
+    "ot_wins": 0,
+    "otl": 0,
+    "l": 2,
+    "pts": 9,
+    "reg_w": 3,
+    "reg_d": 0,
+    "reg_l": 2,
+    "gf_pg": 1.4,
+    "ga_pg": 2.0,
+    "avg_reg_total": 3.4
+   },
+   "away": {
+    "gp": 4,
+    "w": 1,
+    "reg_wins": 1,
+    "ot_wins": 0,
+    "otl": 0,
+    "l": 3,
+    "pts": 3,
+    "reg_w": 1,
+    "reg_d": 0,
+    "reg_l": 3,
+    "gf_pg": 2.0,
+    "ga_pg": 2.75,
+    "avg_reg_total": 4.75
+   },
+   "last10": {
+    "gp": 9,
+    "w": 4,
+    "reg_wins": 4,
+    "ot_wins": 0,
+    "otl": 0,
+    "l": 5,
+    "pts": 12,
+    "reg_w": 4,
+    "reg_d": 0,
+    "reg_l": 5,
+    "gf_pg": 1.67,
+    "ga_pg": 2.33,
+    "avg_reg_total": 4.0
+   },
+   "last10_log": [
+    "20260918 @ Krefeld Pinguine 3-1 W",
+    "20260920 vs Iserlohn Roosters 2-1 W",
+    "20260925 vs Munchen 1-4 L",
+    "20260927 @ Grizzly Wolfsburg 2-3 L",
+    "20261002 @ Straubing Tigers 3-4 L",
+    "20261004 vs Frankfurt Lowen 2-1 W",
+    "20261009 @ Augsburger Panther 0-3 L",
+    "20261011 vs Eisbaren Berlin 0-3 L",
+    "20261016 vs Nurnberg Ice Tigers 2-1 W"
+   ],
+   "streak": "W1",
+   "last_game_date": "20261016",
+   "days_since_last": 2,
+   "last_was_b2b": false,
+   "rank_pts": 10
+  },
+  "ERC Ingolstadt": {
+   "gp": 9,
+   "w": 4,
+   "reg_wins": 2,
+   "ot_wins": 2,
+   "otl": 1,
+   "l": 4,
+   "pts": 11,
+   "reg_w": 2,
+   "reg_d": 3,
+   "reg_l": 4,
+   "gf_pg": 2.78,
+   "ga_pg": 3.44,
+   "avg_reg_total": 5.89,
+   "sf_pg": 30.3,
+   "sa_pg": 30.3,
+   "shot_share": 0.5,
+   "sh_pct": 0.092,
+   "sv_pct": 0.89,
+   "pdo": 98.2,
+   "pp_pct": 0.143,
+   "pk_pct": 0.844,
+   "reg_draw_rate": 0.333,
+   "over_rate_reg": {
+    "4.5": 0.667,
+    "5.5": 0.556,
+    "6.5": 0.333
+   },
+   "home": {
+    "gp": 4,
+    "w": 1,
+    "reg_wins": 0,
+    "ot_wins": 1,
+    "otl": 1,
+    "l": 2,
+    "pts": 3,
+    "reg_w": 0,
+    "reg_d": 2,
+    "reg_l": 2,
+    "gf_pg": 2.5,
+    "ga_pg": 4.25,
+    "avg_reg_total": 6.25
+   },
+   "away": {
+    "gp": 5,
+    "w": 3,
+    "reg_wins": 2,
+    "ot_wins": 1,
+    "otl": 0,
+    "l": 2,
+    "pts": 8,
+    "reg_w": 2,
+    "reg_d": 1,
+    "reg_l": 2,
+    "gf_pg": 3.0,
+    "ga_pg": 2.8,
+    "avg_reg_total": 5.6
+   },
+   "last10": {
+    "gp": 9,
+    "w": 4,
+    "reg_wins": 2,
+    "ot_wins": 2,
+    "otl": 1,
+    "l": 4,
+    "pts": 11,
+    "reg_w": 2,
+    "reg_d": 3,
+    "reg_l": 4,
+    "gf_pg": 2.78,
+    "ga_pg": 3.44,
+    "avg_reg_total": 5.89
+   },
+   "last10_log": [
+    "20260918 @ Iserlohn Roosters 4-3 W",
+    "20260920 vs Nurnberg Ice Tigers 2-6 L",
+    "20260925 @ Straubing Tigers 1-4 L",
+    "20260927 vs Adler Mannheim 3-2 OTW",
+    "20261002 @ Krefeld Pinguine 1-3 L",
+    "20261004 vs Kolner 3-6 L",
+    "20261009 @ Munchen 5-1 W",
+    "20261011 vs Frankfurt Lowen 2-3 OTL",
+    "20261016 @ Schwenninger 4-3 OTW"
+   ],
+   "streak": "W1",
+   "last_game_date": "20261016",
+   "days_since_last": 2,
+   "last_was_b2b": false,
+   "rank_pts": 11
+  },
+  "Frankfurt Lowen": {
+   "gp": 9,
+   "w": 3,
+   "reg_wins": 2,
+   "ot_wins": 1,
+   "otl": 1,
+   "l": 5,
+   "pts": 9,
+   "reg_w": 2,
+   "reg_d": 2,
+   "reg_l": 5,
+   "gf_pg": 2.22,
+   "ga_pg": 2.44,
+   "avg_reg_total": 4.44,
+   "sf_pg": 24.1,
+   "sa_pg": 28.2,
+   "shot_share": 0.461,
+   "sh_pct": 0.092,
+   "sv_pct": 0.913,
+   "pdo": 100.5,
+   "pp_pct": 0.132,
+   "pk_pct": 0.939,
+   "reg_draw_rate": 0.222,
+   "over_rate_reg": {
+    "4.5": 0.556,
+    "5.5": 0.222,
+    "6.5": 0.111
+   },
+   "home": {
+    "gp": 4,
+    "w": 0,
+    "reg_wins": 0,
+    "ot_wins": 0,
+    "otl": 0,
+    "l": 4,
+    "pts": 0,
+    "reg_w": 0,
+    "reg_d": 0,
+    "reg_l": 4,
+    "gf_pg": 1.0,
+    "ga_pg": 3.25,
+    "avg_reg_total": 4.25
+   },
+   "away": {
+    "gp": 5,
+    "w": 3,
+    "reg_wins": 2,
+    "ot_wins": 1,
+    "otl": 1,
+    "l": 1,
+    "pts": 9,
+    "reg_w": 2,
+    "reg_d": 2,
+    "reg_l": 1,
+    "gf_pg": 3.2,
+    "ga_pg": 1.8,
+    "avg_reg_total": 4.6
+   },
+   "last10": {
+    "gp": 9,
+    "w": 3,
+    "reg_wins": 2,
+    "ot_wins": 1,
+    "otl": 1,
+    "l": 5,
+    "pts": 9,
+    "reg_w": 2,
+    "reg_d": 2,
+    "reg_l": 5,
+    "gf_pg": 2.22,
+    "ga_pg": 2.44,
+    "avg_reg_total": 4.44
+   },
+   "last10_log": [
+    "20260918 @ Schwenninger 5-0 W",
+    "20260920 @ Kolner 3-4 OTL",
+    "20260925 vs Nurnberg Ice Tigers 1-2 L",
+    "20260927 @ Munchen 4-1 W",
+    "20261002 vs Eisbaren Berlin 0-2 L",
+    "20261004 @ Bremerhaven 1-2 L",
+    "20261008 vs Krefeld Pinguine 2-5 L",
+    "20261011 @ ERC Ingolstadt 3-2 OTW",
+    "20261016 vs Straubing Tigers 1-4 L"
+   ],
+   "streak": "L1",
+   "last_game_date": "20261016",
+   "days_since_last": 2,
+   "last_was_b2b": false,
+   "rank_pts": 12
+  },
+  "Iserlohn Roosters": {
+   "gp": 9,
+   "w": 3,
+   "reg_wins": 2,
+   "ot_wins": 1,
+   "otl": 1,
+   "l": 5,
+   "pts": 9,
+   "reg_w": 2,
+   "reg_d": 2,
+   "reg_l": 5,
+   "gf_pg": 2.33,
+   "ga_pg": 4.0,
+   "avg_reg_total": 6.11,
+   "sf_pg": 23.2,
+   "sa_pg": 29.2,
+   "shot_share": 0.443,
+   "sh_pct": 0.1,
+   "sv_pct": 0.867,
+   "pdo": 96.7,
+   "pp_pct": 0.111,
+   "pk_pct": 0.788,
+   "reg_draw_rate": 0.222,
+   "over_rate_reg": {
+    "4.5": 0.556,
+    "5.5": 0.444,
+    "6.5": 0.333
+   },
+   "home": {
+    "gp": 5,
+    "w": 3,
+    "reg_wins": 2,
+    "ot_wins": 1,
+    "otl": 1,
+    "l": 1,
+    "pts": 9,
+    "reg_w": 2,
+    "reg_d": 2,
+    "reg_l": 1,
+    "gf_pg": 3.0,
+    "ga_pg": 2.6,
+    "avg_reg_total": 5.2
+   },
+   "away": {
+    "gp": 4,
+    "w": 0,
+    "reg_wins": 0,
+    "ot_wins": 0,
+    "otl": 0,
+    "l": 4,
+    "pts": 0,
+    "reg_w": 0,
+    "reg_d": 0,
+    "reg_l": 4,
+    "gf_pg": 1.5,
+    "ga_pg": 5.75,
+    "avg_reg_total": 7.25
+   },
+   "last10": {
+    "gp": 9,
+    "w": 3,
+    "reg_wins": 2,
+    "ot_wins": 1,
+    "otl": 1,
+    "l": 5,
+    "pts": 9,
+    "reg_w": 2,
+    "reg_d": 2,
+    "reg_l": 5,
+    "gf_pg": 2.33,
+    "ga_pg": 4.0,
+    "avg_reg_total": 6.11
+   },
+   "last10_log": [
+    "20260918 vs ERC Ingolstadt 3-4 L",
+    "20260920 @ Bremerhaven 1-2 L",
+    "20260924 vs Augsburger Panther 2-3 OTL",
+    "20260927 @ Eisbaren Berlin 0-4 L",
+    "20261001 @ Adler Mannheim 1-6 L",
+    "20261004 vs Krefeld Pinguine 3-2 W",
+    "20261009 @ Straubing Tigers 4-11 L",
+    "20261011 vs Grizzly Wolfsburg 3-2 OTW",
+    "20261016 vs Kolner 4-2 W"
+   ],
+   "streak": "W2",
+   "last_game_date": "20261016",
+   "days_since_last": 2,
+   "last_was_b2b": false,
+   "rank_pts": 13
+  },
+  "Schwenninger": {
+   "gp": 9,
+   "w": 2,
+   "reg_wins": 1,
+   "ot_wins": 1,
+   "otl": 1,
+   "l": 6,
+   "pts": 6,
+   "reg_w": 1,
+   "reg_d": 2,
+   "reg_l": 6,
+   "gf_pg": 2.33,
+   "ga_pg": 4.22,
+   "avg_reg_total": 6.33,
+   "sf_pg": 28.6,
+   "sa_pg": 28.4,
+   "shot_share": 0.501,
+   "sh_pct": 0.082,
+   "sv_pct": 0.852,
+   "pdo": 93.4,
+   "pp_pct": 0.079,
+   "pk_pct": 0.722,
+   "reg_draw_rate": 0.222,
+   "over_rate_reg": {
+    "4.5": 1.0,
+    "5.5": 0.667,
+    "6.5": 0.333
+   },
+   "home": {
+    "gp": 4,
+    "w": 0,
+    "reg_wins": 0,
+    "ot_wins": 0,
+    "otl": 1,
+    "l": 3,
+    "pts": 1,
+    "reg_w": 0,
+    "reg_d": 1,
+    "reg_l": 3,
+    "gf_pg": 2.0,
+    "ga_pg": 4.25,
+    "avg_reg_total": 6.0
+   },
+   "away": {
+    "gp": 5,
+    "w": 2,
+    "reg_wins": 1,
+    "ot_wins": 1,
+    "otl": 0,
+    "l": 3,
+    "pts": 5,
+    "reg_w": 1,
+    "reg_d": 1,
+    "reg_l": 3,
+    "gf_pg": 2.6,
+    "ga_pg": 4.2,
+    "avg_reg_total": 6.6
+   },
+   "last10": {
+    "gp": 9,
+    "w": 2,
+    "reg_wins": 1,
+    "ot_wins": 1,
+    "otl": 1,
+    "l": 6,
+    "pts": 6,
+    "reg_w": 1,
+    "reg_d": 2,
+    "reg_l": 6,
+    "gf_pg": 2.33,
+    "ga_pg": 4.22,
+    "avg_reg_total": 6.33
+   },
+   "last10_log": [
+    "20260918 vs Frankfurt Lowen 0-5 L",
+    "20260920 @ Augsburger Panther 3-7 L",
+    "20260925 @ Grizzly Wolfsburg 4-3 OTW",
+    "20260927 @ Krefeld Pinguine 2-5 L",
+    "20261002 @ Nurnberg Ice Tigers 0-5 L",
+    "20261004 vs Straubing Tigers 2-4 L",
+    "20261009 @ Kolner 4-1 W",
+    "20261011 vs Munchen 3-4 L",
+    "20261016 vs ERC Ingolstadt 3-4 OTL"
+   ],
+   "streak": "L2",
+   "last_game_date": "20261016",
+   "days_since_last": 2,
+   "last_was_b2b": false,
+   "rank_pts": 14
+  }
+ },
+ "goalies": {
+  "Adler Mannheim|CMqJdJGP": {
+   "name": "Hildebrand J.",
+   "team": "Adler Mannheim",
+   "starts": 6,
+   "w": 4,
+   "gp_with_sv": 6,
+   "sv_pct": 0.887,
+   "gaa": 2.83,
+   "last5_starts": {
+    "gp_with_sv": 5,
+    "sv_pct": 0.887,
+    "gaa": 2.8
+   },
+   "home": {
+    "gp_with_sv": 3,
+    "sv_pct": 0.929,
+    "gaa": 1.67
+   },
+   "away": {
+    "gp_with_sv": 3,
+    "sv_pct": 0.85,
+    "gaa": 4.0
+   },
+   "last_start_date": "20261016",
+   "log": [
+    "20260922 @ Nurnberg Ice Tigers 17/22 L",
+    "20261001 vs Iserlohn Roosters 20/21 W",
+    "20261004 @ Grizzly Wolfsburg 24/28 L",
+    "20261011 vs Straubing Tigers 22/23 W",
+    "20261016 @ Augsburger Panther 27/30 W"
+   ]
+  },
+  "Adler Mannheim|tj99Zkv0": {
+   "name": "Franzreb M.",
+   "team": "Adler Mannheim",
+   "starts": 4,
+   "w": 2,
+   "gp_with_sv": 4,
+   "sv_pct": 0.917,
+   "gaa": 2.25,
+   "last5_starts": {
+    "gp_with_sv": 4,
+    "sv_pct": 0.917,
+    "gaa": 2.25
+   },
+   "home": {
+    "gp_with_sv": 1,
+    "sv_pct": 0.966,
+    "gaa": 1.0
+   },
+   "away": {
+    "gp_with_sv": 3,
+    "sv_pct": 0.9,
+    "gaa": 2.67
+   },
+   "last_start_date": "20261009",
+   "log": [
+    "20260918 @ Munchen 26/29 L",
+    "20260925 vs Krefeld Pinguine 28/29 W",
+    "20260927 @ ERC Ingolstadt 22/25 L",
+    "20261009 @ Nurnberg Ice Tigers 24/26 W"
+   ]
+  },
+  "Augsburger Panther|CbJOuoho": {
+   "name": "Ancicka T.",
+   "team": "Augsburger Panther",
+   "starts": 6,
+   "w": 3,
+   "gp_with_sv": 6,
+   "sv_pct": 0.917,
+   "gaa": 2.83,
+   "last5_starts": {
+    "gp_with_sv": 5,
+    "sv_pct": 0.929,
+    "gaa": 2.6
+   },
+   "home": {
+    "gp_with_sv": 3,
+    "sv_pct": 0.923,
+    "gaa": 2.67
+   },
+   "away": {
+    "gp_with_sv": 3,
+    "sv_pct": 0.911,
+    "gaa": 3.0
+   },
+   "last_start_date": "20261016",
+   "log": [
+    "20261002 vs Grizzly Wolfsburg 29/31 W",
+    "20261004 @ Munchen 37/41 L",
+    "20261009 vs Bremerhaven 28/28 W",
+    "20261011 @ Krefeld Pinguine 36/37 W",
+    "20261016 vs Adler Mannheim 39/45 L"
+   ]
+  },
+  "Augsburger Panther|lUEaQxpG": {
+   "name": "Jones P.",
+   "team": "Augsburger Panther",
+   "starts": 3,
+   "w": 2,
+   "gp_with_sv": 3,
+   "sv_pct": 0.869,
+   "gaa": 3.67,
+   "last5_starts": {
+    "gp_with_sv": 3,
+    "sv_pct": 0.869,
+    "gaa": 3.67
+   },
+   "home": {
+    "gp_with_sv": 2,
+    "sv_pct": 0.83,
+    "gaa": 4.5
+   },
+   "away": {
+    "gp_with_sv": 1,
+    "sv_pct": 0.935,
+    "gaa": 2.0
+   },
+   "last_start_date": "20260927",
+   "log": [
+    "20260920 vs Schwenninger 26/29 W",
+    "20260924 @ Iserlohn Roosters 29/31 W",
+    "20260927 vs Kolner 18/24 L"
+   ]
+  },
+  "Bremerhaven|OCJaJQ69": {
+   "name": "Gudlevskis K.",
+   "team": "Bremerhaven",
+   "starts": 8,
+   "w": 4,
+   "gp_with_sv": 8,
+   "sv_pct": 0.925,
+   "gaa": 1.88,
+   "last5_starts": {
+    "gp_with_sv": 5,
+    "sv_pct": 0.923,
+    "gaa": 1.8
+   },
+   "home": {
+    "gp_with_sv": 5,
+    "sv_pct": 0.929,
+    "gaa": 2.0
+   },
+   "away": {
+    "gp_with_sv": 3,
+    "sv_pct": 0.917,
+    "gaa": 1.67
+   },
+   "last_start_date": "20261016",
+   "log": [
+    "20261002 @ Straubing Tigers 2/3 L",
+    "20261004 vs Frankfurt Lowen 26/27 W",
+    "20261009 @ Augsburger Panther 27/30 L",
+    "20261011 vs Eisbaren Berlin 22/25 L",
+    "20261016 vs Nurnberg Ice Tigers 31/32 W"
+   ]
+  },
+  "Bremerhaven|80k3MbB1": {
+   "name": "Hungerecker L.",
+   "team": "Bremerhaven",
+   "starts": 1,
+   "w": 0,
+   "gp_with_sv": 1,
+   "sv_pct": 0.889,
+   "gaa": 3.0,
+   "last5_starts": {
+    "gp_with_sv": 1,
+    "sv_pct": 0.889,
+    "gaa": 3.0
+   },
+   "home": {
+    "gp_with_sv": 0,
+    "sv_pct": null,
+    "gaa": null
+   },
+   "away": {
+    "gp_with_sv": 1,
+    "sv_pct": 0.889,
+    "gaa": 3.0
+   },
+   "last_start_date": "20260927",
+   "log": [
+    "20260927 @ Grizzly Wolfsburg 24/27 L"
+   ]
+  },
+  "ERC Ingolstadt|bmQH6jA5": {
+   "name": "Stettmer J.",
+   "team": "ERC Ingolstadt",
+   "starts": 5,
+   "w": 2,
+   "gp_with_sv": 5,
+   "sv_pct": 0.876,
+   "gaa": 4.0,
+   "last5_starts": {
+    "gp_with_sv": 5,
+    "sv_pct": 0.876,
+    "gaa": 4.0
+   },
+   "home": {
+    "gp_with_sv": 2,
+    "sv_pct": 0.793,
+    "gaa": 6.0
+   },
+   "away": {
+    "gp_with_sv": 3,
+    "sv_pct": 0.922,
+    "gaa": 2.67
+   },
+   "last_start_date": "20261016",
+   "log": [
+    "20260920 vs Nurnberg Ice Tigers 22/28 L",
+    "20260925 @ Straubing Tigers 39/43 L",
+    "20261004 vs Kolner 24/30 L",
+    "20261009 @ Munchen 31/32 W",
+    "20261016 @ Schwenninger 25/28 W"
+   ]
+  },
+  "ERC Ingolstadt|My7aoYs8": {
+   "name": "Williams D.",
+   "team": "ERC Ingolstadt",
+   "starts": 4,
+   "w": 2,
+   "gp_with_sv": 4,
+   "sv_pct": 0.911,
+   "gaa": 2.5,
+   "last5_starts": {
+    "gp_with_sv": 4,
+    "sv_pct": 0.911,
+    "gaa": 2.5
+   },
+   "home": {
+    "gp_with_sv": 2,
+    "sv_pct": 0.934,
+    "gaa": 2.0
+   },
+   "away": {
+    "gp_with_sv": 2,
+    "sv_pct": 0.882,
+    "gaa": 3.0
+   },
+   "last_start_date": "20261011",
+   "log": [
+    "20260918 @ Iserlohn Roosters 16/19 W",
+    "20260927 vs Adler Mannheim 40/42 W",
+    "20261002 @ Krefeld Pinguine 29/32 L",
+    "20261011 vs Frankfurt Lowen 17/19 L"
+   ]
+  },
+  "Eisbaren Berlin|CYw6IUla": {
+   "name": "Neffin J.",
+   "team": "Eisbaren Berlin",
+   "starts": 6,
+   "w": 5,
+   "gp_with_sv": 6,
+   "sv_pct": 0.969,
+   "gaa": 0.83,
+   "last5_starts": {
+    "gp_with_sv": 5,
+    "sv_pct": 0.965,
+    "gaa": 1.0
+   },
+   "home": {
+    "gp_with_sv": 4,
+    "sv_pct": 0.952,
+    "gaa": 1.25
+   },
+   "away": {
+    "gp_with_sv": 2,
+    "sv_pct": 1.0,
+    "gaa": 0.0
+   },
+   "last_start_date": "20261016",
+   "log": [
+    "20261002 @ Frankfurt Lowen 28/28 W",
+    "20261004 vs Nurnberg Ice Tigers 31/32 W",
+    "20261009 vs Grizzly Wolfsburg 18/18 W",
+    "20261011 @ Bremerhaven 26/26 W",
+    "20261016 vs Munchen 36/40 L"
+   ]
+  },
+  "Eisbaren Berlin|ELZFdaxl": {
+   "name": "LaFontaine J.",
+   "team": "Eisbaren Berlin",
+   "starts": 3,
+   "w": 2,
+   "gp_with_sv": 3,
+   "sv_pct": 0.876,
+   "gaa": 3.67,
+   "last5_starts": {
+    "gp_with_sv": 3,
+    "sv_pct": 0.876,
+    "gaa": 3.67
+   },
+   "home": {
+    "gp_with_sv": 1,
+    "sv_pct": 0.933,
+    "gaa": 2.0
+   },
+   "away": {
+    "gp_with_sv": 2,
+    "sv_pct": 0.847,
+    "gaa": 4.5
+   },
+   "last_start_date": "20260925",
+   "log": [
+    "20260917 vs Straubing Tigers 28/30 W",
+    "20260920 @ Adler Mannheim 23/27 L",
+    "20260925 @ Kolner 27/32 W"
+   ]
+  },
+  "Frankfurt Lowen|b56oW7OS": {
+   "name": "Scheel A.",
+   "team": "Frankfurt Lowen",
+   "starts": 6,
+   "w": 2,
+   "gp_with_sv": 6,
+   "sv_pct": 0.917,
+   "gaa": 2.33,
+   "last5_starts": {
+    "gp_with_sv": 5,
+    "sv_pct": 0.902,
+    "gaa": 2.8
+   },
+   "home": {
+    "gp_with_sv": 2,
+    "sv_pct": 0.895,
+    "gaa": 3.0
+   },
+   "away": {
+    "gp_with_sv": 4,
+    "sv_pct": 0.928,
+    "gaa": 2.0
+   },
+   "last_start_date": "20261016",
+   "log": [
+    "20260920 @ Kolner 29/33 L",
+    "20261002 vs Eisbaren Berlin 28/30 L",
+    "20261004 @ Bremerhaven 15/17 L",
+    "20261011 @ ERC Ingolstadt 34/36 W",
+    "20261016 vs Straubing Tigers 23/27 L"
+   ]
+  },
+  "Frankfurt Lowen|6FGEn6EO": {
+   "name": "Pertuch N.",
+   "team": "Frankfurt Lowen",
+   "starts": 2,
+   "w": 1,
+   "gp_with_sv": 2,
+   "sv_pct": 0.906,
+   "gaa": 3.0,
+   "last5_starts": {
+    "gp_with_sv": 2,
+    "sv_pct": 0.906,
+    "gaa": 3.0
+   },
+   "home": {
+    "gp_with_sv": 1,
+    "sv_pct": 0.815,
+    "gaa": 5.0
+   },
+   "away": {
+    "gp_with_sv": 1,
+    "sv_pct": 0.973,
+    "gaa": 1.0
+   },
+   "last_start_date": "20261008",
+   "log": [
+    "20260927 @ Munchen 36/37 W",
+    "20261008 vs Krefeld Pinguine 22/27 L"
+   ]
+  },
+  "Frankfurt Lowen|hnIgVTK3": {
+   "name": "Brenner C.",
+   "team": "Frankfurt Lowen",
+   "starts": 1,
+   "w": 0,
+   "gp_with_sv": 1,
+   "sv_pct": 0.909,
+   "gaa": 2.0,
+   "last5_starts": {
+    "gp_with_sv": 1,
+    "sv_pct": 0.909,
+    "gaa": 2.0
+   },
+   "home": {
+    "gp_with_sv": 1,
+    "sv_pct": 0.909,
+    "gaa": 2.0
+   },
+   "away": {
+    "gp_with_sv": 0,
+    "sv_pct": null,
+    "gaa": null
+   },
+   "last_start_date": "20260925",
+   "log": [
+    "20260925 vs Nurnberg Ice Tigers 20/22 L"
+   ]
+  },
+  "Grizzly Wolfsburg|SADYYKN0": {
+   "name": "Strahlmeier D.",
+   "team": "Grizzly Wolfsburg",
+   "starts": 7,
+   "w": 4,
+   "gp_with_sv": 7,
+   "sv_pct": 0.901,
+   "gaa": 3.29,
+   "last5_starts": {
+    "gp_with_sv": 5,
+    "sv_pct": 0.897,
+    "gaa": 3.2
+   },
+   "home": {
+    "gp_with_sv": 3,
+    "sv_pct": 0.944,
+    "gaa": 2.0
+   },
+   "away": {
+    "gp_with_sv": 4,
+    "sv_pct": 0.864,
+    "gaa": 4.25
+   },
+   "last_start_date": "20261015",
+   "log": [
+    "20260927 vs Bremerhaven 29/31 W",
+    "20261002 @ Augsburger Panther 27/32 L",
+    "20261009 @ Eisbaren Berlin 27/32 L",
+    "20261011 @ Iserlohn Roosters 27/30 L",
+    "20261015 vs Krefeld Pinguine 30/31 W"
+   ]
+  },
+  "Grizzly Wolfsburg|MBibRK3f": {
+   "name": "Weitzmann H.",
+   "team": "Grizzly Wolfsburg",
+   "starts": 2,
+   "w": 1,
+   "gp_with_sv": 2,
+   "sv_pct": 0.93,
+   "gaa": 2.5,
+   "last5_starts": {
+    "gp_with_sv": 2,
+    "sv_pct": 0.93,
+    "gaa": 2.5
+   },
+   "home": {
+    "gp_with_sv": 2,
+    "sv_pct": 0.93,
+    "gaa": 2.5
+   },
+   "away": {
+    "gp_with_sv": 0,
+    "sv_pct": null,
+    "gaa": null
+   },
+   "last_start_date": "20261004",
+   "log": [
+    "20260925 vs Schwenninger 31/35 L",
+    "20261004 vs Adler Mannheim 35/36 W"
+   ]
+  },
+  "Iserlohn Roosters|ld0rrvsA": {
+   "name": "Hane H.",
+   "team": "Iserlohn Roosters",
+   "starts": 5,
+   "w": 2,
+   "gp_with_sv": 5,
+   "sv_pct": 0.908,
+   "gaa": 2.8,
+   "last5_starts": {
+    "gp_with_sv": 5,
+    "sv_pct": 0.908,
+    "gaa": 2.8
+   },
+   "home": {
+    "gp_with_sv": 3,
+    "sv_pct": 0.93,
+    "gaa": 2.0
+   },
+   "away": {
+    "gp_with_sv": 2,
+    "sv_pct": 0.881,
+    "gaa": 4.0
+   },
+   "last_start_date": "20261016",
+   "log": [
+    "20260920 @ Bremerhaven 35/37 L",
+    "20260924 vs Augsburger Panther 21/23 L",
+    "20261001 @ Adler Mannheim 24/30 L",
+    "20261011 vs Grizzly Wolfsburg 26/28 W",
+    "20261016 vs Kolner 33/35 W"
+   ]
+  },
+  "Iserlohn Roosters|UD8NlMtI": {
+   "name": "Jenike A.",
+   "team": "Iserlohn Roosters",
+   "starts": 4,
+   "w": 1,
+   "gp_with_sv": 4,
+   "sv_pct": 0.809,
+   "gaa": 5.25,
+   "last5_starts": {
+    "gp_with_sv": 4,
+    "sv_pct": 0.809,
+    "gaa": 5.25
+   },
+   "home": {
+    "gp_with_sv": 2,
+    "sv_pct": 0.875,
+    "gaa": 3.0
+   },
+   "away": {
+    "gp_with_sv": 2,
+    "sv_pct": 0.758,
+    "gaa": 7.5
+   },
+   "last_start_date": "20261009",
+   "log": [
+    "20260918 vs ERC Ingolstadt 17/21 L",
+    "20260927 @ Eisbaren Berlin 23/27 L",
+    "20261004 vs Krefeld Pinguine 25/27 W",
+    "20261009 @ Straubing Tigers 24/35 L"
+   ]
+  },
+  "Kolner|bB31nbSI": {
+   "name": "Juvonen J.",
+   "team": "Kolner",
+   "starts": 7,
+   "w": 3,
+   "gp_with_sv": 7,
+   "sv_pct": 0.843,
+   "gaa": 4.14,
+   "last5_starts": {
+    "gp_with_sv": 5,
+    "sv_pct": 0.871,
+    "gaa": 3.6
+   },
+   "home": {
+    "gp_with_sv": 5,
+    "sv_pct": 0.825,
+    "gaa": 4.4
+   },
+   "away": {
+    "gp_with_sv": 2,
+    "sv_pct": 0.881,
+    "gaa": 3.5
+   },
+   "last_start_date": "20261016",
+   "log": [
+    "20260925 vs Eisbaren Berlin 24/29 L",
+    "20261002 vs Munchen 34/38 L",
+    "20261004 @ ERC Ingolstadt 31/34 W",
+    "20261011 vs Nurnberg Ice Tigers 11/13 W",
+    "20261016 @ Iserlohn Roosters 21/25 L"
+   ]
+  },
+  "Kolner|lGxxodU8": {
+   "name": "Bruckmann F.",
+   "team": "Kolner",
+   "starts": 1,
+   "w": 1,
+   "gp_with_sv": 1,
+   "sv_pct": 0.886,
+   "gaa": 4.0,
+   "last5_starts": {
+    "gp_with_sv": 1,
+    "sv_pct": 0.886,
+    "gaa": 4.0
+   },
+   "home": {
+    "gp_with_sv": 0,
+    "sv_pct": null,
+    "gaa": null
+   },
+   "away": {
+    "gp_with_sv": 1,
+    "sv_pct": 0.886,
+    "gaa": 4.0
+   },
+   "last_start_date": "20260927",
+   "log": [
+    "20260927 @ Augsburger Panther 31/35 W"
+   ]
+  },
+  "Kolner|GpdZy1xg": {
+   "name": "Wiens N.",
+   "team": "Kolner",
+   "starts": 1,
+   "w": 0,
+   "gp_with_sv": 1,
+   "sv_pct": 0.867,
+   "gaa": 4.0,
+   "last5_starts": {
+    "gp_with_sv": 1,
+    "sv_pct": 0.867,
+    "gaa": 4.0
+   },
+   "home": {
+    "gp_with_sv": 1,
+    "sv_pct": 0.867,
+    "gaa": 4.0
+   },
+   "away": {
+    "gp_with_sv": 0,
+    "sv_pct": null,
+    "gaa": null
+   },
+   "last_start_date": "20261009",
+   "log": [
+    "20261009 vs Schwenninger 26/30 L"
+   ]
+  },
+  "Krefeld Pinguine|UiqFa56m": {
+   "name": "Jatkola J.",
+   "team": "Krefeld Pinguine",
+   "starts": 6,
+   "w": 2,
+   "gp_with_sv": 6,
+   "sv_pct": 0.925,
+   "gaa": 2.17,
+   "last5_starts": {
+    "gp_with_sv": 5,
+    "sv_pct": 0.936,
+    "gaa": 1.8
+   },
+   "home": {
+    "gp_with_sv": 3,
+    "sv_pct": 0.938,
+    "gaa": 1.67
+   },
+   "away": {
+    "gp_with_sv": 3,
+    "sv_pct": 0.913,
+    "gaa": 2.67
+   },
+   "last_start_date": "20261015",
+   "log": [
+    "20260927 vs Schwenninger 19/21 W",
+    "20261002 vs ERC Ingolstadt 39/40 W",
+    "20261004 @ Iserlohn Roosters 18/21 L",
+    "20261011 vs Augsburger Panther 18/20 L",
+    "20261015 @ Grizzly Wolfsburg 37/38 L"
+   ]
+  },
+  "Krefeld Pinguine|ttvh0uAJ": {
+   "name": "Bick F.",
+   "team": "Krefeld Pinguine",
+   "starts": 3,
+   "w": 2,
+   "gp_with_sv": 3,
+   "sv_pct": 0.916,
+   "gaa": 2.67,
+   "last5_starts": {
+    "gp_with_sv": 3,
+    "sv_pct": 0.916,
+    "gaa": 2.67
+   },
+   "home": {
+    "gp_with_sv": 1,
+    "sv_pct": 0.903,
+    "gaa": 3.0
+   },
+   "away": {
+    "gp_with_sv": 2,
+    "sv_pct": 0.922,
+    "gaa": 2.5
+   },
+   "last_start_date": "20261008",
+   "log": [
+    "20260918 vs Bremerhaven 28/31 L",
+    "20260920 @ Straubing Tigers 30/33 W",
+    "20261008 @ Frankfurt Lowen 29/31 W"
+   ]
+  },
+  "Munchen|SbqHFLzQ": {
+   "name": "Niederberger M.",
+   "team": "Munchen",
+   "starts": 6,
+   "w": 5,
+   "gp_with_sv": 6,
+   "sv_pct": 0.918,
+   "gaa": 2.67,
+   "last5_starts": {
+    "gp_with_sv": 5,
+    "sv_pct": 0.915,
+    "gaa": 2.6
+   },
+   "home": {
+    "gp_with_sv": 3,
+    "sv_pct": 0.905,
+    "gaa": 3.33
+   },
+   "away": {
+    "gp_with_sv": 3,
+    "sv_pct": 0.934,
+    "gaa": 2.0
+   },
+   "last_start_date": "20261016",
+   "log": [
+    "20260925 @ Bremerhaven 29/30 W",
+    "20261002 @ Kolner 22/24 W",
+    "20261004 vs Augsburger Panther 30/32 W",
+    "20261009 vs ERC Ingolstadt 25/30 L",
+    "20261016 @ Eisbaren Berlin 34/37 W"
+   ]
+  },
+  "Munchen|zXUdePnm": {
+   "name": "Bibeau A.",
+   "team": "Munchen",
+   "starts": 3,
+   "w": 1,
+   "gp_with_sv": 3,
+   "sv_pct": 0.863,
+   "gaa": 3.67,
+   "last5_starts": {
+    "gp_with_sv": 3,
+    "sv_pct": 0.863,
+    "gaa": 3.67
+   },
+   "home": {
+    "gp_with_sv": 1,
+    "sv_pct": 0.826,
+    "gaa": 4.0
+   },
+   "away": {
+    "gp_with_sv": 2,
+    "sv_pct": 0.877,
+    "gaa": 3.5
+   },
+   "last_start_date": "20261011",
+   "log": [
+    "20260920 @ Grizzly Wolfsburg 23/27 L",
+    "20260927 vs Frankfurt Lowen 19/23 L",
+    "20261011 @ Schwenninger 27/30 W"
+   ]
+  },
+  "Nurnberg Ice Tigers|ATVKywZ4": {
+   "name": "Treutle N.",
+   "team": "Nurnberg Ice Tigers",
+   "starts": 9,
+   "w": 5,
+   "gp_with_sv": 9,
+   "sv_pct": 0.918,
+   "gaa": 2.44,
+   "last5_starts": {
+    "gp_with_sv": 5,
+    "sv_pct": 0.904,
+    "gaa": 3.0
+   },
+   "home": {
+    "gp_with_sv": 5,
+    "sv_pct": 0.927,
+    "gaa": 2.2
+   },
+   "away": {
+    "gp_with_sv": 4,
+    "sv_pct": 0.907,
+    "gaa": 2.75
+   },
+   "last_start_date": "20261011",
+   "log": [
+    "20260927 vs Straubing Tigers 23/25 L",
+    "20261002 vs Schwenninger 32/32 W",
+    "20261004 @ Eisbaren Berlin 24/28 L",
+    "20261009 vs Adler Mannheim 29/34 L",
+    "20261011 @ Kolner 33/37 L"
+   ]
+  },
+  "Nurnberg Ice Tigers|j7azBiE4": {
+   "name": "Janett L.",
+   "team": "Nurnberg Ice Tigers",
+   "starts": 1,
+   "w": 0,
+   "gp_with_sv": 1,
+   "sv_pct": 0.926,
+   "gaa": 2.0,
+   "last5_starts": {
+    "gp_with_sv": 1,
+    "sv_pct": 0.926,
+    "gaa": 2.0
+   },
+   "home": {
+    "gp_with_sv": 0,
+    "sv_pct": null,
+    "gaa": null
+   },
+   "away": {
+    "gp_with_sv": 1,
+    "sv_pct": 0.926,
+    "gaa": 2.0
+   },
+   "last_start_date": "20261016",
+   "log": [
+    "20261016 @ Bremerhaven 25/27 L"
+   ]
+  },
+  "Schwenninger|dCl5aP7q": {
+   "name": "Eriksson J.",
+   "team": "Schwenninger",
+   "starts": 7,
+   "w": 2,
+   "gp_with_sv": 7,
+   "sv_pct": 0.853,
+   "gaa": 3.86,
+   "last5_starts": {
+    "gp_with_sv": 5,
+    "sv_pct": 0.871,
+    "gaa": 3.8
+   },
+   "home": {
+    "gp_with_sv": 3,
+    "sv_pct": 0.819,
+    "gaa": 4.33
+   },
+   "away": {
+    "gp_with_sv": 4,
+    "sv_pct": 0.875,
+    "gaa": 3.5
+   },
+   "last_start_date": "20261016",
+   "log": [
+    "20260927 @ Krefeld Pinguine 26/31 L",
+    "20261002 @ Nurnberg Ice Tigers 18/23 L",
+    "20261009 @ Kolner 34/35 W",
+    "20261011 vs Munchen 24/28 L",
+    "20261016 vs ERC Ingolstadt 26/30 L"
+   ]
+  },
+  "Schwenninger|E3FWlEgN": {
+   "name": "Wolf S.",
+   "team": "Schwenninger",
+   "starts": 2,
+   "w": 0,
+   "gp_with_sv": 2,
+   "sv_pct": 0.847,
+   "gaa": 5.5,
+   "last5_starts": {
+    "gp_with_sv": 2,
+    "sv_pct": 0.847,
+    "gaa": 5.5
+   },
+   "home": {
+    "gp_with_sv": 1,
+    "sv_pct": 0.846,
+    "gaa": 4.0
+   },
+   "away": {
+    "gp_with_sv": 1,
+    "sv_pct": 0.848,
+    "gaa": 7.0
+   },
+   "last_start_date": "20261004",
+   "log": [
+    "20260920 @ Augsburger Panther 39/46 L",
+    "20261004 vs Straubing Tigers 22/26 L"
+   ]
+  },
+  "Straubing Tigers|MFX1goV8": {
+   "name": "Skarek J.",
+   "team": "Straubing Tigers",
+   "starts": 7,
+   "w": 4,
+   "gp_with_sv": 7,
+   "sv_pct": 0.911,
+   "gaa": 2.57,
+   "last5_starts": {
+    "gp_with_sv": 5,
+    "sv_pct": 0.942,
+    "gaa": 1.6
+   },
+   "home": {
+    "gp_with_sv": 2,
+    "sv_pct": 0.901,
+    "gaa": 3.5
+   },
+   "away": {
+    "gp_with_sv": 5,
+    "sv_pct": 0.917,
+    "gaa": 2.2
+   },
+   "last_start_date": "20261016",
+   "log": [
+    "20260925 vs ERC Ingolstadt 25/26 W",
+    "20260927 @ Nurnberg Ice Tigers 28/30 W",
+    "20261004 @ Schwenninger 25/27 W",
+    "20261011 @ Adler Mannheim 22/24 L",
+    "20261016 @ Frankfurt Lowen 29/30 W"
+   ]
+  },
+  "Straubing Tigers|6VXFPqYr": {
+   "name": "Bugl F.",
+   "team": "Straubing Tigers",
+   "starts": 2,
+   "w": 2,
+   "gp_with_sv": 2,
+   "sv_pct": 0.833,
+   "gaa": 2.5,
+   "last5_starts": {
+    "gp_with_sv": 2,
+    "sv_pct": 0.833,
+    "gaa": 2.5
+   },
+   "home": {
+    "gp_with_sv": 2,
+    "sv_pct": 0.833,
+    "gaa": 2.5
+   },
+   "away": {
+    "gp_with_sv": 0,
+    "sv_pct": null,
+    "gaa": null
+   },
+   "last_start_date": "20261009",
+   "log": [
+    "20261002 vs Bremerhaven 3/4 W",
+    "20261009 vs Iserlohn Roosters 22/26 W"
+   ]
+  }
+ },
+ "leaders": {
+  "Eisbaren Berlin": [
+   {
+    "name": "Kirk L.",
+    "g": 7,
+    "a": 13,
+    "pts": 20
+   },
+   {
+    "name": "Ronning T.",
+    "g": 8,
+    "a": 7,
+    "pts": 15
+   },
+   {
+    "name": "Tiffels F.",
+    "g": 2,
+    "a": 6,
+    "pts": 8
+   },
+   {
+    "name": "Muller J.",
+    "g": 2,
+    "a": 5,
+    "pts": 7
+   },
+   {
+    "name": "Wiederer M.",
+    "g": 4,
+    "a": 1,
+    "pts": 5
+   },
+   {
+    "name": "Foudy J.",
+    "g": 1,
+    "a": 4,
+    "pts": 5
+   }
+  ],
+  "Straubing Tigers": [
+   {
+    "name": "Halloran N.",
+    "g": 5,
+    "a": 7,
+    "pts": 12
+   },
+   {
+    "name": "Beaudin J.",
+    "g": 4,
+    "a": 5,
+    "pts": 9
+   },
+   {
+    "name": "Rees J.",
+    "g": 4,
+    "a": 4,
+    "pts": 8
+   },
+   {
+    "name": "Madden T.",
+    "g": 2,
+    "a": 6,
+    "pts": 8
+   },
+   {
+    "name": "Brandt M.",
+    "g": 3,
+    "a": 4,
+    "pts": 7
+   },
+   {
+    "name": "Loibl S.",
+    "g": 2,
+    "a": 5,
+    "pts": 7
+   }
+  ],
+  "ERC Ingolstadt": [
+   {
+    "name": "Barber R.",
+    "g": 6,
+    "a": 5,
+    "pts": 11
+   },
+   {
+    "name": "Abbandonato P.",
+    "g": 3,
+    "a": 5,
+    "pts": 8
+   },
+   {
+    "name": "Sheen R.",
+    "g": 5,
+    "a": 2,
+    "pts": 7
+   },
+   {
+    "name": "Agostino K.",
+    "g": 2,
+    "a": 4,
+    "pts": 6
+   },
+   {
+    "name": "Breton A.",
+    "g": 1,
+    "a": 5,
+    "pts": 6
+   },
+   {
+    "name": "Schmolz D.",
+    "g": 3,
+    "a": 2,
+    "pts": 5
+   }
+  ],
+  "Iserlohn Roosters": [
+   {
+    "name": "Napravnik J.",
+    "g": 2,
+    "a": 7,
+    "pts": 9
+   },
+   {
+    "name": "Quenneville P.",
+    "g": 2,
+    "a": 6,
+    "pts": 8
+   },
+   {
+    "name": "Boland T.",
+    "g": 2,
+    "a": 5,
+    "pts": 7
+   },
+   {
+    "name": "Ugbekile C.",
+    "g": 3,
+    "a": 3,
+    "pts": 6
+   },
+   {
+    "name": "Krauss J.",
+    "g": 0,
+    "a": 6,
+    "pts": 6
+   },
+   {
+    "name": "Thomas C.",
+    "g": 3,
+    "a": 2,
+    "pts": 5
+   }
+  ],
+  "Grizzly Wolfsburg": [
+   {
+    "name": "Gaudet T.",
+    "g": 3,
+    "a": 5,
+    "pts": 8
+   },
+   {
+    "name": "Machacek S.",
+    "g": 5,
+    "a": 2,
+    "pts": 7
+   },
+   {
+    "name": "Schinko L.",
+    "g": 3,
+    "a": 4,
+    "pts": 7
+   },
+   {
+    "name": "Morley T.",
+    "g": 3,
+    "a": 4,
+    "pts": 7
+   },
+   {
+    "name": "Feser J.",
+    "g": 3,
+    "a": 4,
+    "pts": 7
+   },
+   {
+    "name": "Lynch R.",
+    "g": 2,
+    "a": 5,
+    "pts": 7
+   }
+  ],
+  "Kolner": [
+   {
+    "name": "Noebels M.",
+    "g": 7,
+    "a": 5,
+    "pts": 12
+   },
+   {
+    "name": "Russell P.",
+    "g": 2,
+    "a": 10,
+    "pts": 12
+   },
+   {
+    "name": "Ljungh M.",
+    "g": 4,
+    "a": 6,
+    "pts": 10
+   },
+   {
+    "name": "MacLeod G.",
+    "g": 1,
+    "a": 9,
+    "pts": 10
+   },
+   {
+    "name": "Aubry L.",
+    "g": 3,
+    "a": 5,
+    "pts": 8
+   },
+   {
+    "name": "Kemilainen V.",
+    "g": 5,
+    "a": 1,
+    "pts": 6
+   }
+  ],
+  "Bremerhaven": [
+   {
+    "name": "Hirose A.",
+    "g": 2,
+    "a": 3,
+    "pts": 5
+   },
+   {
+    "name": "Bruggisser P.",
+    "g": 3,
+    "a": 1,
+    "pts": 4
+   },
+   {
+    "name": "Wejse C.",
+    "g": 1,
+    "a": 3,
+    "pts": 4
+   },
+   {
+    "name": "Gortz M.",
+    "g": 2,
+    "a": 1,
+    "pts": 3
+   },
+   {
+    "name": "Tuomie P.",
+    "g": 2,
+    "a": 1,
+    "pts": 3
+   },
+   {
+    "name": "Verlic M.",
+    "g": 2,
+    "a": 0,
+    "pts": 2
+   }
+  ],
+  "Krefeld Pinguine": [
+   {
+    "name": "Santos M.",
+    "g": 7,
+    "a": 6,
+    "pts": 13
+   },
+   {
+    "name": "Newton M.",
+    "g": 4,
+    "a": 9,
+    "pts": 13
+   },
+   {
+    "name": "Gogulla P.",
+    "g": 3,
+    "a": 4,
+    "pts": 7
+   },
+   {
+    "name": "Vandane D.",
+    "g": 1,
+    "a": 6,
+    "pts": 7
+   },
+   {
+    "name": "Percy S.",
+    "g": 0,
+    "a": 6,
+    "pts": 6
+   },
+   {
+    "name": "Payerl A.",
+    "g": 4,
+    "a": 1,
+    "pts": 5
+   }
+  ],
+  "Munchen": [
+   {
+    "name": "Hirose T.",
+    "g": 2,
+    "a": 9,
+    "pts": 11
+   },
+   {
+    "name": "Ehliz Y.",
+    "g": 2,
+    "a": 7,
+    "pts": 9
+   },
+   {
+    "name": "Rieder T.",
+    "g": 4,
+    "a": 3,
+    "pts": 7
+   },
+   {
+    "name": "Murphy R.",
+    "g": 2,
+    "a": 5,
+    "pts": 7
+   },
+   {
+    "name": "Thaler L.",
+    "g": 2,
+    "a": 5,
+    "pts": 7
+   },
+   {
+    "name": "Hager P.",
+    "g": 3,
+    "a": 3,
+    "pts": 6
+   }
+  ],
+  "Adler Mannheim": [
+   {
+    "name": "Gawanke L.",
+    "g": 3,
+    "a": 8,
+    "pts": 11
+   },
+   {
+    "name": "Plachta M.",
+    "g": 3,
+    "a": 6,
+    "pts": 9
+   },
+   {
+    "name": "Greco A.",
+    "g": 3,
+    "a": 5,
+    "pts": 8
+   },
+   {
+    "name": "Ehl A.",
+    "g": 2,
+    "a": 6,
+    "pts": 8
+   },
+   {
+    "name": "Solow Z.",
+    "g": 3,
+    "a": 4,
+    "pts": 7
+   },
+   {
+    "name": "Macek B.",
+    "g": 1,
+    "a": 6,
+    "pts": 7
+   }
+  ],
+  "Augsburger Panther": [
+   {
+    "name": "Mayhew K.",
+    "g": 1,
+    "a": 10,
+    "pts": 11
+   },
+   {
+    "name": "Busdeker D.",
+    "g": 5,
+    "a": 4,
+    "pts": 9
+   },
+   {
+    "name": "Blank A.",
+    "g": 2,
+    "a": 7,
+    "pts": 9
+   },
+   {
+    "name": "Toporowski L.",
+    "g": 3,
+    "a": 4,
+    "pts": 7
+   },
+   {
+    "name": "Wohlgemuth T.",
+    "g": 1,
+    "a": 6,
+    "pts": 7
+   },
+   {
+    "name": "Lambert J.",
+    "g": 2,
+    "a": 4,
+    "pts": 6
+   }
+  ],
+  "Nurnberg Ice Tigers": [
+   {
+    "name": "Heigl T.",
+    "g": 4,
+    "a": 6,
+    "pts": 10
+   },
+   {
+    "name": "Dove-McFalls S.",
+    "g": 4,
+    "a": 5,
+    "pts": 9
+   },
+   {
+    "name": "Magera A.",
+    "g": 6,
+    "a": 2,
+    "pts": 8
+   },
+   {
+    "name": "Spezia T.",
+    "g": 3,
+    "a": 5,
+    "pts": 8
+   },
+   {
+    "name": "Barratt E.",
+    "g": 5,
+    "a": 2,
+    "pts": 7
+   },
+   {
+    "name": "Cates J.",
+    "g": 1,
+    "a": 6,
+    "pts": 7
+   }
+  ],
+  "Frankfurt Lowen": [
+   {
+    "name": "Froberg L.",
+    "g": 0,
+    "a": 7,
+    "pts": 7
+   },
+   {
+    "name": "Uba E.",
+    "g": 4,
+    "a": 0,
+    "pts": 4
+   },
+   {
+    "name": "Brace C.",
+    "g": 3,
+    "a": 1,
+    "pts": 4
+   },
+   {
+    "name": "Wedman M.",
+    "g": 2,
+    "a": 2,
+    "pts": 4
+   },
+   {
+    "name": "Joyaux M.",
+    "g": 1,
+    "a": 3,
+    "pts": 4
+   },
+   {
+    "name": "Matushkin M.",
+    "g": 0,
+    "a": 4,
+    "pts": 4
+   }
+  ],
+  "Schwenninger": [
+   {
+    "name": "Hofflin M.",
+    "g": 5,
+    "a": 2,
+    "pts": 7
+   },
+   {
+    "name": "Feist P.",
+    "g": 3,
+    "a": 4,
+    "pts": 7
+   },
+   {
+    "name": "Uvira S.",
+    "g": 2,
+    "a": 3,
+    "pts": 5
+   },
+   {
+    "name": "Platzer K.",
+    "g": 1,
+    "a": 4,
+    "pts": 5
+   },
+   {
+    "name": "Martinsson E.",
+    "g": 0,
+    "a": 5,
+    "pts": 5
+   },
+   {
+    "name": "Hanelt H.",
+    "g": 0,
+    "a": 5,
+    "pts": 5
+   }
+  ]
+ },
+ "last_season": {
+  "Kolner": {
+   "gp": 52,
+   "w": 39,
+   "reg_wins": 36,
+   "ot_wins": 3,
+   "otl": 2,
+   "l": 11,
+   "pts": 116,
+   "reg_w": 36,
+   "reg_d": 5,
+   "reg_l": 11,
+   "gf_pg": 3.85,
+   "ga_pg": 2.62,
+   "avg_reg_total": 6.37,
+   "sf_pg": 30.0,
+   "sa_pg": 28.9,
+   "shot_share": 0.509,
+   "sh_pct": 0.128,
+   "sv_pct": 0.91,
+   "pdo": 103.8,
+   "pp_pct": 0.254,
+   "pk_pct": 0.861,
+   "reg_draw_rate": 0.096,
+   "over_rate_reg": {
+    "4.5": 0.788,
+    "5.5": 0.615,
+    "6.5": 0.385
+   },
+   "home": {
+    "gp": 26,
+    "w": 20,
+    "reg_wins": 19,
+    "ot_wins": 1,
+    "otl": 1,
+    "l": 5,
+    "pts": 60,
+    "reg_w": 19,
+    "reg_d": 2,
+    "reg_l": 5,
+    "gf_pg": 4.04,
+    "ga_pg": 2.42,
+    "avg_reg_total": 6.38
+   },
+   "away": {
+    "gp": 26,
+    "w": 19,
+    "reg_wins": 17,
+    "ot_wins": 2,
+    "otl": 1,
+    "l": 6,
+    "pts": 56,
+    "reg_w": 17,
+    "reg_d": 3,
+    "reg_l": 6,
+    "gf_pg": 3.65,
+    "ga_pg": 2.81,
+    "avg_reg_total": 6.35
+   },
+   "last10": {
+    "gp": 10,
+    "w": 6,
+    "reg_wins": 6,
+    "ot_wins": 0,
+    "otl": 0,
+    "l": 4,
+    "pts": 18,
+    "reg_w": 6,
+    "reg_d": 0,
+    "reg_l": 4,
+    "gf_pg": 3.8,
+    "ga_pg": 3.0,
+    "avg_reg_total": 6.8
+   },
+   "streak": "W1",
+   "last_game_date": "20260315",
+   "rank_pts": 1
+  },
+  "Adler Mannheim": {
+   "gp": 52,
+   "w": 35,
+   "reg_wins": 29,
+   "ot_wins": 6,
+   "otl": 4,
+   "l": 13,
+   "pts": 103,
+   "reg_w": 29,
+   "reg_d": 10,
+   "reg_l": 13,
+   "gf_pg": 3.5,
+   "ga_pg": 2.35,
+   "avg_reg_total": 5.65,
+   "sf_pg": 32.1,
+   "sa_pg": 26.6,
+   "shot_share": 0.548,
+   "sh_pct": 0.109,
+   "sv_pct": 0.912,
+   "pdo": 102.1,
+   "pp_pct": 0.194,
+   "pk_pct": 0.865,
+   "reg_draw_rate": 0.192,
+   "over_rate_reg": {
+    "4.5": 0.654,
+    "5.5": 0.558,
+    "6.5": 0.288
+   },
+   "home": {
+    "gp": 26,
+    "w": 18,
+    "reg_wins": 15,
+    "ot_wins": 3,
+    "otl": 2,
+    "l": 6,
+    "pts": 53,
+    "reg_w": 15,
+    "reg_d": 5,
+    "reg_l": 6,
+    "gf_pg": 3.58,
+    "ga_pg": 2.38,
+    "avg_reg_total": 5.77
+   },
+   "away": {
+    "gp": 26,
+    "w": 17,
+    "reg_wins": 14,
+    "ot_wins": 3,
+    "otl": 2,
+    "l": 7,
+    "pts": 50,
+    "reg_w": 14,
+    "reg_d": 5,
+    "reg_l": 7,
+    "gf_pg": 3.42,
+    "ga_pg": 2.31,
+    "avg_reg_total": 5.54
+   },
+   "last10": {
+    "gp": 10,
+    "w": 7,
+    "reg_wins": 4,
+    "ot_wins": 3,
+    "otl": 1,
+    "l": 2,
+    "pts": 19,
+    "reg_w": 4,
+    "reg_d": 4,
+    "reg_l": 2,
+    "gf_pg": 3.2,
+    "ga_pg": 2.2,
+    "avg_reg_total": 5.0
+   },
+   "streak": "W1",
+   "last_game_date": "20260315",
+   "rank_pts": 2
+  },
+  "Straubing Tigers": {
+   "gp": 52,
+   "w": 34,
+   "reg_wins": 32,
+   "ot_wins": 2,
+   "otl": 1,
+   "l": 17,
+   "pts": 101,
+   "reg_w": 32,
+   "reg_d": 3,
+   "reg_l": 17,
+   "gf_pg": 3.46,
+   "ga_pg": 2.88,
+   "avg_reg_total": 6.29,
+   "sf_pg": 29.7,
+   "sa_pg": 25.2,
+   "shot_share": 0.541,
+   "sh_pct": 0.116,
+   "sv_pct": 0.889,
+   "pdo": 100.5,
+   "pp_pct": 0.143,
+   "pk_pct": 0.856,
+   "reg_draw_rate": 0.058,
+   "over_rate_reg": {
+    "4.5": 0.712,
+    "5.5": 0.558,
+    "6.5": 0.442
+   },
+   "home": {
+    "gp": 26,
+    "w": 18,
+    "reg_wins": 18,
+    "ot_wins": 0,
+    "otl": 0,
+    "l": 8,
+    "pts": 54,
+    "reg_w": 18,
+    "reg_d": 0,
+    "reg_l": 8,
+    "gf_pg": 3.38,
+    "ga_pg": 2.42,
+    "avg_reg_total": 5.81
+   },
+   "away": {
+    "gp": 26,
+    "w": 16,
+    "reg_wins": 14,
+    "ot_wins": 2,
+    "otl": 1,
+    "l": 9,
+    "pts": 47,
+    "reg_w": 14,
+    "reg_d": 3,
+    "reg_l": 9,
+    "gf_pg": 3.54,
+    "ga_pg": 3.35,
+    "avg_reg_total": 6.77
+   },
+   "last10": {
+    "gp": 10,
+    "w": 8,
+    "reg_wins": 8,
+    "ot_wins": 0,
+    "otl": 0,
+    "l": 2,
+    "pts": 24,
+    "reg_w": 8,
+    "reg_d": 0,
+    "reg_l": 2,
+    "gf_pg": 3.4,
+    "ga_pg": 3.0,
+    "avg_reg_total": 6.4
+   },
+   "streak": "L2",
+   "last_game_date": "20260315",
+   "rank_pts": 3
+  },
+  "Munchen": {
+   "gp": 52,
+   "w": 34,
+   "reg_wins": 29,
+   "ot_wins": 5,
+   "otl": 3,
+   "l": 15,
+   "pts": 100,
+   "reg_w": 29,
+   "reg_d": 8,
+   "reg_l": 15,
+   "gf_pg": 3.44,
+   "ga_pg": 2.42,
+   "avg_reg_total": 5.71,
+   "sf_pg": 30.8,
+   "sa_pg": 24.5,
+   "shot_share": 0.557,
+   "sh_pct": 0.112,
+   "sv_pct": 0.891,
+   "pdo": 100.3,
+   "pp_pct": 0.175,
+   "pk_pct": 0.847,
+   "reg_draw_rate": 0.154,
+   "over_rate_reg": {
+    "4.5": 0.615,
+    "5.5": 0.481,
+    "6.5": 0.288
+   },
+   "home": {
+    "gp": 26,
+    "w": 20,
+    "reg_wins": 17,
+    "ot_wins": 3,
+    "otl": 0,
+    "l": 6,
+    "pts": 57,
+    "reg_w": 17,
+    "reg_d": 3,
+    "reg_l": 6,
+    "gf_pg": 3.62,
+    "ga_pg": 1.92,
+    "avg_reg_total": 5.42
+   },
+   "away": {
+    "gp": 26,
+    "w": 14,
+    "reg_wins": 12,
+    "ot_wins": 2,
+    "otl": 3,
+    "l": 9,
+    "pts": 43,
+    "reg_w": 12,
+    "reg_d": 5,
+    "reg_l": 9,
+    "gf_pg": 3.27,
+    "ga_pg": 2.92,
+    "avg_reg_total": 6.0
+   },
+   "last10": {
+    "gp": 10,
+    "w": 6,
+    "reg_wins": 4,
+    "ot_wins": 2,
+    "otl": 1,
+    "l": 3,
+    "pts": 17,
+    "reg_w": 4,
+    "reg_d": 3,
+    "reg_l": 3,
+    "gf_pg": 3.4,
+    "ga_pg": 2.2,
+    "avg_reg_total": 5.3
+   },
+   "streak": "L1",
+   "last_game_date": "20260315",
+   "rank_pts": 4
+  },
+  "ERC Ingolstadt": {
+   "gp": 52,
+   "w": 33,
+   "reg_wins": 28,
+   "ot_wins": 5,
+   "otl": 0,
+   "l": 19,
+   "pts": 94,
+   "reg_w": 28,
+   "reg_d": 5,
+   "reg_l": 19,
+   "gf_pg": 3.79,
+   "ga_pg": 2.92,
+   "avg_reg_total": 6.62,
+   "sf_pg": 33.1,
+   "sa_pg": 25.8,
+   "shot_share": 0.562,
+   "sh_pct": 0.115,
+   "sv_pct": 0.889,
+   "pdo": 100.4,
+   "pp_pct": 0.176,
+   "pk_pct": 0.866,
+   "reg_draw_rate": 0.096,
+   "over_rate_reg": {
+    "4.5": 0.808,
+    "5.5": 0.615,
+    "6.5": 0.5
+   },
+   "home": {
+    "gp": 26,
+    "w": 21,
+    "reg_wins": 18,
+    "ot_wins": 3,
+    "otl": 0,
+    "l": 5,
+    "pts": 60,
+    "reg_w": 18,
+    "reg_d": 3,
+    "reg_l": 5,
+    "gf_pg": 4.54,
+    "ga_pg": 2.69,
+    "avg_reg_total": 7.12
+   },
+   "away": {
+    "gp": 26,
+    "w": 12,
+    "reg_wins": 10,
+    "ot_wins": 2,
+    "otl": 0,
+    "l": 14,
+    "pts": 34,
+    "reg_w": 10,
+    "reg_d": 2,
+    "reg_l": 14,
+    "gf_pg": 3.04,
+    "ga_pg": 3.15,
+    "avg_reg_total": 6.12
+   },
+   "last10": {
+    "gp": 10,
+    "w": 5,
+    "reg_wins": 5,
+    "ot_wins": 0,
+    "otl": 0,
+    "l": 5,
+    "pts": 15,
+    "reg_w": 5,
+    "reg_d": 0,
+    "reg_l": 5,
+    "gf_pg": 2.9,
+    "ga_pg": 3.2,
+    "avg_reg_total": 6.1
+   },
+   "streak": "L1",
+   "last_game_date": "20260315",
+   "rank_pts": 5
+  },
+  "Eisbaren Berlin": {
+   "gp": 52,
+   "w": 29,
+   "reg_wins": 23,
+   "ot_wins": 6,
+   "otl": 4,
+   "l": 19,
+   "pts": 85,
+   "reg_w": 23,
+   "reg_d": 10,
+   "reg_l": 19,
+   "gf_pg": 3.29,
+   "ga_pg": 3.02,
+   "avg_reg_total": 6.12,
+   "sf_pg": 28.6,
+   "sa_pg": 26.8,
+   "shot_share": 0.516,
+   "sh_pct": 0.115,
+   "sv_pct": 0.891,
+   "pdo": 100.6,
+   "pp_pct": 0.124,
+   "pk_pct": 0.823,
+   "reg_draw_rate": 0.192,
+   "over_rate_reg": {
+    "4.5": 0.769,
+    "5.5": 0.615,
+    "6.5": 0.385
+   },
+   "home": {
+    "gp": 26,
+    "w": 15,
+    "reg_wins": 14,
+    "ot_wins": 1,
+    "otl": 4,
+    "l": 7,
+    "pts": 48,
+    "reg_w": 14,
+    "reg_d": 5,
+    "reg_l": 7,
+    "gf_pg": 3.15,
+    "ga_pg": 2.35,
+    "avg_reg_total": 5.31
+   },
+   "away": {
+    "gp": 26,
+    "w": 14,
+    "reg_wins": 9,
+    "ot_wins": 5,
+    "otl": 0,
+    "l": 12,
+    "pts": 37,
+    "reg_w": 9,
+    "reg_d": 5,
+    "reg_l": 12,
+    "gf_pg": 3.42,
+    "ga_pg": 3.69,
+    "avg_reg_total": 6.92
+   },
+   "last10": {
+    "gp": 10,
+    "w": 6,
+    "reg_wins": 6,
+    "ot_wins": 0,
+    "otl": 0,
+    "l": 4,
+    "pts": 18,
+    "reg_w": 6,
+    "reg_d": 0,
+    "reg_l": 4,
+    "gf_pg": 3.0,
+    "ga_pg": 2.3,
+    "avg_reg_total": 5.3
+   },
+   "streak": "W5",
+   "last_game_date": "20260315",
+   "rank_pts": 6
+  },
+  "Bremerhaven": {
+   "gp": 52,
+   "w": 28,
+   "reg_wins": 24,
+   "ot_wins": 4,
+   "otl": 3,
+   "l": 21,
+   "pts": 83,
+   "reg_w": 24,
+   "reg_d": 7,
+   "reg_l": 21,
+   "gf_pg": 3.12,
+   "ga_pg": 2.96,
+   "avg_reg_total": 5.94,
+   "sf_pg": 29.8,
+   "sa_pg": 26.7,
+   "shot_share": 0.528,
+   "sh_pct": 0.104,
+   "sv_pct": 0.89,
+   "pdo": 99.4,
+   "pp_pct": 0.159,
+   "pk_pct": 0.825,
+   "reg_draw_rate": 0.135,
+   "over_rate_reg": {
+    "4.5": 0.712,
+    "5.5": 0.538,
+    "6.5": 0.423
+   },
+   "home": {
+    "gp": 26,
+    "w": 13,
+    "reg_wins": 10,
+    "ot_wins": 3,
+    "otl": 3,
+    "l": 10,
+    "pts": 39,
+    "reg_w": 10,
+    "reg_d": 6,
+    "reg_l": 10,
+    "gf_pg": 3.04,
+    "ga_pg": 3.0,
+    "avg_reg_total": 5.81
+   },
+   "away": {
+    "gp": 26,
+    "w": 15,
+    "reg_wins": 14,
+    "ot_wins": 1,
+    "otl": 0,
+    "l": 11,
+    "pts": 44,
+    "reg_w": 14,
+    "reg_d": 1,
+    "reg_l": 11,
+    "gf_pg": 3.19,
+    "ga_pg": 2.92,
+    "avg_reg_total": 6.08
+   },
+   "last10": {
+    "gp": 10,
+    "w": 5,
+    "reg_wins": 5,
+    "ot_wins": 0,
+    "otl": 2,
+    "l": 3,
+    "pts": 17,
+    "reg_w": 5,
+    "reg_d": 2,
+    "reg_l": 3,
+    "gf_pg": 2.9,
+    "ga_pg": 2.2,
+    "avg_reg_total": 4.9
+   },
+   "streak": "W3",
+   "last_game_date": "20260315",
+   "rank_pts": 7
+  },
+  "Grizzly Wolfsburg": {
+   "gp": 52,
+   "w": 23,
+   "reg_wins": 20,
+   "ot_wins": 3,
+   "otl": 7,
+   "l": 22,
+   "pts": 73,
+   "reg_w": 20,
+   "reg_d": 10,
+   "reg_l": 22,
+   "gf_pg": 3.0,
+   "ga_pg": 2.94,
+   "avg_reg_total": 5.75,
+   "sf_pg": 27.6,
+   "sa_pg": 29.9,
+   "shot_share": 0.48,
+   "sh_pct": 0.109,
+   "sv_pct": 0.904,
+   "pdo": 101.3,
+   "pp_pct": 0.171,
+   "pk_pct": 0.877,
+   "reg_draw_rate": 0.192,
+   "over_rate_reg": {
+    "4.5": 0.712,
+    "5.5": 0.5,
+    "6.5": 0.288
+   },
+   "home": {
+    "gp": 26,
+    "w": 15,
+    "reg_wins": 14,
+    "ot_wins": 1,
+    "otl": 1,
+    "l": 10,
+    "pts": 45,
+    "reg_w": 14,
+    "reg_d": 2,
+    "reg_l": 10,
+    "gf_pg": 3.5,
+    "ga_pg": 3.0,
+    "avg_reg_total": 6.42
+   },
+   "away": {
+    "gp": 26,
+    "w": 8,
+    "reg_wins": 6,
+    "ot_wins": 2,
+    "otl": 6,
+    "l": 12,
+    "pts": 28,
+    "reg_w": 6,
+    "reg_d": 8,
+    "reg_l": 12,
+    "gf_pg": 2.5,
+    "ga_pg": 2.88,
+    "avg_reg_total": 5.08
+   },
+   "last10": {
+    "gp": 10,
+    "w": 5,
+    "reg_wins": 3,
+    "ot_wins": 2,
+    "otl": 1,
+    "l": 4,
+    "pts": 14,
+    "reg_w": 3,
+    "reg_d": 3,
+    "reg_l": 4,
+    "gf_pg": 3.1,
+    "ga_pg": 3.4,
+    "avg_reg_total": 6.2
+   },
+   "streak": "W2",
+   "last_game_date": "20260315",
+   "rank_pts": 8
+  },
+  "Schwenninger": {
+   "gp": 52,
+   "w": 24,
+   "reg_wins": 21,
+   "ot_wins": 3,
+   "otl": 3,
+   "l": 25,
+   "pts": 72,
+   "reg_w": 21,
+   "reg_d": 6,
+   "reg_l": 25,
+   "gf_pg": 2.83,
+   "ga_pg": 3.02,
+   "avg_reg_total": 5.73,
+   "sf_pg": 27.7,
+   "sa_pg": 29.5,
+   "shot_share": 0.484,
+   "sh_pct": 0.102,
+   "sv_pct": 0.898,
+   "pdo": 100.0,
+   "pp_pct": 0.168,
+   "pk_pct": 0.822,
+   "reg_draw_rate": 0.115,
+   "over_rate_reg": {
+    "4.5": 0.75,
+    "5.5": 0.538,
+    "6.5": 0.308
+   },
+   "home": {
+    "gp": 26,
+    "w": 14,
+    "reg_wins": 13,
+    "ot_wins": 1,
+    "otl": 2,
+    "l": 10,
+    "pts": 43,
+    "reg_w": 13,
+    "reg_d": 3,
+    "reg_l": 10,
+    "gf_pg": 2.96,
+    "ga_pg": 2.88,
+    "avg_reg_total": 5.73
+   },
+   "away": {
+    "gp": 26,
+    "w": 10,
+    "reg_wins": 8,
+    "ot_wins": 2,
+    "otl": 1,
+    "l": 15,
+    "pts": 29,
+    "reg_w": 8,
+    "reg_d": 3,
+    "reg_l": 15,
+    "gf_pg": 2.69,
+    "ga_pg": 3.15,
+    "avg_reg_total": 5.73
+   },
+   "last10": {
+    "gp": 10,
+    "w": 6,
+    "reg_wins": 6,
+    "ot_wins": 0,
+    "otl": 0,
+    "l": 4,
+    "pts": 18,
+    "reg_w": 6,
+    "reg_d": 0,
+    "reg_l": 4,
+    "gf_pg": 2.9,
+    "ga_pg": 2.7,
+    "avg_reg_total": 5.6
+   },
+   "streak": "L1",
+   "last_game_date": "20260315",
+   "rank_pts": 9
+  },
+  "Nurnberg Ice Tigers": {
+   "gp": 52,
+   "w": 22,
+   "reg_wins": 20,
+   "ot_wins": 2,
+   "otl": 4,
+   "l": 26,
+   "pts": 68,
+   "reg_w": 20,
+   "reg_d": 6,
+   "reg_l": 26,
+   "gf_pg": 3.12,
+   "ga_pg": 3.42,
+   "avg_reg_total": 6.42,
+   "sf_pg": 27.4,
+   "sa_pg": 28.8,
+   "shot_share": 0.488,
+   "sh_pct": 0.114,
+   "sv_pct": 0.883,
+   "pdo": 99.7,
+   "pp_pct": 0.149,
+   "pk_pct": 0.804,
+   "reg_draw_rate": 0.115,
+   "over_rate_reg": {
+    "4.5": 0.827,
+    "5.5": 0.654,
+    "6.5": 0.442
+   },
+   "home": {
+    "gp": 26,
+    "w": 11,
+    "reg_wins": 11,
+    "ot_wins": 0,
+    "otl": 3,
+    "l": 12,
+    "pts": 36,
+    "reg_w": 11,
+    "reg_d": 3,
+    "reg_l": 12,
+    "gf_pg": 3.23,
+    "ga_pg": 3.38,
+    "avg_reg_total": 6.5
+   },
+   "away": {
+    "gp": 26,
+    "w": 11,
+    "reg_wins": 9,
+    "ot_wins": 2,
+    "otl": 1,
+    "l": 14,
+    "pts": 32,
+    "reg_w": 9,
+    "reg_d": 3,
+    "reg_l": 14,
+    "gf_pg": 3.0,
+    "ga_pg": 3.46,
+    "avg_reg_total": 6.35
+   },
+   "last10": {
+    "gp": 10,
+    "w": 3,
+    "reg_wins": 3,
+    "ot_wins": 0,
+    "otl": 0,
+    "l": 7,
+    "pts": 9,
+    "reg_w": 3,
+    "reg_d": 0,
+    "reg_l": 7,
+    "gf_pg": 2.7,
+    "ga_pg": 3.9,
+    "avg_reg_total": 6.6
+   },
+   "streak": "W1",
+   "last_game_date": "20260315",
+   "rank_pts": 10
+  },
+  "Augsburger Panther": {
+   "gp": 52,
+   "w": 19,
+   "reg_wins": 13,
+   "ot_wins": 6,
+   "otl": 9,
+   "l": 24,
+   "pts": 60,
+   "reg_w": 13,
+   "reg_d": 15,
+   "reg_l": 24,
+   "gf_pg": 2.88,
+   "ga_pg": 3.63,
+   "avg_reg_total": 6.23,
+   "sf_pg": 26.2,
+   "sa_pg": 31.9,
+   "shot_share": 0.452,
+   "sh_pct": 0.11,
+   "sv_pct": 0.891,
+   "pdo": 100.1,
+   "pp_pct": 0.144,
+   "pk_pct": 0.795,
+   "reg_draw_rate": 0.288,
+   "over_rate_reg": {
+    "4.5": 0.712,
+    "5.5": 0.635,
+    "6.5": 0.327
+   },
+   "home": {
+    "gp": 26,
+    "w": 10,
+    "reg_wins": 9,
+    "ot_wins": 1,
+    "otl": 6,
+    "l": 10,
+    "pts": 35,
+    "reg_w": 9,
+    "reg_d": 7,
+    "reg_l": 10,
+    "gf_pg": 3.19,
+    "ga_pg": 3.65,
+    "avg_reg_total": 6.58
+   },
+   "away": {
+    "gp": 26,
+    "w": 9,
+    "reg_wins": 4,
+    "ot_wins": 5,
+    "otl": 3,
+    "l": 14,
+    "pts": 25,
+    "reg_w": 4,
+    "reg_d": 8,
+    "reg_l": 14,
+    "gf_pg": 2.58,
+    "ga_pg": 3.62,
+    "avg_reg_total": 5.88
+   },
+   "last10": {
+    "gp": 10,
+    "w": 3,
+    "reg_wins": 2,
+    "ot_wins": 1,
+    "otl": 1,
+    "l": 6,
+    "pts": 9,
+    "reg_w": 2,
+    "reg_d": 2,
+    "reg_l": 6,
+    "gf_pg": 2.9,
+    "ga_pg": 3.8,
+    "avg_reg_total": 6.5
+   },
+   "streak": "L3",
+   "last_game_date": "20260315",
+   "rank_pts": 11
+  },
+  "Iserlohn Roosters": {
+   "gp": 52,
+   "w": 20,
+   "reg_wins": 14,
+   "ot_wins": 6,
+   "otl": 4,
+   "l": 28,
+   "pts": 58,
+   "reg_w": 14,
+   "reg_d": 10,
+   "reg_l": 28,
+   "gf_pg": 2.52,
+   "ga_pg": 3.21,
+   "avg_reg_total": 5.54,
+   "sf_pg": 23.6,
+   "sa_pg": 28.2,
+   "shot_share": 0.456,
+   "sh_pct": 0.107,
+   "sv_pct": 0.888,
+   "pdo": 99.5,
+   "pp_pct": 0.148,
+   "pk_pct": 0.795,
+   "reg_draw_rate": 0.192,
+   "over_rate_reg": {
+    "4.5": 0.635,
+    "5.5": 0.462,
+    "6.5": 0.288
+   },
+   "home": {
+    "gp": 26,
+    "w": 13,
+    "reg_wins": 9,
+    "ot_wins": 4,
+    "otl": 3,
+    "l": 10,
+    "pts": 38,
+    "reg_w": 9,
+    "reg_d": 7,
+    "reg_l": 10,
+    "gf_pg": 3.08,
+    "ga_pg": 3.38,
+    "avg_reg_total": 6.19
+   },
+   "away": {
+    "gp": 26,
+    "w": 7,
+    "reg_wins": 5,
+    "ot_wins": 2,
+    "otl": 1,
+    "l": 18,
+    "pts": 20,
+    "reg_w": 5,
+    "reg_d": 3,
+    "reg_l": 18,
+    "gf_pg": 1.96,
+    "ga_pg": 3.04,
+    "avg_reg_total": 4.88
+   },
+   "last10": {
+    "gp": 10,
+    "w": 4,
+    "reg_wins": 3,
+    "ot_wins": 1,
+    "otl": 1,
+    "l": 5,
+    "pts": 12,
+    "reg_w": 3,
+    "reg_d": 2,
+    "reg_l": 5,
+    "gf_pg": 2.8,
+    "ga_pg": 3.3,
+    "avg_reg_total": 5.9
+   },
+   "streak": "W1",
+   "last_game_date": "20260315",
+   "rank_pts": 12
+  },
+  "Frankfurt Lowen": {
+   "gp": 52,
+   "w": 16,
+   "reg_wins": 13,
+   "ot_wins": 3,
+   "otl": 8,
+   "l": 28,
+   "pts": 53,
+   "reg_w": 13,
+   "reg_d": 11,
+   "reg_l": 28,
+   "gf_pg": 2.54,
+   "ga_pg": 3.77,
+   "avg_reg_total": 6.1,
+   "sf_pg": 24.1,
+   "sa_pg": 30.1,
+   "shot_share": 0.444,
+   "sh_pct": 0.105,
+   "sv_pct": 0.878,
+   "pdo": 98.3,
+   "pp_pct": 0.15,
+   "pk_pct": 0.829,
+   "reg_draw_rate": 0.212,
+   "over_rate_reg": {
+    "4.5": 0.731,
+    "5.5": 0.538,
+    "6.5": 0.442
+   },
+   "home": {
+    "gp": 26,
+    "w": 10,
+    "reg_wins": 8,
+    "ot_wins": 2,
+    "otl": 4,
+    "l": 12,
+    "pts": 32,
+    "reg_w": 8,
+    "reg_d": 6,
+    "reg_l": 12,
+    "gf_pg": 2.42,
+    "ga_pg": 3.46,
+    "avg_reg_total": 5.65
+   },
+   "away": {
+    "gp": 26,
+    "w": 6,
+    "reg_wins": 5,
+    "ot_wins": 1,
+    "otl": 4,
+    "l": 16,
+    "pts": 21,
+    "reg_w": 5,
+    "reg_d": 5,
+    "reg_l": 16,
+    "gf_pg": 2.65,
+    "ga_pg": 4.08,
+    "avg_reg_total": 6.54
+   },
+   "last10": {
+    "gp": 10,
+    "w": 5,
+    "reg_wins": 4,
+    "ot_wins": 1,
+    "otl": 3,
+    "l": 2,
+    "pts": 17,
+    "reg_w": 4,
+    "reg_d": 4,
+    "reg_l": 2,
+    "gf_pg": 3.4,
+    "ga_pg": 2.9,
+    "avg_reg_total": 5.9
+   },
+   "streak": "L1",
+   "last_game_date": "20260315",
+   "rank_pts": 13
+  },
+  "Dresdner Eislowen": {
+   "gp": 52,
+   "w": 8,
+   "reg_wins": 6,
+   "ot_wins": 2,
+   "otl": 4,
+   "l": 40,
+   "pts": 26,
+   "reg_w": 6,
+   "reg_d": 6,
+   "reg_l": 40,
+   "gf_pg": 2.1,
+   "ga_pg": 4.25,
+   "avg_reg_total": 6.23,
+   "sf_pg": 24.2,
+   "sa_pg": 32.1,
+   "shot_share": 0.43,
+   "sh_pct": 0.087,
+   "sv_pct": 0.861,
+   "pdo": 94.8,
+   "pp_pct": 0.135,
+   "pk_pct": 0.821,
+   "reg_draw_rate": 0.115,
+   "over_rate_reg": {
+    "4.5": 0.808,
+    "5.5": 0.654,
+    "6.5": 0.423
+   },
+   "home": {
+    "gp": 26,
+    "w": 4,
+    "reg_wins": 2,
+    "ot_wins": 2,
+    "otl": 2,
+    "l": 20,
+    "pts": 12,
+    "reg_w": 2,
+    "reg_d": 4,
+    "reg_l": 20,
+    "gf_pg": 2.0,
+    "ga_pg": 4.15,
+    "avg_reg_total": 6.0
+   },
+   "away": {
+    "gp": 26,
+    "w": 4,
+    "reg_wins": 4,
+    "ot_wins": 0,
+    "otl": 2,
+    "l": 20,
+    "pts": 14,
+    "reg_w": 4,
+    "reg_d": 2,
+    "reg_l": 20,
+    "gf_pg": 2.19,
+    "ga_pg": 4.35,
+    "avg_reg_total": 6.46
+   },
+   "last10": {
+    "gp": 10,
+    "w": 1,
+    "reg_wins": 1,
+    "ot_wins": 0,
+    "otl": 0,
+    "l": 9,
+    "pts": 3,
+    "reg_w": 1,
+    "reg_d": 0,
+    "reg_l": 9,
+    "gf_pg": 2.6,
+    "ga_pg": 4.9,
+    "avg_reg_total": 7.5
+   },
+   "streak": "L5",
+   "last_game_date": "20260315",
+   "rank_pts": 14
+  }
+ },
+ "h2h": {
+  "Dresdner Eislowen | Eisbaren Berlin": [
+   "20250909 Dresdner Eislowen 2-6 Eisbaren Berlin",
+   "20251207 Dresdner Eislowen 1-5 Eisbaren Berlin",
+   "20260110 Eisbaren Berlin 3-2 Dresdner Eislowen (OT)",
+   "20260304 Eisbaren Berlin 5-2 Dresdner Eislowen"
+  ],
+  "Adler Mannheim | Straubing Tigers": [
+   "20250912 Straubing Tigers 0-3 Adler Mannheim",
+   "20251205 Adler Mannheim 4-0 Straubing Tigers",
+   "20260106 Adler Mannheim 1-4 Straubing Tigers",
+   "20260301 Straubing Tigers 3-2 Adler Mannheim",
+   "20261011 Straubing Tigers 1-2 Adler Mannheim"
+  ],
+  "Bremerhaven | Schwenninger": [
+   "20250912 Schwenninger 1-2 Bremerhaven",
+   "20251205 Bremerhaven 6-2 Schwenninger",
+   "20251223 Bremerhaven 4-0 Schwenninger",
+   "20260118 Schwenninger 5-2 Bremerhaven"
+  ],
+  "ERC Ingolstadt | Iserlohn Roosters": [
+   "20250912 Iserlohn Roosters 3-2 ERC Ingolstadt",
+   "20251114 ERC Ingolstadt 6-5 Iserlohn Roosters (OT)",
+   "20251214 Iserlohn Roosters 2-4 ERC Ingolstadt",
+   "20260315 ERC Ingolstadt 3-5 Iserlohn Roosters",
+   "20260918 ERC Ingolstadt 4-3 Iserlohn Roosters"
+  ],
+  "Frankfurt Lowen | Grizzly Wolfsburg": [
+   "20250912 Grizzly Wolfsburg 9-1 Frankfurt Lowen",
+   "20251205 Frankfurt Lowen 1-4 Grizzly Wolfsburg",
+   "20260111 Frankfurt Lowen 2-5 Grizzly Wolfsburg",
+   "20260301 Grizzly Wolfsburg 2-3 Frankfurt Lowen (OT)"
+  ],
+  "Kolner | Munchen": [
+   "20250912 Munchen 4-2 Kolner",
+   "20251102 Munchen 2-0 Kolner",
+   "20251210 Kolner 1-2 Munchen (OT)",
+   "20260301 Kolner 1-0 Munchen",
+   "20261002 Munchen 4-2 Kolner"
+  ],
+  "Augsburger Panther | Nurnberg Ice Tigers": [
+   "20250912 Augsburger Panther 1-3 Nurnberg Ice Tigers",
+   "20251128 Nurnberg Ice Tigers 5-1 Augsburger Panther",
+   "20251223 Nurnberg Ice Tigers 3-2 Augsburger Panther (OT)",
+   "20260123 Augsburger Panther 1-3 Nurnberg Ice Tigers",
+   "20260918 Augsburger Panther 1-4 Nurnberg Ice Tigers"
+  ],
+  "Dresdner Eislowen | ERC Ingolstadt": [
+   "20250914 ERC Ingolstadt 4-2 Dresdner Eislowen",
+   "20251128 Dresdner Eislowen 2-3 ERC Ingolstadt (OT)",
+   "20251221 ERC Ingolstadt 2-3 Dresdner Eislowen",
+   "20260127 Dresdner Eislowen 1-4 ERC Ingolstadt"
+  ],
+  "Bremerhaven | Munchen": [
+   "20250914 Bremerhaven 4-3 Munchen",
+   "20251113 Munchen 1-4 Bremerhaven",
+   "20251221 Munchen 6-3 Bremerhaven",
+   "20260123 Bremerhaven 3-6 Munchen",
+   "20260925 Munchen 4-1 Bremerhaven"
+  ],
+  "Adler Mannheim | Augsburger Panther": [
+   "20250914 Adler Mannheim 6-3 Augsburger Panther",
+   "20251207 Augsburger Panther 0-7 Adler Mannheim",
+   "20251228 Adler Mannheim 3-2 Augsburger Panther (SO)",
+   "20260225 Augsburger Panther 4-3 Adler Mannheim (OT)",
+   "20261016 Adler Mannheim 6-3 Augsburger Panther"
+  ],
+  "Grizzly Wolfsburg | Nurnberg Ice Tigers": [
+   "20250914 Nurnberg Ice Tigers 3-5 Grizzly Wolfsburg",
+   "20251207 Grizzly Wolfsburg 2-4 Nurnberg Ice Tigers",
+   "20260104 Grizzly Wolfsburg 2-4 Nurnberg Ice Tigers",
+   "20260308 Nurnberg Ice Tigers 4-1 Grizzly Wolfsburg"
+  ],
+  "Iserlohn Roosters | Schwenninger": [
+   "20250914 Schwenninger 3-2 Iserlohn Roosters (SO)",
+   "20251116 Iserlohn Roosters 0-3 Schwenninger",
+   "20251226 Schwenninger 2-4 Iserlohn Roosters",
+   "20260313 Iserlohn Roosters 2-3 Schwenninger"
+  ],
+  "Eisbaren Berlin | Kolner": [
+   "20260412 Kolner 2-4 Eisbaren Berlin",
+   "20260415 Eisbaren Berlin 3-4 Kolner (OT)",
+   "20260417 Kolner 2-5 Eisbaren Berlin",
+   "20260420 Eisbaren Berlin 4-1 Kolner",
+   "20260925 Eisbaren Berlin 6-5 Kolner (SO)"
+  ],
+  "Frankfurt Lowen | Straubing Tigers": [
+   "20250914 Frankfurt Lowen 1-2 Straubing Tigers",
+   "20251130 Straubing Tigers 3-1 Frankfurt Lowen",
+   "20251214 Straubing Tigers 7-3 Frankfurt Lowen",
+   "20260123 Frankfurt Lowen 4-5 Straubing Tigers",
+   "20261016 Straubing Tigers 4-1 Frankfurt Lowen"
+  ],
+  "Dresdner Eislowen | Frankfurt Lowen": [
+   "20250918 Dresdner Eislowen 6-3 Frankfurt Lowen",
+   "20251031 Frankfurt Lowen 3-4 Dresdner Eislowen (SO)",
+   "20251230 Dresdner Eislowen 0-3 Frankfurt Lowen",
+   "20260313 Frankfurt Lowen 6-4 Dresdner Eislowen"
+  ],
+  "Adler Mannheim | Eisbaren Berlin": [
+   "20260426 Adler Mannheim 1-5 Eisbaren Berlin",
+   "20260428 Eisbaren Berlin 5-1 Adler Mannheim",
+   "20260430 Adler Mannheim 4-3 Eisbaren Berlin (OT)",
+   "20260503 Eisbaren Berlin 4-1 Adler Mannheim",
+   "20260920 Eisbaren Berlin 3-4 Adler Mannheim"
+  ],
+  "Bremerhaven | Straubing Tigers": [
+   "20250919 Straubing Tigers 5-2 Bremerhaven",
+   "20251116 Bremerhaven 1-3 Straubing Tigers",
+   "20251219 Bremerhaven 2-3 Straubing Tigers",
+   "20260304 Straubing Tigers 3-1 Bremerhaven",
+   "20261002 Bremerhaven 3-4 Straubing Tigers"
+  ],
+  "ERC Ingolstadt | Grizzly Wolfsburg": [
+   "20250919 Grizzly Wolfsburg 2-3 ERC Ingolstadt",
+   "20251121 ERC Ingolstadt 4-2 Grizzly Wolfsburg",
+   "20251228 Grizzly Wolfsburg 1-2 ERC Ingolstadt (SO)",
+   "20260304 ERC Ingolstadt 1-4 Grizzly Wolfsburg"
+  ],
+  "Iserlohn Roosters | Nurnberg Ice Tigers": [
+   "20250919 Nurnberg Ice Tigers 5-6 Iserlohn Roosters (SO)",
+   "20251026 Iserlohn Roosters 1-2 Nurnberg Ice Tigers",
+   "20260102 Nurnberg Ice Tigers 3-4 Iserlohn Roosters",
+   "20260225 Iserlohn Roosters 4-1 Nurnberg Ice Tigers"
+  ],
+  "Augsburger Panther | Munchen": [
+   "20250919 Augsburger Panther 3-6 Munchen",
+   "20251123 Munchen 8-3 Augsburger Panther",
+   "20251230 Augsburger Panther 2-3 Munchen (OT)",
+   "20260227 Munchen 4-2 Augsburger Panther",
+   "20261004 Augsburger Panther 2-4 Munchen"
+  ],
+  "Kolner | Schwenninger": [
+   "20260325 Kolner 1-0 Schwenninger",
+   "20260327 Schwenninger 2-4 Kolner",
+   "20260329 Kolner 4-2 Schwenninger",
+   "20260331 Schwenninger 1-2 Kolner (OT)",
+   "20261009 Schwenninger 4-1 Kolner"
+  ],
+  "Bremerhaven | Eisbaren Berlin": [
+   "20250921 Eisbaren Berlin 1-5 Bremerhaven",
+   "20251102 Bremerhaven 4-1 Eisbaren Berlin",
+   "20251230 Eisbaren Berlin 4-6 Bremerhaven",
+   "20260301 Bremerhaven 3-1 Eisbaren Berlin",
+   "20261011 Eisbaren Berlin 3-0 Bremerhaven"
+  ],
+  "Kolner | Nurnberg Ice Tigers": [
+   "20250921 Kolner 4-2 Nurnberg Ice Tigers",
+   "20251205 Nurnberg Ice Tigers 4-7 Kolner",
+   "20260106 Kolner 4-2 Nurnberg Ice Tigers",
+   "20260125 Nurnberg Ice Tigers 2-5 Kolner",
+   "20261011 Nurnberg Ice Tigers 2-4 Kolner"
+  ],
+  "Adler Mannheim | ERC Ingolstadt": [
+   "20250921 ERC Ingolstadt 1-2 Adler Mannheim",
+   "20251026 Adler Mannheim 2-5 ERC Ingolstadt",
+   "20251226 ERC Ingolstadt 5-2 Adler Mannheim",
+   "20260308 Adler Mannheim 4-0 ERC Ingolstadt",
+   "20260927 Adler Mannheim 2-3 ERC Ingolstadt (OT)"
+  ],
+  "Frankfurt Lowen | Schwenninger": [
+   "20250921 Schwenninger 6-3 Frankfurt Lowen",
+   "20251029 Frankfurt Lowen 1-6 Schwenninger",
+   "20260104 Schwenninger 2-1 Frankfurt Lowen",
+   "20260227 Frankfurt Lowen 1-4 Schwenninger",
+   "20260918 Frankfurt Lowen 5-0 Schwenninger"
+  ],
+  "Dresdner Eislowen | Grizzly Wolfsburg": [
+   "20250921 Dresdner Eislowen 3-6 Grizzly Wolfsburg",
+   "20251123 Grizzly Wolfsburg 4-0 Dresdner Eislowen",
+   "20251214 Grizzly Wolfsburg 4-1 Dresdner Eislowen",
+   "20260125 Dresdner Eislowen 2-4 Grizzly Wolfsburg"
+  ],
+  "Munchen | Straubing Tigers": [
+   "20250921 Munchen 2-6 Straubing Tigers",
+   "20251125 Straubing Tigers 3-5 Munchen",
+   "20260109 Munchen 6-3 Straubing Tigers",
+   "20260313 Straubing Tigers 1-10 Munchen"
+  ],
+  "Augsburger Panther | Iserlohn Roosters": [
+   "20250921 Iserlohn Roosters 1-4 Augsburger Panther",
+   "20251130 Augsburger Panther 4-1 Iserlohn Roosters",
+   "20260106 Iserlohn Roosters 3-2 Augsburger Panther (SO)",
+   "20260301 Augsburger Panther 2-4 Iserlohn Roosters",
+   "20260924 Augsburger Panther 3-2 Iserlohn Roosters (SO)"
+  ],
+  "ERC Ingolstadt | Munchen": [
+   "20260329 ERC Ingolstadt 2-5 Munchen",
+   "20260331 Munchen 2-7 ERC Ingolstadt",
+   "20260402 ERC Ingolstadt 3-6 Munchen",
+   "20260404 Munchen 7-3 ERC Ingolstadt",
+   "20261009 ERC Ingolstadt 5-1 Munchen"
+  ],
+  "Augsburger Panther | Kolner": [
+   "20250926 Kolner 2-4 Augsburger Panther",
+   "20251121 Augsburger Panther 4-3 Kolner (SO)",
+   "20260111 Kolner 3-1 Augsburger Panther",
+   "20260304 Augsburger Panther 2-6 Kolner",
+   "20260927 Kolner 6-4 Augsburger Panther"
+  ],
+  "Adler Mannheim | Dresdner Eislowen": [
+   "20250926 Adler Mannheim 3-0 Dresdner Eislowen",
+   "20251121 Dresdner Eislowen 1-3 Adler Mannheim",
+   "20260102 Dresdner Eislowen 5-2 Adler Mannheim",
+   "20260118 Adler Mannheim 6-2 Dresdner Eislowen"
+  ],
+  "Eisbaren Berlin | Straubing Tigers": [
+   "20260329 Eisbaren Berlin 4-2 Straubing Tigers",
+   "20260331 Straubing Tigers 1-2 Eisbaren Berlin",
+   "20260402 Eisbaren Berlin 1-2 Straubing Tigers (OT)",
+   "20260404 Straubing Tigers 5-6 Eisbaren Berlin (OT)",
+   "20260917 Straubing Tigers 2-4 Eisbaren Berlin"
+  ],
+  "Frankfurt Lowen | Nurnberg Ice Tigers": [
+   "20250926 Nurnberg Ice Tigers 3-0 Frankfurt Lowen",
+   "20251123 Frankfurt Lowen 2-5 Nurnberg Ice Tigers",
+   "20251212 Frankfurt Lowen 3-4 Nurnberg Ice Tigers",
+   "20260315 Nurnberg Ice Tigers 4-3 Frankfurt Lowen",
+   "20260925 Nurnberg Ice Tigers 2-1 Frankfurt Lowen"
+  ],
+  "Grizzly Wolfsburg | Schwenninger": [
+   "20260225 Schwenninger 4-2 Grizzly Wolfsburg",
+   "20260318 Schwenninger 1-3 Grizzly Wolfsburg",
+   "20260320 Grizzly Wolfsburg 1-5 Schwenninger",
+   "20260322 Schwenninger 3-2 Grizzly Wolfsburg (OT)",
+   "20260925 Schwenninger 4-3 Grizzly Wolfsburg (OT)"
+  ],
+  "Bremerhaven | Iserlohn Roosters": [
+   "20250926 Bremerhaven 5-1 Iserlohn Roosters",
+   "20251030 Iserlohn Roosters 1-2 Bremerhaven",
+   "20260104 Iserlohn Roosters 2-3 Bremerhaven (SO)",
+   "20260308 Bremerhaven 5-0 Iserlohn Roosters",
+   "20260920 Iserlohn Roosters 1-2 Bremerhaven"
+  ],
+  "Bremerhaven | ERC Ingolstadt": [
+   "20250928 ERC Ingolstadt 2-5 Bremerhaven",
+   "20251123 Bremerhaven 2-5 ERC Ingolstadt",
+   "20260102 Bremerhaven 3-2 ERC Ingolstadt",
+   "20260306 ERC Ingolstadt 3-2 Bremerhaven"
+  ],
+  "Eisbaren Berlin | Schwenninger": [
+   "20250928 Schwenninger 2-1 Eisbaren Berlin",
+   "20251031 Eisbaren Berlin 4-3 Schwenninger (OT)",
+   "20251214 Schwenninger 0-2 Eisbaren Berlin",
+   "20260115 Eisbaren Berlin 5-3 Schwenninger"
+  ],
+  "Adler Mannheim | Frankfurt Lowen": [
+   "20250928 Frankfurt Lowen 3-2 Adler Mannheim (OT)",
+   "20251114 Adler Mannheim 2-3 Frankfurt Lowen",
+   "20260109 Adler Mannheim 6-2 Frankfurt Lowen",
+   "20260304 Frankfurt Lowen 3-4 Adler Mannheim (OT)"
+  ],
+  "Grizzly Wolfsburg | Kolner": [
+   "20250928 Grizzly Wolfsburg 2-4 Kolner",
+   "20251114 Kolner 4-3 Grizzly Wolfsburg",
+   "20251218 Grizzly Wolfsburg 1-4 Kolner",
+   "20260313 Kolner 5-8 Grizzly Wolfsburg",
+   "20260918 Grizzly Wolfsburg 8-4 Kolner"
+  ],
+  "Iserlohn Roosters | Munchen": [
+   "20250928 Iserlohn Roosters 1-3 Munchen",
+   "20251128 Munchen 1-3 Iserlohn Roosters",
+   "20260111 Iserlohn Roosters 0-6 Munchen",
+   "20260304 Munchen 4-3 Iserlohn Roosters (OT)"
+  ],
+  "Dresdner Eislowen | Nurnberg Ice Tigers": [
+   "20250928 Dresdner Eislowen 2-8 Nurnberg Ice Tigers",
+   "20251029 Nurnberg Ice Tigers 5-1 Dresdner Eislowen",
+   "20251219 Dresdner Eislowen 1-5 Nurnberg Ice Tigers",
+   "20260227 Nurnberg Ice Tigers 4-3 Dresdner Eislowen"
+  ],
+  "Augsburger Panther | Straubing Tigers": [
+   "20250928 Augsburger Panther 3-5 Straubing Tigers",
+   "20251114 Straubing Tigers 9-4 Augsburger Panther",
+   "20251221 Straubing Tigers 3-2 Augsburger Panther (SO)",
+   "20260118 Augsburger Panther 4-1 Straubing Tigers"
+  ],
+  "Frankfurt Lowen | Iserlohn Roosters": [
+   "20251002 Frankfurt Lowen 4-3 Iserlohn Roosters",
+   "20251121 Iserlohn Roosters 0-3 Frankfurt Lowen",
+   "20251221 Frankfurt Lowen 4-6 Iserlohn Roosters",
+   "20260306 Iserlohn Roosters 5-4 Frankfurt Lowen (OT)"
+  ],
+  "Bremerhaven | Kolner": [
+   "20251002 Bremerhaven 1-4 Kolner",
+   "20251207 Kolner 5-2 Bremerhaven",
+   "20251226 Bremerhaven 0-3 Kolner",
+   "20260116 Kolner 4-2 Bremerhaven"
+  ],
+  "Dresdner Eislowen | Schwenninger": [
+   "20251002 Dresdner Eislowen 1-4 Schwenninger",
+   "20251114 Schwenninger 2-0 Dresdner Eislowen",
+   "20251119 Schwenninger 3-4 Dresdner Eislowen (OT)",
+   "20260301 Dresdner Eislowen 5-2 Schwenninger"
+  ],
+  "Augsburger Panther | Eisbaren Berlin": [
+   "20251003 Eisbaren Berlin 4-3 Augsburger Panther (OT)",
+   "20251025 Augsburger Panther 4-3 Eisbaren Berlin (OT)",
+   "20260104 Augsburger Panther 3-6 Eisbaren Berlin",
+   "20260127 Eisbaren Berlin 1-2 Augsburger Panther"
+  ],
+  "ERC Ingolstadt | Straubing Tigers": [
+   "20251003 Straubing Tigers 5-6 ERC Ingolstadt (OT)",
+   "20251029 ERC Ingolstadt 6-4 Straubing Tigers",
+   "20260104 ERC Ingolstadt 3-6 Straubing Tigers",
+   "20260116 Straubing Tigers 4-5 ERC Ingolstadt",
+   "20260925 ERC Ingolstadt 1-4 Straubing Tigers"
+  ],
+  "Grizzly Wolfsburg | Munchen": [
+   "20251003 Grizzly Wolfsburg 7-5 Munchen",
+   "20251028 Munchen 3-4 Grizzly Wolfsburg",
+   "20260102 Munchen 3-2 Grizzly Wolfsburg (SO)",
+   "20260306 Grizzly Wolfsburg 1-4 Munchen",
+   "20260920 Munchen 3-4 Grizzly Wolfsburg (OT)"
+  ],
+  "Adler Mannheim | Nurnberg Ice Tigers": [
+   "20251102 Nurnberg Ice Tigers 4-2 Adler Mannheim",
+   "20251230 Adler Mannheim 3-2 Nurnberg Ice Tigers (OT)",
+   "20260116 Nurnberg Ice Tigers 4-2 Adler Mannheim",
+   "20260922 Adler Mannheim 3-5 Nurnberg Ice Tigers",
+   "20261009 Adler Mannheim 5-2 Nurnberg Ice Tigers"
+  ],
+  "Frankfurt Lowen | Kolner": [
+   "20251004 Kolner 1-2 Frankfurt Lowen",
+   "20251026 Frankfurt Lowen 0-5 Kolner",
+   "20251223 Kolner 4-1 Frankfurt Lowen",
+   "20260127 Frankfurt Lowen 4-1 Kolner",
+   "20260920 Frankfurt Lowen 3-4 Kolner (OT)"
+  ],
+  "ERC Ingolstadt | Eisbaren Berlin": [
+   "20251005 ERC Ingolstadt 0-3 Eisbaren Berlin",
+   "20251126 Eisbaren Berlin 2-5 ERC Ingolstadt",
+   "20251218 Eisbaren Berlin 5-8 ERC Ingolstadt",
+   "20260123 ERC Ingolstadt 1-2 Eisbaren Berlin"
+  ],
+  "Bremerhaven | Grizzly Wolfsburg": [
+   "20251005 Bremerhaven 4-2 Grizzly Wolfsburg",
+   "20251126 Grizzly Wolfsburg 4-0 Bremerhaven",
+   "20251212 Bremerhaven 5-4 Grizzly Wolfsburg",
+   "20260127 Grizzly Wolfsburg 3-2 Bremerhaven (OT)",
+   "20260927 Bremerhaven 2-3 Grizzly Wolfsburg"
+  ],
+  "Munchen | Schwenninger": [
+   "20251005 Munchen 2-4 Schwenninger",
+   "20251026 Schwenninger 4-5 Munchen",
+   "20251218 Schwenninger 1-3 Munchen",
+   "20260127 Munchen 1-3 Schwenninger",
+   "20261011 Munchen 4-3 Schwenninger"
+  ],
+  "Adler Mannheim | Iserlohn Roosters": [
+   "20251005 Iserlohn Roosters 1-4 Adler Mannheim",
+   "20251123 Adler Mannheim 4-0 Iserlohn Roosters",
+   "20251219 Iserlohn Roosters 3-5 Adler Mannheim",
+   "20260127 Adler Mannheim 2-1 Iserlohn Roosters",
+   "20261001 Iserlohn Roosters 1-6 Adler Mannheim"
+  ],
+  "Nurnberg Ice Tigers | Straubing Tigers": [
+   "20251005 Nurnberg Ice Tigers 1-4 Straubing Tigers",
+   "20251031 Straubing Tigers 5-3 Nurnberg Ice Tigers",
+   "20251226 Straubing Tigers 3-2 Nurnberg Ice Tigers",
+   "20260127 Nurnberg Ice Tigers 1-3 Straubing Tigers",
+   "20260927 Straubing Tigers 3-2 Nurnberg Ice Tigers (SO)"
+  ],
+  "Augsburger Panther | Dresdner Eislowen": [
+   "20251005 Augsburger Panther 4-1 Dresdner Eislowen",
+   "20251204 Dresdner Eislowen 4-2 Augsburger Panther",
+   "20251226 Augsburger Panther 1-3 Dresdner Eislowen",
+   "20260306 Dresdner Eislowen 3-6 Augsburger Panther"
+  ],
+  "Munchen | Nurnberg Ice Tigers": [
+   "20251009 Munchen 3-2 Nurnberg Ice Tigers",
+   "20251116 Nurnberg Ice Tigers 1-4 Munchen",
+   "20251214 Nurnberg Ice Tigers 1-3 Munchen",
+   "20260118 Munchen 4-5 Nurnberg Ice Tigers"
+  ],
+  "Augsburger Panther | Grizzly Wolfsburg": [
+   "20251010 Grizzly Wolfsburg 1-2 Augsburger Panther (OT)",
+   "20251030 Augsburger Panther 0-3 Grizzly Wolfsburg",
+   "20260109 Augsburger Panther 3-4 Grizzly Wolfsburg (OT)",
+   "20260315 Grizzly Wolfsburg 6-5 Augsburger Panther (SO)",
+   "20261002 Grizzly Wolfsburg 2-5 Augsburger Panther"
+  ],
+  "Adler Mannheim | Bremerhaven": [
+   "20260325 Bremerhaven 2-5 Adler Mannheim",
+   "20260327 Adler Mannheim 5-4 Bremerhaven (OT)",
+   "20260329 Bremerhaven 1-5 Adler Mannheim",
+   "20260331 Adler Mannheim 1-6 Bremerhaven",
+   "20260402 Bremerhaven 3-4 Adler Mannheim"
+  ],
+  "Eisbaren Berlin | Frankfurt Lowen": [
+   "20251010 Eisbaren Berlin 3-2 Frankfurt Lowen (SO)",
+   "20251116 Frankfurt Lowen 2-4 Eisbaren Berlin",
+   "20260102 Frankfurt Lowen 3-2 Eisbaren Berlin",
+   "20260125 Eisbaren Berlin 1-4 Frankfurt Lowen",
+   "20261002 Eisbaren Berlin 2-0 Frankfurt Lowen"
+  ],
+  "Dresdner Eislowen | Iserlohn Roosters": [
+   "20251010 Dresdner Eislowen 3-4 Iserlohn Roosters (OT)",
+   "20251126 Iserlohn Roosters 6-1 Dresdner Eislowen",
+   "20251212 Dresdner Eislowen 4-5 Iserlohn Roosters",
+   "20260123 Iserlohn Roosters 4-1 Dresdner Eislowen"
+  ],
+  "ERC Ingolstadt | Kolner": [
+   "20251010 ERC Ingolstadt 3-4 Kolner",
+   "20251031 Kolner 3-10 ERC Ingolstadt",
+   "20260109 Kolner 5-4 ERC Ingolstadt",
+   "20260227 ERC Ingolstadt 3-6 Kolner",
+   "20261004 Kolner 6-3 ERC Ingolstadt"
+  ],
+  "Schwenninger | Straubing Tigers": [
+   "20251010 Schwenninger 0-1 Straubing Tigers",
+   "20251121 Straubing Tigers 1-4 Schwenninger",
+   "20260111 Straubing Tigers 2-4 Schwenninger",
+   "20260306 Schwenninger 3-5 Straubing Tigers",
+   "20261004 Straubing Tigers 4-2 Schwenninger"
+  ],
+  "Bremerhaven | Dresdner Eislowen": [
+   "20251012 Bremerhaven 5-4 Dresdner Eislowen (OT)",
+   "20251026 Dresdner Eislowen 2-4 Bremerhaven",
+   "20260106 Bremerhaven 3-2 Dresdner Eislowen",
+   "20260315 Dresdner Eislowen 1-6 Bremerhaven"
+  ],
+  "Eisbaren Berlin | Nurnberg Ice Tigers": [
+   "20251012 Nurnberg Ice Tigers 2-3 Eisbaren Berlin",
+   "20251114 Eisbaren Berlin 5-4 Nurnberg Ice Tigers (SO)",
+   "20251228 Nurnberg Ice Tigers 2-5 Eisbaren Berlin",
+   "20260306 Eisbaren Berlin 5-4 Nurnberg Ice Tigers",
+   "20261004 Nurnberg Ice Tigers 1-4 Eisbaren Berlin"
+  ],
+  "Augsburger Panther | Schwenninger": [
+   "20251012 Augsburger Panther 5-3 Schwenninger",
+   "20251102 Schwenninger 1-5 Augsburger Panther",
+   "20260102 Schwenninger 6-7 Augsburger Panther",
+   "20260308 Augsburger Panther 1-2 Schwenninger",
+   "20260920 Schwenninger 3-7 Augsburger Panther"
+  ],
+  "Adler Mannheim | Munchen": [
+   "20260410 Adler Mannheim 3-2 Munchen (OT)",
+   "20260412 Munchen 1-4 Adler Mannheim",
+   "20260414 Adler Mannheim 1-5 Munchen",
+   "20260417 Munchen 1-4 Adler Mannheim",
+   "20260918 Adler Mannheim 3-4 Munchen (SO)"
+  ],
+  "ERC Ingolstadt | Frankfurt Lowen": [
+   "20251012 Frankfurt Lowen 2-5 ERC Ingolstadt",
+   "20251102 ERC Ingolstadt 8-0 Frankfurt Lowen",
+   "20260106 Frankfurt Lowen 3-6 ERC Ingolstadt",
+   "20260118 ERC Ingolstadt 2-1 Frankfurt Lowen (SO)",
+   "20261011 Frankfurt Lowen 3-2 ERC Ingolstadt (SO)"
+  ],
+  "Grizzly Wolfsburg | Straubing Tigers": [
+   "20251012 Straubing Tigers 5-2 Grizzly Wolfsburg",
+   "20251026 Grizzly Wolfsburg 0-6 Straubing Tigers",
+   "20251230 Straubing Tigers 5-2 Grizzly Wolfsburg",
+   "20260227 Grizzly Wolfsburg 0-4 Straubing Tigers"
+  ],
+  "Iserlohn Roosters | Kolner": [
+   "20251012 Iserlohn Roosters 1-3 Kolner",
+   "20251028 Kolner 3-1 Iserlohn Roosters",
+   "20251230 Kolner 7-4 Iserlohn Roosters",
+   "20260118 Iserlohn Roosters 2-4 Kolner",
+   "20261016 Kolner 2-4 Iserlohn Roosters"
+  ],
+  "Dresdner Eislowen | Kolner": [
+   "20251016 Kolner 5-2 Dresdner Eislowen",
+   "20251116 Dresdner Eislowen 0-5 Kolner",
+   "20260104 Kolner 8-1 Dresdner Eislowen",
+   "20260225 Dresdner Eislowen 2-7 Kolner"
+  ],
+  "Adler Mannheim | Schwenninger": [
+   "20251017 Schwenninger 3-0 Adler Mannheim",
+   "20251128 Adler Mannheim 4-2 Schwenninger",
+   "20251212 Adler Mannheim 5-0 Schwenninger",
+   "20260315 Schwenninger 2-4 Adler Mannheim"
+  ],
+  "Augsburger Panther | Bremerhaven": [
+   "20251017 Augsburger Panther 4-3 Bremerhaven (SO)",
+   "20251028 Bremerhaven 5-2 Augsburger Panther",
+   "20251214 Augsburger Panther 1-2 Bremerhaven (OT)",
+   "20260125 Bremerhaven 2-1 Augsburger Panther",
+   "20261009 Bremerhaven 0-3 Augsburger Panther"
+  ],
+  "Eisbaren Berlin | Grizzly Wolfsburg": [
+   "20251017 Grizzly Wolfsburg 2-3 Eisbaren Berlin",
+   "20251128 Eisbaren Berlin 6-1 Grizzly Wolfsburg",
+   "20251226 Grizzly Wolfsburg 2-1 Eisbaren Berlin",
+   "20260118 Eisbaren Berlin 2-5 Grizzly Wolfsburg",
+   "20261009 Grizzly Wolfsburg 0-5 Eisbaren Berlin"
+  ],
+  "ERC Ingolstadt | Nurnberg Ice Tigers": [
+   "20251017 Nurnberg Ice Tigers 4-7 ERC Ingolstadt",
+   "20251130 ERC Ingolstadt 5-3 Nurnberg Ice Tigers",
+   "20260111 ERC Ingolstadt 4-1 Nurnberg Ice Tigers",
+   "20260301 Nurnberg Ice Tigers 1-4 ERC Ingolstadt",
+   "20260920 Nurnberg Ice Tigers 6-2 ERC Ingolstadt"
+  ],
+  "Frankfurt Lowen | Munchen": [
+   "20251017 Munchen 1-2 Frankfurt Lowen (OT)",
+   "20251207 Munchen 5-0 Frankfurt Lowen",
+   "20251226 Frankfurt Lowen 3-1 Munchen",
+   "20260308 Frankfurt Lowen 2-3 Munchen (OT)",
+   "20260927 Frankfurt Lowen 4-1 Munchen"
+  ],
+  "Iserlohn Roosters | Straubing Tigers": [
+   "20251017 Iserlohn Roosters 0-2 Straubing Tigers",
+   "20251207 Straubing Tigers 0-4 Iserlohn Roosters",
+   "20251228 Iserlohn Roosters 2-0 Straubing Tigers",
+   "20260125 Straubing Tigers 4-2 Iserlohn Roosters",
+   "20261009 Iserlohn Roosters 4-11 Straubing Tigers"
+  ],
+  "Adler Mannheim | Grizzly Wolfsburg": [
+   "20251019 Adler Mannheim 4-2 Grizzly Wolfsburg",
+   "20251116 Grizzly Wolfsburg 1-3 Adler Mannheim",
+   "20251221 Adler Mannheim 2-5 Grizzly Wolfsburg",
+   "20260122 Grizzly Wolfsburg 1-2 Adler Mannheim",
+   "20261004 Adler Mannheim 1-4 Grizzly Wolfsburg"
+  ],
+  "Eisbaren Berlin | Iserlohn Roosters": [
+   "20251019 Eisbaren Berlin 4-3 Iserlohn Roosters",
+   "20251205 Iserlohn Roosters 3-5 Eisbaren Berlin",
+   "20260108 Eisbaren Berlin 3-4 Iserlohn Roosters",
+   "20260227 Iserlohn Roosters 2-5 Eisbaren Berlin",
+   "20260927 Iserlohn Roosters 0-4 Eisbaren Berlin"
+  ],
+  "Bremerhaven | Nurnberg Ice Tigers": [
+   "20260109 Nurnberg Ice Tigers 1-3 Bremerhaven",
+   "20260313 Bremerhaven 6-4 Nurnberg Ice Tigers",
+   "20260317 Nurnberg Ice Tigers 0-4 Bremerhaven",
+   "20260320 Bremerhaven 3-2 Nurnberg Ice Tigers",
+   "20261016 Nurnberg Ice Tigers 1-2 Bremerhaven"
+  ],
+  "Augsburger Panther | Frankfurt Lowen": [
+   "20251019 Frankfurt Lowen 3-5 Augsburger Panther",
+   "20251125 Augsburger Panther 2-4 Frankfurt Lowen",
+   "20251219 Augsburger Panther 4-3 Frankfurt Lowen (OT)",
+   "20260116 Frankfurt Lowen 3-6 Augsburger Panther"
+  ],
+  "Kolner | Straubing Tigers": [
+   "20251019 Straubing Tigers 4-7 Kolner",
+   "20251128 Kolner 2-0 Straubing Tigers",
+   "20260102 Straubing Tigers 2-4 Kolner",
+   "20260315 Kolner 6-3 Straubing Tigers"
+  ],
+  "ERC Ingolstadt | Schwenninger": [
+   "20251019 ERC Ingolstadt 4-2 Schwenninger",
+   "20251207 Schwenninger 2-5 ERC Ingolstadt",
+   "20251230 ERC Ingolstadt 3-5 Schwenninger",
+   "20260125 Schwenninger 1-4 ERC Ingolstadt",
+   "20261016 ERC Ingolstadt 4-3 Schwenninger (OT)"
+  ],
+  "Dresdner Eislowen | Munchen": [
+   "20251019 Dresdner Eislowen 1-2 Munchen",
+   "20251130 Munchen 4-2 Dresdner Eislowen",
+   "20251228 Munchen 5-2 Dresdner Eislowen",
+   "20260116 Dresdner Eislowen 1-3 Munchen"
+  ],
+  "Augsburger Panther | ERC Ingolstadt": [
+   "20251023 ERC Ingolstadt 2-4 Augsburger Panther",
+   "20251116 Augsburger Panther 1-5 ERC Ingolstadt",
+   "20251212 ERC Ingolstadt 4-3 Augsburger Panther",
+   "20260313 Augsburger Panther 4-7 ERC Ingolstadt"
+  ],
+  "Eisbaren Berlin | Munchen": [
+   "20251023 Eisbaren Berlin 2-3 Munchen",
+   "20251121 Munchen 3-1 Eisbaren Berlin",
+   "20260106 Eisbaren Berlin 3-2 Munchen",
+   "20260315 Munchen 1-5 Eisbaren Berlin",
+   "20261016 Munchen 4-3 Eisbaren Berlin"
+  ],
+  "Adler Mannheim | Kolner": [
+   "20251024 Kolner 2-5 Adler Mannheim",
+   "20251125 Adler Mannheim 2-3 Kolner (SO)",
+   "20251214 Adler Mannheim 4-5 Kolner",
+   "20260306 Kolner 1-5 Adler Mannheim"
+  ],
+  "Dresdner Eislowen | Straubing Tigers": [
+   "20251024 Straubing Tigers 4-2 Dresdner Eislowen",
+   "20251102 Dresdner Eislowen 1-6 Straubing Tigers",
+   "20251223 Dresdner Eislowen 3-5 Straubing Tigers",
+   "20260308 Straubing Tigers 5-3 Dresdner Eislowen"
+  ],
+  "Bremerhaven | Frankfurt Lowen": [
+   "20251024 Bremerhaven 3-7 Frankfurt Lowen",
+   "20251128 Frankfurt Lowen 2-5 Bremerhaven",
+   "20251228 Frankfurt Lowen 4-5 Bremerhaven (OT)",
+   "20260225 Bremerhaven 1-4 Frankfurt Lowen",
+   "20261004 Frankfurt Lowen 1-2 Bremerhaven"
+  ],
+  "Grizzly Wolfsburg | Iserlohn Roosters": [
+   "20251024 Iserlohn Roosters 1-3 Grizzly Wolfsburg",
+   "20251101 Grizzly Wolfsburg 2-3 Iserlohn Roosters (OT)",
+   "20251223 Iserlohn Roosters 1-4 Grizzly Wolfsburg",
+   "20260116 Grizzly Wolfsburg 1-2 Iserlohn Roosters (OT)",
+   "20261011 Grizzly Wolfsburg 2-3 Iserlohn Roosters (OT)"
+  ],
+  "Nurnberg Ice Tigers | Schwenninger": [
+   "20251024 Nurnberg Ice Tigers 2-5 Schwenninger",
+   "20251125 Schwenninger 5-4 Nurnberg Ice Tigers (SO)",
+   "20251221 Nurnberg Ice Tigers 4-3 Schwenninger (OT)",
+   "20260304 Schwenninger 5-2 Nurnberg Ice Tigers",
+   "20261002 Schwenninger 0-5 Nurnberg Ice Tigers"
+  ],
+  "Bremerhaven | Krefeld Pinguine": [
+   "20260918 Bremerhaven 3-1 Krefeld Pinguine"
+  ],
+  "Krefeld Pinguine | Straubing Tigers": [
+   "20260920 Krefeld Pinguine 6-3 Straubing Tigers"
+  ],
+  "Adler Mannheim | Krefeld Pinguine": [
+   "20260925 Krefeld Pinguine 1-4 Adler Mannheim"
+  ],
+  "Krefeld Pinguine | Schwenninger": [
+   "20260927 Schwenninger 2-5 Krefeld Pinguine"
+  ],
+  "ERC Ingolstadt | Krefeld Pinguine": [
+   "20261002 ERC Ingolstadt 1-3 Krefeld Pinguine"
+  ],
+  "Iserlohn Roosters | Krefeld Pinguine": [
+   "20261004 Krefeld Pinguine 2-3 Iserlohn Roosters"
+  ],
+  "Frankfurt Lowen | Krefeld Pinguine": [
+   "20261008 Krefeld Pinguine 5-2 Frankfurt Lowen"
+  ],
+  "Augsburger Panther | Krefeld Pinguine": [
+   "20261011 Augsburger Panther 2-1 Krefeld Pinguine"
+  ],
+  "Grizzly Wolfsburg | Krefeld Pinguine": [
+   "20261015 Krefeld Pinguine 1-2 Grizzly Wolfsburg (SO)"
+  ]
+ }
+}
