@@ -1,0 +1,149 @@
+{
+  "date": "20260501",
+  "league": "KHL",
+  "source": "flashscore",
+  "games": [
+    {
+      "game_id": "SCd56QFq",
+      "game_type": "PO",
+      "stage": "RUSSIA: KHL - Play Offs",
+      "round": "Semi-finals",
+      "start_utc": "2026-05-01T12:00:00Z",
+      "home_team": "Ak Bars",
+      "away_team": "Metallurg Mg",
+      "home_team_id": "v320kOMr",
+      "away_team_id": "QcJ1rpaL",
+      "home_score": 4,
+      "away_score": 1,
+      "total_goals": 5,
+      "end_type": "REG",
+      "reg_home_score": 4,
+      "reg_away_score": 1,
+      "reg_total_goals": 5,
+      "winner": "Ak Bars",
+      "period_scores": [
+        {
+          "period": 1,
+          "type": "REG",
+          "home": 0,
+          "away": 0
+        },
+        {
+          "period": 2,
+          "type": "REG",
+          "home": 2,
+          "away": 0
+        },
+        {
+          "period": 3,
+          "type": "REG",
+          "home": 2,
+          "away": 1
+        }
+      ],
+      "home_stats": {
+        "shots": 27,
+        "blocked": 13,
+        "saves": 31,
+        "penalties": 4,
+        "pim": 8,
+        "pp_goals": 1,
+        "sh_goals": 0,
+        "pp_opps": 8,
+        "hits": 14,
+        "fo_won": 35,
+        "en_goals": 1
+      },
+      "away_stats": {
+        "shots": 32,
+        "blocked": 19,
+        "saves": 23,
+        "penalties": 8,
+        "pim": 16,
+        "pp_goals": 0,
+        "sh_goals": 0,
+        "pp_opps": 4,
+        "hits": 21,
+        "fo_won": 19,
+        "en_goals": 0
+      },
+      "home_goalies": [
+        {
+          "name": "Bilyalov T.",
+          "player_id": "00kaGqFn",
+          "starter": true,
+          "shots_against": 32,
+          "goals_against": 1,
+          "saves": 31,
+          "sv_pct": 0.969,
+          "note": "팀 세이브 기준(골리 교체 시 합산값)"
+        }
+      ],
+      "away_goalies": [
+        {
+          "name": "Nabokov I.",
+          "player_id": "QT0ztjl5",
+          "starter": true,
+          "shots_against": 27,
+          "goals_against": 4,
+          "saves": 23,
+          "sv_pct": 0.852,
+          "note": "팀 세이브 기준(골리 교체 시 합산값)"
+        }
+      ],
+      "goals": [
+        {
+          "period": "2nd Period",
+          "time": "14:44",
+          "team": "home",
+          "score": "1:0",
+          "author": "Barabanov A.",
+          "assists": [
+            "Lyamkin N.",
+            "Semyonov K."
+          ]
+        },
+        {
+          "period": "2nd Period",
+          "time": "15:50",
+          "team": "home",
+          "score": "2:0",
+          "author": "Denisenko G.",
+          "assists": [
+            "Jaskin D."
+          ]
+        },
+        {
+          "period": "3rd Period",
+          "time": "05:31",
+          "team": "away",
+          "score": "2:1",
+          "author": "Korobkin Y.",
+          "assists": [
+            "Orekhov V.",
+            "Johnson L."
+          ]
+        },
+        {
+          "period": "3rd Period",
+          "time": "14:10",
+          "team": "home",
+          "score": "3:1",
+          "author": "Todd N.",
+          "assists": [
+            "Semyonov K.",
+            "Chmelevski A."
+          ]
+        },
+        {
+          "period": "3rd Period",
+          "time": "18:14",
+          "team": "home",
+          "score": "4:1",
+          "author": "Jaskin D.",
+          "assists": []
+        }
+      ]
+    }
+  ]
+}
