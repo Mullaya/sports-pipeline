@@ -1,0 +1,128 @@
+{
+  "date": "20260116",
+  "league": "KHL",
+  "source": "flashscore",
+  "games": [
+    {
+      "game_id": "Wz3boXrn",
+      "game_type": "REG",
+      "stage": "RUSSIA: KHL",
+      "round": "",
+      "start_utc": "2026-01-16T16:30:00Z",
+      "home_team": "SKA",
+      "away_team": "HC Sochi",
+      "home_team_id": "zVJwe4ER",
+      "away_team_id": "zu1IGfCr",
+      "home_score": 1,
+      "away_score": 2,
+      "total_goals": 3,
+      "end_type": "REG",
+      "reg_home_score": 1,
+      "reg_away_score": 2,
+      "reg_total_goals": 3,
+      "winner": "HC Sochi",
+      "period_scores": [
+        {
+          "period": 1,
+          "type": "REG",
+          "home": 0,
+          "away": 1
+        },
+        {
+          "period": 2,
+          "type": "REG",
+          "home": 0,
+          "away": 1
+        },
+        {
+          "period": 3,
+          "type": "REG",
+          "home": 1,
+          "away": 0
+        }
+      ],
+      "home_stats": {
+        "shots": 42,
+        "blocked": 15,
+        "saves": 22,
+        "penalties": 2,
+        "pim": 4,
+        "pp_goals": 0,
+        "sh_goals": 0,
+        "pp_opps": 3,
+        "hits": 11,
+        "fo_won": 24,
+        "en_goals": 0
+      },
+      "away_stats": {
+        "shots": 24,
+        "blocked": 5,
+        "saves": 41,
+        "penalties": 3,
+        "pim": 6,
+        "pp_goals": 0,
+        "sh_goals": 0,
+        "pp_opps": 2,
+        "hits": 11,
+        "fo_won": 28,
+        "en_goals": 0
+      },
+      "home_goalies": [
+        {
+          "name": "Ivanov S.",
+          "player_id": "fVs2vEZr",
+          "starter": true,
+          "shots_against": 24,
+          "goals_against": 2,
+          "saves": 22,
+          "sv_pct": 0.917,
+          "note": "팀 세이브 기준(골리 교체 시 합산값)"
+        }
+      ],
+      "away_goalies": [
+        {
+          "name": "Khomchenko P.",
+          "player_id": "QcPnoKuN",
+          "starter": true,
+          "shots_against": 42,
+          "goals_against": 1,
+          "saves": 41,
+          "sv_pct": 0.976,
+          "note": "팀 세이브 기준(골리 교체 시 합산값)"
+        }
+      ],
+      "goals": [
+        {
+          "period": "1st Period",
+          "time": "09:21",
+          "team": "away",
+          "score": "0:1",
+          "author": "Hoefenmayer N.",
+          "assists": []
+        },
+        {
+          "period": "2nd Period",
+          "time": "19:58",
+          "team": "away",
+          "score": "0:2",
+          "author": "Polyakov N.",
+          "assists": [
+            "Dedunov P.",
+            "Bashkirov D."
+          ]
+        },
+        {
+          "period": "3rd Period",
+          "time": "08:39",
+          "team": "home",
+          "score": "1:2",
+          "author": "Khairullin M.",
+          "assists": [
+            "Polyakov M.",
+            "Vorobyov M."
+          ]
+        }
+      ]
+    }
+  ]
+}
