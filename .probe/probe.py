@@ -1,14 +1,23 @@
 import re,requests
 UA={"User-Agent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/124 Safari/537.36","Accept":"*/*"}
+H={"x-fsign":"SW9D1eZo","Referer":"https://www.flashscore.com/","Origin":"https://www.flashscore.com"}
 S=requests.Session(); S.headers.update(UA)
-t=S.get("https://www.flashscore.com/hockey/czech-republic/extraliga-2025-2026/results/",timeout=30).text
-srcs=sorted(set(re.findall(r'src="(https://static\.flashscore\.com/[^"]+\.js[^"]*)"',t)))
-print("SRCS",srcs)
-m=re.search(r'cjs\.initialFeeds\["summary-results"\]\s*=\s*\{(.*?)\};',t,re.S)
-if m: print("INITMETA",re.sub(r'data:\s*`.*?`','data:<...>',m.group(1),flags=re.S)[:800])
-for k in ("seasonId","tournament_id","tournamentStageId","tournamentId","countryId","sport_id","project_id","\"tz\"","geoIp"):
-    for mm in re.finditer(re.escape(k)+r'[^,;\n]{0,80}',t): print("CFG",mm.group(0)); break
-for s in srcs:
-    js=S.get(s,timeout=30).text
-    for mm in re.finditer(r'.{0,160}["\'`]tr_.{0,200}',js): print("\nJS",s.split('/')[-1][:40],mm.group(0)); 
-    for mm in re.finditer(r'.{0,120}summary-results.{0,200}',js): print("\nSR",s.split('/')[-1][:40],mm.group(0)[:330])
+F="https://global.flashscore.ninja/2/x/feed/"
+def ids(text): return re.findall(r'AA÷(\w+)¬AD÷(\d+)',text)
+for name,url in [("CZE","https://www.flashscore.com/hockey/czech-republic/extraliga-2025-2026/results/"),("DEL","https://www.flashscore.com/hockey/germany/del-2025-2026/results/"),("DELcur","https://www.flashscore.com/hockey/germany/del/results/"),("KHLprev","https://www.flashscore.com/hockey/russia/khl-2025-2026/results/")]:
+    t=S.get(url,timeout=30).text
+    sid=re.search(r'seasonId:\s*(\d+)',t); tid=re.search(r'tournament_id":"(\w+)"',t); cid=re.search(r'countryId":"(\d+)"',t)
+    sid,tid,cid=sid.group(1),tid.group(1),cid.group(1)
+    init=ids(t); total=re.search(r'allEventsCount:\s*(\d+)',t)
+    print(name,"season",sid,"tour",tid,"country",cid,"init",len(init),"all",total.group(1) if total else None)
+    seen=set(i for i,_ in init)
+    for proj in ("2","1"):
+        got=0
+        for page in range(1,8):
+            f=f"tr_4_{cid}_{tid}_{sid}_{page}_0_en_{proj}"
+            r=S.get(F+f,headers=H,timeout=20); x=ids(r.text)
+            new=[i for i,_ in x if i not in seen]; seen.update(new); got+=len(new)
+            print("   ",f,r.status_code,len(x),"new",len(new), (min(int(a) for _,a in x), max(int(a) for _,a in x)) if x else "")
+            if not x: break
+        if got: break
+    print("  TOTAL unique",len(seen))
