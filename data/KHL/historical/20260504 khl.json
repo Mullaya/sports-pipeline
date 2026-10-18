@@ -1,0 +1,158 @@
+{
+  "date": "20260504",
+  "league": "KHL",
+  "source": "flashscore",
+  "games": [
+    {
+      "game_id": "zaanIUpd",
+      "game_type": "PO",
+      "stage": "RUSSIA: KHL - Play Offs",
+      "round": "Semi-finals",
+      "start_utc": "2026-05-04T13:30:00Z",
+      "home_team": "Avangard",
+      "away_team": "Lokomotiv",
+      "home_team_id": "6PtiwUZu",
+      "away_team_id": "MNZan6lB",
+      "home_score": 2,
+      "away_score": 3,
+      "total_goals": 5,
+      "end_type": "OT",
+      "reg_home_score": 2,
+      "reg_away_score": 2,
+      "reg_total_goals": 4,
+      "winner": "Lokomotiv",
+      "period_scores": [
+        {
+          "period": 1,
+          "type": "REG",
+          "home": 1,
+          "away": 0
+        },
+        {
+          "period": 2,
+          "type": "REG",
+          "home": 0,
+          "away": 0
+        },
+        {
+          "period": 3,
+          "type": "REG",
+          "home": 1,
+          "away": 2
+        },
+        {
+          "period": 4,
+          "type": "OT",
+          "home": 0,
+          "away": 1
+        }
+      ],
+      "home_stats": {
+        "shots": 36,
+        "blocked": 19,
+        "saves": 36,
+        "penalties": 3,
+        "pim": 6,
+        "pp_goals": 1,
+        "sh_goals": 0,
+        "pp_opps": 3,
+        "hits": 33,
+        "fo_won": 55,
+        "en_goals": 0
+      },
+      "away_stats": {
+        "shots": 39,
+        "blocked": 32,
+        "saves": 34,
+        "penalties": 3,
+        "pim": 6,
+        "pp_goals": 0,
+        "sh_goals": 0,
+        "pp_opps": 3,
+        "hits": 31,
+        "fo_won": 48,
+        "en_goals": 0
+      },
+      "home_goalies": [
+        {
+          "name": "Serebryakov N.",
+          "player_id": "CKI3JfsI",
+          "starter": true,
+          "shots_against": 39,
+          "goals_against": 3,
+          "saves": 36,
+          "sv_pct": 0.923,
+          "note": "팀 세이브 기준(골리 교체 시 합산값)"
+        }
+      ],
+      "away_goalies": [
+        {
+          "name": "Isayev D.",
+          "player_id": "bPChxJM3",
+          "starter": true,
+          "shots_against": 36,
+          "goals_against": 2,
+          "saves": 34,
+          "sv_pct": 0.944,
+          "note": "팀 세이브 기준(골리 교체 시 합산값)"
+        }
+      ],
+      "goals": [
+        {
+          "period": "1st Period",
+          "time": "10:24",
+          "team": "home",
+          "score": "1:0",
+          "author": "Ponomaryov V.",
+          "assists": [
+            "Sharipzyanov D."
+          ]
+        },
+        {
+          "period": "3rd Period",
+          "time": "00:14",
+          "team": "home",
+          "score": "2:0",
+          "author": "Lajoie M.",
+          "assists": [
+            "McLeod M.",
+            "Poturalski A."
+          ]
+        },
+        {
+          "period": "3rd Period",
+          "time": "19:27",
+          "team": "away",
+          "score": "2:1",
+          "author": "Shalunov M.",
+          "assists": [
+            "Radulov A.",
+            "Rafikov R."
+          ]
+        },
+        {
+          "period": "3rd Period",
+          "time": "19:49",
+          "team": "away",
+          "score": "2:2",
+          "author": "Shalunov M.",
+          "assists": [
+            "Radulov A.",
+            "Rafikov R."
+          ]
+        },
+        {
+          "period": "Overtime",
+          "time": "36:10",
+          "team": "away",
+          "score": "2:3",
+          "author": "Rafikov R.",
+          "assists": [
+            "Shalunov M.",
+            "Kayumov A."
+          ]
+        }
+      ]
+    }
+  ]
+}
