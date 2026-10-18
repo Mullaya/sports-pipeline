@@ -1,0 +1,128 @@
+{
+  "date": "20260122",
+  "league": "DEL",
+  "source": "flashscore",
+  "games": [
+    {
+      "game_id": "UiInBNQP",
+      "game_type": "REG",
+      "stage": "GERMANY: DEL",
+      "round": "Round 42",
+      "start_utc": "2026-01-22T18:30:00Z",
+      "home_team": "Adler Mannheim",
+      "away_team": "Grizzly Wolfsburg",
+      "home_team_id": "0jhpSN72",
+      "away_team_id": "pjtzLXj0",
+      "home_score": 2,
+      "away_score": 1,
+      "total_goals": 3,
+      "end_type": "REG",
+      "reg_home_score": 2,
+      "reg_away_score": 1,
+      "reg_total_goals": 3,
+      "winner": "Adler Mannheim",
+      "period_scores": [
+        {
+          "period": 1,
+          "type": "REG",
+          "home": 1,
+          "away": 0
+        },
+        {
+          "period": 2,
+          "type": "REG",
+          "home": 1,
+          "away": 0
+        },
+        {
+          "period": 3,
+          "type": "REG",
+          "home": 0,
+          "away": 1
+        }
+      ],
+      "home_stats": {
+        "shots": 29,
+        "blocked": 12,
+        "saves": 20,
+        "penalties": 4,
+        "pim": 8,
+        "pp_goals": 0,
+        "sh_goals": 0,
+        "pp_opps": 4,
+        "fo_won": 32,
+        "en_goals": 0
+      },
+      "away_stats": {
+        "shots": 21,
+        "blocked": 12,
+        "saves": 27,
+        "penalties": 4,
+        "pim": 8,
+        "pp_goals": 0,
+        "sh_goals": 0,
+        "pp_opps": 4,
+        "fo_won": 16,
+        "en_goals": 0
+      },
+      "home_goalies": [
+        {
+          "name": "Franzreb M.",
+          "player_id": "tj99Zkv0",
+          "starter": true,
+          "shots_against": 21,
+          "goals_against": 1,
+          "saves": 20,
+          "sv_pct": 0.952,
+          "note": "팀 세이브 기준(골리 교체 시 합산값)"
+        }
+      ],
+      "away_goalies": [
+        {
+          "name": "Strahlmeier D.",
+          "player_id": "SADYYKN0",
+          "starter": true,
+          "shots_against": 29,
+          "goals_against": 2,
+          "saves": 27,
+          "sv_pct": 0.931,
+          "note": "팀 세이브 기준(골리 교체 시 합산값)"
+        }
+      ],
+      "goals": [
+        {
+          "period": "1st Period",
+          "time": "18:57",
+          "team": "home",
+          "score": "1:0",
+          "author": "Ehl A.",
+          "assists": [
+            "Michaelis M.",
+            "Schutz J."
+          ]
+        },
+        {
+          "period": "2nd Period",
+          "time": "18:09",
+          "team": "home",
+          "score": "2:0",
+          "author": "Michaelis M.",
+          "assists": [
+            "Schutz J.",
+            "Ehl A."
+          ]
+        },
+        {
+          "period": "3rd Period",
+          "time": "07:34",
+          "team": "away",
+          "score": "2:1",
+          "author": "Schinko L.",
+          "assists": [
+            "Thompson K."
+          ]
+        }
+      ]
+    }
+  ]
+}
