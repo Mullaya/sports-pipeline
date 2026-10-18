@@ -129,7 +129,8 @@ def run_daily(date: str = None, mlb_date: str = None):
             print(f"  [{league}] 실패: {e}")
 
     if not date:
-        catch_up(uploader, npb_date, {"KBL": KBLCollector,
+        catch_up(uploader, npb_date, {"KHL": KHLCollector,
+                                      "KBL": KBLCollector,
                                       "KOVO": lambda: KOVOCollector("KOVO"),
                                       "WKOVO": lambda: KOVOCollector("WKOVO")})
 
@@ -139,7 +140,8 @@ def run_daily(date: str = None, mlb_date: str = None):
 
     print(f"===== 완료 =====")
 
-CATCH_UP_DAYS = 3
+# 크론이 하루 통째로 스킵되면 3일 창으로는 복구 전에 날짜가 창 밖으로 밀려남 (2026-10-14 KHL 누락 사례)
+CATCH_UP_DAYS = 7
 
 
 def catch_up(uploader, base_date: str, collectors: dict, days: int = CATCH_UP_DAYS):
