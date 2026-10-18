@@ -1,0 +1,149 @@
+{
+  "date": "20260519",
+  "league": "KHL",
+  "source": "flashscore",
+  "games": [
+    {
+      "game_id": "SGKoglL0",
+      "game_type": "PO",
+      "stage": "RUSSIA: KHL - Play Offs",
+      "round": "Final",
+      "start_utc": "2026-05-19T16:00:00Z",
+      "home_team": "Lokomotiv",
+      "away_team": "Ak Bars",
+      "home_team_id": "MNZan6lB",
+      "away_team_id": "v320kOMr",
+      "home_score": 4,
+      "away_score": 1,
+      "total_goals": 5,
+      "end_type": "REG",
+      "reg_home_score": 4,
+      "reg_away_score": 1,
+      "reg_total_goals": 5,
+      "winner": "Lokomotiv",
+      "period_scores": [
+        {
+          "period": 1,
+          "type": "REG",
+          "home": 0,
+          "away": 0
+        },
+        {
+          "period": 2,
+          "type": "REG",
+          "home": 2,
+          "away": 0
+        },
+        {
+          "period": 3,
+          "type": "REG",
+          "home": 2,
+          "away": 1
+        }
+      ],
+      "home_stats": {
+        "shots": 39,
+        "blocked": 16,
+        "saves": 25,
+        "penalties": 6,
+        "pim": 12,
+        "pp_goals": 0,
+        "sh_goals": 0,
+        "pp_opps": 3,
+        "hits": 38,
+        "fo_won": 35,
+        "en_goals": 1
+      },
+      "away_stats": {
+        "shots": 26,
+        "blocked": 15,
+        "saves": 35,
+        "penalties": 3,
+        "pim": 6,
+        "pp_goals": 1,
+        "sh_goals": 0,
+        "pp_opps": 6,
+        "hits": 21,
+        "fo_won": 32,
+        "en_goals": 0
+      },
+      "home_goalies": [
+        {
+          "name": "Isayev D.",
+          "player_id": "bPChxJM3",
+          "starter": true,
+          "shots_against": 26,
+          "goals_against": 1,
+          "saves": 25,
+          "sv_pct": 0.962,
+          "note": "팀 세이브 기준(골리 교체 시 합산값)"
+        }
+      ],
+      "away_goalies": [
+        {
+          "name": "Bilyalov T.",
+          "player_id": "00kaGqFn",
+          "starter": true,
+          "shots_against": 39,
+          "goals_against": 4,
+          "saves": 35,
+          "sv_pct": 0.897,
+          "note": "팀 세이브 기준(골리 교체 시 합산값)"
+        }
+      ],
+      "goals": [
+        {
+          "period": "2nd Period",
+          "time": "08:35",
+          "team": "home",
+          "score": "1:0",
+          "author": "Froese B.",
+          "assists": [
+            "Panik R.",
+            "Bereglazov A."
+          ]
+        },
+        {
+          "period": "2nd Period",
+          "time": "10:00",
+          "team": "home",
+          "score": "2:0",
+          "author": "Kiryanov N.",
+          "assists": [
+            "Gernat M."
+          ]
+        },
+        {
+          "period": "3rd Period",
+          "time": "02:25",
+          "team": "home",
+          "score": "3:0",
+          "author": "Froese B.",
+          "assists": [
+            "Panik R.",
+            "Radulov A."
+          ]
+        },
+        {
+          "period": "3rd Period",
+          "time": "16:19",
+          "team": "home",
+          "score": "4:0",
+          "author": "Kayumov A.",
+          "assists": []
+        },
+        {
+          "period": "3rd Period",
+          "time": "18:27",
+          "team": "away",
+          "score": "4:1",
+          "author": "Chmelevski A.",
+          "assists": [
+            "Galimov A.",
+            "Todd N."
+          ]
+        }
+      ]
+    }
+  ]
+}
