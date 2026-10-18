@@ -1,0 +1,128 @@
+{
+  "date": "20260314",
+  "league": "KHL",
+  "source": "flashscore",
+  "games": [
+    {
+      "game_id": "Y3HFw7Z8",
+      "game_type": "REG",
+      "stage": "RUSSIA: KHL",
+      "round": "",
+      "start_utc": "2026-03-14T12:00:00Z",
+      "home_team": "Avtomobilist",
+      "away_team": "CSKA",
+      "home_team_id": "EizNoU4H",
+      "away_team_id": "pGuexlkn",
+      "home_score": 0,
+      "away_score": 3,
+      "total_goals": 3,
+      "end_type": "REG",
+      "reg_home_score": 0,
+      "reg_away_score": 3,
+      "reg_total_goals": 3,
+      "winner": "CSKA",
+      "period_scores": [
+        {
+          "period": 1,
+          "type": "REG",
+          "home": 0,
+          "away": 1
+        },
+        {
+          "period": 2,
+          "type": "REG",
+          "home": 0,
+          "away": 2
+        },
+        {
+          "period": 3,
+          "type": "REG",
+          "home": 0,
+          "away": 0
+        }
+      ],
+      "home_stats": {
+        "shots": 20,
+        "blocked": 15,
+        "saves": 25,
+        "penalties": 2,
+        "pim": 4,
+        "pp_goals": 0,
+        "sh_goals": 0,
+        "pp_opps": 3,
+        "hits": 10,
+        "fo_won": 18,
+        "en_goals": 0
+      },
+      "away_stats": {
+        "shots": 28,
+        "blocked": 10,
+        "saves": 20,
+        "penalties": 3,
+        "pim": 6,
+        "pp_goals": 0,
+        "sh_goals": 1,
+        "pp_opps": 2,
+        "hits": 15,
+        "fo_won": 27,
+        "en_goals": 0
+      },
+      "home_goalies": [
+        {
+          "name": "Galkin V.",
+          "player_id": "YD1V5aKB",
+          "starter": true,
+          "shots_against": 28,
+          "goals_against": 3,
+          "saves": 25,
+          "sv_pct": 0.893,
+          "note": "팀 세이브 기준(골리 교체 시 합산값)"
+        }
+      ],
+      "away_goalies": [
+        {
+          "name": "Gamzin D.",
+          "player_id": "QwpDackb",
+          "starter": true,
+          "shots_against": 20,
+          "goals_against": 0,
+          "saves": 20,
+          "sv_pct": 1.0,
+          "note": "팀 세이브 기준(골리 교체 시 합산값)"
+        }
+      ],
+      "goals": [
+        {
+          "period": "1st Period",
+          "time": "11:37",
+          "team": "away",
+          "score": "0:1",
+          "author": "Poltapov P.",
+          "assists": [
+            "Sorkin M.",
+            "Nesterov N."
+          ]
+        },
+        {
+          "period": "2nd Period",
+          "time": "13:36",
+          "team": "away",
+          "score": "0:2",
+          "author": "Sorkin M.",
+          "assists": []
+        },
+        {
+          "period": "2nd Period",
+          "time": "16:51",
+          "team": "away",
+          "score": "0:3",
+          "author": "Ebert N.",
+          "assists": [
+            "Kovalenko N.",
+            "Nesterov N."
+          ]
+        }
+      ]
+    }
+  ]
+}
