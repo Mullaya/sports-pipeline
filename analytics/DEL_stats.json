@@ -1,24 +1,24 @@
 {
  "meta": {
-  "generated_kst": "2026-10-20 20:52",
+  "generated_kst": "2026-10-21 21:02",
   "league": "DEL",
   "season_start": "20260801",
-  "games": 71,
-  "last_game_date": "20261018",
+  "games": 73,
+  "last_game_date": "20261020",
   "points_rule": {
    "reg_win": 3,
    "ot_win": 2,
    "ot_loss": 1
   },
   "league_avg": {
-   "avg_reg_total": 5.79,
-   "reg_draw_rate": 0.169,
-   "home_win_rate": 0.549,
-   "home_reg_win_rate": 0.465,
+   "avg_reg_total": 5.75,
+   "reg_draw_rate": 0.178,
+   "home_win_rate": 0.548,
+   "home_reg_win_rate": 0.466,
    "over_rate_reg": {
-    "4.5": 0.718,
-    "5.5": 0.479,
-    "6.5": 0.31
+    "4.5": 0.712,
+    "5.5": 0.466,
+    "6.5": 0.301
    }
   },
   "notes": "reg_* = 정규시간(60분) 기준 (하키 언오버 사이트 정산 기준) / w = 정규승+연장승 / shot_share = 유효슈팅 점유율 / rank_pts = 전체 승점 순위"
@@ -111,7 +111,7 @@
    ],
    "streak": "W1",
    "last_game_date": "20261018",
-   "days_since_last": 2,
+   "days_since_last": 3,
    "last_was_b2b": false,
    "rank_pts": 1
   },
@@ -202,7 +202,7 @@
    ],
    "streak": "W2",
    "last_game_date": "20261018",
-   "days_since_last": 2,
+   "days_since_last": 3,
    "last_was_b2b": false,
    "rank_pts": 2
   },
@@ -293,7 +293,7 @@
    ],
    "streak": "L1",
    "last_game_date": "20261018",
-   "days_since_last": 2,
+   "days_since_last": 3,
    "last_was_b2b": false,
    "rank_pts": 3
   },
@@ -384,7 +384,7 @@
    ],
    "streak": "W1",
    "last_game_date": "20261018",
-   "days_since_last": 2,
+   "days_since_last": 3,
    "last_was_b2b": false,
    "rank_pts": 4
   },
@@ -475,52 +475,143 @@
    ],
    "streak": "L1",
    "last_game_date": "20261018",
-   "days_since_last": 2,
+   "days_since_last": 3,
    "last_was_b2b": false,
    "rank_pts": 5
   },
-  "Kolner": {
-   "gp": 10,
-   "w": 5,
+  "ERC Ingolstadt": {
+   "gp": 11,
+   "w": 6,
    "reg_wins": 4,
-   "ot_wins": 1,
+   "ot_wins": 2,
    "otl": 1,
    "l": 4,
-   "pts": 15,
+   "pts": 17,
    "reg_w": 4,
-   "reg_d": 2,
+   "reg_d": 3,
    "reg_l": 4,
-   "gf_pg": 3.8,
-   "ga_pg": 3.9,
-   "avg_reg_total": 7.5,
-   "sf_pg": 30.1,
-   "sa_pg": 27.5,
-   "shot_share": 0.523,
-   "sh_pct": 0.126,
-   "sv_pct": 0.862,
-   "pdo": 98.8,
-   "pp_pct": 0.242,
-   "pk_pct": 0.806,
-   "reg_draw_rate": 0.2,
+   "gf_pg": 3.09,
+   "ga_pg": 3.27,
+   "avg_reg_total": 6.09,
+   "sf_pg": 30.9,
+   "sa_pg": 29.0,
+   "shot_share": 0.516,
+   "sh_pct": 0.1,
+   "sv_pct": 0.89,
+   "pdo": 99.0,
+   "pp_pct": 0.222,
+   "pk_pct": 0.833,
+   "reg_draw_rate": 0.273,
    "over_rate_reg": {
-    "4.5": 1.0,
-    "5.5": 0.8,
-    "6.5": 0.4
+    "4.5": 0.727,
+    "5.5": 0.545,
+    "6.5": 0.364
    },
    "home": {
-    "gp": 7,
+    "gp": 6,
     "w": 3,
     "reg_wins": 2,
     "ot_wins": 1,
     "otl": 1,
-    "l": 3,
+    "l": 2,
     "pts": 9,
     "reg_w": 2,
     "reg_d": 2,
+    "reg_l": 2,
+    "gf_pg": 3.17,
+    "ga_pg": 3.67,
+    "avg_reg_total": 6.5
+   },
+   "away": {
+    "gp": 5,
+    "w": 3,
+    "reg_wins": 2,
+    "ot_wins": 1,
+    "otl": 0,
+    "l": 2,
+    "pts": 8,
+    "reg_w": 2,
+    "reg_d": 1,
+    "reg_l": 2,
+    "gf_pg": 3.0,
+    "ga_pg": 2.8,
+    "avg_reg_total": 5.6
+   },
+   "last10": {
+    "gp": 10,
+    "w": 5,
+    "reg_wins": 3,
+    "ot_wins": 2,
+    "otl": 1,
+    "l": 4,
+    "pts": 14,
+    "reg_w": 3,
+    "reg_d": 3,
+    "reg_l": 4,
+    "gf_pg": 3.0,
+    "ga_pg": 3.3,
+    "avg_reg_total": 6.0
+   },
+   "last10_log": [
+    "20260920 vs Nurnberg Ice Tigers 2-6 L",
+    "20260925 @ Straubing Tigers 1-4 L",
+    "20260927 vs Adler Mannheim 3-2 OTW",
+    "20261002 @ Krefeld Pinguine 1-3 L",
+    "20261004 vs Kolner 3-6 L",
+    "20261009 @ Munchen 5-1 W",
+    "20261011 vs Frankfurt Lowen 2-3 OTL",
+    "20261016 @ Schwenninger 4-3 OTW",
+    "20261018 vs Augsburger Panther 6-3 W",
+    "20261020 vs Grizzly Wolfsburg 3-2 W"
+   ],
+   "streak": "W3",
+   "last_game_date": "20261020",
+   "days_since_last": 1,
+   "last_was_b2b": false,
+   "rank_pts": 6
+  },
+  "Kolner": {
+   "gp": 11,
+   "w": 5,
+   "reg_wins": 4,
+   "ot_wins": 1,
+   "otl": 2,
+   "l": 4,
+   "pts": 16,
+   "reg_w": 4,
+   "reg_d": 3,
+   "reg_l": 4,
+   "gf_pg": 3.64,
+   "ga_pg": 3.82,
+   "avg_reg_total": 7.18,
+   "sf_pg": 29.8,
+   "sa_pg": 26.9,
+   "shot_share": 0.526,
+   "sh_pct": 0.122,
+   "sv_pct": 0.861,
+   "pdo": 98.3,
+   "pp_pct": 0.27,
+   "pk_pct": 0.795,
+   "reg_draw_rate": 0.273,
+   "over_rate_reg": {
+    "4.5": 0.909,
+    "5.5": 0.727,
+    "6.5": 0.364
+   },
+   "home": {
+    "gp": 8,
+    "w": 3,
+    "reg_wins": 2,
+    "ot_wins": 1,
+    "otl": 2,
+    "l": 3,
+    "pts": 10,
+    "reg_w": 2,
+    "reg_d": 3,
     "reg_l": 3,
-    "gf_pg": 3.43,
-    "ga_pg": 4.0,
-    "avg_reg_total": 7.14
+    "gf_pg": 3.25,
+    "ga_pg": 3.88,
+    "avg_reg_total": 6.75
    },
    "away": {
     "gp": 3,
@@ -542,18 +633,17 @@
     "w": 5,
     "reg_wins": 4,
     "ot_wins": 1,
-    "otl": 1,
-    "l": 4,
-    "pts": 15,
+    "otl": 2,
+    "l": 3,
+    "pts": 16,
     "reg_w": 4,
-    "reg_d": 2,
-    "reg_l": 4,
-    "gf_pg": 3.8,
-    "ga_pg": 3.9,
-    "avg_reg_total": 7.5
+    "reg_d": 3,
+    "reg_l": 3,
+    "gf_pg": 3.6,
+    "ga_pg": 3.4,
+    "avg_reg_total": 6.7
    },
    "last10_log": [
-    "20260918 vs Grizzly Wolfsburg 4-8 L",
     "20260920 vs Frankfurt Lowen 4-3 OTW",
     "20260925 vs Eisbaren Berlin 5-6 OTL",
     "20260927 @ Augsburger Panther 6-4 W",
@@ -562,41 +652,42 @@
     "20261009 vs Schwenninger 1-4 L",
     "20261011 vs Nurnberg Ice Tigers 4-2 W",
     "20261016 @ Iserlohn Roosters 2-4 L",
-    "20261018 vs Bremerhaven 4-1 W"
+    "20261018 vs Bremerhaven 4-1 W",
+    "20261020 vs Schwenninger 2-3 OTL"
    ],
-   "streak": "W1",
-   "last_game_date": "20261018",
-   "days_since_last": 2,
+   "streak": "L1",
+   "last_game_date": "20261020",
+   "days_since_last": 1,
    "last_was_b2b": false,
-   "rank_pts": 6
+   "rank_pts": 7
   },
   "Grizzly Wolfsburg": {
-   "gp": 10,
+   "gp": 11,
    "w": 5,
    "reg_wins": 3,
    "ot_wins": 2,
    "otl": 2,
-   "l": 3,
+   "l": 4,
    "pts": 15,
    "reg_w": 3,
    "reg_d": 4,
-   "reg_l": 3,
-   "gf_pg": 3.0,
-   "ga_pg": 3.1,
-   "avg_reg_total": 5.7,
-   "sf_pg": 27.9,
-   "sa_pg": 32.7,
-   "shot_share": 0.46,
-   "sh_pct": 0.108,
-   "sv_pct": 0.905,
+   "reg_l": 4,
+   "gf_pg": 2.91,
+   "ga_pg": 3.09,
+   "avg_reg_total": 5.64,
+   "sf_pg": 27.3,
+   "sa_pg": 32.8,
+   "shot_share": 0.454,
+   "sh_pct": 0.107,
+   "sv_pct": 0.906,
    "pdo": 101.3,
-   "pp_pct": 0.075,
-   "pk_pct": 0.884,
-   "reg_draw_rate": 0.4,
+   "pp_pct": 0.071,
+   "pk_pct": 0.851,
+   "reg_draw_rate": 0.364,
    "over_rate_reg": {
-    "4.5": 0.8,
-    "5.5": 0.4,
-    "6.5": 0.2
+    "4.5": 0.818,
+    "5.5": 0.364,
+    "6.5": 0.182
    },
    "home": {
     "gp": 5,
@@ -614,37 +705,36 @@
     "avg_reg_total": 4.8
    },
    "away": {
-    "gp": 5,
+    "gp": 6,
     "w": 1,
     "reg_wins": 1,
     "ot_wins": 0,
     "otl": 1,
-    "l": 3,
+    "l": 4,
     "pts": 4,
     "reg_w": 1,
     "reg_d": 1,
-    "reg_l": 3,
-    "gf_pg": 2.8,
-    "ga_pg": 4.0,
-    "avg_reg_total": 6.6
+    "reg_l": 4,
+    "gf_pg": 2.67,
+    "ga_pg": 3.83,
+    "avg_reg_total": 6.33
    },
    "last10": {
     "gp": 10,
-    "w": 5,
-    "reg_wins": 3,
+    "w": 4,
+    "reg_wins": 2,
     "ot_wins": 2,
     "otl": 2,
-    "l": 3,
-    "pts": 15,
-    "reg_w": 3,
+    "l": 4,
+    "pts": 12,
+    "reg_w": 2,
     "reg_d": 4,
-    "reg_l": 3,
-    "gf_pg": 3.0,
-    "ga_pg": 3.1,
-    "avg_reg_total": 5.7
+    "reg_l": 4,
+    "gf_pg": 2.4,
+    "ga_pg": 3.0,
+    "avg_reg_total": 5.0
    },
    "last10_log": [
-    "20260918 @ Kolner 8-4 W",
     "20260920 vs Munchen 4-3 OTW",
     "20260925 vs Schwenninger 3-4 OTL",
     "20260927 vs Bremerhaven 3-2 W",
@@ -653,13 +743,14 @@
     "20261009 @ Eisbaren Berlin 0-5 L",
     "20261011 @ Iserlohn Roosters 2-3 OTL",
     "20261015 vs Krefeld Pinguine 2-1 OTW",
-    "20261018 @ Straubing Tigers 2-3 L"
+    "20261018 @ Straubing Tigers 2-3 L",
+    "20261020 @ ERC Ingolstadt 2-3 L"
    ],
-   "streak": "L1",
-   "last_game_date": "20261018",
-   "days_since_last": 2,
+   "streak": "L2",
+   "last_game_date": "20261020",
+   "days_since_last": 1,
    "last_was_b2b": false,
-   "rank_pts": 7
+   "rank_pts": 8
   },
   "Augsburger Panther": {
    "gp": 10,
@@ -748,98 +839,7 @@
    ],
    "streak": "L2",
    "last_game_date": "20261018",
-   "days_since_last": 2,
-   "last_was_b2b": false,
-   "rank_pts": 8
-  },
-  "ERC Ingolstadt": {
-   "gp": 10,
-   "w": 5,
-   "reg_wins": 3,
-   "ot_wins": 2,
-   "otl": 1,
-   "l": 4,
-   "pts": 14,
-   "reg_w": 3,
-   "reg_d": 3,
-   "reg_l": 4,
-   "gf_pg": 3.1,
-   "ga_pg": 3.4,
-   "avg_reg_total": 6.2,
-   "sf_pg": 30.6,
-   "sa_pg": 29.8,
-   "shot_share": 0.507,
-   "sh_pct": 0.101,
-   "sv_pct": 0.889,
-   "pdo": 99.0,
-   "pp_pct": 0.195,
-   "pk_pct": 0.824,
-   "reg_draw_rate": 0.3,
-   "over_rate_reg": {
-    "4.5": 0.7,
-    "5.5": 0.6,
-    "6.5": 0.4
-   },
-   "home": {
-    "gp": 5,
-    "w": 2,
-    "reg_wins": 1,
-    "ot_wins": 1,
-    "otl": 1,
-    "l": 2,
-    "pts": 6,
-    "reg_w": 1,
-    "reg_d": 2,
-    "reg_l": 2,
-    "gf_pg": 3.2,
-    "ga_pg": 4.0,
-    "avg_reg_total": 6.8
-   },
-   "away": {
-    "gp": 5,
-    "w": 3,
-    "reg_wins": 2,
-    "ot_wins": 1,
-    "otl": 0,
-    "l": 2,
-    "pts": 8,
-    "reg_w": 2,
-    "reg_d": 1,
-    "reg_l": 2,
-    "gf_pg": 3.0,
-    "ga_pg": 2.8,
-    "avg_reg_total": 5.6
-   },
-   "last10": {
-    "gp": 10,
-    "w": 5,
-    "reg_wins": 3,
-    "ot_wins": 2,
-    "otl": 1,
-    "l": 4,
-    "pts": 14,
-    "reg_w": 3,
-    "reg_d": 3,
-    "reg_l": 4,
-    "gf_pg": 3.1,
-    "ga_pg": 3.4,
-    "avg_reg_total": 6.2
-   },
-   "last10_log": [
-    "20260918 @ Iserlohn Roosters 4-3 W",
-    "20260920 vs Nurnberg Ice Tigers 2-6 L",
-    "20260925 @ Straubing Tigers 1-4 L",
-    "20260927 vs Adler Mannheim 3-2 OTW",
-    "20261002 @ Krefeld Pinguine 1-3 L",
-    "20261004 vs Kolner 3-6 L",
-    "20261009 @ Munchen 5-1 W",
-    "20261011 vs Frankfurt Lowen 2-3 OTL",
-    "20261016 @ Schwenninger 4-3 OTW",
-    "20261018 vs Augsburger Panther 6-3 W"
-   ],
-   "streak": "W2",
-   "last_game_date": "20261018",
-   "days_since_last": 2,
+   "days_since_last": 3,
    "last_was_b2b": false,
    "rank_pts": 9
   },
@@ -930,7 +930,7 @@
    ],
    "streak": "L3",
    "last_game_date": "20261018",
-   "days_since_last": 2,
+   "days_since_last": 3,
    "last_was_b2b": false,
    "rank_pts": 10
   },
@@ -1021,7 +1021,7 @@
    ],
    "streak": "W1",
    "last_game_date": "20261018",
-   "days_since_last": 2,
+   "days_since_last": 3,
    "last_was_b2b": false,
    "rank_pts": 11
   },
@@ -1112,37 +1112,37 @@
    ],
    "streak": "L1",
    "last_game_date": "20261018",
-   "days_since_last": 2,
+   "days_since_last": 3,
    "last_was_b2b": false,
    "rank_pts": 12
   },
   "Schwenninger": {
-   "gp": 10,
-   "w": 3,
+   "gp": 11,
+   "w": 4,
    "reg_wins": 2,
-   "ot_wins": 1,
+   "ot_wins": 2,
    "otl": 1,
    "l": 6,
-   "pts": 9,
+   "pts": 11,
    "reg_w": 2,
-   "reg_d": 2,
+   "reg_d": 3,
    "reg_l": 6,
-   "gf_pg": 2.3,
-   "ga_pg": 3.9,
-   "avg_reg_total": 6.0,
-   "sf_pg": 27.3,
-   "sa_pg": 27.9,
-   "shot_share": 0.495,
-   "sh_pct": 0.084,
-   "sv_pct": 0.86,
-   "pdo": 94.4,
-   "pp_pct": 0.073,
-   "pk_pct": 0.737,
-   "reg_draw_rate": 0.2,
+   "gf_pg": 2.36,
+   "ga_pg": 3.73,
+   "avg_reg_total": 5.82,
+   "sf_pg": 26.7,
+   "sa_pg": 27.8,
+   "shot_share": 0.49,
+   "sh_pct": 0.088,
+   "sv_pct": 0.866,
+   "pdo": 95.4,
+   "pp_pct": 0.091,
+   "pk_pct": 0.714,
+   "reg_draw_rate": 0.273,
    "over_rate_reg": {
-    "4.5": 0.9,
-    "5.5": 0.6,
-    "6.5": 0.3
+    "4.5": 0.818,
+    "5.5": 0.545,
+    "6.5": 0.273
    },
    "home": {
     "gp": 4,
@@ -1160,37 +1160,36 @@
     "avg_reg_total": 6.0
    },
    "away": {
-    "gp": 6,
-    "w": 3,
+    "gp": 7,
+    "w": 4,
     "reg_wins": 2,
-    "ot_wins": 1,
+    "ot_wins": 2,
     "otl": 0,
     "l": 3,
-    "pts": 8,
+    "pts": 10,
     "reg_w": 2,
-    "reg_d": 1,
+    "reg_d": 2,
     "reg_l": 3,
-    "gf_pg": 2.5,
-    "ga_pg": 3.67,
-    "avg_reg_total": 6.0
+    "gf_pg": 2.57,
+    "ga_pg": 3.43,
+    "avg_reg_total": 5.71
    },
    "last10": {
     "gp": 10,
-    "w": 3,
+    "w": 4,
     "reg_wins": 2,
-    "ot_wins": 1,
+    "ot_wins": 2,
     "otl": 1,
-    "l": 6,
-    "pts": 9,
+    "l": 5,
+    "pts": 11,
     "reg_w": 2,
-    "reg_d": 2,
-    "reg_l": 6,
-    "gf_pg": 2.3,
-    "ga_pg": 3.9,
-    "avg_reg_total": 6.0
+    "reg_d": 3,
+    "reg_l": 5,
+    "gf_pg": 2.6,
+    "ga_pg": 3.6,
+    "avg_reg_total": 5.9
    },
    "last10_log": [
-    "20260918 vs Frankfurt Lowen 0-5 L",
     "20260920 @ Augsburger Panther 3-7 L",
     "20260925 @ Grizzly Wolfsburg 4-3 OTW",
     "20260927 @ Krefeld Pinguine 2-5 L",
@@ -1199,11 +1198,12 @@
     "20261009 @ Kolner 4-1 W",
     "20261011 vs Munchen 3-4 L",
     "20261016 vs ERC Ingolstadt 3-4 OTL",
-    "20261018 @ Adler Mannheim 2-1 W"
+    "20261018 @ Adler Mannheim 2-1 W",
+    "20261020 @ Kolner 3-2 OTW"
    ],
-   "streak": "W1",
-   "last_game_date": "20261018",
-   "days_since_last": 2,
+   "streak": "W2",
+   "last_game_date": "20261020",
+   "days_since_last": 1,
    "last_was_b2b": false,
    "rank_pts": 13
   },
@@ -1294,7 +1294,7 @@
    ],
    "streak": "L1",
    "last_game_date": "20261018",
-   "days_since_last": 2,
+   "days_since_last": 3,
    "last_was_b2b": false,
    "rank_pts": 14
   }
@@ -1487,6 +1487,38 @@
     "20260927 @ Grizzly Wolfsburg 24/27 L"
    ]
   },
+  "ERC Ingolstadt|bmQH6jA5": {
+   "name": "Stettmer J.",
+   "team": "ERC Ingolstadt",
+   "starts": 6,
+   "w": 3,
+   "gp_with_sv": 6,
+   "sv_pct": 0.879,
+   "gaa": 3.67,
+   "last5_starts": {
+    "gp_with_sv": 5,
+    "sv_pct": 0.896,
+    "gaa": 3.2
+   },
+   "home": {
+    "gp_with_sv": 3,
+    "sv_pct": 0.823,
+    "gaa": 4.67
+   },
+   "away": {
+    "gp_with_sv": 3,
+    "sv_pct": 0.922,
+    "gaa": 2.67
+   },
+   "last_start_date": "20261020",
+   "log": [
+    "20260925 @ Straubing Tigers 39/43 L",
+    "20261004 vs Kolner 24/30 L",
+    "20261009 @ Munchen 31/32 W",
+    "20261016 @ Schwenninger 25/28 W",
+    "20261020 vs Grizzly Wolfsburg 19/21 W"
+   ]
+  },
   "ERC Ingolstadt|My7aoYs8": {
    "name": "Williams D.",
    "team": "ERC Ingolstadt",
@@ -1517,38 +1549,6 @@
     "20261002 @ Krefeld Pinguine 29/32 L",
     "20261011 vs Frankfurt Lowen 17/19 L",
     "20261018 vs Augsburger Panther 22/25 W"
-   ]
-  },
-  "ERC Ingolstadt|bmQH6jA5": {
-   "name": "Stettmer J.",
-   "team": "ERC Ingolstadt",
-   "starts": 5,
-   "w": 2,
-   "gp_with_sv": 5,
-   "sv_pct": 0.876,
-   "gaa": 4.0,
-   "last5_starts": {
-    "gp_with_sv": 5,
-    "sv_pct": 0.876,
-    "gaa": 4.0
-   },
-   "home": {
-    "gp_with_sv": 2,
-    "sv_pct": 0.793,
-    "gaa": 6.0
-   },
-   "away": {
-    "gp_with_sv": 3,
-    "sv_pct": 0.922,
-    "gaa": 2.67
-   },
-   "last_start_date": "20261016",
-   "log": [
-    "20260920 vs Nurnberg Ice Tigers 22/28 L",
-    "20260925 @ Straubing Tigers 39/43 L",
-    "20261004 vs Kolner 24/30 L",
-    "20261009 @ Munchen 31/32 W",
-    "20261016 @ Schwenninger 25/28 W"
    ]
   },
   "Eisbaren Berlin|CYw6IUla": {
@@ -1705,15 +1705,15 @@
   "Grizzly Wolfsburg|SADYYKN0": {
    "name": "Strahlmeier D.",
    "team": "Grizzly Wolfsburg",
-   "starts": 8,
+   "starts": 9,
    "w": 4,
-   "gp_with_sv": 8,
-   "sv_pct": 0.898,
-   "gaa": 3.25,
+   "gp_with_sv": 9,
+   "sv_pct": 0.9,
+   "gaa": 3.22,
    "last5_starts": {
     "gp_with_sv": 5,
-    "sv_pct": 0.886,
-    "gaa": 3.4
+    "sv_pct": 0.901,
+    "gaa": 3.0
    },
    "home": {
     "gp_with_sv": 3,
@@ -1721,17 +1721,17 @@
     "gaa": 2.0
    },
    "away": {
-    "gp_with_sv": 5,
-    "sv_pct": 0.866,
-    "gaa": 4.0
+    "gp_with_sv": 6,
+    "sv_pct": 0.874,
+    "gaa": 3.83
    },
-   "last_start_date": "20261018",
+   "last_start_date": "20261020",
    "log": [
-    "20261002 @ Augsburger Panther 27/32 L",
     "20261009 @ Eisbaren Berlin 27/32 L",
     "20261011 @ Iserlohn Roosters 27/30 L",
     "20261015 vs Krefeld Pinguine 30/31 W",
-    "20261018 @ Straubing Tigers 21/24 L"
+    "20261018 @ Straubing Tigers 21/24 L",
+    "20261020 @ ERC Ingolstadt 31/34 L"
    ]
   },
   "Grizzly Wolfsburg|MBibRK3f": {
@@ -1830,33 +1830,33 @@
   "Kolner|bB31nbSI": {
    "name": "Juvonen J.",
    "team": "Kolner",
-   "starts": 8,
+   "starts": 9,
    "w": 4,
-   "gp_with_sv": 8,
+   "gp_with_sv": 9,
    "sv_pct": 0.857,
-   "gaa": 3.75,
+   "gaa": 3.67,
    "last5_starts": {
     "gp_with_sv": 5,
-    "sv_pct": 0.896,
-    "gaa": 2.8
+    "sv_pct": 0.89,
+    "gaa": 2.6
    },
    "home": {
-    "gp_with_sv": 6,
-    "sv_pct": 0.848,
-    "gaa": 3.83
+    "gp_with_sv": 7,
+    "sv_pct": 0.849,
+    "gaa": 3.71
    },
    "away": {
     "gp_with_sv": 2,
     "sv_pct": 0.881,
     "gaa": 3.5
    },
-   "last_start_date": "20261018",
+   "last_start_date": "20261020",
    "log": [
-    "20261002 vs Munchen 34/38 L",
     "20261004 @ ERC Ingolstadt 31/34 W",
     "20261011 vs Nurnberg Ice Tigers 11/13 W",
     "20261016 @ Iserlohn Roosters 21/25 L",
-    "20261018 vs Bremerhaven 24/25 W"
+    "20261018 vs Bremerhaven 24/25 W",
+    "20261020 vs Schwenninger 18/21 L"
    ]
   },
   "Kolner|lGxxodU8": {
@@ -2103,15 +2103,15 @@
   "Schwenninger|dCl5aP7q": {
    "name": "Eriksson J.",
    "team": "Schwenninger",
-   "starts": 7,
-   "w": 2,
-   "gp_with_sv": 7,
-   "sv_pct": 0.853,
-   "gaa": 3.86,
+   "starts": 8,
+   "w": 3,
+   "gp_with_sv": 8,
+   "sv_pct": 0.863,
+   "gaa": 3.62,
    "last5_starts": {
     "gp_with_sv": 5,
-    "sv_pct": 0.871,
-    "gaa": 3.8
+    "sv_pct": 0.888,
+    "gaa": 3.2
    },
    "home": {
     "gp_with_sv": 3,
@@ -2119,17 +2119,17 @@
     "gaa": 4.33
    },
    "away": {
-    "gp_with_sv": 4,
-    "sv_pct": 0.875,
-    "gaa": 3.5
+    "gp_with_sv": 5,
+    "sv_pct": 0.885,
+    "gaa": 3.2
    },
-   "last_start_date": "20261016",
+   "last_start_date": "20261020",
    "log": [
-    "20260927 @ Krefeld Pinguine 26/31 L",
     "20261002 @ Nurnberg Ice Tigers 18/23 L",
     "20261009 @ Kolner 34/35 W",
     "20261011 vs Munchen 24/28 L",
-    "20261016 vs ERC Ingolstadt 26/30 L"
+    "20261016 vs ERC Ingolstadt 26/30 L",
+    "20261020 @ Kolner 25/27 W"
    ]
   },
   "Schwenninger|E3FWlEgN": {
@@ -2303,31 +2303,31 @@
   ],
   "ERC Ingolstadt": [
    {
+    "name": "Abbandonato P.",
+    "g": 5,
+    "a": 9,
+    "pts": 14
+   },
+   {
     "name": "Barber R.",
     "g": 6,
     "a": 5,
     "pts": 11
    },
    {
-    "name": "Abbandonato P.",
-    "g": 4,
-    "a": 7,
-    "pts": 11
-   },
-   {
     "name": "Schmolz D.",
-    "g": 5,
+    "g": 6,
     "a": 3,
-    "pts": 8
-   },
-   {
-    "name": "Agostino K.",
-    "g": 2,
-    "a": 6,
-    "pts": 8
+    "pts": 9
    },
    {
     "name": "Breton A.",
+    "g": 2,
+    "a": 7,
+    "pts": 9
+   },
+   {
+    "name": "Agostino K.",
     "g": 2,
     "a": 6,
     "pts": 8
@@ -2391,6 +2391,12 @@
     "pts": 9
    },
    {
+    "name": "Morley T.",
+    "g": 4,
+    "a": 5,
+    "pts": 9
+   },
+   {
     "name": "Lynch R.",
     "g": 3,
     "a": 5,
@@ -2398,12 +2404,6 @@
    },
    {
     "name": "Schinko L.",
-    "g": 3,
-    "a": 4,
-    "pts": 7
-   },
-   {
-    "name": "Morley T.",
     "g": 3,
     "a": 4,
     "pts": 7
@@ -2419,26 +2419,26 @@
    {
     "name": "Noebels M.",
     "g": 7,
-    "a": 5,
-    "pts": 12
+    "a": 6,
+    "pts": 13
    },
    {
     "name": "Russell P.",
     "g": 2,
-    "a": 10,
-    "pts": 12
+    "a": 11,
+    "pts": 13
+   },
+   {
+    "name": "Ljungh M.",
+    "g": 5,
+    "a": 6,
+    "pts": 11
    },
    {
     "name": "Aubry L.",
     "g": 5,
     "a": 6,
     "pts": 11
-   },
-   {
-    "name": "Ljungh M.",
-    "g": 4,
-    "a": 6,
-    "pts": 10
    },
    {
     "name": "MacLeod G.",
@@ -2449,8 +2449,8 @@
    {
     "name": "Press R.",
     "g": 1,
-    "a": 7,
-    "pts": 8
+    "a": 8,
+    "pts": 9
    }
   ],
   "Bremerhaven": [
@@ -2722,38 +2722,38 @@
   "Schwenninger": [
    {
     "name": "Hofflin M.",
-    "g": 5,
+    "g": 6,
     "a": 3,
-    "pts": 8
+    "pts": 9
    },
    {
     "name": "Feist P.",
-    "g": 4,
+    "g": 5,
     "a": 4,
-    "pts": 8
+    "pts": 9
    },
    {
     "name": "Platzer K.",
     "g": 1,
-    "a": 5,
-    "pts": 6
+    "a": 6,
+    "pts": 7
+   },
+   {
+    "name": "Hanelt H.",
+    "g": 1,
+    "a": 6,
+    "pts": 7
    },
    {
     "name": "Martinsson E.",
     "g": 0,
-    "a": 6,
-    "pts": 6
+    "a": 7,
+    "pts": 7
    },
    {
     "name": "Uvira S.",
     "g": 2,
     "a": 3,
-    "pts": 5
-   },
-   {
-    "name": "Hanelt H.",
-    "g": 0,
-    "a": 5,
     "pts": 5
    }
   ]
@@ -3955,7 +3955,8 @@
    "20250919 Grizzly Wolfsburg 2-3 ERC Ingolstadt",
    "20251121 ERC Ingolstadt 4-2 Grizzly Wolfsburg",
    "20251228 Grizzly Wolfsburg 1-2 ERC Ingolstadt (SO)",
-   "20260304 ERC Ingolstadt 1-4 Grizzly Wolfsburg"
+   "20260304 ERC Ingolstadt 1-4 Grizzly Wolfsburg",
+   "20261020 Grizzly Wolfsburg 2-3 ERC Ingolstadt"
   ],
   "Iserlohn Roosters | Nurnberg Ice Tigers": [
    "20250919 Nurnberg Ice Tigers 5-6 Iserlohn Roosters (SO)",
@@ -3971,11 +3972,11 @@
    "20261004 Augsburger Panther 2-4 Munchen"
   ],
   "Kolner | Schwenninger": [
-   "20260325 Kolner 1-0 Schwenninger",
    "20260327 Schwenninger 2-4 Kolner",
    "20260329 Kolner 4-2 Schwenninger",
    "20260331 Schwenninger 1-2 Kolner (OT)",
-   "20261009 Schwenninger 4-1 Kolner"
+   "20261009 Schwenninger 4-1 Kolner",
+   "20261020 Schwenninger 3-2 Kolner (OT)"
   ],
   "Bremerhaven | Eisbaren Berlin": [
    "20250921 Eisbaren Berlin 1-5 Bremerhaven",
