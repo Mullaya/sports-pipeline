@@ -1,0 +1,5791 @@
+{
+  "date": "20261025",
+  "league": "KHL",
+  "games": [
+    {
+      "game_id": 3000871,
+      "khl_id": 902180,
+      "stage_id": 407,
+      "game_type": "REG",
+      "start_utc": "2026-10-25T07:00:00Z",
+      "venue": "Platinum Arena",
+      "venue_city": "Khabarovsk",
+      "home_verified": true,
+      "home_team": "Amur",
+      "away_team": "Admiral",
+      "home_team_id": 12,
+      "away_team_id": 61,
+      "home_score": 3,
+      "away_score": 0,
+      "total_goals": 3,
+      "end_type": "REG",
+      "reg_home_score": 3,
+      "reg_away_score": 0,
+      "reg_total_goals": 3,
+      "winner": "Amur",
+      "period_scores": [
+        {
+          "period": 1,
+          "type": "REG",
+          "home": 3,
+          "away": 0
+        },
+        {
+          "period": 2,
+          "type": "REG",
+          "home": 0,
+          "away": 0
+        },
+        {
+          "period": 3,
+          "type": "REG",
+          "home": 0,
+          "away": 0
+        }
+      ],
+      "home_stats": {
+        "shots": 24,
+        "pp_goals": 2,
+        "pp_opps": 4,
+        "sh_goals": 0,
+        "pim": 8,
+        "fo_won": 21
+      },
+      "away_stats": {
+        "shots": 33,
+        "pp_goals": 0,
+        "pp_opps": 4,
+        "sh_goals": 0,
+        "pim": 6,
+        "fo_won": 33
+      },
+      "home_goalies": [
+        {
+          "player_id": 3737,
+          "name": "Trushkov Alexander A.",
+          "number": 1,
+          "role": "goaltender",
+          "stats": {
+            "toi": 60.0,
+            "pim": 0,
+            "topSpeed": 0.0,
+            "distanceTravelled": 0.0,
+            "allPasses": 5,
+            "successfulPasses": 5
+          },
+          "toi": 60.0,
+          "starter": true,
+          "shots_against": 33,
+          "goals_against": 0,
+          "saves": 33,
+          "sv_pct": 1.0
+        }
+      ],
+      "away_goalies": [
+        {
+          "player_id": 32829,
+          "name": "Boyarkin Nikita",
+          "number": 1,
+          "role": "goaltender",
+          "stats": {
+            "toi": 60.0,
+            "pim": 0,
+            "topSpeed": 0.0,
+            "distanceTravelled": 0.0,
+            "allPasses": 4,
+            "successfulPasses": 3
+          },
+          "toi": 60.0,
+          "starter": true,
+          "shots_against": 24,
+          "goals_against": 3,
+          "saves": 21,
+          "sv_pct": 0.875
+        }
+      ],
+      "home_skaters": [
+        {
+          "player_id": 33797,
+          "name": "Abramov Vitaly",
+          "number": 11,
+          "role": "forward",
+          "stats": {
+            "shots": 2,
+            "goals": 2,
+            "fo": 16,
+            "fow": 8,
+            "toi": 17.2666666666667,
+            "si": 22,
+            "pim": 0,
+            "hits": 0,
+            "bls": 3,
+            "topSpeed": 32.15,
+            "distanceTravelled": 4.16,
+            "allPasses": 21,
+            "successfulPasses": 18
+          }
+        },
+        {
+          "player_id": 50212,
+          "name": "Borin Boris",
+          "number": 25,
+          "role": "forward",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 7.15,
+            "si": 11,
+            "pim": 2,
+            "hits": 0,
+            "bls": 1,
+            "topSpeed": 34.09,
+            "distanceTravelled": 1.83,
+            "allPasses": 3,
+            "successfulPasses": 3
+          }
+        },
+        {
+          "player_id": 2405,
+          "name": "Vasilevsky Alexei A.",
+          "number": 93,
+          "role": "defensemen",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 16.0333333333333,
+            "si": 25,
+            "pim": 0,
+            "hits": 1,
+            "bls": 3,
+            "topSpeed": 33.98,
+            "distanceTravelled": 3.3,
+            "allPasses": 10,
+            "successfulPasses": 8
+          }
+        },
+        {
+          "player_id": 5931,
+          "name": "Voynov Vyacheslav",
+          "number": 26,
+          "role": "defensemen",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 19.4166666666667,
+            "si": 27,
+            "pim": 0,
+            "hits": 1,
+            "bls": 2,
+            "topSpeed": 28.19,
+            "distanceTravelled": 3.98,
+            "allPasses": 23,
+            "successfulPasses": 23
+          }
+        },
+        {
+          "player_id": 5367,
+          "name": "Voronkov Yegor",
+          "number": 57,
+          "role": "defensemen",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 19.6166666666667,
+            "si": 31,
+            "pim": 2,
+            "hits": 3,
+            "bls": 0,
+            "topSpeed": 29.95,
+            "distanceTravelled": 4.39,
+            "allPasses": 18,
+            "successfulPasses": 15
+          }
+        },
+        {
+          "player_id": 48479,
+          "name": "Dyominsky Yaroslav",
+          "number": 2,
+          "role": "defensemen",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 12.7,
+            "si": 23,
+            "pim": 2,
+            "hits": 0,
+            "bls": 4,
+            "topSpeed": 29.2,
+            "distanceTravelled": 2.72,
+            "allPasses": 10,
+            "successfulPasses": 9
+          }
+        },
+        {
+          "player_id": 37759,
+          "name": "Klimovich Ivan",
+          "number": 16,
+          "role": "forward",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 13,
+            "fow": 6,
+            "toi": 11.7,
+            "si": 16,
+            "pim": 0,
+            "hits": 0,
+            "bls": 1,
+            "topSpeed": 32.44,
+            "distanceTravelled": 2.79,
+            "allPasses": 8,
+            "successfulPasses": 8
+          }
+        },
+        {
+          "player_id": 34949,
+          "name": "Kostenko Dmitry",
+          "number": 8,
+          "role": "defensemen",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 18.5,
+            "si": 29,
+            "pim": 0,
+            "hits": 0,
+            "bls": 2,
+            "topSpeed": 31.07,
+            "distanceTravelled": 3.82,
+            "allPasses": 12,
+            "successfulPasses": 9
+          }
+        },
+        {
+          "player_id": 31033,
+          "name": "Krovyakov Maxim",
+          "number": 88,
+          "role": "forward",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 5,
+            "fow": 1,
+            "toi": 10.45,
+            "si": 16,
+            "pim": 0,
+            "hits": 3,
+            "bls": 0,
+            "topSpeed": 30.24,
+            "distanceTravelled": 2.7,
+            "allPasses": 5,
+            "successfulPasses": 4
+          }
+        },
+        {
+          "player_id": 42143,
+          "name": "Kuzmin Grigory D.",
+          "number": 56,
+          "role": "forward",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 9.41666666666667,
+            "si": 13,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 31.57,
+            "distanceTravelled": 2.43,
+            "allPasses": 7,
+            "successfulPasses": 7
+          }
+        },
+        {
+          "player_id": 4649,
+          "name": "Li Oleg",
+          "number": 90,
+          "role": "forward",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 16.8333333333333,
+            "si": 21,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 34.67,
+            "distanceTravelled": 4.16,
+            "allPasses": 22,
+            "successfulPasses": 17
+          }
+        },
+        {
+          "player_id": 37135,
+          "name": "Likhachyov Yaroslav",
+          "number": 10,
+          "role": "forward",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 13.2166666666667,
+            "si": 21,
+            "pim": 0,
+            "hits": 0,
+            "bls": 1,
+            "topSpeed": 33.37,
+            "distanceTravelled": 3.46,
+            "allPasses": 14,
+            "successfulPasses": 12
+          }
+        },
+        {
+          "player_id": 29061,
+          "name": "Lukin Konstantin",
+          "number": 34,
+          "role": "forward",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 13.1833333333333,
+            "si": 20,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 35.17,
+            "distanceTravelled": 3.32,
+            "allPasses": 13,
+            "successfulPasses": 9
+          }
+        },
+        {
+          "player_id": 36747,
+          "name": "Machulin Vasily",
+          "number": 23,
+          "role": "defensemen",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 15.1666666666667,
+            "si": 21,
+            "pim": 0,
+            "hits": 0,
+            "bls": 4,
+            "topSpeed": 31.1,
+            "distanceTravelled": 3.22,
+            "allPasses": 28,
+            "successfulPasses": 22
+          }
+        },
+        {
+          "player_id": 18529,
+          "name": "Petkov Kirill",
+          "number": 98,
+          "role": "forward",
+          "stats": {
+            "shots": 5,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 13.95,
+            "si": 22,
+            "pim": 0,
+            "hits": 0,
+            "bls": 1,
+            "topSpeed": 36.14,
+            "distanceTravelled": 3.31,
+            "allPasses": 7,
+            "successfulPasses": 5
+          }
+        },
+        {
+          "player_id": 5839,
+          "name": "Pilipenko Kirill",
+          "number": 13,
+          "role": "forward",
+          "stats": {
+            "shots": 5,
+            "goals": 1,
+            "fo": 0,
+            "fow": 0,
+            "toi": 17.2166666666667,
+            "si": 23,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 31.54,
+            "distanceTravelled": 4.31,
+            "allPasses": 28,
+            "successfulPasses": 23
+          }
+        },
+        {
+          "player_id": 30357,
+          "name": "Solovyov Alexei A.",
+          "number": 24,
+          "role": "defensemen",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 15.9833333333333,
+            "si": 26,
+            "pim": 0,
+            "hits": 0,
+            "bls": 1,
+            "topSpeed": 30.06,
+            "distanceTravelled": 3.2,
+            "allPasses": 10,
+            "successfulPasses": 5
+          }
+        },
+        {
+          "player_id": 8887,
+          "name": "Urakov Kirill",
+          "number": 21,
+          "role": "forward",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 2,
+            "fow": 0,
+            "toi": 14.6666666666667,
+            "si": 22,
+            "pim": 2,
+            "hits": 3,
+            "bls": 1,
+            "topSpeed": 33.01,
+            "distanceTravelled": 3.35,
+            "allPasses": 19,
+            "successfulPasses": 11
+          }
+        },
+        {
+          "player_id": 50280,
+          "name": "Khrapov Fyodor",
+          "number": 4,
+          "role": "forward",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 6,
+            "fow": 0,
+            "toi": 12.45,
+            "si": 18,
+            "pim": 0,
+            "hits": 1,
+            "bls": 1,
+            "topSpeed": 35.39,
+            "distanceTravelled": 3.06,
+            "allPasses": 12,
+            "successfulPasses": 9
+          }
+        },
+        {
+          "player_id": 31465,
+          "name": "Shvaryov Artyom",
+          "number": 77,
+          "role": "forward",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 12,
+            "fow": 6,
+            "toi": 13.3,
+            "si": 21,
+            "pim": 0,
+            "hits": 0,
+            "bls": 1,
+            "topSpeed": 33.3,
+            "distanceTravelled": 3.64,
+            "allPasses": 15,
+            "successfulPasses": 12
+          }
+        }
+      ],
+      "away_skaters": [
+        {
+          "player_id": 47707,
+          "name": "Bulavchuk Oskar",
+          "number": 72,
+          "role": "forward",
+          "stats": {
+            "shots": 3,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 14.4,
+            "si": 19,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 32.54,
+            "distanceTravelled": 3.89,
+            "allPasses": 29,
+            "successfulPasses": 21
+          }
+        },
+        {
+          "player_id": 3957,
+          "name": "Vashchenko Grigory",
+          "number": 16,
+          "role": "defensemen",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 11.1333333333333,
+            "si": 15,
+            "pim": 0,
+            "hits": 0,
+            "bls": 1,
+            "topSpeed": 30.56,
+            "distanceTravelled": 2.53,
+            "allPasses": 14,
+            "successfulPasses": 10
+          }
+        },
+        {
+          "player_id": 36719,
+          "name": "Volkov Alexander S.",
+          "number": 97,
+          "role": "forward",
+          "stats": {
+            "shots": 3,
+            "goals": 0,
+            "fo": 1,
+            "fow": 0,
+            "toi": 14.75,
+            "si": 22,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 34.56,
+            "distanceTravelled": 3.54,
+            "allPasses": 13,
+            "successfulPasses": 11
+          }
+        },
+        {
+          "player_id": 39667,
+          "name": "Grass Mikhail",
+          "number": 15,
+          "role": "forward",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 16,
+            "fow": 8,
+            "toi": 11.0,
+            "si": 18,
+            "pim": 2,
+            "hits": 2,
+            "bls": 0,
+            "topSpeed": 32.8,
+            "distanceTravelled": 2.6,
+            "allPasses": 13,
+            "successfulPasses": 10
+          }
+        },
+        {
+          "player_id": 27361,
+          "name": "Yefremov Nikita",
+          "number": 94,
+          "role": "defensemen",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 18.4166666666667,
+            "si": 25,
+            "pim": 0,
+            "hits": 1,
+            "bls": 3,
+            "topSpeed": 29.34,
+            "distanceTravelled": 3.98,
+            "allPasses": 18,
+            "successfulPasses": 15
+          }
+        },
+        {
+          "player_id": 38603,
+          "name": "Zhukov Kirill",
+          "number": 44,
+          "role": "defensemen",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 11.05,
+            "si": 17,
+            "pim": 0,
+            "hits": 1,
+            "bls": 0,
+            "topSpeed": 32.54,
+            "distanceTravelled": 2.59,
+            "allPasses": 15,
+            "successfulPasses": 12
+          }
+        },
+        {
+          "player_id": 31321,
+          "name": "Zavgorodny Dmitry",
+          "number": 17,
+          "role": "forward",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 16.5166666666667,
+            "si": 21,
+            "pim": 0,
+            "hits": 1,
+            "bls": 0,
+            "topSpeed": 33.8,
+            "distanceTravelled": 4.03,
+            "allPasses": 27,
+            "successfulPasses": 24
+          }
+        },
+        {
+          "player_id": 38459,
+          "name": "Ibragimov Semyon",
+          "number": 28,
+          "role": "defensemen",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 19.1166666666667,
+            "si": 25,
+            "pim": 0,
+            "hits": 0,
+            "bls": 4,
+            "topSpeed": 33.37,
+            "distanceTravelled": 4.1,
+            "allPasses": 22,
+            "successfulPasses": 18
+          }
+        },
+        {
+          "player_id": 35855,
+          "name": "Camara Anthony",
+          "number": 36,
+          "role": "forward",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 18.55,
+            "si": 20,
+            "pim": 0,
+            "hits": 1,
+            "bls": 0,
+            "topSpeed": 34.78,
+            "distanceTravelled": 4.62,
+            "allPasses": 24,
+            "successfulPasses": 15
+          }
+        },
+        {
+          "player_id": 40551,
+          "name": "Kudashov Artyom",
+          "number": 23,
+          "role": "defensemen",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 11.1833333333333,
+            "si": 14,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 32.58,
+            "distanceTravelled": 2.59,
+            "allPasses": 15,
+            "successfulPasses": 12
+          }
+        },
+        {
+          "player_id": 16903,
+          "name": "Moiseyev Danila",
+          "number": 93,
+          "role": "forward",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 10,
+            "fow": 7,
+            "toi": 13.5166666666667,
+            "si": 18,
+            "pim": 0,
+            "hits": 1,
+            "bls": 0,
+            "topSpeed": 32.44,
+            "distanceTravelled": 3.66,
+            "allPasses": 16,
+            "successfulPasses": 11
+          }
+        },
+        {
+          "player_id": 19137,
+          "name": "Morozov Ilya D.",
+          "number": 7,
+          "role": "defensemen",
+          "stats": {
+            "shots": 3,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 18.2333333333333,
+            "si": 25,
+            "pim": 2,
+            "hits": 1,
+            "bls": 0,
+            "topSpeed": 32.26,
+            "distanceTravelled": 4.07,
+            "allPasses": 26,
+            "successfulPasses": 22
+          }
+        },
+        {
+          "player_id": 17155,
+          "name": "Muranov Ivan",
+          "number": 71,
+          "role": "forward",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 15.85,
+            "si": 20,
+            "pim": 2,
+            "hits": 2,
+            "bls": 0,
+            "topSpeed": 34.49,
+            "distanceTravelled": 3.65,
+            "allPasses": 8,
+            "successfulPasses": 5
+          }
+        },
+        {
+          "player_id": 50252,
+          "name": "Mukhtarov Dmitry",
+          "number": 45,
+          "role": "forward",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 13.1,
+            "si": 16,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 32.47,
+            "distanceTravelled": 2.89,
+            "allPasses": 8,
+            "successfulPasses": 6
+          }
+        },
+        {
+          "player_id": 46987,
+          "name": "Olson Kyle",
+          "number": 25,
+          "role": "forward",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 6,
+            "fow": 5,
+            "toi": 15.9333333333333,
+            "si": 20,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 33.48,
+            "distanceTravelled": 3.97,
+            "allPasses": 26,
+            "successfulPasses": 23
+          }
+        },
+        {
+          "player_id": 21225,
+          "name": "Rendulic Borna",
+          "number": 22,
+          "role": "forward",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 16.0666666666667,
+            "si": 21,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 33.55,
+            "distanceTravelled": 4.06,
+            "allPasses": 24,
+            "successfulPasses": 19
+          }
+        },
+        {
+          "player_id": 30949,
+          "name": "Tsitsyura Vladislav",
+          "number": 9,
+          "role": "forward",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 14,
+            "fow": 10,
+            "toi": 15.5333333333333,
+            "si": 22,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 32.0,
+            "distanceTravelled": 3.72,
+            "allPasses": 17,
+            "successfulPasses": 14
+          }
+        },
+        {
+          "player_id": 27309,
+          "name": "Sulak Libor",
+          "number": 73,
+          "role": "defensemen",
+          "stats": {
+            "shots": 7,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 25.7666666666667,
+            "si": 28,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 31.1,
+            "distanceTravelled": 5.44,
+            "allPasses": 38,
+            "successfulPasses": 36
+          }
+        },
+        {
+          "player_id": 40347,
+          "name": "Yanchenko Ivan",
+          "number": 70,
+          "role": "forward",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 7,
+            "fow": 3,
+            "toi": 11.4833333333333,
+            "si": 18,
+            "pim": 0,
+            "hits": 0,
+            "bls": 1,
+            "topSpeed": 32.98,
+            "distanceTravelled": 3.0,
+            "allPasses": 14,
+            "successfulPasses": 9
+          }
+        }
+      ],
+      "goals": [
+        {
+          "period": 1,
+          "time_s": 1118,
+          "score": "3:0",
+          "type": "PP",
+          "author": "Pilipenko Kirill"
+        },
+        {
+          "period": 1,
+          "time_s": 913,
+          "score": "2:0",
+          "type": "ES",
+          "author": "Abramov Vitaly"
+        },
+        {
+          "period": 1,
+          "time_s": 842,
+          "score": "1:0",
+          "type": "PP",
+          "author": "Abramov Vitaly"
+        }
+      ]
+    },
+    {
+      "game_id": 3000883,
+      "khl_id": 902183,
+      "stage_id": 407,
+      "game_type": "REG",
+      "start_utc": "2026-10-25T11:00:00Z",
+      "venue": "Lada-Arena",
+      "venue_city": "Togliatti",
+      "home_verified": true,
+      "home_team": "Lada",
+      "away_team": "HC Sochi",
+      "home_team_id": 105,
+      "away_team_id": 113,
+      "home_score": 3,
+      "away_score": 4,
+      "total_goals": 7,
+      "end_type": "REG",
+      "reg_home_score": 3,
+      "reg_away_score": 4,
+      "reg_total_goals": 7,
+      "winner": "HC Sochi",
+      "period_scores": [
+        {
+          "period": 1,
+          "type": "REG",
+          "home": 1,
+          "away": 2
+        },
+        {
+          "period": 2,
+          "type": "REG",
+          "home": 1,
+          "away": 1
+        },
+        {
+          "period": 3,
+          "type": "REG",
+          "home": 1,
+          "away": 1
+        }
+      ],
+      "home_stats": {
+        "shots": 33,
+        "pp_goals": 1,
+        "pp_opps": 3,
+        "sh_goals": 0,
+        "pim": 6,
+        "fo_won": 27
+      },
+      "away_stats": {
+        "shots": 31,
+        "pp_goals": 1,
+        "pp_opps": 2,
+        "sh_goals": 0,
+        "pim": 4,
+        "fo_won": 20
+      },
+      "home_goalies": [
+        {
+          "player_id": 32341,
+          "name": "Mishurov Andrei",
+          "number": 1,
+          "role": "goaltender",
+          "stats": {
+            "toi": 58.2833333333333,
+            "pim": 0,
+            "topSpeed": 0.0,
+            "distanceTravelled": 0.0,
+            "allPasses": 11,
+            "successfulPasses": 10
+          },
+          "toi": 58.28,
+          "starter": true,
+          "shots_against": 31,
+          "goals_against": 4,
+          "saves": 27,
+          "sv_pct": 0.871
+        }
+      ],
+      "away_goalies": [
+        {
+          "player_id": 44735,
+          "name": "Andreyanov Pyotr",
+          "number": 1,
+          "role": "goaltender",
+          "stats": {
+            "toi": 60.0,
+            "pim": 0,
+            "topSpeed": 0.0,
+            "distanceTravelled": 0.0,
+            "allPasses": 4,
+            "successfulPasses": 4
+          },
+          "toi": 60.0,
+          "starter": true,
+          "shots_against": 33,
+          "goals_against": 3,
+          "saves": 30,
+          "sv_pct": 0.909
+        }
+      ],
+      "home_skaters": [
+        {
+          "player_id": 18359,
+          "name": "Altybarmakyan Andrei",
+          "number": 84,
+          "role": "forward",
+          "stats": {
+            "shots": 2,
+            "goals": 1,
+            "fo": 0,
+            "fow": 0,
+            "toi": 15.3333333333333,
+            "si": 19,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 31.46,
+            "distanceTravelled": 3.56,
+            "allPasses": 14,
+            "successfulPasses": 12
+          }
+        },
+        {
+          "player_id": 47527,
+          "name": "Belousov Maxim",
+          "number": 64,
+          "role": "defensemen",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 11.8666666666667,
+            "si": 20,
+            "pim": 0,
+            "hits": 1,
+            "bls": 0,
+            "topSpeed": 29.12,
+            "distanceTravelled": 2.61,
+            "allPasses": 13,
+            "successfulPasses": 11
+          }
+        },
+        {
+          "player_id": 16831,
+          "name": "Belyayev Mikhail",
+          "number": 83,
+          "role": "forward",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 2,
+            "fow": 1,
+            "toi": 13.35,
+            "si": 19,
+            "pim": 0,
+            "hits": 2,
+            "bls": 0,
+            "topSpeed": 31.03,
+            "distanceTravelled": 3.07,
+            "allPasses": 7,
+            "successfulPasses": 4
+          }
+        },
+        {
+          "player_id": 5383,
+          "name": "Volkov Artyom A.",
+          "number": 49,
+          "role": "defensemen",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 17.9666666666667,
+            "si": 26,
+            "pim": 0,
+            "hits": 0,
+            "bls": 2,
+            "topSpeed": 29.81,
+            "distanceTravelled": 3.84,
+            "allPasses": 30,
+            "successfulPasses": 26
+          }
+        },
+        {
+          "player_id": 47235,
+          "name": "Groleau Jeremy",
+          "number": 75,
+          "role": "defensemen",
+          "stats": {
+            "shots": 3,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 20.3333333333333,
+            "si": 27,
+            "pim": 0,
+            "hits": 3,
+            "bls": 0,
+            "topSpeed": 32.29,
+            "distanceTravelled": 4.17,
+            "allPasses": 31,
+            "successfulPasses": 28
+          }
+        },
+        {
+          "player_id": 40943,
+          "name": "Groshev Evgeny",
+          "number": 63,
+          "role": "forward",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 4,
+            "fow": 2,
+            "toi": 14.2666666666667,
+            "si": 19,
+            "pim": 0,
+            "hits": 4,
+            "bls": 1,
+            "topSpeed": 32.98,
+            "distanceTravelled": 3.34,
+            "allPasses": 11,
+            "successfulPasses": 9
+          }
+        },
+        {
+          "player_id": 34573,
+          "name": "Zinchenko Ivan Vch.",
+          "number": 19,
+          "role": "forward",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 12,
+            "fow": 5,
+            "toi": 12.9166666666667,
+            "si": 20,
+            "pim": 0,
+            "hits": 2,
+            "bls": 0,
+            "topSpeed": 35.53,
+            "distanceTravelled": 3.27,
+            "allPasses": 8,
+            "successfulPasses": 4
+          }
+        },
+        {
+          "player_id": 49920,
+          "name": "King Ben",
+          "number": 14,
+          "role": "forward",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 19,
+            "fow": 13,
+            "toi": 16.5833333333333,
+            "si": 22,
+            "pim": 0,
+            "hits": 1,
+            "bls": 0,
+            "topSpeed": 31.68,
+            "distanceTravelled": 4.34,
+            "allPasses": 15,
+            "successfulPasses": 13
+          }
+        },
+        {
+          "player_id": 962,
+          "name": "Kugryshev Dmitry",
+          "number": 18,
+          "role": "forward",
+          "stats": {
+            "shots": 3,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 17.3333333333333,
+            "si": 20,
+            "pim": 2,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 31.36,
+            "distanceTravelled": 4.03,
+            "allPasses": 17,
+            "successfulPasses": 16
+          }
+        },
+        {
+          "player_id": 16835,
+          "name": "Kudryavtsev Pavel",
+          "number": 22,
+          "role": "forward",
+          "stats": {
+            "shots": 3,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 16.75,
+            "si": 23,
+            "pim": 0,
+            "hits": 0,
+            "bls": 1,
+            "topSpeed": 34.2,
+            "distanceTravelled": 3.73,
+            "allPasses": 18,
+            "successfulPasses": 13
+          }
+        },
+        {
+          "player_id": 32293,
+          "name": "Makarov Nikolai",
+          "number": 99,
+          "role": "defensemen",
+          "stats": {
+            "shots": 4,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 24.2833333333333,
+            "si": 25,
+            "pim": 0,
+            "hits": 0,
+            "bls": 3,
+            "topSpeed": 30.53,
+            "distanceTravelled": 4.69,
+            "allPasses": 45,
+            "successfulPasses": 39
+          }
+        },
+        {
+          "player_id": 49928,
+          "name": "Millman Mason",
+          "number": 12,
+          "role": "defensemen",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 21.1166666666667,
+            "si": 27,
+            "pim": 0,
+            "hits": 0,
+            "bls": 1,
+            "topSpeed": 30.96,
+            "distanceTravelled": 4.53,
+            "allPasses": 37,
+            "successfulPasses": 35
+          }
+        },
+        {
+          "player_id": 44299,
+          "name": "Morozov Yegor An.",
+          "number": 47,
+          "role": "defensemen",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 8.08333333333333,
+            "si": 10,
+            "pim": 0,
+            "hits": 0,
+            "bls": 2,
+            "topSpeed": 26.39,
+            "distanceTravelled": 1.71,
+            "allPasses": 11,
+            "successfulPasses": 10
+          }
+        },
+        {
+          "player_id": 43791,
+          "name": "Rykmanov Alexei",
+          "number": 33,
+          "role": "forward",
+          "stats": {
+            "shots": 3,
+            "goals": 1,
+            "fo": 0,
+            "fow": 0,
+            "toi": 12.0,
+            "si": 18,
+            "pim": 2,
+            "hits": 3,
+            "bls": 0,
+            "topSpeed": 31.72,
+            "distanceTravelled": 2.92,
+            "allPasses": 12,
+            "successfulPasses": 9
+          }
+        },
+        {
+          "player_id": 39707,
+          "name": "Savchik Ivan",
+          "number": 21,
+          "role": "forward",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 10,
+            "fow": 6,
+            "toi": 17.7666666666667,
+            "si": 19,
+            "pim": 0,
+            "hits": 0,
+            "bls": 1,
+            "topSpeed": 33.88,
+            "distanceTravelled": 4.08,
+            "allPasses": 8,
+            "successfulPasses": 6
+          }
+        },
+        {
+          "player_id": 4033,
+          "name": "Setdikov Nikita",
+          "number": 88,
+          "role": "forward",
+          "stats": {
+            "shots": 7,
+            "goals": 1,
+            "fo": 0,
+            "fow": 0,
+            "toi": 21.9166666666667,
+            "si": 25,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 33.7,
+            "distanceTravelled": 5.2,
+            "allPasses": 33,
+            "successfulPasses": 29
+          }
+        },
+        {
+          "player_id": 48255,
+          "name": "Taimazov Arsen",
+          "number": 28,
+          "role": "defensemen",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 11.85,
+            "si": 18,
+            "pim": 2,
+            "hits": 0,
+            "bls": 1,
+            "topSpeed": 30.13,
+            "distanceTravelled": 2.66,
+            "allPasses": 14,
+            "successfulPasses": 13
+          }
+        },
+        {
+          "player_id": 50192,
+          "name": "Umerov Ruslan",
+          "number": 9,
+          "role": "forward",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 0.716666666666667,
+            "si": 1,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 32.47,
+            "distanceTravelled": 0.21,
+            "allPasses": 0,
+            "successfulPasses": 0
+          }
+        },
+        {
+          "player_id": 25561,
+          "name": "Chervonenko Vladislav",
+          "number": 23,
+          "role": "forward",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 10.7166666666667,
+            "si": 19,
+            "pim": 0,
+            "hits": 0,
+            "bls": 1,
+            "topSpeed": 33.08,
+            "distanceTravelled": 2.84,
+            "allPasses": 9,
+            "successfulPasses": 8
+          }
+        },
+        {
+          "player_id": 50196,
+          "name": "Shakirov Rasim",
+          "number": 71,
+          "role": "forward",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 9.05,
+            "si": 13,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 33.95,
+            "distanceTravelled": 2.49,
+            "allPasses": 15,
+            "successfulPasses": 14
+          }
+        }
+      ],
+      "away_skaters": [
+        {
+          "player_id": 7699,
+          "name": "Akolzin Pavel",
+          "number": 90,
+          "role": "forward",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 6.16666666666667,
+            "si": 10,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 30.89,
+            "distanceTravelled": 1.55,
+            "allPasses": 2,
+            "successfulPasses": 2
+          }
+        },
+        {
+          "player_id": 29069,
+          "name": "Akhiyarov Timur",
+          "number": 76,
+          "role": "defensemen",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 23.8666666666667,
+            "si": 28,
+            "pim": 2,
+            "hits": 1,
+            "bls": 4,
+            "topSpeed": 30.28,
+            "distanceTravelled": 4.71,
+            "allPasses": 42,
+            "successfulPasses": 39
+          }
+        },
+        {
+          "player_id": 4497,
+          "name": "Baldayev Viktor",
+          "number": 74,
+          "role": "defensemen",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 23.4,
+            "si": 27,
+            "pim": 0,
+            "hits": 0,
+            "bls": 1,
+            "topSpeed": 28.15,
+            "distanceTravelled": 4.64,
+            "allPasses": 15,
+            "successfulPasses": 10
+          }
+        },
+        {
+          "player_id": 43783,
+          "name": "Belyakov Yaroslav",
+          "number": 13,
+          "role": "defensemen",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 9.31666666666667,
+            "si": 14,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 29.09,
+            "distanceTravelled": 2.1,
+            "allPasses": 17,
+            "successfulPasses": 13
+          }
+        },
+        {
+          "player_id": 31089,
+          "name": "Vengryzhanovsky Denis",
+          "number": 10,
+          "role": "forward",
+          "stats": {
+            "shots": 3,
+            "goals": 1,
+            "fo": 0,
+            "fow": 0,
+            "toi": 19.1333333333333,
+            "si": 22,
+            "pim": 0,
+            "hits": 1,
+            "bls": 1,
+            "topSpeed": 32.72,
+            "distanceTravelled": 4.11,
+            "allPasses": 13,
+            "successfulPasses": 10
+          }
+        },
+        {
+          "player_id": 5423,
+          "name": "Voronin Kirill",
+          "number": 41,
+          "role": "forward",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 7.38333333333333,
+            "si": 10,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 30.35,
+            "distanceTravelled": 1.83,
+            "allPasses": 6,
+            "successfulPasses": 5
+          }
+        },
+        {
+          "player_id": 6115,
+          "name": "Gizdatullin Artur",
+          "number": 18,
+          "role": "forward",
+          "stats": {
+            "shots": 2,
+            "goals": 1,
+            "fo": 9,
+            "fow": 2,
+            "toi": 13.3166666666667,
+            "si": 22,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 33.3,
+            "distanceTravelled": 3.21,
+            "allPasses": 17,
+            "successfulPasses": 14
+          }
+        },
+        {
+          "player_id": 35899,
+          "name": "Graham Jesse",
+          "number": 64,
+          "role": "defensemen",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 14.6333333333333,
+            "si": 19,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 31.82,
+            "distanceTravelled": 3.43,
+            "allPasses": 21,
+            "successfulPasses": 17
+          }
+        },
+        {
+          "player_id": 668,
+          "name": "Gusev Nikita",
+          "number": 97,
+          "role": "forward",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 21.25,
+            "si": 23,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 32.36,
+            "distanceTravelled": 4.78,
+            "allPasses": 31,
+            "successfulPasses": 28
+          }
+        },
+        {
+          "player_id": 31681,
+          "name": "Guslistov Nikita",
+          "number": 89,
+          "role": "forward",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 5,
+            "fow": 1,
+            "toi": 9.45,
+            "si": 13,
+            "pim": 0,
+            "hits": 1,
+            "bls": 0,
+            "topSpeed": 32.72,
+            "distanceTravelled": 2.44,
+            "allPasses": 2,
+            "successfulPasses": 2
+          }
+        },
+        {
+          "player_id": 32001,
+          "name": "Guskov Matvei",
+          "number": 77,
+          "role": "forward",
+          "stats": {
+            "shots": 6,
+            "goals": 1,
+            "fo": 19,
+            "fow": 9,
+            "toi": 22.3,
+            "si": 26,
+            "pim": 0,
+            "hits": 0,
+            "bls": 1,
+            "topSpeed": 31.75,
+            "distanceTravelled": 5.43,
+            "allPasses": 25,
+            "successfulPasses": 22
+          }
+        },
+        {
+          "player_id": 814,
+          "name": "Kagarlitsky Dmitry",
+          "number": 9,
+          "role": "forward",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 11.0833333333333,
+            "si": 17,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 31.93,
+            "distanceTravelled": 2.86,
+            "allPasses": 14,
+            "successfulPasses": 12
+          }
+        },
+        {
+          "player_id": 48555,
+          "name": "Kalimullin Marat",
+          "number": 12,
+          "role": "defensemen",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 8.13333333333333,
+            "si": 12,
+            "pim": 0,
+            "hits": 2,
+            "bls": 0,
+            "topSpeed": 28.84,
+            "distanceTravelled": 1.61,
+            "allPasses": 10,
+            "successfulPasses": 9
+          }
+        },
+        {
+          "player_id": 30481,
+          "name": "Nikolayev Ilya V.",
+          "number": 88,
+          "role": "defensemen",
+          "stats": {
+            "shots": 3,
+            "goals": 1,
+            "fo": 0,
+            "fow": 0,
+            "toi": 18.4833333333333,
+            "si": 24,
+            "pim": 0,
+            "hits": 0,
+            "bls": 3,
+            "topSpeed": 32.36,
+            "distanceTravelled": 3.66,
+            "allPasses": 16,
+            "successfulPasses": 12
+          }
+        },
+        {
+          "player_id": 25225,
+          "name": "Petukhov Yegor",
+          "number": 15,
+          "role": "forward",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 17.1666666666667,
+            "si": 20,
+            "pim": 0,
+            "hits": 3,
+            "bls": 0,
+            "topSpeed": 30.02,
+            "distanceTravelled": 3.98,
+            "allPasses": 12,
+            "successfulPasses": 11
+          }
+        },
+        {
+          "player_id": 31305,
+          "name": "Polyakov Nikolai P.",
+          "number": 14,
+          "role": "forward",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 12.6,
+            "si": 20,
+            "pim": 0,
+            "hits": 2,
+            "bls": 0,
+            "topSpeed": 32.36,
+            "distanceTravelled": 3.31,
+            "allPasses": 8,
+            "successfulPasses": 6
+          }
+        },
+        {
+          "player_id": 16843,
+          "name": "Slepets Kirill",
+          "number": 29,
+          "role": "forward",
+          "stats": {
+            "shots": 3,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 21.1333333333333,
+            "si": 23,
+            "pim": 0,
+            "hits": 0,
+            "bls": 1,
+            "topSpeed": 32.98,
+            "distanceTravelled": 4.73,
+            "allPasses": 14,
+            "successfulPasses": 11
+          }
+        },
+        {
+          "player_id": 27541,
+          "name": "Solyannikov Georgy",
+          "number": 62,
+          "role": "defensemen",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 17.3166666666667,
+            "si": 25,
+            "pim": 2,
+            "hits": 0,
+            "bls": 1,
+            "topSpeed": 30.35,
+            "distanceTravelled": 3.49,
+            "allPasses": 24,
+            "successfulPasses": 21
+          }
+        },
+        {
+          "player_id": 16399,
+          "name": "Khafizov Timur",
+          "number": 87,
+          "role": "forward",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 14,
+            "fow": 8,
+            "toi": 17.8,
+            "si": 23,
+            "pim": 0,
+            "hits": 4,
+            "bls": 2,
+            "topSpeed": 31.46,
+            "distanceTravelled": 4.14,
+            "allPasses": 12,
+            "successfulPasses": 9
+          }
+        }
+      ],
+      "goals": [
+        {
+          "period": 3,
+          "time_s": 3087,
+          "score": "3:4",
+          "type": "PP",
+          "author": "Altybarmakyan Andrei"
+        },
+        {
+          "period": 3,
+          "time_s": 2723,
+          "score": "2:4",
+          "type": "ES",
+          "author": "Guskov Matvei"
+        },
+        {
+          "period": 2,
+          "time_s": 2387,
+          "score": "2:3",
+          "type": "ES",
+          "author": "Rykmanov Alexei"
+        },
+        {
+          "period": 2,
+          "time_s": 2245,
+          "score": "1:3",
+          "type": "ES",
+          "author": "Gizdatullin Artur"
+        },
+        {
+          "period": 1,
+          "time_s": 1123,
+          "score": "1:2",
+          "type": "ES",
+          "author": "Nikolayev Ilya V."
+        },
+        {
+          "period": 1,
+          "time_s": 975,
+          "score": "1:1",
+          "type": "PP",
+          "author": "Vengryzhanovsky Denis"
+        },
+        {
+          "period": 1,
+          "time_s": 925,
+          "score": "1:0",
+          "type": "ES",
+          "author": "Setdikov Nikita"
+        }
+      ]
+    },
+    {
+      "game_id": 3000863,
+      "khl_id": 902178,
+      "stage_id": 407,
+      "game_type": "REG",
+      "start_utc": "2026-10-25T11:30:00Z",
+      "venue": "Ufa-Arena",
+      "venue_city": "Ufa",
+      "home_verified": true,
+      "home_team": "Salavat Yulaev",
+      "away_team": "Ak Bars",
+      "home_team_id": 32,
+      "away_team_id": 40,
+      "home_score": 1,
+      "away_score": 2,
+      "total_goals": 3,
+      "end_type": "REG",
+      "reg_home_score": 1,
+      "reg_away_score": 2,
+      "reg_total_goals": 3,
+      "winner": "Ak Bars",
+      "period_scores": [
+        {
+          "period": 1,
+          "type": "REG",
+          "home": 0,
+          "away": 0
+        },
+        {
+          "period": 2,
+          "type": "REG",
+          "home": 1,
+          "away": 1
+        },
+        {
+          "period": 3,
+          "type": "REG",
+          "home": 0,
+          "away": 1
+        }
+      ],
+      "home_stats": {
+        "shots": 32,
+        "pp_goals": 0,
+        "pp_opps": 2,
+        "sh_goals": 0,
+        "pim": 4,
+        "fo_won": 19
+      },
+      "away_stats": {
+        "shots": 34,
+        "pp_goals": 0,
+        "pp_opps": 3,
+        "sh_goals": 0,
+        "pim": 6,
+        "fo_won": 30
+      },
+      "home_goalies": [
+        {
+          "player_id": 31833,
+          "name": "Vyazovoi Semyon",
+          "number": 35,
+          "role": "goaltender",
+          "stats": {
+            "toi": 57.6833333333333,
+            "pim": 0,
+            "topSpeed": 0.0,
+            "distanceTravelled": 0.0,
+            "allPasses": 1,
+            "successfulPasses": 1
+          },
+          "toi": 57.68,
+          "starter": true,
+          "shots_against": 34,
+          "goals_against": 2,
+          "saves": 32,
+          "sv_pct": 0.941
+        }
+      ],
+      "away_goalies": [
+        {
+          "player_id": 41191,
+          "name": "Arefyev Maxim",
+          "number": 20,
+          "role": "goaltender",
+          "stats": {
+            "toi": 59.9833333333333,
+            "pim": 0,
+            "topSpeed": 0.0,
+            "distanceTravelled": 0.0,
+            "allPasses": 5,
+            "successfulPasses": 5
+          },
+          "toi": 59.98,
+          "starter": true,
+          "shots_against": 32,
+          "goals_against": 1,
+          "saves": 31,
+          "sv_pct": 0.969
+        }
+      ],
+      "home_skaters": [
+        {
+          "player_id": 28149,
+          "name": "Alalykin Danil",
+          "number": 61,
+          "role": "forward",
+          "stats": {
+            "shots": 3,
+            "goals": 0,
+            "fo": 7,
+            "fow": 3,
+            "toi": 16.75,
+            "si": 20,
+            "pim": 0,
+            "hits": 0,
+            "bls": 1,
+            "topSpeed": 30.78,
+            "distanceTravelled": 4.22,
+            "allPasses": 19,
+            "successfulPasses": 16
+          }
+        },
+        {
+          "player_id": 37763,
+          "name": "Brosseau Devin",
+          "number": 57,
+          "role": "forward",
+          "stats": {
+            "shots": 4,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 20.6666666666667,
+            "si": 22,
+            "pim": 0,
+            "hits": 2,
+            "bls": 0,
+            "topSpeed": 30.31,
+            "distanceTravelled": 4.66,
+            "allPasses": 7,
+            "successfulPasses": 5
+          }
+        },
+        {
+          "player_id": 48619,
+          "name": "Budnitsky Vitaly",
+          "number": 85,
+          "role": "defensemen",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 6.6,
+            "si": 9,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 31.14,
+            "distanceTravelled": 1.52,
+            "allPasses": 4,
+            "successfulPasses": 3
+          }
+        },
+        {
+          "player_id": 30341,
+          "name": "Varlov Sergei",
+          "number": 32,
+          "role": "defensemen",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 16.7833333333333,
+            "si": 22,
+            "pim": 0,
+            "hits": 1,
+            "bls": 1,
+            "topSpeed": 32.11,
+            "distanceTravelled": 3.69,
+            "allPasses": 8,
+            "successfulPasses": 7
+          }
+        },
+        {
+          "player_id": 19209,
+          "name": "Yefremov Vladislav",
+          "number": 65,
+          "role": "forward",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 6,
+            "fow": 1,
+            "toi": 8.68333333333333,
+            "si": 12,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 32.26,
+            "distanceTravelled": 2.2,
+            "allPasses": 8,
+            "successfulPasses": 7
+          }
+        },
+        {
+          "player_id": 45227,
+          "name": "Zharovsky Alexander",
+          "number": 97,
+          "role": "forward",
+          "stats": {
+            "shots": 4,
+            "goals": 1,
+            "fo": 0,
+            "fow": 0,
+            "toi": 17.1833333333333,
+            "si": 20,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 31.61,
+            "distanceTravelled": 4.47,
+            "allPasses": 17,
+            "successfulPasses": 13
+          }
+        },
+        {
+          "player_id": 44455,
+          "name": "Zagrebin Maxim",
+          "number": 37,
+          "role": "forward",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 8,
+            "fow": 2,
+            "toi": 13.75,
+            "si": 18,
+            "pim": 0,
+            "hits": 0,
+            "bls": 1,
+            "topSpeed": 30.82,
+            "distanceTravelled": 3.47,
+            "allPasses": 10,
+            "successfulPasses": 8
+          }
+        },
+        {
+          "player_id": 30945,
+          "name": "Zorkin Nikita",
+          "number": 52,
+          "role": "defensemen",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 15.9333333333333,
+            "si": 19,
+            "pim": 0,
+            "hits": 2,
+            "bls": 2,
+            "topSpeed": 32.94,
+            "distanceTravelled": 3.39,
+            "allPasses": 13,
+            "successfulPasses": 11
+          }
+        },
+        {
+          "player_id": 35789,
+          "name": "Komarov Alexander S.",
+          "number": 8,
+          "role": "defensemen",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 7.96666666666667,
+            "si": 13,
+            "pim": 0,
+            "hits": 1,
+            "bls": 0,
+            "topSpeed": 30.42,
+            "distanceTravelled": 1.77,
+            "allPasses": 10,
+            "successfulPasses": 9
+          }
+        },
+        {
+          "player_id": 38863,
+          "name": "Kuznetsov Maxim N.",
+          "number": 71,
+          "role": "forward",
+          "stats": {
+            "shots": 4,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 14.6,
+            "si": 18,
+            "pim": 0,
+            "hits": 1,
+            "bls": 0,
+            "topSpeed": 32.51,
+            "distanceTravelled": 3.77,
+            "allPasses": 13,
+            "successfulPasses": 12
+          }
+        },
+        {
+          "player_id": 2565,
+          "name": "Kulik Evgeny",
+          "number": 43,
+          "role": "defensemen",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 12.9333333333333,
+            "si": 19,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 31.28,
+            "distanceTravelled": 2.99,
+            "allPasses": 8,
+            "successfulPasses": 7
+          }
+        },
+        {
+          "player_id": 50404,
+          "name": "Maggio Matthew",
+          "number": 81,
+          "role": "forward",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 15.05,
+            "si": 20,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 32.0,
+            "distanceTravelled": 4.03,
+            "allPasses": 8,
+            "successfulPasses": 6
+          }
+        },
+        {
+          "player_id": 18063,
+          "name": "Orlovich-Grudkov Denis",
+          "number": 78,
+          "role": "forward",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 7.85,
+            "si": 12,
+            "pim": 0,
+            "hits": 0,
+            "bls": 1,
+            "topSpeed": 31.43,
+            "distanceTravelled": 2.17,
+            "allPasses": 5,
+            "successfulPasses": 5
+          }
+        },
+        {
+          "player_id": 1240,
+          "name": "Panin Grigory",
+          "number": 11,
+          "role": "defensemen",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 17.0666666666667,
+            "si": 17,
+            "pim": 0,
+            "hits": 0,
+            "bls": 2,
+            "topSpeed": 31.18,
+            "distanceTravelled": 3.76,
+            "allPasses": 21,
+            "successfulPasses": 17
+          }
+        },
+        {
+          "player_id": 42379,
+          "name": "Rempal Sheldon",
+          "number": 56,
+          "role": "forward",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 22.8166666666667,
+            "si": 22,
+            "pim": 2,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 33.91,
+            "distanceTravelled": 5,
+            "allPasses": 35,
+            "successfulPasses": 27
+          }
+        },
+        {
+          "player_id": 35963,
+          "name": "Rodewald Jack",
+          "number": 21,
+          "role": "forward",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 23,
+            "fow": 10,
+            "toi": 21.7666666666667,
+            "si": 23,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 30.67,
+            "distanceTravelled": 5.06,
+            "allPasses": 12,
+            "successfulPasses": 11
+          }
+        },
+        {
+          "player_id": 41803,
+          "name": "Khvorov Nikolai",
+          "number": 44,
+          "role": "forward",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 6.76666666666667,
+            "si": 11,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 32.08,
+            "distanceTravelled": 1.96,
+            "allPasses": 6,
+            "successfulPasses": 6
+          }
+        },
+        {
+          "player_id": 36771,
+          "name": "Tsulygin Yaroslav",
+          "number": 73,
+          "role": "defensemen",
+          "stats": {
+            "shots": 4,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 21.95,
+            "si": 20,
+            "pim": 2,
+            "hits": 0,
+            "bls": 1,
+            "topSpeed": 31.21,
+            "distanceTravelled": 4.51,
+            "allPasses": 39,
+            "successfulPasses": 29
+          }
+        },
+        {
+          "player_id": 1656,
+          "name": "Shipachyov Vadim",
+          "number": 87,
+          "role": "forward",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 5,
+            "fow": 3,
+            "toi": 21.2833333333333,
+            "si": 19,
+            "pim": 0,
+            "hits": 0,
+            "bls": 1,
+            "topSpeed": 31.21,
+            "distanceTravelled": 4.59,
+            "allPasses": 24,
+            "successfulPasses": 21
+          }
+        },
+        {
+          "player_id": 47319,
+          "name": "Shcherbakov Nikita",
+          "number": 89,
+          "role": "defensemen",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 12.8666666666667,
+            "si": 19,
+            "pim": 0,
+            "hits": 3,
+            "bls": 2,
+            "topSpeed": 32.83,
+            "distanceTravelled": 2.96,
+            "allPasses": 16,
+            "successfulPasses": 15
+          }
+        }
+      ],
+      "away_skaters": [
+        {
+          "player_id": 4749,
+          "name": "Byvaltsev Alexei",
+          "number": 22,
+          "role": "forward",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 4,
+            "fow": 2,
+            "toi": 10.9333333333333,
+            "si": 19,
+            "pim": 0,
+            "hits": 1,
+            "bls": 1,
+            "topSpeed": 31.1,
+            "distanceTravelled": 2.86,
+            "allPasses": 13,
+            "successfulPasses": 9
+          }
+        },
+        {
+          "player_id": 35665,
+          "name": "Bykov Maxim Dm.",
+          "number": 37,
+          "role": "forward",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 6.4,
+            "si": 9,
+            "pim": 0,
+            "hits": 1,
+            "bls": 0,
+            "topSpeed": 32.08,
+            "distanceTravelled": 1.49,
+            "allPasses": 6,
+            "successfulPasses": 4
+          }
+        },
+        {
+          "player_id": 16823,
+          "name": "Denisenko Grigory",
+          "number": 14,
+          "role": "forward",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 17.2,
+            "si": 22,
+            "pim": 2,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 32.9,
+            "distanceTravelled": 4.35,
+            "allPasses": 19,
+            "successfulPasses": 16
+          }
+        },
+        {
+          "player_id": 18697,
+          "name": "Dynyak Nikita",
+          "number": 86,
+          "role": "forward",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 17.6166666666667,
+            "si": 24,
+            "pim": 0,
+            "hits": 3,
+            "bls": 0,
+            "topSpeed": 34.09,
+            "distanceTravelled": 3.99,
+            "allPasses": 12,
+            "successfulPasses": 9
+          }
+        },
+        {
+          "player_id": 35907,
+          "name": "Yevseyev Nikita S.",
+          "number": 44,
+          "role": "defensemen",
+          "stats": {
+            "shots": 3,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 17.8666666666667,
+            "si": 25,
+            "pim": 2,
+            "hits": 3,
+            "bls": 1,
+            "topSpeed": 28.91,
+            "distanceTravelled": 3.84,
+            "allPasses": 17,
+            "successfulPasses": 15
+          }
+        },
+        {
+          "player_id": 8967,
+          "name": "Zernov Denis",
+          "number": 16,
+          "role": "forward",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 14.7666666666667,
+            "si": 22,
+            "pim": 2,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 31.5,
+            "distanceTravelled": 3.75,
+            "allPasses": 15,
+            "successfulPasses": 10
+          }
+        },
+        {
+          "player_id": 31409,
+          "name": "Katelevsky Dmitry",
+          "number": 92,
+          "role": "forward",
+          "stats": {
+            "shots": 3,
+            "goals": 0,
+            "fo": 13,
+            "fow": 6,
+            "toi": 17.6333333333333,
+            "si": 24,
+            "pim": 0,
+            "hits": 2,
+            "bls": 1,
+            "topSpeed": 32.76,
+            "distanceTravelled": 4.29,
+            "allPasses": 8,
+            "successfulPasses": 4
+          }
+        },
+        {
+          "player_id": 32129,
+          "name": "Komkov Denis",
+          "number": 50,
+          "role": "forward",
+          "stats": {
+            "shots": 1,
+            "goals": 1,
+            "fo": 0,
+            "fow": 0,
+            "toi": 12.2166666666667,
+            "si": 19,
+            "pim": 0,
+            "hits": 2,
+            "bls": 0,
+            "topSpeed": 34.42,
+            "distanceTravelled": 3.05,
+            "allPasses": 6,
+            "successfulPasses": 5
+          }
+        },
+        {
+          "player_id": 5563,
+          "name": "Lyamkin Nikita",
+          "number": 96,
+          "role": "defensemen",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 18.2666666666667,
+            "si": 23,
+            "pim": 0,
+            "hits": 0,
+            "bls": 2,
+            "topSpeed": 32.65,
+            "distanceTravelled": 4.07,
+            "allPasses": 20,
+            "successfulPasses": 16
+          }
+        },
+        {
+          "player_id": 1104,
+          "name": "Marchenko Alexei",
+          "number": 53,
+          "role": "defensemen",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 21.95,
+            "si": 23,
+            "pim": 0,
+            "hits": 0,
+            "bls": 1,
+            "topSpeed": 30.74,
+            "distanceTravelled": 4.28,
+            "allPasses": 15,
+            "successfulPasses": 14
+          }
+        },
+        {
+          "player_id": 41667,
+          "name": "Miller Mitchell",
+          "number": 58,
+          "role": "defensemen",
+          "stats": {
+            "shots": 3,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 19.2333333333333,
+            "si": 22,
+            "pim": 0,
+            "hits": 1,
+            "bls": 2,
+            "topSpeed": 36.18,
+            "distanceTravelled": 4.65,
+            "allPasses": 21,
+            "successfulPasses": 17
+          }
+        },
+        {
+          "player_id": 50596,
+          "name": "Nikitin Konstantin",
+          "number": 64,
+          "role": "defensemen",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 2.28333333333333,
+            "si": 3,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 26.42,
+            "distanceTravelled": 0.45,
+            "allPasses": 2,
+            "successfulPasses": 2
+          }
+        },
+        {
+          "player_id": 50448,
+          "name": "Saberzyanov Malik",
+          "number": 98,
+          "role": "forward",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 3.81666666666667,
+            "si": 7,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 33.08,
+            "distanceTravelled": 0.97,
+            "allPasses": 1,
+            "successfulPasses": 0
+          }
+        },
+        {
+          "player_id": 3381,
+          "name": "Semyonov Kirill E.",
+          "number": 94,
+          "role": "forward",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 17,
+            "fow": 12,
+            "toi": 18.9333333333333,
+            "si": 23,
+            "pim": 0,
+            "hits": 3,
+            "bls": 3,
+            "topSpeed": 32.47,
+            "distanceTravelled": 4.82,
+            "allPasses": 18,
+            "successfulPasses": 16
+          }
+        },
+        {
+          "player_id": 1482,
+          "name": "Stas Andrei",
+          "number": 23,
+          "role": "forward",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 10,
+            "fow": 5,
+            "toi": 14.2333333333333,
+            "si": 20,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 29.66,
+            "distanceTravelled": 3.49,
+            "allPasses": 6,
+            "successfulPasses": 5
+          }
+        },
+        {
+          "player_id": 38363,
+          "name": "Terekhov Semyon",
+          "number": 59,
+          "role": "forward",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 14.4666666666667,
+            "si": 21,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 32.58,
+            "distanceTravelled": 3.83,
+            "allPasses": 16,
+            "successfulPasses": 13
+          }
+        },
+        {
+          "player_id": 45131,
+          "name": "Terekhov Stepan",
+          "number": 28,
+          "role": "defensemen",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 21.2666666666667,
+            "si": 24,
+            "pim": 0,
+            "hits": 0,
+            "bls": 1,
+            "topSpeed": 31.25,
+            "distanceTravelled": 4.48,
+            "allPasses": 15,
+            "successfulPasses": 12
+          }
+        },
+        {
+          "player_id": 35991,
+          "name": "Chmelevski Alexander",
+          "number": 55,
+          "role": "forward",
+          "stats": {
+            "shots": 3,
+            "goals": 1,
+            "fo": 5,
+            "fow": 5,
+            "toi": 13.1833333333333,
+            "si": 18,
+            "pim": 0,
+            "hits": 1,
+            "bls": 0,
+            "topSpeed": 30.89,
+            "distanceTravelled": 3.58,
+            "allPasses": 15,
+            "successfulPasses": 10
+          }
+        },
+        {
+          "player_id": 50164,
+          "name": "Yakupov Ravil",
+          "number": 29,
+          "role": "forward",
+          "stats": {
+            "shots": 6,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 13.7666666666667,
+            "si": 20,
+            "pim": 0,
+            "hits": 3,
+            "bls": 1,
+            "topSpeed": 33.7,
+            "distanceTravelled": 3.54,
+            "allPasses": 13,
+            "successfulPasses": 10
+          }
+        },
+        {
+          "player_id": 1744,
+          "name": "Yarullin Albert",
+          "number": 33,
+          "role": "defensemen",
+          "stats": {
+            "shots": 3,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 16.7333333333333,
+            "si": 26,
+            "pim": 0,
+            "hits": 1,
+            "bls": 2,
+            "topSpeed": 26.71,
+            "distanceTravelled": 3.47,
+            "allPasses": 14,
+            "successfulPasses": 13
+          }
+        }
+      ],
+      "goals": [
+        {
+          "period": 3,
+          "time_s": 2569,
+          "score": "1:2",
+          "type": "ES",
+          "author": "Komkov Denis"
+        },
+        {
+          "period": 2,
+          "time_s": 2176,
+          "score": "1:1",
+          "type": "ES",
+          "author": "Chmelevski Alexander"
+        },
+        {
+          "period": 2,
+          "time_s": 2166,
+          "score": "1:0",
+          "type": "ES",
+          "author": "Zharovsky Alexander"
+        }
+      ]
+    },
+    {
+      "game_id": 3000867,
+      "khl_id": 902179,
+      "stage_id": 407,
+      "game_type": "REG",
+      "start_utc": "2026-10-25T14:00:00Z",
+      "venue": "Megasport Arena",
+      "venue_city": "Moscow",
+      "home_verified": true,
+      "home_team": "Spartak",
+      "away_team": "Dragons",
+      "home_team_id": 18,
+      "away_team_id": 315,
+      "home_score": 3,
+      "away_score": 4,
+      "total_goals": 7,
+      "end_type": "SO",
+      "reg_home_score": 3,
+      "reg_away_score": 3,
+      "reg_total_goals": 6,
+      "winner": "Dragons",
+      "period_scores": [
+        {
+          "period": 1,
+          "type": "REG",
+          "home": 0,
+          "away": 1
+        },
+        {
+          "period": 2,
+          "type": "REG",
+          "home": 2,
+          "away": 0
+        },
+        {
+          "period": 3,
+          "type": "REG",
+          "home": 1,
+          "away": 2
+        },
+        {
+          "period": 4,
+          "type": "OT",
+          "home": 0,
+          "away": 0
+        }
+      ],
+      "home_stats": {
+        "shots": 33,
+        "pp_goals": 1,
+        "pp_opps": 2,
+        "sh_goals": 0,
+        "pim": 4,
+        "fo_won": 28
+      },
+      "away_stats": {
+        "shots": 20,
+        "pp_goals": 2,
+        "pp_opps": 5,
+        "sh_goals": 0,
+        "pim": 10,
+        "fo_won": 24
+      },
+      "home_goalies": [
+        {
+          "player_id": 4785,
+          "name": "Fedotov Ivan",
+          "number": 28,
+          "role": "goaltender",
+          "stats": {
+            "toi": 64.2333333333333,
+            "pim": 0,
+            "topSpeed": 0.0,
+            "distanceTravelled": 0.0,
+            "allPasses": 7,
+            "successfulPasses": 7
+          },
+          "toi": 64.23,
+          "starter": true,
+          "shots_against": 20,
+          "goals_against": 3,
+          "saves": 17,
+          "sv_pct": 0.85
+        }
+      ],
+      "away_goalies": [
+        {
+          "player_id": 17671,
+          "name": "Khomchenko Pavel",
+          "number": 30,
+          "role": "goaltender",
+          "stats": {
+            "toi": 65.0,
+            "pim": 0,
+            "topSpeed": 0.0,
+            "distanceTravelled": 0.0,
+            "allPasses": 2,
+            "successfulPasses": 2
+          },
+          "toi": 65.0,
+          "starter": true,
+          "shots_against": 33,
+          "goals_against": 3,
+          "saves": 30,
+          "sv_pct": 0.909
+        }
+      ],
+      "home_skaters": [
+        {
+          "player_id": 35261,
+          "name": "Gutik Daniil",
+          "number": 78,
+          "role": "forward",
+          "stats": {
+            "shots": 3,
+            "goals": 1,
+            "fo": 0,
+            "fow": 0,
+            "toi": 17.4166666666667,
+            "si": 17,
+            "pim": 0,
+            "hits": 1,
+            "bls": 0,
+            "topSpeed": 31.46,
+            "distanceTravelled": 3.93,
+            "allPasses": 10,
+            "successfulPasses": 8
+          }
+        },
+        {
+          "player_id": 50420,
+          "name": "Dronov Nikolai",
+          "number": 49,
+          "role": "defensemen",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 17.5666666666667,
+            "si": 22,
+            "pim": 0,
+            "hits": 1,
+            "bls": 0,
+            "topSpeed": 31.18,
+            "distanceTravelled": 3.91,
+            "allPasses": 19,
+            "successfulPasses": 14
+          }
+        },
+        {
+          "player_id": 35859,
+          "name": "Keane Joseph",
+          "number": 4,
+          "role": "defensemen",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 22.25,
+            "si": 26,
+            "pim": 0,
+            "hits": 0,
+            "bls": 1,
+            "topSpeed": 33.37,
+            "distanceTravelled": 5.09,
+            "allPasses": 25,
+            "successfulPasses": 20
+          }
+        },
+        {
+          "player_id": 50376,
+          "name": "Kozhushko Silanty",
+          "number": 71,
+          "role": "forward",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 7.88333333333333,
+            "si": 12,
+            "pim": 0,
+            "hits": 1,
+            "bls": 0,
+            "topSpeed": 32.9,
+            "distanceTravelled": 2.03,
+            "allPasses": 3,
+            "successfulPasses": 2
+          }
+        },
+        {
+          "player_id": 42759,
+          "name": "Comtois Maxime",
+          "number": 10,
+          "role": "forward",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 3,
+            "fow": 3,
+            "toi": 19.5,
+            "si": 25,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 31.5,
+            "distanceTravelled": 4.62,
+            "allPasses": 21,
+            "successfulPasses": 17
+          }
+        },
+        {
+          "player_id": 35581,
+          "name": "Korolyov Veniamin",
+          "number": 89,
+          "role": "defensemen",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 1.8,
+            "si": 3,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 27.58,
+            "distanceTravelled": 0.37,
+            "allPasses": 0,
+            "successfulPasses": 0
+          }
+        },
+        {
+          "player_id": 50152,
+          "name": "Kotlyarov Ilya",
+          "number": 38,
+          "role": "forward",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 1,
+            "fow": 0,
+            "toi": 12.0833333333333,
+            "si": 17,
+            "pim": 0,
+            "hits": 0,
+            "bls": 1,
+            "topSpeed": 33.55,
+            "distanceTravelled": 2.77,
+            "allPasses": 10,
+            "successfulPasses": 9
+          }
+        },
+        {
+          "player_id": 19185,
+          "name": "Lockhart Lucas",
+          "number": 20,
+          "role": "forward",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 13,
+            "fow": 8,
+            "toi": 17.8333333333333,
+            "si": 19,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 32.65,
+            "distanceTravelled": 3.93,
+            "allPasses": 9,
+            "successfulPasses": 9
+          }
+        },
+        {
+          "player_id": 44723,
+          "name": "Lukyantsev Sergei",
+          "number": 76,
+          "role": "forward",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 7.78333333333333,
+            "si": 11,
+            "pim": 0,
+            "hits": 1,
+            "bls": 0,
+            "topSpeed": 32.65,
+            "distanceTravelled": 1.83,
+            "allPasses": 3,
+            "successfulPasses": 3
+          }
+        },
+        {
+          "player_id": 18557,
+          "name": "Maltsev Mikhail G.",
+          "number": 13,
+          "role": "forward",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 4,
+            "fow": 4,
+            "toi": 17.2333333333333,
+            "si": 18,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 33.01,
+            "distanceTravelled": 4.19,
+            "allPasses": 9,
+            "successfulPasses": 7
+          }
+        },
+        {
+          "player_id": 1144,
+          "name": "Mironov Andrei A.",
+          "number": 94,
+          "role": "defensemen",
+          "stats": {
+            "shots": 5,
+            "goals": 1,
+            "fo": 0,
+            "fow": 0,
+            "toi": 19.3,
+            "si": 26,
+            "pim": 0,
+            "hits": 0,
+            "bls": 2,
+            "topSpeed": 32.11,
+            "distanceTravelled": 4.17,
+            "allPasses": 16,
+            "successfulPasses": 12
+          }
+        },
+        {
+          "player_id": 38151,
+          "name": "Orlov Daniil R.",
+          "number": 62,
+          "role": "defensemen",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 21.9666666666667,
+            "si": 31,
+            "pim": 0,
+            "hits": 0,
+            "bls": 2,
+            "topSpeed": 32.18,
+            "distanceTravelled": 5.32,
+            "allPasses": 37,
+            "successfulPasses": 33
+          }
+        },
+        {
+          "player_id": 44043,
+          "name": "Pivchulin Danil",
+          "number": 16,
+          "role": "forward",
+          "stats": {
+            "shots": 4,
+            "goals": 1,
+            "fo": 0,
+            "fow": 0,
+            "toi": 17.6,
+            "si": 23,
+            "pim": 2,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 34.63,
+            "distanceTravelled": 4.88,
+            "allPasses": 17,
+            "successfulPasses": 14
+          }
+        },
+        {
+          "player_id": 5663,
+          "name": "Poryadin Pavel",
+          "number": 24,
+          "role": "forward",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 15.7333333333333,
+            "si": 22,
+            "pim": 0,
+            "hits": 1,
+            "bls": 0,
+            "topSpeed": 32.08,
+            "distanceTravelled": 4.02,
+            "allPasses": 10,
+            "successfulPasses": 8
+          }
+        },
+        {
+          "player_id": 47407,
+          "name": "Reilly Will",
+          "number": 44,
+          "role": "defensemen",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 14.9,
+            "si": 25,
+            "pim": 2,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 30.96,
+            "distanceTravelled": 3.5,
+            "allPasses": 18,
+            "successfulPasses": 15
+          }
+        },
+        {
+          "player_id": 9127,
+          "name": "Rubtsov German",
+          "number": 95,
+          "role": "forward",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 18,
+            "fow": 8,
+            "toi": 15.95,
+            "si": 24,
+            "pim": 0,
+            "hits": 0,
+            "bls": 2,
+            "topSpeed": 32.18,
+            "distanceTravelled": 3.63,
+            "allPasses": 4,
+            "successfulPasses": 4
+          }
+        },
+        {
+          "player_id": 44567,
+          "name": "Ryabov Ivan Mikh.",
+          "number": 6,
+          "role": "forward",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 7,
+            "fow": 1,
+            "toi": 17.0166666666667,
+            "si": 23,
+            "pim": 0,
+            "hits": 1,
+            "bls": 0,
+            "topSpeed": 33.66,
+            "distanceTravelled": 4.2,
+            "allPasses": 13,
+            "successfulPasses": 11
+          }
+        },
+        {
+          "player_id": 18665,
+          "name": "Filin Yegor",
+          "number": 99,
+          "role": "forward",
+          "stats": {
+            "shots": 4,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 17.25,
+            "si": 23,
+            "pim": 0,
+            "hits": 0,
+            "bls": 1,
+            "topSpeed": 32.11,
+            "distanceTravelled": 4.28,
+            "allPasses": 27,
+            "successfulPasses": 24
+          }
+        },
+        {
+          "player_id": 35269,
+          "name": "Kholodilin Nikita",
+          "number": 97,
+          "role": "forward",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 6,
+            "fow": 4,
+            "toi": 11.2666666666667,
+            "si": 15,
+            "pim": 0,
+            "hits": 1,
+            "bls": 1,
+            "topSpeed": 33.12,
+            "distanceTravelled": 2.78,
+            "allPasses": 4,
+            "successfulPasses": 1
+          }
+        },
+        {
+          "player_id": 36007,
+          "name": "Jaros Christian",
+          "number": 48,
+          "role": "defensemen",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 18.0666666666667,
+            "si": 28,
+            "pim": 0,
+            "hits": 0,
+            "bls": 1,
+            "topSpeed": 32.47,
+            "distanceTravelled": 3.93,
+            "allPasses": 11,
+            "successfulPasses": 9
+          }
+        }
+      ],
+      "away_skaters": [
+        {
+          "player_id": 49956,
+          "name": "Alexandrov Nikita I.",
+          "number": 59,
+          "role": "forward",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 14.9,
+            "si": 17,
+            "pim": 0,
+            "hits": 0,
+            "bls": 1,
+            "topSpeed": 29.48,
+            "distanceTravelled": 3.24,
+            "allPasses": 7,
+            "successfulPasses": 7
+          }
+        },
+        {
+          "player_id": 35649,
+          "name": "Barulin Vladislav Y.",
+          "number": 22,
+          "role": "forward",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 6,
+            "fow": 2,
+            "toi": 14.0666666666667,
+            "si": 20,
+            "pim": 0,
+            "hits": 2,
+            "bls": 0,
+            "topSpeed": 32.29,
+            "distanceTravelled": 3.49,
+            "allPasses": 2,
+            "successfulPasses": 1
+          }
+        },
+        {
+          "player_id": 10043,
+          "name": "Kotlyarevsky Mikhail",
+          "number": 53,
+          "role": "forward",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 15.1666666666667,
+            "si": 16,
+            "pim": 0,
+            "hits": 0,
+            "bls": 2,
+            "topSpeed": 30.2,
+            "distanceTravelled": 3.57,
+            "allPasses": 4,
+            "successfulPasses": 3
+          }
+        },
+        {
+          "player_id": 29985,
+          "name": "Menell Brennan",
+          "number": 27,
+          "role": "defensemen",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 25.6666666666667,
+            "si": 26,
+            "pim": 0,
+            "hits": 1,
+            "bls": 0,
+            "topSpeed": 29.63,
+            "distanceTravelled": 5.13,
+            "allPasses": 15,
+            "successfulPasses": 10
+          }
+        },
+        {
+          "player_id": 30705,
+          "name": "Mingachyov Takhir",
+          "number": 63,
+          "role": "forward",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 8,
+            "fow": 3,
+            "toi": 9.3,
+            "si": 12,
+            "pim": 0,
+            "hits": 1,
+            "bls": 0,
+            "topSpeed": 28.48,
+            "distanceTravelled": 2.15,
+            "allPasses": 5,
+            "successfulPasses": 5
+          }
+        },
+        {
+          "player_id": 49624,
+          "name": "Murray Brett",
+          "number": 21,
+          "role": "forward",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 16.3666666666667,
+            "si": 20,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 32.33,
+            "distanceTravelled": 3.33,
+            "allPasses": 5,
+            "successfulPasses": 3
+          }
+        },
+        {
+          "player_id": 1928,
+          "name": "Naumenkov Mikhail",
+          "number": 38,
+          "role": "defensemen",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 21.8166666666667,
+            "si": 25,
+            "pim": 0,
+            "hits": 2,
+            "bls": 2,
+            "topSpeed": 31.28,
+            "distanceTravelled": 4.74,
+            "allPasses": 12,
+            "successfulPasses": 10
+          }
+        },
+        {
+          "player_id": 40743,
+          "name": "Ottenbreit Turner",
+          "number": 2,
+          "role": "defensemen",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 12.1666666666667,
+            "si": 16,
+            "pim": 6,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 29.12,
+            "distanceTravelled": 2.55,
+            "allPasses": 5,
+            "successfulPasses": 4
+          }
+        },
+        {
+          "player_id": 43575,
+          "name": "Petan Nikolas",
+          "number": 7,
+          "role": "forward",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 1,
+            "fow": 0,
+            "toi": 17.75,
+            "si": 24,
+            "pim": 0,
+            "hits": 0,
+            "bls": 1,
+            "topSpeed": 30.89,
+            "distanceTravelled": 4.11,
+            "allPasses": 12,
+            "successfulPasses": 9
+          }
+        },
+        {
+          "player_id": 47291,
+          "name": "Sutter Riley",
+          "number": 14,
+          "role": "forward",
+          "stats": {
+            "shots": 4,
+            "goals": 0,
+            "fo": 20,
+            "fow": 9,
+            "toi": 18.95,
+            "si": 26,
+            "pim": 0,
+            "hits": 4,
+            "bls": 0,
+            "topSpeed": 31.46,
+            "distanceTravelled": 4.45,
+            "allPasses": 11,
+            "successfulPasses": 8
+          }
+        },
+        {
+          "player_id": 49628,
+          "name": "Smith Givani",
+          "number": 54,
+          "role": "forward",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 7.8,
+            "si": 12,
+            "pim": 2,
+            "hits": 2,
+            "bls": 0,
+            "topSpeed": 31.86,
+            "distanceTravelled": 1.98,
+            "allPasses": 8,
+            "successfulPasses": 6
+          }
+        },
+        {
+          "player_id": 41715,
+          "name": "Solovyov Yegor S.",
+          "number": 17,
+          "role": "forward",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 9.71666666666667,
+            "si": 13,
+            "pim": 0,
+            "hits": 1,
+            "bls": 0,
+            "topSpeed": 33.95,
+            "distanceTravelled": 2.44,
+            "allPasses": 3,
+            "successfulPasses": 3
+          }
+        },
+        {
+          "player_id": 47307,
+          "name": "Sucese Nate",
+          "number": 37,
+          "role": "forward",
+          "stats": {
+            "shots": 1,
+            "goals": 1,
+            "fo": 6,
+            "fow": 4,
+            "toi": 19.3666666666667,
+            "si": 25,
+            "pim": 0,
+            "hits": 0,
+            "bls": 1,
+            "topSpeed": 31.54,
+            "distanceTravelled": 4.59,
+            "allPasses": 8,
+            "successfulPasses": 7
+          }
+        },
+        {
+          "player_id": 35843,
+          "name": "Williams Colby",
+          "number": 20,
+          "role": "defensemen",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 2,
+            "fow": 2,
+            "toi": 20.0666666666667,
+            "si": 25,
+            "pim": 0,
+            "hits": 3,
+            "bls": 0,
+            "topSpeed": 31.28,
+            "distanceTravelled": 4.02,
+            "allPasses": 13,
+            "successfulPasses": 11
+          }
+        },
+        {
+          "player_id": 49632,
+          "name": "Chen David",
+          "number": 9,
+          "role": "forward",
+          "stats": {
+            "shots": 4,
+            "goals": 1,
+            "fo": 6,
+            "fow": 1,
+            "toi": 17.9333333333333,
+            "si": 24,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 35.1,
+            "distanceTravelled": 4.45,
+            "allPasses": 10,
+            "successfulPasses": 9
+          }
+        },
+        {
+          "player_id": 49636,
+          "name": "Cicek Nick",
+          "number": 4,
+          "role": "defensemen",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 21.3166666666667,
+            "si": 25,
+            "pim": 2,
+            "hits": 0,
+            "bls": 3,
+            "topSpeed": 33.41,
+            "distanceTravelled": 4.17,
+            "allPasses": 7,
+            "successfulPasses": 6
+          }
+        },
+        {
+          "player_id": 49640,
+          "name": "Addison Calen",
+          "number": 6,
+          "role": "defensemen",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 21.6166666666667,
+            "si": 26,
+            "pim": 0,
+            "hits": 0,
+            "bls": 2,
+            "topSpeed": 27.83,
+            "distanceTravelled": 4.32,
+            "allPasses": 4,
+            "successfulPasses": 2
+          }
+        },
+        {
+          "player_id": 27301,
+          "name": "Jaskin Dmitrij",
+          "number": 23,
+          "role": "forward",
+          "stats": {
+            "shots": 2,
+            "goals": 1,
+            "fo": 3,
+            "fow": 3,
+            "toi": 20.0666666666667,
+            "si": 22,
+            "pim": 0,
+            "hits": 5,
+            "bls": 2,
+            "topSpeed": 33.19,
+            "distanceTravelled": 4.49,
+            "allPasses": 4,
+            "successfulPasses": 4
+          }
+        }
+      ],
+      "goals": [
+        {
+          "period": null,
+          "time_s": 3900,
+          "score": "3:4",
+          "type": "SO",
+          "author": "Jaskin Dmitrij"
+        },
+        {
+          "period": 3,
+          "time_s": 2695,
+          "score": "3:3",
+          "type": "ES",
+          "author": "Jaskin Dmitrij"
+        },
+        {
+          "period": 3,
+          "time_s": 2667,
+          "score": "3:2",
+          "type": "PP",
+          "author": "Sucese Nate"
+        },
+        {
+          "period": 3,
+          "time_s": 2625,
+          "score": "3:1",
+          "type": "PP",
+          "author": "Gutik Daniil"
+        },
+        {
+          "period": 2,
+          "time_s": 1622,
+          "score": "2:1",
+          "type": "ES",
+          "author": "Pivchulin Danil"
+        },
+        {
+          "period": 2,
+          "time_s": 1550,
+          "score": "1:1",
+          "type": "ES",
+          "author": "Mironov Andrei A."
+        },
+        {
+          "period": 1,
+          "time_s": 684,
+          "score": "0:1",
+          "type": "PP",
+          "author": "Chen David"
+        }
+      ]
+    },
+    {
+      "game_id": 3000875,
+      "khl_id": 902181,
+      "stage_id": 407,
+      "game_type": "REG",
+      "start_utc": "2026-10-25T14:00:00Z",
+      "venue": "SKA Arena",
+      "venue_city": "Saint Petersburg",
+      "home_verified": true,
+      "home_team": "SKA",
+      "away_team": "CSKA",
+      "home_team_id": 44,
+      "away_team_id": 16,
+      "home_score": 1,
+      "away_score": 3,
+      "total_goals": 4,
+      "end_type": "REG",
+      "reg_home_score": 1,
+      "reg_away_score": 3,
+      "reg_total_goals": 4,
+      "winner": "CSKA",
+      "period_scores": [
+        {
+          "period": 1,
+          "type": "REG",
+          "home": 0,
+          "away": 0
+        },
+        {
+          "period": 2,
+          "type": "REG",
+          "home": 0,
+          "away": 2
+        },
+        {
+          "period": 3,
+          "type": "REG",
+          "home": 1,
+          "away": 1
+        }
+      ],
+      "home_stats": {
+        "shots": 27,
+        "pp_goals": 0,
+        "pp_opps": 3,
+        "sh_goals": 0,
+        "pim": 6,
+        "fo_won": 30
+      },
+      "away_stats": {
+        "shots": 22,
+        "pp_goals": 1,
+        "pp_opps": 4,
+        "sh_goals": 0,
+        "pim": 8,
+        "fo_won": 35
+      },
+      "home_goalies": [
+        {
+          "player_id": 34681,
+          "name": "Ivanov Sergei Vl.",
+          "number": 1,
+          "role": "goaltender",
+          "stats": {
+            "toi": 57.9166666666667,
+            "pim": 0,
+            "topSpeed": 0.0,
+            "distanceTravelled": 0.0,
+            "allPasses": 9,
+            "successfulPasses": 8
+          },
+          "toi": 57.92,
+          "starter": true,
+          "shots_against": 22,
+          "goals_against": 3,
+          "saves": 19,
+          "sv_pct": 0.864
+        }
+      ],
+      "away_goalies": [
+        {
+          "player_id": 31781,
+          "name": "Gamzin Dmitry",
+          "number": 33,
+          "role": "goaltender",
+          "stats": {
+            "toi": 60.0,
+            "pim": 0,
+            "topSpeed": 0.0,
+            "distanceTravelled": 0.0,
+            "allPasses": 4,
+            "successfulPasses": 4
+          },
+          "toi": 60.0,
+          "starter": true,
+          "shots_against": 27,
+          "goals_against": 1,
+          "saves": 26,
+          "sv_pct": 0.963
+        }
+      ],
+      "home_skaters": [
+        {
+          "player_id": 28477,
+          "name": "Aimurzin Danil",
+          "number": 53,
+          "role": "forward",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 12,
+            "fow": 4,
+            "toi": 18.8666666666667,
+            "si": 27,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 32.26,
+            "distanceTravelled": 4.84,
+            "allPasses": 18,
+            "successfulPasses": 16
+          }
+        },
+        {
+          "player_id": 35871,
+          "name": "Atanasov Vasily",
+          "number": 17,
+          "role": "forward",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 19.5666666666667,
+            "si": 26,
+            "pim": 0,
+            "hits": 4,
+            "bls": 0,
+            "topSpeed": 32.22,
+            "distanceTravelled": 4.54,
+            "allPasses": 15,
+            "successfulPasses": 10
+          }
+        },
+        {
+          "player_id": 50612,
+          "name": "Vilchinsky Artyom",
+          "number": 28,
+          "role": "defensemen",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 4.36666666666667,
+            "si": 7,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 29.88,
+            "distanceTravelled": 0.97,
+            "allPasses": 9,
+            "successfulPasses": 7
+          }
+        },
+        {
+          "player_id": 28985,
+          "name": "Glotov Vasily",
+          "number": 7,
+          "role": "forward",
+          "stats": {
+            "shots": 3,
+            "goals": 0,
+            "fo": 1,
+            "fow": 1,
+            "toi": 19.9833333333333,
+            "si": 25,
+            "pim": 0,
+            "hits": 2,
+            "bls": 0,
+            "topSpeed": 32.33,
+            "distanceTravelled": 4.85,
+            "allPasses": 18,
+            "successfulPasses": 18
+          }
+        },
+        {
+          "player_id": 46967,
+          "name": "Grimaldi Rocco",
+          "number": 23,
+          "role": "forward",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 9.21666666666667,
+            "si": 17,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 31.57,
+            "distanceTravelled": 2.45,
+            "allPasses": 4,
+            "successfulPasses": 4
+          }
+        },
+        {
+          "player_id": 47455,
+          "name": "Dishkovsky Nikita",
+          "number": 55,
+          "role": "forward",
+          "stats": {
+            "shots": 3,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 12.7833333333333,
+            "si": 22,
+            "pim": 0,
+            "hits": 2,
+            "bls": 1,
+            "topSpeed": 34.16,
+            "distanceTravelled": 3.14,
+            "allPasses": 5,
+            "successfulPasses": 3
+          }
+        },
+        {
+          "player_id": 35061,
+          "name": "Zykov Valentin",
+          "number": 90,
+          "role": "forward",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 14.0666666666667,
+            "si": 23,
+            "pim": 0,
+            "hits": 1,
+            "bls": 0,
+            "topSpeed": 32.54,
+            "distanceTravelled": 3.24,
+            "allPasses": 7,
+            "successfulPasses": 7
+          }
+        },
+        {
+          "player_id": 44711,
+          "name": "Korotky Matvei",
+          "number": 71,
+          "role": "forward",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 22,
+            "fow": 13,
+            "toi": 19.15,
+            "si": 26,
+            "pim": 0,
+            "hits": 1,
+            "bls": 0,
+            "topSpeed": 31.25,
+            "distanceTravelled": 4.67,
+            "allPasses": 10,
+            "successfulPasses": 9
+          }
+        },
+        {
+          "player_id": 47699,
+          "name": "Lutfullin Ignat",
+          "number": 91,
+          "role": "forward",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 15.0666666666667,
+            "si": 19,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 32.11,
+            "distanceTravelled": 3.7,
+            "allPasses": 20,
+            "successfulPasses": 17
+          }
+        },
+        {
+          "player_id": 9043,
+          "name": "Maklyukov Alexei",
+          "number": 85,
+          "role": "defensemen",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 17.8666666666667,
+            "si": 27,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 29.7,
+            "distanceTravelled": 3.61,
+            "allPasses": 26,
+            "successfulPasses": 24
+          }
+        },
+        {
+          "player_id": 19233,
+          "name": "Miromanov Daniil",
+          "number": 62,
+          "role": "defensemen",
+          "stats": {
+            "shots": 3,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 16.6,
+            "si": 26,
+            "pim": 2,
+            "hits": 0,
+            "bls": 4,
+            "topSpeed": 31.39,
+            "distanceTravelled": 3.94,
+            "allPasses": 25,
+            "successfulPasses": 23
+          }
+        },
+        {
+          "player_id": 38291,
+          "name": "Nedopyokin Nikita",
+          "number": 47,
+          "role": "forward",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 19,
+            "fow": 7,
+            "toi": 15.1666666666667,
+            "si": 24,
+            "pim": 0,
+            "hits": 2,
+            "bls": 0,
+            "topSpeed": 31.72,
+            "distanceTravelled": 3.86,
+            "allPasses": 17,
+            "successfulPasses": 13
+          }
+        },
+        {
+          "player_id": 41179,
+          "name": "Nugmanov Amir",
+          "number": 88,
+          "role": "forward",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 6.65,
+            "si": 15,
+            "pim": 0,
+            "hits": 4,
+            "bls": 0,
+            "topSpeed": 31.82,
+            "distanceTravelled": 1.66,
+            "allPasses": 3,
+            "successfulPasses": 2
+          }
+        },
+        {
+          "player_id": 21937,
+          "name": "Pedan Andrei",
+          "number": 3,
+          "role": "defensemen",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 14.1333333333333,
+            "si": 24,
+            "pim": 2,
+            "hits": 4,
+            "bls": 2,
+            "topSpeed": 30.1,
+            "distanceTravelled": 3.03,
+            "allPasses": 13,
+            "successfulPasses": 11
+          }
+        },
+        {
+          "player_id": 1298,
+          "name": "Plotnikov Sergei",
+          "number": 16,
+          "role": "forward",
+          "stats": {
+            "shots": 3,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 15.15,
+            "si": 23,
+            "pim": 0,
+            "hits": 1,
+            "bls": 1,
+            "topSpeed": 34.09,
+            "distanceTravelled": 3.61,
+            "allPasses": 23,
+            "successfulPasses": 19
+          }
+        },
+        {
+          "player_id": 34953,
+          "name": "Savikov Yegor",
+          "number": 34,
+          "role": "defensemen",
+          "stats": {
+            "shots": 3,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 23.2166666666667,
+            "si": 29,
+            "pim": 2,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 30.17,
+            "distanceTravelled": 5.09,
+            "allPasses": 44,
+            "successfulPasses": 35
+          }
+        },
+        {
+          "player_id": 32869,
+          "name": "Sapego Sergei",
+          "number": 9,
+          "role": "defensemen",
+          "stats": {
+            "shots": 2,
+            "goals": 1,
+            "fo": 0,
+            "fow": 0,
+            "toi": 15.95,
+            "si": 25,
+            "pim": 0,
+            "hits": 0,
+            "bls": 2,
+            "topSpeed": 32.98,
+            "distanceTravelled": 3.42,
+            "allPasses": 24,
+            "successfulPasses": 21
+          }
+        },
+        {
+          "player_id": 18497,
+          "name": "Syomin Vladislav",
+          "number": 42,
+          "role": "defensemen",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 16.95,
+            "si": 25,
+            "pim": 0,
+            "hits": 6,
+            "bls": 3,
+            "topSpeed": 28.84,
+            "distanceTravelled": 3.65,
+            "allPasses": 22,
+            "successfulPasses": 16
+          }
+        },
+        {
+          "player_id": 50616,
+          "name": "Suzdorf German",
+          "number": 78,
+          "role": "forward",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 11,
+            "fow": 5,
+            "toi": 11.4666666666667,
+            "si": 22,
+            "pim": 0,
+            "hits": 0,
+            "bls": 1,
+            "topSpeed": 31.32,
+            "distanceTravelled": 3.04,
+            "allPasses": 7,
+            "successfulPasses": 6
+          }
+        },
+        {
+          "player_id": 17791,
+          "name": "Chebykin Nikolai",
+          "number": 97,
+          "role": "forward",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 5.68333333333333,
+            "si": 9,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 30.49,
+            "distanceTravelled": 1.59,
+            "allPasses": 3,
+            "successfulPasses": 2
+          }
+        }
+      ],
+      "away_skaters": [
+        {
+          "player_id": 39631,
+          "name": "Barach Derek",
+          "number": 26,
+          "role": "forward",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 11.6833333333333,
+            "si": 20,
+            "pim": 0,
+            "hits": 2,
+            "bls": 1,
+            "topSpeed": 30.17,
+            "distanceTravelled": 2.89,
+            "allPasses": 14,
+            "successfulPasses": 8
+          }
+        },
+        {
+          "player_id": 36963,
+          "name": "Buchelnikov Dmitry",
+          "number": 72,
+          "role": "forward",
+          "stats": {
+            "shots": 3,
+            "goals": 1,
+            "fo": 0,
+            "fow": 0,
+            "toi": 12.1333333333333,
+            "si": 20,
+            "pim": 0,
+            "hits": 0,
+            "bls": 1,
+            "topSpeed": 38.05,
+            "distanceTravelled": 3.23,
+            "allPasses": 6,
+            "successfulPasses": 5
+          }
+        },
+        {
+          "player_id": 4257,
+          "name": "Guryanov Denis",
+          "number": 34,
+          "role": "forward",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 1.5,
+            "si": 1,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 29.02,
+            "distanceTravelled": 0.31,
+            "allPasses": 0,
+            "successfulPasses": 0
+          }
+        },
+        {
+          "player_id": 22289,
+          "name": "Drozdov Ivan",
+          "number": 19,
+          "role": "forward",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 15.3333333333333,
+            "si": 25,
+            "pim": 0,
+            "hits": 4,
+            "bls": 0,
+            "topSpeed": 30.67,
+            "distanceTravelled": 3.52,
+            "allPasses": 5,
+            "successfulPasses": 4
+          }
+        },
+        {
+          "player_id": 49600,
+          "name": "Zamula Yegor",
+          "number": 9,
+          "role": "defensemen",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 20.5,
+            "si": 29,
+            "pim": 0,
+            "hits": 0,
+            "bls": 1,
+            "topSpeed": 31.21,
+            "distanceTravelled": 4.48,
+            "allPasses": 27,
+            "successfulPasses": 24
+          }
+        },
+        {
+          "player_id": 9167,
+          "name": "Karnaukhov Pavel",
+          "number": 15,
+          "role": "forward",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 21,
+            "fow": 11,
+            "toi": 18.5666666666667,
+            "si": 29,
+            "pim": 0,
+            "hits": 2,
+            "bls": 0,
+            "topSpeed": 33.84,
+            "distanceTravelled": 4.37,
+            "allPasses": 5,
+            "successfulPasses": 3
+          }
+        },
+        {
+          "player_id": 16827,
+          "name": "Kovalenko Nikolai",
+          "number": 51,
+          "role": "forward",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 13,
+            "fow": 7,
+            "toi": 16.8,
+            "si": 25,
+            "pim": 0,
+            "hits": 2,
+            "bls": 1,
+            "topSpeed": 31.79,
+            "distanceTravelled": 4.11,
+            "allPasses": 16,
+            "successfulPasses": 13
+          }
+        },
+        {
+          "player_id": 9171,
+          "name": "Kostin Klim",
+          "number": 10,
+          "role": "forward",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 13.4833333333333,
+            "si": 24,
+            "pim": 4,
+            "hits": 7,
+            "bls": 0,
+            "topSpeed": 34.16,
+            "distanceTravelled": 3.03,
+            "allPasses": 7,
+            "successfulPasses": 5
+          }
+        },
+        {
+          "player_id": 4445,
+          "name": "Mamin Maxim V.",
+          "number": 98,
+          "role": "forward",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 18.15,
+            "si": 26,
+            "pim": 0,
+            "hits": 0,
+            "bls": 2,
+            "topSpeed": 33.12,
+            "distanceTravelled": 4.36,
+            "allPasses": 6,
+            "successfulPasses": 4
+          }
+        },
+        {
+          "player_id": 1766,
+          "name": "Nesterov Nikita D.",
+          "number": 89,
+          "role": "defensemen",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 21.0666666666667,
+            "si": 32,
+            "pim": 0,
+            "hits": 0,
+            "bls": 1,
+            "topSpeed": 29.88,
+            "distanceTravelled": 4.17,
+            "allPasses": 10,
+            "successfulPasses": 8
+          }
+        },
+        {
+          "player_id": 16519,
+          "name": "Okhotyuk Nikita",
+          "number": 55,
+          "role": "defensemen",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 11.8,
+            "si": 23,
+            "pim": 2,
+            "hits": 1,
+            "bls": 1,
+            "topSpeed": 30.89,
+            "distanceTravelled": 2.56,
+            "allPasses": 10,
+            "successfulPasses": 7
+          }
+        },
+        {
+          "player_id": 43915,
+          "name": "Patrikhayev Ivan",
+          "number": 28,
+          "role": "defensemen",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 10.5166666666667,
+            "si": 19,
+            "pim": 0,
+            "hits": 1,
+            "bls": 0,
+            "topSpeed": 28.84,
+            "distanceTravelled": 2.25,
+            "allPasses": 8,
+            "successfulPasses": 7
+          }
+        },
+        {
+          "player_id": 32297,
+          "name": "Poltapov Prokhor",
+          "number": 13,
+          "role": "forward",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 13.75,
+            "si": 21,
+            "pim": 0,
+            "hits": 1,
+            "bls": 0,
+            "topSpeed": 31.28,
+            "distanceTravelled": 3.63,
+            "allPasses": 12,
+            "successfulPasses": 8
+          }
+        },
+        {
+          "player_id": 50264,
+          "name": "Privalov Nazar",
+          "number": 95,
+          "role": "forward",
+          "stats": {
+            "shots": 2,
+            "goals": 1,
+            "fo": 0,
+            "fow": 0,
+            "toi": 7.31666666666667,
+            "si": 14,
+            "pim": 0,
+            "hits": 1,
+            "bls": 1,
+            "topSpeed": 31.68,
+            "distanceTravelled": 1,
+            "allPasses": 4,
+            "successfulPasses": 4
+          }
+        },
+        {
+          "player_id": 37123,
+          "name": "Roy Jeremy",
+          "number": 79,
+          "role": "defensemen",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 19.0333333333333,
+            "si": 30,
+            "pim": 0,
+            "hits": 0,
+            "bls": 2,
+            "topSpeed": 31.68,
+            "distanceTravelled": 3.87,
+            "allPasses": 10,
+            "successfulPasses": 7
+          }
+        },
+        {
+          "player_id": 47523,
+          "name": "Sawchuk Riley",
+          "number": 18,
+          "role": "forward",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 12,
+            "fow": 6,
+            "toi": 11.9666666666667,
+            "si": 21,
+            "pim": 0,
+            "hits": 1,
+            "bls": 0,
+            "topSpeed": 31.79,
+            "distanceTravelled": 3.01,
+            "allPasses": 6,
+            "successfulPasses": 5
+          }
+        },
+        {
+          "player_id": 29865,
+          "name": "Samorukov Dmitry",
+          "number": 5,
+          "role": "defensemen",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 16.0666666666667,
+            "si": 29,
+            "pim": 2,
+            "hits": 0,
+            "bls": 1,
+            "topSpeed": 28.73,
+            "distanceTravelled": 3.56,
+            "allPasses": 9,
+            "successfulPasses": 8
+          }
+        },
+        {
+          "player_id": 28309,
+          "name": "Sorkin Maxim",
+          "number": 27,
+          "role": "forward",
+          "stats": {
+            "shots": 1,
+            "goals": 1,
+            "fo": 19,
+            "fow": 11,
+            "toi": 15.9666666666667,
+            "si": 28,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 32.9,
+            "distanceTravelled": 3.99,
+            "allPasses": 10,
+            "successfulPasses": 9
+          }
+        },
+        {
+          "player_id": 5351,
+          "name": "Khairullin Marat",
+          "number": 61,
+          "role": "forward",
+          "stats": {
+            "shots": 4,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 14.7333333333333,
+            "si": 25,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 33.01,
+            "distanceTravelled": 3.56,
+            "allPasses": 10,
+            "successfulPasses": 8
+          }
+        },
+        {
+          "player_id": 38503,
+          "name": "Hamilton Robert",
+          "number": 22,
+          "role": "defensemen",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 15.3,
+            "si": 27,
+            "pim": 0,
+            "hits": 0,
+            "bls": 3,
+            "topSpeed": 31.43,
+            "distanceTravelled": 2.99,
+            "allPasses": 12,
+            "successfulPasses": 10
+          }
+        }
+      ],
+      "goals": [
+        {
+          "period": 3,
+          "time_s": 3473,
+          "score": "1:3",
+          "type": "ES",
+          "author": "Sorkin Maxim"
+        },
+        {
+          "period": 3,
+          "time_s": 2467,
+          "score": "1:2",
+          "type": "ES",
+          "author": "Sapego Sergei"
+        },
+        {
+          "period": 2,
+          "time_s": 2264,
+          "score": "0:2",
+          "type": "ES",
+          "author": "Privalov Nazar"
+        },
+        {
+          "period": 2,
+          "time_s": 1970,
+          "score": "0:1",
+          "type": "PP",
+          "author": "Buchelnikov Dmitry"
+        }
+      ]
+    },
+    {
+      "game_id": 3000879,
+      "khl_id": 902182,
+      "stage_id": 407,
+      "game_type": "REG",
+      "start_utc": "2026-10-25T14:00:00Z",
+      "venue": "Arena-2000 Lokomotiv",
+      "venue_city": "Yaroslavl",
+      "home_verified": true,
+      "home_team": "Lokomotiv",
+      "away_team": "Severstal",
+      "home_team_id": 26,
+      "away_team_id": 42,
+      "home_score": 1,
+      "away_score": 0,
+      "total_goals": 1,
+      "end_type": "REG",
+      "reg_home_score": 1,
+      "reg_away_score": 0,
+      "reg_total_goals": 1,
+      "winner": "Lokomotiv",
+      "period_scores": [
+        {
+          "period": 1,
+          "type": "REG",
+          "home": 1,
+          "away": 0
+        },
+        {
+          "period": 2,
+          "type": "REG",
+          "home": 0,
+          "away": 0
+        },
+        {
+          "period": 3,
+          "type": "REG",
+          "home": 0,
+          "away": 0
+        }
+      ],
+      "home_stats": {
+        "shots": 28,
+        "pp_goals": 0,
+        "pp_opps": 3,
+        "sh_goals": 0,
+        "pim": 6,
+        "fo_won": 30
+      },
+      "away_stats": {
+        "shots": 24,
+        "pp_goals": 0,
+        "pp_opps": 2,
+        "sh_goals": 0,
+        "pim": 4,
+        "fo_won": 21
+      },
+      "home_goalies": [
+        {
+          "player_id": 22197,
+          "name": "Isayev Daniil A.",
+          "number": 92,
+          "role": "goaltender",
+          "stats": {
+            "toi": 60.0,
+            "pim": 0,
+            "topSpeed": 0.0,
+            "distanceTravelled": 0.0,
+            "allPasses": 2,
+            "successfulPasses": 2
+          },
+          "toi": 60.0,
+          "starter": true,
+          "shots_against": 24,
+          "goals_against": 0,
+          "saves": 24,
+          "sv_pct": 1.0
+        }
+      ],
+      "away_goalies": [
+        {
+          "player_id": 4953,
+          "name": "Samoilov Alexander",
+          "number": 29,
+          "role": "goaltender",
+          "stats": {
+            "toi": 57.2333333333333,
+            "pim": 0,
+            "topSpeed": 0.0,
+            "distanceTravelled": 0.0,
+            "allPasses": 5,
+            "successfulPasses": 5
+          },
+          "toi": 57.23,
+          "starter": true,
+          "shots_against": 28,
+          "goals_against": 1,
+          "saves": 27,
+          "sv_pct": 0.964
+        }
+      ],
+      "home_skaters": [
+        {
+          "player_id": 18295,
+          "name": "Alexeyev Denis V.",
+          "number": 91,
+          "role": "forward",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 7,
+            "fow": 3,
+            "toi": 13.85,
+            "si": 23,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 30.74,
+            "distanceTravelled": 3.3,
+            "allPasses": 17,
+            "successfulPasses": 13
+          }
+        },
+        {
+          "player_id": 3313,
+          "name": "Bereglazov Alexei",
+          "number": 5,
+          "role": "defensemen",
+          "stats": {
+            "shots": 3,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 20.35,
+            "si": 29,
+            "pim": 0,
+            "hits": 0,
+            "bls": 3,
+            "topSpeed": 29.77,
+            "distanceTravelled": 3.97,
+            "allPasses": 15,
+            "successfulPasses": 14
+          }
+        },
+        {
+          "player_id": 8903,
+          "name": "Yelesin Alexander",
+          "number": 4,
+          "role": "defensemen",
+          "stats": {
+            "shots": 1,
+            "goals": 1,
+            "fo": 0,
+            "fow": 0,
+            "toi": 20.9,
+            "si": 29,
+            "pim": 0,
+            "hits": 3,
+            "bls": 4,
+            "topSpeed": 31.57,
+            "distanceTravelled": 4.44,
+            "allPasses": 15,
+            "successfulPasses": 14
+          }
+        },
+        {
+          "player_id": 50476,
+          "name": "Yemelyanov Kirill D.",
+          "number": 97,
+          "role": "forward",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 2.58333333333333,
+            "si": 6,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 27.54,
+            "distanceTravelled": 0.65,
+            "allPasses": 1,
+            "successfulPasses": 1
+          }
+        },
+        {
+          "player_id": 16815,
+          "name": "Ivanov Georgy",
+          "number": 10,
+          "role": "forward",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 17,
+            "fow": 10,
+            "toi": 17.2166666666667,
+            "si": 25,
+            "pim": 2,
+            "hits": 0,
+            "bls": 1,
+            "topSpeed": 32.33,
+            "distanceTravelled": 3.8,
+            "allPasses": 9,
+            "successfulPasses": 8
+          }
+        },
+        {
+          "player_id": 16819,
+          "name": "Kayumov Artur",
+          "number": 16,
+          "role": "forward",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 11.5333333333333,
+            "si": 16,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 31.64,
+            "distanceTravelled": 2.84,
+            "allPasses": 13,
+            "successfulPasses": 11
+          }
+        },
+        {
+          "player_id": 40363,
+          "name": "Kiryanov Nikita V.",
+          "number": 7,
+          "role": "forward",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 11.05,
+            "si": 19,
+            "pim": 0,
+            "hits": 2,
+            "bls": 0,
+            "topSpeed": 32.18,
+            "distanceTravelled": 2,
+            "allPasses": 20,
+            "successfulPasses": 16
+          }
+        },
+        {
+          "player_id": 50132,
+          "name": "Kotkov Matvei",
+          "number": 17,
+          "role": "forward",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 11.0333333333333,
+            "si": 22,
+            "pim": 0,
+            "hits": 2,
+            "bls": 1,
+            "topSpeed": 33.98,
+            "distanceTravelled": 2.67,
+            "allPasses": 9,
+            "successfulPasses": 9
+          }
+        },
+        {
+          "player_id": 47539,
+          "name": "Kuzin Artyom V.",
+          "number": 27,
+          "role": "forward",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 11,
+            "fow": 8,
+            "toi": 17.4333333333333,
+            "si": 25,
+            "pim": 0,
+            "hits": 2,
+            "bls": 2,
+            "topSpeed": 32.58,
+            "distanceTravelled": 4.0,
+            "allPasses": 13,
+            "successfulPasses": 13
+          }
+        },
+        {
+          "player_id": 25677,
+          "name": "Misyul Daniil",
+          "number": 93,
+          "role": "defensemen",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 16.5666666666667,
+            "si": 25,
+            "pim": 0,
+            "hits": 1,
+            "bls": 2,
+            "topSpeed": 32.36,
+            "distanceTravelled": 3.47,
+            "allPasses": 12,
+            "successfulPasses": 11
+          }
+        },
+        {
+          "player_id": 45167,
+          "name": "Nikolayev Ilya E.",
+          "number": 9,
+          "role": "forward",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 4,
+            "fow": 2,
+            "toi": 11.8166666666667,
+            "si": 18,
+            "pim": 0,
+            "hits": 1,
+            "bls": 0,
+            "topSpeed": 32.47,
+            "distanceTravelled": 2.89,
+            "allPasses": 10,
+            "successfulPasses": 6
+          }
+        },
+        {
+          "player_id": 5475,
+          "name": "Polunin Alexander",
+          "number": 90,
+          "role": "forward",
+          "stats": {
+            "shots": 3,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 14.5,
+            "si": 23,
+            "pim": 0,
+            "hits": 1,
+            "bls": 0,
+            "topSpeed": 31.21,
+            "distanceTravelled": 3.34,
+            "allPasses": 6,
+            "successfulPasses": 5
+          }
+        },
+        {
+          "player_id": 50136,
+          "name": "Pustovoi Andrei",
+          "number": 41,
+          "role": "forward",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 11.7,
+            "si": 23,
+            "pim": 2,
+            "hits": 1,
+            "bls": 0,
+            "topSpeed": 33.48,
+            "distanceTravelled": 2.81,
+            "allPasses": 10,
+            "successfulPasses": 8
+          }
+        },
+        {
+          "player_id": 5471,
+          "name": "Rafikov Rushan",
+          "number": 87,
+          "role": "defensemen",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 20.2166666666667,
+            "si": 30,
+            "pim": 0,
+            "hits": 0,
+            "bls": 4,
+            "topSpeed": 28.98,
+            "distanceTravelled": 4.0,
+            "allPasses": 20,
+            "successfulPasses": 16
+          }
+        },
+        {
+          "player_id": 1430,
+          "name": "Sergeyev Andrei",
+          "number": 99,
+          "role": "defensemen",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 21.8666666666667,
+            "si": 28,
+            "pim": 2,
+            "hits": 2,
+            "bls": 3,
+            "topSpeed": 32.33,
+            "distanceTravelled": 4.38,
+            "allPasses": 11,
+            "successfulPasses": 9
+          }
+        },
+        {
+          "player_id": 41227,
+          "name": "Surin Yegor",
+          "number": 70,
+          "role": "forward",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 17.3333333333333,
+            "si": 25,
+            "pim": 0,
+            "hits": 5,
+            "bls": 3,
+            "topSpeed": 33.48,
+            "distanceTravelled": 3.92,
+            "allPasses": 17,
+            "successfulPasses": 13
+          }
+        },
+        {
+          "player_id": 41659,
+          "name": "Ulyev Mark",
+          "number": 49,
+          "role": "defensemen",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 1.03333333333333,
+            "si": 2,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 28.22,
+            "distanceTravelled": 0.27,
+            "allPasses": 0,
+            "successfulPasses": 0
+          }
+        },
+        {
+          "player_id": 39571,
+          "name": "Fiore Giovanni",
+          "number": 13,
+          "role": "forward",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 15.9333333333333,
+            "si": 24,
+            "pim": 0,
+            "hits": 3,
+            "bls": 0,
+            "topSpeed": 32.47,
+            "distanceTravelled": 3.59,
+            "allPasses": 10,
+            "successfulPasses": 7
+          }
+        },
+        {
+          "player_id": 5635,
+          "name": "Cherepanov Nikita V.",
+          "number": 73,
+          "role": "defensemen",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 17.2333333333333,
+            "si": 25,
+            "pim": 0,
+            "hits": 0,
+            "bls": 4,
+            "topSpeed": 29.81,
+            "distanceTravelled": 3.5,
+            "allPasses": 18,
+            "successfulPasses": 15
+          }
+        },
+        {
+          "player_id": 2293,
+          "name": "Shalunov Maxim",
+          "number": 78,
+          "role": "forward",
+          "stats": {
+            "shots": 3,
+            "goals": 0,
+            "fo": 12,
+            "fow": 7,
+            "toi": 14.2166666666667,
+            "si": 24,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 31.93,
+            "distanceTravelled": 3.87,
+            "allPasses": 12,
+            "successfulPasses": 11
+          }
+        }
+      ],
+      "away_skaters": [
+        {
+          "player_id": 35165,
+          "name": "Abrosimov Ruslan",
+          "number": 17,
+          "role": "forward",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 12,
+            "fow": 6,
+            "toi": 17.4333333333333,
+            "si": 23,
+            "pim": 0,
+            "hits": 1,
+            "bls": 1,
+            "topSpeed": 32.54,
+            "distanceTravelled": 4.26,
+            "allPasses": 29,
+            "successfulPasses": 23
+          }
+        },
+        {
+          "player_id": 8871,
+          "name": "Veryayev Danil",
+          "number": 18,
+          "role": "forward",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 12.4,
+            "si": 18,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 30.56,
+            "distanceTravelled": 3.21,
+            "allPasses": 13,
+            "successfulPasses": 10
+          }
+        },
+        {
+          "player_id": 46723,
+          "name": "Gregoire Thomas",
+          "number": 32,
+          "role": "defensemen",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 21.9833333333333,
+            "si": 24,
+            "pim": 2,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 29.84,
+            "distanceTravelled": 4.52,
+            "allPasses": 42,
+            "successfulPasses": 40
+          }
+        },
+        {
+          "player_id": 35213,
+          "name": "Grudinin Vladimir",
+          "number": 2,
+          "role": "defensemen",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 19.9833333333333,
+            "si": 23,
+            "pim": 0,
+            "hits": 0,
+            "bls": 2,
+            "topSpeed": 30.89,
+            "distanceTravelled": 4.16,
+            "allPasses": 47,
+            "successfulPasses": 46
+          }
+        },
+        {
+          "player_id": 35341,
+          "name": "Davydov Timofei",
+          "number": 75,
+          "role": "defensemen",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 22.7333333333333,
+            "si": 25,
+            "pim": 0,
+            "hits": 3,
+            "bls": 3,
+            "topSpeed": 33.23,
+            "distanceTravelled": 4.66,
+            "allPasses": 30,
+            "successfulPasses": 25
+          }
+        },
+        {
+          "player_id": 30613,
+          "name": "Dumbadze David",
+          "number": 88,
+          "role": "forward",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 15.8333333333333,
+            "si": 23,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 34.38,
+            "distanceTravelled": 3.56,
+            "allPasses": 13,
+            "successfulPasses": 11
+          }
+        },
+        {
+          "player_id": 31021,
+          "name": "Ivantsov Ilya",
+          "number": 6,
+          "role": "forward",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 14,
+            "fow": 2,
+            "toi": 19.45,
+            "si": 23,
+            "pim": 0,
+            "hits": 0,
+            "bls": 1,
+            "topSpeed": 34.6,
+            "distanceTravelled": 4.53,
+            "allPasses": 35,
+            "successfulPasses": 29
+          }
+        },
+        {
+          "player_id": 39683,
+          "name": "Kaldis Ioannis",
+          "number": 8,
+          "role": "defensemen",
+          "stats": {
+            "shots": 3,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 21.2,
+            "si": 26,
+            "pim": 0,
+            "hits": 1,
+            "bls": 1,
+            "topSpeed": 31.57,
+            "distanceTravelled": 4.53,
+            "allPasses": 40,
+            "successfulPasses": 35
+          }
+        },
+        {
+          "player_id": 35037,
+          "name": "Kvochko Ilya",
+          "number": 51,
+          "role": "forward",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 9,
+            "fow": 5,
+            "toi": 14.8666666666667,
+            "si": 18,
+            "pim": 0,
+            "hits": 1,
+            "bls": 2,
+            "topSpeed": 32.18,
+            "distanceTravelled": 3.46,
+            "allPasses": 20,
+            "successfulPasses": 17
+          }
+        },
+        {
+          "player_id": 30349,
+          "name": "Kizimov Semyon",
+          "number": 97,
+          "role": "forward",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 14.7333333333333,
+            "si": 15,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 29.84,
+            "distanceTravelled": 3.35,
+            "allPasses": 23,
+            "successfulPasses": 17
+          }
+        },
+        {
+          "player_id": 48011,
+          "name": "Kozyrev Mark",
+          "number": 22,
+          "role": "defensemen",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 4.01666666666667,
+            "si": 4,
+            "pim": 0,
+            "hits": 0,
+            "bls": 1,
+            "topSpeed": 31.68,
+            "distanceTravelled": 0.89,
+            "allPasses": 6,
+            "successfulPasses": 4
+          }
+        },
+        {
+          "player_id": 22145,
+          "name": "Liska Adam",
+          "number": 23,
+          "role": "forward",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 15.5666666666667,
+            "si": 22,
+            "pim": 0,
+            "hits": 0,
+            "bls": 2,
+            "topSpeed": 30.96,
+            "distanceTravelled": 3.76,
+            "allPasses": 19,
+            "successfulPasses": 17
+          }
+        },
+        {
+          "player_id": 41171,
+          "name": "Nikitin Vsevolod",
+          "number": 16,
+          "role": "forward",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 2.25,
+            "si": 3,
+            "pim": 0,
+            "hits": 0,
+            "bls": 0,
+            "topSpeed": 33.77,
+            "distanceTravelled": 0.69,
+            "allPasses": 2,
+            "successfulPasses": 1
+          }
+        },
+        {
+          "player_id": 35301,
+          "name": "Podshivalov Ivan",
+          "number": 66,
+          "role": "forward",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 14,
+            "fow": 7,
+            "toi": 14.2166666666667,
+            "si": 23,
+            "pim": 0,
+            "hits": 1,
+            "bls": 0,
+            "topSpeed": 31.07,
+            "distanceTravelled": 3.53,
+            "allPasses": 14,
+            "successfulPasses": 9
+          }
+        },
+        {
+          "player_id": 21381,
+          "name": "Popugayev Nikita A.",
+          "number": 71,
+          "role": "forward",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 11.0,
+            "si": 16,
+            "pim": 0,
+            "hits": 0,
+            "bls": 1,
+            "topSpeed": 30.53,
+            "distanceTravelled": 2.61,
+            "allPasses": 16,
+            "successfulPasses": 13
+          }
+        },
+        {
+          "player_id": 40379,
+          "name": "Reingardt Ilya",
+          "number": 37,
+          "role": "forward",
+          "stats": {
+            "shots": 3,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 6.91666666666667,
+            "si": 10,
+            "pim": 0,
+            "hits": 1,
+            "bls": 0,
+            "topSpeed": 32.08,
+            "distanceTravelled": 1.72,
+            "allPasses": 5,
+            "successfulPasses": 3
+          }
+        },
+        {
+          "player_id": 38315,
+          "name": "Skorenov Alexander",
+          "number": 12,
+          "role": "forward",
+          "stats": {
+            "shots": 2,
+            "goals": 0,
+            "fo": 2,
+            "fow": 1,
+            "toi": 20.4166666666667,
+            "si": 22,
+            "pim": 0,
+            "hits": 1,
+            "bls": 1,
+            "topSpeed": 33.19,
+            "distanceTravelled": 5.0,
+            "allPasses": 38,
+            "successfulPasses": 36
+          }
+        },
+        {
+          "player_id": 43799,
+          "name": "Fomin Makar",
+          "number": 77,
+          "role": "defensemen",
+          "stats": {
+            "shots": 0,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 11.8666666666667,
+            "si": 16,
+            "pim": 0,
+            "hits": 1,
+            "bls": 1,
+            "topSpeed": 30.24,
+            "distanceTravelled": 2.79,
+            "allPasses": 25,
+            "successfulPasses": 24
+          }
+        },
+        {
+          "player_id": 50188,
+          "name": "Chuklinov Semyon",
+          "number": 78,
+          "role": "defensemen",
+          "stats": {
+            "shots": 1,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 13.1,
+            "si": 17,
+            "pim": 0,
+            "hits": 1,
+            "bls": 0,
+            "topSpeed": 31.25,
+            "distanceTravelled": 2.73,
+            "allPasses": 8,
+            "successfulPasses": 7
+          }
+        },
+        {
+          "player_id": 36003,
+          "name": "Yan Denis",
+          "number": 11,
+          "role": "forward",
+          "stats": {
+            "shots": 3,
+            "goals": 0,
+            "fo": 0,
+            "fow": 0,
+            "toi": 15.9166666666667,
+            "si": 22,
+            "pim": 2,
+            "hits": 0,
+            "bls": 1,
+            "topSpeed": 30.71,
+            "distanceTravelled": 3.73,
+            "allPasses": 9,
+            "successfulPasses": 6
+          }
+        }
+      ],
+      "goals": [
+        {
+          "period": 1,
+          "time_s": 897,
+          "score": "1:0",
+          "type": "ES",
+          "author": "Yelesin Alexander"
+        }
+      ]
+    }
+  ]
+}
