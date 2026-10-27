@@ -74,3 +74,14 @@ jobs:
         run: |
           git pull --ff-only origin main || git pull origin main
           python analytics/build_hockey_stats.py KHL DEL CZE
+      - name: 픽 로그 자동 채점
+        run: |
+          git pull --ff-only origin main || git pull origin main
+          python analytics/grade_picks.py data/picks/picks_log.json data
+          if ! git diff --quiet -- data/picks/picks_log.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add data/picks/picks_log.json
+            git commit -m "[PICKS] 픽 로그 자동 채점"
+            git push origin HEAD:main
+          fi
