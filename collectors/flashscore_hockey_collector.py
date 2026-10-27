@@ -3,6 +3,8 @@
 대상 리그 (LEAGUES):
   DEL : 독일 PENNY DEL
   CZE : 체코 Tipsport Extraliga  (공식 hokej.cz는 GitHub Actions IP를 403 차단)
+  LIIGA : 핀란드 Liiga
+  SHL : 스웨덴 SHL
   KHL : 지난 시즌 백필 전용 (KHL 모바일 API는 현재 시즌만 조회됨). 팀명은 KHL API 표기로 변환
 
 수집 단위: 현지(중부유럽) 날짜 YYYYMMDD 하루치 완료 경기
@@ -35,6 +37,11 @@ LEAGUES = {
             "tz": "Europe/Berlin"},
     "CZE": {"path": "hockey/czech-republic/extraliga", "country": "62", "tournament": "QR1GYbvD",
             "tz": "Europe/Prague"},
+    # country는 결과 페이지에서 추출, 실패 시 이 값 사용. tournament도 페이지 추출 우선
+    "LIIGA": {"path": "hockey/finland/liiga", "country": "76", "tournament": None,
+              "tz": "Europe/Helsinki"},
+    "SHL": {"path": "hockey/sweden/shl", "country": "181", "tournament": None,
+            "tz": "Europe/Stockholm"},
     # 파일 날짜는 기존 KHL 수집기와 같은 모스크바 날짜, 팀명은 KHL API 표기
     "KHL": {"path": "hockey/russia/khl", "country": "158", "tournament": "v9k3aY5F",
             "tz": "Europe/Moscow", "exhibition_teams": {"Russia"},
@@ -141,7 +148,11 @@ class FlashscoreHockeyCollector:
             raise RuntimeError(f"{self.league} {y1}-{y2} seasonId를 찾지 못함 (페이지 구조 변경?)")
         sid = sid.group(1)
         tour = re.search(r'tournament_id"\s*:\s*"(\w+)"', html)
-        tour = tour.group(1) if tour else self.cfg["tournament"]
+        tour = tour.group(1) if tour else self.cfg.get("tournament")
+        if not tour:
+            raise RuntimeError(f"{self.league} tournament_id를 찾지 못함 (페이지 구조 변경?)")
+        cty = re.search(r'country_?[iI]d"?\s*[:=]\s*"?(\d+)', html)
+        country = cty.group(1) if cty else self.cfg["country"]
         total = re.search(r"allEventsCount:\s*(\d+)", html)
 
         recs = {}
@@ -151,7 +162,7 @@ class FlashscoreHockeyCollector:
             for r in _records(m.group(1)):
                 recs.setdefault(r["AA"], r)
         for page in range(1, 30):
-            text = self._get(f"{FEED}tr_4_{self.cfg['country']}_{tour}_{sid}_{page}_0_en_2", feed=True)
+            text = self._get(f"{FEED}tr_4_{country}_{tour}_{sid}_{page}_0_en_2", feed=True)
             batch = _records(text)
             if not batch:
                 break

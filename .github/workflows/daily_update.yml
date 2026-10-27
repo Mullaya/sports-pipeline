@@ -67,10 +67,10 @@ jobs:
         run: |
           git pull --ff-only origin main || git pull origin main
           python analytics/build_kovo_stats.py
-      - name: 유럽 하키(KHL·DEL·체코) 통계 집계
+      - name: 유럽 하키(KHL·DEL·체코·Liiga·SHL) 통계 집계
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: |
           git pull --ff-only origin main || git pull origin main
-          python analytics/build_hockey_stats.py KHL DEL CZE
+          python analytics/build_hockey_stats.py KHL DEL CZE LIIGA SHL

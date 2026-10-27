@@ -17,6 +17,8 @@ FILE_SUFFIX = {
     "WKOVO": " wkovo",
     "DEL": " del",
     "CZE": " cze",
+    "LIIGA": " liiga",
+    "SHL": " shl",
 }
 
 

@@ -1,6 +1,6 @@
-"""유럽 하키(KHL / DEL / CZE) 누적 집계 → analytics/{LEAGUE}_stats.json
+"""유럽 하키(KHL / DEL / CZE / LIIGA / SHL) 누적 집계 → analytics/{LEAGUE}_stats.json
 
-사용: python analytics/build_hockey_stats.py [KHL DEL CZE]   (인자 없으면 전부)
+사용: python analytics/build_hockey_stats.py [KHL DEL CZE LIIGA SHL]   (인자 없으면 전부)
 
 입력: data/{LEAGUE}/daily/*.json + data/{LEAGUE}/historical/*.json (game_id 중복 제거, 시즌 구분은 날짜)
 출력 구조:
@@ -36,6 +36,10 @@ LEAGUE_CFG = {
             "fail_after": "20261001"},
     "CZE": {"season_start": os.getenv("CZE_SEASON_START", "20260801"), "points": (3, 2, 1),
             "fail_after": "20261001"},
+    "LIIGA": {"season_start": os.getenv("LIIGA_SEASON_START", "20260801"), "points": (3, 2, 1),
+              "fail_after": "20261101"},
+    "SHL": {"season_start": os.getenv("SHL_SEASON_START", "20260801"), "points": (3, 2, 1),
+            "fail_after": "20261101"},
 }
 
 

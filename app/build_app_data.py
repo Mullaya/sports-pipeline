@@ -39,6 +39,8 @@ LEAGUES = [
     ("KHL", "하키", 4, "RUSSIA: KHL", "KHL"),
     ("DEL", "하키", 4, "GERMANY: DEL", "DEL"),
     ("CZE", "하키", 4, "CZECH REPUBLIC: Extraliga", "CZE"),
+    ("LIIGA", "하키", 4, "FINLAND: Liiga", "LIIGA"),
+    ("SHL", "하키", 4, "SWEDEN: SHL", "SHL"),
     ("NBA", "농구", 3, "USA: NBA", None),
     ("KBL", "농구", 3, "SOUTH KOREA: KBL", "KBL"),
     ("KOVO", "배구", 12, "SOUTH KOREA: V-League", "KOVO"),
@@ -59,7 +61,7 @@ LEAGUES = [
     ("UEL", "축구", 1, "EUROPE: Europa League", None),
 ]
 LEAGUE_NAMES = {
-    "NHL": "NHL", "KHL": "KHL", "DEL": "독일 DEL", "CZE": "체코 엑스트라리가", "NBA": "NBA", "KBL": "KBL",
+    "NHL": "NHL", "KHL": "KHL", "DEL": "독일 DEL", "CZE": "체코 엑스트라리가", "LIIGA": "핀란드 Liiga", "SHL": "스웨덴 SHL", "NBA": "NBA", "KBL": "KBL",
     "KOVO": "V리그 남자", "WKOVO": "V리그 여자", "MLB": "MLB", "KBO": "KBO", "NPB": "NPB",
     "EPL": "EPL", "LALIGA": "라리가", "BUNDES": "분데스리가", "SERIEA": "세리에A", "LIGUE1": "리그1",
     "EREDIV": "에레디비시", "SCOT": "스코틀랜드", "TUR": "튀르키예", "KLEAGUE": "K리그1",
