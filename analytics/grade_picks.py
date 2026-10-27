@@ -3,18 +3,20 @@
 사용: python analytics/grade_picks.py [data/picks/picks_log.json] [data 경로]
 
 - result가 비어 있는 픽만 일별 결과 파일로 채점하고, 채점 결과를 로그에 다시 기록한다.
-- 자동 채점 리그: MLB·NBA·NHL·KBL. 그 외(NPB·KBO 등)는 "수동 채점 필요"로 목록만 출력 —
+- 자동 채점 리그: MLB·NBA·NHL·KBL·KHL·DEL·CZE·LIIGA·SHL. 그 외(NPB·KBO 등)는 "수동 채점 필요"로 목록만 출력 —
   result/actual을 직접 채워 넣으면 요약에 포함된다.
 - 팀 식별자: MLB는 풀네임(예: "Milwaukee Brewers"), NBA·NHL은 파이프라인 약어(예: "UTAH", "EDM"),
   KBL은 영문(예: "Seoul SK")·한글 풀네임("서울 SK")·약칭("SK") 모두 허용.
 - HDP의 line은 side 팀 기준 핸디캡(+1.5, -4.5 등).
-- 정산 기준: NHL은 정규시간(ML3W·TOTAL·HDP 모두), MLB·NBA·KBL은 연장 포함.
+- 유럽 하키(KHL·DEL·CZE·LIIGA·SHL)는 파이프라인 팀명 기준, 악센트·대소문자 무시 + 부분 일치 허용.
+- 정산 기준: NHL·유럽 하키는 정규시간(ML3W·TOTAL·HDP 모두), MLB·NBA·KBL은 연장 포함.
 - ML3W(하키 3way 승): 정규시간 무승부면 LOSS.
 - F5_TOTAL: MLB 1~5회 합계(inning_scores). line이 없으면 채점하지 않는다.
 """
 import json
 import os
 import sys
+import unicodedata
 from collections import defaultdict
 
 LOG = sys.argv[1] if len(sys.argv) > 1 else "data/picks/picks_log.json"
@@ -25,7 +27,14 @@ DAILY = {
     "NBA": "NBA/daily/{d} nba.json",
     "NHL": "NHL/daily/{d} nhl.json",
     "KBL": "KBL/daily/{d} kbl.json",
+    "KHL": "KHL/daily/{d} khl.json",
+    "DEL": "DEL/daily/{d} del.json",
+    "CZE": "CZE/daily/{d} cze.json",
+    "LIIGA": "LIIGA/daily/{d} liiga.json",
+    "SHL": "SHL/daily/{d} shl.json",
 }
+EU_HOCKEY = ("KHL", "DEL", "CZE", "LIIGA", "SHL")
+REG_TIME = ("NHL",) + EU_HOCKEY
 
 # KBL: 영문·한글 풀네임 → 파이프라인 약칭(home_short/away_short)
 KBL_ALIAS = {
@@ -40,6 +49,18 @@ KBL_ALIAS = {
     "daegu kogas": "한국가스공사", "daegu korea gas corporation": "한국가스공사", "대구 한국가스공사": "한국가스공사",
     "changwon lg": "LG", "창원 lg": "LG",
 }
+
+
+def _norm(name):
+    n = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode().lower()
+    return " ".join(n.replace(".", " ").split())
+
+
+def same_team(league, a, b):
+    if league not in EU_HOCKEY:
+        return a == b
+    a, b = _norm(a or ""), _norm(b or "")
+    return bool(a and b) and (a == b or a in b or b in a)
 
 
 def canon(league, name):
@@ -66,6 +87,8 @@ def scores(league, g):
         return g["away_abbrev"], g["home_abbrev"], g["reg_away_score"], g["reg_home_score"]
     if league == "KBL":
         return g["away_short"], g["home_short"], g["away_score"], g["home_score"]
+    if league in EU_HOCKEY:
+        return g["away_team"], g["home_team"], g["reg_away_score"], g["reg_home_score"]
     return g["away_abbrev"], g["home_abbrev"], g["away_score"], g["home_score"]
 
 
@@ -75,9 +98,9 @@ def find_game(league, games, away, home):
         if g.get("home_score") is None:
             continue
         a, h, _, _ = scores(league, g)
-        if (a, h) == (away, home):
+        if same_team(league, a, away) and same_team(league, h, home):
             return g, False
-        if (a, h) == (home, away):
+        if same_team(league, a, home) and same_team(league, h, away):
             return g, True
     return None, False
 
@@ -92,16 +115,16 @@ def total_result(tot, line, side):
 def grade(p, g):
     league = p["league"]
     a, h, sa, sh = scores(league, g)
-    actual = f"{a} {sa} @ {h} {sh}" + (" (reg)" if league == "NHL" else "")
+    actual = f"{a} {sa} @ {h} {sh}" + (" (reg)" if league in REG_TIME else "")
     m, line = p["market"], p.get("line")
     side = canon(league, p["side"])
     if m in ("ML", "ML3W"):
         if sa == sh:
             return "LOSS", actual  # NHL 정규시간 무승부
         winner = a if sa > sh else h
-        return ("WIN" if winner == side else "LOSS"), actual
+        return ("WIN" if same_team(league, winner, side) else "LOSS"), actual
     if m == "HDP":
-        mine, opp = (sa, sh) if side == a else (sh, sa)
+        mine, opp = (sa, sh) if same_team(league, side, a) else (sh, sa)
         diff = mine + line - opp
         return ("WIN" if diff > 0 else "PUSH" if diff == 0 else "LOSS"), actual
     if m == "TOTAL":
