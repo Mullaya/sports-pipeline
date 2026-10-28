@@ -1,0 +1,32 @@
+name: KBL Naver API 진단 (일회성)
+on:
+  push:
+    branches: [kbl-diag]
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - run: pip install requests
+      - name: 네이버 API 응답 확인
+        run: |
+          python - <<'PY'
+          import requests, json
+          from collectors.kbl_collector import API, HEADERS
+          for cat in ("kbl", "kovo"):
+              for d in ("2026-10-24", "2026-10-25", "2026-10-27"):
+                  try:
+                      r = requests.get(API, params={"fields": "basic", "categoryId": cat, "fromDate": d, "toDate": d, "size": 100}, headers=HEADERS, timeout=20)
+                      body = r.text[:300].replace("\n", " ")
+                      try:
+                          j = r.json(); gs = (j.get("result") or {}).get("games", [])
+                          info = f"success={j.get('success')} games={len(gs)} status={[g.get('statusCode') for g in gs]}"
+                      except Exception:
+                          info = "non-json"
+                      print(f"::warning::{cat} {d} HTTP {r.status_code} {info} :: {body}")
+                  except Exception as e:
+                      print(f"::warning::{cat} {d} EXC {e}")
+          PY
