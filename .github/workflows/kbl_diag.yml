@@ -1,7 +1,9 @@
-name: KBL Naver API 진단 (일회성)
+name: KBL 대체 소스 진단 (일회성)
 on:
   push:
     branches: [kbl-diag]
+permissions:
+  contents: write
 jobs:
   diag:
     runs-on: ubuntu-latest
@@ -11,22 +13,55 @@ jobs:
         with:
           python-version: '3.11'
       - run: pip install requests
-      - name: 네이버 API 응답 확인
+      - name: 소스별 응답 수집
         run: |
+          mkdir -p diag
           python - <<'PY'
-          import requests, json
-          from collectors.kbl_collector import API, HEADERS
-          for cat in ("kbl", "kovo"):
-              for d in ("2026-10-24", "2026-10-25", "2026-10-27"):
-                  try:
-                      r = requests.get(API, params={"fields": "basic", "categoryId": cat, "fromDate": d, "toDate": d, "size": 100}, headers=HEADERS, timeout=20)
-                      body = r.text[:300].replace("\n", " ")
-                      try:
-                          j = r.json(); gs = (j.get("result") or {}).get("games", [])
-                          info = f"success={j.get('success')} games={len(gs)} status={[g.get('statusCode') for g in gs]}"
-                      except Exception:
-                          info = "non-json"
-                      print(f"::warning::{cat} {d} HTTP {r.status_code} {info} :: {body}")
-                  except Exception as e:
-                      print(f"::warning::{cat} {d} EXC {e}")
+          import requests, re, json
+          from collectors.flashscore_hockey_collector import SITE, FEED, FSIGN, UA, _records
+          out = {}
+          s = requests.Session(); s.headers.update({"User-Agent": UA, "Accept": "*/*"})
+          def get(url, feed=False):
+              h = {"x-fsign": FSIGN, "Referer": SITE + "/", "Origin": SITE} if feed else {}
+              try:
+                  r = s.get(url, headers=h, timeout=25); return r.status_code, r.text
+              except Exception as e:
+                  return "EXC", str(e)
+          for key, path in {"kbl": "basketball/south-korea/kbl", "kovo": "volleyball/south-korea/v-league",
+                            "wkovo": "volleyball/south-korea/v-league-women"}.items():
+              for season in ("2026-2027", ""):
+                  url = f"{SITE}/{path}{'-' + season if season else ''}/results/"
+                  code, html = get(url)
+                  ent = {"url": url, "code": code, "len": len(html)}
+                  if code == 200:
+                      for k, pat in {"sid": r"seasonId:\s*(\d+)", "tour": r'tournament_id"\s*:\s*"(\w+)"',
+                                     "country": r'country_?[iI]d"?\s*[:=]\s*"?(\d+)', "total": r"allEventsCount:\s*(\d+)"}.items():
+                          m = re.search(pat, html); ent[k] = m.group(1) if m else None
+                      recs = []
+                      for m in re.finditer(r"""initialFeeds\[["'](?:summary-)?results["']\]\s*=\s*\{\s*data:\s*`(.*?)`""", html, re.S):
+                          recs += _records(m.group(1))
+                      ent["n_init"] = len(recs); ent["sample"] = recs[:6]
+                      if recs:
+                          mid = recs[0]["AA"]
+                          for f in ("df_st_1_", "df_sui_1_"):
+                              c2, t2 = get(f"{FEED}{f}{mid}", feed=True); ent[f] = [c2, t2[:3000]]
+                  out[f"{key}:{season or 'cur'}"] = ent
+          for name, url, hdr in [
+              ("naver_api", "https://api-gw.sports.naver.com/schedule/games?fields=basic&categoryId=kbl&fromDate=2026-10-27&toDate=2026-10-27&size=100", {}),
+              ("naver_m", "https://m.sports.naver.com/basketball/schedule/index?category=kbl&date=2026-10-27", {}),
+              ("kbl_site", "https://www.kbl.or.kr/", {}),
+              ("kbl_api", "https://api.kbl.or.kr/match/list?fromDate=20261027&toDate=20261027", {}),
+              ("kovo_site", "https://www.kovo.co.kr/", {}),
+          ]:
+              try:
+                  r = requests.get(url, headers={"User-Agent": UA, **hdr}, timeout=15)
+                  out[name] = [r.status_code, r.text[:500]]
+              except Exception as e:
+                  out[name] = ["EXC", str(e)]
+          json.dump(out, open("diag/result.json", "w"), ensure_ascii=False, indent=1, default=str)
           PY
+      - name: 결과 커밋
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add diag/result.json && git commit -m "diag result" && git push origin HEAD:kbl-diag
