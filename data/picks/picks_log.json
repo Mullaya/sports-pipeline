@@ -1756,8 +1756,8 @@
       "line": -1.0,
       "stars": 2,
       "units": null,
-      "stage": "초도",
-      "note": "3way 정규. CAR SF% 61.6·코체트코프 확정 vs 그리브스. CAR 홀·스탈 결장 / 승→HDP -1(정규시간·적특: 1골차 승 환불)로 변경. CAR 정규승 9회 중 7회 2골차+",
+      "stage": "2차",
+      "note": "3way 정규. CAR SF% 61.6·코체트코프 확정 vs 그리브스. CAR 홀·스탈 결장 / 승→HDP -1(정규시간·적특: 1골차 승 환불)로 변경. CAR 정규승 9회 중 7회 2골차+ / 2차: 라인업 확정",
       "result": null,
       "actual": null
     },
@@ -1772,8 +1772,8 @@
       "line": null,
       "stars": 2,
       "units": null,
-      "stage": "초도",
-      "note": "3way. MIN SF% 55.3·월스테트 .922, NYI PDO 101.8 회귀 후보. 골리 미확정",
+      "stage": "2차",
+      "note": "3way. MIN SF% 55.3·월스테트 .922, NYI PDO 101.8 회귀 후보. 골리 미확정 / 2차: 월스테트·소로킨 확정. MIN 스퍼전 신규 결장(10/27 이후), 파버·NYI 바르잘은 시즌 내내 결장(반영됨)",
       "result": null,
       "actual": null
     },
@@ -1788,8 +1788,8 @@
       "line": null,
       "stars": 2,
       "units": null,
-      "stage": "초도",
-      "note": "3way. TBL SF% 55.5·PDO 98.7 반등, WPG 모리시 결장. 골리 확정(바실렙스키/스키너)",
+      "stage": "2차",
+      "note": "3way. TBL SF% 55.5·PDO 98.7 반등, WPG 모리시 결장. 골리 확정(바실렙스키/스키너) / 2차: 라인업 확정",
       "result": null,
       "actual": null
     },
@@ -1820,8 +1820,8 @@
       "line": null,
       "stars": 2,
       "units": null,
-      "stage": "초도",
-      "note": "3way. BOS PDO 106.7(Sh% 15.0)·SF% 47.4 회귀, 배당 STL 쪽 이동",
+      "stage": "2차",
+      "note": "3way. BOS PDO 106.7(Sh% 15.0)·SF% 47.4 회귀, 배당 STL 쪽 이동 / 2차: 호퍼·스웨이만 확정. STL 두베·존스턴 장기결장(반영됨)",
       "result": null,
       "actual": null
     },
@@ -1868,24 +1868,8 @@
       "line": null,
       "stars": 1,
       "units": null,
-      "stage": "초도",
-      "note": "3way. VAN SF% 38.7 최악, SJS 정규승 1/13 무승부 경향",
-      "result": null,
-      "actual": null
-    },
-    {
-      "id": "20261029-NHL-09",
-      "date": "20261029",
-      "league": "NHL",
-      "away": "OTT",
-      "home": "LAK",
-      "market": "ML",
-      "side": "LAK",
-      "line": null,
-      "stars": 1,
-      "units": null,
-      "stage": "초도",
-      "note": "3way. 에르손 예상(.835) — 배당은 OTT 쪽 이동, 상충 → 단폴만",
+      "stage": "2차",
+      "note": "3way. VAN SF% 38.7 최악, SJS 정규승 1/13 무승부 경향 / 2차: 아스카로프·메릴라이넨 확정",
       "result": null,
       "actual": null
     },
@@ -1932,8 +1916,8 @@
       "line": 6.0,
       "stars": 1,
       "units": null,
-      "stage": "초도",
-      "note": "VAN 정규 경기당 7.31골·피슈팅 32.5. 6.0 기준",
+      "stage": "2차",
+      "note": "VAN 정규 경기당 7.31골·피슈팅 32.5. 6.0 기준 / 2차: 아스카로프 선발 확정",
       "result": null,
       "actual": null
     },
@@ -2022,6 +2006,18 @@
       ],
       "result": null,
       "note": "CAR 정규승 + TBL 정규승, 양 경기 골리 확정"
+    },
+    {
+      "id": "20261029-P-02",
+      "date": "20261029",
+      "tier": "밸런스 3폴",
+      "legs": [
+        "20261029-NHL-01",
+        "20261029-NHL-03",
+        "20261029-NHL-05"
+      ],
+      "result": null,
+      "note": "CAR -1(적특) + TB 정규승 + STL 정규승, 전 경기 골리 확정"
     }
   ]
 }
