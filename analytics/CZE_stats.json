@@ -1,10 +1,10 @@
 {
  "meta": {
-  "generated_kst": "2026-10-28 22:32",
+  "generated_kst": "2026-10-29 22:40",
   "league": "CZE",
   "season_start": "20260801",
-  "games": 103,
-  "last_game_date": "20261027",
+  "games": 104,
+  "last_game_date": "20261028",
   "points_rule": {
    "reg_win": 3,
    "ot_win": 2,
@@ -12,45 +12,45 @@
   },
   "league_avg": {
    "avg_reg_total": 5.15,
-   "reg_draw_rate": 0.214,
-   "home_win_rate": 0.583,
-   "home_reg_win_rate": 0.437,
+   "reg_draw_rate": 0.221,
+   "home_win_rate": 0.577,
+   "home_reg_win_rate": 0.433,
    "over_rate_reg": {
-    "4.5": 0.573,
-    "5.5": 0.379,
-    "6.5": 0.262
+    "4.5": 0.577,
+    "5.5": 0.385,
+    "6.5": 0.26
    }
   },
   "notes": "reg_* = 정규시간(60분) 기준 (하키 언오버 사이트 정산 기준) / w = 정규승+연장승 / shot_share = 유효슈팅 점유율 / rank_pts = 전체 승점 순위"
  },
  "teams": {
   "Trinec": {
-   "gp": 14,
-   "w": 12,
+   "gp": 15,
+   "w": 13,
    "reg_wins": 12,
-   "ot_wins": 0,
+   "ot_wins": 1,
    "otl": 1,
    "l": 1,
-   "pts": 37,
+   "pts": 39,
    "reg_w": 12,
-   "reg_d": 1,
+   "reg_d": 2,
    "reg_l": 1,
-   "gf_pg": 4.14,
-   "ga_pg": 2.21,
-   "avg_reg_total": 6.29,
-   "sf_pg": 32.8,
-   "sa_pg": 27.2,
-   "shot_share": 0.546,
-   "sh_pct": 0.126,
-   "sv_pct": 0.919,
-   "pdo": 104.5,
-   "pp_pct": 0.203,
-   "pk_pct": 0.867,
-   "reg_draw_rate": 0.071,
+   "gf_pg": 4.13,
+   "ga_pg": 2.27,
+   "avg_reg_total": 6.27,
+   "sf_pg": 32.3,
+   "sa_pg": 27.6,
+   "shot_share": 0.539,
+   "sh_pct": 0.128,
+   "sv_pct": 0.918,
+   "pdo": 104.6,
+   "pp_pct": 0.211,
+   "pk_pct": 0.875,
+   "reg_draw_rate": 0.133,
    "over_rate_reg": {
-    "4.5": 0.643,
-    "5.5": 0.5,
-    "6.5": 0.5
+    "4.5": 0.667,
+    "5.5": 0.533,
+    "6.5": 0.467
    },
    "home": {
     "gp": 9,
@@ -68,37 +68,36 @@
     "avg_reg_total": 6.89
    },
    "away": {
-    "gp": 5,
-    "w": 4,
+    "gp": 6,
+    "w": 5,
     "reg_wins": 4,
-    "ot_wins": 0,
+    "ot_wins": 1,
     "otl": 1,
     "l": 0,
-    "pts": 13,
+    "pts": 15,
     "reg_w": 4,
-    "reg_d": 1,
+    "reg_d": 2,
     "reg_l": 0,
     "gf_pg": 4.0,
-    "ga_pg": 1.4,
-    "avg_reg_total": 5.2
+    "ga_pg": 1.67,
+    "avg_reg_total": 5.33
    },
    "last10": {
     "gp": 10,
     "w": 8,
-    "reg_wins": 8,
-    "ot_wins": 0,
+    "reg_wins": 7,
+    "ot_wins": 1,
     "otl": 1,
     "l": 1,
-    "pts": 25,
-    "reg_w": 8,
-    "reg_d": 1,
+    "pts": 24,
+    "reg_w": 7,
+    "reg_d": 2,
     "reg_l": 1,
-    "gf_pg": 3.9,
-    "ga_pg": 2.2,
-    "avg_reg_total": 6.0
+    "gf_pg": 4.0,
+    "ga_pg": 2.4,
+    "avg_reg_total": 6.2
    },
    "last10_log": [
-    "20260927 @ Liberec 3-1 W",
     "20260929 vs Kladno 6-4 W",
     "20261002 vs Litvinov 3-2 W",
     "20261004 @ Olomouc 9-0 W",
@@ -107,11 +106,12 @@
     "20261016 vs Mlada Boleslav 3-0 W",
     "20261018 @ Sparta Prague 2-1 W",
     "20261023 vs Ceske Budejovice 2-6 L",
-    "20261025 vs Karlovy Vary 2-1 W"
+    "20261025 vs Karlovy Vary 2-1 W",
+    "20261028 @ Kometa Brno 4-3 OTW"
    ],
-   "streak": "W1",
-   "last_game_date": "20261025",
-   "days_since_last": 3,
+   "streak": "W2",
+   "last_game_date": "20261028",
+   "days_since_last": 1,
    "last_was_b2b": false,
    "rank_pts": 1
   },
@@ -202,7 +202,7 @@
    ],
    "streak": "L3",
    "last_game_date": "20261027",
-   "days_since_last": 1,
+   "days_since_last": 2,
    "last_was_b2b": false,
    "rank_pts": 2
   },
@@ -293,7 +293,7 @@
    ],
    "streak": "W1",
    "last_game_date": "20261027",
-   "days_since_last": 1,
+   "days_since_last": 2,
    "last_was_b2b": false,
    "rank_pts": 3
   },
@@ -384,7 +384,7 @@
    ],
    "streak": "W4",
    "last_game_date": "20261027",
-   "days_since_last": 1,
+   "days_since_last": 2,
    "last_was_b2b": false,
    "rank_pts": 4
   },
@@ -475,7 +475,7 @@
    ],
    "streak": "L2",
    "last_game_date": "20261027",
-   "days_since_last": 1,
+   "days_since_last": 2,
    "last_was_b2b": false,
    "rank_pts": 5
   },
@@ -566,7 +566,7 @@
    ],
    "streak": "L1",
    "last_game_date": "20261027",
-   "days_since_last": 1,
+   "days_since_last": 2,
    "last_was_b2b": false,
    "rank_pts": 6
   },
@@ -657,9 +657,100 @@
    ],
    "streak": "W2",
    "last_game_date": "20261025",
-   "days_since_last": 3,
+   "days_since_last": 4,
    "last_was_b2b": false,
    "rank_pts": 7
+  },
+  "Kometa Brno": {
+   "gp": 15,
+   "w": 7,
+   "reg_wins": 4,
+   "ot_wins": 3,
+   "otl": 3,
+   "l": 5,
+   "pts": 21,
+   "reg_w": 4,
+   "reg_d": 6,
+   "reg_l": 5,
+   "gf_pg": 2.67,
+   "ga_pg": 2.73,
+   "avg_reg_total": 5.0,
+   "sf_pg": 29.3,
+   "sa_pg": 31.2,
+   "shot_share": 0.485,
+   "sh_pct": 0.091,
+   "sv_pct": 0.912,
+   "pdo": 100.3,
+   "pp_pct": 0.085,
+   "pk_pct": 0.811,
+   "reg_draw_rate": 0.4,
+   "over_rate_reg": {
+    "4.5": 0.533,
+    "5.5": 0.4,
+    "6.5": 0.133
+   },
+   "home": {
+    "gp": 6,
+    "w": 3,
+    "reg_wins": 1,
+    "ot_wins": 2,
+    "otl": 2,
+    "l": 1,
+    "pts": 9,
+    "reg_w": 1,
+    "reg_d": 4,
+    "reg_l": 1,
+    "gf_pg": 2.67,
+    "ga_pg": 2.67,
+    "avg_reg_total": 4.67
+   },
+   "away": {
+    "gp": 9,
+    "w": 4,
+    "reg_wins": 3,
+    "ot_wins": 1,
+    "otl": 1,
+    "l": 4,
+    "pts": 12,
+    "reg_w": 3,
+    "reg_d": 2,
+    "reg_l": 4,
+    "gf_pg": 2.67,
+    "ga_pg": 2.78,
+    "avg_reg_total": 5.22
+   },
+   "last10": {
+    "gp": 10,
+    "w": 5,
+    "reg_wins": 2,
+    "ot_wins": 3,
+    "otl": 3,
+    "l": 2,
+    "pts": 15,
+    "reg_w": 2,
+    "reg_d": 6,
+    "reg_l": 2,
+    "gf_pg": 2.4,
+    "ga_pg": 2.5,
+    "avg_reg_total": 4.3
+   },
+   "last10_log": [
+    "20261002 vs Mlada Boleslav 3-2 OTW",
+    "20261005 @ Ceske Budejovice 1-5 L",
+    "20261008 @ Sparta Prague 4-3 OTW",
+    "20261011 vs Plzen 1-2 OTL",
+    "20261016 @ Kladno 2-1 W",
+    "20261018 vs Liberec 3-2 OTW",
+    "20261020 @ Karlovy Vary 1-2 OTL",
+    "20261023 @ Vitkovice 2-3 L",
+    "20261025 @ Litvinov 4-1 W",
+    "20261028 vs Trinec 3-4 OTL"
+   ],
+   "streak": "L1",
+   "last_game_date": "20261028",
+   "days_since_last": 1,
+   "last_was_b2b": false,
+   "rank_pts": 8
   },
   "Litvinov": {
    "gp": 15,
@@ -748,98 +839,7 @@
    ],
    "streak": "W1",
    "last_game_date": "20261027",
-   "days_since_last": 1,
-   "last_was_b2b": false,
-   "rank_pts": 8
-  },
-  "Kometa Brno": {
-   "gp": 14,
-   "w": 7,
-   "reg_wins": 4,
-   "ot_wins": 3,
-   "otl": 2,
-   "l": 5,
-   "pts": 20,
-   "reg_w": 4,
-   "reg_d": 5,
-   "reg_l": 5,
-   "gf_pg": 2.64,
-   "ga_pg": 2.64,
-   "avg_reg_total": 4.93,
-   "sf_pg": 29.1,
-   "sa_pg": 31.6,
-   "shot_share": 0.479,
-   "sh_pct": 0.091,
-   "sv_pct": 0.916,
-   "pdo": 100.7,
-   "pp_pct": 0.093,
-   "pk_pct": 0.824,
-   "reg_draw_rate": 0.357,
-   "over_rate_reg": {
-    "4.5": 0.5,
-    "5.5": 0.357,
-    "6.5": 0.143
-   },
-   "home": {
-    "gp": 5,
-    "w": 3,
-    "reg_wins": 1,
-    "ot_wins": 2,
-    "otl": 1,
-    "l": 1,
-    "pts": 8,
-    "reg_w": 1,
-    "reg_d": 3,
-    "reg_l": 1,
-    "gf_pg": 2.6,
-    "ga_pg": 2.4,
-    "avg_reg_total": 4.4
-   },
-   "away": {
-    "gp": 9,
-    "w": 4,
-    "reg_wins": 3,
-    "ot_wins": 1,
-    "otl": 1,
-    "l": 4,
-    "pts": 12,
-    "reg_w": 3,
-    "reg_d": 2,
-    "reg_l": 4,
-    "gf_pg": 2.67,
-    "ga_pg": 2.78,
-    "avg_reg_total": 5.22
-   },
-   "last10": {
-    "gp": 10,
-    "w": 5,
-    "reg_wins": 2,
-    "ot_wins": 3,
-    "otl": 2,
-    "l": 3,
-    "pts": 14,
-    "reg_w": 2,
-    "reg_d": 5,
-    "reg_l": 3,
-    "gf_pg": 2.4,
-    "ga_pg": 2.6,
-    "avg_reg_total": 4.5
-   },
-   "last10_log": [
-    "20260927 vs Pardubice 3-5 L",
-    "20261002 vs Mlada Boleslav 3-2 OTW",
-    "20261005 @ Ceske Budejovice 1-5 L",
-    "20261008 @ Sparta Prague 4-3 OTW",
-    "20261011 vs Plzen 1-2 OTL",
-    "20261016 @ Kladno 2-1 W",
-    "20261018 vs Liberec 3-2 OTW",
-    "20261020 @ Karlovy Vary 1-2 OTL",
-    "20261023 @ Vitkovice 2-3 L",
-    "20261025 @ Litvinov 4-1 W"
-   ],
-   "streak": "W1",
-   "last_game_date": "20261025",
-   "days_since_last": 3,
+   "days_since_last": 2,
    "last_was_b2b": false,
    "rank_pts": 9
   },
@@ -930,7 +930,7 @@
    ],
    "streak": "W1",
    "last_game_date": "20261027",
-   "days_since_last": 1,
+   "days_since_last": 2,
    "last_was_b2b": false,
    "rank_pts": 10
   },
@@ -1021,7 +1021,7 @@
    ],
    "streak": "L1",
    "last_game_date": "20261027",
-   "days_since_last": 1,
+   "days_since_last": 2,
    "last_was_b2b": false,
    "rank_pts": 11
   },
@@ -1112,7 +1112,7 @@
    ],
    "streak": "W2",
    "last_game_date": "20261027",
-   "days_since_last": 1,
+   "days_since_last": 2,
    "last_was_b2b": false,
    "rank_pts": 12
   },
@@ -1203,7 +1203,7 @@
    ],
    "streak": "L1",
    "last_game_date": "20261025",
-   "days_since_last": 3,
+   "days_since_last": 4,
    "last_was_b2b": false,
    "rank_pts": 13
   },
@@ -1294,7 +1294,7 @@
    ],
    "streak": "L2",
    "last_game_date": "20261027",
-   "days_since_last": 1,
+   "days_since_last": 2,
    "last_was_b2b": false,
    "rank_pts": 14
   }
@@ -1523,33 +1523,33 @@
   "Kometa Brno|b3Xd3Hac": {
    "name": "Rabcan E.",
    "team": "Kometa Brno",
-   "starts": 8,
+   "starts": 9,
    "w": 6,
-   "gp_with_sv": 8,
-   "sv_pct": 0.934,
-   "gaa": 2.0,
+   "gp_with_sv": 9,
+   "sv_pct": 0.925,
+   "gaa": 2.22,
    "last5_starts": {
     "gp_with_sv": 5,
-    "sv_pct": 0.921,
-    "gaa": 2.2
+    "sv_pct": 0.926,
+    "gaa": 2.0
    },
    "home": {
-    "gp_with_sv": 3,
-    "sv_pct": 0.946,
-    "gaa": 1.67
+    "gp_with_sv": 4,
+    "sv_pct": 0.923,
+    "gaa": 2.25
    },
    "away": {
     "gp_with_sv": 5,
     "sv_pct": 0.927,
     "gaa": 2.2
    },
-   "last_start_date": "20261025",
+   "last_start_date": "20261028",
    "log": [
-    "20261005 @ Ceske Budejovice 24/29 L",
     "20261016 @ Kladno 22/23 W",
     "20261018 vs Liberec 29/31 W",
     "20261020 @ Karlovy Vary 23/25 L",
-    "20261025 @ Litvinov 30/31 W"
+    "20261025 @ Litvinov 30/31 W",
+    "20261028 vs Trinec 21/25 L"
    ]
   },
   "Kometa Brno|S8zqCDz0": {
@@ -2125,15 +2125,15 @@
   "Trinec|ALkAzKUh": {
    "name": "Mazanec M.",
    "team": "Trinec",
-   "starts": 6,
-   "w": 6,
-   "gp_with_sv": 6,
-   "sv_pct": 0.939,
-   "gaa": 1.67,
+   "starts": 7,
+   "w": 7,
+   "gp_with_sv": 7,
+   "sv_pct": 0.934,
+   "gaa": 1.86,
    "last5_starts": {
     "gp_with_sv": 5,
-    "sv_pct": 0.924,
-    "gaa": 2.0
+    "sv_pct": 0.944,
+    "gaa": 1.6
    },
    "home": {
     "gp_with_sv": 3,
@@ -2141,17 +2141,17 @@
     "gaa": 3.0
    },
    "away": {
-    "gp_with_sv": 3,
-    "sv_pct": 0.987,
-    "gaa": 0.33
+    "gp_with_sv": 4,
+    "sv_pct": 0.964,
+    "gaa": 1.0
    },
-   "last_start_date": "20261018",
+   "last_start_date": "20261028",
    "log": [
-    "20260918 vs Kometa Brno 16/21 W",
     "20260929 vs Kladno 23/27 W",
     "20261004 @ Olomouc 24/24 W",
     "20261016 vs Mlada Boleslav 40/40 W",
-    "20261018 @ Sparta Prague 19/20 W"
+    "20261018 @ Sparta Prague 19/20 W",
+    "20261028 @ Kometa Brno 30/33 W"
    ]
   },
   "Vitkovice|nFd7DdMg": {
@@ -2219,15 +2219,21 @@
   "Trinec": [
    {
     "name": "Ruzicka Mart.",
-    "g": 4,
-    "a": 14,
-    "pts": 18
+    "g": 5,
+    "a": 15,
+    "pts": 20
    },
    {
     "name": "Hudacek L.",
+    "g": 5,
+    "a": 14,
+    "pts": 19
+   },
+   {
+    "name": "Dano M.",
     "g": 4,
-    "a": 12,
-    "pts": 16
+    "a": 9,
+    "pts": 13
    },
    {
     "name": "Kubiesa M.",
@@ -2242,16 +2248,10 @@
     "pts": 11
    },
    {
-    "name": "Dano M.",
-    "g": 4,
-    "a": 7,
+    "name": "Galvas J.",
+    "g": 2,
+    "a": 9,
     "pts": 11
-   },
-   {
-    "name": "Kovarcik O.",
-    "g": 5,
-    "a": 5,
-    "pts": 10
    }
   ],
   "Ceske Budejovice": [
@@ -2378,14 +2378,14 @@
    {
     "name": "Pospisil K.",
     "g": 1,
-    "a": 9,
-    "pts": 10
+    "a": 11,
+    "pts": 12
    },
    {
     "name": "Flek J.",
-    "g": 5,
+    "g": 6,
     "a": 4,
-    "pts": 9
+    "pts": 10
    },
    {
     "name": "Zboril A.",
@@ -2394,15 +2394,15 @@
     "pts": 9
    },
    {
-    "name": "Kral F.",
-    "g": 2,
-    "a": 4,
-    "pts": 6
-   },
-   {
     "name": "Zabransky L.",
     "g": 0,
-    "a": 6,
+    "a": 7,
+    "pts": 7
+   },
+   {
+    "name": "Witkowski L.",
+    "g": 3,
+    "a": 3,
     "pts": 6
    }
   ],
@@ -4258,11 +4258,11 @@
    "20260927 Litvinov 4-5 Ceske Budejovice"
   ],
   "Kometa Brno | Trinec": [
-   "20250930 Kometa Brno 0-1 Trinec",
    "20251116 Trinec 3-4 Kometa Brno",
    "20251230 Kometa Brno 3-4 Trinec (SO)",
    "20260227 Trinec 1-5 Kometa Brno",
-   "20260918 Kometa Brno 5-6 Trinec"
+   "20260918 Kometa Brno 5-6 Trinec",
+   "20261028 Trinec 4-3 Kometa Brno (OT)"
   ],
   "Ceske Budejovice | Vitkovice": [
    "20250930 Vitkovice 1-2 Ceske Budejovice",
