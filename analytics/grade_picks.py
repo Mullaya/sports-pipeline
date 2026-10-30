@@ -60,7 +60,10 @@ def same_team(league, a, b):
     if league not in EU_HOCKEY:
         return a == b
     a, b = _norm(a or ""), _norm(b or "")
-    return bool(a and b) and (a == b or a in b or b in a)
+    if not (a and b):
+        return False
+    a2, b2 = a.replace(" ", ""), b.replace(" ", "")  # "HV 71" vs "HV71"
+    return a == b or a in b or b in a or a2 == b2 or a2 in b2 or b2 in a2
 
 
 def canon(league, name):
