@@ -1,0 +1,45 @@
+name: KBL·V-리그 대체 수집 실검증 + 누락분 수집 (일회성)
+on:
+  push:
+    branches: [kovo-diag]
+permissions:
+  contents: write
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - name: 수집 실행
+        run: |
+          mkdir -p diag/backfill
+          python - <<'PY'
+          import json, os, time
+          from datetime import date, timedelta
+          from collectors.kbl_collector import KBLCollector
+          from collectors.kovo_collector import KOVOCollector
+          from uploader.github_uploader import FILE_SUFFIX
+          days = [(date(2026, 10, 25) + timedelta(i)).strftime("%Y%m%d") for i in range(11)]
+          log = {}
+          t = time.time()
+          for lg, col in [("KBL", KBLCollector()), ("KOVO", KOVOCollector("KOVO")), ("WKOVO", KOVOCollector("WKOVO"))]:
+              for d in days:
+                  out = col.collect_daily(d)
+                  log[f"{lg}:{d}"] = [out.get("source", "naver"), len(out["games"])]
+                  if out["games"]:
+                      os.makedirs(f"diag/backfill/{lg}", exist_ok=True)
+                      json.dump(out, open(f"diag/backfill/{lg}/{d}{FILE_SUFFIX[lg]}.json", "w"), ensure_ascii=False, indent=2)
+                  print(lg, d, out.get("source", "naver"), len(out["games"]),
+                        [(g["away_team"], g["home_team"]) for g in out["games"]])
+          log["elapsed"] = round(time.time() - t)
+          json.dump(log, open("diag/backfill_log.json", "w"), ensure_ascii=False, indent=1)
+          PY
+      - name: 결과 커밋
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add diag && git commit -m "diag backfill result" && git push -f origin HEAD:kovo-diag
