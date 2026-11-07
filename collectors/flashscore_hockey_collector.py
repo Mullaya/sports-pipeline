@@ -142,7 +142,11 @@ class FlashscoreHockeyCollector:
         if key in self._season_cache:
             return self._season_cache[key]
 
-        html = self._get(f"{SITE}/{self.cfg['path']}-{y1}-{y2}/results/")
+        # 컵대회처럼 시즌별 URL이 없는 대회는 최신 대회 페이지만 조회 (season_in_url=False)
+        if self.cfg.get("season_in_url", True):
+            html = self._get(f"{SITE}/{self.cfg['path']}-{y1}-{y2}/results/")
+        else:
+            html = self._get(f"{SITE}/{self.cfg['path']}/results/")
         sid = re.search(r"seasonId:\s*(\d+)", html)
         if not sid:
             raise RuntimeError(f"{self.league} {y1}-{y2} seasonId를 찾지 못함 (페이지 구조 변경?)")
