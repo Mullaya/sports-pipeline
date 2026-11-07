@@ -13,6 +13,7 @@ FILE_SUFFIX = {
     "KHL": " khl",
     "NBA": " nba",
     "KBL": " kbl",
+    "WKBL": " wkbl",
     "KOVO": " kovo",
     "WKOVO": " wkovo",
     "DEL": " del",

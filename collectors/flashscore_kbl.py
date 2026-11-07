@@ -20,9 +20,12 @@ KST = ZoneInfo("Asia/Seoul")
 
 LEAGUES.setdefault("KBL_FS", {"path": "basketball/south-korea/kbl", "country": "106",
                               "tournament": "QulwZyP2", "tz": "Asia/Seoul"})
+# WKBL(여자프로농구): 네이버 수집기가 없어 처음부터 Flashscore로만 수집. tournament_id는 결과 페이지에서 추출
+LEAGUES.setdefault("WKBL_FS", {"path": "basketball/south-korea/wkbl", "country": "106",
+                               "tournament": None, "tz": "Asia/Seoul"})
 
 # Flashscore 팀명(소문자) 키워드 → (네이버 팀명, 약칭, 팀코드). 위에서부터 먼저 맞는 것 사용
-TEAMS = [
+KBL_TEAMS = [
     (("kogas", "gas"), ("대구 한국가스공사", "한국가스공사", "64")),
     (("wonju", " db", "db "), ("원주 DB", "DB", "16")),
     (("knights", "seoul sk"), ("서울 SK", "SK", "55")),
@@ -34,6 +37,19 @@ TEAMS = [
     (("jung kwan jang", "jungkwanjang", "kgc", "anyang", "red boosters"), ("안양 정관장", "정관장", "70")),
     (("mobis", "phoebus", "ulsan"), ("울산 현대모비스", "현대모비스", "10")),
 ]
+
+# WKBL: (팀명, 약칭, 코드) — 코드는 네이버 수집 이력이 없어 영문 약어 사용
+WKBL_TEAMS = [
+    (("woori", "wibee", "asan"), ("아산 우리은행", "우리은행", "WOORI")),
+    (("kb ", "kb stars", "cheongju"), ("청주 KB스타즈", "KB", "KB")),
+    (("samsung", "blueminx", "yongin"), ("용인 삼성생명", "삼성생명", "SAMSUNG")),
+    (("shinhan", "s-birds", "incheon"), ("인천 신한은행", "신한은행", "SHINHAN")),
+    (("hana", "bucheon"), ("부천 하나은행", "하나은행", "HANA")),
+    (("bnk", "busan"), ("부산 BNK 썸", "BNK", "BNK")),
+]
+
+TEAMS_BY_LEAGUE = {"KBL": KBL_TEAMS, "WKBL": WKBL_TEAMS}
+TEAMS = KBL_TEAMS   # 하위 호환
 
 STAT_KEYS = {
     "Field goals attempts": "fga", "Field goals made": "fgm",
@@ -52,9 +68,9 @@ def _int(x, default=0):
         return default
 
 
-def team_info(raw: str):
+def team_info(raw: str, league: str = "KBL"):
     key = f" {raw.lower()} "
-    for words, info in TEAMS:
+    for words, info in TEAMS_BY_LEAGUE[league]:
         if any(w in key for w in words):
             return info
     return None
@@ -94,8 +110,8 @@ def parse_stats(text: str) -> tuple:
     return home, away
 
 
-def build_game(rec: dict, stats_text: str) -> dict:
-    hi, ai = team_info(rec.get("AE", "")), team_info(rec.get("AF", ""))
+def build_game(rec: dict, stats_text: str, league: str = "KBL") -> dict:
+    hi, ai = team_info(rec.get("AE", ""), league), team_info(rec.get("AF", ""), league)
     hs, as_ = _int(rec.get("AG")), _int(rec.get("AH"))
     hq = [_int(rec.get(k)) for k in ("BA", "BC", "BE", "BG")]
     aq = [_int(rec.get(k)) for k in ("BB", "BD", "BF", "BH")]
@@ -141,10 +157,14 @@ def build_game(rec: dict, stats_text: str) -> dict:
 
 
 class FlashscoreKBL:
-    """Flashscore 시즌 결과 목록에서 KST 날짜 하루치 종료 경기를 KBL 스키마로 만든다."""
+    """Flashscore 시즌 결과 목록에서 KST 날짜 하루치 종료 경기를 KBL 스키마로 만든다.
+    league="WKBL"이면 여자프로농구를 같은 스키마로 수집한다."""
 
-    def __init__(self, sleep: float = 0.4):
-        self.fs = FlashscoreHockeyCollector("KBL_FS", sleep=sleep)
+    def __init__(self, league: str = "KBL", sleep: float = 0.4):
+        if isinstance(league, (int, float)):   # 예전 호출 FlashscoreKBL(sleep) 호환
+            league, sleep = "KBL", league
+        self.league = league
+        self.fs = FlashscoreHockeyCollector(f"{league}_FS", sleep=sleep)
         self.sleep = sleep
 
     def collect_daily(self, date: str) -> dict:
@@ -158,15 +178,15 @@ class FlashscoreKBL:
             if local.strftime("%Y%m%d") != date:
                 continue
             for side in ("AE", "AF"):
-                if not team_info(rec.get(side, "")):
+                if not team_info(rec.get(side, ""), self.league):
                     unmapped.add(rec.get(side, ""))
             try:
                 stats = self.fs._get(f"{FEED}df_st_1_{rec['AA']}", feed=True)
             except Exception as e:
-                print(f"  [KBL] Flashscore 스탯 실패 {rec['AA']}: {e}")
+                print(f"  [{self.league}] Flashscore 스탯 실패 {rec['AA']}: {e}")
                 stats = ""
-            games.append(build_game(rec, stats))
+            games.append(build_game(rec, stats, self.league))
             time.sleep(self.sleep)
         if unmapped:
-            print(f"  [KBL] ⚠️ Flashscore 팀명 매핑 없음(원문 유지): {sorted(unmapped)}")
-        return {"date": date, "league": "KBL", "source": "flashscore", "games": games}
+            print(f"  [{self.league}] ⚠️ Flashscore 팀명 매핑 없음(원문 유지): {sorted(unmapped)}")
+        return {"date": date, "league": self.league, "source": "flashscore", "games": games}
