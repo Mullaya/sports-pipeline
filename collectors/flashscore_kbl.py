@@ -21,7 +21,7 @@ KST = ZoneInfo("Asia/Seoul")
 LEAGUES.setdefault("KBL_FS", {"path": "basketball/south-korea/kbl", "country": "106",
                               "tournament": "QulwZyP2", "tz": "Asia/Seoul"})
 # WKBL(여자프로농구): 네이버 수집기가 없어 처음부터 Flashscore로만 수집. tournament_id는 결과 페이지에서 추출
-LEAGUES.setdefault("WKBL_FS", {"path": "basketball/south-korea/wkbl", "country": "106",
+LEAGUES.setdefault("WKBL_FS", {"path": "basketball/south-korea/wkbl-women", "country": "106",
                                "tournament": None, "tz": "Asia/Seoul"})
 
 # Flashscore 팀명(소문자) 키워드 → (네이버 팀명, 약칭, 팀코드). 위에서부터 먼저 맞는 것 사용
