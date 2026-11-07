@@ -165,6 +165,14 @@ class FlashscoreSoccer(FlashscoreHockeyCollector):
         stats = self._soccer_stats(mid)
         time.sleep(self.sleep)
         goals = self._soccer_goals(mid)
+        if h1[0] is None or h1[1] is None:
+            # 축구 결과 목록에는 전반 스코어 필드가 없는 경우가 많다 → 득점 시간(45+추가시간 포함)으로 계산
+            def _first_half(g):
+                m = re.match(r"\s*(\d+)", g.get("minute", ""))
+                return bool(m) and (int(m.group(1)) < 45 or g.get("minute", "").startswith("45"))
+            if len(goals) == hs + as_:
+                h1 = (sum(1 for g in goals if g["team"] == "home" and _first_half(g)),
+                      sum(1 for g in goals if g["team"] == "away" and _first_half(g)))
         return {
             "game_id": "fs_" + mid,
             "game_type": _stage_type(r.get("ZA")),
