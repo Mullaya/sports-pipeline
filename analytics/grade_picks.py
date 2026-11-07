@@ -42,7 +42,7 @@ KBL_ALIAS = {
     "seoul samsung": "삼성", "서울 삼성": "삼성",
     "busan kcc": "KCC", "부산 kcc": "KCC",
     "suwon kt": "KT", "수원 kt": "KT",
-    "anyang jung kwan jang": "정관장", "anyang jungkwanjang": "정관장", "anyang kgc": "정관장", "안양 정관장": "정관장",
+    "anyang jung kwan jang": "정관장", "anyang jungkwanjang": "정관장", "anyang kgc": "정관장", "kgc": "정관장", "안양 정관장": "정관장",
     "ulsan hyundai mobis": "현대모비스", "울산 현대모비스": "현대모비스",
     "wonju db": "DB", "원주 db": "DB",
     "goyang sono": "고양소노", "고양 소노": "고양소노",
