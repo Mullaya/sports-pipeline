@@ -67,9 +67,21 @@ def run_daily(date: str = None, mlb_date: str = None):
     except Exception as e:
         print(f"  [NHL] 실패: {e}")
 
+    # AHL 수집 (북미 현지 날짜 = NHL과 동일 기준, Flashscore 피드)
+    try:
+        ahl_data = FlashscoreHockeyCollector("AHL").collect_daily(mlb_date)
+        if ahl_data["games"]:
+            uploader.upload_json(ahl_data, "AHL", mlb_date, "daily")
+            print(f"  [AHL] {len(ahl_data['games'])}경기 완료")
+        else:
+            print(f"  [AHL] 경기 없음")
+    except Exception as e:
+        print(f"  [AHL] 실패: {e}")
+
     # 자동 실행일 때만: 최근 며칠 중 파일이 없는 날짜를 재수집 (크론 지연·스킵 대비)
     if not date:
-        catch_up(uploader, mlb_date, {"NHL": NHLCollector, "NBA": NBACollector})
+        catch_up(uploader, mlb_date, {"NHL": NHLCollector, "NBA": NBACollector,
+                                      "AHL": lambda: FlashscoreHockeyCollector("AHL")})
 
     # NFL 수집 (미국 현지 날짜 = MLB와 동일 기준, 경기 있는 날만 파일 생성)
     try:

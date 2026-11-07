@@ -5,6 +5,7 @@
   CZE : 체코 Tipsport Extraliga  (공식 hokej.cz는 GitHub Actions IP를 403 차단)
   LIIGA : 핀란드 Liiga
   SHL : 스웨덴 SHL
+  AHL : 북미 AHL (파일 날짜 = 미국 동부 현지 날짜, NHL과 같은 기준)
   KHL : 지난 시즌 백필 전용 (KHL 모바일 API는 현재 시즌만 조회됨). 팀명은 KHL API 표기로 변환
 
 수집 단위: 현지(중부유럽) 날짜 YYYYMMDD 하루치 완료 경기
@@ -42,6 +43,9 @@ LEAGUES = {
               "tz": "Europe/Helsinki"},
     "SHL": {"path": "hockey/sweden/shl", "country": "181", "tournament": None,
             "tz": "Europe/Stockholm"},
+    # 북미 AHL — 날짜는 미국 동부 현지 기준(서부 경기 늦은 시작도 같은 날로 묶임)
+    "AHL": {"path": "hockey/usa/ahl", "country": "200", "tournament": None,
+            "tz": "America/New_York"},
     # 파일 날짜는 기존 KHL 수집기와 같은 모스크바 날짜, 팀명은 KHL API 표기
     "KHL": {"path": "hockey/russia/khl", "country": "158", "tournament": "v9k3aY5F",
             "tz": "Europe/Moscow", "exhibition_teams": {"Russia"},
