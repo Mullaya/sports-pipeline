@@ -1,0 +1,67 @@
+name: 누락분 수집 실검증 (일회성)
+on:
+  push:
+    branches: [collect-diag]
+permissions:
+  contents: write
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt
+      - name: 수집 실행
+        run: |
+          mkdir -p diag/backfill
+          python - <<'PY'
+          import json, os, time, traceback
+          from datetime import date, timedelta
+          from collectors.kbl_collector import KBLCollector
+          from collectors.kovo_collector import KOVOCollector
+          from collectors.flashscore_kbl import FlashscoreKBL
+          from uploader.github_uploader import FILE_SUFFIX
+          import requests
+          from collectors.flashscore_hockey_collector import UA
+          for path in ["wkbl-women-2026-2027", "wkbl-women", "wkbl-2026-2027", "wkbl"]:
+              u = f"https://www.flashscore.com/basketball/south-korea/{path}/results/"
+              r = requests.get(u, headers={"User-Agent": UA}, timeout=25)
+              print("PROBE", path, r.status_code, len(r.text))
+          fs = FlashscoreKBL("WKBL")
+          try:
+              recs = fs.fs.season_matches(2026, 2027)
+              print("WKBL raw teams", sorted({r.get(k, "") for r in recs.values() for k in ("AE", "AF")}))
+              print("WKBL stages", sorted({r.get("ZA", "") for r in recs.values()}))
+          except Exception as e:
+              print("WKBL list error", e)
+          log = {}
+          t = time.time()
+          plan = [("WKBL", FlashscoreKBL("WKBL"), 20261025, 14)]
+          for lg, col, start, n in plan:
+              s = date(start // 10000, start // 100 % 100, start % 100)
+              for i in range(n):
+                  d = (s + timedelta(i)).strftime("%Y%m%d")
+                  try:
+                      out = col.collect_daily(d)
+                  except Exception as e:
+                      log[f"{lg}:{d}"] = ["ERROR", str(e)[:300]]
+                      print(lg, d, "ERROR", e); traceback.print_exc()
+                      continue
+                  log[f"{lg}:{d}"] = [out.get("source", "naver"), len(out["games"])]
+                  if out["games"]:
+                      os.makedirs(f"diag/backfill/{lg}", exist_ok=True)
+                      json.dump(out, open(f"diag/backfill/{lg}/{d}{FILE_SUFFIX[lg]}.json", "w"), ensure_ascii=False, indent=2)
+                  print(lg, d, out.get("source", "naver"), len(out["games"]),
+                        [(g["away_team"], g["away_score"] if "away_score" in g else g.get("away_sets"),
+                          g["home_team"], g["home_score"] if "home_score" in g else g.get("home_sets")) for g in out["games"]])
+          log["elapsed"] = round(time.time() - t)
+          json.dump(log, open("diag/backfill_log.json", "w"), ensure_ascii=False, indent=1)
+          PY
+      - name: 결과 커밋
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add diag && git commit -m "diag result" && git push -f origin HEAD:collect-diag
