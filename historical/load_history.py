@@ -16,6 +16,7 @@ from collectors.nba_collector import NBACollector
 from collectors.kbl_collector import KBLCollector
 from collectors.kovo_collector import KOVOCollector
 from collectors.flashscore_hockey_collector import FlashscoreHockeyCollector
+from collectors.flashscore_soccer import FlashscoreSoccer, SOCCER_LEAGUES
 from uploader.github_uploader import GitHubUploader
 from main import extract_player_data
 
@@ -38,6 +39,9 @@ def load_history(league: str, start: str, end: str):
         # KHL 지난 시즌 백필: KHL 모바일 API는 현재 시즌만 조회되므로 Flashscore 사용, 저장은 KHL 폴더
         "KHL_FS": FlashscoreHockeyCollector("KHL"),
     }
+    # 축구(J1~J3·K1·K2): 해당 리그 요청 때만 생성 (Flashscore 시즌 목록 조회 비용)
+    if league in SOCCER_LEAGUES:
+        collectors[league] = FlashscoreSoccer(league)
 
     collector = collectors.get(league)
     if not collector:
@@ -77,7 +81,7 @@ def load_history(league: str, start: str, end: str):
                     fail += 1
 
                 # NHL/NFL/KHL/NBA/KBL은 선수 기록이 일별 파일에 포함되어 있어 별도 추출 불필요
-                player_data = extract_player_data(data, league, date_str) if league not in ("NHL", "NFL", "KHL", "NBA", "KBL", "KOVO", "WKOVO", "DEL", "CZE", "LIIGA", "SHL", "KHL_FS") else {"players": []}
+                player_data = extract_player_data(data, league, date_str) if league not in ("NHL", "NFL", "KHL", "NBA", "KBL", "KOVO", "WKOVO", "DEL", "CZE", "LIIGA", "SHL", "KHL_FS", *SOCCER_LEAGUES) else {"players": []}
                 if player_data["players"]:
                     uploader.upload_json(
                         player_data, league, date_str, "historical_players"
