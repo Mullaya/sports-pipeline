@@ -85,12 +85,27 @@ class KOVOCollector:
         raise RuntimeError(f"{self.league} API 실패 {url}: {last}")
 
     # ------------------------------------------------------------------
+    # 네이버가 한 번 응답하지 않으면 같은 실행(남녀부·누락분 재수집 포함) 동안은 바로 Flashscore로 간다
+    _naver_down = False
+
     def collect_daily(self, date: str) -> dict:
-        """date: YYYYMMDD (한국 날짜)"""
+        """date: YYYYMMDD (한국 날짜). 네이버 API 실패 시 Flashscore로 대체 수집."""
+        if not KOVOCollector._naver_down:
+            try:
+                return self._collect_naver(date)
+            except RuntimeError as e:
+                KOVOCollector._naver_down = True
+                print(f"  [{self.league}] 네이버 API 실패 → Flashscore 대체 수집: {e}")
+        from collectors.flashscore_kovo import FlashscoreKOVO
+        if not hasattr(self, "_fs"):
+            self._fs = FlashscoreKOVO(self.league, sleep=self.sleep)
+        return self._fs.collect_daily(date)
+
+    def _collect_naver(self, date: str) -> dict:
         iso = f"{date[:4]}-{date[4:6]}-{date[6:]}"
         # upperCategoryId를 같이 보내면 빈 결과 → categoryId만 사용 (KBL과 동일)
         res = self._get(API, {"fields": "basic", "categoryId": self.category,
-                              "fromDate": iso, "toDate": iso, "size": 100}) or {}
+                              "fromDate": iso, "toDate": iso, "size": 100}, retries=2) or {}
 
         games = []
         for g in res.get("games", []):

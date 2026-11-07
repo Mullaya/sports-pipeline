@@ -8,7 +8,9 @@ from collectors.khl_collector import KHLCollector
 from collectors.nba_collector import NBACollector
 from collectors.kbl_collector import KBLCollector
 from collectors.kovo_collector import KOVOCollector
+from collectors.flashscore_kbl import FlashscoreKBL
 from collectors.flashscore_hockey_collector import FlashscoreHockeyCollector
+from collectors.flashscore_soccer import FlashscoreSoccer, SOCCER_LEAGUES
 from uploader.github_uploader import GitHubUploader
 
 def get_dates(manual_date: str = None, manual_mlb_date: str = None):
@@ -117,6 +119,17 @@ def run_daily(date: str = None, mlb_date: str = None):
     except Exception as e:
         print(f"  [KBL] 실패: {e}")
 
+    # WKBL 여자프로농구 수집 (한국 날짜 = KST 어제, Flashscore 피드 — 네이버 수집기 없음)
+    try:
+        wkbl_data = FlashscoreKBL("WKBL").collect_daily(npb_date)
+        if wkbl_data["games"]:
+            uploader.upload_json(wkbl_data, "WKBL", npb_date, "daily")
+            print(f"  [WKBL] {len(wkbl_data['games'])}경기 완료")
+        else:
+            print(f"  [WKBL] 경기 없음")
+    except Exception as e:
+        print(f"  [WKBL] 실패: {e}")
+
     # V-리그 남자부(KOVO)·여자부(WKOVO) 수집 (한국 날짜 = KST 어제, 컵대회 포함)
     for league in ("KOVO", "WKOVO"):
         try:
@@ -141,6 +154,18 @@ def run_daily(date: str = None, mlb_date: str = None):
         except Exception as e:
             print(f"  [{league}] 실패: {e}")
 
+    # J리그(J1~J3)·K리그(K1·K2) 축구 (현지 날짜 = KST 어제, Flashscore 피드)
+    for league in SOCCER_LEAGUES:
+        try:
+            fb = FlashscoreSoccer(league).collect_daily(npb_date)
+            if fb["games"]:
+                uploader.upload_json(fb, league, npb_date, "daily")
+                print(f"  [{league}] {len(fb['games'])}경기 완료")
+            else:
+                print(f"  [{league}] 경기 없음")
+        except Exception as e:
+            print(f"  [{league}] 실패: {e}")
+
     if not date:
         catch_up(uploader, npb_date, {"KHL": KHLCollector,
                                       "DEL": lambda: FlashscoreHockeyCollector("DEL"),
@@ -148,8 +173,10 @@ def run_daily(date: str = None, mlb_date: str = None):
                                       "LIIGA": lambda: FlashscoreHockeyCollector("LIIGA"),
                                       "SHL": lambda: FlashscoreHockeyCollector("SHL"),
                                       "KBL": KBLCollector,
+                                      "WKBL": lambda: FlashscoreKBL("WKBL"),
                                       "KOVO": lambda: KOVOCollector("KOVO"),
-                                      "WKOVO": lambda: KOVOCollector("WKOVO")})
+                                      "WKOVO": lambda: KOVOCollector("WKOVO"),
+                                      **{lg: (lambda lg=lg: FlashscoreSoccer(lg)) for lg in SOCCER_LEAGUES}})
 
     # NPB/KBO는 별도 스크래퍼 구성 예정
     print(f"  [NPB] 별도 스크래퍼 구성 예정")

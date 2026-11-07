@@ -13,12 +13,18 @@ FILE_SUFFIX = {
     "KHL": " khl",
     "NBA": " nba",
     "KBL": " kbl",
+    "WKBL": " wkbl",
     "KOVO": " kovo",
     "WKOVO": " wkovo",
     "DEL": " del",
     "CZE": " cze",
     "LIIGA": " liiga",
     "SHL": " shl",
+    "J1": " j1",
+    "J2": " j2",
+    "J3": " j3",
+    "K1": " k1",
+    "K2": " k2",
 }
 
 
