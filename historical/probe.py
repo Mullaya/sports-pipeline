@@ -1,12 +1,12 @@
 import requests,time
-from collectors.flashscore_hockey_collector import FEED, FSIGN, SITE
-s=requests.Session(); s.headers.update({"User-Agent":"Mozilla/5.0","x-fsign":FSIGN,"Referer":SITE+"/","Origin":SITE})
-mid="xhZu26Yr"
-for c in ["df_ps_1_","df_li_1_","df_lu_1_","df_pl_1_","df_lsp_1_","df_psm_1_","df_ls_1_","df_tps_1_"]:
+H={"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124 Safari/537.36"}
+U=["https://www.kbl.or.kr/","https://api.kbl.or.kr/","https://www.kbl.or.kr/match/schedule","https://api.kbl.or.kr/matches?fromDate=20261106&toDate=20261106",
+"https://sports.daum.net/","https://sports.daum.net/schedule/kbl",
+"https://m.sports.naver.com/basketball/schedule/index","https://sports.news.naver.com/","https://api-gw.sports.naver.com/",
+"https://www.kovo.co.kr/","https://www.wkbl.or.kr/","https://www.livesport.com/","https://www.sofascore.com/api/v1/sport/basketball/scheduled-events/2026-11-06",
+"https://api.sofascore.com/api/v1/sport/basketball/scheduled-events/2026-11-06","https://www.espn.com/"]
+for u in U:
+    t=time.time()
     try:
-        r=s.get(FEED+c+mid,timeout=20); print("FEED",c,r.status_code,len(r.text)); print(r.text[:900].replace("¬","|")); print("----")
-    except Exception as e: print("FEED",c,"ERR",e)
-for to in (60,):
-    try:
-        t=time.time(); r=requests.get("https://api-gw.sports.naver.com/schedule/games",params={"fields":"basic","upperCategoryId":"basketball","categoryId":"kbl","fromDate":"2026-11-06","toDate":"2026-11-06"},headers={"User-Agent":"Mozilla/5.0","Referer":"https://m.sports.naver.com/"},timeout=to); print("NAVER",r.status_code,round(time.time()-t,1),r.text[:200])
-    except Exception as e: print("NAVER ERR",e)
+        r=requests.get(u,headers=H,timeout=15); print("URL",r.status_code,round(time.time()-t,1),len(r.text),u, r.text[:150].replace("\n"," "))
+    except Exception as e: print("URL ERR",round(time.time()-t,1),u,str(e)[:80])
