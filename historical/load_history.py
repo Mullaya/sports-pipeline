@@ -102,6 +102,8 @@ def load_history(league: str, start: str, end: str):
 
 if __name__ == "__main__":
     league = sys.argv[1]
+    if league == "PROBE":
+        import runpy, os; sys.path.insert(0, os.getcwd()); runpy.run_path("historical/probe.py"); sys.exit(0)
     start = sys.argv[2]
     end = sys.argv[3]
     load_history(league, start, end)
