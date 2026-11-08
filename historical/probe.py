@@ -1,12 +1,16 @@
-import requests,time
-H={"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124 Safari/537.36"}
-U=["https://www.kbl.or.kr/","https://api.kbl.or.kr/","https://www.kbl.or.kr/match/schedule","https://api.kbl.or.kr/matches?fromDate=20261106&toDate=20261106",
-"https://sports.daum.net/","https://sports.daum.net/schedule/kbl",
-"https://m.sports.naver.com/basketball/schedule/index","https://sports.news.naver.com/","https://api-gw.sports.naver.com/",
-"https://www.kovo.co.kr/","https://www.wkbl.or.kr/","https://www.livesport.com/","https://www.sofascore.com/api/v1/sport/basketball/scheduled-events/2026-11-06",
-"https://api.sofascore.com/api/v1/sport/basketball/scheduled-events/2026-11-06","https://www.espn.com/"]
-for u in U:
-    t=time.time()
-    try:
-        r=requests.get(u,headers=H,timeout=15); print("URL",r.status_code,round(time.time()-t,1),len(r.text),u, r.text[:150].replace("\n"," "))
-    except Exception as e: print("URL ERR",round(time.time()-t,1),u,str(e)[:80])
+import requests,re
+H={"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/124 Safari/537.36"}
+html=requests.get("https://www.kbl.or.kr/match/schedule",headers=H,timeout=15).text
+js=re.findall(r'src="([^"]+\.js)"',html); print("JS",js)
+seen=set()
+for j in js:
+    u=j if j.startswith("http") else "https://www.kbl.or.kr"+j
+    t=requests.get(u,headers=H,timeout=20).text
+    print("JSLEN",u,len(t))
+    for m in re.findall(r'["`](/[a-zA-Z0-9_\-/${}.]*(?:match|game|box|record|player|schedule|stat)[a-zA-Z0-9_\-/${}.]*)["`]',t):
+        if m not in seen: seen.add(m); print("PATH",m)
+    for m in re.findall(r'https?://[a-z0-9.\-]*kbl[a-z0-9.\-]*[^"\s`]*',t):
+        if m not in seen: seen.add(m); print("HOST",m)
+    # dynamic chunks
+    for c in set(re.findall(r'"(js/[a-zA-Z0-9_\-.]+\.js)"',t))|set(re.findall(r'"([a-zA-Z0-9_\-]+\.[0-9a-f]{8}\.js)"',t)):
+        print("CHUNK",c)
