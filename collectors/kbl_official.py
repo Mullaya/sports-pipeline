@@ -81,6 +81,9 @@ class KBLOfficialCollector:
         for m in lst:
             if m.get("gameDate") != date or not m.get("isEnded"):
                 continue
+            # 1군 경기만 (D리그 등 다른 대회가 같은 목록에 섞여 옴 — 예: S49G07)
+            if _game_type(m.get("seasonCategoryName")) not in ("REG", "PO", "FINAL", "CUP"):
+                continue
             for attempt in range(2):
                 try:
                     games.append(self._build_game(m))
