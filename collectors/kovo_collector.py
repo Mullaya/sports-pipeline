@@ -89,7 +89,19 @@ class KOVOCollector:
     _naver_down = False
 
     def collect_daily(self, date: str) -> dict:
-        """date: YYYYMMDD (한국 날짜). 네이버 API 실패 시 Flashscore로 대체 수집."""
+        """date: YYYYMMDD (한국 날짜).
+        수집 순서: V-리그 공식 API(선수 기록 포함) → 네이버 → Flashscore(세트 점수만).
+        네이버는 2026-10-24부터 GitHub Actions 서버에서 응답하지 않아 공식 API를 1순위로 둔다.
+        (공식 API는 현재 시즌 일정만 조회 — 지난 시즌 날짜는 네이버/Flashscore로 넘어감)"""
+        try:
+            from collectors.kovo_official import KOVOOfficialCollector
+            if not hasattr(self, "_official"):
+                self._official = KOVOOfficialCollector(self.league, sleep=self.sleep)
+            data = self._official.collect_daily(date)
+            if data["games"]:
+                return data
+        except Exception as e:
+            print(f"  [{self.league}] 공식 API 실패 → 네이버 시도: {e}")
         if not KOVOCollector._naver_down:
             try:
                 return self._collect_naver(date)
