@@ -1,11 +1,16 @@
-import requests,re,json
-H={"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/124 Safari/537.36","Origin":"https://www.kovo.co.kr","Referer":"https://www.kovo.co.kr/"}
-t=requests.get("https://www.kovo.co.kr/assets/index-DVULM5Z7.js",headers=H,timeout=30).text
-for k in ["user-api.kovo.co.kr",'"/stat/game-schedule"',"/stat/game-schedule/${e.gnum}?","/stat/season-list","interceptors.request.use"]:
-    for m in list(re.finditer(re.escape(k),t))[:2]:
-        print("CTX",k,t[max(0,m.start()-300):m.end()+500].replace("\n"," "))
+import requests,json
+H={"User-Agent":"Mozilla/5.0 Chrome/124","Origin":"https://www.kovo.co.kr","Referer":"https://www.kovo.co.kr/","X-Service-Name":"user","Accept-Language":"ko"}
 A="https://user-api.kovo.co.kr"
-for p in ["/stat/season-list","/stat/game-schedule?gender=M&month=11","/stat/game-schedule","/main/game/season"]:
-    try:
-        r=requests.get(A+p,headers=H,timeout=15); print("API",p,r.status_code,r.text[:800])
-    except Exception as e: print("API ERR",p,e)
+r=requests.get(A+"/stat/game-schedule",params={"seasonCode":"023","gcode":"001"},headers=H,timeout=20).json()
+c=r["payload"]["content"]; print("N",len(c), r["payload"]["page"])
+done=[x for x in c if x.get("gdate","")>="2026-11-01"]
+print("KEYS",list(c[0].keys()))
+for x in done[:6]: print("G",{k:x[k] for k in ["seasonCode","leagueCode","leagueName","round","gender","gnum","hcode","hname","acode","gdate","gstime","hspoint","aspoint","place"]})
+x=[y for y in done if y.get("hspoint",0)+y.get("aspoint",0)>0][0]
+p={"gcode":"001","seasonCode":x["seasonCode"],"leagueCode":x["leagueCode"],"gender":x["gender"],"round":x["round"],"tcode":x["hcode"],"acode":x["acode"],"gdate":x["gdate"]}
+d=requests.get(A+f"/stat/game-schedule/{x['gnum']}",params=p,headers=H,timeout=20).json()
+pl=d.get("payload") or {}
+print("DKEYS",list(pl.keys()))
+print("GAME",json.dumps(pl.get("game"),ensure_ascii=False)[:1500])
+print("PLAYER",len(pl.get("player") or []),json.dumps((pl.get("player") or [None])[:2],ensure_ascii=False)[:2000])
+print("TEAM",json.dumps(pl.get("team"),ensure_ascii=False)[:2000])
