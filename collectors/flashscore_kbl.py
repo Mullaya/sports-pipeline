@@ -64,7 +64,7 @@ BLEAGUE_TEAMS = [
     (("alvark", "a tokyo"), ("알바르크 도쿄", "A東京", "A_TOKYO")),
     (("excellence",), ("요코하마EX", "横浜EX", "YOKOHAMA_EX")),
     (("corsairs", "yokohama"), ("요코하마BC", "横浜BC", "YOKOHAMA_BC")),
-    (("kawasaki",), ("가와사키", "川崎", "KAWASAKI")),
+    (("kawasaki", "brave thunders"), ("가와사키", "川崎", "KAWASAKI")),
     (("gunma",), ("군마", "群馬", "GUNMA")),
     (("utsunomiya", "brex", "tochigi"), ("우츠노미야", "宇都宮", "UTSUNOMIYA")),
     (("sendai", "89ers"), ("센다이", "仙台", "SENDAI")),
