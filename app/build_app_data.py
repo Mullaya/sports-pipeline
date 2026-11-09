@@ -25,6 +25,7 @@ import requests
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
 from collectors.flashscore_hockey_collector import LEAGUES as FS_HOCKEY  # KHL 팀명 매핑 재사용
+from collectors.flashscore_kbl import team_info as bb_team_info       # B리그 팀명 매핑 재사용
 
 OUT = os.path.join(ROOT, "data", "app", "latest.json")
 FEED = "https://global.flashscore.ninja/2/x/feed/"
@@ -43,6 +44,8 @@ LEAGUES = [
     ("SHL", "하키", 4, "SWEDEN: SHL", "SHL"),
     ("NBA", "농구", 3, "USA: NBA", None),
     ("KBL", "농구", 3, "SOUTH KOREA: KBL", "KBL"),
+    # 대회명 표기가 확정되지 않아 후보를 함께 둠 (튜플 = 아무거나 일치)
+    ("BLEAGUE", "농구", 3, ("JAPAN: B.League Premier", "JAPAN: B.League", "JAPAN: B1 League"), "BLEAGUE"),
     ("KOVO", "배구", 12, "SOUTH KOREA: V-League", "KOVO"),
     ("WKOVO", "배구", 12, "SOUTH KOREA: V-League Women", "WKOVO"),
     ("MLB", "야구", 6, "USA: MLB", "MLB"),
@@ -61,7 +64,7 @@ LEAGUES = [
     ("UEL", "축구", 1, "EUROPE: Europa League", None),
 ]
 LEAGUE_NAMES = {
-    "NHL": "NHL", "KHL": "KHL", "DEL": "독일 DEL", "CZE": "체코 엑스트라리가", "LIIGA": "핀란드 Liiga", "SHL": "스웨덴 SHL", "NBA": "NBA", "KBL": "KBL",
+    "NHL": "NHL", "KHL": "KHL", "DEL": "독일 DEL", "CZE": "체코 엑스트라리가", "LIIGA": "핀란드 Liiga", "SHL": "스웨덴 SHL", "NBA": "NBA", "KBL": "KBL", "BLEAGUE": "B리그",
     "KOVO": "V리그 남자", "WKOVO": "V리그 여자", "MLB": "MLB", "KBO": "KBO", "NPB": "NPB",
     "EPL": "EPL", "LALIGA": "라리가", "BUNDES": "분데스리가", "SERIEA": "세리에A", "LIGUE1": "리그1",
     "EREDIV": "에레디비시", "SCOT": "스코틀랜드", "TUR": "튀르키예", "KLEAGUE": "K리그1",
@@ -130,7 +133,7 @@ class FS:
 def league_of(sport, za):
     base = za.split(" - ")[0].strip()
     for code, group, sid, comp, stats in LEAGUES:
-        if sid == sport and base == comp:
+        if sid == sport and (base in comp if isinstance(comp, tuple) else base == comp):
             return code, group, stats
     return None
 
@@ -218,6 +221,10 @@ class Stats:
         m = NAME_MAP.get(league, {}).get(raw)
         if m:
             return m
+        if league == "BLEAGUE":   # 수집기와 같은 키워드 표로 한글 통계 키 결정
+            info = bb_team_info(raw, "BLEAGUE")
+            if info and info[0] in teams:
+                return info[0]
         for kw, key in KEYWORDS.get(league, []):
             if kw in raw:
                 return key

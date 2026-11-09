@@ -59,7 +59,17 @@ jobs:
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: |
           git pull --ff-only origin main || git pull origin main
-          python analytics/build_kbl_stats.py
+          python analytics/build_kbl_stats.py KBL
+      - name: B리그·WKBL 통계 집계
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          git pull --ff-only origin main || git pull origin main
+          # 한 리그가 실패해도 다른 리그 집계는 진행하고, 마지막에 실패로 표시
+          rc=0
+          for lg in BLEAGUE WKBL; do python analytics/build_kbl_stats.py $lg || rc=1; done
+          exit $rc
       - name: V-리그(KOVO·WKOVO) 통계 집계
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

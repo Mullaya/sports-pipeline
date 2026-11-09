@@ -48,7 +48,48 @@ WKBL_TEAMS = [
     (("bnk", "busan"), ("부산 BNK 썸", "BNK", "BNK")),
 ]
 
-TEAMS_BY_LEAGUE = {"KBL": KBL_TEAMS, "WKBL": WKBL_TEAMS}
+# B리그(일본 B.League Premier, 2026-27 출범): 2025-26은 B1(경로 b-league)로 백필.
+# 날짜는 JST = KST 같은 오프셋이라 KST 경기일 그대로 사용.
+LEAGUES.setdefault("BLEAGUE_FS", {"path": "basketball/japan/b-league-premier", "country": "109",
+                                  "tournament": None, "tz": "Asia/Tokyo",
+                                  "season_paths": {2025: "basketball/japan/b-league"}})
+
+# (팀명=통계 키(한글), 약칭=일본 표기, 코드=영문). 같은 도시 팀이 여럿이라 구체적인 키워드를 먼저 둔다
+BLEAGUE_TEAMS = [
+    (("fighting eagles", "fe nagoya"), ("FE 나고야", "FE名古屋", "FE_NAGOYA")),
+    (("diamond", "dolphins", "nagoya d", "nagoya"), ("나고야D", "名古屋D", "NAGOYA_D")),
+    (("altiri",), ("알티리 지바", "A千葉", "A_CHIBA")),
+    (("jets", "chiba"), ("지바 제츠", "千葉J", "CHIBA_J")),
+    (("sunrockers", "sun rockers", "shibuya"), ("선로커즈 도쿄", "東京SR", "TOKYO_SR")),
+    (("alvark", "a tokyo"), ("알바르크 도쿄", "A東京", "A_TOKYO")),
+    (("excellence",), ("요코하마EX", "横浜EX", "YOKOHAMA_EX")),
+    (("corsairs", "yokohama"), ("요코하마BC", "横浜BC", "YOKOHAMA_BC")),
+    (("kawasaki",), ("가와사키", "川崎", "KAWASAKI")),
+    (("gunma",), ("군마", "群馬", "GUNMA")),
+    (("utsunomiya", "brex", "tochigi"), ("우츠노미야", "宇都宮", "UTSUNOMIYA")),
+    (("sendai", "89ers"), ("센다이", "仙台", "SENDAI")),
+    (("levanga", "hokkaido"), ("홋카이도", "北海道", "HOKKAIDO")),
+    (("ibaraki", "robots"), ("이바라키", "茨城", "IBARAKI")),
+    (("akita", "happinets"), ("아키타", "秋田", "AKITA")),
+    (("koshigaya",), ("고시가야", "越谷", "KOSHIGAYA")),
+    (("kyoto", "hannaryz"), ("교토", "京都", "KYOTO")),
+    (("hiroshima", "dragonflies"), ("히로시마", "広島", "HIROSHIMA")),
+    (("saga", "ballooners"), ("사가", "佐賀", "SAGA")),
+    (("san-en", "sanen", "neophoenix"), ("산엔", "三遠", "SANEN")),
+    (("mikawa", "seahorses"), ("미카와", "三河", "MIKAWA")),
+    (("shiga", "lakes"), ("시가", "滋賀", "SHIGA")),
+    (("shinshu", "brave warriors"), ("신슈", "信州", "SHINSHU")),
+    (("kobe", "storks", "nishinomiya"), ("고베", "神戸", "KOBE")),
+    (("nagasaki", "velca"), ("나가사키", "長崎", "NAGASAKI")),
+    (("shimane", "susanoo"), ("시마네", "島根", "SHIMANE")),
+    (("toyama", "grouses"), ("도야마", "富山", "TOYAMA")),
+    (("ryukyu", "golden kings"), ("류큐", "琉球", "RYUKYU")),
+    (("osaka", "evessa"), ("오사카", "大阪", "OSAKA")),
+    (("fukuoka", "rizing"), ("후쿠오카", "福岡", "FUKUOKA")),
+    (("niigata", "albirex"), ("니가타", "新潟", "NIIGATA")),
+]
+
+TEAMS_BY_LEAGUE = {"KBL": KBL_TEAMS, "WKBL": WKBL_TEAMS, "BLEAGUE": BLEAGUE_TEAMS}
 TEAMS = KBL_TEAMS   # 하위 호환
 
 STAT_KEYS = {
@@ -80,8 +121,10 @@ def _game_type(za: str) -> str:
     z = (za or "").lower()
     if "final" in z and "semi" not in z and "quarter" not in z:
         return "FINAL"
-    if "play off" in z or "playoff" in z or "play-off" in z:
-        return "PO"
+    if "play off" in z or "playoff" in z or "play-off" in z or "championship" in z:
+        return "PO"   # B리그 포스트시즌 = Championship
+    if "pre-season" in z or "friendly" in z:
+        return "PRE"
     if "cup" in z:
         return "CUP"
     if "all-star" in z or "all star" in z:
