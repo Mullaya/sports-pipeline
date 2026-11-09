@@ -40,72 +40,78 @@ def run_daily(date: str = None, mlb_date: str = None):
 
     uploader = GitHubUploader()
 
-    # MLB 수집
-    try:
-        mlb = MLBCollector()
-        data = mlb.collect_daily(mlb_date)
-        if data["games"]:
-            uploader.upload_json(data, "MLB", mlb_date, "daily")
-            player_data = extract_player_data(data, "MLB", mlb_date)
-            if player_data["players"]:
-                uploader.upload_json(player_data, "MLB", mlb_date, "players")
-            print(f"  [MLB] {len(data['games'])}경기 완료")
-        else:
-            print(f"  [MLB] 경기 없음")
-    except Exception as e:
-        print(f"  [MLB] 실패: {e}")
+    # COLLECT_SCOPE=eurasia: KST 아침 보조 실행 — 북미 리그는 아직 경기 중이라 건너뛰고
+    # KHL·유럽 하키·아시아 리그만 수집 (북미는 저녁 정규 실행에서 수집)
+    eurasia_only = os.environ.get("COLLECT_SCOPE", "").lower() == "eurasia"
+    if eurasia_only:
+        print("  [SCOPE] eurasia — MLB·NHL·AHL·NFL·NBA 건너뜀")
+    else:
+        # MLB 수집
+        try:
+            mlb = MLBCollector()
+            data = mlb.collect_daily(mlb_date)
+            if data["games"]:
+                uploader.upload_json(data, "MLB", mlb_date, "daily")
+                player_data = extract_player_data(data, "MLB", mlb_date)
+                if player_data["players"]:
+                    uploader.upload_json(player_data, "MLB", mlb_date, "players")
+                print(f"  [MLB] {len(data['games'])}경기 완료")
+            else:
+                print(f"  [MLB] 경기 없음")
+        except Exception as e:
+            print(f"  [MLB] 실패: {e}")
 
-    # NHL 수집 (북미 현지 날짜 = MLB와 동일 기준)
-    try:
-        nhl = NHLCollector()
-        nhl_data = nhl.collect_daily(mlb_date)
-        if nhl_data["games"]:
-            uploader.upload_json(nhl_data, "NHL", mlb_date, "daily")
-            print(f"  [NHL] {len(nhl_data['games'])}경기 완료")
-        else:
-            print(f"  [NHL] 경기 없음")
-    except Exception as e:
-        print(f"  [NHL] 실패: {e}")
+        # NHL 수집 (북미 현지 날짜 = MLB와 동일 기준)
+        try:
+            nhl = NHLCollector()
+            nhl_data = nhl.collect_daily(mlb_date)
+            if nhl_data["games"]:
+                uploader.upload_json(nhl_data, "NHL", mlb_date, "daily")
+                print(f"  [NHL] {len(nhl_data['games'])}경기 완료")
+            else:
+                print(f"  [NHL] 경기 없음")
+        except Exception as e:
+            print(f"  [NHL] 실패: {e}")
 
-    # AHL 수집 (북미 현지 날짜 = NHL과 동일 기준, Flashscore 피드)
-    try:
-        ahl_data = FlashscoreHockeyCollector("AHL").collect_daily(mlb_date)
-        if ahl_data["games"]:
-            uploader.upload_json(ahl_data, "AHL", mlb_date, "daily")
-            print(f"  [AHL] {len(ahl_data['games'])}경기 완료")
-        else:
-            print(f"  [AHL] 경기 없음")
-    except Exception as e:
-        print(f"  [AHL] 실패: {e}")
+        # AHL 수집 (북미 현지 날짜 = NHL과 동일 기준, Flashscore 피드)
+        try:
+            ahl_data = FlashscoreHockeyCollector("AHL").collect_daily(mlb_date)
+            if ahl_data["games"]:
+                uploader.upload_json(ahl_data, "AHL", mlb_date, "daily")
+                print(f"  [AHL] {len(ahl_data['games'])}경기 완료")
+            else:
+                print(f"  [AHL] 경기 없음")
+        except Exception as e:
+            print(f"  [AHL] 실패: {e}")
 
-    # 자동 실행일 때만: 최근 며칠 중 파일이 없는 날짜를 재수집 (크론 지연·스킵 대비)
-    if not date:
-        catch_up(uploader, mlb_date, {"NHL": NHLCollector, "NBA": NBACollector,
-                                      "AHL": lambda: FlashscoreHockeyCollector("AHL")})
+        # 자동 실행일 때만: 최근 며칠 중 파일이 없는 날짜를 재수집 (크론 지연·스킵 대비)
+        if not date:
+            catch_up(uploader, mlb_date, {"NHL": NHLCollector, "NBA": NBACollector,
+                                          "AHL": lambda: FlashscoreHockeyCollector("AHL")})
 
-    # NFL 수집 (미국 현지 날짜 = MLB와 동일 기준, 경기 있는 날만 파일 생성)
-    try:
-        nfl = NFLCollector()
-        nfl_data = nfl.collect_daily(mlb_date)
-        if nfl_data["games"]:
-            uploader.upload_json(nfl_data, "NFL", mlb_date, "daily")
-            print(f"  [NFL] {len(nfl_data['games'])}경기 완료")
-        else:
-            print(f"  [NFL] 경기 없음")
-    except Exception as e:
-        print(f"  [NFL] 실패: {e}")
+        # NFL 수집 (미국 현지 날짜 = MLB와 동일 기준, 경기 있는 날만 파일 생성)
+        try:
+            nfl = NFLCollector()
+            nfl_data = nfl.collect_daily(mlb_date)
+            if nfl_data["games"]:
+                uploader.upload_json(nfl_data, "NFL", mlb_date, "daily")
+                print(f"  [NFL] {len(nfl_data['games'])}경기 완료")
+            else:
+                print(f"  [NFL] 경기 없음")
+        except Exception as e:
+            print(f"  [NFL] 실패: {e}")
 
-    # NBA 수집 (미국 현지 날짜 = MLB와 동일 기준)
-    try:
-        nba = NBACollector()
-        nba_data = nba.collect_daily(mlb_date)
-        if nba_data["games"]:
-            uploader.upload_json(nba_data, "NBA", mlb_date, "daily")
-            print(f"  [NBA] {len(nba_data['games'])}경기 완료")
-        else:
-            print(f"  [NBA] 경기 없음")
-    except Exception as e:
-        print(f"  [NBA] 실패: {e}")
+        # NBA 수집 (미국 현지 날짜 = MLB와 동일 기준)
+        try:
+            nba = NBACollector()
+            nba_data = nba.collect_daily(mlb_date)
+            if nba_data["games"]:
+                uploader.upload_json(nba_data, "NBA", mlb_date, "daily")
+                print(f"  [NBA] {len(nba_data['games'])}경기 완료")
+            else:
+                print(f"  [NBA] 경기 없음")
+        except Exception as e:
+            print(f"  [NBA] 실패: {e}")
 
     # KHL 수집 (모스크바 날짜 = KST 어제, NPB와 동일 기준)
     try:
