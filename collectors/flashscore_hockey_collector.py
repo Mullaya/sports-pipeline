@@ -147,8 +147,10 @@ class FlashscoreHockeyCollector:
             return self._season_cache[key]
 
         # 컵대회처럼 시즌별 URL이 없는 대회는 최신 대회 페이지만 조회 (season_in_url=False)
+        # 리그 개편으로 시즌마다 URL이 다른 대회(B리그: B1 → B.League Premier)는 season_paths로 지정
+        path = self.cfg.get("season_paths", {}).get(y1, self.cfg["path"])
         if self.cfg.get("season_in_url", True):
-            html = self._get(f"{SITE}/{self.cfg['path']}-{y1}-{y2}/results/")
+            html = self._get(f"{SITE}/{path}-{y1}-{y2}/results/")
         else:
             html = self._get(f"{SITE}/{self.cfg['path']}/results/")
         sid = re.search(r"seasonId:\s*(\d+)", html)

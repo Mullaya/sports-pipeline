@@ -1,6 +1,7 @@
-"""KBL 누적 집계 → analytics/KBL_stats.json
+"""농구 누적 집계 (KBL·WKBL·B리그) → analytics/{LEAGUE}_stats.json
 
-입력: data/KBL/daily/*.json + data/KBL/historical/*.json (game_id 중복 제거)
+실행: python analytics/build_kbl_stats.py [KBL|WKBL|BLEAGUE]   (인자 없으면 KBL)
+입력: data/{LEAGUE}/daily/*.json + data/{LEAGUE}/historical/*.json (game_id 중복 제거)
 출력 구조:
   meta         : 생성 시각, 시즌 시작일, 집계 경기 수, 리그 평균
   teams        : 이번 시즌 팀별 성적 — 홈/원정, 최근 10경기, 페이스·공수 효율(ORtg/DRtg/Net),
@@ -8,6 +9,9 @@
   last_season  : 지난 시즌 정규리그 팀 성적 (시즌 초 표본 부족 시 기준점)
   leaders      : 팀별 출전시간 상위 7명 (결장자 영향도 판단)
   h2h          : 팀 쌍별 최근 맞대결 5경기 (지난 시즌 포함)
+
+B리그는 팀별 직전 이동거리(last_travel_km)·최근 7일 이동거리(travel_7d_km)도 넣는다
+(경기 장소 = 홈팀 연고지 좌표 기준 직선거리, 중립 경기장은 무시).
 
 컵대회(CUP)·올스타(ALLSTAR)는 집계에서 제외. 정규(REG)+플레이오프(PO/FINAL)만 사용.
 최근 N경기 지표는 매 실행 때 일별 파일에서 재계산한다.
@@ -20,13 +24,51 @@ import base64
 from collections import defaultdict
 from datetime import datetime, timedelta, timezone
 
+import math
+
 import requests
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SEASON_START = os.getenv("KBL_SEASON_START", "20260901")   # 2026-27 시즌
-OUT_PATH = "analytics/KBL_stats.json"
-TOTAL_LINES = (145.5, 150.5, 155.5, 160.5, 165.5)
+LEAGUE = (sys.argv[1] if len(sys.argv) > 1 else os.getenv("LEAGUE", "KBL")).upper()
+
+# 리그별: 시즌 시작일, 언오버 기준선, 이번 시즌 데이터가 0건이면 실패로 볼 날짜
+CONFIG = {
+    "KBL": {"start": "20260901", "lines": (145.5, 150.5, 155.5, 160.5, 165.5), "alarm": "20261015"},
+    "WKBL": {"start": "20261015", "lines": (120.5, 125.5, 130.5, 135.5, 140.5), "alarm": "20261115"},
+    "BLEAGUE": {"start": "20260915", "lines": (150.5, 155.5, 160.5, 165.5, 170.5, 175.5, 180.5, 185.5),
+                "alarm": "20261001"},
+}
+if LEAGUE not in CONFIG:
+    sys.exit(f"지원하지 않는 리그: {LEAGUE}")
+SEASON_START = os.getenv(f"{LEAGUE}_SEASON_START", CONFIG[LEAGUE]["start"])
+OUT_PATH = f"analytics/{LEAGUE}_stats.json"
+TOTAL_LINES = CONFIG[LEAGUE]["lines"]
 COUNTED = ("REG", "PO", "FINAL")
+
+# B리그 홈 연고지 좌표 (통계 키 = 한글 팀명) — 이동거리 계산용
+HOME_COORDS = {
+    "BLEAGUE": {
+        "알바르크 도쿄": (35.63, 139.79), "선로커즈 도쿄": (35.62, 139.78), "센다이": (38.26, 140.87),
+        "군마": (36.29, 139.38), "우츠노미야": (36.56, 139.88), "지바 제츠": (35.68, 139.99),
+        "알티리 지바": (35.61, 140.11), "홋카이도": (43.06, 141.35), "이바라키": (36.37, 140.47),
+        "아키타": (39.72, 140.10), "가와사키": (35.53, 139.70), "요코하마BC": (35.47, 139.62),
+        "교토": (35.01, 135.77), "히로시마": (34.39, 132.46), "사가": (33.25, 130.30),
+        "산엔": (34.77, 137.39), "미카와": (34.99, 137.00), "시가": (35.00, 135.87),
+        "신슈": (36.65, 138.18), "고베": (34.66, 135.21), "나가사키": (32.75, 129.87),
+        "시마네": (35.47, 133.05), "도야마": (36.70, 137.21), "나고야D": (35.17, 136.91),
+        "류큐": (26.33, 127.80), "오사카": (34.65, 135.43), "FE 나고야": (35.17, 136.91),
+        "고시가야": (35.89, 139.79), "후쿠오카": (33.59, 130.40), "니가타": (37.92, 139.04),
+    },
+}.get(LEAGUE, {})
+
+
+def km(a, b):
+    """두 좌표 사이 직선거리(km)"""
+    if not a or not b:
+        return None
+    la1, lo1, la2, lo2 = map(math.radians, (*a, *b))
+    h = math.sin((la2 - la1) / 2) ** 2 + math.cos(la1) * math.cos(la2) * math.sin((lo2 - lo1) / 2) ** 2
+    return round(6371 * 2 * math.asin(math.sqrt(h)))
 
 
 def kst_now():
@@ -34,8 +76,8 @@ def kst_now():
 
 
 def load_games() -> list:
-    files = glob.glob(os.path.join(ROOT, "data", "KBL", "historical", "*.json")) + \
-        glob.glob(os.path.join(ROOT, "data", "KBL", "daily", "*.json"))
+    files = glob.glob(os.path.join(ROOT, "data", LEAGUE, "historical", "*.json")) + \
+        glob.glob(os.path.join(ROOT, "data", LEAGUE, "daily", "*.json"))
     uniq = {}
     for f in files:
         try:
@@ -84,12 +126,17 @@ def team_rows(games):
                 "total": g.get("total_points", 0),
                 "reg_total": g.get("reg_total_points", g.get("total_points", 0)),
                 "st": st, "ost": ost,
+                # 경기 장소 = 홈팀 연고지 (중립 경기장은 위치 불명)
+                "loc": None if g.get("neutral") else HOME_COORDS.get(g["home_team"]),
+                "home_loc": HOME_COORDS.get(g[f"{side}_team"]),
             })
     for rs in rows.values():
         prev = None
-        for r in rs:
+        for i, r in enumerate(rs):
             r["rest"] = days_between(prev, r["date"]) - 1 if prev else None
             prev = r["date"]
+            # 직전 경기 장소 → 이번 경기 장소 (시즌 첫 경기는 연고지에서 출발)
+            r["travel_km"] = km(rs[i - 1]["loc"] if i else r["home_loc"], r["loc"]) if HOME_COORDS else None
     return rows
 
 
@@ -163,6 +210,12 @@ def summarize(rs):
         "last_rest_days": rs[-1]["rest"],
         "b2b": split([r for r in rs if r["rest"] == 0]),
     })
+    if HOME_COORDS:
+        last = rs[-1]["date"]
+        s["last_travel_km"] = rs[-1]["travel_km"]
+        s["travel_7d_km"] = sum(r["travel_km"] or 0 for r in rs if days_between(r["date"], last) < 7)
+        s["home_loc"] = rs[-1]["home_loc"]
+        s["last_loc"] = rs[-1]["loc"]   # 다음 경기 이동거리 = km(last_loc, 다음 경기 홈팀 좌표)
     return s
 
 
@@ -249,7 +302,7 @@ def upload(content: str, path: str):
     h = {"Authorization": f"token {token}", "Accept": "application/vnd.github.v3+json"}
     url = f"https://api.github.com/repos/{repo}/contents/{path}"
     r = requests.get(url, headers=h)
-    payload = {"message": "[KBL] 통계 집계 업데이트",
+    payload = {"message": f"[{LEAGUE}] 통계 집계 업데이트",
                "content": base64.b64encode(content.encode()).decode(), "branch": "main"}
     if r.status_code == 200:
         payload["sha"] = r.json()["sha"]
@@ -266,9 +319,9 @@ def main():
     past_season_start = f"{int(SEASON_START[:4]) - 1}{SEASON_START[4:]}"
     last_reg = [g for g in past if g["date"] >= past_season_start and g["game_type"] == "REG"]
 
-    print(f"===== KBL 집계: 이번 시즌 {len(season)}경기 / 지난 시즌 정규 {len(last_reg)}경기 =====")
+    print(f"===== {LEAGUE} 집계: 이번 시즌 {len(season)}경기 / 지난 시즌 정규 {len(last_reg)}경기 =====")
     if not season:
-        if kst_now().strftime("%Y%m%d") > "20261015":
+        if kst_now().strftime("%Y%m%d") > CONFIG[LEAGUE]["alarm"]:
             print("❌ 이번 시즌 경기 데이터가 0건입니다 — 수집 단계 확인 필요")
             sys.exit(1)
         print("  이번 시즌 데이터 없음 — 집계 건너뜀")
@@ -284,7 +337,8 @@ def main():
             "league_avg": league_avg(season),
             "league_avg_last_season": league_avg(last_reg),
             "notes": "reg_* = 4쿼터까지(연장 제외) / pace = 40분당 포제션 / ortg·drtg = 100포제션당 득·실점 "
-                     "/ 컵대회·올스타 제외 / last_rest_days 0 = 연전",
+                     "/ 컵대회·올스타 제외 / last_rest_days 0 = 연전"
+                     + (" / *_km = 연고지 좌표 기준 직선 이동거리" if HOME_COORDS else ""),
         },
         "teams": teams,
         "last_season": build_teams(last_reg),

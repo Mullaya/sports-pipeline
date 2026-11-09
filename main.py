@@ -148,6 +148,17 @@ def run_daily(date: str = None, mlb_date: str = None):
     except Exception as e:
         print(f"  [WKBL] 실패: {e}")
 
+    # B리그(일본 B.League Premier) 수집 (JST = KST 같은 날짜 → KST 어제, Flashscore 피드)
+    try:
+        bl_data = FlashscoreKBL("BLEAGUE").collect_daily(npb_date)
+        if bl_data["games"]:
+            uploader.upload_json(bl_data, "BLEAGUE", npb_date, "daily")
+            print(f"  [BLEAGUE] {len(bl_data['games'])}경기 완료")
+        else:
+            print(f"  [BLEAGUE] 경기 없음")
+    except Exception as e:
+        print(f"  [BLEAGUE] 실패: {e}")
+
     # V-리그 남자부(KOVO)·여자부(WKOVO) 수집 (한국 날짜 = KST 어제, 컵대회 포함)
     for league in ("KOVO", "WKOVO"):
         try:
@@ -192,6 +203,7 @@ def run_daily(date: str = None, mlb_date: str = None):
                                       "SHL": lambda: FlashscoreHockeyCollector("SHL"),
                                       "KBL": KBLCollector,
                                       "WKBL": lambda: FlashscoreKBL("WKBL"),
+                                      "BLEAGUE": lambda: FlashscoreKBL("BLEAGUE"),
                                       "KOVO": lambda: KOVOCollector("KOVO"),
                                       "WKOVO": lambda: KOVOCollector("WKOVO"),
                                       **{lg: (lambda lg=lg: FlashscoreSoccer(lg)) for lg in SOCCER_LEAGUES}})
