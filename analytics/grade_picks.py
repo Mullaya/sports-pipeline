@@ -3,13 +3,14 @@
 사용: python analytics/grade_picks.py [data/picks/picks_log.json] [data 경로]
 
 - result가 비어 있는 픽만 일별 결과 파일로 채점하고, 채점 결과를 로그에 다시 기록한다.
-- 자동 채점 리그: MLB·NBA·NHL·KBL·KHL·DEL·CZE·LIIGA·SHL. 그 외(NPB·KBO 등)는 "수동 채점 필요"로 목록만 출력 —
+- 자동 채점 리그: MLB·NBA·NHL·KBL·KHL·DEL·CZE·LIIGA·SHL·BLG(B리그, data/BLEAGUE/historical). 그 외(NPB·KBO 등)는 "수동 채점 필요"로 목록만 출력 —
   result/actual을 직접 채워 넣으면 요약에 포함된다.
 - 팀 식별자: MLB는 풀네임(예: "Milwaukee Brewers"), NBA·NHL은 파이프라인 약어(예: "UTAH", "EDM"),
-  KBL은 영문(예: "Seoul SK")·한글 풀네임("서울 SK")·약칭("SK") 모두 허용.
+  KBL은 영문(예: "Seoul SK")·한글 풀네임("서울 SK")·약칭("SK") 모두 허용(공백 무시).
+  BLG는 파이프라인 한글명 기준 공백 무시 비교 + BLG_ALIAS(예: "치바제츠"→"지바 제츠").
 - HDP의 line은 side 팀 기준 핸디캡(+1.5, -4.5 등).
 - 유럽 하키(KHL·DEL·CZE·LIIGA·SHL)는 파이프라인 팀명 기준, 악센트·대소문자 무시 + 부분 일치 허용.
-- 정산 기준: NHL·유럽 하키는 정규시간(ML3W·TOTAL·HDP 모두), MLB·NBA·KBL은 연장 포함.
+- 정산 기준: NHL·유럽 하키는 정규시간(ML3W·TOTAL·HDP 모두), MLB·NBA·KBL·BLG는 연장 포함.
 - ML3W(하키 3way 승): 정규시간 무승부면 LOSS.
 - F5_TOTAL: MLB 1~5회 합계(inning_scores). line이 없으면 채점하지 않는다.
 """
@@ -32,6 +33,7 @@ DAILY = {
     "CZE": "CZE/daily/{d} cze.json",
     "LIIGA": "LIIGA/daily/{d} liiga.json",
     "SHL": "SHL/daily/{d} shl.json",
+    "BLG": "BLEAGUE/historical/{d}.json",  # 픽 로그 리그명 BLG = 파이프라인 BLEAGUE
 }
 EU_HOCKEY = ("KHL", "DEL", "CZE", "LIIGA", "SHL")
 REG_TIME = ("NHL",) + EU_HOCKEY
@@ -49,6 +51,17 @@ KBL_ALIAS = {
     "daegu kogas": "한국가스공사", "daegu korea gas corporation": "한국가스공사", "대구 한국가스공사": "한국가스공사",
     "changwon lg": "LG", "창원 lg": "LG",
 }
+KBL_ALIAS = {k.replace(" ", ""): v for k, v in KBL_ALIAS.items()}  # "울산현대모비스"·"울산 현대모비스" 모두 허용
+
+# B리그: 픽 로그 표기 → 파이프라인 home_team 표기(공백 무시 비교). 파이프라인 한글명·일본어 약칭·코드도 그대로 허용
+BLG_ALIAS = {
+    "치바제츠": "지바제츠", "치바": "지바제츠", "chiba_j": "지바제츠",
+    "알바크도쿄": "알바르크도쿄", "a도쿄": "알바르크도쿄",
+    "시부야": "선로커즈도쿄", "선로커즈시부야": "선로커즈도쿄",
+    "알티리치바": "알티리지바",
+    "나고야": "나고야d",
+    "요코하마": "요코하마bc",
+}
 
 
 def _norm(name):
@@ -56,7 +69,16 @@ def _norm(name):
     return " ".join(n.replace(".", " ").split())
 
 
+def _blg_key(name):
+    k = (name or "").replace(" ", "").lower()
+    return BLG_ALIAS.get(k, k)
+
+
 def same_team(league, a, b):
+    if league == "KBL":
+        return (a or "").replace(" ", "") == (b or "").replace(" ", "")
+    if league == "BLG":
+        return bool(a and b) and _blg_key(a) == _blg_key(b)
     if league not in EU_HOCKEY:
         return a == b
     a, b = _norm(a or ""), _norm(b or "")
@@ -70,7 +92,7 @@ def canon(league, name):
     if name is None:
         return None
     if league == "KBL":
-        return KBL_ALIAS.get(name.strip().lower(), name.strip())
+        return KBL_ALIAS.get(name.replace(" ", "").lower(), name.strip())
     return name
 
 
@@ -90,6 +112,8 @@ def scores(league, g):
         return g["away_abbrev"], g["home_abbrev"], g["reg_away_score"], g["reg_home_score"]
     if league == "KBL":
         return g["away_short"], g["home_short"], g["away_score"], g["home_score"]
+    if league == "BLG":
+        return g["away_team"], g["home_team"], g["away_score"], g["home_score"]
     if league in EU_HOCKEY:
         return g["away_team"], g["home_team"], g["reg_away_score"], g["reg_home_score"]
     return g["away_abbrev"], g["home_abbrev"], g["away_score"], g["home_score"]
