@@ -82,4 +82,4 @@ jobs:
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: |
           git pull --ff-only origin main || git pull origin main
-          python analytics/build_hockey_stats.py KHL DEL CZE LIIGA SHL
+          python analytics/build_hockey_stats.py KHL DEL CZE LIIGA SHL ALH
