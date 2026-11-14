@@ -37,6 +37,7 @@ def load_history(league: str, start: str, end: str):
         "LIIGA": FlashscoreHockeyCollector("LIIGA"),
         "SHL": FlashscoreHockeyCollector("SHL"),
         "AHL": FlashscoreHockeyCollector("AHL"),
+        "ALH": FlashscoreHockeyCollector("ALH"),
         # KHL 지난 시즌 백필: KHL 모바일 API는 현재 시즌만 조회되므로 Flashscore 사용, 저장은 KHL 폴더
         "KHL_FS": FlashscoreHockeyCollector("KHL"),
     }
@@ -82,7 +83,7 @@ def load_history(league: str, start: str, end: str):
                     fail += 1
 
                 # NHL/NFL/KHL/NBA/KBL은 선수 기록이 일별 파일에 포함되어 있어 별도 추출 불필요
-                player_data = extract_player_data(data, league, date_str) if league not in ("NHL", "NFL", "KHL", "NBA", "KBL", "KOVO", "WKOVO", "DEL", "CZE", "LIIGA", "SHL", "AHL", "KHL_FS", *SOCCER_LEAGUES) else {"players": []}
+                player_data = extract_player_data(data, league, date_str) if league not in ("NHL", "NFL", "KHL", "NBA", "KBL", "KOVO", "WKOVO", "DEL", "CZE", "LIIGA", "SHL", "AHL", "ALH", "KHL_FS", *SOCCER_LEAGUES) else {"players": []}
                 if player_data["players"]:
                     uploader.upload_json(
                         player_data, league, date_str, "historical_players"

@@ -20,6 +20,7 @@ FILE_SUFFIX = {
     "CZE": " cze",
     "LIIGA": " liiga",
     "SHL": " shl",
+    "ALH": " alh",
     "J1": " j1",
     "J2": " j2",
     "J3": " j3",

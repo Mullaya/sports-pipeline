@@ -160,8 +160,8 @@ def run_daily(date: str = None, mlb_date: str = None):
         except Exception as e:
             print(f"  [{league}] 실패: {e}")
 
-    # 독일 DEL · 체코 엑스트라리가 · 핀란드 Liiga · 스웨덴 SHL (현지 날짜 = KST 어제, Flashscore 피드)
-    for league in ("DEL", "CZE", "LIIGA", "SHL"):
+    # 독일 DEL · 체코 엑스트라리가 · 핀란드 Liiga · 스웨덴 SHL · 아시아리그(ALH) (현지 날짜 = KST 어제, Flashscore 피드)
+    for league in ("DEL", "CZE", "LIIGA", "SHL", "ALH"):
         try:
             eu = FlashscoreHockeyCollector(league).collect_daily(npb_date)
             if eu["games"]:
@@ -190,6 +190,7 @@ def run_daily(date: str = None, mlb_date: str = None):
                                       "CZE": lambda: FlashscoreHockeyCollector("CZE"),
                                       "LIIGA": lambda: FlashscoreHockeyCollector("LIIGA"),
                                       "SHL": lambda: FlashscoreHockeyCollector("SHL"),
+                                      "ALH": lambda: FlashscoreHockeyCollector("ALH"),
                                       "KBL": KBLCollector,
                                       "WKBL": lambda: FlashscoreKBL("WKBL"),
                                       "KOVO": lambda: KOVOCollector("KOVO"),

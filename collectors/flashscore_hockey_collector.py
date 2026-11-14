@@ -5,6 +5,7 @@
   CZE : 체코 Tipsport Extraliga  (공식 hokej.cz는 GitHub Actions IP를 403 차단)
   LIIGA : 핀란드 Liiga
   SHL : 스웨덴 SHL
+  ALH : 아시아리그 아이스하키 (HL안양·레드이글스·아이스벅스·그리츠·고베 등, 파일 날짜 = KST)
   AHL : 북미 AHL (파일 날짜 = 미국 동부 현지 날짜, NHL과 같은 기준)
   KHL : 지난 시즌 백필 전용 (KHL 모바일 API는 현재 시즌만 조회됨). 팀명은 KHL API 표기로 변환
 
@@ -46,6 +47,9 @@ LEAGUES = {
     # 북미 AHL — 날짜는 미국 동부 현지 기준(서부 경기 늦은 시작도 같은 날로 묶임)
     "AHL": {"path": "hockey/usa/ahl", "country": "200", "tournament": None,
             "tz": "America/New_York"},
+    # 아시아리그 아이스하키 (한국·일본) — 파일 날짜 = KST(=JST) 현지 날짜. country는 결과 페이지에서 추출
+    "ALH": {"path": "hockey/asia/asia-league", "country": None, "tournament": None,
+            "tz": "Asia/Seoul"},
     # 파일 날짜는 기존 KHL 수집기와 같은 모스크바 날짜, 팀명은 KHL API 표기
     "KHL": {"path": "hockey/russia/khl", "country": "158", "tournament": "v9k3aY5F",
             "tz": "Europe/Moscow", "exhibition_teams": {"Russia"},
@@ -161,6 +165,8 @@ class FlashscoreHockeyCollector:
             raise RuntimeError(f"{self.league} tournament_id를 찾지 못함 (페이지 구조 변경?)")
         cty = re.search(r'country_?[iI]d"?\s*[:=]\s*"?(\d+)', html)
         country = cty.group(1) if cty else self.cfg["country"]
+        if not country:
+            raise RuntimeError(f"{self.league} country_id를 찾지 못함 (결과 페이지 구조 확인 필요)")
         total = re.search(r"allEventsCount:\s*(\d+)", html)
 
         recs = {}
