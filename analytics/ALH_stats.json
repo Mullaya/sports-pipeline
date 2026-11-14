@@ -1,0 +1,720 @@
+{
+ "meta": {
+  "generated_kst": "2026-11-14 22:44",
+  "league": "ALH",
+  "season_start": "20260801",
+  "games": 24,
+  "last_game_date": "20261112",
+  "points_rule": {
+   "reg_win": 3,
+   "ot_win": 2,
+   "ot_loss": 1
+  },
+  "league_avg": {
+   "avg_reg_total": 5.79,
+   "reg_draw_rate": 0.167,
+   "home_win_rate": 0.583,
+   "home_reg_win_rate": 0.5,
+   "over_rate_reg": {
+    "4.5": 0.667,
+    "5.5": 0.5,
+    "6.5": 0.417
+   }
+  },
+  "notes": "reg_* = 정규시간(60분) 기준 (하키 언오버 사이트 정산 기준) / w = 정규승+연장승 / shot_share = 유효슈팅 점유율 / rank_pts = 전체 승점 순위"
+ },
+ "teams": {
+  "Red Eagles Hokkaido": {
+   "gp": 11,
+   "w": 7,
+   "reg_wins": 6,
+   "ot_wins": 1,
+   "otl": 1,
+   "l": 3,
+   "pts": 21,
+   "reg_w": 6,
+   "reg_d": 2,
+   "reg_l": 3,
+   "gf_pg": 3.36,
+   "ga_pg": 2.73,
+   "avg_reg_total": 5.91,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.182,
+   "over_rate_reg": {
+    "4.5": 0.636,
+    "5.5": 0.455,
+    "6.5": 0.455
+   },
+   "home": {
+    "gp": 6,
+    "w": 5,
+    "reg_wins": 4,
+    "ot_wins": 1,
+    "otl": 1,
+    "l": 0,
+    "pts": 15,
+    "reg_w": 4,
+    "reg_d": 2,
+    "reg_l": 0,
+    "gf_pg": 3.5,
+    "ga_pg": 2.0,
+    "avg_reg_total": 5.17
+   },
+   "away": {
+    "gp": 5,
+    "w": 2,
+    "reg_wins": 2,
+    "ot_wins": 0,
+    "otl": 0,
+    "l": 3,
+    "pts": 6,
+    "reg_w": 2,
+    "reg_d": 0,
+    "reg_l": 3,
+    "gf_pg": 3.2,
+    "ga_pg": 3.6,
+    "avg_reg_total": 6.8
+   },
+   "last10": {
+    "gp": 10,
+    "w": 6,
+    "reg_wins": 5,
+    "ot_wins": 1,
+    "otl": 1,
+    "l": 3,
+    "pts": 18,
+    "reg_w": 5,
+    "reg_d": 2,
+    "reg_l": 3,
+    "gf_pg": 3.3,
+    "ga_pg": 2.7,
+    "avg_reg_total": 5.8
+   },
+   "last10_log": [
+    "20260913 vs Nikko Ice Bucks 2-3 OTL",
+    "20260926 vs Yokohama Grits 3-2 OTW",
+    "20260927 vs Yokohama Grits 4-1 W",
+    "20261003 @ HL Anyang 2-3 L",
+    "20261004 @ HL Anyang 6-4 W",
+    "20261006 @ HL Anyang 1-6 L",
+    "20261017 vs Tohoku Free Blades 6-2 W",
+    "20261018 vs Tohoku Free Blades 2-1 W",
+    "20261024 @ Yokohama Grits 0-3 L",
+    "20261025 @ Yokohama Grits 7-2 W"
+   ],
+   "streak": "W1",
+   "last_game_date": "20261025",
+   "days_since_last": 20,
+   "last_was_b2b": true,
+   "rank_pts": 1
+  },
+  "Tohoku Free Blades": {
+   "gp": 9,
+   "w": 5,
+   "reg_wins": 5,
+   "ot_wins": 0,
+   "otl": 0,
+   "l": 4,
+   "pts": 15,
+   "reg_w": 5,
+   "reg_d": 0,
+   "reg_l": 4,
+   "gf_pg": 2.67,
+   "ga_pg": 2.67,
+   "avg_reg_total": 5.33,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.0,
+   "over_rate_reg": {
+    "4.5": 0.667,
+    "5.5": 0.444,
+    "6.5": 0.333
+   },
+   "home": {
+    "gp": 3,
+    "w": 2,
+    "reg_wins": 2,
+    "ot_wins": 0,
+    "otl": 0,
+    "l": 1,
+    "pts": 6,
+    "reg_w": 2,
+    "reg_d": 0,
+    "reg_l": 1,
+    "gf_pg": 2.33,
+    "ga_pg": 2.0,
+    "avg_reg_total": 4.33
+   },
+   "away": {
+    "gp": 6,
+    "w": 3,
+    "reg_wins": 3,
+    "ot_wins": 0,
+    "otl": 0,
+    "l": 3,
+    "pts": 9,
+    "reg_w": 3,
+    "reg_d": 0,
+    "reg_l": 3,
+    "gf_pg": 2.83,
+    "ga_pg": 3.0,
+    "avg_reg_total": 5.83
+   },
+   "last10": {
+    "gp": 9,
+    "w": 5,
+    "reg_wins": 5,
+    "ot_wins": 0,
+    "otl": 0,
+    "l": 4,
+    "pts": 15,
+    "reg_w": 5,
+    "reg_d": 0,
+    "reg_l": 4,
+    "gf_pg": 2.67,
+    "ga_pg": 2.67,
+    "avg_reg_total": 5.33
+   },
+   "last10_log": [
+    "20260919 @ Yokohama Grits 4-0 W",
+    "20260920 @ Yokohama Grits 4-3 W",
+    "20261010 @ Nikko Ice Bucks 2-5 L",
+    "20261011 @ Nikko Ice Bucks 4-2 W",
+    "20261017 @ Red Eagles Hokkaido 2-6 L",
+    "20261018 @ Red Eagles Hokkaido 1-2 L",
+    "20261031 vs HL Anyang 4-1 W",
+    "20261101 vs HL Anyang 1-4 L",
+    "20261103 vs HL Anyang 2-1 W"
+   ],
+   "streak": "W1",
+   "last_game_date": "20261103",
+   "days_since_last": 11,
+   "last_was_b2b": false,
+   "rank_pts": 2
+  },
+  "Nikko Ice Bucks": {
+   "gp": 9,
+   "w": 5,
+   "reg_wins": 3,
+   "ot_wins": 2,
+   "otl": 0,
+   "l": 4,
+   "pts": 13,
+   "reg_w": 3,
+   "reg_d": 2,
+   "reg_l": 4,
+   "gf_pg": 3.33,
+   "ga_pg": 3.0,
+   "avg_reg_total": 6.11,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.222,
+   "over_rate_reg": {
+    "4.5": 0.667,
+    "5.5": 0.667,
+    "6.5": 0.556
+   },
+   "home": {
+    "gp": 7,
+    "w": 4,
+    "reg_wins": 3,
+    "ot_wins": 1,
+    "otl": 0,
+    "l": 3,
+    "pts": 11,
+    "reg_w": 3,
+    "reg_d": 1,
+    "reg_l": 3,
+    "gf_pg": 3.43,
+    "ga_pg": 3.0,
+    "avg_reg_total": 6.29
+   },
+   "away": {
+    "gp": 2,
+    "w": 1,
+    "reg_wins": 0,
+    "ot_wins": 1,
+    "otl": 0,
+    "l": 1,
+    "pts": 2,
+    "reg_w": 0,
+    "reg_d": 1,
+    "reg_l": 1,
+    "gf_pg": 3.0,
+    "ga_pg": 3.0,
+    "avg_reg_total": 5.5
+   },
+   "last10": {
+    "gp": 9,
+    "w": 5,
+    "reg_wins": 3,
+    "ot_wins": 2,
+    "otl": 0,
+    "l": 4,
+    "pts": 13,
+    "reg_w": 3,
+    "reg_d": 2,
+    "reg_l": 4,
+    "gf_pg": 3.33,
+    "ga_pg": 3.0,
+    "avg_reg_total": 6.11
+   },
+   "last10_log": [
+    "20260912 @ Red Eagles Hokkaido 3-4 L",
+    "20260913 @ Red Eagles Hokkaido 3-2 OTW",
+    "20260918 vs HL Anyang 4-3 W",
+    "20260920 vs HL Anyang 6-2 W",
+    "20260921 vs HL Anyang 1-2 L",
+    "20261010 vs Tohoku Free Blades 5-2 W",
+    "20261011 vs Tohoku Free Blades 2-4 L",
+    "20261017 vs Yokohama Grits 4-7 L",
+    "20261018 vs Yokohama Grits 2-1 OTW"
+   ],
+   "streak": "W1",
+   "last_game_date": "20261018",
+   "days_since_last": 27,
+   "last_was_b2b": true,
+   "rank_pts": 3
+  },
+  "HL Anyang": {
+   "gp": 10,
+   "w": 4,
+   "reg_wins": 4,
+   "ot_wins": 0,
+   "otl": 1,
+   "l": 5,
+   "pts": 13,
+   "reg_w": 4,
+   "reg_d": 1,
+   "reg_l": 5,
+   "gf_pg": 2.9,
+   "ga_pg": 3.1,
+   "avg_reg_total": 5.9,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.1,
+   "over_rate_reg": {
+    "4.5": 0.8,
+    "5.5": 0.5,
+    "6.5": 0.4
+   },
+   "home": {
+    "gp": 4,
+    "w": 2,
+    "reg_wins": 2,
+    "ot_wins": 0,
+    "otl": 1,
+    "l": 1,
+    "pts": 7,
+    "reg_w": 2,
+    "reg_d": 1,
+    "reg_l": 1,
+    "gf_pg": 4.0,
+    "ga_pg": 3.25,
+    "avg_reg_total": 7.0
+   },
+   "away": {
+    "gp": 6,
+    "w": 2,
+    "reg_wins": 2,
+    "ot_wins": 0,
+    "otl": 0,
+    "l": 4,
+    "pts": 6,
+    "reg_w": 2,
+    "reg_d": 0,
+    "reg_l": 4,
+    "gf_pg": 2.17,
+    "ga_pg": 3.0,
+    "avg_reg_total": 5.17
+   },
+   "last10": {
+    "gp": 10,
+    "w": 4,
+    "reg_wins": 4,
+    "ot_wins": 0,
+    "otl": 1,
+    "l": 5,
+    "pts": 13,
+    "reg_w": 4,
+    "reg_d": 1,
+    "reg_l": 5,
+    "gf_pg": 2.9,
+    "ga_pg": 3.1,
+    "avg_reg_total": 5.9
+   },
+   "last10_log": [
+    "20260918 @ Nikko Ice Bucks 3-4 L",
+    "20260920 @ Nikko Ice Bucks 2-6 L",
+    "20260921 @ Nikko Ice Bucks 2-1 W",
+    "20261003 vs Red Eagles Hokkaido 3-2 W",
+    "20261004 vs Red Eagles Hokkaido 4-6 L",
+    "20261006 vs Red Eagles Hokkaido 6-1 W",
+    "20261031 @ Tohoku Free Blades 1-4 L",
+    "20261101 @ Tohoku Free Blades 4-1 W",
+    "20261103 @ Tohoku Free Blades 1-2 L",
+    "20261112 vs Yokohama Grits 3-4 OTL"
+   ],
+   "streak": "L2",
+   "last_game_date": "20261112",
+   "days_since_last": 2,
+   "last_was_b2b": false,
+   "rank_pts": 4
+  },
+  "Yokohama Grits": {
+   "gp": 9,
+   "w": 3,
+   "reg_wins": 2,
+   "ot_wins": 1,
+   "otl": 2,
+   "l": 4,
+   "pts": 10,
+   "reg_w": 2,
+   "reg_d": 3,
+   "reg_l": 4,
+   "gf_pg": 2.56,
+   "ga_pg": 3.44,
+   "avg_reg_total": 5.67,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.333,
+   "over_rate_reg": {
+    "4.5": 0.556,
+    "5.5": 0.444,
+    "6.5": 0.333
+   },
+   "home": {
+    "gp": 4,
+    "w": 1,
+    "reg_wins": 1,
+    "ot_wins": 0,
+    "otl": 0,
+    "l": 3,
+    "pts": 3,
+    "reg_w": 1,
+    "reg_d": 0,
+    "reg_l": 3,
+    "gf_pg": 2.0,
+    "ga_pg": 3.75,
+    "avg_reg_total": 5.75
+   },
+   "away": {
+    "gp": 5,
+    "w": 2,
+    "reg_wins": 1,
+    "ot_wins": 1,
+    "otl": 2,
+    "l": 1,
+    "pts": 7,
+    "reg_w": 1,
+    "reg_d": 3,
+    "reg_l": 1,
+    "gf_pg": 3.0,
+    "ga_pg": 3.2,
+    "avg_reg_total": 5.6
+   },
+   "last10": {
+    "gp": 9,
+    "w": 3,
+    "reg_wins": 2,
+    "ot_wins": 1,
+    "otl": 2,
+    "l": 4,
+    "pts": 10,
+    "reg_w": 2,
+    "reg_d": 3,
+    "reg_l": 4,
+    "gf_pg": 2.56,
+    "ga_pg": 3.44,
+    "avg_reg_total": 5.67
+   },
+   "last10_log": [
+    "20260919 vs Tohoku Free Blades 0-4 L",
+    "20260920 vs Tohoku Free Blades 3-4 L",
+    "20260926 @ Red Eagles Hokkaido 2-3 OTL",
+    "20260927 @ Red Eagles Hokkaido 1-4 L",
+    "20261017 @ Nikko Ice Bucks 7-4 W",
+    "20261018 @ Nikko Ice Bucks 1-2 OTL",
+    "20261024 vs Red Eagles Hokkaido 3-0 W",
+    "20261025 vs Red Eagles Hokkaido 2-7 L",
+    "20261112 @ HL Anyang 4-3 OTW"
+   ],
+   "streak": "W1",
+   "last_game_date": "20261112",
+   "days_since_last": 2,
+   "last_was_b2b": false,
+   "rank_pts": 5
+  }
+ },
+ "goalies": {},
+ "leaders": {
+  "Nikko Ice Bucks": [
+   {
+    "name": "Otsu K.",
+    "g": 4,
+    "a": 8,
+    "pts": 12
+   },
+   {
+    "name": "Iguchi A.",
+    "g": 5,
+    "a": 4,
+    "pts": 9
+   },
+   {
+    "name": "Ito T.",
+    "g": 4,
+    "a": 5,
+    "pts": 9
+   },
+   {
+    "name": "Suoma S.",
+    "g": 1,
+    "a": 5,
+    "pts": 6
+   },
+   {
+    "name": "Staiger A.",
+    "g": 3,
+    "a": 2,
+    "pts": 5
+   },
+   {
+    "name": "Sato H.",
+    "g": 2,
+    "a": 3,
+    "pts": 5
+   }
+  ],
+  "Red Eagles Hokkaido": [
+   {
+    "name": "Kobayashi T.",
+    "g": 6,
+    "a": 7,
+    "pts": 13
+   },
+   {
+    "name": "Takahashi S.",
+    "g": 2,
+    "a": 9,
+    "pts": 11
+   },
+   {
+    "name": "Hashimoto R.",
+    "g": 1,
+    "a": 10,
+    "pts": 11
+   },
+   {
+    "name": "Nakajima T.",
+    "g": 4,
+    "a": 6,
+    "pts": 10
+   },
+   {
+    "name": "Ando Y.",
+    "g": 3,
+    "a": 6,
+    "pts": 9
+   },
+   {
+    "name": "Nakajima S.",
+    "g": 1,
+    "a": 8,
+    "pts": 9
+   }
+  ],
+  "HL Anyang": [
+   {
+    "name": "Kim Sang-Wook",
+    "g": 3,
+    "a": 11,
+    "pts": 14
+   },
+   {
+    "name": "Ahn Jin-Hui",
+    "g": 6,
+    "a": 3,
+    "pts": 9
+   },
+   {
+    "name": "Kim Sang-Yeob",
+    "g": 7,
+    "a": 1,
+    "pts": 8
+   },
+   {
+    "name": "Shin Sang-Hoon",
+    "g": 3,
+    "a": 5,
+    "pts": 8
+   },
+   {
+    "name": "Morrow J.",
+    "g": 2,
+    "a": 6,
+    "pts": 8
+   },
+   {
+    "name": "Kim Seong-Jae",
+    "g": 1,
+    "a": 6,
+    "pts": 7
+   }
+  ],
+  "Tohoku Free Blades": [
+   {
+    "name": "Igari D.",
+    "g": 3,
+    "a": 7,
+    "pts": 10
+   },
+   {
+    "name": "Morita R.",
+    "g": 3,
+    "a": 6,
+    "pts": 9
+   },
+   {
+    "name": "Tokoro M.",
+    "g": 4,
+    "a": 3,
+    "pts": 7
+   },
+   {
+    "name": "Takeya R.",
+    "g": 2,
+    "a": 5,
+    "pts": 7
+   },
+   {
+    "name": "Hitosato S.",
+    "g": 2,
+    "a": 4,
+    "pts": 6
+   },
+   {
+    "name": "Lee Yun-Suk",
+    "g": 2,
+    "a": 3,
+    "pts": 5
+   }
+  ],
+  "Yokohama Grits": [
+   {
+    "name": "Taneichi Y.",
+    "g": 2,
+    "a": 4,
+    "pts": 6
+   },
+   {
+    "name": "Osawa Y.",
+    "g": 2,
+    "a": 4,
+    "pts": 6
+   },
+   {
+    "name": "Sugimoto K.",
+    "g": 2,
+    "a": 4,
+    "pts": 6
+   },
+   {
+    "name": "Aiki H.",
+    "g": 1,
+    "a": 5,
+    "pts": 6
+   },
+   {
+    "name": "Miura Y.",
+    "g": 4,
+    "a": 1,
+    "pts": 5
+   },
+   {
+    "name": "Owa J.",
+    "g": 1,
+    "a": 3,
+    "pts": 4
+   }
+  ]
+ },
+ "last_season": {},
+ "h2h": {
+  "Nikko Ice Bucks | Red Eagles Hokkaido": [
+   "20260912 Nikko Ice Bucks 3-4 Red Eagles Hokkaido",
+   "20260913 Nikko Ice Bucks 3-2 Red Eagles Hokkaido (SO)"
+  ],
+  "HL Anyang | Nikko Ice Bucks": [
+   "20260918 HL Anyang 3-4 Nikko Ice Bucks",
+   "20260920 HL Anyang 2-6 Nikko Ice Bucks",
+   "20260921 HL Anyang 2-1 Nikko Ice Bucks"
+  ],
+  "Tohoku Free Blades | Yokohama Grits": [
+   "20260919 Tohoku Free Blades 4-0 Yokohama Grits",
+   "20260920 Tohoku Free Blades 4-3 Yokohama Grits"
+  ],
+  "Red Eagles Hokkaido | Yokohama Grits": [
+   "20260926 Yokohama Grits 2-3 Red Eagles Hokkaido (OT)",
+   "20260927 Yokohama Grits 1-4 Red Eagles Hokkaido",
+   "20261024 Red Eagles Hokkaido 0-3 Yokohama Grits",
+   "20261025 Red Eagles Hokkaido 7-2 Yokohama Grits"
+  ],
+  "HL Anyang | Red Eagles Hokkaido": [
+   "20261003 Red Eagles Hokkaido 2-3 HL Anyang",
+   "20261004 Red Eagles Hokkaido 6-4 HL Anyang",
+   "20261006 Red Eagles Hokkaido 1-6 HL Anyang"
+  ],
+  "Nikko Ice Bucks | Tohoku Free Blades": [
+   "20261010 Tohoku Free Blades 2-5 Nikko Ice Bucks",
+   "20261011 Tohoku Free Blades 4-2 Nikko Ice Bucks"
+  ],
+  "Nikko Ice Bucks | Yokohama Grits": [
+   "20261017 Yokohama Grits 7-4 Nikko Ice Bucks",
+   "20261018 Yokohama Grits 1-2 Nikko Ice Bucks (SO)"
+  ],
+  "Red Eagles Hokkaido | Tohoku Free Blades": [
+   "20261017 Tohoku Free Blades 2-6 Red Eagles Hokkaido",
+   "20261018 Tohoku Free Blades 1-2 Red Eagles Hokkaido"
+  ],
+  "HL Anyang | Tohoku Free Blades": [
+   "20261031 HL Anyang 1-4 Tohoku Free Blades",
+   "20261101 HL Anyang 4-1 Tohoku Free Blades",
+   "20261103 HL Anyang 1-2 Tohoku Free Blades"
+  ],
+  "HL Anyang | Yokohama Grits": [
+   "20261112 Yokohama Grits 4-3 HL Anyang (SO)"
+  ]
+ }
+}
