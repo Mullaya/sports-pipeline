@@ -100,7 +100,9 @@ class BLeagueBox:
             day = datetime.fromtimestamp(int(ms.group(1)) / 1000, KST).strftime("%Y%m%d")
             if day != date:
                 continue
-            rows = lambda k: [player_row(p) for p in d.get(k) or [] if p.get("PeriodCategory") == TOTAL]
+            # 경기 전체(18) 행 중 선수 행만 (팀 합계 행은 선수 이름이 비어 있음)
+            rows = lambda k: [player_row(p) for p in d.get(k) or [] if p.get("PeriodCategory") == TOTAL
+                              and (p.get("PlayerNameJ") or p.get("PlayerNameE"))]
             out.append({"key": key, "home_score": g.get("HomeTeamScore"), "away_score": g.get("AwayTeamScore"),
                         "home_players": rows("HomeBoxscores"), "away_players": rows("AwayBoxscores")})
         self._day_cache[date] = out
