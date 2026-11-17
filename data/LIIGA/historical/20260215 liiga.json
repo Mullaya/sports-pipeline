@@ -1,0 +1,181 @@
+{
+  "date": "20260215",
+  "league": "LIIGA",
+  "source": "flashscore",
+  "games": [
+    {
+      "game_id": "hhbIsafC",
+      "game_type": "REG",
+      "stage": "FINLAND: Liiga",
+      "round": "",
+      "start_utc": "2026-02-15T13:00:00Z",
+      "home_team": "Assat",
+      "away_team": "SaiPa",
+      "home_team_id": "I9wm5xTA",
+      "away_team_id": "Q9sYH4O9",
+      "home_score": 3,
+      "away_score": 4,
+      "total_goals": 7,
+      "end_type": "OT",
+      "reg_home_score": 3,
+      "reg_away_score": 3,
+      "reg_total_goals": 6,
+      "winner": "SaiPa",
+      "period_scores": [
+        {
+          "period": 1,
+          "type": "REG",
+          "home": 2,
+          "away": 0
+        },
+        {
+          "period": 2,
+          "type": "REG",
+          "home": 1,
+          "away": 1
+        },
+        {
+          "period": 3,
+          "type": "REG",
+          "home": 0,
+          "away": 2
+        },
+        {
+          "period": 4,
+          "type": "OT",
+          "home": 0,
+          "away": 1
+        }
+      ],
+      "home_stats": {
+        "shots": 25,
+        "blocked": 5,
+        "saves": 18,
+        "penalties": 3,
+        "pim": 6,
+        "pp_goals": 1,
+        "sh_goals": 0,
+        "pp_opps": 4,
+        "fo_won": 23,
+        "en_goals": 0
+      },
+      "away_stats": {
+        "shots": 22,
+        "blocked": 12,
+        "saves": 22,
+        "penalties": 4,
+        "pim": 8,
+        "pp_goals": 0,
+        "sh_goals": 0,
+        "pp_opps": 3,
+        "fo_won": 33,
+        "en_goals": 0
+      },
+      "home_goalies": [
+        {
+          "name": "Bednar J.",
+          "player_id": "liiga:60960744",
+          "starter": true,
+          "shots_against": 22,
+          "goals_against": 4,
+          "saves": 18,
+          "sv_pct": 0.818,
+          "note": "팀 세이브 기준(골리 교체 시 합산값)"
+        }
+      ],
+      "away_goalies": [
+        {
+          "name": "Grigals G.",
+          "player_id": "liiga:60897658",
+          "starter": true,
+          "shots_against": 25,
+          "goals_against": 3,
+          "saves": 22,
+          "sv_pct": 0.88,
+          "note": "팀 세이브 기준(골리 교체 시 합산값)"
+        }
+      ],
+      "goals": [
+        {
+          "period": "1st Period",
+          "time": "09:21",
+          "team": "home",
+          "score": "1:0",
+          "author": "Knihti F.",
+          "assists": [
+            "Lipiainen V.",
+            "Tiivola P."
+          ]
+        },
+        {
+          "period": "1st Period",
+          "time": "18:29",
+          "team": "home",
+          "score": "2:0",
+          "author": "Tiivola P.",
+          "assists": [
+            "Juhola P.",
+            "Nurmi P."
+          ]
+        },
+        {
+          "period": "2nd Period",
+          "time": "18:28",
+          "team": "home",
+          "score": "3:0",
+          "author": "Puutio K.",
+          "assists": [
+            "Ylitalo O."
+          ]
+        },
+        {
+          "period": "2nd Period",
+          "time": "19:42",
+          "team": "away",
+          "score": "3:1",
+          "author": "Kramer B.",
+          "assists": [
+            "Tauslahti M.",
+            "Aho K."
+          ]
+        },
+        {
+          "period": "3rd Period",
+          "time": "03:47",
+          "team": "away",
+          "score": "3:2",
+          "author": "Fortier M.",
+          "assists": [
+            "Nikkanen H.",
+            "Kivenmaki O."
+          ]
+        },
+        {
+          "period": "3rd Period",
+          "time": "19:49",
+          "team": "away",
+          "score": "3:3",
+          "author": "Kuusla E.",
+          "assists": [
+            "Kivihalme T.",
+            "Kalapudas A."
+          ]
+        },
+        {
+          "period": "Overtime",
+          "time": "02:08",
+          "team": "away",
+          "score": "3:4",
+          "author": "Kramer B.",
+          "assists": [
+            "Siikanen P.",
+            "Kuusla E."
+          ]
+        }
+      ],
+      "home_xg": 2.61,
+      "away_xg": 2.53,
+      "goalie_source": "liiga.fi"
+    }
+  ]
+}
