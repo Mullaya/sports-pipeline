@@ -1,0 +1,152 @@
+{
+  "date": "20260305",
+  "league": "LIIGA",
+  "source": "flashscore",
+  "games": [
+    {
+      "game_id": "0faGT8nT",
+      "game_type": "REG",
+      "stage": "FINLAND: Liiga",
+      "round": "",
+      "start_utc": "2026-03-05T16:30:00Z",
+      "home_team": "Assat",
+      "away_team": "KalPa",
+      "home_team_id": "I9wm5xTA",
+      "away_team_id": "tMuMK6vi",
+      "home_score": 2,
+      "away_score": 3,
+      "total_goals": 5,
+      "end_type": "REG",
+      "reg_home_score": 2,
+      "reg_away_score": 3,
+      "reg_total_goals": 5,
+      "winner": "KalPa",
+      "period_scores": [
+        {
+          "period": 1,
+          "type": "REG",
+          "home": 1,
+          "away": 1
+        },
+        {
+          "period": 2,
+          "type": "REG",
+          "home": 1,
+          "away": 0
+        },
+        {
+          "period": 3,
+          "type": "REG",
+          "home": 0,
+          "away": 2
+        }
+      ],
+      "home_stats": {
+        "shots": 33,
+        "blocked": 9,
+        "saves": 22,
+        "penalties": 3,
+        "pim": 6,
+        "pp_goals": 0,
+        "sh_goals": 0,
+        "pp_opps": 2,
+        "fo_won": 29,
+        "en_goals": 0
+      },
+      "away_stats": {
+        "shots": 25,
+        "blocked": 7,
+        "saves": 31,
+        "penalties": 2,
+        "pim": 4,
+        "pp_goals": 0,
+        "sh_goals": 0,
+        "pp_opps": 3,
+        "fo_won": 32,
+        "en_goals": 0
+      },
+      "home_goalies": [
+        {
+          "name": "Bednar J.",
+          "player_id": "liiga:60960744",
+          "starter": true,
+          "shots_against": 25,
+          "goals_against": 3,
+          "saves": 22,
+          "sv_pct": 0.88,
+          "note": "팀 세이브 기준(골리 교체 시 합산값)"
+        }
+      ],
+      "away_goalies": [
+        {
+          "name": "Boyko T.",
+          "player_id": "liiga:61022251",
+          "starter": true,
+          "shots_against": 33,
+          "goals_against": 2,
+          "saves": 31,
+          "sv_pct": 0.939,
+          "note": "팀 세이브 기준(골리 교체 시 합산값)"
+        }
+      ],
+      "goals": [
+        {
+          "period": "1st Period",
+          "time": "05:01",
+          "team": "home",
+          "score": "1:0",
+          "author": "Noiva N.",
+          "assists": [
+            "Juhola P.",
+            "Riihinen P."
+          ]
+        },
+        {
+          "period": "1st Period",
+          "time": "06:42",
+          "team": "away",
+          "score": "1:1",
+          "author": "Soderlund T.",
+          "assists": [
+            "Ketola J."
+          ]
+        },
+        {
+          "period": "2nd Period",
+          "time": "12:04",
+          "team": "home",
+          "score": "2:1",
+          "author": "Kostilainen S.",
+          "assists": [
+            "Olofsson J."
+          ]
+        },
+        {
+          "period": "3rd Period",
+          "time": "13:20",
+          "team": "away",
+          "score": "2:2",
+          "author": "Ruotsalainen V.",
+          "assists": [
+            "Lantta J.",
+            "Kononen J."
+          ]
+        },
+        {
+          "period": "3rd Period",
+          "time": "19:42",
+          "team": "away",
+          "score": "2:3",
+          "author": "Soderlund T.",
+          "assists": [
+            "Saarelainen J.",
+            "Ruotsalainen V."
+          ]
+        }
+      ],
+      "home_xg": 4.01,
+      "away_xg": 2.04,
+      "goalie_source": "liiga.fi"
+    }
+  ]
+}
