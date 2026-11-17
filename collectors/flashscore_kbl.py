@@ -14,6 +14,7 @@ import time
 from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
+from collectors.bleague_official import BLeagueBox
 from collectors.flashscore_hockey_collector import FEED, FlashscoreHockeyCollector, LEAGUES, season_years
 
 KST = ZoneInfo("Asia/Seoul")
@@ -232,4 +233,11 @@ class FlashscoreKBL:
             time.sleep(self.sleep)
         if unmapped:
             print(f"  [{self.league}] ⚠️ Flashscore 팀명 매핑 없음(원문 유지): {sorted(unmapped)}")
+        if self.league == "BLEAGUE" and games:
+            # 선수 박스스코어: B.LEAGUE 공식 공개 JSON (날짜+스코어로 매칭)
+            try:
+                n = BLeagueBox().fill(date, games)
+                print(f"  [BLEAGUE] 선수 기록 {n}/{len(games)}경기 (공식 박스스코어)")
+            except Exception as e:
+                print(f"  [BLEAGUE] 공식 박스스코어 실패: {e}")
         return {"date": date, "league": self.league, "source": "flashscore", "games": games}
