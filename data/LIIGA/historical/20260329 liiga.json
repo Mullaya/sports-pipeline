@@ -1,0 +1,140 @@
+{
+  "date": "20260329",
+  "league": "LIIGA",
+  "source": "flashscore",
+  "games": [
+    {
+      "game_id": "AZ43odWs",
+      "game_type": "PO",
+      "stage": "FINLAND: Liiga - Play Offs",
+      "round": "Quarter-finals",
+      "start_utc": "2026-03-29T14:00:00Z",
+      "home_team": "Ilves",
+      "away_team": "KalPa",
+      "home_team_id": "Oh5uGzDT",
+      "away_team_id": "tMuMK6vi",
+      "home_score": 3,
+      "away_score": 1,
+      "total_goals": 4,
+      "end_type": "REG",
+      "reg_home_score": 3,
+      "reg_away_score": 1,
+      "reg_total_goals": 4,
+      "winner": "Ilves",
+      "period_scores": [
+        {
+          "period": 1,
+          "type": "REG",
+          "home": 2,
+          "away": 0
+        },
+        {
+          "period": 2,
+          "type": "REG",
+          "home": 0,
+          "away": 1
+        },
+        {
+          "period": 3,
+          "type": "REG",
+          "home": 1,
+          "away": 0
+        }
+      ],
+      "home_stats": {
+        "shots": 22,
+        "blocked": 10,
+        "saves": 20,
+        "penalties": 3,
+        "pim": 6,
+        "pp_goals": 0,
+        "sh_goals": 0,
+        "pp_opps": 1,
+        "fo_won": 31,
+        "en_goals": 1
+      },
+      "away_stats": {
+        "shots": 21,
+        "blocked": 8,
+        "saves": 19,
+        "penalties": 1,
+        "pim": 2,
+        "pp_goals": 0,
+        "sh_goals": 0,
+        "pp_opps": 3,
+        "fo_won": 26,
+        "en_goals": 0
+      },
+      "home_goalies": [
+        {
+          "name": "Armalis M.",
+          "player_id": "liiga:61011727",
+          "starter": true,
+          "shots_against": 21,
+          "goals_against": 1,
+          "saves": 20,
+          "sv_pct": 0.952,
+          "note": "팀 세이브 기준(골리 교체 시 합산값)"
+        }
+      ],
+      "away_goalies": [
+        {
+          "name": "Boyko T.",
+          "player_id": "liiga:61022251",
+          "starter": true,
+          "shots_against": 22,
+          "goals_against": 3,
+          "saves": 19,
+          "sv_pct": 0.864,
+          "note": "팀 세이브 기준(골리 교체 시 합산값)"
+        }
+      ],
+      "goals": [
+        {
+          "period": "1st Period",
+          "time": "09:55",
+          "team": "home",
+          "score": "1:0",
+          "author": "Borg E.",
+          "assists": []
+        },
+        {
+          "period": "1st Period",
+          "time": "10:32",
+          "team": "home",
+          "score": "2:0",
+          "author": "Quenneville P.",
+          "assists": [
+            "Johansson S.",
+            "Bjorkqvist K."
+          ]
+        },
+        {
+          "period": "2nd Period",
+          "time": "10:44",
+          "team": "away",
+          "score": "2:1",
+          "author": "Kapanen K.",
+          "assists": [
+            "Saarelainen J.",
+            "Hartikainen T."
+          ]
+        },
+        {
+          "period": "3rd Period",
+          "time": "18:54",
+          "team": "home",
+          "score": "3:1",
+          "author": "Mantykivi M.",
+          "assists": [
+            "Henman L.",
+            "Nyberg J."
+          ]
+        }
+      ],
+      "home_xg": 2.29,
+      "away_xg": 1.24,
+      "goalie_source": "liiga.fi"
+    }
+  ]
+}
