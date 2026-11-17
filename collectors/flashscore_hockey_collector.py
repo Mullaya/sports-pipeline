@@ -13,6 +13,8 @@
 - 경기 결과: 최종/정규시간 스코어, REG/OT/SO, 피리어드별 득점, 스테이지(정규/PO 등)
 - 팀 경기 스탯: 유효슈팅, 세이브, 블록, PP골/기회, SH골, PIM, 페이스오프 승, 빈골문 골, 히트
 - 골리: 라인업 기준 선발 골리 (팀 세이브/상대 유효슈팅으로 SA·GA·SV% — 교체 시 오차 가능)
+  ※ 2026-11 초부터 Flashscore 라인업 피드가 빈 응답 → LIIGA는 liiga.fi 공식 API,
+    AHL은 HockeyTech 공개 피드로 보완 (collectors/goalie_sources.py). LIIGA는 기대득점(xG)도 추가
 - 득점 기록: 피리어드, 시간, 득점자, 어시스트
 
 경기 목록은 '시즌 결과 목록'(결과 페이지 + tr_ 페이지네이션)에서 가져온다.
@@ -30,6 +32,8 @@ from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
 import requests
+
+from collectors.goalie_sources import LiigaGoalies, AHLGoalies
 
 SITE = "https://www.flashscore.com"
 FEED = "https://global.flashscore.ninja/2/x/feed/"
@@ -128,6 +132,8 @@ class FlashscoreHockeyCollector:
         self.session = requests.Session()
         self.session.headers.update({"User-Agent": UA, "Accept": "*/*"})
         self._season_cache = {}     # (y1, y2) -> {match_id: record}
+        self._gk_source = {"LIIGA": LiigaGoalies, "AHL": AHLGoalies}.get(league)
+        self._gk_source = self._gk_source() if self._gk_source else None
 
     # ------------------------------------------------------------------
     def _get(self, url: str, feed: bool = False, retries: int = 3) -> str:
@@ -256,7 +262,7 @@ class FlashscoreHockeyCollector:
         if ({r.get("AE"), r.get("AF")} & set(self.cfg.get("exhibition_teams", ()))
                 or any("Stars" in (r.get(k) or "") for k in ("AE", "AF"))):
             gtype = "EXHIB"      # 대표팀 친선·올스타전 — 집계 제외
-        return {
+        game = {
             "game_id": mid,
             "game_type": gtype,
             "stage": r.get("ZA", ""),
@@ -281,6 +287,39 @@ class FlashscoreHockeyCollector:
             "away_goalies": self._goalie_line(starters.get("away"), opp=h_st, own=a_st),
             "goals": goals,
         }
+        if self._gk_source and not (game["home_goalies"] and game["away_goalies"]):
+            self.fill_goalies(game)
+        return game
+
+    def fill_goalies(self, game: dict) -> bool:
+        """공식 소스로 빈 골리 기록 채우기 (기존 값이 있는 쪽은 유지). 채웠으면 True"""
+        if not self._gk_source:
+            return False
+        try:
+            if self.league == "AHL":
+                local = datetime.strptime(game["start_utc"], "%Y-%m-%dT%H:%M:%SZ") \
+                    .replace(tzinfo=timezone.utc).astimezone(self.tz).strftime("%Y%m%d")
+                got = self._gk_source.goalies(local, game["home_team"], game["away_team"])
+            else:
+                got = self._gk_source.goalies(game["start_utc"], game["home_team"], game["away_team"])
+        except Exception as e:
+            print(f"  [{self.league}] 골리 보조 소스 실패 {game['game_id']}: {e}")
+            return False
+        if not got:
+            return False
+        h_st, a_st = game.get("home_stats") or {}, game.get("away_stats") or {}
+        filled = False
+        for side, opp, own in (("home", a_st, h_st), ("away", h_st, a_st)):
+            if game.get(f"{side}_goalies") or side not in got:
+                continue
+            v = got[side]
+            game[f"{side}_goalies"] = v if isinstance(v, list) else self._goalie_line(v, opp=opp, own=own)
+            filled = filled or bool(game[f"{side}_goalies"])
+        if got.get("_xg"):
+            game["home_xg"], game["away_xg"] = got["_xg"].get("home"), got["_xg"].get("away")
+        if filled:
+            game["goalie_source"] = {"LIIGA": "liiga.fi", "AHL": "hockeytech"}[self.league]
+        return filled
 
     # ------------------------------------------------------------------
     STAT_KEYS = {

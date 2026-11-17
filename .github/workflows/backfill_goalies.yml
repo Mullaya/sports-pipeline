@@ -1,0 +1,21 @@
+name: Backfill hockey goalies
+# hockey-goalies 브랜치에서 diag/backfill_goalies.trigger 를 바꿔 푸시하면 실행 → 결과 데이터를 같은 브랜치에 커밋
+on:
+  push:
+    branches: [hockey-goalies]
+    paths: ['diag/backfill_goalies.trigger']
+permissions:
+  contents: write
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with: {python-version: '3.11'}
+      - run: pip install -r requirements.txt
+      - run: python scripts/backfill_goalies.py $(cat diag/backfill_goalies.trigger) 2>&1 | tee diag/backfill_goalies.log
+      - run: |
+          git config user.name backfill-bot; git config user.email backfill@users.noreply.github.com
+          git add data diag/backfill_goalies.log
+          git commit -m "골리 백필 결과" && git push || echo "변경 없음"
