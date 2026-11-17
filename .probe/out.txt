@@ -1,9 +1,15 @@
-CTX  $.ajax({ 
-CTX  url: "/api/v1/club/", 
-CTX  $.ajax({ 
-CTX  url: "./", 
-SRC ['https://j.wovn.io/1', 'https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js', 'https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js', 'https://cdn.jsdelivr.net/npm/micromodal/dist/micromodal.min.js', 'https://unpkg.com/swiper@7.0.7/swiper-bundle.min.js', 'https://bleague.bl.kuroco-img.app/v=1790669251/files/js/front/user/common_slider.js', 'https://bleague.bl.kuroco-img.app/v=1790656676/files/js/front/user/function_new2208.js', 'https://bleague.bl.kuroco-img.app/v=1790306790/files/js/front/user/genius_schedule.js', 'https://bleague.bl.kuroco-img.app/v=1660118327/files/js/front/user/jquery.tablesorter.min.js', 'https://bleague.bl.kuroco-img.app/v=1519293071/files/user/game/js.cookie.min.js', 'https://bleague.bl.kuroco-img.app/v=1791416323/files/js/front/user/genius_game_new2208.js', 'https://sdk.mvp.fan/web-sdk/2.0.0/index.js', 'https://bleague.bl.kuroco-img.app/v=1746774799/files/js/front/user/lang.js']
-JS les/js/front/user/genius_game_new2208.js  $.ajax({ 
-JS les/js/front/user/genius_game_new2208.js  url: url_txt, 
-JS les/js/front/user/genius_game_new2208.js  $.ajax({ 
-JS les/js/front/user/genius_game_new2208.js  url: url_txt, 
+URL  let url_txt=""; 
+URL  //url_txt = "http://dev-bleague.s3.amazonaws.com/web_json/v2_genius_contexts/" + _contexts.scheduleKey + "/latestid"; 
+URL  url_txt = "http://b-league.s3.amazonaws.com/web_json/v2_genius_contexts/" + _contexts.scheduleKey + "/latestid"; 
+URL  //url_txt = "https://dev-bleague.kuroco-dev.jp/files/user/web_json/v2_genius_contexts/" + _contexts.scheduleKey + "/latestid"; 
+URL  //url_txt = "http://dev-bleague.s3.amazonaws.com/web_json/v1_contexts/" + _contexts.scheduleKey + "/latestid"; 
+URL  url_txt = "http://b-league.s3.amazonaws.com/web_json/v1_contexts/" + _contexts.scheduleKey + "/latestid"; 
+URL  //url_txt = "https://dev-bleague.kuroco-dev.jp/files/user/web_json/v2_genius_contexts/" + _contexts.scheduleKey + "/latestid"; 
+URL  let url_txt=""; 
+URL  //url_txt = "http://dev-bleague.s3.amazonaws.com/web_json/v2_genius_contexts/" + _contexts.scheduleKey + "/" + (_contexts.maxId || 0) + ".json"; 
+URL  url_txt = "http://b-league.s3.amazonaws.com/web_json/v2_genius_contexts/" + _contexts.scheduleKey + "/" + (_contexts.maxId || 0) + ".json"; 
+URL  //url_txt = "https://dev-bleague.kuroco-dev.jp/files/user/web_json/v2_genius_contexts/" + _contexts.scheduleKey + "/" + (_contexts.maxId || 0) + ".json"; 
+URL  //url_txt = "http://dev-bleague.s3.amazonaws.com/web_json/v1_contexts/" + _contexts.scheduleKey + "/" + (_contexts.maxId || 0) + ".json"; 
+URL  url_txt = "http://b-league.s3.amazonaws.com/web_json/v1_contexts/" + _contexts.scheduleKey + "/" + (_contexts.maxId || 0) + ".json"; 
+URL  //url_txt = "https://dev-bleague.kuroco-dev.jp/files/user/web_json/v2_genius_contexts/" + _contexts.scheduleKey + "/" + (_contexts.maxId || 0) + ".json"; 
+INLINE  if (!$board.length) return false; var $target = $board.find('a.scoreboard__match[href*="ScheduleKey=' + key + '"]') .not('.scoreboard__match--back'); if (!$target.length) { $target = $('#scoreboard_' + key).find('.scoreboard__match').first(); } if (!$target.length) return false; $target.addClass('is-active'); return true; } function markCurrentMatchWithRetry(retry) { if (markCurrentMatch()) return; if (retry > 0) { setTimeout(function() { markCurrentMatchWithRetry(retry - 1); }, 300); } } $(window).on('load', function() { setTimeout(function() { updateSwiperState(); markCurrentMatchWithRetry(10); var key = new URLSearchParams(location.search).get('ScheduleKey'); console.log('key:', key); var $target = $('#scoreboard_' + key).find('.scoreboard__match').first(); $target.addClass('is-active'); }, 500); }); $(document).on('click', '.scoreboard__league-btn', function() { requestAnimationFrame(function() { updateSwiperState(); markCurrentMatch(); setTimeout(updateSwiperState, 200); }); }); renderConventionName(); // ボックススコア テーブルスクロールのtouchmove伝播を止める $(document).on('touchstart touchmove', '#boxscore', function(e) { e.stopPropagation(); }); }); const observer = lozad('.lozad-container', { load: function(el) { let data = el.getAttribute("data-class"); $.ajax({ type: "GET", url: "./", data: 'data_format=json&data=' + data + '&ScheduleKey=' + _contexts.scheduleKey, dataType: 'json' }).done(function(json) { switch (data) { case 'season-result': $(el).html(json['topics']); break; case 'club-leader': $(el).html(json['topics']); break; case 'match-result': $(el).html(json['topics']); break; case 'recent-match': $(el).html(json['topics']); break; case 'shot-chart': $(el).html(json['topics']); break; } }).fail(function(err) { console.log(err) }).always(function(json) { $(el).css('height', 'aut
