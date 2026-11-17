@@ -1,9 +1,10 @@
-import requests, re
-S = requests.Session(); S.headers.update({"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) Chrome/124.0"})
-r = S.post("https://www.wkbl.or.kr/game/ajax/ajax_game_result_2.asp",
-           data={"season_gu": "047", "game_type": "01", "game_no": "14", "ym": "", "h_player": "", "a_player": ""},
-           headers={"Referer": "https://www.wkbl.or.kr/game/result.asp"}, timeout=30)
-r.encoding = "utf-8"; t = r.text
-i = t.find("2PM-A"); print("RAW1", t[i-1500:i+2500])
-j = t.find("2PM-A", i + 10); print("\nRAW2", t[j-900:j+300])
-k = t.rfind("</table>"); print("\nTAIL", re.sub(r"\s+", " ", t[k-2500:k+50]))
+import sys, os
+sys.path.insert(0, os.path.dirname(__file__))
+from wkbl_official import WKBLBox, season_gu
+b = WKBLBox()
+g = [{"home_score": 68, "away_score": 67}]
+print("fill", b.fill("20261116", g), g[0].get("official_key"), len(g[0].get("home_players", [])), g[0].get("home_players", [None])[0])
+print("month 046 202601", b.month_games("046", "202601")[:5], len(b.month_games("046", "202601")))
+gt, no = b.month_games("046", "202601")[0]
+print("date", b.game_date("046", gt, no))
+bx = b.boxscore("046", gt, no); print([(t, s, len(p)) for t, s, p in bx])
