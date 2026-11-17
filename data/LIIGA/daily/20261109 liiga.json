@@ -71,8 +71,30 @@
         "fo_won": 20,
         "en_goals": 0
       },
-      "home_goalies": [],
-      "away_goalies": [],
+      "home_goalies": [
+        {
+          "name": "Mäkiniemi E.",
+          "player_id": "liiga:30117507",
+          "starter": true,
+          "shots_against": 16,
+          "goals_against": 2,
+          "saves": 14,
+          "sv_pct": 0.875,
+          "note": "팀 세이브 기준(골리 교체 시 합산값)"
+        }
+      ],
+      "away_goalies": [
+        {
+          "name": "Lekkas S.",
+          "player_id": "liiga:60760868",
+          "starter": true,
+          "shots_against": 28,
+          "goals_against": 3,
+          "saves": 25,
+          "sv_pct": 0.893,
+          "note": "팀 세이브 기준(골리 교체 시 합산값)"
+        }
+      ],
       "goals": [
         {
           "period": "1st Period",
@@ -127,7 +149,10 @@
             "Virtanen J."
           ]
         }
-      ]
+      ],
+      "home_xg": 3.63,
+      "away_xg": 1.88,
+      "goalie_source": "liiga.fi"
     }
   ]
 }
