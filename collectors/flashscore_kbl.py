@@ -15,6 +15,7 @@ from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 
 from collectors.bleague_official import BLeagueBox
+from collectors.wkbl_official import WKBLBox
 from collectors.flashscore_hockey_collector import FEED, FlashscoreHockeyCollector, LEAGUES, season_years
 
 KST = ZoneInfo("Asia/Seoul")
@@ -240,4 +241,11 @@ class FlashscoreKBL:
                 print(f"  [BLEAGUE] 선수 기록 {n}/{len(games)}경기 (공식 박스스코어)")
             except Exception as e:
                 print(f"  [BLEAGUE] 공식 박스스코어 실패: {e}")
+        if self.league == "WKBL" and games:
+            # 선수 박스스코어: WKBL 공식 사이트 (날짜+점수로 매칭)
+            try:
+                n = WKBLBox().fill(date, games)
+                print(f"  [WKBL] 선수 기록 {n}/{len(games)}경기 (공식 박스스코어)")
+            except Exception as e:
+                print(f"  [WKBL] 공식 박스스코어 실패: {e}")
         return {"date": date, "league": self.league, "source": "flashscore", "games": games}
