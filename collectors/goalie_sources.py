@@ -100,7 +100,10 @@ class LiigaGoalies(_Base):
             gks.sort(key=lambda p: (p.get("line") or 99))
             if gks and gks[0].get("line") == 1:
                 p = gks[0]
-                out[side] = {"name": f'{p.get("lastName", "")} {p.get("firstName", "")[:1]}.'.strip(),
+                # Flashscore 표기(악센트 제거 'Lastname F.')와 맞춤 — 기존 기록과 이름이 이어지게
+                nm = f'{p.get("lastName", "")} {p.get("firstName", "")[:1]}.'.strip()
+                nm = unicodedata.normalize("NFKD", nm).encode("ascii", "ignore").decode()
+                out[side] = {"name": nm,
                              "player_id": f'liiga:{p.get("id")}'}
         return out
 

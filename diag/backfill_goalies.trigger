@@ -1,1 +1,1 @@
-LIIGA AHL
+LIIGA
