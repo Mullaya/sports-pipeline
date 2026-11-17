@@ -1,86 +1,27 @@
+LIIGA list keys ['id', 'season', 'start', 'homeTeam', 'awayTeam', 'periods', 'finishedType', 'started', 'ended', 'gameTime', 'spectators', 'playOffPair', 'playOffPhase', 'playOffReqWins', 'buyTicketsUrl', 'gamblingEvent', 'iceRink', 'currentPeriod', 'stale', 'serie', 'gameWeek']
+homeTeam keys ['teamId', 'teamPlaceholder', 'teamName', 'goals', 'timeOut', 'goalEvents', 'powerplayInstances', 'powerplayGoals', 'shortHandedInstances', 'shortHandedGoals', 'expectedGoals', 'ranking', 'gameStartDateTime', 'logos']
+{"id": 2701526, "season": 2027, "start": "2026-11-15T13:00:00Z", "periods": [{"index": 1, "homeTeamGoals": 1, "awayTeamGoals": 0, "category": "NORMAL", "startTime": 0, "endTime": 1200}, {"index": 2, "homeTeamGoals": 1, "awayTeamGoals": 0, "category": "NORMAL", "startTime": 1200, "endTime": 2400}, {"index": 3, "homeTeamGoals": 1, "awayTeamGoals": 1, "category": "NORMAL", "startTime": 2400, "endTime": 3600}, {"index": 4, "homeTeamGoals": 0, "awayTeamGoals": 0, "category": "OVERTIME", "startTime": 3600, "endTime": 3900}, {"index": 5, "homeTeamGoals": 0, "awayTeamGoals": 0, "category": "WINNING_SHOT_COMPETITION", "startTime": 3900, "endTime": 3900}], "finishedType": "ENDED_DURING_REGULAR_GAME_TIME", "started": true, "ended": true, "gameTime": 3600, "spectators": 8141, "playOffPair": 0, "playOf
 
-### https://d.flashscore.com/x/feed/df_li_1_W6vNeb2l 200 len=1
-0
+### https://liiga.fi/api/v2/games/2027/2701526 46174
+{"game":{"id":2701526,"season":2027,"start":"2026-11-15T13:00:00Z","homeTeam":{"teamId":"951626834:ilves","teamPlaceholder":null,"teamName":"Ilves","goals":3,"timeOut":null,"goalEvents":[{"scorerPlayerId":60658794,"scorerPlayer":{"playerId":60658794,"firstName":"Jens","lastName":"Lööke"},"logTime":"
+keys ['game', 'awards', 'homeTeamPlayers', 'awayTeamPlayers']
+player keys ['id', 'teamId', 'teamName', 'line', 'countryOfBirth', 'placeOfBirth', 'dateOfBirth', 'nationality', 'firstName', 'lastName', 'role', 'roleCode', 'handedness', 'height', 'weight', 'captain', 'rookie', 'alternateCaptain', 'jersey', 'pictureUrl', 'injured', 'suspended', 'removed', 'awards', 'sponsors', 'extra_description', 'extra_strengths', 'extra_rookie_picture']
+gk [{"id": 61011727, "teamId": "951626834:ilves", "teamName": "Ilves", "line": 1, "countryOfBirth": "LTU", "placeOfBirth": "Plunge", "dateOfBirth": "1992-09-06", "nationality": "LTU", "firstName": "Mantas", "lastName": "Armalis", "role": "GOALIE", "roleCode": "MV", "handedness": "LEFT", "height": 192, "weight": 96, "captain": false, "rookie": false, "alternateCaptain": false, "jersey": 40, "pictureUrl": "https://liiga-backend-prod.s3.eu-north-1.amazonaws.com/2027/951626834%3Ailves/61011727.png", "injured": false, "suspended": false, "removed": false, "awards": [{"id": 35537, "awardCategory": 1, "awardIssuer": "Kari Järvinen", "awardName": "Alumni 1 tähti", "awardPoint": 3, "playerId": 61011727, "teamId": "951626834:ilves"}], "sponsors": null, "extra_description": null, "extra_strengths": null, "extra_rookie_picture": false}]
 
-### https://d.flashscore.com/x/feed/df_lis_1_W6vNeb2l 200 len=1
-0
-
-### https://d.flashscore.com/x/feed/df_lu_1_W6vNeb2l 200 len=1
-0
-
-### https://d.flashscore.com/x/feed/dc_1_W6vNeb2l 200 len=1
-0
-
-### https://d.flashscore.com/x/feed/df_mlu_1_W6vNeb2l 200 len=1
-0
-
-### https://local-global.flashscore.ninja/2/x/feed/df_li_1_W6vNeb2l 200 len=1
-0
-
-### https://local-global.flashscore.ninja/2/x/feed/df_lis_1_W6vNeb2l 200 len=1
-0
-
-### https://local-global.flashscore.ninja/2/x/feed/df_lu_1_W6vNeb2l 200 len=1
-0
-
-### https://local-global.flashscore.ninja/2/x/feed/dc_1_W6vNeb2l 200 len=241
-DA÷3¬DZ÷3¬DB÷3¬DD÷1794756283¬AW÷¬DC÷1794747600¬DS÷0¬DE÷3¬DF÷1¬DG÷3¬DH÷1¬DI÷-1¬DK÷1794756285¬DL÷1¬DM÷¬DX÷ST,PS,LI,OD,HH,TTS,LT,TA,NF,HITO¬DEI÷https://static.flashscore.com/res/image/data/niZmhNYA-W8ZfY12b-rNwMu6T6.png¬DV÷4¬DT÷¬DJ÷H¬AZ÷1¬A1÷¬~
-
-### https://local-global.flashscore.ninja/2/x/feed/df_mlu_1_W6vNeb2l 200 len=1
-0
-
-### https://global.flashscore.ninja/2/x/feed/df_li_1_W6vNeb2l 200 len=1
-0
-
-### https://global.flashscore.ninja/2/x/feed/df_lis_1_W6vNeb2l 200 len=1
-0
-
-### https://global.flashscore.ninja/2/x/feed/df_lu_1_W6vNeb2l 200 len=1
-0
-
-### https://global.flashscore.ninja/2/x/feed/dc_1_W6vNeb2l 200 len=241
-DA÷3¬DZ÷3¬DB÷3¬DD÷1794756283¬AW÷¬DC÷1794747600¬DS÷0¬DE÷3¬DF÷1¬DG÷3¬DH÷1¬DI÷-1¬DK÷1794756285¬DL÷1¬DM÷¬DX÷ST,PS,LI,OD,HH,TTS,LT,TA,NF,HITO¬DEI÷https://static.flashscore.com/res/image/data/niZmhNYA-W8ZfY12b-rNwMu6T6.png¬DV÷4¬DT÷¬DJ÷H¬AZ÷1¬A1÷¬~
-
-### https://global.flashscore.ninja/2/x/feed/df_mlu_1_W6vNeb2l 200 len=1
-0
-
-### https://www.flashscore.com/match/hockey/W6vNeb2l/ 200 len=650852
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Ilves v SaiPa 15/11/2026 | Hockey - Flashscore</title>
-        <script defer src="https://cdn.cookielaw.org/sc
-feed refs: []
-fsign: ['SW9D1eZo']
-
-### https://liiga.fi/api/v2/games/2027/1 200 len=43
-{"homeTeamPlayers":[],"awayTeamPlayers":[]}
-liiga parse 'game'
-
-### https://liiga.fi/api/v2/schedule?tournament=runkosarja&week=1&season=2027 200 len=416323
-[{"id":2701274,"serie":1188,"season":2027,"homeTeamName":"Jukurit","awayTeamName":"HPK","homeTeamId":"292293444:jukurit","awayTeamId":"55786244:hpk","homeTeamPlaceholder":null,"awayTeamPlaceholder":null,"homeTeamGoals":1,"awayTeamGoals":4,"expectedHomeTeamGoals":2.08,"expectedAwayTeamGoals":1.95,"ga
-
-### https://liiga.fi/api/v2/games?tournament=runkosarja&season=2027 200 len=2043889
-[{"id":2701274,"season":2027,"start":"2026-09-01T15:30:00Z","end":"2026-09-01T12:28:08Z","homeTeam":{"teamId":"292293444:jukurit","teamPlaceholder":null,"teamName":"Jukurit","goals":1,"timeOut":3500,"goalEvents":[{"scorerPlayerId":60860218,"scorerPlayer":{"playerId":60860218,"firstName":"Thomas","la
-
-### https://lscluster.hockeytech.com/feed/index.php?feed=statviewfeed&view=gameSummary&game_id=1029308&key=50c2cd9b5e18e390&client_code=ahl&lang=en&site_id=0 200 len=39564
-({"details":{"id":1029308,"date":"Saturday, November 14, 2026","gameNumber":"238","venue":"CIBC Place","attendance":2419,"startTime":"4:02 pm EST","endTime":"6:22 pm EST","duration":"2:20","gameReportUrl":"https:\/\/lscluster.hockeytech.com\/game_reports\/official-game-report.php?lang_id=1&client_co
-AHL goalie mention True "goalies":[{"info":{"id":6663,"firstName":"Jonas","lastName":"Johansson","jerseyNumber":30,"position":"G","birthDate":"1995-09-19","playerImageURL":"https:\/\/assets.leaguestat.com\/ahl\/120x160\/6663.jpg"},"stats":{"goals":0,"assists":0,"points":0,"penaltyMinutes":0,"plusMinus":0,"faceoffAttempts":0,"faceoffWins":0,"timeOnIce":"58:58","shotsAgainst":26,"goalsAgainst":2,"saves":24},"starting":1,"status":""},{"info":{"id":10207,"firstName":"Jackson","lastName":"Parsons","jerseyNumber":31,"position":"G","birthDate":"2004-11-23","playerImageURL":"https:\/\/assets.leaguestat.com\/ahl\/120x160\/10207.jpg"},"stats":{"goals":0,"assists":0,"points":0,"penaltyMinutes":0,"plusMinus":0,"faceoffAttempts":0,"faceoffWins":0,"timeOnIce":null,"shotsAgainst":0,"goalsAgainst":0,"saves":0},"starting":0,"stat
-https://www.shl.se/ [] []
-https://www.penny-del.org/ [] []
-
-### https://www.shl.se/api/sports-v2/game-schedule?seasonUuid=&seriesUuid=&gameTypeUuid=&gamePlace=all&played=all 500 len=52
-{"message":"Internal Server Error","statusCode":500}
-
-### https://www.penny-del.org/api/v2/live-ticker 404 len=552
-<html>
-<head><title>404 Not Found</title></head>
-<body>
-<center><h1>404 Not Found</h1></center>
-<hr><center>openresty</center>
-</body>
-</html>
-<!-- a padding to disable MSIE and Chrome friendly
-
-### https://www.asiaicehockey.com/ ERR HTTPSConnectionPool(host='www.asiaicehockey.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='www.asiaicehockey.com', port=443): Failed to resolve 'www.asiaicehockey.com' ([Errno -2] Name or service not known)"))
+### https://liiga.fi/api/v2/games/2027/2701526/boxscore 42
+{"message":"Missing Authentication Token"}
+keys ['message']
+lsapp[^\"' ]{0,80} ['lsapp.eu/pq_graphql', 'lsapp.eu\\/odds\\/pq_graphql', 'lsapp.eu\\/pq_graphql']
+pq_graphql[^\"' ]{0,120} ['pq_graphql']
+feed/[a-z_]{2,12} []
+_hash[^\"' ]{0,60} ['_hash']
+https://[a-z0-9.\-]*ninja[^\"' ]{0,60} ['https://2.flashscore.ninja']
+scripts 38 ['https://cdn.cookielaw.org/scripttemplates/otSDKStub.js', 'https://static.flashscore.com/x/js/browsercompatibility_5.js', 'https://static.flashscore.com/x/js/translations-livetable.2.54e8abbe.js', 'https://static.flashscore.com/x/js/translations-myteamsmenu.2.c3c8a579.js', 'https://static.flashscore.com/x/js/translations-headermenu.2.33be4ea0.js', 'https://static.flashscore.com/x/js/translations-headerpromobar.2.179cb15e.js', 'https://static.flashscore.com/res/_fs/build/runtime.BvRk9ki.js', 'https://static.flashscore.com/res/_fs/build/constants.Dg2TU4y.js', 'https://static.flashscore.com/res/_fs/build/loader.CL0a49K.js', 'https://static.flashscore.com/res/_fs/build/myTeamsMenu.Bwnyt8o.js', 'https://static.flashscore.com/x/js/translations-detail.2.2ab4eb73.js', 'https://static.flashscore.com/x/js/translations-standings.2.098fd29e.js', 'https://static.flashscore.com/res/_fs/build/framework.RcxnFAG.js', 'https://static.flashscore.com/res/_fs/build/core-js.DDmNAnB.js', 'https://static.flashscore.com/x/js/core_2_2324000000.js', 'https://static.flashscore.com/x/js/core_legacy_2_2324000000.js', 'https://static.flashscore.com/res/_fs/build/adBlockPlus.CAfyglk.js', 'https://static.flashscore.com/res/_fs/build/internalTools.DwoV0Bl.js', 'https://static.flashscore.com/res/_fs/build/legalAgeConfirmation.BsswhWY.js', 'https://static.flashscore.com/res/_fs/build/initBannerHandler.CJY6gUq.js', 'https://static.flashscore.com/res/_fs/build/modules.DgHqw1_.js', 'https://static.flashscore.com/res/_fs/build/serviceStatusBox.QVJsLEU.js', 'https://static.flashscore.com/res/_fs/build/detail.ToPma-I.js', 'https://static.flashscore.com/res/_fs/build/myLeaguesMenu.C9vTB_n.js', 'https://static.flashscore.com/res/_fs/build/mainPageScripts.DWFn6qa.js', 'https://static.flashscore.com/res/_fs/build/leftMenuCategory.Ck03WPv.js', 'https://static.flashscore.com/res/_fs/build/globalEvents.B3J8n13.js', 'https://static.flashscore.com/res/_fs/build/frontendLogger.BDY_8ZD.js', 'https://static.flashscore.com/res/_fs/build/autotrack.aSzUQMc.js', 'https://static.flashscore.com/res/_fs/build/loginClient.COxV0PA.js']
+JS ttps://static.flashscore.com/x/js/translations-livetable.2.54e8abbe.js ['lineups']
+   ctx: mentary is available for this match","TRANS_CLICK_TO_SEE_LINEUPS":"Click to see lineups!","TRANS_CLOSE_WINDOW":"Close window","TRANS_COLLAPSE_LEAGUE_IFRAME":"Hide all matches of this league!","TRANS_C
+JS https://static.flashscore.com/x/js/translations-detail.2.2ab4eb73.js ['lineups']
+   ctx: _BOOKMARK_URL_IDENT_H2H_TEST":"test","TRANS_DETAIL_BOOKMARK_URL_IDENT_LINEUPS":"lineups","TRANS_DETAIL_BOOKMARK_URL_IDENT_LINEUPS_FORMATION_1":"line-1","TRANS_DETAIL_BOOKMARK_URL_IDENT_LINEUPS_FORMATI
+JS https://static.flashscore.com/x/js/core_2_2324000000.js ['lineups', 'pq_graphql']
+   ctx: ings":false,"sports_with_live_rating":[1],"predicted_line_up":true,"sports_with_lineups_in_summary":[1],"sports_with_lineups_tabs":[1]},"market_value_format":{"decimal_separator":".","group_separator"
+JS https://static.flashscore.com/res/_fs/build/detail.ToPma-I.js ['_hash', 'lineup', 'lineups', 'lineupsFormationContainer', 'lineupsTab']
+   ctx: m.BFhIhWf.js","/res/_fs/build/MissingPlayersWidget.Buro-bN.css","/res/_fs/build/lineupsTab.8YMnBto.js","/res/_fs/build/DetailEmptyState.Q8zYepo.js","/res/_fs/build/getCountryImgSrc.Bqu3CuQ.js","/res/_
