@@ -213,14 +213,17 @@ def main():
     def summarize(key):
         agg = defaultdict(lambda: [0, 0])
         for p in picks:
-            if p.get("result") in ("WIN", "LOSS"):
+            if p.get("result") in ("WIN", "LOSS") and key(p) is not None:
                 agg[key(p)][0 if p["result"] == "WIN" else 1] += 1
         for k in sorted(agg, key=str):
             w, l = agg[k]
             print(f"  {k}: {w}승 {l}패 ({w / (w + l) * 100:.0f}%)")
 
     for title, key in [("별점별", lambda p: f"★{p['stars']}"), ("리그별", lambda p: p["league"]),
-                       ("마켓별", lambda p: p["market"]), ("날짜별", lambda p: p["date"])]:
+                       ("마켓별", lambda p: p["market"]), ("날짜별", lambda p: p["date"]),
+                       # 픽 순위(같은 날 묶음 안에서 매긴 확신 순서) 복기 — 상위권이 실제로 더 맞는지
+                       ("순위대별", lambda p: None if not p.get("rank") else
+                        ("1~3위" if p["rank"] <= 3 else "4~6위" if p["rank"] <= 6 else "7위~"))]:
         print(f"[{title}]")
         summarize(key)
     if manual:
