@@ -1,0 +1,161 @@
+{
+  "date": "20250916",
+  "league": "LIIGA",
+  "source": "flashscore",
+  "games": [
+    {
+      "game_id": "Mq6gTuED",
+      "game_type": "REG",
+      "stage": "FINLAND: Liiga",
+      "round": "",
+      "start_utc": "2025-09-16T15:30:00Z",
+      "home_team": "KalPa",
+      "away_team": "Kiekko-Espoo",
+      "home_team_id": "tMuMK6vi",
+      "away_team_id": "IVYOkYeB",
+      "home_score": 4,
+      "away_score": 2,
+      "total_goals": 6,
+      "end_type": "REG",
+      "reg_home_score": 4,
+      "reg_away_score": 2,
+      "reg_total_goals": 6,
+      "winner": "KalPa",
+      "period_scores": [
+        {
+          "period": 1,
+          "type": "REG",
+          "home": 2,
+          "away": 0
+        },
+        {
+          "period": 2,
+          "type": "REG",
+          "home": 1,
+          "away": 1
+        },
+        {
+          "period": 3,
+          "type": "REG",
+          "home": 1,
+          "away": 1
+        }
+      ],
+      "home_stats": {
+        "shots": 25,
+        "blocked": 3,
+        "saves": 28,
+        "penalties": 2,
+        "pim": 4,
+        "pp_goals": 1,
+        "sh_goals": 1,
+        "pp_opps": 6,
+        "fo_won": 25,
+        "en_goals": 1
+      },
+      "away_stats": {
+        "shots": 30,
+        "blocked": 15,
+        "saves": 21,
+        "penalties": 6,
+        "pim": 12,
+        "pp_goals": 0,
+        "sh_goals": 0,
+        "pp_opps": 2,
+        "fo_won": 25,
+        "en_goals": 0
+      },
+      "home_goalies": [
+        {
+          "name": "Lekkas S.",
+          "player_id": "liiga:60760868",
+          "starter": true,
+          "shots_against": 30,
+          "goals_against": 2,
+          "saves": 28,
+          "sv_pct": 0.933,
+          "note": "팀 세이브 기준(골리 교체 시 합산값)"
+        }
+      ],
+      "away_goalies": [
+        {
+          "name": "Rimpinen P.",
+          "player_id": "liiga:40176719",
+          "starter": true,
+          "shots_against": 25,
+          "goals_against": 4,
+          "saves": 21,
+          "sv_pct": 0.84,
+          "note": "팀 세이브 기준(골리 교체 시 합산값)"
+        }
+      ],
+      "goals": [
+        {
+          "period": "1st Period",
+          "time": "01:09",
+          "team": "home",
+          "score": "1:0",
+          "author": "Klemetti A.",
+          "assists": [
+            "Westerlund F.",
+            "Curry P."
+          ]
+        },
+        {
+          "period": "1st Period",
+          "time": "15:14",
+          "team": "home",
+          "score": "2:0",
+          "author": "Curry P.",
+          "assists": [
+            "Rissanen J.",
+            "Lappalainen L."
+          ]
+        },
+        {
+          "period": "2nd Period",
+          "time": "08:00",
+          "team": "home",
+          "score": "3:0",
+          "author": "Okany A.",
+          "assists": [
+            "Korhonen B."
+          ]
+        },
+        {
+          "period": "2nd Period",
+          "time": "13:36",
+          "team": "away",
+          "score": "3:1",
+          "author": "Vaisanen J.",
+          "assists": [
+            "Nakyva K.",
+            "Keskitalo M."
+          ]
+        },
+        {
+          "period": "3rd Period",
+          "time": "09:53",
+          "team": "away",
+          "score": "3:2",
+          "author": "Vaisanen J.",
+          "assists": [
+            "Tuomaala A.",
+            "Kulonummi K."
+          ]
+        },
+        {
+          "period": "3rd Period",
+          "time": "18:25",
+          "team": "home",
+          "score": "4:2",
+          "author": "Korhonen B.",
+          "assists": []
+        }
+      ],
+      "home_xg": 3.25,
+      "away_xg": 2.6,
+      "goalie_source": "liiga.fi"
+    }
+  ]
+}

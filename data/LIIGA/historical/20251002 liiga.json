@@ -1,0 +1,140 @@
+{
+  "date": "20251002",
+  "league": "LIIGA",
+  "source": "flashscore",
+  "games": [
+    {
+      "game_id": "4K7Pg0vh",
+      "game_type": "REG",
+      "stage": "FINLAND: Liiga",
+      "round": "",
+      "start_utc": "2025-10-02T15:30:00Z",
+      "home_team": "Lukko",
+      "away_team": "KooKoo",
+      "home_team_id": "hdqQJQgc",
+      "away_team_id": "ljjApDE3",
+      "home_score": 3,
+      "away_score": 1,
+      "total_goals": 4,
+      "end_type": "REG",
+      "reg_home_score": 3,
+      "reg_away_score": 1,
+      "reg_total_goals": 4,
+      "winner": "Lukko",
+      "period_scores": [
+        {
+          "period": 1,
+          "type": "REG",
+          "home": 0,
+          "away": 0
+        },
+        {
+          "period": 2,
+          "type": "REG",
+          "home": 0,
+          "away": 0
+        },
+        {
+          "period": 3,
+          "type": "REG",
+          "home": 3,
+          "away": 1
+        }
+      ],
+      "home_stats": {
+        "shots": 42,
+        "blocked": 7,
+        "saves": 17,
+        "penalties": 0,
+        "pim": 0,
+        "pp_goals": 0,
+        "sh_goals": 0,
+        "pp_opps": 2,
+        "fo_won": 37,
+        "en_goals": 0
+      },
+      "away_stats": {
+        "shots": 18,
+        "blocked": 6,
+        "saves": 39,
+        "penalties": 2,
+        "pim": 4,
+        "pp_goals": 0,
+        "sh_goals": 0,
+        "pp_opps": 0,
+        "fo_won": 30,
+        "en_goals": 0
+      },
+      "home_goalies": [
+        {
+          "name": "Salonen D.",
+          "player_id": "liiga:40050277",
+          "starter": true,
+          "shots_against": 18,
+          "goals_against": 1,
+          "saves": 17,
+          "sv_pct": 0.944,
+          "note": "팀 세이브 기준(골리 교체 시 합산값)"
+        }
+      ],
+      "away_goalies": [
+        {
+          "name": "Jatkola J.",
+          "player_id": "liiga:34264401",
+          "starter": true,
+          "shots_against": 42,
+          "goals_against": 3,
+          "saves": 39,
+          "sv_pct": 0.929,
+          "note": "팀 세이브 기준(골리 교체 시 합산값)"
+        }
+      ],
+      "goals": [
+        {
+          "period": "3rd Period",
+          "time": "01:03",
+          "team": "home",
+          "score": "1:0",
+          "author": "Morand A.",
+          "assists": [
+            "Olsson A.",
+            "Salonen D."
+          ]
+        },
+        {
+          "period": "3rd Period",
+          "time": "10:16",
+          "team": "home",
+          "score": "2:0",
+          "author": "Intonen A.",
+          "assists": [
+            "Olsson A.",
+            "Viitasalo N."
+          ]
+        },
+        {
+          "period": "3rd Period",
+          "time": "15:55",
+          "team": "away",
+          "score": "2:1",
+          "author": "Gallo V.",
+          "assists": []
+        },
+        {
+          "period": "3rd Period",
+          "time": "17:40",
+          "team": "home",
+          "score": "3:1",
+          "author": "Saarela A.",
+          "assists": [
+            "Westerholm Po.",
+            "Viitasalo N."
+          ]
+        }
+      ],
+      "home_xg": 3.55,
+      "away_xg": 1.12,
+      "goalie_source": "liiga.fi"
+    }
+  ]
+}
