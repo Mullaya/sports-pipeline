@@ -42,6 +42,9 @@ LEAGUE_CFG = {
             "fail_after": "20261101"},
     "ALH": {"season_start": os.getenv("ALH_SEASON_START", "20260801"), "points": (3, 2, 1),
             "fail_after": "20261201"},
+    # AHL: 승 2점, 연장·SO 패 1점 (골리 = HockeyTech 개인 기록)
+    "AHL": {"season_start": os.getenv("AHL_SEASON_START", "20260801"), "points": (2, 2, 1),
+            "fail_after": "20261101"},
 }
 
 
@@ -98,6 +101,8 @@ def team_rows(games):
                 "reg": "RW" if reg_me > reg_op else ("RL" if reg_me < reg_op else "RD"),
                 "reg_total": g.get("reg_total_goals", me + op),
                 "sf": st.get("shots"), "sa": ost.get("shots"),
+                # 기대득점(LIIGA 공식 API 제공 경기만)
+                "xgf": g.get(f"{side}_xg"), "xga": g.get(f"{opp}_xg"),
                 "ppg": st.get("pp_goals") or 0, "ppo": st.get("pp_opps") or 0,
                 "ppga": ost.get("pp_goals") or 0, "pko": ost.get("pp_opps") or 0,
                 # SV%: 골리 기록(빈골문 제외) 우선, 없으면 팀 기준
@@ -129,6 +134,20 @@ def split(rs, points):
     }
 
 
+def xg_line(rs):
+    """기대득점이 있는 경기만: 경기당 xGF/xGA, xG 점유율, 최근 10경기 xG 점유율, 실제득점-xG(운 지표)"""
+    xr = [r for r in rs if r.get("xgf") is not None and r.get("xga") is not None]
+    if not xr:
+        return {}
+    xf, xa = sum(r["xgf"] for r in xr), sum(r["xga"] for r in xr)
+    l10 = xr[-10:]
+    lf, la = sum(r["xgf"] for r in l10), sum(r["xga"] for r in l10)
+    return {"xg_gp": len(xr), "xgf_pg": round(xf / len(xr), 2), "xga_pg": round(xa / len(xr), 2),
+            "xg_share": pct(xf, xf + xa), "xg_share_last10": pct(lf, lf + la),
+            "gf_minus_xg_pg": round((sum(r["gf"] for r in xr) - xf) / len(xr), 2),
+            "ga_minus_xga_pg": round((sum(r["ga"] for r in xr) - xa) / len(xr), 2)}
+
+
 def summarize(rs, points, today: str):
     s = split(rs, points)
     n = len(rs)
@@ -150,6 +169,7 @@ def summarize(rs, points, today: str):
         "sh_pct": sh, "sv_pct": sv,
         "pdo": round((sh + sv) * 100, 1) if sh is not None and sv is not None else None,
         "pp_pct": pct(ppg, ppo), "pk_pct": round(1 - ppga / pko, 3) if pko else None,
+        **xg_line(rs),
         "reg_draw_rate": pct(s["reg_d"], n),
         "over_rate_reg": {str(L): pct(sum(r["reg_total"] > L for r in rs), n) for L in TOTAL_LINES},
         "home": split([r for r in rs if r["is_home"]], points),
