@@ -40,6 +40,8 @@ LEAGUE_CFG = {
               "fail_after": "20261101"},
     "SHL": {"season_start": os.getenv("SHL_SEASON_START", "20260801"), "points": (3, 2, 1),
             "fail_after": "20261101"},
+    "OHL": {"season_start": os.getenv("OHL_SEASON_START", "20260901"), "points": (2, 2, 1),
+            "fail_after": "20261015"},
     "ALH": {"season_start": os.getenv("ALH_SEASON_START", "20260801"), "points": (3, 2, 1),
             "fail_after": "20261201"},
 }

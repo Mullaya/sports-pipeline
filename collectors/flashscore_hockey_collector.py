@@ -47,6 +47,9 @@ LEAGUES = {
     # 북미 AHL — 날짜는 미국 동부 현지 기준(서부 경기 늦은 시작도 같은 날로 묶임)
     "AHL": {"path": "hockey/usa/ahl", "country": "200", "tournament": None,
             "tz": "America/New_York"},
+    # 캐나다 주니어 OHL — 날짜는 미국 동부(토론토) 현지 기준
+    "OHL": {"path": "hockey/canada/ohl", "country": "39", "tournament": None,
+            "tz": "America/Toronto"},
     # 아시아리그 아이스하키 (한국·일본) — 파일 날짜 = KST(=JST) 현지 날짜. country는 결과 페이지에서 추출
     "ALH": {"path": "hockey/asia/asia-league", "country": None, "tournament": None,
             "tz": "Asia/Seoul"},

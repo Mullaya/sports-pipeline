@@ -86,10 +86,18 @@ jobs:
         run: |
           git pull --ff-only origin main || git pull origin main
           python analytics/build_kovo_stats.py
+      - name: ABL(호주 야구)·NBL(호주 농구) 통계 집계
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          git pull --ff-only origin main || git pull origin main
+          python analytics/build_abl_stats.py
+          python analytics/build_nbl_stats.py
       - name: 유럽 하키(KHL·DEL·체코·Liiga·SHL) 통계 집계
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
         run: |
           git pull --ff-only origin main || git pull origin main
-          python analytics/build_hockey_stats.py KHL DEL CZE LIIGA SHL ALH
+          python analytics/build_hockey_stats.py KHL DEL CZE LIIGA SHL ALH OHL
