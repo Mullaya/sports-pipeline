@@ -1,0 +1,5817 @@
+{
+ "meta": {
+  "generated_kst": "2026-11-20 23:25",
+  "league": "OHL",
+  "season_start": "20260901",
+  "games": 206,
+  "last_game_date": "20261119",
+  "points_rule": {
+   "reg_win": 2,
+   "ot_win": 2,
+   "ot_loss": 1
+  },
+  "league_avg": {
+   "avg_reg_total": 6.8,
+   "reg_draw_rate": 0.214,
+   "home_win_rate": 0.558,
+   "home_reg_win_rate": 0.437,
+   "over_rate_reg": {
+    "4.5": 0.82,
+    "5.5": 0.723,
+    "6.5": 0.519
+   }
+  },
+  "notes": "reg_* = 정규시간(60분) 기준 (하키 언오버 사이트 정산 기준) / w = 정규승+연장승 / shot_share = 유효슈팅 점유율 / rank_pts = 전체 승점 순위"
+ },
+ "teams": {
+  "Guelph Storm": {
+   "gp": 19,
+   "w": 17,
+   "reg_wins": 14,
+   "ot_wins": 3,
+   "otl": 0,
+   "l": 2,
+   "pts": 34,
+   "reg_w": 14,
+   "reg_d": 3,
+   "reg_l": 2,
+   "gf_pg": 4.84,
+   "ga_pg": 2.58,
+   "avg_reg_total": 7.26,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.158,
+   "over_rate_reg": {
+    "4.5": 0.895,
+    "5.5": 0.737,
+    "6.5": 0.526
+   },
+   "home": {
+    "gp": 10,
+    "w": 10,
+    "reg_wins": 7,
+    "ot_wins": 3,
+    "otl": 0,
+    "l": 0,
+    "pts": 20,
+    "reg_w": 7,
+    "reg_d": 3,
+    "reg_l": 0,
+    "gf_pg": 5.0,
+    "ga_pg": 2.2,
+    "avg_reg_total": 6.9
+   },
+   "away": {
+    "gp": 9,
+    "w": 7,
+    "reg_wins": 7,
+    "ot_wins": 0,
+    "otl": 0,
+    "l": 2,
+    "pts": 14,
+    "reg_w": 7,
+    "reg_d": 0,
+    "reg_l": 2,
+    "gf_pg": 4.67,
+    "ga_pg": 3.0,
+    "avg_reg_total": 7.67
+   },
+   "last10": {
+    "gp": 10,
+    "w": 8,
+    "reg_wins": 6,
+    "ot_wins": 2,
+    "otl": 0,
+    "l": 2,
+    "pts": 16,
+    "reg_w": 6,
+    "reg_d": 2,
+    "reg_l": 2,
+    "gf_pg": 4.5,
+    "ga_pg": 3.3,
+    "avg_reg_total": 7.6
+   },
+   "last10_log": [
+    "20261023 @ Kitchener Rangers 3-6 L",
+    "20261025 vs Kitchener Rangers 6-5 OTW",
+    "20261030 @ Soo Greyhounds 4-3 W",
+    "20261031 @ Saginaw Spirit 5-3 W",
+    "20261103 @ Kitchener Rangers 3-2 W",
+    "20261106 vs Owen Sound Attack 2-1 OTW",
+    "20261107 vs North Bay Battalion 10-6 W",
+    "20261111 @ London Knights 5-2 W",
+    "20261113 vs Brantford Bulldogs 5-2 W",
+    "20261114 @ Owen Sound Attack 2-3 L"
+   ],
+   "streak": "L1",
+   "last_game_date": "20261114",
+   "days_since_last": 6,
+   "last_was_b2b": true,
+   "rank_pts": 1
+  },
+  "Windsor Spitfires": {
+   "gp": 21,
+   "w": 14,
+   "reg_wins": 13,
+   "ot_wins": 1,
+   "otl": 2,
+   "l": 5,
+   "pts": 30,
+   "reg_w": 13,
+   "reg_d": 3,
+   "reg_l": 5,
+   "gf_pg": 3.71,
+   "ga_pg": 2.62,
+   "avg_reg_total": 6.19,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.143,
+   "over_rate_reg": {
+    "4.5": 0.762,
+    "5.5": 0.571,
+    "6.5": 0.429
+   },
+   "home": {
+    "gp": 11,
+    "w": 7,
+    "reg_wins": 6,
+    "ot_wins": 1,
+    "otl": 1,
+    "l": 3,
+    "pts": 15,
+    "reg_w": 6,
+    "reg_d": 2,
+    "reg_l": 3,
+    "gf_pg": 3.36,
+    "ga_pg": 2.55,
+    "avg_reg_total": 5.73
+   },
+   "away": {
+    "gp": 10,
+    "w": 7,
+    "reg_wins": 7,
+    "ot_wins": 0,
+    "otl": 1,
+    "l": 2,
+    "pts": 15,
+    "reg_w": 7,
+    "reg_d": 1,
+    "reg_l": 2,
+    "gf_pg": 4.1,
+    "ga_pg": 2.7,
+    "avg_reg_total": 6.7
+   },
+   "last10": {
+    "gp": 10,
+    "w": 9,
+    "reg_wins": 8,
+    "ot_wins": 1,
+    "otl": 0,
+    "l": 1,
+    "pts": 18,
+    "reg_w": 8,
+    "reg_d": 1,
+    "reg_l": 1,
+    "gf_pg": 3.7,
+    "ga_pg": 1.6,
+    "avg_reg_total": 5.2
+   },
+   "last10_log": [
+    "20261029 vs Erie Otters 3-0 W",
+    "20261031 @ Owen Sound Attack 8-0 W",
+    "20261101 @ Brampton Steelheads 3-0 W",
+    "20261105 @ Peterborough Petes 4-3 W",
+    "20261106 @ Ottawa 67s 5-4 W",
+    "20261108 @ Kingston Frontenacs 4-3 W",
+    "20261112 vs Niagara IceDogs 4-1 W",
+    "20261114 @ Flint Firebirds 1-4 L",
+    "20261115 vs Saginaw Spirit 2-1 OTW",
+    "20261119 vs Soo Greyhounds 3-0 W"
+   ],
+   "streak": "W2",
+   "last_game_date": "20261119",
+   "days_since_last": 1,
+   "last_was_b2b": false,
+   "rank_pts": 2
+  },
+  "Kitchener Rangers": {
+   "gp": 21,
+   "w": 13,
+   "reg_wins": 10,
+   "ot_wins": 3,
+   "otl": 3,
+   "l": 5,
+   "pts": 29,
+   "reg_w": 10,
+   "reg_d": 6,
+   "reg_l": 5,
+   "gf_pg": 3.76,
+   "ga_pg": 2.86,
+   "avg_reg_total": 6.33,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.286,
+   "over_rate_reg": {
+    "4.5": 0.81,
+    "5.5": 0.762,
+    "6.5": 0.429
+   },
+   "home": {
+    "gp": 11,
+    "w": 8,
+    "reg_wins": 7,
+    "ot_wins": 1,
+    "otl": 1,
+    "l": 2,
+    "pts": 17,
+    "reg_w": 7,
+    "reg_d": 2,
+    "reg_l": 2,
+    "gf_pg": 4.27,
+    "ga_pg": 2.36,
+    "avg_reg_total": 6.45
+   },
+   "away": {
+    "gp": 10,
+    "w": 5,
+    "reg_wins": 3,
+    "ot_wins": 2,
+    "otl": 2,
+    "l": 3,
+    "pts": 12,
+    "reg_w": 3,
+    "reg_d": 4,
+    "reg_l": 3,
+    "gf_pg": 3.2,
+    "ga_pg": 3.4,
+    "avg_reg_total": 6.2
+   },
+   "last10": {
+    "gp": 10,
+    "w": 8,
+    "reg_wins": 7,
+    "ot_wins": 1,
+    "otl": 1,
+    "l": 1,
+    "pts": 17,
+    "reg_w": 7,
+    "reg_d": 2,
+    "reg_l": 1,
+    "gf_pg": 4.6,
+    "ga_pg": 2.2,
+    "avg_reg_total": 6.6
+   },
+   "last10_log": [
+    "20261023 vs Guelph Storm 6-3 W",
+    "20261025 @ Guelph Storm 5-6 OTL",
+    "20261030 vs Flint Firebirds 3-0 W",
+    "20261103 vs Guelph Storm 2-3 L",
+    "20261106 vs North Bay Battalion 5-2 W",
+    "20261107 @ Owen Sound Attack 3-2 OTW",
+    "20261112 @ Erie Otters 6-2 W",
+    "20261113 vs Barrie Colts 4-2 W",
+    "20261115 vs Ottawa 67s 6-0 W",
+    "20261118 @ Sudbury Wolves 6-2 W"
+   ],
+   "streak": "W6",
+   "last_game_date": "20261118",
+   "days_since_last": 2,
+   "last_was_b2b": false,
+   "rank_pts": 3
+  },
+  "Soo Greyhounds": {
+   "gp": 22,
+   "w": 13,
+   "reg_wins": 7,
+   "ot_wins": 6,
+   "otl": 2,
+   "l": 7,
+   "pts": 28,
+   "reg_w": 7,
+   "reg_d": 8,
+   "reg_l": 7,
+   "gf_pg": 3.27,
+   "ga_pg": 3.27,
+   "avg_reg_total": 6.18,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.364,
+   "over_rate_reg": {
+    "4.5": 0.727,
+    "5.5": 0.636,
+    "6.5": 0.591
+   },
+   "home": {
+    "gp": 12,
+    "w": 8,
+    "reg_wins": 4,
+    "ot_wins": 4,
+    "otl": 2,
+    "l": 2,
+    "pts": 18,
+    "reg_w": 4,
+    "reg_d": 6,
+    "reg_l": 2,
+    "gf_pg": 3.67,
+    "ga_pg": 3.5,
+    "avg_reg_total": 6.67
+   },
+   "away": {
+    "gp": 10,
+    "w": 5,
+    "reg_wins": 3,
+    "ot_wins": 2,
+    "otl": 0,
+    "l": 5,
+    "pts": 10,
+    "reg_w": 3,
+    "reg_d": 2,
+    "reg_l": 5,
+    "gf_pg": 2.8,
+    "ga_pg": 3.0,
+    "avg_reg_total": 5.6
+   },
+   "last10": {
+    "gp": 10,
+    "w": 5,
+    "reg_wins": 3,
+    "ot_wins": 2,
+    "otl": 1,
+    "l": 4,
+    "pts": 11,
+    "reg_w": 3,
+    "reg_d": 3,
+    "reg_l": 4,
+    "gf_pg": 3.2,
+    "ga_pg": 3.7,
+    "avg_reg_total": 6.6
+   },
+   "last10_log": [
+    "20261028 vs Saginaw Spirit 5-2 W",
+    "20261030 vs Guelph Storm 3-4 L",
+    "20261101 vs London Knights 4-5 OTL",
+    "20261104 vs Erie Otters 0-7 L",
+    "20261106 @ Sudbury Wolves 7-3 W",
+    "20261107 vs Barrie Colts 2-1 W",
+    "20261110 @ Sudbury Wolves 1-4 L",
+    "20261113 vs London Knights 5-4 OTW",
+    "20261115 vs Sarnia Sting 5-4 OTW",
+    "20261119 @ Windsor Spitfires 0-3 L"
+   ],
+   "streak": "L1",
+   "last_game_date": "20261119",
+   "days_since_last": 1,
+   "last_was_b2b": false,
+   "rank_pts": 4
+  },
+  "Flint Firebirds": {
+   "gp": 19,
+   "w": 13,
+   "reg_wins": 11,
+   "ot_wins": 2,
+   "otl": 1,
+   "l": 5,
+   "pts": 27,
+   "reg_w": 11,
+   "reg_d": 3,
+   "reg_l": 5,
+   "gf_pg": 3.84,
+   "ga_pg": 2.58,
+   "avg_reg_total": 6.26,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.158,
+   "over_rate_reg": {
+    "4.5": 0.789,
+    "5.5": 0.632,
+    "6.5": 0.421
+   },
+   "home": {
+    "gp": 12,
+    "w": 8,
+    "reg_wins": 7,
+    "ot_wins": 1,
+    "otl": 0,
+    "l": 4,
+    "pts": 16,
+    "reg_w": 7,
+    "reg_d": 1,
+    "reg_l": 4,
+    "gf_pg": 3.75,
+    "ga_pg": 2.75,
+    "avg_reg_total": 6.42
+   },
+   "away": {
+    "gp": 7,
+    "w": 5,
+    "reg_wins": 4,
+    "ot_wins": 1,
+    "otl": 1,
+    "l": 1,
+    "pts": 11,
+    "reg_w": 4,
+    "reg_d": 2,
+    "reg_l": 1,
+    "gf_pg": 4.0,
+    "ga_pg": 2.29,
+    "avg_reg_total": 6.0
+   },
+   "last10": {
+    "gp": 10,
+    "w": 7,
+    "reg_wins": 6,
+    "ot_wins": 1,
+    "otl": 0,
+    "l": 3,
+    "pts": 14,
+    "reg_w": 6,
+    "reg_d": 1,
+    "reg_l": 3,
+    "gf_pg": 3.8,
+    "ga_pg": 2.3,
+    "avg_reg_total": 6.0
+   },
+   "last10_log": [
+    "20261024 vs Saginaw Spirit 6-2 W",
+    "20261025 vs Soo Greyhounds 1-0 W",
+    "20261030 @ Kitchener Rangers 0-3 L",
+    "20261031 vs Barrie Colts 4-3 OTW",
+    "20261101 @ Sarnia Sting 5-1 W",
+    "20261106 vs Erie Otters 4-6 L",
+    "20261107 vs Brampton Steelheads 4-5 L",
+    "20261113 vs Ottawa 67s 4-0 W",
+    "20261114 vs Windsor Spitfires 4-1 W",
+    "20261119 @ Barrie Colts 6-2 W"
+   ],
+   "streak": "W3",
+   "last_game_date": "20261119",
+   "days_since_last": 1,
+   "last_was_b2b": false,
+   "rank_pts": 5
+  },
+  "Kingston Frontenacs": {
+   "gp": 22,
+   "w": 13,
+   "reg_wins": 11,
+   "ot_wins": 2,
+   "otl": 1,
+   "l": 8,
+   "pts": 27,
+   "reg_w": 11,
+   "reg_d": 3,
+   "reg_l": 8,
+   "gf_pg": 4.0,
+   "ga_pg": 3.59,
+   "avg_reg_total": 7.45,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.136,
+   "over_rate_reg": {
+    "4.5": 0.909,
+    "5.5": 0.773,
+    "6.5": 0.591
+   },
+   "home": {
+    "gp": 12,
+    "w": 8,
+    "reg_wins": 6,
+    "ot_wins": 2,
+    "otl": 0,
+    "l": 4,
+    "pts": 16,
+    "reg_w": 6,
+    "reg_d": 2,
+    "reg_l": 4,
+    "gf_pg": 4.17,
+    "ga_pg": 3.08,
+    "avg_reg_total": 7.08
+   },
+   "away": {
+    "gp": 10,
+    "w": 5,
+    "reg_wins": 5,
+    "ot_wins": 0,
+    "otl": 1,
+    "l": 4,
+    "pts": 11,
+    "reg_w": 5,
+    "reg_d": 1,
+    "reg_l": 4,
+    "gf_pg": 3.8,
+    "ga_pg": 4.2,
+    "avg_reg_total": 7.9
+   },
+   "last10": {
+    "gp": 10,
+    "w": 6,
+    "reg_wins": 6,
+    "ot_wins": 0,
+    "otl": 1,
+    "l": 3,
+    "pts": 13,
+    "reg_w": 6,
+    "reg_d": 1,
+    "reg_l": 3,
+    "gf_pg": 3.8,
+    "ga_pg": 2.6,
+    "avg_reg_total": 6.3
+   },
+   "last10_log": [
+    "20261025 @ Ottawa 67s 6-1 W",
+    "20261030 vs Peterborough Petes 4-1 W",
+    "20261101 vs Brantford Bulldogs 5-0 W",
+    "20261104 @ Ottawa 67s 3-1 W",
+    "20261106 vs Oshawa Generals 5-2 W",
+    "20261108 vs Windsor Spitfires 3-4 L",
+    "20261112 @ Peterborough Petes 2-7 L",
+    "20261113 vs Brampton Steelheads 1-4 L",
+    "20261115 @ Oshawa Generals 3-4 OTL",
+    "20261118 vs Ottawa 67s 6-2 W"
+   ],
+   "streak": "W1",
+   "last_game_date": "20261118",
+   "days_since_last": 2,
+   "last_was_b2b": false,
+   "rank_pts": 6
+  },
+  "Peterborough Petes": {
+   "gp": 21,
+   "w": 13,
+   "reg_wins": 9,
+   "ot_wins": 4,
+   "otl": 0,
+   "l": 8,
+   "pts": 26,
+   "reg_w": 9,
+   "reg_d": 4,
+   "reg_l": 8,
+   "gf_pg": 3.81,
+   "ga_pg": 3.1,
+   "avg_reg_total": 6.71,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.19,
+   "over_rate_reg": {
+    "4.5": 0.762,
+    "5.5": 0.667,
+    "6.5": 0.524
+   },
+   "home": {
+    "gp": 11,
+    "w": 9,
+    "reg_wins": 7,
+    "ot_wins": 2,
+    "otl": 0,
+    "l": 2,
+    "pts": 18,
+    "reg_w": 7,
+    "reg_d": 2,
+    "reg_l": 2,
+    "gf_pg": 4.55,
+    "ga_pg": 2.45,
+    "avg_reg_total": 6.82
+   },
+   "away": {
+    "gp": 10,
+    "w": 4,
+    "reg_wins": 2,
+    "ot_wins": 2,
+    "otl": 0,
+    "l": 6,
+    "pts": 8,
+    "reg_w": 2,
+    "reg_d": 2,
+    "reg_l": 6,
+    "gf_pg": 3.0,
+    "ga_pg": 3.8,
+    "avg_reg_total": 6.6
+   },
+   "last10": {
+    "gp": 10,
+    "w": 7,
+    "reg_wins": 5,
+    "ot_wins": 2,
+    "otl": 0,
+    "l": 3,
+    "pts": 14,
+    "reg_w": 5,
+    "reg_d": 2,
+    "reg_l": 3,
+    "gf_pg": 4.0,
+    "ga_pg": 2.8,
+    "avg_reg_total": 6.6
+   },
+   "last10_log": [
+    "20261023 @ Oshawa Generals 0-5 L",
+    "20261029 vs Brantford Bulldogs 4-3 W",
+    "20261030 @ Kingston Frontenacs 1-4 L",
+    "20261101 @ Niagara IceDogs 4-3 OTW",
+    "20261105 vs Windsor Spitfires 3-4 L",
+    "20261108 vs Niagara IceDogs 3-2 OTW",
+    "20261112 vs Kingston Frontenacs 7-2 W",
+    "20261113 @ Oshawa Generals 6-4 W",
+    "20261115 @ Brampton Steelheads 8-1 W",
+    "20261118 vs Brantford Bulldogs 4-0 W"
+   ],
+   "streak": "W5",
+   "last_game_date": "20261118",
+   "days_since_last": 2,
+   "last_was_b2b": false,
+   "rank_pts": 7
+  },
+  "Brantford Bulldogs": {
+   "gp": 20,
+   "w": 12,
+   "reg_wins": 11,
+   "ot_wins": 1,
+   "otl": 1,
+   "l": 7,
+   "pts": 25,
+   "reg_w": 11,
+   "reg_d": 2,
+   "reg_l": 7,
+   "gf_pg": 3.85,
+   "ga_pg": 3.05,
+   "avg_reg_total": 6.8,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.1,
+   "over_rate_reg": {
+    "4.5": 0.8,
+    "5.5": 0.7,
+    "6.5": 0.55
+   },
+   "home": {
+    "gp": 10,
+    "w": 7,
+    "reg_wins": 6,
+    "ot_wins": 1,
+    "otl": 1,
+    "l": 2,
+    "pts": 15,
+    "reg_w": 6,
+    "reg_d": 2,
+    "reg_l": 2,
+    "gf_pg": 4.8,
+    "ga_pg": 3.0,
+    "avg_reg_total": 7.6
+   },
+   "away": {
+    "gp": 10,
+    "w": 5,
+    "reg_wins": 5,
+    "ot_wins": 0,
+    "otl": 0,
+    "l": 5,
+    "pts": 10,
+    "reg_w": 5,
+    "reg_d": 0,
+    "reg_l": 5,
+    "gf_pg": 2.9,
+    "ga_pg": 3.1,
+    "avg_reg_total": 6.0
+   },
+   "last10": {
+    "gp": 10,
+    "w": 5,
+    "reg_wins": 5,
+    "ot_wins": 0,
+    "otl": 0,
+    "l": 5,
+    "pts": 10,
+    "reg_w": 5,
+    "reg_d": 0,
+    "reg_l": 5,
+    "gf_pg": 3.5,
+    "ga_pg": 3.2,
+    "avg_reg_total": 6.7
+   },
+   "last10_log": [
+    "20261023 @ Brampton Steelheads 8-2 W",
+    "20261024 vs Brampton Steelheads 2-4 L",
+    "20261029 @ Peterborough Petes 3-4 L",
+    "20261030 @ Ottawa 67s 3-1 W",
+    "20261101 @ Kingston Frontenacs 0-5 L",
+    "20261106 @ Sarnia Sting 3-2 W",
+    "20261108 @ Oshawa Generals 5-2 W",
+    "20261113 @ Guelph Storm 2-5 L",
+    "20261114 vs Oshawa Generals 9-3 W",
+    "20261118 @ Peterborough Petes 0-4 L"
+   ],
+   "streak": "L1",
+   "last_game_date": "20261118",
+   "days_since_last": 2,
+   "last_was_b2b": false,
+   "rank_pts": 8
+  },
+  "Sudbury Wolves": {
+   "gp": 20,
+   "w": 12,
+   "reg_wins": 10,
+   "ot_wins": 2,
+   "otl": 1,
+   "l": 7,
+   "pts": 25,
+   "reg_w": 10,
+   "reg_d": 3,
+   "reg_l": 7,
+   "gf_pg": 3.8,
+   "ga_pg": 3.2,
+   "avg_reg_total": 6.85,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.15,
+   "over_rate_reg": {
+    "4.5": 0.9,
+    "5.5": 0.8,
+    "6.5": 0.55
+   },
+   "home": {
+    "gp": 12,
+    "w": 8,
+    "reg_wins": 7,
+    "ot_wins": 1,
+    "otl": 0,
+    "l": 4,
+    "pts": 16,
+    "reg_w": 7,
+    "reg_d": 1,
+    "reg_l": 4,
+    "gf_pg": 4.33,
+    "ga_pg": 3.25,
+    "avg_reg_total": 7.5
+   },
+   "away": {
+    "gp": 8,
+    "w": 4,
+    "reg_wins": 3,
+    "ot_wins": 1,
+    "otl": 1,
+    "l": 3,
+    "pts": 9,
+    "reg_w": 3,
+    "reg_d": 2,
+    "reg_l": 3,
+    "gf_pg": 3.0,
+    "ga_pg": 3.12,
+    "avg_reg_total": 5.88
+   },
+   "last10": {
+    "gp": 10,
+    "w": 6,
+    "reg_wins": 4,
+    "ot_wins": 2,
+    "otl": 0,
+    "l": 4,
+    "pts": 12,
+    "reg_w": 4,
+    "reg_d": 2,
+    "reg_l": 4,
+    "gf_pg": 3.4,
+    "ga_pg": 3.3,
+    "avg_reg_total": 6.5
+   },
+   "last10_log": [
+    "20261025 @ Oshawa Generals 3-2 OTW",
+    "20261030 vs London Knights 4-3 OTW",
+    "20261101 vs Rouyn-Noranda Huskies 3-4 L",
+    "20261104 @ Barrie Colts 3-1 W",
+    "20261106 vs Soo Greyhounds 3-7 L",
+    "20261108 vs Barrie Colts 6-3 W",
+    "20261110 vs Soo Greyhounds 4-1 W",
+    "20261113 vs Sarnia Sting 4-2 W",
+    "20261115 @ North Bay Battalion 2-4 L",
+    "20261118 vs Kitchener Rangers 2-6 L"
+   ],
+   "streak": "L2",
+   "last_game_date": "20261118",
+   "days_since_last": 2,
+   "last_was_b2b": false,
+   "rank_pts": 9
+  },
+  "Erie Otters": {
+   "gp": 21,
+   "w": 10,
+   "reg_wins": 9,
+   "ot_wins": 1,
+   "otl": 3,
+   "l": 8,
+   "pts": 23,
+   "reg_w": 9,
+   "reg_d": 4,
+   "reg_l": 8,
+   "gf_pg": 3.24,
+   "ga_pg": 3.71,
+   "avg_reg_total": 6.76,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.19,
+   "over_rate_reg": {
+    "4.5": 0.81,
+    "5.5": 0.714,
+    "6.5": 0.571
+   },
+   "home": {
+    "gp": 8,
+    "w": 2,
+    "reg_wins": 2,
+    "ot_wins": 0,
+    "otl": 2,
+    "l": 4,
+    "pts": 6,
+    "reg_w": 2,
+    "reg_d": 2,
+    "reg_l": 4,
+    "gf_pg": 2.38,
+    "ga_pg": 4.0,
+    "avg_reg_total": 6.12
+   },
+   "away": {
+    "gp": 13,
+    "w": 8,
+    "reg_wins": 7,
+    "ot_wins": 1,
+    "otl": 1,
+    "l": 4,
+    "pts": 17,
+    "reg_w": 7,
+    "reg_d": 2,
+    "reg_l": 4,
+    "gf_pg": 3.77,
+    "ga_pg": 3.54,
+    "avg_reg_total": 7.15
+   },
+   "last10": {
+    "gp": 10,
+    "w": 6,
+    "reg_wins": 6,
+    "ot_wins": 0,
+    "otl": 1,
+    "l": 3,
+    "pts": 13,
+    "reg_w": 6,
+    "reg_d": 1,
+    "reg_l": 3,
+    "gf_pg": 4.0,
+    "ga_pg": 3.3,
+    "avg_reg_total": 7.2
+   },
+   "last10_log": [
+    "20261024 vs Niagara IceDogs 5-2 W",
+    "20261025 @ Brampton Steelheads 5-2 W",
+    "20261029 @ Windsor Spitfires 0-3 L",
+    "20261030 @ Sarnia Sting 4-3 W",
+    "20261104 @ Soo Greyhounds 7-0 W",
+    "20261106 @ Flint Firebirds 6-4 W",
+    "20261107 @ Saginaw Spirit 0-5 L",
+    "20261112 vs Kitchener Rangers 2-6 L",
+    "20261114 vs Niagara IceDogs 4-5 OTL",
+    "20261115 @ Niagara IceDogs 7-3 W"
+   ],
+   "streak": "W1",
+   "last_game_date": "20261115",
+   "days_since_last": 5,
+   "last_was_b2b": true,
+   "rank_pts": 10
+  },
+  "Ottawa 67s": {
+   "gp": 21,
+   "w": 10,
+   "reg_wins": 7,
+   "ot_wins": 3,
+   "otl": 2,
+   "l": 9,
+   "pts": 22,
+   "reg_w": 7,
+   "reg_d": 5,
+   "reg_l": 9,
+   "gf_pg": 3.1,
+   "ga_pg": 3.52,
+   "avg_reg_total": 6.38,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.238,
+   "over_rate_reg": {
+    "4.5": 0.667,
+    "5.5": 0.619,
+    "6.5": 0.429
+   },
+   "home": {
+    "gp": 8,
+    "w": 3,
+    "reg_wins": 2,
+    "ot_wins": 1,
+    "otl": 0,
+    "l": 5,
+    "pts": 6,
+    "reg_w": 2,
+    "reg_d": 1,
+    "reg_l": 5,
+    "gf_pg": 3.0,
+    "ga_pg": 4.0,
+    "avg_reg_total": 6.88
+   },
+   "away": {
+    "gp": 13,
+    "w": 7,
+    "reg_wins": 5,
+    "ot_wins": 2,
+    "otl": 2,
+    "l": 4,
+    "pts": 16,
+    "reg_w": 5,
+    "reg_d": 4,
+    "reg_l": 4,
+    "gf_pg": 3.15,
+    "ga_pg": 3.23,
+    "avg_reg_total": 6.08
+   },
+   "last10": {
+    "gp": 10,
+    "w": 3,
+    "reg_wins": 2,
+    "ot_wins": 1,
+    "otl": 0,
+    "l": 7,
+    "pts": 6,
+    "reg_w": 2,
+    "reg_d": 1,
+    "reg_l": 7,
+    "gf_pg": 2.5,
+    "ga_pg": 4.3,
+    "avg_reg_total": 6.7
+   },
+   "last10_log": [
+    "20261025 vs Kingston Frontenacs 1-6 L",
+    "20261028 vs Brampton Steelheads 5-2 W",
+    "20261030 vs Brantford Bulldogs 1-3 L",
+    "20261101 @ Oshawa Generals 7-6 OTW",
+    "20261104 vs Kingston Frontenacs 1-3 L",
+    "20261106 vs Windsor Spitfires 4-5 L",
+    "20261112 @ Saginaw Spirit 4-2 W",
+    "20261113 @ Flint Firebirds 0-4 L",
+    "20261115 @ Kitchener Rangers 0-6 L",
+    "20261118 @ Kingston Frontenacs 2-6 L"
+   ],
+   "streak": "L3",
+   "last_game_date": "20261118",
+   "days_since_last": 2,
+   "last_was_b2b": false,
+   "rank_pts": 11
+  },
+  "London Knights": {
+   "gp": 18,
+   "w": 9,
+   "reg_wins": 6,
+   "ot_wins": 3,
+   "otl": 3,
+   "l": 6,
+   "pts": 21,
+   "reg_w": 6,
+   "reg_d": 6,
+   "reg_l": 6,
+   "gf_pg": 4.06,
+   "ga_pg": 3.94,
+   "avg_reg_total": 7.67,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.333,
+   "over_rate_reg": {
+    "4.5": 1.0,
+    "5.5": 0.889,
+    "6.5": 0.611
+   },
+   "home": {
+    "gp": 8,
+    "w": 5,
+    "reg_wins": 5,
+    "ot_wins": 0,
+    "otl": 1,
+    "l": 2,
+    "pts": 11,
+    "reg_w": 5,
+    "reg_d": 1,
+    "reg_l": 2,
+    "gf_pg": 4.12,
+    "ga_pg": 3.62,
+    "avg_reg_total": 7.62
+   },
+   "away": {
+    "gp": 10,
+    "w": 4,
+    "reg_wins": 1,
+    "ot_wins": 3,
+    "otl": 2,
+    "l": 4,
+    "pts": 10,
+    "reg_w": 1,
+    "reg_d": 5,
+    "reg_l": 4,
+    "gf_pg": 4.0,
+    "ga_pg": 4.2,
+    "avg_reg_total": 7.7
+   },
+   "last10": {
+    "gp": 10,
+    "w": 4,
+    "reg_wins": 2,
+    "ot_wins": 2,
+    "otl": 2,
+    "l": 4,
+    "pts": 10,
+    "reg_w": 2,
+    "reg_d": 4,
+    "reg_l": 4,
+    "gf_pg": 3.8,
+    "ga_pg": 4.4,
+    "avg_reg_total": 7.8
+   },
+   "last10_log": [
+    "20261023 vs Sarnia Sting 6-4 W",
+    "20261024 @ Owen Sound Attack 1-5 L",
+    "20261029 @ North Bay Battalion 5-4 OTW",
+    "20261030 @ Sudbury Wolves 3-4 OTL",
+    "20261101 @ Soo Greyhounds 5-4 OTW",
+    "20261106 vs Saginaw Spirit 5-3 W",
+    "20261108 @ Sarnia Sting 2-4 L",
+    "20261111 vs Guelph Storm 2-5 L",
+    "20261113 @ Soo Greyhounds 4-5 OTL",
+    "20261114 @ Saginaw Spirit 5-6 L"
+   ],
+   "streak": "L4",
+   "last_game_date": "20261114",
+   "days_since_last": 6,
+   "last_was_b2b": true,
+   "rank_pts": 12
+  },
+  "Saginaw Spirit": {
+   "gp": 21,
+   "w": 9,
+   "reg_wins": 7,
+   "ot_wins": 2,
+   "otl": 3,
+   "l": 9,
+   "pts": 21,
+   "reg_w": 7,
+   "reg_d": 5,
+   "reg_l": 9,
+   "gf_pg": 3.52,
+   "ga_pg": 3.48,
+   "avg_reg_total": 6.76,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.238,
+   "over_rate_reg": {
+    "4.5": 0.762,
+    "5.5": 0.714,
+    "6.5": 0.524
+   },
+   "home": {
+    "gp": 12,
+    "w": 6,
+    "reg_wins": 6,
+    "ot_wins": 0,
+    "otl": 1,
+    "l": 5,
+    "pts": 13,
+    "reg_w": 6,
+    "reg_d": 1,
+    "reg_l": 5,
+    "gf_pg": 3.75,
+    "ga_pg": 3.42,
+    "avg_reg_total": 7.08
+   },
+   "away": {
+    "gp": 9,
+    "w": 3,
+    "reg_wins": 1,
+    "ot_wins": 2,
+    "otl": 2,
+    "l": 4,
+    "pts": 8,
+    "reg_w": 1,
+    "reg_d": 4,
+    "reg_l": 4,
+    "gf_pg": 3.22,
+    "ga_pg": 3.56,
+    "avg_reg_total": 6.33
+   },
+   "last10": {
+    "gp": 10,
+    "w": 3,
+    "reg_wins": 3,
+    "ot_wins": 0,
+    "otl": 1,
+    "l": 6,
+    "pts": 7,
+    "reg_w": 3,
+    "reg_d": 1,
+    "reg_l": 6,
+    "gf_pg": 3.1,
+    "ga_pg": 3.6,
+    "avg_reg_total": 6.6
+   },
+   "last10_log": [
+    "20261028 @ Soo Greyhounds 2-5 L",
+    "20261030 vs Barrie Colts 0-2 L",
+    "20261031 vs Guelph Storm 3-5 L",
+    "20261106 @ London Knights 3-5 L",
+    "20261107 vs Erie Otters 5-0 W",
+    "20261108 vs Brampton Steelheads 6-4 W",
+    "20261112 vs Ottawa 67s 2-4 L",
+    "20261114 vs London Knights 6-5 W",
+    "20261115 @ Windsor Spitfires 1-2 OTL",
+    "20261119 @ Niagara IceDogs 3-4 L"
+   ],
+   "streak": "L2",
+   "last_game_date": "20261119",
+   "days_since_last": 1,
+   "last_was_b2b": false,
+   "rank_pts": 13
+  },
+  "Niagara IceDogs": {
+   "gp": 19,
+   "w": 8,
+   "reg_wins": 4,
+   "ot_wins": 4,
+   "otl": 3,
+   "l": 8,
+   "pts": 19,
+   "reg_w": 4,
+   "reg_d": 7,
+   "reg_l": 8,
+   "gf_pg": 3.05,
+   "ga_pg": 4.11,
+   "avg_reg_total": 6.79,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.368,
+   "over_rate_reg": {
+    "4.5": 0.842,
+    "5.5": 0.789,
+    "6.5": 0.632
+   },
+   "home": {
+    "gp": 9,
+    "w": 4,
+    "reg_wins": 2,
+    "ot_wins": 2,
+    "otl": 2,
+    "l": 3,
+    "pts": 10,
+    "reg_w": 2,
+    "reg_d": 4,
+    "reg_l": 3,
+    "gf_pg": 3.33,
+    "ga_pg": 4.22,
+    "avg_reg_total": 7.11
+   },
+   "away": {
+    "gp": 10,
+    "w": 4,
+    "reg_wins": 2,
+    "ot_wins": 2,
+    "otl": 1,
+    "l": 5,
+    "pts": 9,
+    "reg_w": 2,
+    "reg_d": 3,
+    "reg_l": 5,
+    "gf_pg": 2.8,
+    "ga_pg": 4.0,
+    "avg_reg_total": 6.5
+   },
+   "last10": {
+    "gp": 10,
+    "w": 3,
+    "reg_wins": 1,
+    "ot_wins": 2,
+    "otl": 2,
+    "l": 5,
+    "pts": 8,
+    "reg_w": 1,
+    "reg_d": 4,
+    "reg_l": 5,
+    "gf_pg": 3.0,
+    "ga_pg": 4.6,
+    "avg_reg_total": 7.2
+   },
+   "last10_log": [
+    "20261023 vs Erie Otters 4-3 OTW",
+    "20261024 @ Erie Otters 2-5 L",
+    "20261030 vs North Bay Battalion 3-7 L",
+    "20261101 vs Peterborough Petes 3-4 OTL",
+    "20261105 vs Brampton Steelheads 3-6 L",
+    "20261108 @ Peterborough Petes 2-3 OTL",
+    "20261112 @ Windsor Spitfires 1-4 L",
+    "20261114 @ Erie Otters 5-4 OTW",
+    "20261115 vs Erie Otters 3-7 L",
+    "20261119 vs Saginaw Spirit 4-3 W"
+   ],
+   "streak": "W1",
+   "last_game_date": "20261119",
+   "days_since_last": 1,
+   "last_was_b2b": false,
+   "rank_pts": 14
+  },
+  "North Bay Battalion": {
+   "gp": 21,
+   "w": 8,
+   "reg_wins": 7,
+   "ot_wins": 1,
+   "otl": 2,
+   "l": 11,
+   "pts": 18,
+   "reg_w": 7,
+   "reg_d": 3,
+   "reg_l": 11,
+   "gf_pg": 3.57,
+   "ga_pg": 4.0,
+   "avg_reg_total": 7.43,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.143,
+   "over_rate_reg": {
+    "4.5": 0.905,
+    "5.5": 0.81,
+    "6.5": 0.571
+   },
+   "home": {
+    "gp": 9,
+    "w": 5,
+    "reg_wins": 4,
+    "ot_wins": 1,
+    "otl": 1,
+    "l": 3,
+    "pts": 11,
+    "reg_w": 4,
+    "reg_d": 2,
+    "reg_l": 3,
+    "gf_pg": 3.44,
+    "ga_pg": 2.89,
+    "avg_reg_total": 6.11
+   },
+   "away": {
+    "gp": 12,
+    "w": 3,
+    "reg_wins": 3,
+    "ot_wins": 0,
+    "otl": 1,
+    "l": 8,
+    "pts": 7,
+    "reg_w": 3,
+    "reg_d": 1,
+    "reg_l": 8,
+    "gf_pg": 3.67,
+    "ga_pg": 4.83,
+    "avg_reg_total": 8.42
+   },
+   "last10": {
+    "gp": 10,
+    "w": 5,
+    "reg_wins": 5,
+    "ot_wins": 0,
+    "otl": 2,
+    "l": 3,
+    "pts": 12,
+    "reg_w": 5,
+    "reg_d": 2,
+    "reg_l": 3,
+    "gf_pg": 4.2,
+    "ga_pg": 4.0,
+    "avg_reg_total": 8.0
+   },
+   "last10_log": [
+    "20261023 @ Sudbury Wolves 5-3 W",
+    "20261024 @ Barrie Colts 7-4 W",
+    "20261029 vs London Knights 4-5 OTL",
+    "20261030 @ Niagara IceDogs 7-3 W",
+    "20261101 vs Val-d'Or Foreurs 2-4 L",
+    "20261106 @ Kitchener Rangers 2-5 L",
+    "20261107 @ Guelph Storm 6-10 L",
+    "20261112 vs Sarnia Sting 2-0 W",
+    "20261115 vs Sudbury Wolves 4-2 W",
+    "20261118 @ Owen Sound Attack 3-4 OTL"
+   ],
+   "streak": "L1",
+   "last_game_date": "20261118",
+   "days_since_last": 2,
+   "last_was_b2b": false,
+   "rank_pts": 15
+  },
+  "Owen Sound Attack": {
+   "gp": 20,
+   "w": 7,
+   "reg_wins": 5,
+   "ot_wins": 2,
+   "otl": 4,
+   "l": 9,
+   "pts": 18,
+   "reg_w": 5,
+   "reg_d": 6,
+   "reg_l": 9,
+   "gf_pg": 2.85,
+   "ga_pg": 4.15,
+   "avg_reg_total": 6.7,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.3,
+   "over_rate_reg": {
+    "4.5": 0.8,
+    "5.5": 0.6,
+    "6.5": 0.35
+   },
+   "home": {
+    "gp": 12,
+    "w": 6,
+    "reg_wins": 4,
+    "ot_wins": 2,
+    "otl": 2,
+    "l": 4,
+    "pts": 14,
+    "reg_w": 4,
+    "reg_d": 4,
+    "reg_l": 4,
+    "gf_pg": 3.0,
+    "ga_pg": 3.92,
+    "avg_reg_total": 6.58
+   },
+   "away": {
+    "gp": 8,
+    "w": 1,
+    "reg_wins": 1,
+    "ot_wins": 0,
+    "otl": 2,
+    "l": 5,
+    "pts": 4,
+    "reg_w": 1,
+    "reg_d": 2,
+    "reg_l": 5,
+    "gf_pg": 2.62,
+    "ga_pg": 4.5,
+    "avg_reg_total": 6.88
+   },
+   "last10": {
+    "gp": 10,
+    "w": 5,
+    "reg_wins": 3,
+    "ot_wins": 2,
+    "otl": 3,
+    "l": 2,
+    "pts": 13,
+    "reg_w": 3,
+    "reg_d": 5,
+    "reg_l": 2,
+    "gf_pg": 3.1,
+    "ga_pg": 3.5,
+    "avg_reg_total": 6.1
+   },
+   "last10_log": [
+    "20261024 vs London Knights 5-1 W",
+    "20261025 vs Barrie Colts 5-4 OTW",
+    "20261028 vs Sarnia Sting 4-3 W",
+    "20261031 vs Windsor Spitfires 0-8 L",
+    "20261104 @ Sarnia Sting 4-5 L",
+    "20261106 @ Guelph Storm 1-2 OTL",
+    "20261107 vs Kitchener Rangers 2-3 OTL",
+    "20261111 vs Barrie Colts 3-4 OTL",
+    "20261114 vs Guelph Storm 3-2 W",
+    "20261118 vs North Bay Battalion 4-3 OTW"
+   ],
+   "streak": "W2",
+   "last_game_date": "20261118",
+   "days_since_last": 2,
+   "last_was_b2b": false,
+   "rank_pts": 16
+  },
+  "Oshawa Generals": {
+   "gp": 21,
+   "w": 6,
+   "reg_wins": 5,
+   "ot_wins": 1,
+   "otl": 5,
+   "l": 10,
+   "pts": 17,
+   "reg_w": 5,
+   "reg_d": 6,
+   "reg_l": 10,
+   "gf_pg": 3.05,
+   "ga_pg": 3.9,
+   "avg_reg_total": 6.67,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.286,
+   "over_rate_reg": {
+    "4.5": 0.762,
+    "5.5": 0.667,
+    "6.5": 0.476
+   },
+   "home": {
+    "gp": 11,
+    "w": 3,
+    "reg_wins": 2,
+    "ot_wins": 1,
+    "otl": 2,
+    "l": 6,
+    "pts": 8,
+    "reg_w": 2,
+    "reg_d": 3,
+    "reg_l": 6,
+    "gf_pg": 3.18,
+    "ga_pg": 3.64,
+    "avg_reg_total": 6.55
+   },
+   "away": {
+    "gp": 10,
+    "w": 3,
+    "reg_wins": 3,
+    "ot_wins": 0,
+    "otl": 3,
+    "l": 4,
+    "pts": 9,
+    "reg_w": 3,
+    "reg_d": 3,
+    "reg_l": 4,
+    "gf_pg": 2.9,
+    "ga_pg": 4.2,
+    "avg_reg_total": 6.8
+   },
+   "last10": {
+    "gp": 10,
+    "w": 3,
+    "reg_wins": 2,
+    "ot_wins": 1,
+    "otl": 3,
+    "l": 4,
+    "pts": 9,
+    "reg_w": 2,
+    "reg_d": 4,
+    "reg_l": 4,
+    "gf_pg": 3.7,
+    "ga_pg": 4.5,
+    "avg_reg_total": 7.8
+   },
+   "last10_log": [
+    "20261022 @ Peterborough Petes 4-5 OTL",
+    "20261023 vs Peterborough Petes 5-0 W",
+    "20261025 vs Sudbury Wolves 2-3 OTL",
+    "20261030 @ Brampton Steelheads 5-2 W",
+    "20261101 vs Ottawa 67s 6-7 OTL",
+    "20261106 @ Kingston Frontenacs 2-5 L",
+    "20261108 vs Brantford Bulldogs 2-5 L",
+    "20261113 vs Peterborough Petes 4-6 L",
+    "20261114 @ Brantford Bulldogs 3-9 L",
+    "20261115 vs Kingston Frontenacs 4-3 OTW"
+   ],
+   "streak": "W1",
+   "last_game_date": "20261115",
+   "days_since_last": 5,
+   "last_was_b2b": true,
+   "rank_pts": 17
+  },
+  "Sarnia Sting": {
+   "gp": 22,
+   "w": 7,
+   "reg_wins": 7,
+   "ot_wins": 0,
+   "otl": 2,
+   "l": 13,
+   "pts": 16,
+   "reg_w": 7,
+   "reg_d": 2,
+   "reg_l": 13,
+   "gf_pg": 3.55,
+   "ga_pg": 4.18,
+   "avg_reg_total": 7.64,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.091,
+   "over_rate_reg": {
+    "4.5": 0.864,
+    "5.5": 0.818,
+    "6.5": 0.636
+   },
+   "home": {
+    "gp": 10,
+    "w": 4,
+    "reg_wins": 4,
+    "ot_wins": 0,
+    "otl": 1,
+    "l": 5,
+    "pts": 9,
+    "reg_w": 4,
+    "reg_d": 1,
+    "reg_l": 5,
+    "gf_pg": 3.2,
+    "ga_pg": 4.0,
+    "avg_reg_total": 7.1
+   },
+   "away": {
+    "gp": 12,
+    "w": 3,
+    "reg_wins": 3,
+    "ot_wins": 0,
+    "otl": 1,
+    "l": 8,
+    "pts": 7,
+    "reg_w": 3,
+    "reg_d": 1,
+    "reg_l": 8,
+    "gf_pg": 3.83,
+    "ga_pg": 4.33,
+    "avg_reg_total": 8.08
+   },
+   "last10": {
+    "gp": 10,
+    "w": 2,
+    "reg_wins": 2,
+    "ot_wins": 0,
+    "otl": 1,
+    "l": 7,
+    "pts": 5,
+    "reg_w": 2,
+    "reg_d": 1,
+    "reg_l": 7,
+    "gf_pg": 2.8,
+    "ga_pg": 3.9,
+    "avg_reg_total": 6.6
+   },
+   "last10_log": [
+    "20261023 @ London Knights 4-6 L",
+    "20261028 @ Owen Sound Attack 3-4 L",
+    "20261030 vs Erie Otters 3-4 L",
+    "20261101 vs Flint Firebirds 1-5 L",
+    "20261104 vs Owen Sound Attack 5-4 W",
+    "20261106 vs Brantford Bulldogs 2-3 L",
+    "20261108 vs London Knights 4-2 W",
+    "20261112 @ North Bay Battalion 0-2 L",
+    "20261113 @ Sudbury Wolves 2-4 L",
+    "20261115 @ Soo Greyhounds 4-5 OTL"
+   ],
+   "streak": "L3",
+   "last_game_date": "20261115",
+   "days_since_last": 5,
+   "last_was_b2b": false,
+   "rank_pts": 18
+  },
+  "Barrie Colts": {
+   "gp": 21,
+   "w": 5,
+   "reg_wins": 2,
+   "ot_wins": 3,
+   "otl": 3,
+   "l": 13,
+   "pts": 13,
+   "reg_w": 2,
+   "reg_d": 6,
+   "reg_l": 13,
+   "gf_pg": 2.48,
+   "ga_pg": 3.86,
+   "avg_reg_total": 6.05,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.286,
+   "over_rate_reg": {
+    "4.5": 0.762,
+    "5.5": 0.714,
+    "6.5": 0.333
+   },
+   "home": {
+    "gp": 9,
+    "w": 3,
+    "reg_wins": 1,
+    "ot_wins": 2,
+    "otl": 1,
+    "l": 5,
+    "pts": 7,
+    "reg_w": 1,
+    "reg_d": 3,
+    "reg_l": 5,
+    "gf_pg": 3.0,
+    "ga_pg": 4.22,
+    "avg_reg_total": 6.89
+   },
+   "away": {
+    "gp": 12,
+    "w": 2,
+    "reg_wins": 1,
+    "ot_wins": 1,
+    "otl": 2,
+    "l": 8,
+    "pts": 6,
+    "reg_w": 1,
+    "reg_d": 3,
+    "reg_l": 8,
+    "gf_pg": 2.08,
+    "ga_pg": 3.58,
+    "avg_reg_total": 5.42
+   },
+   "last10": {
+    "gp": 10,
+    "w": 3,
+    "reg_wins": 1,
+    "ot_wins": 2,
+    "otl": 2,
+    "l": 5,
+    "pts": 8,
+    "reg_w": 1,
+    "reg_d": 4,
+    "reg_l": 5,
+    "gf_pg": 2.6,
+    "ga_pg": 3.6,
+    "avg_reg_total": 5.8
+   },
+   "last10_log": [
+    "20261025 @ Owen Sound Attack 4-5 OTL",
+    "20261030 @ Saginaw Spirit 2-0 W",
+    "20261031 @ Flint Firebirds 3-4 OTL",
+    "20261104 vs Sudbury Wolves 1-3 L",
+    "20261107 @ Soo Greyhounds 1-2 L",
+    "20261108 @ Sudbury Wolves 3-6 L",
+    "20261111 @ Owen Sound Attack 4-3 OTW",
+    "20261113 @ Kitchener Rangers 2-4 L",
+    "20261114 vs Brampton Steelheads 4-3 OTW",
+    "20261119 vs Flint Firebirds 2-6 L"
+   ],
+   "streak": "L1",
+   "last_game_date": "20261119",
+   "days_since_last": 1,
+   "last_was_b2b": false,
+   "rank_pts": 19
+  },
+  "Brampton Steelheads": {
+   "gp": 20,
+   "w": 5,
+   "reg_wins": 5,
+   "ot_wins": 0,
+   "otl": 3,
+   "l": 12,
+   "pts": 13,
+   "reg_w": 5,
+   "reg_d": 3,
+   "reg_l": 12,
+   "gf_pg": 2.85,
+   "ga_pg": 4.45,
+   "avg_reg_total": 7.15,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.15,
+   "over_rate_reg": {
+    "4.5": 0.9,
+    "5.5": 0.85,
+    "6.5": 0.65
+   },
+   "home": {
+    "gp": 9,
+    "w": 1,
+    "reg_wins": 1,
+    "ot_wins": 0,
+    "otl": 1,
+    "l": 7,
+    "pts": 3,
+    "reg_w": 1,
+    "reg_d": 1,
+    "reg_l": 7,
+    "gf_pg": 2.0,
+    "ga_pg": 4.89,
+    "avg_reg_total": 6.78
+   },
+   "away": {
+    "gp": 11,
+    "w": 4,
+    "reg_wins": 4,
+    "ot_wins": 0,
+    "otl": 2,
+    "l": 5,
+    "pts": 10,
+    "reg_w": 4,
+    "reg_d": 2,
+    "reg_l": 5,
+    "gf_pg": 3.55,
+    "ga_pg": 4.09,
+    "avg_reg_total": 7.45
+   },
+   "last10": {
+    "gp": 10,
+    "w": 3,
+    "reg_wins": 3,
+    "ot_wins": 0,
+    "otl": 1,
+    "l": 6,
+    "pts": 7,
+    "reg_w": 3,
+    "reg_d": 1,
+    "reg_l": 6,
+    "gf_pg": 2.9,
+    "ga_pg": 4.4,
+    "avg_reg_total": 7.2
+   },
+   "last10_log": [
+    "20261025 vs Erie Otters 2-5 L",
+    "20261028 @ Ottawa 67s 2-5 L",
+    "20261030 vs Oshawa Generals 2-5 L",
+    "20261101 vs Windsor Spitfires 0-3 L",
+    "20261105 @ Niagara IceDogs 6-3 W",
+    "20261107 @ Flint Firebirds 5-4 W",
+    "20261108 @ Saginaw Spirit 4-6 L",
+    "20261113 @ Kingston Frontenacs 4-1 W",
+    "20261114 @ Barrie Colts 3-4 OTL",
+    "20261115 vs Peterborough Petes 1-8 L"
+   ],
+   "streak": "L2",
+   "last_game_date": "20261115",
+   "days_since_last": 5,
+   "last_was_b2b": true,
+   "rank_pts": 20
+  },
+  "Val-d'Or Foreurs": {
+   "gp": 1,
+   "w": 1,
+   "reg_wins": 1,
+   "ot_wins": 0,
+   "otl": 0,
+   "l": 0,
+   "pts": 2,
+   "reg_w": 1,
+   "reg_d": 0,
+   "reg_l": 0,
+   "gf_pg": 4.0,
+   "ga_pg": 2.0,
+   "avg_reg_total": 6.0,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.0,
+   "over_rate_reg": {
+    "4.5": 1.0,
+    "5.5": 1.0,
+    "6.5": 0.0
+   },
+   "home": {
+    "gp": 0
+   },
+   "away": {
+    "gp": 1,
+    "w": 1,
+    "reg_wins": 1,
+    "ot_wins": 0,
+    "otl": 0,
+    "l": 0,
+    "pts": 2,
+    "reg_w": 1,
+    "reg_d": 0,
+    "reg_l": 0,
+    "gf_pg": 4.0,
+    "ga_pg": 2.0,
+    "avg_reg_total": 6.0
+   },
+   "last10": {
+    "gp": 1,
+    "w": 1,
+    "reg_wins": 1,
+    "ot_wins": 0,
+    "otl": 0,
+    "l": 0,
+    "pts": 2,
+    "reg_w": 1,
+    "reg_d": 0,
+    "reg_l": 0,
+    "gf_pg": 4.0,
+    "ga_pg": 2.0,
+    "avg_reg_total": 6.0
+   },
+   "last10_log": [
+    "20261101 @ North Bay Battalion 4-2 W"
+   ],
+   "streak": "W1",
+   "last_game_date": "20261101",
+   "days_since_last": 19,
+   "last_was_b2b": false,
+   "rank_pts": 21
+  },
+  "Rouyn-Noranda Huskies": {
+   "gp": 1,
+   "w": 1,
+   "reg_wins": 1,
+   "ot_wins": 0,
+   "otl": 0,
+   "l": 0,
+   "pts": 2,
+   "reg_w": 1,
+   "reg_d": 0,
+   "reg_l": 0,
+   "gf_pg": 4.0,
+   "ga_pg": 3.0,
+   "avg_reg_total": 7.0,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.0,
+   "over_rate_reg": {
+    "4.5": 1.0,
+    "5.5": 1.0,
+    "6.5": 1.0
+   },
+   "home": {
+    "gp": 0
+   },
+   "away": {
+    "gp": 1,
+    "w": 1,
+    "reg_wins": 1,
+    "ot_wins": 0,
+    "otl": 0,
+    "l": 0,
+    "pts": 2,
+    "reg_w": 1,
+    "reg_d": 0,
+    "reg_l": 0,
+    "gf_pg": 4.0,
+    "ga_pg": 3.0,
+    "avg_reg_total": 7.0
+   },
+   "last10": {
+    "gp": 1,
+    "w": 1,
+    "reg_wins": 1,
+    "ot_wins": 0,
+    "otl": 0,
+    "l": 0,
+    "pts": 2,
+    "reg_w": 1,
+    "reg_d": 0,
+    "reg_l": 0,
+    "gf_pg": 4.0,
+    "ga_pg": 3.0,
+    "avg_reg_total": 7.0
+   },
+   "last10_log": [
+    "20261101 @ Sudbury Wolves 4-3 W"
+   ],
+   "streak": "W1",
+   "last_game_date": "20261101",
+   "days_since_last": 19,
+   "last_was_b2b": false,
+   "rank_pts": 22
+  }
+ },
+ "goalies": {},
+ "leaders": {
+  "Kingston Frontenacs": [
+   {
+    "name": "Misiak A.",
+    "g": 9,
+    "a": 16,
+    "pts": 25
+   },
+   {
+    "name": "Pobezal T.",
+    "g": 6,
+    "a": 19,
+    "pts": 25
+   },
+   {
+    "name": "Wright L.",
+    "g": 7,
+    "a": 15,
+    "pts": 22
+   },
+   {
+    "name": "Snyder N.",
+    "g": 10,
+    "a": 10,
+    "pts": 20
+   },
+   {
+    "name": "Kulemin A.",
+    "g": 8,
+    "a": 12,
+    "pts": 20
+   },
+   {
+    "name": "Mclean A.",
+    "g": 6,
+    "a": 14,
+    "pts": 20
+   }
+  ],
+  "Ottawa 67s": [
+   {
+    "name": "Bowes S.",
+    "g": 16,
+    "a": 11,
+    "pts": 27
+   },
+   {
+    "name": "Ekberg F.",
+    "g": 6,
+    "a": 15,
+    "pts": 21
+   },
+   {
+    "name": "Yanni C.",
+    "g": 4,
+    "a": 14,
+    "pts": 18
+   },
+   {
+    "name": "Ruml O.",
+    "g": 8,
+    "a": 8,
+    "pts": 16
+   },
+   {
+    "name": "Chitaroni B.",
+    "g": 4,
+    "a": 10,
+    "pts": 14
+   },
+   {
+    "name": "Whitehead N.",
+    "g": 6,
+    "a": 7,
+    "pts": 13
+   }
+  ],
+  "Oshawa Generals": [
+   {
+    "name": "Hinde T.",
+    "g": 8,
+    "a": 11,
+    "pts": 19
+   },
+   {
+    "name": "Rogowski B.",
+    "g": 4,
+    "a": 15,
+    "pts": 19
+   },
+   {
+    "name": "O'Donnell A.",
+    "g": 4,
+    "a": 12,
+    "pts": 16
+   },
+   {
+    "name": "Kalto O.",
+    "g": 7,
+    "a": 7,
+    "pts": 14
+   },
+   {
+    "name": "Hedley R.",
+    "g": 5,
+    "a": 7,
+    "pts": 12
+   },
+   {
+    "name": "Pape M.",
+    "g": 7,
+    "a": 4,
+    "pts": 11
+   }
+  ],
+  "North Bay Battalion": [
+   {
+    "name": "Dubrovtsev Y.",
+    "g": 16,
+    "a": 6,
+    "pts": 22
+   },
+   {
+    "name": "Moses S.",
+    "g": 8,
+    "a": 12,
+    "pts": 20
+   },
+   {
+    "name": "Vaughan P.",
+    "g": 4,
+    "a": 16,
+    "pts": 20
+   },
+   {
+    "name": "Warren C.",
+    "g": 6,
+    "a": 13,
+    "pts": 19
+   },
+   {
+    "name": "Pronin A.",
+    "g": 13,
+    "a": 5,
+    "pts": 18
+   },
+   {
+    "name": "Carey R.",
+    "g": 7,
+    "a": 6,
+    "pts": 13
+   }
+  ],
+  "Brampton Steelheads": [
+   {
+    "name": "Amidovski N.",
+    "g": 11,
+    "a": 10,
+    "pts": 21
+   },
+   {
+    "name": "Carcone G.",
+    "g": 5,
+    "a": 13,
+    "pts": 18
+   },
+   {
+    "name": "Kuryachenkov S.",
+    "g": 8,
+    "a": 6,
+    "pts": 14
+   },
+   {
+    "name": "Green P.",
+    "g": 1,
+    "a": 12,
+    "pts": 13
+   },
+   {
+    "name": "Patton T.",
+    "g": 7,
+    "a": 3,
+    "pts": 10
+   },
+   {
+    "name": "Witkowski K.",
+    "g": 5,
+    "a": 5,
+    "pts": 10
+   }
+  ],
+  "Sarnia Sting": [
+   {
+    "name": "Walos E.",
+    "g": 12,
+    "a": 16,
+    "pts": 28
+   },
+   {
+    "name": "Van Volsen J.",
+    "g": 7,
+    "a": 15,
+    "pts": 22
+   },
+   {
+    "name": "Di Iorio A.",
+    "g": 10,
+    "a": 10,
+    "pts": 20
+   },
+   {
+    "name": "Hawery L.",
+    "g": 3,
+    "a": 15,
+    "pts": 18
+   },
+   {
+    "name": "Aucoin C.",
+    "g": 5,
+    "a": 12,
+    "pts": 17
+   },
+   {
+    "name": "Emerton C.",
+    "g": 1,
+    "a": 16,
+    "pts": 17
+   }
+  ],
+  "Peterborough Petes": [
+   {
+    "name": "Novotny A.",
+    "g": 14,
+    "a": 14,
+    "pts": 28
+   },
+   {
+    "name": "Dennis C.",
+    "g": 11,
+    "a": 16,
+    "pts": 27
+   },
+   {
+    "name": "Levac A.",
+    "g": 9,
+    "a": 16,
+    "pts": 25
+   },
+   {
+    "name": "Kolarik L.",
+    "g": 9,
+    "a": 9,
+    "pts": 18
+   },
+   {
+    "name": "McCallum B.",
+    "g": 4,
+    "a": 12,
+    "pts": 16
+   },
+   {
+    "name": "Lutz Y.",
+    "g": 3,
+    "a": 11,
+    "pts": 14
+   }
+  ],
+  "Brantford Bulldogs": [
+   {
+    "name": "Kelly A.",
+    "g": 8,
+    "a": 12,
+    "pts": 20
+   },
+   {
+    "name": "Musa J.",
+    "g": 7,
+    "a": 12,
+    "pts": 19
+   },
+   {
+    "name": "McCuaig C.",
+    "g": 6,
+    "a": 11,
+    "pts": 17
+   },
+   {
+    "name": "Buchman D.",
+    "g": 2,
+    "a": 13,
+    "pts": 15
+   },
+   {
+    "name": "McGregor K.",
+    "g": 7,
+    "a": 7,
+    "pts": 14
+   },
+   {
+    "name": "McCrate C.",
+    "g": 4,
+    "a": 7,
+    "pts": 11
+   }
+  ],
+  "Erie Otters": [
+   {
+    "name": "Dec M.",
+    "g": 15,
+    "a": 18,
+    "pts": 33
+   },
+   {
+    "name": "Agrette M.",
+    "g": 9,
+    "a": 22,
+    "pts": 31
+   },
+   {
+    "name": "McArthur B.",
+    "g": 3,
+    "a": 12,
+    "pts": 15
+   },
+   {
+    "name": "Arkko L.",
+    "g": 8,
+    "a": 6,
+    "pts": 14
+   },
+   {
+    "name": "Beamish L.",
+    "g": 8,
+    "a": 5,
+    "pts": 13
+   },
+   {
+    "name": "Headrick E.",
+    "g": 5,
+    "a": 7,
+    "pts": 12
+   }
+  ],
+  "Kitchener Rangers": [
+   {
+    "name": "Arquette C.",
+    "g": 18,
+    "a": 13,
+    "pts": 31
+   },
+   {
+    "name": "Lam T.",
+    "g": 9,
+    "a": 18,
+    "pts": 27
+   },
+   {
+    "name": "Romano L.",
+    "g": 9,
+    "a": 16,
+    "pts": 25
+   },
+   {
+    "name": "Bilecki A.",
+    "g": 4,
+    "a": 21,
+    "pts": 25
+   },
+   {
+    "name": "Santala L.",
+    "g": 11,
+    "a": 7,
+    "pts": 18
+   },
+   {
+    "name": "Ellis H.",
+    "g": 8,
+    "a": 10,
+    "pts": 18
+   }
+  ],
+  "Owen Sound Attack": [
+   {
+    "name": "Mbuyi P.",
+    "g": 14,
+    "a": 12,
+    "pts": 26
+   },
+   {
+    "name": "Delisle M.",
+    "g": 8,
+    "a": 14,
+    "pts": 22
+   },
+   {
+    "name": "Banks J.",
+    "g": 1,
+    "a": 16,
+    "pts": 17
+   },
+   {
+    "name": "Nansi H.",
+    "g": 6,
+    "a": 9,
+    "pts": 15
+   },
+   {
+    "name": "Bernat L.",
+    "g": 4,
+    "a": 8,
+    "pts": 12
+   },
+   {
+    "name": "Crawford J.",
+    "g": 4,
+    "a": 6,
+    "pts": 10
+   }
+  ],
+  "London Knights": [
+   {
+    "name": "Brown R.",
+    "g": 5,
+    "a": 21,
+    "pts": 26
+   },
+   {
+    "name": "Zocco T.",
+    "g": 10,
+    "a": 13,
+    "pts": 23
+   },
+   {
+    "name": "Nordmark M.",
+    "g": 11,
+    "a": 10,
+    "pts": 21
+   },
+   {
+    "name": "Bidgood C.",
+    "g": 9,
+    "a": 10,
+    "pts": 19
+   },
+   {
+    "name": "Cover J.",
+    "g": 9,
+    "a": 8,
+    "pts": 17
+   },
+   {
+    "name": "McAslan C.",
+    "g": 2,
+    "a": 15,
+    "pts": 17
+   }
+  ],
+  "Saginaw Spirit": [
+   {
+    "name": "Zhilkin D.",
+    "g": 15,
+    "a": 16,
+    "pts": 31
+   },
+   {
+    "name": "Wassilyn B.",
+    "g": 11,
+    "a": 17,
+    "pts": 28
+   },
+   {
+    "name": "Pepoy B.",
+    "g": 12,
+    "a": 8,
+    "pts": 20
+   },
+   {
+    "name": "Cloutier J.",
+    "g": 7,
+    "a": 11,
+    "pts": 18
+   },
+   {
+    "name": "Harper L.",
+    "g": 4,
+    "a": 13,
+    "pts": 17
+   },
+   {
+    "name": "Martyniuk T.",
+    "g": 1,
+    "a": 11,
+    "pts": 12
+   }
+  ],
+  "Niagara IceDogs": [
+   {
+    "name": "Edgar R.",
+    "g": 9,
+    "a": 14,
+    "pts": 23
+   },
+   {
+    "name": "Smith R.",
+    "g": 9,
+    "a": 8,
+    "pts": 17
+   },
+   {
+    "name": "McFadden W.",
+    "g": 5,
+    "a": 9,
+    "pts": 14
+   },
+   {
+    "name": "Banas J.",
+    "g": 6,
+    "a": 7,
+    "pts": 13
+   },
+   {
+    "name": "Langdon J.",
+    "g": 4,
+    "a": 7,
+    "pts": 11
+   },
+   {
+    "name": "Cheynowski C.",
+    "g": 1,
+    "a": 9,
+    "pts": 10
+   }
+  ],
+  "Sudbury Wolves": [
+   {
+    "name": "Nemec A.",
+    "g": 8,
+    "a": 23,
+    "pts": 31
+   },
+   {
+    "name": "Lemieux J.",
+    "g": 14,
+    "a": 8,
+    "pts": 22
+   },
+   {
+    "name": "Chovan J.",
+    "g": 5,
+    "a": 14,
+    "pts": 19
+   },
+   {
+    "name": "Kwajah K.",
+    "g": 6,
+    "a": 11,
+    "pts": 17
+   },
+   {
+    "name": "Henderson R.",
+    "g": 8,
+    "a": 7,
+    "pts": 15
+   },
+   {
+    "name": "Walker M.",
+    "g": 5,
+    "a": 8,
+    "pts": 13
+   }
+  ],
+  "Barrie Colts": [
+   {
+    "name": "Edgar E.",
+    "g": 6,
+    "a": 15,
+    "pts": 21
+   },
+   {
+    "name": "Lowe C.",
+    "g": 8,
+    "a": 10,
+    "pts": 18
+   },
+   {
+    "name": "Schneid W.",
+    "g": 8,
+    "a": 6,
+    "pts": 14
+   },
+   {
+    "name": "Mogull S.",
+    "g": 7,
+    "a": 4,
+    "pts": 11
+   },
+   {
+    "name": "Tang M.",
+    "g": 3,
+    "a": 8,
+    "pts": 11
+   },
+   {
+    "name": "Matheson L.",
+    "g": 1,
+    "a": 7,
+    "pts": 8
+   }
+  ],
+  "Windsor Spitfires": [
+   {
+    "name": "Cristoforo A.",
+    "g": 10,
+    "a": 13,
+    "pts": 23
+   },
+   {
+    "name": "Yakushevsky B.",
+    "g": 8,
+    "a": 14,
+    "pts": 22
+   },
+   {
+    "name": "Harvey C.",
+    "g": 5,
+    "a": 14,
+    "pts": 19
+   },
+   {
+    "name": "McLaughlin J.",
+    "g": 11,
+    "a": 7,
+    "pts": 18
+   },
+   {
+    "name": "Svrcek M.",
+    "g": 8,
+    "a": 8,
+    "pts": 16
+   },
+   {
+    "name": "Robinson A.",
+    "g": 2,
+    "a": 13,
+    "pts": 15
+   }
+  ],
+  "Flint Firebirds": [
+   {
+    "name": "Lombardi J.",
+    "g": 8,
+    "a": 22,
+    "pts": 30
+   },
+   {
+    "name": "Anderson D.",
+    "g": 10,
+    "a": 19,
+    "pts": 29
+   },
+   {
+    "name": "Klaucans M.",
+    "g": 6,
+    "a": 9,
+    "pts": 15
+   },
+   {
+    "name": "Williams C.",
+    "g": 5,
+    "a": 9,
+    "pts": 14
+   },
+   {
+    "name": "Bogas N.",
+    "g": 4,
+    "a": 8,
+    "pts": 12
+   },
+   {
+    "name": "Graziano L.",
+    "g": 3,
+    "a": 7,
+    "pts": 10
+   }
+  ],
+  "Guelph Storm": [
+   {
+    "name": "Roobroeck R.",
+    "g": 18,
+    "a": 18,
+    "pts": 36
+   },
+   {
+    "name": "Griffin O.",
+    "g": 9,
+    "a": 25,
+    "pts": 34
+   },
+   {
+    "name": "Hopkins T.",
+    "g": 11,
+    "a": 16,
+    "pts": 27
+   },
+   {
+    "name": "Dravecky V.",
+    "g": 6,
+    "a": 20,
+    "pts": 26
+   },
+   {
+    "name": "Czata E.",
+    "g": 9,
+    "a": 10,
+    "pts": 19
+   },
+   {
+    "name": "Wycisk J.",
+    "g": 6,
+    "a": 11,
+    "pts": 17
+   }
+  ],
+  "Soo Greyhounds": [
+   {
+    "name": "Fitzgerald C.",
+    "g": 10,
+    "a": 11,
+    "pts": 21
+   },
+   {
+    "name": "Laus N.",
+    "g": 9,
+    "a": 12,
+    "pts": 21
+   },
+   {
+    "name": "Hayes T.",
+    "g": 10,
+    "a": 9,
+    "pts": 19
+   },
+   {
+    "name": "Daley Jr. T.",
+    "g": 5,
+    "a": 13,
+    "pts": 18
+   },
+   {
+    "name": "Brown C.",
+    "g": 8,
+    "a": 9,
+    "pts": 17
+   },
+   {
+    "name": "McKenzie Q.",
+    "g": 4,
+    "a": 12,
+    "pts": 16
+   }
+  ],
+  "Val-d'Or Foreurs": [
+   {
+    "name": "Brisson N.",
+    "g": 0,
+    "a": 3,
+    "pts": 3
+   },
+   {
+    "name": "Veilleux P.",
+    "g": 2,
+    "a": 0,
+    "pts": 2
+   },
+   {
+    "name": "Heroux N.",
+    "g": 1,
+    "a": 0,
+    "pts": 1
+   },
+   {
+    "name": "Carbonneau H.",
+    "g": 1,
+    "a": 0,
+    "pts": 1
+   },
+   {
+    "name": "McKinnon N.",
+    "g": 0,
+    "a": 1,
+    "pts": 1
+   },
+   {
+    "name": "Theriault C.",
+    "g": 0,
+    "a": 1,
+    "pts": 1
+   }
+  ],
+  "Rouyn-Noranda Huskies": [
+   {
+    "name": "Straka A.",
+    "g": 1,
+    "a": 3,
+    "pts": 4
+   },
+   {
+    "name": "Ogonowski E.",
+    "g": 1,
+    "a": 2,
+    "pts": 3
+   },
+   {
+    "name": "Beauchemin S.",
+    "g": 1,
+    "a": 1,
+    "pts": 2
+   },
+   {
+    "name": "Pominville J.",
+    "g": 0,
+    "a": 2,
+    "pts": 2
+   },
+   {
+    "name": "Renaud C.",
+    "g": 1,
+    "a": 0,
+    "pts": 1
+   },
+   {
+    "name": "Tremblay M.",
+    "g": 0,
+    "a": 1,
+    "pts": 1
+   }
+  ]
+ },
+ "last_season": {
+  "Kitchener Rangers": {
+   "gp": 135,
+   "w": 93,
+   "reg_wins": 75,
+   "ot_wins": 18,
+   "otl": 13,
+   "l": 29,
+   "pts": 199,
+   "reg_w": 75,
+   "reg_d": 31,
+   "reg_l": 29,
+   "gf_pg": 3.79,
+   "ga_pg": 2.66,
+   "avg_reg_total": 6.21,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.23,
+   "over_rate_reg": {
+    "4.5": 0.741,
+    "5.5": 0.57,
+    "6.5": 0.43
+   },
+   "home": {
+    "gp": 67,
+    "w": 52,
+    "reg_wins": 49,
+    "ot_wins": 3,
+    "otl": 4,
+    "l": 11,
+    "pts": 108,
+    "reg_w": 49,
+    "reg_d": 7,
+    "reg_l": 11,
+    "gf_pg": 4.07,
+    "ga_pg": 2.31,
+    "avg_reg_total": 6.28
+   },
+   "away": {
+    "gp": 68,
+    "w": 41,
+    "reg_wins": 26,
+    "ot_wins": 15,
+    "otl": 9,
+    "l": 18,
+    "pts": 91,
+    "reg_w": 26,
+    "reg_d": 24,
+    "reg_l": 18,
+    "gf_pg": 3.5,
+    "ga_pg": 3.0,
+    "avg_reg_total": 6.15
+   },
+   "last10": {
+    "gp": 10,
+    "w": 7,
+    "reg_wins": 7,
+    "ot_wins": 0,
+    "otl": 1,
+    "l": 2,
+    "pts": 15,
+    "reg_w": 7,
+    "reg_d": 1,
+    "reg_l": 2,
+    "gf_pg": 4.6,
+    "ga_pg": 2.8,
+    "avg_reg_total": 7.3
+   },
+   "streak": "L2",
+   "last_game_date": "20260321",
+   "rank_pts": 1
+  },
+  "Brantford Bulldogs": {
+   "gp": 135,
+   "w": 92,
+   "reg_wins": 80,
+   "ot_wins": 12,
+   "otl": 14,
+   "l": 29,
+   "pts": 198,
+   "reg_w": 80,
+   "reg_d": 26,
+   "reg_l": 29,
+   "gf_pg": 4.25,
+   "ga_pg": 3.01,
+   "avg_reg_total": 7.07,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.193,
+   "over_rate_reg": {
+    "4.5": 0.844,
+    "5.5": 0.748,
+    "6.5": 0.541
+   },
+   "home": {
+    "gp": 68,
+    "w": 51,
+    "reg_wins": 43,
+    "ot_wins": 8,
+    "otl": 7,
+    "l": 10,
+    "pts": 109,
+    "reg_w": 43,
+    "reg_d": 15,
+    "reg_l": 10,
+    "gf_pg": 4.38,
+    "ga_pg": 2.76,
+    "avg_reg_total": 6.93
+   },
+   "away": {
+    "gp": 67,
+    "w": 41,
+    "reg_wins": 37,
+    "ot_wins": 4,
+    "otl": 7,
+    "l": 19,
+    "pts": 89,
+    "reg_w": 37,
+    "reg_d": 11,
+    "reg_l": 19,
+    "gf_pg": 4.12,
+    "ga_pg": 3.27,
+    "avg_reg_total": 7.22
+   },
+   "last10": {
+    "gp": 10,
+    "w": 8,
+    "reg_wins": 8,
+    "ot_wins": 0,
+    "otl": 1,
+    "l": 1,
+    "pts": 17,
+    "reg_w": 8,
+    "reg_d": 1,
+    "reg_l": 1,
+    "gf_pg": 4.4,
+    "ga_pg": 2.7,
+    "avg_reg_total": 7.0
+   },
+   "streak": "L1",
+   "last_game_date": "20260322",
+   "rank_pts": 2
+  },
+  "London Knights": {
+   "gp": 135,
+   "w": 95,
+   "reg_wins": 75,
+   "ot_wins": 20,
+   "otl": 6,
+   "l": 34,
+   "pts": 196,
+   "reg_w": 75,
+   "reg_d": 26,
+   "reg_l": 34,
+   "gf_pg": 4.19,
+   "ga_pg": 2.84,
+   "avg_reg_total": 6.84,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.193,
+   "over_rate_reg": {
+    "4.5": 0.807,
+    "5.5": 0.681,
+    "6.5": 0.519
+   },
+   "home": {
+    "gp": 67,
+    "w": 49,
+    "reg_wins": 37,
+    "ot_wins": 12,
+    "otl": 4,
+    "l": 14,
+    "pts": 102,
+    "reg_w": 37,
+    "reg_d": 16,
+    "reg_l": 14,
+    "gf_pg": 4.15,
+    "ga_pg": 2.75,
+    "avg_reg_total": 6.66
+   },
+   "away": {
+    "gp": 68,
+    "w": 46,
+    "reg_wins": 38,
+    "ot_wins": 8,
+    "otl": 2,
+    "l": 20,
+    "pts": 94,
+    "reg_w": 38,
+    "reg_d": 10,
+    "reg_l": 20,
+    "gf_pg": 4.22,
+    "ga_pg": 2.94,
+    "avg_reg_total": 7.01
+   },
+   "last10": {
+    "gp": 10,
+    "w": 7,
+    "reg_wins": 6,
+    "ot_wins": 1,
+    "otl": 0,
+    "l": 3,
+    "pts": 14,
+    "reg_w": 6,
+    "reg_d": 1,
+    "reg_l": 3,
+    "gf_pg": 4.3,
+    "ga_pg": 2.9,
+    "avg_reg_total": 7.1
+   },
+   "streak": "L1",
+   "last_game_date": "20260321",
+   "rank_pts": 3
+  },
+  "Windsor Spitfires": {
+   "gp": 135,
+   "w": 88,
+   "reg_wins": 78,
+   "ot_wins": 10,
+   "otl": 15,
+   "l": 32,
+   "pts": 191,
+   "reg_w": 78,
+   "reg_d": 25,
+   "reg_l": 32,
+   "gf_pg": 4.19,
+   "ga_pg": 2.93,
+   "avg_reg_total": 6.93,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.185,
+   "over_rate_reg": {
+    "4.5": 0.8,
+    "5.5": 0.637,
+    "6.5": 0.474
+   },
+   "home": {
+    "gp": 68,
+    "w": 53,
+    "reg_wins": 49,
+    "ot_wins": 4,
+    "otl": 7,
+    "l": 8,
+    "pts": 113,
+    "reg_w": 49,
+    "reg_d": 11,
+    "reg_l": 8,
+    "gf_pg": 4.69,
+    "ga_pg": 2.41,
+    "avg_reg_total": 6.94
+   },
+   "away": {
+    "gp": 67,
+    "w": 35,
+    "reg_wins": 29,
+    "ot_wins": 6,
+    "otl": 8,
+    "l": 24,
+    "pts": 78,
+    "reg_w": 29,
+    "reg_d": 14,
+    "reg_l": 24,
+    "gf_pg": 3.67,
+    "ga_pg": 3.45,
+    "avg_reg_total": 6.91
+   },
+   "last10": {
+    "gp": 10,
+    "w": 7,
+    "reg_wins": 7,
+    "ot_wins": 0,
+    "otl": 2,
+    "l": 1,
+    "pts": 16,
+    "reg_w": 7,
+    "reg_d": 2,
+    "reg_l": 1,
+    "gf_pg": 4.5,
+    "ga_pg": 2.3,
+    "avg_reg_total": 6.6
+   },
+   "streak": "W1",
+   "last_game_date": "20260322",
+   "rank_pts": 4
+  },
+  "Barrie Colts": {
+   "gp": 136,
+   "w": 87,
+   "reg_wins": 65,
+   "ot_wins": 22,
+   "otl": 13,
+   "l": 36,
+   "pts": 187,
+   "reg_w": 65,
+   "reg_d": 35,
+   "reg_l": 36,
+   "gf_pg": 3.65,
+   "ga_pg": 3.04,
+   "avg_reg_total": 6.43,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.257,
+   "over_rate_reg": {
+    "4.5": 0.735,
+    "5.5": 0.61,
+    "6.5": 0.478
+   },
+   "home": {
+    "gp": 68,
+    "w": 44,
+    "reg_wins": 34,
+    "ot_wins": 10,
+    "otl": 8,
+    "l": 16,
+    "pts": 96,
+    "reg_w": 34,
+    "reg_d": 18,
+    "reg_l": 16,
+    "gf_pg": 3.76,
+    "ga_pg": 2.88,
+    "avg_reg_total": 6.38
+   },
+   "away": {
+    "gp": 68,
+    "w": 43,
+    "reg_wins": 31,
+    "ot_wins": 12,
+    "otl": 5,
+    "l": 20,
+    "pts": 91,
+    "reg_w": 31,
+    "reg_d": 17,
+    "reg_l": 20,
+    "gf_pg": 3.53,
+    "ga_pg": 3.19,
+    "avg_reg_total": 6.47
+   },
+   "last10": {
+    "gp": 10,
+    "w": 4,
+    "reg_wins": 3,
+    "ot_wins": 1,
+    "otl": 3,
+    "l": 3,
+    "pts": 11,
+    "reg_w": 3,
+    "reg_d": 4,
+    "reg_l": 3,
+    "gf_pg": 3.3,
+    "ga_pg": 3.4,
+    "avg_reg_total": 6.3
+   },
+   "streak": "L3",
+   "last_game_date": "20260321",
+   "rank_pts": 5
+  },
+  "Kingston Frontenacs": {
+   "gp": 135,
+   "w": 73,
+   "reg_wins": 63,
+   "ot_wins": 10,
+   "otl": 13,
+   "l": 49,
+   "pts": 159,
+   "reg_w": 63,
+   "reg_d": 23,
+   "reg_l": 49,
+   "gf_pg": 3.64,
+   "ga_pg": 3.23,
+   "avg_reg_total": 6.7,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.17,
+   "over_rate_reg": {
+    "4.5": 0.822,
+    "5.5": 0.689,
+    "6.5": 0.474
+   },
+   "home": {
+    "gp": 67,
+    "w": 44,
+    "reg_wins": 40,
+    "ot_wins": 4,
+    "otl": 6,
+    "l": 17,
+    "pts": 94,
+    "reg_w": 40,
+    "reg_d": 10,
+    "reg_l": 17,
+    "gf_pg": 4.15,
+    "ga_pg": 2.82,
+    "avg_reg_total": 6.82
+   },
+   "away": {
+    "gp": 68,
+    "w": 29,
+    "reg_wins": 23,
+    "ot_wins": 6,
+    "otl": 7,
+    "l": 32,
+    "pts": 65,
+    "reg_w": 23,
+    "reg_d": 13,
+    "reg_l": 32,
+    "gf_pg": 3.13,
+    "ga_pg": 3.63,
+    "avg_reg_total": 6.57
+   },
+   "last10": {
+    "gp": 10,
+    "w": 7,
+    "reg_wins": 6,
+    "ot_wins": 1,
+    "otl": 0,
+    "l": 3,
+    "pts": 14,
+    "reg_w": 6,
+    "reg_d": 1,
+    "reg_l": 3,
+    "gf_pg": 3.1,
+    "ga_pg": 2.8,
+    "avg_reg_total": 5.8
+   },
+   "streak": "L2",
+   "last_game_date": "20260321",
+   "rank_pts": 6
+  },
+  "Flint Firebirds": {
+   "gp": 136,
+   "w": 73,
+   "reg_wins": 63,
+   "ot_wins": 10,
+   "otl": 12,
+   "l": 51,
+   "pts": 158,
+   "reg_w": 63,
+   "reg_d": 22,
+   "reg_l": 51,
+   "gf_pg": 3.6,
+   "ga_pg": 3.29,
+   "avg_reg_total": 6.74,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.162,
+   "over_rate_reg": {
+    "4.5": 0.801,
+    "5.5": 0.625,
+    "6.5": 0.507
+   },
+   "home": {
+    "gp": 68,
+    "w": 37,
+    "reg_wins": 34,
+    "ot_wins": 3,
+    "otl": 5,
+    "l": 26,
+    "pts": 79,
+    "reg_w": 34,
+    "reg_d": 8,
+    "reg_l": 26,
+    "gf_pg": 3.65,
+    "ga_pg": 3.12,
+    "avg_reg_total": 6.65
+   },
+   "away": {
+    "gp": 68,
+    "w": 36,
+    "reg_wins": 29,
+    "ot_wins": 7,
+    "otl": 7,
+    "l": 25,
+    "pts": 79,
+    "reg_w": 29,
+    "reg_d": 14,
+    "reg_l": 25,
+    "gf_pg": 3.56,
+    "ga_pg": 3.47,
+    "avg_reg_total": 6.82
+   },
+   "last10": {
+    "gp": 10,
+    "w": 6,
+    "reg_wins": 5,
+    "ot_wins": 1,
+    "otl": 1,
+    "l": 3,
+    "pts": 13,
+    "reg_w": 5,
+    "reg_d": 2,
+    "reg_l": 3,
+    "gf_pg": 3.6,
+    "ga_pg": 3.1,
+    "avg_reg_total": 6.5
+   },
+   "streak": "W1",
+   "last_game_date": "20260321",
+   "rank_pts": 7
+  },
+  "Ottawa 67s": {
+   "gp": 135,
+   "w": 70,
+   "reg_wins": 57,
+   "ot_wins": 13,
+   "otl": 16,
+   "l": 49,
+   "pts": 156,
+   "reg_w": 57,
+   "reg_d": 29,
+   "reg_l": 49,
+   "gf_pg": 3.42,
+   "ga_pg": 3.17,
+   "avg_reg_total": 6.38,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.215,
+   "over_rate_reg": {
+    "4.5": 0.756,
+    "5.5": 0.644,
+    "6.5": 0.452
+   },
+   "home": {
+    "gp": 68,
+    "w": 40,
+    "reg_wins": 35,
+    "ot_wins": 5,
+    "otl": 5,
+    "l": 23,
+    "pts": 85,
+    "reg_w": 35,
+    "reg_d": 10,
+    "reg_l": 23,
+    "gf_pg": 3.56,
+    "ga_pg": 2.87,
+    "avg_reg_total": 6.28
+   },
+   "away": {
+    "gp": 67,
+    "w": 30,
+    "reg_wins": 22,
+    "ot_wins": 8,
+    "otl": 11,
+    "l": 26,
+    "pts": 71,
+    "reg_w": 22,
+    "reg_d": 19,
+    "reg_l": 26,
+    "gf_pg": 3.28,
+    "ga_pg": 3.48,
+    "avg_reg_total": 6.48
+   },
+   "last10": {
+    "gp": 10,
+    "w": 7,
+    "reg_wins": 6,
+    "ot_wins": 1,
+    "otl": 2,
+    "l": 1,
+    "pts": 16,
+    "reg_w": 6,
+    "reg_d": 3,
+    "reg_l": 1,
+    "gf_pg": 4.1,
+    "ga_pg": 1.5,
+    "avg_reg_total": 5.3
+   },
+   "streak": "W1",
+   "last_game_date": "20260321",
+   "rank_pts": 8
+  },
+  "Soo Greyhounds": {
+   "gp": 135,
+   "w": 68,
+   "reg_wins": 54,
+   "ot_wins": 14,
+   "otl": 10,
+   "l": 57,
+   "pts": 146,
+   "reg_w": 54,
+   "reg_d": 24,
+   "reg_l": 57,
+   "gf_pg": 3.51,
+   "ga_pg": 3.46,
+   "avg_reg_total": 6.79,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.178,
+   "over_rate_reg": {
+    "4.5": 0.778,
+    "5.5": 0.667,
+    "6.5": 0.504
+   },
+   "home": {
+    "gp": 67,
+    "w": 35,
+    "reg_wins": 27,
+    "ot_wins": 8,
+    "otl": 5,
+    "l": 27,
+    "pts": 75,
+    "reg_w": 27,
+    "reg_d": 13,
+    "reg_l": 27,
+    "gf_pg": 3.73,
+    "ga_pg": 3.52,
+    "avg_reg_total": 7.06
+   },
+   "away": {
+    "gp": 68,
+    "w": 33,
+    "reg_wins": 27,
+    "ot_wins": 6,
+    "otl": 5,
+    "l": 30,
+    "pts": 71,
+    "reg_w": 27,
+    "reg_d": 11,
+    "reg_l": 30,
+    "gf_pg": 3.29,
+    "ga_pg": 3.4,
+    "avg_reg_total": 6.53
+   },
+   "last10": {
+    "gp": 10,
+    "w": 4,
+    "reg_wins": 2,
+    "ot_wins": 2,
+    "otl": 0,
+    "l": 6,
+    "pts": 8,
+    "reg_w": 2,
+    "reg_d": 2,
+    "reg_l": 6,
+    "gf_pg": 2.6,
+    "ga_pg": 3.3,
+    "avg_reg_total": 5.7
+   },
+   "streak": "L1",
+   "last_game_date": "20260322",
+   "rank_pts": 9
+  },
+  "North Bay Battalion": {
+   "gp": 134,
+   "w": 64,
+   "reg_wins": 49,
+   "ot_wins": 15,
+   "otl": 10,
+   "l": 60,
+   "pts": 138,
+   "reg_w": 49,
+   "reg_d": 25,
+   "reg_l": 60,
+   "gf_pg": 3.16,
+   "ga_pg": 3.45,
+   "avg_reg_total": 6.42,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.187,
+   "over_rate_reg": {
+    "4.5": 0.746,
+    "5.5": 0.612,
+    "6.5": 0.47
+   },
+   "home": {
+    "gp": 67,
+    "w": 37,
+    "reg_wins": 27,
+    "ot_wins": 10,
+    "otl": 6,
+    "l": 24,
+    "pts": 80,
+    "reg_w": 27,
+    "reg_d": 16,
+    "reg_l": 24,
+    "gf_pg": 3.42,
+    "ga_pg": 3.07,
+    "avg_reg_total": 6.25
+   },
+   "away": {
+    "gp": 67,
+    "w": 27,
+    "reg_wins": 22,
+    "ot_wins": 5,
+    "otl": 4,
+    "l": 36,
+    "pts": 58,
+    "reg_w": 22,
+    "reg_d": 9,
+    "reg_l": 36,
+    "gf_pg": 2.9,
+    "ga_pg": 3.82,
+    "avg_reg_total": 6.58
+   },
+   "last10": {
+    "gp": 10,
+    "w": 6,
+    "reg_wins": 5,
+    "ot_wins": 1,
+    "otl": 1,
+    "l": 3,
+    "pts": 13,
+    "reg_w": 5,
+    "reg_d": 2,
+    "reg_l": 3,
+    "gf_pg": 4.1,
+    "ga_pg": 2.7,
+    "avg_reg_total": 6.6
+   },
+   "streak": "W1",
+   "last_game_date": "20260322",
+   "rank_pts": 10
+  },
+  "Saginaw Spirit": {
+   "gp": 135,
+   "w": 63,
+   "reg_wins": 53,
+   "ot_wins": 10,
+   "otl": 11,
+   "l": 61,
+   "pts": 137,
+   "reg_w": 53,
+   "reg_d": 21,
+   "reg_l": 61,
+   "gf_pg": 4.05,
+   "ga_pg": 4.17,
+   "avg_reg_total": 8.07,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.156,
+   "over_rate_reg": {
+    "4.5": 0.904,
+    "5.5": 0.844,
+    "6.5": 0.674
+   },
+   "home": {
+    "gp": 68,
+    "w": 33,
+    "reg_wins": 29,
+    "ot_wins": 4,
+    "otl": 6,
+    "l": 29,
+    "pts": 72,
+    "reg_w": 29,
+    "reg_d": 10,
+    "reg_l": 29,
+    "gf_pg": 4.04,
+    "ga_pg": 4.0,
+    "avg_reg_total": 7.9
+   },
+   "away": {
+    "gp": 67,
+    "w": 30,
+    "reg_wins": 24,
+    "ot_wins": 6,
+    "otl": 5,
+    "l": 32,
+    "pts": 65,
+    "reg_w": 24,
+    "reg_d": 11,
+    "reg_l": 32,
+    "gf_pg": 4.06,
+    "ga_pg": 4.34,
+    "avg_reg_total": 8.24
+   },
+   "last10": {
+    "gp": 10,
+    "w": 5,
+    "reg_wins": 4,
+    "ot_wins": 1,
+    "otl": 1,
+    "l": 4,
+    "pts": 11,
+    "reg_w": 4,
+    "reg_d": 2,
+    "reg_l": 4,
+    "gf_pg": 3.6,
+    "ga_pg": 4.4,
+    "avg_reg_total": 7.8
+   },
+   "streak": "L2",
+   "last_game_date": "20260321",
+   "rank_pts": 11
+  },
+  "Niagara IceDogs": {
+   "gp": 135,
+   "w": 61,
+   "reg_wins": 44,
+   "ot_wins": 17,
+   "otl": 14,
+   "l": 60,
+   "pts": 136,
+   "reg_w": 44,
+   "reg_d": 31,
+   "reg_l": 60,
+   "gf_pg": 3.39,
+   "ga_pg": 4.09,
+   "avg_reg_total": 7.24,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.23,
+   "over_rate_reg": {
+    "4.5": 0.867,
+    "5.5": 0.793,
+    "6.5": 0.6
+   },
+   "home": {
+    "gp": 68,
+    "w": 35,
+    "reg_wins": 24,
+    "ot_wins": 11,
+    "otl": 6,
+    "l": 27,
+    "pts": 76,
+    "reg_w": 24,
+    "reg_d": 17,
+    "reg_l": 27,
+    "gf_pg": 3.63,
+    "ga_pg": 4.0,
+    "avg_reg_total": 7.38
+   },
+   "away": {
+    "gp": 67,
+    "w": 26,
+    "reg_wins": 20,
+    "ot_wins": 6,
+    "otl": 8,
+    "l": 33,
+    "pts": 60,
+    "reg_w": 20,
+    "reg_d": 14,
+    "reg_l": 33,
+    "gf_pg": 3.13,
+    "ga_pg": 4.18,
+    "avg_reg_total": 7.1
+   },
+   "last10": {
+    "gp": 10,
+    "w": 3,
+    "reg_wins": 1,
+    "ot_wins": 2,
+    "otl": 1,
+    "l": 6,
+    "pts": 7,
+    "reg_w": 1,
+    "reg_d": 3,
+    "reg_l": 6,
+    "gf_pg": 2.8,
+    "ga_pg": 4.1,
+    "avg_reg_total": 6.6
+   },
+   "streak": "W2",
+   "last_game_date": "20260322",
+   "rank_pts": 12
+  },
+  "Oshawa Generals": {
+   "gp": 135,
+   "w": 60,
+   "reg_wins": 47,
+   "ot_wins": 13,
+   "otl": 10,
+   "l": 65,
+   "pts": 130,
+   "reg_w": 47,
+   "reg_d": 23,
+   "reg_l": 65,
+   "gf_pg": 3.23,
+   "ga_pg": 3.61,
+   "avg_reg_total": 6.67,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.17,
+   "over_rate_reg": {
+    "4.5": 0.815,
+    "5.5": 0.674,
+    "6.5": 0.504
+   },
+   "home": {
+    "gp": 68,
+    "w": 36,
+    "reg_wins": 32,
+    "ot_wins": 4,
+    "otl": 6,
+    "l": 26,
+    "pts": 78,
+    "reg_w": 32,
+    "reg_d": 10,
+    "reg_l": 26,
+    "gf_pg": 3.56,
+    "ga_pg": 3.34,
+    "avg_reg_total": 6.75
+   },
+   "away": {
+    "gp": 67,
+    "w": 24,
+    "reg_wins": 15,
+    "ot_wins": 9,
+    "otl": 4,
+    "l": 39,
+    "pts": 52,
+    "reg_w": 15,
+    "reg_d": 13,
+    "reg_l": 39,
+    "gf_pg": 2.9,
+    "ga_pg": 3.88,
+    "avg_reg_total": 6.58
+   },
+   "last10": {
+    "gp": 10,
+    "w": 4,
+    "reg_wins": 4,
+    "ot_wins": 0,
+    "otl": 1,
+    "l": 5,
+    "pts": 9,
+    "reg_w": 4,
+    "reg_d": 1,
+    "reg_l": 5,
+    "gf_pg": 3.2,
+    "ga_pg": 4.1,
+    "avg_reg_total": 7.2
+   },
+   "streak": "L1",
+   "last_game_date": "20260322",
+   "rank_pts": 13
+  },
+  "Brampton Steelheads": {
+   "gp": 134,
+   "w": 54,
+   "reg_wins": 46,
+   "ot_wins": 8,
+   "otl": 20,
+   "l": 60,
+   "pts": 128,
+   "reg_w": 46,
+   "reg_d": 28,
+   "reg_l": 60,
+   "gf_pg": 3.4,
+   "ga_pg": 3.57,
+   "avg_reg_total": 6.76,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.209,
+   "over_rate_reg": {
+    "4.5": 0.799,
+    "5.5": 0.672,
+    "6.5": 0.522
+   },
+   "home": {
+    "gp": 67,
+    "w": 31,
+    "reg_wins": 27,
+    "ot_wins": 4,
+    "otl": 10,
+    "l": 26,
+    "pts": 72,
+    "reg_w": 27,
+    "reg_d": 14,
+    "reg_l": 26,
+    "gf_pg": 3.69,
+    "ga_pg": 3.28,
+    "avg_reg_total": 6.76
+   },
+   "away": {
+    "gp": 67,
+    "w": 23,
+    "reg_wins": 19,
+    "ot_wins": 4,
+    "otl": 10,
+    "l": 34,
+    "pts": 56,
+    "reg_w": 19,
+    "reg_d": 14,
+    "reg_l": 34,
+    "gf_pg": 3.1,
+    "ga_pg": 3.87,
+    "avg_reg_total": 6.76
+   },
+   "last10": {
+    "gp": 10,
+    "w": 4,
+    "reg_wins": 2,
+    "ot_wins": 2,
+    "otl": 1,
+    "l": 5,
+    "pts": 9,
+    "reg_w": 2,
+    "reg_d": 3,
+    "reg_l": 5,
+    "gf_pg": 2.3,
+    "ga_pg": 3.1,
+    "avg_reg_total": 5.1
+   },
+   "streak": "W1",
+   "last_game_date": "20260322",
+   "rank_pts": 14
+  },
+  "Peterborough Petes": {
+   "gp": 135,
+   "w": 57,
+   "reg_wins": 39,
+   "ot_wins": 18,
+   "otl": 13,
+   "l": 65,
+   "pts": 127,
+   "reg_w": 39,
+   "reg_d": 31,
+   "reg_l": 65,
+   "gf_pg": 2.98,
+   "ga_pg": 3.76,
+   "avg_reg_total": 6.5,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.23,
+   "over_rate_reg": {
+    "4.5": 0.785,
+    "5.5": 0.652,
+    "6.5": 0.489
+   },
+   "home": {
+    "gp": 67,
+    "w": 36,
+    "reg_wins": 23,
+    "ot_wins": 13,
+    "otl": 6,
+    "l": 25,
+    "pts": 78,
+    "reg_w": 23,
+    "reg_d": 19,
+    "reg_l": 25,
+    "gf_pg": 3.19,
+    "ga_pg": 3.36,
+    "avg_reg_total": 6.27
+   },
+   "away": {
+    "gp": 68,
+    "w": 21,
+    "reg_wins": 16,
+    "ot_wins": 5,
+    "otl": 7,
+    "l": 40,
+    "pts": 49,
+    "reg_w": 16,
+    "reg_d": 12,
+    "reg_l": 40,
+    "gf_pg": 2.76,
+    "ga_pg": 4.15,
+    "avg_reg_total": 6.74
+   },
+   "last10": {
+    "gp": 10,
+    "w": 7,
+    "reg_wins": 4,
+    "ot_wins": 3,
+    "otl": 0,
+    "l": 3,
+    "pts": 14,
+    "reg_w": 4,
+    "reg_d": 3,
+    "reg_l": 3,
+    "gf_pg": 3.6,
+    "ga_pg": 2.9,
+    "avg_reg_total": 6.2
+   },
+   "streak": "W4",
+   "last_game_date": "20260322",
+   "rank_pts": 15
+  },
+  "Sudbury Wolves": {
+   "gp": 135,
+   "w": 59,
+   "reg_wins": 47,
+   "ot_wins": 12,
+   "otl": 6,
+   "l": 70,
+   "pts": 124,
+   "reg_w": 47,
+   "reg_d": 18,
+   "reg_l": 70,
+   "gf_pg": 3.36,
+   "ga_pg": 3.9,
+   "avg_reg_total": 7.13,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.133,
+   "over_rate_reg": {
+    "4.5": 0.815,
+    "5.5": 0.704,
+    "6.5": 0.57
+   },
+   "home": {
+    "gp": 67,
+    "w": 38,
+    "reg_wins": 33,
+    "ot_wins": 5,
+    "otl": 3,
+    "l": 26,
+    "pts": 79,
+    "reg_w": 33,
+    "reg_d": 8,
+    "reg_l": 26,
+    "gf_pg": 4.03,
+    "ga_pg": 3.58,
+    "avg_reg_total": 7.49
+   },
+   "away": {
+    "gp": 68,
+    "w": 21,
+    "reg_wins": 14,
+    "ot_wins": 7,
+    "otl": 3,
+    "l": 44,
+    "pts": 45,
+    "reg_w": 14,
+    "reg_d": 10,
+    "reg_l": 44,
+    "gf_pg": 2.69,
+    "ga_pg": 4.22,
+    "avg_reg_total": 6.76
+   },
+   "last10": {
+    "gp": 10,
+    "w": 4,
+    "reg_wins": 3,
+    "ot_wins": 1,
+    "otl": 0,
+    "l": 6,
+    "pts": 8,
+    "reg_w": 3,
+    "reg_d": 1,
+    "reg_l": 6,
+    "gf_pg": 2.9,
+    "ga_pg": 3.9,
+    "avg_reg_total": 6.7
+   },
+   "streak": "L1",
+   "last_game_date": "20260322",
+   "rank_pts": 16
+  },
+  "Owen Sound Attack": {
+   "gp": 135,
+   "w": 52,
+   "reg_wins": 41,
+   "ot_wins": 11,
+   "otl": 16,
+   "l": 67,
+   "pts": 120,
+   "reg_w": 41,
+   "reg_d": 27,
+   "reg_l": 67,
+   "gf_pg": 3.34,
+   "ga_pg": 3.93,
+   "avg_reg_total": 7.07,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.2,
+   "over_rate_reg": {
+    "4.5": 0.83,
+    "5.5": 0.696,
+    "6.5": 0.563
+   },
+   "home": {
+    "gp": 68,
+    "w": 34,
+    "reg_wins": 28,
+    "ot_wins": 6,
+    "otl": 8,
+    "l": 26,
+    "pts": 76,
+    "reg_w": 28,
+    "reg_d": 14,
+    "reg_l": 26,
+    "gf_pg": 3.68,
+    "ga_pg": 3.49,
+    "avg_reg_total": 6.96
+   },
+   "away": {
+    "gp": 67,
+    "w": 18,
+    "reg_wins": 13,
+    "ot_wins": 5,
+    "otl": 8,
+    "l": 41,
+    "pts": 44,
+    "reg_w": 13,
+    "reg_d": 13,
+    "reg_l": 41,
+    "gf_pg": 3.0,
+    "ga_pg": 4.37,
+    "avg_reg_total": 7.18
+   },
+   "last10": {
+    "gp": 10,
+    "w": 6,
+    "reg_wins": 3,
+    "ot_wins": 3,
+    "otl": 1,
+    "l": 3,
+    "pts": 13,
+    "reg_w": 3,
+    "reg_d": 4,
+    "reg_l": 3,
+    "gf_pg": 3.8,
+    "ga_pg": 3.9,
+    "avg_reg_total": 7.3
+   },
+   "streak": "W1",
+   "last_game_date": "20260321",
+   "rank_pts": 17
+  },
+  "Erie Otters": {
+   "gp": 135,
+   "w": 52,
+   "reg_wins": 40,
+   "ot_wins": 12,
+   "otl": 15,
+   "l": 68,
+   "pts": 119,
+   "reg_w": 40,
+   "reg_d": 27,
+   "reg_l": 68,
+   "gf_pg": 3.15,
+   "ga_pg": 4.04,
+   "avg_reg_total": 6.99,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.2,
+   "over_rate_reg": {
+    "4.5": 0.815,
+    "5.5": 0.719,
+    "6.5": 0.533
+   },
+   "home": {
+    "gp": 68,
+    "w": 30,
+    "reg_wins": 24,
+    "ot_wins": 6,
+    "otl": 9,
+    "l": 29,
+    "pts": 69,
+    "reg_w": 24,
+    "reg_d": 15,
+    "reg_l": 29,
+    "gf_pg": 3.35,
+    "ga_pg": 3.68,
+    "avg_reg_total": 6.81
+   },
+   "away": {
+    "gp": 67,
+    "w": 22,
+    "reg_wins": 16,
+    "ot_wins": 6,
+    "otl": 6,
+    "l": 39,
+    "pts": 50,
+    "reg_w": 16,
+    "reg_d": 12,
+    "reg_l": 39,
+    "gf_pg": 2.94,
+    "ga_pg": 4.4,
+    "avg_reg_total": 7.16
+   },
+   "last10": {
+    "gp": 10,
+    "w": 1,
+    "reg_wins": 1,
+    "ot_wins": 0,
+    "otl": 2,
+    "l": 7,
+    "pts": 4,
+    "reg_w": 1,
+    "reg_d": 2,
+    "reg_l": 7,
+    "gf_pg": 2.6,
+    "ga_pg": 5.6,
+    "avg_reg_total": 8.0
+   },
+   "streak": "L1",
+   "last_game_date": "20260322",
+   "rank_pts": 18
+  },
+  "Guelph Storm": {
+   "gp": 135,
+   "w": 48,
+   "reg_wins": 41,
+   "ot_wins": 7,
+   "otl": 14,
+   "l": 73,
+   "pts": 110,
+   "reg_w": 41,
+   "reg_d": 21,
+   "reg_l": 73,
+   "gf_pg": 3.3,
+   "ga_pg": 4.16,
+   "avg_reg_total": 7.31,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.156,
+   "over_rate_reg": {
+    "4.5": 0.844,
+    "5.5": 0.741,
+    "6.5": 0.578
+   },
+   "home": {
+    "gp": 67,
+    "w": 29,
+    "reg_wins": 24,
+    "ot_wins": 5,
+    "otl": 9,
+    "l": 29,
+    "pts": 67,
+    "reg_w": 24,
+    "reg_d": 14,
+    "reg_l": 29,
+    "gf_pg": 3.76,
+    "ga_pg": 4.18,
+    "avg_reg_total": 7.73
+   },
+   "away": {
+    "gp": 68,
+    "w": 19,
+    "reg_wins": 17,
+    "ot_wins": 2,
+    "otl": 5,
+    "l": 44,
+    "pts": 43,
+    "reg_w": 17,
+    "reg_d": 7,
+    "reg_l": 44,
+    "gf_pg": 2.85,
+    "ga_pg": 4.15,
+    "avg_reg_total": 6.9
+   },
+   "last10": {
+    "gp": 10,
+    "w": 2,
+    "reg_wins": 2,
+    "ot_wins": 0,
+    "otl": 0,
+    "l": 8,
+    "pts": 4,
+    "reg_w": 2,
+    "reg_d": 0,
+    "reg_l": 8,
+    "gf_pg": 2.7,
+    "ga_pg": 3.7,
+    "avg_reg_total": 6.4
+   },
+   "streak": "L1",
+   "last_game_date": "20260321",
+   "rank_pts": 19
+  },
+  "Sarnia Sting": {
+   "gp": 135,
+   "w": 43,
+   "reg_wins": 31,
+   "ot_wins": 12,
+   "otl": 22,
+   "l": 70,
+   "pts": 108,
+   "reg_w": 31,
+   "reg_d": 34,
+   "reg_l": 70,
+   "gf_pg": 2.97,
+   "ga_pg": 4.2,
+   "avg_reg_total": 6.92,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.252,
+   "over_rate_reg": {
+    "4.5": 0.793,
+    "5.5": 0.704,
+    "6.5": 0.578
+   },
+   "home": {
+    "gp": 67,
+    "w": 25,
+    "reg_wins": 17,
+    "ot_wins": 8,
+    "otl": 10,
+    "l": 32,
+    "pts": 60,
+    "reg_w": 17,
+    "reg_d": 18,
+    "reg_l": 32,
+    "gf_pg": 3.16,
+    "ga_pg": 3.93,
+    "avg_reg_total": 6.82
+   },
+   "away": {
+    "gp": 68,
+    "w": 18,
+    "reg_wins": 14,
+    "ot_wins": 4,
+    "otl": 12,
+    "l": 38,
+    "pts": 48,
+    "reg_w": 14,
+    "reg_d": 16,
+    "reg_l": 38,
+    "gf_pg": 2.78,
+    "ga_pg": 4.47,
+    "avg_reg_total": 7.01
+   },
+   "last10": {
+    "gp": 10,
+    "w": 3,
+    "reg_wins": 2,
+    "ot_wins": 1,
+    "otl": 2,
+    "l": 5,
+    "pts": 8,
+    "reg_w": 2,
+    "reg_d": 3,
+    "reg_l": 5,
+    "gf_pg": 2.9,
+    "ga_pg": 4.3,
+    "avg_reg_total": 6.9
+   },
+   "streak": "W3",
+   "last_game_date": "20260321",
+   "rank_pts": 20
+  },
+  "Rouyn-Noranda Huskies": {
+   "gp": 2,
+   "w": 0,
+   "reg_wins": 0,
+   "ot_wins": 0,
+   "otl": 1,
+   "l": 1,
+   "pts": 1,
+   "reg_w": 0,
+   "reg_d": 1,
+   "reg_l": 1,
+   "gf_pg": 3.0,
+   "ga_pg": 4.5,
+   "avg_reg_total": 7.0,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.5,
+   "over_rate_reg": {
+    "4.5": 1.0,
+    "5.5": 1.0,
+    "6.5": 0.5
+   },
+   "home": {
+    "gp": 1,
+    "w": 0,
+    "reg_wins": 0,
+    "ot_wins": 0,
+    "otl": 1,
+    "l": 0,
+    "pts": 1,
+    "reg_w": 0,
+    "reg_d": 1,
+    "reg_l": 0,
+    "gf_pg": 3.0,
+    "ga_pg": 4.0,
+    "avg_reg_total": 6.0
+   },
+   "away": {
+    "gp": 1,
+    "w": 0,
+    "reg_wins": 0,
+    "ot_wins": 0,
+    "otl": 0,
+    "l": 1,
+    "pts": 0,
+    "reg_w": 0,
+    "reg_d": 0,
+    "reg_l": 1,
+    "gf_pg": 3.0,
+    "ga_pg": 5.0,
+    "avg_reg_total": 8.0
+   },
+   "last10": {
+    "gp": 2,
+    "w": 0,
+    "reg_wins": 0,
+    "ot_wins": 0,
+    "otl": 1,
+    "l": 1,
+    "pts": 1,
+    "reg_w": 0,
+    "reg_d": 1,
+    "reg_l": 1,
+    "gf_pg": 3.0,
+    "ga_pg": 4.5,
+    "avg_reg_total": 7.0
+   },
+   "streak": "L2",
+   "last_game_date": "20260125",
+   "rank_pts": 21
+  },
+  "Gatineau Olympiques": {
+   "gp": 2,
+   "w": 0,
+   "reg_wins": 0,
+   "ot_wins": 0,
+   "otl": 0,
+   "l": 2,
+   "pts": 0,
+   "reg_w": 0,
+   "reg_d": 0,
+   "reg_l": 2,
+   "gf_pg": 2.0,
+   "ga_pg": 3.5,
+   "avg_reg_total": 5.5,
+   "sf_pg": null,
+   "sa_pg": null,
+   "shot_share": null,
+   "sh_pct": null,
+   "sv_pct": null,
+   "pdo": null,
+   "pp_pct": null,
+   "pk_pct": null,
+   "reg_draw_rate": 0.0,
+   "over_rate_reg": {
+    "4.5": 0.5,
+    "5.5": 0.5,
+    "6.5": 0.5
+   },
+   "home": {
+    "gp": 1,
+    "w": 0,
+    "reg_wins": 0,
+    "ot_wins": 0,
+    "otl": 0,
+    "l": 1,
+    "pts": 0,
+    "reg_w": 0,
+    "reg_d": 0,
+    "reg_l": 1,
+    "gf_pg": 3.0,
+    "ga_pg": 5.0,
+    "avg_reg_total": 8.0
+   },
+   "away": {
+    "gp": 1,
+    "w": 0,
+    "reg_wins": 0,
+    "ot_wins": 0,
+    "otl": 0,
+    "l": 1,
+    "pts": 0,
+    "reg_w": 0,
+    "reg_d": 0,
+    "reg_l": 1,
+    "gf_pg": 1.0,
+    "ga_pg": 2.0,
+    "avg_reg_total": 3.0
+   },
+   "last10": {
+    "gp": 2,
+    "w": 0,
+    "reg_wins": 0,
+    "ot_wins": 0,
+    "otl": 0,
+    "l": 2,
+    "pts": 0,
+    "reg_w": 0,
+    "reg_d": 0,
+    "reg_l": 2,
+    "gf_pg": 2.0,
+    "ga_pg": 3.5,
+    "avg_reg_total": 5.5
+   },
+   "streak": "L2",
+   "last_game_date": "20260117",
+   "rank_pts": 22
+  }
+ },
+ "h2h": {
+  "Saginaw Spirit | Windsor Spitfires": [
+   "20260214 Windsor Spitfires 4-2 Saginaw Spirit",
+   "20260216 Saginaw Spirit 1-7 Windsor Spitfires",
+   "20260926 Windsor Spitfires 6-3 Saginaw Spirit",
+   "20261012 Saginaw Spirit 3-2 Windsor Spitfires (SO)",
+   "20261115 Saginaw Spirit 1-2 Windsor Spitfires (OT)"
+  ],
+  "Kingston Frontenacs | Peterborough Petes": [
+   "20260201 Peterborough Petes 5-3 Kingston Frontenacs",
+   "20260320 Peterborough Petes 4-2 Kingston Frontenacs",
+   "20261002 Peterborough Petes 3-5 Kingston Frontenacs",
+   "20261030 Peterborough Petes 1-4 Kingston Frontenacs",
+   "20261112 Kingston Frontenacs 2-7 Peterborough Petes"
+  ],
+  "Brampton Steelheads | Brantford Bulldogs": [
+   "20260225 Brampton Steelheads 4-5 Brantford Bulldogs",
+   "20260322 Brantford Bulldogs 1-6 Brampton Steelheads",
+   "20261002 Brampton Steelheads 4-5 Brantford Bulldogs (SO)",
+   "20261023 Brantford Bulldogs 8-2 Brampton Steelheads",
+   "20261024 Brampton Steelheads 4-2 Brantford Bulldogs"
+  ],
+  "Kingston Frontenacs | Oshawa Generals": [
+   "20260222 Kingston Frontenacs 7-2 Oshawa Generals",
+   "20260308 Oshawa Generals 2-3 Kingston Frontenacs",
+   "20261016 Oshawa Generals 4-5 Kingston Frontenacs (OT)",
+   "20261106 Oshawa Generals 2-5 Kingston Frontenacs",
+   "20261115 Kingston Frontenacs 3-4 Oshawa Generals (SO)"
+  ],
+  "Erie Otters | Kitchener Rangers": [
+   "20260124 Kitchener Rangers 4-3 Erie Otters (OT)",
+   "20260221 Kitchener Rangers 3-1 Erie Otters",
+   "20260925 Erie Otters 4-3 Kitchener Rangers",
+   "20260926 Kitchener Rangers 4-3 Erie Otters (OT)",
+   "20261112 Kitchener Rangers 6-2 Erie Otters"
+  ],
+  "Flint Firebirds | London Knights": [
+   "20251003 Flint Firebirds 4-5 London Knights (OT)",
+   "20251112 London Knights 2-3 Flint Firebirds",
+   "20260102 Flint Firebirds 5-0 London Knights",
+   "20260321 London Knights 4-5 Flint Firebirds",
+   "20261004 Flint Firebirds 7-2 London Knights"
+  ],
+  "North Bay Battalion | Peterborough Petes": [
+   "20260327 North Bay Battalion 3-4 Peterborough Petes (OT)",
+   "20260329 Peterborough Petes 2-1 North Bay Battalion (OT)",
+   "20260331 Peterborough Petes 0-4 North Bay Battalion",
+   "20261012 Peterborough Petes 1-3 North Bay Battalion",
+   "20261015 North Bay Battalion 2-4 Peterborough Petes"
+  ],
+  "Niagara IceDogs | Ottawa 67s": [
+   "20251106 Ottawa 67s 4-3 Niagara IceDogs (OT)",
+   "20251115 Niagara IceDogs 2-6 Ottawa 67s",
+   "20260220 Niagara IceDogs 1-7 Ottawa 67s",
+   "20260315 Ottawa 67s 6-0 Niagara IceDogs",
+   "20261008 Ottawa 67s 1-2 Niagara IceDogs (OT)"
+  ],
+  "Sarnia Sting | Windsor Spitfires": [
+   "20251017 Windsor Spitfires 3-2 Sarnia Sting (OT)",
+   "20251018 Sarnia Sting 5-3 Windsor Spitfires",
+   "20260201 Sarnia Sting 1-4 Windsor Spitfires",
+   "20260212 Sarnia Sting 4-6 Windsor Spitfires",
+   "20260313 Windsor Spitfires 6-3 Sarnia Sting"
+  ],
+  "Barrie Colts | Sudbury Wolves": [
+   "20251231 Sudbury Wolves 1-4 Barrie Colts",
+   "20260314 Sudbury Wolves 2-5 Barrie Colts",
+   "20260925 Barrie Colts 2-5 Sudbury Wolves",
+   "20261104 Sudbury Wolves 3-1 Barrie Colts",
+   "20261108 Barrie Colts 3-6 Sudbury Wolves"
+  ],
+  "Guelph Storm | Owen Sound Attack": [
+   "20260926 Guelph Storm 5-1 Owen Sound Attack",
+   "20261009 Owen Sound Attack 2-3 Guelph Storm",
+   "20261010 Guelph Storm 10-5 Owen Sound Attack",
+   "20261106 Owen Sound Attack 1-2 Guelph Storm (OT)",
+   "20261114 Guelph Storm 2-3 Owen Sound Attack"
+  ],
+  "Saginaw Spirit | Soo Greyhounds": [
+   "20260103 Soo Greyhounds 3-5 Saginaw Spirit",
+   "20260204 Soo Greyhounds 6-0 Saginaw Spirit",
+   "20260318 Soo Greyhounds 3-4 Saginaw Spirit",
+   "20260320 Saginaw Spirit 1-5 Soo Greyhounds",
+   "20261028 Saginaw Spirit 2-5 Soo Greyhounds"
+  ],
+  "Brantford Bulldogs | Oshawa Generals": [
+   "20260218 Oshawa Generals 2-4 Brantford Bulldogs",
+   "20260227 Oshawa Generals 3-7 Brantford Bulldogs",
+   "20260927 Brantford Bulldogs 5-3 Oshawa Generals",
+   "20261108 Brantford Bulldogs 5-2 Oshawa Generals",
+   "20261114 Oshawa Generals 3-9 Brantford Bulldogs"
+  ],
+  "Brampton Steelheads | Erie Otters": [
+   "20241208 Erie Otters 5-4 Brampton Steelheads (OT)",
+   "20250207 Erie Otters 3-10 Brampton Steelheads",
+   "20251019 Erie Otters 2-7 Brampton Steelheads",
+   "20251126 Brampton Steelheads 5-2 Erie Otters",
+   "20261025 Erie Otters 5-2 Brampton Steelheads"
+  ],
+  "Saginaw Spirit | Sarnia Sting": [
+   "20260221 Sarnia Sting 7-4 Saginaw Spirit",
+   "20260315 Saginaw Spirit 7-3 Sarnia Sting",
+   "20260321 Sarnia Sting 4-3 Saginaw Spirit (OT)",
+   "20261016 Saginaw Spirit 9-2 Sarnia Sting",
+   "20261017 Sarnia Sting 4-7 Saginaw Spirit"
+  ],
+  "Kitchener Rangers | Windsor Spitfires": [
+   "20250307 Windsor Spitfires 4-7 Kitchener Rangers",
+   "20260121 Kitchener Rangers 3-2 Windsor Spitfires (OT)",
+   "20260130 Windsor Spitfires 2-7 Kitchener Rangers",
+   "20260220 Windsor Spitfires 0-3 Kitchener Rangers",
+   "20260308 Kitchener Rangers 2-5 Windsor Spitfires"
+  ],
+  "Soo Greyhounds | Sudbury Wolves": [
+   "20260107 Sudbury Wolves 2-6 Soo Greyhounds",
+   "20260211 Sudbury Wolves 2-4 Soo Greyhounds",
+   "20260225 Soo Greyhounds 5-2 Sudbury Wolves",
+   "20261106 Soo Greyhounds 7-3 Sudbury Wolves",
+   "20261110 Soo Greyhounds 1-4 Sudbury Wolves"
+  ],
+  "Barrie Colts | North Bay Battalion": [
+   "20251228 Barrie Colts 3-1 North Bay Battalion",
+   "20260207 North Bay Battalion 2-3 Barrie Colts (SO)",
+   "20260208 Barrie Colts 7-4 North Bay Battalion",
+   "20260307 North Bay Battalion 2-5 Barrie Colts",
+   "20261024 North Bay Battalion 7-4 Barrie Colts"
+  ],
+  "Kingston Frontenacs | Niagara IceDogs": [
+   "20250309 Kingston Frontenacs 4-3 Niagara IceDogs (OT)",
+   "20251025 Kingston Frontenacs 1-4 Niagara IceDogs",
+   "20251114 Niagara IceDogs 3-4 Kingston Frontenacs (OT)",
+   "20260221 Niagara IceDogs 4-3 Kingston Frontenacs (OT)",
+   "20260312 Kingston Frontenacs 2-1 Niagara IceDogs"
+  ],
+  "Oshawa Generals | Ottawa 67s": [
+   "20260318 Oshawa Generals 1-6 Ottawa 67s",
+   "20260320 Ottawa 67s 3-4 Oshawa Generals",
+   "20261002 Ottawa 67s 4-1 Oshawa Generals",
+   "20261017 Oshawa Generals 2-3 Ottawa 67s (OT)",
+   "20261101 Ottawa 67s 7-6 Oshawa Generals (OT)"
+  ],
+  "Barrie Colts | Brampton Steelheads": [
+   "20260110 Brampton Steelheads 1-4 Barrie Colts",
+   "20260124 Brampton Steelheads 0-2 Barrie Colts",
+   "20260206 Barrie Colts 4-1 Brampton Steelheads",
+   "20260304 Barrie Colts 4-2 Brampton Steelheads",
+   "20261114 Brampton Steelheads 3-4 Barrie Colts (SO)"
+  ],
+  "Soo Greyhounds | Windsor Spitfires": [
+   "20260312 Soo Greyhounds 4-3 Windsor Spitfires (OT)",
+   "20260322 Windsor Spitfires 5-3 Soo Greyhounds",
+   "20261022 Windsor Spitfires 4-5 Soo Greyhounds (OT)",
+   "20261024 Soo Greyhounds 3-4 Windsor Spitfires",
+   "20261119 Soo Greyhounds 0-3 Windsor Spitfires"
+  ],
+  "Brantford Bulldogs | Owen Sound Attack": [
+   "20241004 Owen Sound Attack 5-3 Brantford Bulldogs",
+   "20241228 Brantford Bulldogs 8-2 Owen Sound Attack",
+   "20251228 Brantford Bulldogs 2-1 Owen Sound Attack",
+   "20260130 Owen Sound Attack 1-4 Brantford Bulldogs",
+   "20261004 Brantford Bulldogs 0-3 Owen Sound Attack"
+  ],
+  "Kingston Frontenacs | North Bay Battalion": [
+   "20250109 Kingston Frontenacs 4-1 North Bay Battalion",
+   "20250928 Kingston Frontenacs 2-1 North Bay Battalion",
+   "20251128 North Bay Battalion 4-1 Kingston Frontenacs",
+   "20260220 North Bay Battalion 1-5 Kingston Frontenacs",
+   "20260226 Kingston Frontenacs 3-4 North Bay Battalion"
+  ],
+  "Flint Firebirds | Kitchener Rangers": [
+   "20251024 Flint Firebirds 1-4 Kitchener Rangers",
+   "20251212 Kitchener Rangers 1-4 Flint Firebirds",
+   "20260317 Flint Firebirds 2-6 Kitchener Rangers",
+   "20261007 Kitchener Rangers 2-5 Flint Firebirds",
+   "20261030 Flint Firebirds 0-3 Kitchener Rangers"
+  ],
+  "Erie Otters | London Knights": [
+   "20260131 London Knights 6-1 Erie Otters",
+   "20260306 Erie Otters 2-10 London Knights",
+   "20260307 London Knights 3-1 Erie Otters",
+   "20261009 Erie Otters 4-3 London Knights (SO)",
+   "20261017 London Knights 7-1 Erie Otters"
+  ],
+  "Niagara IceDogs | Oshawa Generals": [
+   "20241004 Niagara IceDogs 5-3 Oshawa Generals",
+   "20241024 Oshawa Generals 3-4 Niagara IceDogs",
+   "20251231 Oshawa Generals 1-2 Niagara IceDogs (OT)",
+   "20260130 Niagara IceDogs 4-6 Oshawa Generals"
+  ],
+  "Peterborough Petes | Sudbury Wolves": [
+   "20251026 Peterborough Petes 2-8 Sudbury Wolves",
+   "20251109 Peterborough Petes 5-4 Sudbury Wolves",
+   "20260129 Sudbury Wolves 1-4 Peterborough Petes",
+   "20260207 Sudbury Wolves 1-4 Peterborough Petes",
+   "20261009 Peterborough Petes 3-7 Sudbury Wolves"
+  ],
+  "Guelph Storm | Soo Greyhounds": [
+   "20251107 Guelph Storm 4-2 Soo Greyhounds",
+   "20260116 Soo Greyhounds 3-1 Guelph Storm",
+   "20260221 Guelph Storm 1-0 Soo Greyhounds",
+   "20260307 Soo Greyhounds 2-0 Guelph Storm",
+   "20261030 Guelph Storm 4-3 Soo Greyhounds"
+  ],
+  "North Bay Battalion | Ottawa 67s": [
+   "20250309 Ottawa 67s 2-5 North Bay Battalion",
+   "20250926 Ottawa 67s 3-1 North Bay Battalion",
+   "20251130 North Bay Battalion 3-6 Ottawa 67s",
+   "20260108 Ottawa 67s 2-4 North Bay Battalion",
+   "20260222 North Bay Battalion 4-2 Ottawa 67s"
+  ],
+  "Brampton Steelheads | London Knights": [
+   "20241005 London Knights 3-6 Brampton Steelheads",
+   "20250221 Brampton Steelheads 3-4 London Knights (OT)",
+   "20250926 Brampton Steelheads 2-1 London Knights",
+   "20260228 London Knights 5-0 Brampton Steelheads"
+  ],
+  "Brantford Bulldogs | Windsor Spitfires": [
+   "20241005 Windsor Spitfires 5-1 Brantford Bulldogs",
+   "20250208 Brantford Bulldogs 2-3 Windsor Spitfires (OT)",
+   "20251004 Windsor Spitfires 4-3 Brantford Bulldogs (SO)",
+   "20260111 Brantford Bulldogs 7-3 Windsor Spitfires"
+  ],
+  "Flint Firebirds | Sarnia Sting": [
+   "20260131 Sarnia Sting 3-6 Flint Firebirds",
+   "20260204 Flint Firebirds 6-3 Sarnia Sting",
+   "20260306 Flint Firebirds 3-1 Sarnia Sting",
+   "20261010 Sarnia Sting 4-6 Flint Firebirds",
+   "20261101 Flint Firebirds 5-1 Sarnia Sting"
+  ],
+  "Kitchener Rangers | Owen Sound Attack": [
+   "20260123 Owen Sound Attack 2-6 Kitchener Rangers",
+   "20260128 Kitchener Rangers 2-3 Owen Sound Attack (OT)",
+   "20260313 Owen Sound Attack 2-3 Kitchener Rangers",
+   "20260321 Kitchener Rangers 7-8 Owen Sound Attack (OT)",
+   "20261107 Kitchener Rangers 3-2 Owen Sound Attack (OT)"
+  ],
+  "Erie Otters | Saginaw Spirit": [
+   "20251024 Erie Otters 3-5 Saginaw Spirit",
+   "20260117 Saginaw Spirit 6-1 Erie Otters",
+   "20260206 Erie Otters 1-4 Saginaw Spirit",
+   "20260308 Saginaw Spirit 7-5 Erie Otters",
+   "20261107 Erie Otters 0-5 Saginaw Spirit"
+  ],
+  "Brampton Steelheads | Niagara IceDogs": [
+   "20251205 Niagara IceDogs 4-2 Brampton Steelheads",
+   "20251228 Brampton Steelheads 3-4 Niagara IceDogs",
+   "20251229 Niagara IceDogs 4-3 Brampton Steelheads",
+   "20260125 Brampton Steelheads 3-4 Niagara IceDogs (OT)",
+   "20261105 Brampton Steelheads 6-3 Niagara IceDogs"
+  ],
+  "Sarnia Sting | Soo Greyhounds": [
+   "20260115 Soo Greyhounds 5-2 Sarnia Sting",
+   "20260216 Soo Greyhounds 5-6 Sarnia Sting (SO)",
+   "20260220 Sarnia Sting 3-6 Soo Greyhounds",
+   "20261002 Soo Greyhounds 4-3 Sarnia Sting (OT)",
+   "20261115 Sarnia Sting 4-5 Soo Greyhounds (OT)"
+  ],
+  "Kingston Frontenacs | Ottawa 67s": [
+   "20260920 Ottawa 67s 2-3 Kingston Frontenacs (OT)",
+   "20261023 Ottawa 67s 2-4 Kingston Frontenacs",
+   "20261025 Kingston Frontenacs 6-1 Ottawa 67s",
+   "20261104 Kingston Frontenacs 3-1 Ottawa 67s",
+   "20261118 Ottawa 67s 2-6 Kingston Frontenacs"
+  ],
+  "Guelph Storm | Kitchener Rangers": [
+   "20260315 Kitchener Rangers 4-1 Guelph Storm",
+   "20261004 Kitchener Rangers 0-6 Guelph Storm",
+   "20261023 Guelph Storm 3-6 Kitchener Rangers",
+   "20261025 Kitchener Rangers 5-6 Guelph Storm (OT)",
+   "20261103 Guelph Storm 3-2 Kitchener Rangers"
+  ],
+  "Barrie Colts | Oshawa Generals": [
+   "20251004 Oshawa Generals 3-5 Barrie Colts",
+   "20260111 Barrie Colts 4-1 Oshawa Generals",
+   "20260117 Oshawa Generals 2-4 Barrie Colts",
+   "20260315 Barrie Colts 6-5 Oshawa Generals (OT)",
+   "20260926 Oshawa Generals 4-2 Barrie Colts"
+  ],
+  "Brantford Bulldogs | Sarnia Sting": [
+   "20241009 Sarnia Sting 1-5 Brantford Bulldogs",
+   "20250103 Brantford Bulldogs 1-4 Sarnia Sting",
+   "20251024 Brantford Bulldogs 3-1 Sarnia Sting",
+   "20251121 Sarnia Sting 2-7 Brantford Bulldogs",
+   "20261106 Brantford Bulldogs 3-2 Sarnia Sting"
+  ],
+  "London Knights | Owen Sound Attack": [
+   "20251217 London Knights 5-4 Owen Sound Attack (OT)",
+   "20260117 London Knights 5-4 Owen Sound Attack",
+   "20260216 Owen Sound Attack 2-6 London Knights",
+   "20260925 Owen Sound Attack 4-7 London Knights",
+   "20261024 London Knights 1-5 Owen Sound Attack"
+  ],
+  "Brampton Steelheads | Windsor Spitfires": [
+   "20241011 Windsor Spitfires 7-5 Brampton Steelheads",
+   "20250126 Brampton Steelheads 2-5 Windsor Spitfires",
+   "20251108 Brampton Steelheads 3-6 Windsor Spitfires",
+   "20260117 Windsor Spitfires 5-2 Brampton Steelheads",
+   "20261101 Windsor Spitfires 3-0 Brampton Steelheads"
+  ],
+  "Erie Otters | North Bay Battalion": [
+   "20241011 North Bay Battalion 3-2 Erie Otters (SO)",
+   "20241205 Erie Otters 4-3 North Bay Battalion (OT)",
+   "20251113 Erie Otters 2-4 North Bay Battalion",
+   "20251213 North Bay Battalion 1-3 Erie Otters"
+  ],
+  "Kingston Frontenacs | Sudbury Wolves": [
+   "20250112 Kingston Frontenacs 6-10 Sudbury Wolves",
+   "20250328 Sudbury Wolves 1-4 Kingston Frontenacs",
+   "20250330 Sudbury Wolves 3-4 Kingston Frontenacs (OT)",
+   "20260130 Sudbury Wolves 2-3 Kingston Frontenacs",
+   "20260301 Kingston Frontenacs 3-5 Sudbury Wolves"
+  ],
+  "Barrie Colts | London Knights": [
+   "20241011 Barrie Colts 4-5 London Knights",
+   "20250213 London Knights 8-4 Barrie Colts",
+   "20251220 London Knights 4-0 Barrie Colts",
+   "20260220 Barrie Colts 5-1 London Knights"
+  ],
+  "Niagara IceDogs | Owen Sound Attack": [
+   "20241011 Owen Sound Attack 6-4 Niagara IceDogs",
+   "20250226 Niagara IceDogs 1-5 Owen Sound Attack",
+   "20260124 Niagara IceDogs 5-0 Owen Sound Attack",
+   "20260212 Owen Sound Attack 3-6 Niagara IceDogs"
+  ],
+  "Brantford Bulldogs | Ottawa 67s": [
+   "20251109 Ottawa 67s 3-4 Brantford Bulldogs (SO)",
+   "20251220 Brantford Bulldogs 0-6 Ottawa 67s",
+   "20260207 Brantford Bulldogs 1-5 Ottawa 67s",
+   "20261011 Ottawa 67s 4-3 Brantford Bulldogs (SO)",
+   "20261030 Brantford Bulldogs 3-1 Ottawa 67s"
+  ],
+  "Oshawa Generals | Sarnia Sting": [
+   "20241101 Sarnia Sting 2-5 Oshawa Generals",
+   "20251010 Oshawa Generals 3-1 Sarnia Sting",
+   "20260206 Sarnia Sting 5-3 Oshawa Generals",
+   "20261004 Sarnia Sting 3-0 Oshawa Generals",
+   "20261009 Oshawa Generals 0-4 Sarnia Sting"
+  ],
+  "Guelph Storm | Peterborough Petes": [
+   "20241011 Peterborough Petes 3-6 Guelph Storm",
+   "20241208 Guelph Storm 3-5 Peterborough Petes",
+   "20260104 Peterborough Petes 2-3 Guelph Storm (SO)",
+   "20260110 Guelph Storm 2-3 Peterborough Petes (SO)"
+  ],
+  "Kitchener Rangers | Soo Greyhounds": [
+   "20251010 Kitchener Rangers 4-5 Soo Greyhounds (OT)",
+   "20251114 Soo Greyhounds 4-0 Kitchener Rangers",
+   "20251210 Kitchener Rangers 2-3 Soo Greyhounds (OT)",
+   "20260306 Soo Greyhounds 0-3 Kitchener Rangers",
+   "20261009 Kitchener Rangers 2-3 Soo Greyhounds (OT)"
+  ],
+  "Brantford Bulldogs | Kingston Frontenacs": [
+   "20260208 Brantford Bulldogs 5-2 Kingston Frontenacs",
+   "20260216 Brantford Bulldogs 3-2 Kingston Frontenacs",
+   "20260926 Kingston Frontenacs 4-10 Brantford Bulldogs",
+   "20261010 Kingston Frontenacs 4-2 Brantford Bulldogs",
+   "20261101 Brantford Bulldogs 0-5 Kingston Frontenacs"
+  ],
+  "Guelph Storm | London Knights": [
+   "20260211 Guelph Storm 4-2 London Knights",
+   "20260304 Guelph Storm 2-5 London Knights",
+   "20260313 Guelph Storm 3-4 London Knights",
+   "20260318 London Knights 6-2 Guelph Storm",
+   "20261111 Guelph Storm 5-2 London Knights"
+  ],
+  "Erie Otters | Windsor Spitfires": [
+   "20260103 Windsor Spitfires 4-1 Erie Otters",
+   "20260108 Erie Otters 1-9 Windsor Spitfires",
+   "20260116 Windsor Spitfires 3-2 Erie Otters",
+   "20260317 Erie Otters 1-5 Windsor Spitfires",
+   "20261029 Erie Otters 0-3 Windsor Spitfires"
+  ],
+  "Flint Firebirds | Oshawa Generals": [
+   "20241012 Oshawa Generals 1-4 Flint Firebirds",
+   "20250105 Flint Firebirds 0-7 Oshawa Generals",
+   "20251011 Oshawa Generals 0-3 Flint Firebirds",
+   "20260216 Flint Firebirds 5-0 Oshawa Generals"
+  ],
+  "Niagara IceDogs | North Bay Battalion": [
+   "20260201 North Bay Battalion 1-2 Niagara IceDogs",
+   "20260215 Niagara IceDogs 1-9 North Bay Battalion",
+   "20260301 Niagara IceDogs 0-5 North Bay Battalion",
+   "20261018 Niagara IceDogs 5-4 North Bay Battalion",
+   "20261030 North Bay Battalion 7-3 Niagara IceDogs"
+  ],
+  "Owen Sound Attack | Peterborough Petes": [
+   "20241012 Peterborough Petes 2-7 Owen Sound Attack",
+   "20241114 Owen Sound Attack 4-1 Peterborough Petes",
+   "20260103 Peterborough Petes 5-3 Owen Sound Attack",
+   "20260205 Owen Sound Attack 2-3 Peterborough Petes (OT)"
+  ],
+  "Kitchener Rangers | Saginaw Spirit": [
+   "20260327 Saginaw Spirit 4-6 Kitchener Rangers",
+   "20260329 Saginaw Spirit 0-4 Kitchener Rangers",
+   "20260331 Kitchener Rangers 4-3 Saginaw Spirit (OT)",
+   "20261002 Saginaw Spirit 3-4 Kitchener Rangers (OT)",
+   "20261010 Kitchener Rangers 2-4 Saginaw Spirit"
+  ],
+  "Ottawa 67s | Sudbury Wolves": [
+   "20241013 Sudbury Wolves 4-1 Ottawa 67s",
+   "20241027 Ottawa 67s 6-3 Sudbury Wolves",
+   "20260111 Ottawa 67s 6-4 Sudbury Wolves",
+   "20260201 Sudbury Wolves 5-2 Ottawa 67s"
+  ],
+  "North Bay Battalion | Owen Sound Attack": [
+   "20241014 Owen Sound Attack 2-4 North Bay Battalion",
+   "20250208 North Bay Battalion 1-4 Owen Sound Attack",
+   "20251011 North Bay Battalion 3-5 Owen Sound Attack",
+   "20251013 Owen Sound Attack 6-4 North Bay Battalion",
+   "20261118 North Bay Battalion 3-4 Owen Sound Attack (SO)"
+  ],
+  "Oshawa Generals | Windsor Spitfires": [
+   "20241014 Oshawa Generals 2-5 Windsor Spitfires",
+   "20250119 Windsor Spitfires 1-4 Oshawa Generals",
+   "20250928 Windsor Spitfires 4-1 Oshawa Generals",
+   "20251013 Oshawa Generals 4-3 Windsor Spitfires (OT)",
+   "20261010 Oshawa Generals 5-1 Windsor Spitfires"
+  ],
+  "Barrie Colts | Owen Sound Attack": [
+   "20260118 Barrie Colts 5-1 Owen Sound Attack",
+   "20260219 Owen Sound Attack 3-4 Barrie Colts (SO)",
+   "20261022 Owen Sound Attack 3-4 Barrie Colts (OT)",
+   "20261025 Barrie Colts 4-5 Owen Sound Attack (OT)",
+   "20261111 Barrie Colts 4-3 Owen Sound Attack (OT)"
+  ],
+  "Erie Otters | Kingston Frontenacs": [
+   "20241017 Kingston Frontenacs 1-2 Erie Otters (OT)",
+   "20250119 Erie Otters 2-6 Kingston Frontenacs",
+   "20251005 Erie Otters 0-1 Kingston Frontenacs",
+   "20260313 Kingston Frontenacs 4-3 Erie Otters (OT)",
+   "20261004 Erie Otters 8-6 Kingston Frontenacs"
+  ],
+  "North Bay Battalion | Sarnia Sting": [
+   "20241017 Sarnia Sting 3-1 North Bay Battalion",
+   "20250223 North Bay Battalion 5-1 Sarnia Sting",
+   "20251109 North Bay Battalion 5-6 Sarnia Sting (OT)",
+   "20251204 Sarnia Sting 1-2 North Bay Battalion",
+   "20261112 Sarnia Sting 0-2 North Bay Battalion"
+  ],
+  "Oshawa Generals | Peterborough Petes": [
+   "20260312 Oshawa Generals 3-2 Peterborough Petes",
+   "20260322 Peterborough Petes 7-3 Oshawa Generals",
+   "20261022 Oshawa Generals 4-5 Peterborough Petes (OT)",
+   "20261023 Peterborough Petes 0-5 Oshawa Generals",
+   "20261113 Peterborough Petes 6-4 Oshawa Generals"
+  ],
+  "Brampton Steelheads | Ottawa 67s": [
+   "20251029 Brampton Steelheads 2-3 Ottawa 67s (OT)",
+   "20260307 Brampton Steelheads 2-1 Ottawa 67s (OT)",
+   "20260313 Ottawa 67s 5-1 Brampton Steelheads",
+   "20261016 Ottawa 67s 6-2 Brampton Steelheads",
+   "20261028 Brampton Steelheads 2-5 Ottawa 67s"
+  ],
+  "Brantford Bulldogs | North Bay Battalion": [
+   "20251206 North Bay Battalion 2-7 Brantford Bulldogs",
+   "20260122 Brantford Bulldogs 4-5 North Bay Battalion (OT)",
+   "20260312 Brantford Bulldogs 2-3 North Bay Battalion (OT)",
+   "20260320 North Bay Battalion 5-6 Brantford Bulldogs",
+   "20261003 North Bay Battalion 3-6 Brantford Bulldogs"
+  ],
+  "Kitchener Rangers | Niagara IceDogs": [
+   "20241018 Niagara IceDogs 2-4 Kitchener Rangers",
+   "20250208 Kitchener Rangers 9-1 Niagara IceDogs",
+   "20251128 Niagara IceDogs 3-6 Kitchener Rangers",
+   "20260207 Kitchener Rangers 3-4 Niagara IceDogs",
+   "20261016 Niagara IceDogs 2-5 Kitchener Rangers"
+  ],
+  "London Knights | Saginaw Spirit": [
+   "20251129 London Knights 8-5 Saginaw Spirit",
+   "20251212 Saginaw Spirit 3-5 London Knights",
+   "20260207 London Knights 5-3 Saginaw Spirit",
+   "20261106 Saginaw Spirit 3-5 London Knights",
+   "20261114 London Knights 5-6 Saginaw Spirit"
+  ],
+  "Sarnia Sting | Sudbury Wolves": [
+   "20241018 Sarnia Sting 5-1 Sudbury Wolves",
+   "20250117 Sudbury Wolves 2-6 Sarnia Sting",
+   "20250926 Sudbury Wolves 1-6 Sarnia Sting",
+   "20251205 Sarnia Sting 1-3 Sudbury Wolves",
+   "20261113 Sarnia Sting 2-4 Sudbury Wolves"
+  ],
+  "Guelph Storm | Windsor Spitfires": [
+   "20251128 Windsor Spitfires 4-5 Guelph Storm",
+   "20260326 Guelph Storm 0-4 Windsor Spitfires",
+   "20260328 Guelph Storm 1-4 Windsor Spitfires",
+   "20260331 Windsor Spitfires 2-1 Guelph Storm",
+   "20261002 Windsor Spitfires 2-4 Guelph Storm"
+  ],
+  "Flint Firebirds | Soo Greyhounds": [
+   "20260206 Flint Firebirds 5-1 Soo Greyhounds",
+   "20260304 Soo Greyhounds 4-3 Flint Firebirds (SO)",
+   "20260313 Soo Greyhounds 2-5 Flint Firebirds",
+   "20261003 Soo Greyhounds 3-2 Flint Firebirds",
+   "20261025 Soo Greyhounds 0-1 Flint Firebirds"
+  ],
+  "Brampton Steelheads | Saginaw Spirit": [
+   "20241130 Brampton Steelheads 5-3 Saginaw Spirit",
+   "20251206 Saginaw Spirit 1-4 Brampton Steelheads",
+   "20260104 Brampton Steelheads 3-4 Saginaw Spirit",
+   "20261003 Saginaw Spirit 3-2 Brampton Steelheads (OT)",
+   "20261108 Brampton Steelheads 4-6 Saginaw Spirit"
+  ],
+  "Erie Otters | Flint Firebirds": [
+   "20251025 Erie Otters 0-5 Flint Firebirds",
+   "20251220 Flint Firebirds 5-3 Erie Otters",
+   "20260207 Erie Otters 1-3 Flint Firebirds",
+   "20260214 Flint Firebirds 4-6 Erie Otters",
+   "20261106 Erie Otters 6-4 Flint Firebirds"
+  ],
+  "Owen Sound Attack | Windsor Spitfires": [
+   "20251126 Owen Sound Attack 1-3 Windsor Spitfires",
+   "20251129 Windsor Spitfires 3-2 Owen Sound Attack",
+   "20261003 Windsor Spitfires 4-1 Owen Sound Attack",
+   "20261016 Owen Sound Attack 3-11 Windsor Spitfires",
+   "20261031 Windsor Spitfires 8-0 Owen Sound Attack"
+  ],
+  "North Bay Battalion | Sudbury Wolves": [
+   "20260322 Sudbury Wolves 2-4 North Bay Battalion",
+   "20261008 Sudbury Wolves 3-4 North Bay Battalion (OT)",
+   "20261022 Sudbury Wolves 4-3 North Bay Battalion",
+   "20261023 North Bay Battalion 5-3 Sudbury Wolves",
+   "20261115 Sudbury Wolves 2-4 North Bay Battalion"
+  ],
+  "Barrie Colts | Ottawa 67s": [
+   "20250130 Ottawa 67s 3-5 Barrie Colts",
+   "20251009 Ottawa 67s 2-1 Barrie Colts",
+   "20251205 Barrie Colts 4-1 Ottawa 67s",
+   "20260216 Barrie Colts 8-5 Ottawa 67s",
+   "20260312 Ottawa 67s 3-2 Barrie Colts (OT)"
+  ],
+  "Oshawa Generals | Saginaw Spirit": [
+   "20241020 Saginaw Spirit 3-5 Oshawa Generals",
+   "20241207 Oshawa Generals 1-6 Saginaw Spirit",
+   "20251005 Saginaw Spirit 2-3 Oshawa Generals (OT)",
+   "20251220 Oshawa Generals 4-6 Saginaw Spirit"
+  ],
+  "Barrie Colts | Erie Otters": [
+   "20241024 Erie Otters 2-1 Barrie Colts",
+   "20241102 Barrie Colts 0-4 Erie Otters",
+   "20251101 Erie Otters 2-4 Barrie Colts",
+   "20251121 Barrie Colts 3-2 Erie Otters (SO)",
+   "20261011 Barrie Colts 2-3 Erie Otters"
+  ],
+  "Brantford Bulldogs | London Knights": [
+   "20241025 Brantford Bulldogs 3-4 London Knights (OT)",
+   "20250305 London Knights 5-0 Brantford Bulldogs",
+   "20251214 London Knights 0-2 Brantford Bulldogs",
+   "20260109 Brantford Bulldogs 4-1 London Knights"
+  ],
+  "Niagara IceDogs | Sarnia Sting": [
+   "20241025 Niagara IceDogs 4-3 Sarnia Sting",
+   "20241108 Sarnia Sting 3-4 Niagara IceDogs",
+   "20251003 Niagara IceDogs 4-3 Sarnia Sting",
+   "20251220 Sarnia Sting 3-4 Niagara IceDogs (OT)"
+  ],
+  "Flint Firebirds | Guelph Storm": [
+   "20251108 Guelph Storm 3-6 Flint Firebirds",
+   "20251122 Flint Firebirds 4-3 Guelph Storm",
+   "20251210 Guelph Storm 1-9 Flint Firebirds",
+   "20260213 Flint Firebirds 5-1 Guelph Storm",
+   "20261016 Flint Firebirds 2-3 Guelph Storm (OT)"
+  ],
+  "Ottawa 67s | Soo Greyhounds": [
+   "20241025 Ottawa 67s 2-3 Soo Greyhounds",
+   "20250119 Soo Greyhounds 3-0 Ottawa 67s",
+   "20250928 Soo Greyhounds 3-7 Ottawa 67s",
+   "20260109 Ottawa 67s 1-2 Soo Greyhounds"
+  ],
+  "Brantford Bulldogs | Peterborough Petes": [
+   "20260116 Peterborough Petes 3-4 Brantford Bulldogs",
+   "20260222 Brantford Bulldogs 3-4 Peterborough Petes (OT)",
+   "20260925 Peterborough Petes 2-5 Brantford Bulldogs",
+   "20261029 Brantford Bulldogs 3-4 Peterborough Petes",
+   "20261118 Brantford Bulldogs 0-4 Peterborough Petes"
+  ],
+  "Flint Firebirds | Owen Sound Attack": [
+   "20260318 Flint Firebirds 3-4 Owen Sound Attack",
+   "20260326 Owen Sound Attack 1-8 Flint Firebirds",
+   "20260328 Owen Sound Attack 1-11 Flint Firebirds",
+   "20260330 Flint Firebirds 10-0 Owen Sound Attack",
+   "20261017 Owen Sound Attack 2-3 Flint Firebirds"
+  ],
+  "Niagara IceDogs | Windsor Spitfires": [
+   "20241026 Niagara IceDogs 1-2 Windsor Spitfires",
+   "20250105 Windsor Spitfires 4-3 Niagara IceDogs (OT)",
+   "20251002 Niagara IceDogs 0-6 Windsor Spitfires",
+   "20260102 Windsor Spitfires 2-1 Niagara IceDogs (OT)",
+   "20261112 Niagara IceDogs 1-4 Windsor Spitfires"
+  ],
+  "Barrie Colts | Guelph Storm": [
+   "20241026 Guelph Storm 1-6 Barrie Colts",
+   "20250226 Barrie Colts 5-4 Guelph Storm (SO)",
+   "20250920 Guelph Storm 2-6 Barrie Colts",
+   "20260109 Barrie Colts 6-3 Guelph Storm"
+  ],
+  "London Knights | Sarnia Sting": [
+   "20260116 London Knights 4-1 Sarnia Sting",
+   "20260123 Sarnia Sting 2-3 London Knights (OT)",
+   "20261021 London Knights 4-6 Sarnia Sting",
+   "20261023 Sarnia Sting 4-6 London Knights",
+   "20261108 London Knights 2-4 Sarnia Sting"
+  ],
+  "Brampton Steelheads | Guelph Storm": [
+   "20241027 Brampton Steelheads 10-1 Guelph Storm",
+   "20241204 Guelph Storm 4-7 Brampton Steelheads",
+   "20251203 Guelph Storm 5-2 Brampton Steelheads",
+   "20260130 Brampton Steelheads 4-1 Guelph Storm"
+  ],
+  "Owen Sound Attack | Saginaw Spirit": [
+   "20241027 Owen Sound Attack 4-5 Saginaw Spirit (SO)",
+   "20241102 Saginaw Spirit 6-2 Owen Sound Attack",
+   "20251004 Saginaw Spirit 7-5 Owen Sound Attack",
+   "20251025 Owen Sound Attack 2-4 Saginaw Spirit",
+   "20261018 Owen Sound Attack 2-1 Saginaw Spirit"
+  ],
+  "Kitchener Rangers | Sarnia Sting": [
+   "20250228 Sarnia Sting 3-4 Kitchener Rangers (OT)",
+   "20251217 Kitchener Rangers 5-2 Sarnia Sting",
+   "20260127 Sarnia Sting 1-4 Kitchener Rangers",
+   "20260304 Kitchener Rangers 6-3 Sarnia Sting",
+   "20260320 Sarnia Sting 4-3 Kitchener Rangers"
+  ],
+  "Niagara IceDogs | Peterborough Petes": [
+   "20251218 Niagara IceDogs 2-5 Peterborough Petes",
+   "20260117 Niagara IceDogs 0-1 Peterborough Petes",
+   "20260306 Peterborough Petes 4-1 Niagara IceDogs",
+   "20261101 Peterborough Petes 4-3 Niagara IceDogs (OT)",
+   "20261108 Niagara IceDogs 2-3 Peterborough Petes (OT)"
+  ],
+  "Brampton Steelheads | North Bay Battalion": [
+   "20260109 North Bay Battalion 5-1 Brampton Steelheads",
+   "20260212 Brampton Steelheads 2-3 North Bay Battalion (SO)",
+   "20260216 North Bay Battalion 5-3 Brampton Steelheads",
+   "20260319 Brampton Steelheads 0-7 North Bay Battalion",
+   "20260924 Brampton Steelheads 2-5 North Bay Battalion"
+  ],
+  "Brantford Bulldogs | Erie Otters": [
+   "20241231 Brantford Bulldogs 4-5 Erie Otters",
+   "20251211 Brantford Bulldogs 8-4 Erie Otters",
+   "20251230 Erie Otters 3-2 Brantford Bulldogs",
+   "20251231 Brantford Bulldogs 5-2 Erie Otters",
+   "20260213 Erie Otters 1-5 Brantford Bulldogs"
+  ],
+  "Flint Firebirds | Windsor Spitfires": [
+   "20260124 Windsor Spitfires 4-1 Flint Firebirds",
+   "20260222 Flint Firebirds 2-1 Windsor Spitfires",
+   "20260307 Windsor Spitfires 2-4 Flint Firebirds",
+   "20260925 Flint Firebirds 4-2 Windsor Spitfires",
+   "20261114 Windsor Spitfires 1-4 Flint Firebirds"
+  ],
+  "Kitchener Rangers | Sudbury Wolves": [
+   "20241101 Sudbury Wolves 4-8 Kitchener Rangers",
+   "20241229 Kitchener Rangers 3-2 Sudbury Wolves (OT)",
+   "20251031 Sudbury Wolves 0-3 Kitchener Rangers",
+   "20251230 Kitchener Rangers 3-4 Sudbury Wolves",
+   "20261118 Kitchener Rangers 6-2 Sudbury Wolves"
+  ],
+  "London Knights | Soo Greyhounds": [
+   "20260327 Soo Greyhounds 4-1 London Knights",
+   "20260329 Soo Greyhounds 3-2 London Knights (OT)",
+   "20260331 London Knights 2-3 Soo Greyhounds (OT)",
+   "20261101 London Knights 5-4 Soo Greyhounds (OT)",
+   "20261113 London Knights 4-5 Soo Greyhounds (SO)"
+  ],
+  "Barrie Colts | Niagara IceDogs": [
+   "20260326 Niagara IceDogs 1-4 Barrie Colts",
+   "20260328 Niagara IceDogs 4-3 Barrie Colts (OT)",
+   "20260331 Barrie Colts 5-2 Niagara IceDogs",
+   "20261001 Niagara IceDogs 2-1 Barrie Colts (OT)",
+   "20261010 Barrie Colts 2-4 Niagara IceDogs"
+  ],
+  "Guelph Storm | Ottawa 67s": [
+   "20241101 Guelph Storm 4-5 Ottawa 67s (OT)",
+   "20250202 Ottawa 67s 4-3 Guelph Storm (SO)",
+   "20251026 Ottawa 67s 3-4 Guelph Storm",
+   "20251230 Guelph Storm 1-5 Ottawa 67s"
+  ],
+  "Brampton Steelheads | Sarnia Sting": [
+   "20241102 Sarnia Sting 5-3 Brampton Steelheads",
+   "20241129 Brampton Steelheads 3-2 Sarnia Sting",
+   "20251107 Brampton Steelheads 5-4 Sarnia Sting (SO)",
+   "20260207 Sarnia Sting 2-1 Brampton Steelheads (OT)"
+  ],
+  "Brantford Bulldogs | Sudbury Wolves": [
+   "20260123 Brantford Bulldogs 5-4 Sudbury Wolves (OT)",
+   "20260313 Brantford Bulldogs 4-0 Sudbury Wolves",
+   "20260327 Sudbury Wolves 2-6 Brantford Bulldogs",
+   "20260329 Sudbury Wolves 2-4 Brantford Bulldogs",
+   "20260331 Brantford Bulldogs 6-5 Sudbury Wolves (OT)"
+  ],
+  "Guelph Storm | Kingston Frontenacs": [
+   "20241102 Guelph Storm 3-6 Kingston Frontenacs",
+   "20241214 Kingston Frontenacs 3-4 Guelph Storm (SO)",
+   "20251024 Kingston Frontenacs 3-6 Guelph Storm",
+   "20251231 Guelph Storm 3-5 Kingston Frontenacs"
+  ],
+  "Niagara IceDogs | Sudbury Wolves": [
+   "20250921 Sudbury Wolves 1-5 Niagara IceDogs",
+   "20251012 Sudbury Wolves 3-4 Niagara IceDogs",
+   "20260109 Niagara IceDogs 4-2 Sudbury Wolves",
+   "20260216 Niagara IceDogs 2-6 Sudbury Wolves",
+   "20261002 Niagara IceDogs 1-7 Sudbury Wolves"
+  ],
+  "Brantford Bulldogs | Guelph Storm": [
+   "20241106 Guelph Storm 4-1 Brantford Bulldogs",
+   "20250124 Brantford Bulldogs 4-1 Guelph Storm",
+   "20260102 Brantford Bulldogs 4-6 Guelph Storm",
+   "20260214 Guelph Storm 2-4 Brantford Bulldogs",
+   "20261113 Brantford Bulldogs 2-5 Guelph Storm"
+  ],
+  "Owen Sound Attack | Sarnia Sting": [
+   "20251105 Owen Sound Attack 4-6 Sarnia Sting",
+   "20260102 Owen Sound Attack 5-3 Sarnia Sting",
+   "20260307 Sarnia Sting 4-5 Owen Sound Attack (OT)",
+   "20261028 Sarnia Sting 3-4 Owen Sound Attack",
+   "20261104 Owen Sound Attack 4-5 Sarnia Sting"
+  ],
+  "Erie Otters | Niagara IceDogs": [
+   "20260322 Erie Otters 5-6 Niagara IceDogs (OT)",
+   "20261023 Erie Otters 3-4 Niagara IceDogs (OT)",
+   "20261024 Niagara IceDogs 2-5 Erie Otters",
+   "20261114 Niagara IceDogs 5-4 Erie Otters (SO)",
+   "20261115 Erie Otters 7-3 Niagara IceDogs"
+  ],
+  "Peterborough Petes | Saginaw Spirit": [
+   "20241107 Peterborough Petes 2-1 Saginaw Spirit",
+   "20250123 Saginaw Spirit 6-8 Peterborough Petes",
+   "20260122 Saginaw Spirit 4-1 Peterborough Petes",
+   "20260228 Peterborough Petes 2-5 Saginaw Spirit"
+  ],
+  "North Bay Battalion | Windsor Spitfires": [
+   "20241107 North Bay Battalion 5-4 Windsor Spitfires",
+   "20241114 Windsor Spitfires 5-3 North Bay Battalion",
+   "20260129 North Bay Battalion 3-4 Windsor Spitfires",
+   "20260205 Windsor Spitfires 4-5 North Bay Battalion (SO)",
+   "20261001 North Bay Battalion 2-3 Windsor Spitfires"
+  ],
+  "Flint Firebirds | Peterborough Petes": [
+   "20241108 Peterborough Petes 1-4 Flint Firebirds",
+   "20250206 Flint Firebirds 7-2 Peterborough Petes",
+   "20251204 Flint Firebirds 2-3 Peterborough Petes",
+   "20260301 Peterborough Petes 4-2 Flint Firebirds"
+  ],
+  "London Knights | North Bay Battalion": [
+   "20250123 London Knights 4-1 North Bay Battalion",
+   "20251120 London Knights 2-5 North Bay Battalion",
+   "20260130 North Bay Battalion 3-2 London Knights (SO)",
+   "20261002 North Bay Battalion 1-4 London Knights",
+   "20261029 London Knights 5-4 North Bay Battalion (OT)"
+  ],
+  "Erie Otters | Guelph Storm": [
+   "20251030 Guelph Storm 3-4 Erie Otters",
+   "20260123 Erie Otters 3-4 Guelph Storm (SO)",
+   "20260205 Guelph Storm 3-2 Erie Otters",
+   "20260216 Erie Otters 1-5 Guelph Storm",
+   "20260321 Guelph Storm 3-4 Erie Otters"
+  ],
+  "Brantford Bulldogs | Niagara IceDogs": [
+   "20251120 Brantford Bulldogs 5-0 Niagara IceDogs",
+   "20260107 Niagara IceDogs 2-4 Brantford Bulldogs",
+   "20260118 Brantford Bulldogs 3-4 Niagara IceDogs (OT)",
+   "20260308 Niagara IceDogs 4-6 Brantford Bulldogs",
+   "20260318 Niagara IceDogs 2-5 Brantford Bulldogs"
+  ],
+  "Brampton Steelheads | Kingston Frontenacs": [
+   "20260306 Brampton Steelheads 1-2 Kingston Frontenacs",
+   "20260315 Kingston Frontenacs 4-1 Brampton Steelheads",
+   "20261009 Kingston Frontenacs 4-2 Brampton Steelheads",
+   "20261017 Kingston Frontenacs 2-5 Brampton Steelheads",
+   "20261113 Brampton Steelheads 4-1 Kingston Frontenacs"
+  ],
+  "Erie Otters | Sarnia Sting": [
+   "20251122 Sarnia Sting 2-4 Erie Otters",
+   "20251219 Sarnia Sting 2-6 Erie Otters",
+   "20260109 Erie Otters 1-9 Sarnia Sting",
+   "20260318 Erie Otters 3-6 Sarnia Sting",
+   "20261030 Erie Otters 4-3 Sarnia Sting"
+  ],
+  "Owen Sound Attack | Sudbury Wolves": [
+   "20241110 Sudbury Wolves 3-1 Owen Sound Attack",
+   "20250221 Owen Sound Attack 1-8 Sudbury Wolves",
+   "20251101 Sudbury Wolves 3-4 Owen Sound Attack",
+   "20251212 Owen Sound Attack 6-7 Sudbury Wolves (SO)"
+  ],
+  "Peterborough Petes | Windsor Spitfires": [
+   "20241110 Peterborough Petes 1-4 Windsor Spitfires",
+   "20250227 Windsor Spitfires 7-1 Peterborough Petes",
+   "20251211 Windsor Spitfires 6-3 Peterborough Petes",
+   "20260226 Peterborough Petes 3-4 Windsor Spitfires (SO)",
+   "20261105 Windsor Spitfires 4-3 Peterborough Petes"
+  ],
+  "Flint Firebirds | Saginaw Spirit": [
+   "20260109 Saginaw Spirit 2-4 Flint Firebirds",
+   "20260211 Saginaw Spirit 5-4 Flint Firebirds",
+   "20260314 Flint Firebirds 5-1 Saginaw Spirit",
+   "20261023 Flint Firebirds 4-3 Saginaw Spirit (SO)",
+   "20261024 Saginaw Spirit 2-6 Flint Firebirds"
+  ],
+  "Kitchener Rangers | Oshawa Generals": [
+   "20241110 Kitchener Rangers 2-3 Oshawa Generals",
+   "20250211 Oshawa Generals 4-3 Kitchener Rangers (OT)",
+   "20251123 Kitchener Rangers 6-2 Oshawa Generals",
+   "20260109 Oshawa Generals 2-4 Kitchener Rangers",
+   "20261018 Kitchener Rangers 2-1 Oshawa Generals"
+  ],
+  "Barrie Colts | Brantford Bulldogs": [
+   "20251029 Barrie Colts 5-4 Brantford Bulldogs (OT)",
+   "20260125 Barrie Colts 1-7 Brantford Bulldogs",
+   "20260221 Brantford Bulldogs 4-7 Barrie Colts",
+   "20260305 Brantford Bulldogs 5-3 Barrie Colts",
+   "20261016 Barrie Colts 0-1 Brantford Bulldogs"
+  ],
+  "Erie Otters | Soo Greyhounds": [
+   "20241122 Soo Greyhounds 3-6 Erie Otters",
+   "20251022 Erie Otters 5-2 Soo Greyhounds",
+   "20260130 Soo Greyhounds 2-3 Erie Otters (SO)",
+   "20261016 Soo Greyhounds 3-1 Erie Otters",
+   "20261104 Erie Otters 7-0 Soo Greyhounds"
+  ],
+  "Kingston Frontenacs | Owen Sound Attack": [
+   "20241115 Owen Sound Attack 1-7 Kingston Frontenacs",
+   "20250209 Kingston Frontenacs 4-2 Owen Sound Attack",
+   "20251130 Kingston Frontenacs 3-7 Owen Sound Attack",
+   "20260206 Owen Sound Attack 3-5 Kingston Frontenacs"
+  ],
+  "Kitchener Rangers | Peterborough Petes": [
+   "20241115 Peterborough Petes 1-4 Kitchener Rangers",
+   "20250217 Kitchener Rangers 3-5 Peterborough Petes",
+   "20251205 Peterborough Petes 3-6 Kitchener Rangers",
+   "20260216 Kitchener Rangers 2-3 Peterborough Petes (SO)"
+  ],
+  "Sudbury Wolves | Windsor Spitfires": [
+   "20241115 Windsor Spitfires 3-9 Sudbury Wolves",
+   "20250116 Sudbury Wolves 2-6 Windsor Spitfires",
+   "20250925 Sudbury Wolves 0-4 Windsor Spitfires",
+   "20260206 Windsor Spitfires 5-2 Sudbury Wolves",
+   "20261015 Sudbury Wolves 6-2 Windsor Spitfires"
+  ],
+  "Guelph Storm | Niagara IceDogs": [
+   "20241115 Niagara IceDogs 5-8 Guelph Storm",
+   "20241128 Guelph Storm 3-5 Niagara IceDogs",
+   "20260209 Guelph Storm 6-3 Niagara IceDogs",
+   "20260227 Niagara IceDogs 3-2 Guelph Storm (SO)"
+  ],
+  "Ottawa 67s | Owen Sound Attack": [
+   "20241117 Owen Sound Attack 3-4 Ottawa 67s",
+   "20250201 Ottawa 67s 1-3 Owen Sound Attack",
+   "20251122 Ottawa 67s 1-2 Owen Sound Attack",
+   "20260208 Owen Sound Attack 4-5 Ottawa 67s"
+  ],
+  "Kitchener Rangers | London Knights": [
+   "20251203 Kitchener Rangers 4-3 London Knights",
+   "20260204 Kitchener Rangers 4-3 London Knights (OT)",
+   "20260210 London Knights 2-5 Kitchener Rangers",
+   "20260301 London Knights 1-4 Kitchener Rangers",
+   "20261013 London Knights 4-3 Kitchener Rangers (SO)"
+  ],
+  "Niagara IceDogs | Soo Greyhounds": [
+   "20241121 Soo Greyhounds 2-7 Niagara IceDogs",
+   "20241213 Niagara IceDogs 8-4 Soo Greyhounds",
+   "20260110 Niagara IceDogs 0-5 Soo Greyhounds",
+   "20260129 Soo Greyhounds 3-6 Niagara IceDogs",
+   "20261015 Soo Greyhounds 5-4 Niagara IceDogs (OT)"
+  ],
+  "Guelph Storm | North Bay Battalion": [
+   "20241121 Guelph Storm 3-4 North Bay Battalion",
+   "20250207 North Bay Battalion 4-5 Guelph Storm (OT)",
+   "20251010 North Bay Battalion 5-2 Guelph Storm",
+   "20251218 Guelph Storm 2-6 North Bay Battalion",
+   "20261107 North Bay Battalion 6-10 Guelph Storm"
+  ],
+  "Barrie Colts | Windsor Spitfires": [
+   "20241121 Barrie Colts 1-2 Windsor Spitfires",
+   "20250118 Windsor Spitfires 1-4 Barrie Colts",
+   "20250927 Windsor Spitfires 3-1 Barrie Colts",
+   "20260228 Barrie Colts 0-3 Windsor Spitfires"
+  ],
+  "Ottawa 67s | Sarnia Sting": [
+   "20241122 Ottawa 67s 4-5 Sarnia Sting (SO)",
+   "20241206 Sarnia Sting 1-6 Ottawa 67s",
+   "20251114 Sarnia Sting 3-9 Ottawa 67s",
+   "20260301 Ottawa 67s 5-0 Sarnia Sting",
+   "20260927 Sarnia Sting 10-3 Ottawa 67s"
+  ],
+  "Guelph Storm | Sudbury Wolves": [
+   "20241122 Guelph Storm 2-6 Sudbury Wolves",
+   "20250217 Sudbury Wolves 6-7 Guelph Storm",
+   "20251130 Sudbury Wolves 2-6 Guelph Storm",
+   "20251219 Guelph Storm 2-6 Sudbury Wolves",
+   "20261018 Sudbury Wolves 2-5 Guelph Storm"
+  ],
+  "Barrie Colts | Flint Firebirds": [
+   "20241205 Flint Firebirds 2-5 Barrie Colts",
+   "20260115 Flint Firebirds 3-5 Barrie Colts",
+   "20260130 Barrie Colts 6-5 Flint Firebirds (OT)",
+   "20261031 Barrie Colts 3-4 Flint Firebirds (OT)",
+   "20261119 Flint Firebirds 6-2 Barrie Colts"
+  ],
+  "Oshawa Generals | Owen Sound Attack": [
+   "20241123 Oshawa Generals 4-3 Owen Sound Attack",
+   "20250101 Owen Sound Attack 3-4 Oshawa Generals",
+   "20251109 Owen Sound Attack 5-3 Oshawa Generals",
+   "20260225 Oshawa Generals 3-2 Owen Sound Attack (OT)"
+  ],
+  "Ottawa 67s | Windsor Spitfires": [
+   "20241123 Ottawa 67s 3-6 Windsor Spitfires",
+   "20250302 Windsor Spitfires 4-5 Ottawa 67s",
+   "20251023 Ottawa 67s 0-2 Windsor Spitfires",
+   "20251214 Windsor Spitfires 1-2 Ottawa 67s",
+   "20261106 Windsor Spitfires 5-4 Ottawa 67s"
+  ],
+  "Brampton Steelheads | Soo Greyhounds": [
+   "20241124 Soo Greyhounds 5-8 Brampton Steelheads",
+   "20250228 Brampton Steelheads 6-3 Soo Greyhounds",
+   "20251003 Soo Greyhounds 0-5 Brampton Steelheads",
+   "20251212 Brampton Steelheads 3-4 Soo Greyhounds",
+   "20260925 Brampton Steelheads 3-6 Soo Greyhounds"
+  ],
+  "Barrie Colts | Sarnia Sting": [
+   "20241124 Barrie Colts 5-2 Sarnia Sting",
+   "20250315 Sarnia Sting 3-4 Barrie Colts (OT)",
+   "20251030 Sarnia Sting 2-3 Barrie Colts (OT)",
+   "20260227 Barrie Colts 2-1 Sarnia Sting (OT)",
+   "20261003 Sarnia Sting 3-5 Barrie Colts"
+  ],
+  "London Knights | Ottawa 67s": [
+   "20241124 Ottawa 67s 1-2 London Knights (SO)",
+   "20241201 London Knights 10-3 Ottawa 67s",
+   "20251024 Ottawa 67s 2-3 London Knights (OT)",
+   "20251031 London Knights 1-5 Ottawa 67s"
+  ],
+  "Oshawa Generals | Sudbury Wolves": [
+   "20251207 Oshawa Generals 6-3 Sudbury Wolves",
+   "20260208 Sudbury Wolves 4-3 Oshawa Generals (OT)",
+   "20260306 Oshawa Generals 2-5 Sudbury Wolves",
+   "20260311 Sudbury Wolves 5-4 Oshawa Generals",
+   "20261025 Sudbury Wolves 3-2 Oshawa Generals (SO)"
+  ],
+  "Erie Otters | Owen Sound Attack": [
+   "20251205 Erie Otters 2-6 Owen Sound Attack",
+   "20251206 Erie Otters 5-1 Owen Sound Attack",
+   "20260211 Owen Sound Attack 3-8 Erie Otters",
+   "20260228 Owen Sound Attack 5-4 Erie Otters (SO)",
+   "20260301 Owen Sound Attack 5-1 Erie Otters"
+  ],
+  "London Knights | Peterborough Petes": [
+   "20241128 London Knights 6-0 Peterborough Petes",
+   "20250207 Peterborough Petes 1-3 London Knights",
+   "20251030 London Knights 6-1 Peterborough Petes",
+   "20260125 Peterborough Petes 2-10 London Knights"
+  ],
+  "Kingston Frontenacs | London Knights": [
+   "20241129 London Knights 5-4 Kingston Frontenacs (SO)",
+   "20250307 Kingston Frontenacs 2-3 London Knights",
+   "20251102 London Knights 6-1 Kingston Frontenacs",
+   "20251107 Kingston Frontenacs 1-2 London Knights"
+  ],
+  "Flint Firebirds | Niagara IceDogs": [
+   "20241129 Flint Firebirds 8-2 Niagara IceDogs",
+   "20241228 Niagara IceDogs 1-4 Flint Firebirds",
+   "20250927 Niagara IceDogs 4-0 Flint Firebirds",
+   "20251219 Flint Firebirds 4-3 Niagara IceDogs",
+   "20260926 Niagara IceDogs 5-2 Flint Firebirds"
+  ],
+  "Ottawa 67s | Peterborough Petes": [
+   "20260130 Peterborough Petes 1-4 Ottawa 67s",
+   "20260212 Ottawa 67s 3-7 Peterborough Petes",
+   "20260305 Ottawa 67s 0-1 Peterborough Petes (OT)",
+   "20260308 Peterborough Petes 3-6 Ottawa 67s",
+   "20260926 Ottawa 67s 6-3 Peterborough Petes"
+  ],
+  "North Bay Battalion | Soo Greyhounds": [
+   "20251005 Soo Greyhounds 4-3 North Bay Battalion",
+   "20251030 Soo Greyhounds 4-1 North Bay Battalion",
+   "20260124 North Bay Battalion 0-3 Soo Greyhounds",
+   "20260125 North Bay Battalion 1-6 Soo Greyhounds",
+   "20260926 North Bay Battalion 4-5 Soo Greyhounds"
+  ],
+  "Brantford Bulldogs | Kitchener Rangers": [
+   "20241203 Brantford Bulldogs 3-6 Kitchener Rangers",
+   "20250102 Kitchener Rangers 2-1 Brantford Bulldogs (OT)",
+   "20251129 Kitchener Rangers 3-4 Brantford Bulldogs"
+  ],
+  "Peterborough Petes | Sarnia Sting": [
+   "20241205 Sarnia Sting 2-3 Peterborough Petes (OT)",
+   "20250208 Peterborough Petes 3-2 Sarnia Sting (SO)",
+   "20251113 Sarnia Sting 3-5 Peterborough Petes",
+   "20260124 Peterborough Petes 5-2 Sarnia Sting",
+   "20260924 Sarnia Sting 4-7 Peterborough Petes"
+  ],
+  "Barrie Colts | Kingston Frontenacs": [
+   "20251129 Kingston Frontenacs 1-2 Barrie Colts",
+   "20251206 Barrie Colts 2-1 Kingston Frontenacs",
+   "20260212 Kingston Frontenacs 3-6 Barrie Colts",
+   "20260318 Barrie Colts 2-4 Kingston Frontenacs",
+   "20261008 Kingston Frontenacs 7-4 Barrie Colts"
+  ],
+  "London Knights | Oshawa Generals": [
+   "20241206 Oshawa Generals 5-3 London Knights",
+   "20250302 London Knights 4-3 Oshawa Generals (OT)",
+   "20251219 Oshawa Generals 3-5 London Knights",
+   "20260104 London Knights 5-4 Oshawa Generals"
+  ],
+  "Erie Otters | Sudbury Wolves": [
+   "20241206 Erie Otters 2-5 Sudbury Wolves",
+   "20250208 Sudbury Wolves 4-7 Erie Otters",
+   "20251011 Sudbury Wolves 6-3 Erie Otters",
+   "20251114 Erie Otters 6-3 Sudbury Wolves"
+  ],
+  "Owen Sound Attack | Soo Greyhounds": [
+   "20241207 Soo Greyhounds 1-3 Owen Sound Attack",
+   "20250223 Owen Sound Attack 4-3 Soo Greyhounds (OT)",
+   "20251214 Owen Sound Attack 4-6 Soo Greyhounds",
+   "20260214 Soo Greyhounds 6-5 Owen Sound Attack (SO)"
+  ],
+  "Flint Firebirds | Sudbury Wolves": [
+   "20241207 Flint Firebirds 4-5 Sudbury Wolves (OT)",
+   "20250214 Sudbury Wolves 3-2 Flint Firebirds",
+   "20260116 Flint Firebirds 2-7 Sudbury Wolves",
+   "20260221 Sudbury Wolves 6-5 Flint Firebirds (OT)"
+  ],
+  "Kingston Frontenacs | Sarnia Sting": [
+   "20241208 Sarnia Sting 2-6 Kingston Frontenacs",
+   "20250202 Kingston Frontenacs 4-2 Sarnia Sting",
+   "20251116 Sarnia Sting 2-5 Kingston Frontenacs",
+   "20260111 Kingston Frontenacs 1-3 Sarnia Sting",
+   "20260925 Sarnia Sting 5-3 Kingston Frontenacs"
+  ],
+  "Flint Firebirds | North Bay Battalion": [
+   "20241208 Flint Firebirds 1-4 North Bay Battalion",
+   "20250221 North Bay Battalion 4-1 Flint Firebirds",
+   "20251107 North Bay Battalion 3-9 Flint Firebirds",
+   "20260118 Flint Firebirds 6-3 North Bay Battalion"
+  ],
+  "Kingston Frontenacs | Kitchener Rangers": [
+   "20241213 Kingston Frontenacs 2-3 Kitchener Rangers (OT)",
+   "20250214 Kitchener Rangers 2-4 Kingston Frontenacs",
+   "20251109 Kingston Frontenacs 3-2 Kitchener Rangers",
+   "20260213 Kitchener Rangers 4-2 Kingston Frontenacs",
+   "20260927 Kingston Frontenacs 3-6 Kitchener Rangers"
+  ],
+  "London Knights | Windsor Spitfires": [
+   "20251205 Windsor Spitfires 4-1 London Knights",
+   "20251206 London Knights 3-2 Windsor Spitfires (OT)",
+   "20260227 Windsor Spitfires 6-1 London Knights",
+   "20260315 London Knights 2-8 Windsor Spitfires",
+   "20260320 Windsor Spitfires 2-3 London Knights (SO)"
+  ],
+  "North Bay Battalion | Oshawa Generals": [
+   "20250320 Oshawa Generals 1-5 North Bay Battalion",
+   "20251121 North Bay Battalion 0-4 Oshawa Generals",
+   "20260116 North Bay Battalion 5-2 Oshawa Generals",
+   "20260305 Oshawa Generals 4-3 North Bay Battalion",
+   "20260920 North Bay Battalion 2-7 Oshawa Generals"
+  ],
+  "Brampton Steelheads | Sudbury Wolves": [
+   "20251214 Brampton Steelheads 1-5 Sudbury Wolves",
+   "20260213 Brampton Steelheads 1-4 Sudbury Wolves",
+   "20260317 Sudbury Wolves 3-6 Brampton Steelheads",
+   "20260320 Brampton Steelheads 2-3 Sudbury Wolves (SO)",
+   "20260927 Brampton Steelheads 2-4 Sudbury Wolves"
+  ],
+  "Guelph Storm | Saginaw Spirit": [
+   "20250927 Guelph Storm 7-3 Saginaw Spirit",
+   "20251003 Saginaw Spirit 2-3 Guelph Storm (OT)",
+   "20251205 Saginaw Spirit 3-5 Guelph Storm",
+   "20260222 Guelph Storm 8-5 Saginaw Spirit",
+   "20261031 Guelph Storm 5-3 Saginaw Spirit"
+  ],
+  "Brampton Steelheads | Oshawa Generals": [
+   "20251114 Oshawa Generals 1-3 Brampton Steelheads",
+   "20260118 Brampton Steelheads 1-4 Oshawa Generals",
+   "20260131 Oshawa Generals 1-2 Brampton Steelheads",
+   "20260201 Brampton Steelheads 3-4 Oshawa Generals (OT)",
+   "20261030 Oshawa Generals 5-2 Brampton Steelheads"
+  ],
+  "Kitchener Rangers | Ottawa 67s": [
+   "20241220 Ottawa 67s 3-6 Kitchener Rangers",
+   "20250216 Kitchener Rangers 5-1 Ottawa 67s",
+   "20251121 Ottawa 67s 5-3 Kitchener Rangers",
+   "20260214 Kitchener Rangers 2-0 Ottawa 67s",
+   "20261115 Ottawa 67s 0-6 Kitchener Rangers"
+  ],
+  "Niagara IceDogs | Saginaw Spirit": [
+   "20250109 Saginaw Spirit 2-7 Niagara IceDogs",
+   "20250926 Niagara IceDogs 5-4 Saginaw Spirit (SO)",
+   "20260305 Saginaw Spirit 5-4 Niagara IceDogs (SO)",
+   "20260925 Niagara IceDogs 3-5 Saginaw Spirit",
+   "20261119 Saginaw Spirit 3-4 Niagara IceDogs"
+  ],
+  "Kitchener Rangers | North Bay Battalion": [
+   "20241231 Kitchener Rangers 5-2 North Bay Battalion",
+   "20250314 North Bay Battalion 0-6 Kitchener Rangers",
+   "20251026 North Bay Battalion 1-3 Kitchener Rangers",
+   "20251231 Kitchener Rangers 4-2 North Bay Battalion",
+   "20261106 North Bay Battalion 2-5 Kitchener Rangers"
+  ],
+  "Ottawa 67s | Saginaw Spirit": [
+   "20250102 Ottawa 67s 2-5 Saginaw Spirit",
+   "20250126 Saginaw Spirit 7-2 Ottawa 67s",
+   "20260125 Saginaw Spirit 0-6 Ottawa 67s",
+   "20260226 Ottawa 67s 8-2 Saginaw Spirit",
+   "20261112 Ottawa 67s 4-2 Saginaw Spirit"
+  ],
+  "Flint Firebirds | Ottawa 67s": [
+   "20250103 Ottawa 67s 1-8 Flint Firebirds",
+   "20250209 Flint Firebirds 5-2 Ottawa 67s",
+   "20251207 Flint Firebirds 2-3 Ottawa 67s (SO)",
+   "20260228 Ottawa 67s 3-4 Flint Firebirds (SO)",
+   "20261113 Ottawa 67s 0-4 Flint Firebirds"
+  ],
+  "London Knights | Niagara IceDogs": [
+   "20250103 Niagara IceDogs 4-9 London Knights",
+   "20250301 London Knights 4-6 Niagara IceDogs",
+   "20251211 London Knights 3-4 Niagara IceDogs",
+   "20260206 Niagara IceDogs 4-5 London Knights (OT)"
+  ],
+  "Peterborough Petes | Soo Greyhounds": [
+   "20250103 Peterborough Petes 0-4 Soo Greyhounds",
+   "20250116 Soo Greyhounds 7-0 Peterborough Petes",
+   "20250925 Soo Greyhounds 3-0 Peterborough Petes",
+   "20251024 Peterborough Petes 4-3 Soo Greyhounds (OT)",
+   "20261010 Peterborough Petes 2-1 Soo Greyhounds (OT)"
+  ],
+  "Brampton Steelheads | Flint Firebirds": [
+   "20250104 Flint Firebirds 4-5 Brampton Steelheads (OT)",
+   "20250125 Brampton Steelheads 3-5 Flint Firebirds",
+   "20251121 Flint Firebirds 2-1 Brampton Steelheads (SO)",
+   "20260103 Brampton Steelheads 2-1 Flint Firebirds",
+   "20261107 Brampton Steelheads 5-4 Flint Firebirds"
+  ],
+  "Brantford Bulldogs | Flint Firebirds": [
+   "20250108 Flint Firebirds 2-5 Brantford Bulldogs",
+   "20250307 Brantford Bulldogs 4-2 Flint Firebirds",
+   "20251101 Brantford Bulldogs 7-0 Flint Firebirds",
+   "20251114 Flint Firebirds 3-2 Brantford Bulldogs (OT)"
+  ],
+  "Barrie Colts | Peterborough Petes": [
+   "20250109 Barrie Colts 2-5 Peterborough Petes",
+   "20250222 Peterborough Petes 3-4 Barrie Colts",
+   "20251115 Peterborough Petes 1-3 Barrie Colts",
+   "20260319 Barrie Colts 4-5 Peterborough Petes (OT)",
+   "20261017 Barrie Colts 0-6 Peterborough Petes"
+  ],
+  "Brampton Steelheads | Kitchener Rangers": [
+   "20250110 Brampton Steelheads 5-2 Kitchener Rangers",
+   "20250118 Kitchener Rangers 1-4 Brampton Steelheads",
+   "20251101 Kitchener Rangers 4-0 Brampton Steelheads",
+   "20260227 Brampton Steelheads 2-8 Kitchener Rangers"
+  ],
+  "Kingston Frontenacs | Soo Greyhounds": [
+   "20250110 Kingston Frontenacs 6-5 Soo Greyhounds (OT)",
+   "20250117 Soo Greyhounds 1-3 Kingston Frontenacs",
+   "20250926 Soo Greyhounds 5-4 Kingston Frontenacs (SO)",
+   "20260227 Kingston Frontenacs 6-3 Soo Greyhounds"
+  ],
+  "Barrie Colts | Kitchener Rangers": [
+   "20250111 Kitchener Rangers 4-1 Barrie Colts",
+   "20250221 Barrie Colts 1-4 Kitchener Rangers",
+   "20251025 Kitchener Rangers 3-4 Barrie Colts (OT)",
+   "20260102 Barrie Colts 3-2 Kitchener Rangers (SO)",
+   "20261113 Barrie Colts 2-4 Kitchener Rangers"
+  ],
+  "Brampton Steelheads | Owen Sound Attack": [
+   "20250117 Owen Sound Attack 5-4 Brampton Steelheads (OT)",
+   "20250202 Brampton Steelheads 3-5 Owen Sound Attack",
+   "20260221 Brampton Steelheads 0-5 Owen Sound Attack",
+   "20260310 Owen Sound Attack 1-2 Brampton Steelheads (OT)"
+  ],
+  "Erie Otters | Ottawa 67s": [
+   "20250322 Ottawa 67s 7-1 Erie Otters",
+   "20251004 Erie Otters 1-4 Ottawa 67s",
+   "20251107 Ottawa 67s 5-2 Erie Otters",
+   "20261003 Erie Otters 1-6 Ottawa 67s",
+   "20261010 Ottawa 67s 3-0 Erie Otters"
+  ],
+  "Erie Otters | Peterborough Petes": [
+   "20250118 Erie Otters 5-1 Peterborough Petes",
+   "20250302 Peterborough Petes 2-7 Erie Otters",
+   "20251002 Erie Otters 3-2 Peterborough Petes (SO)",
+   "20251129 Peterborough Petes 2-5 Erie Otters",
+   "20261001 Erie Otters 0-4 Peterborough Petes"
+  ],
+  "London Knights | Sudbury Wolves": [
+   "20250124 London Knights 5-2 Sudbury Wolves",
+   "20251121 London Knights 3-6 Sudbury Wolves",
+   "20260222 Sudbury Wolves 2-4 London Knights",
+   "20261016 Sudbury Wolves 1-4 London Knights",
+   "20261030 London Knights 3-4 Sudbury Wolves (OT)"
+  ],
+  "Kingston Frontenacs | Saginaw Spirit": [
+   "20250124 Saginaw Spirit 6-7 Kingston Frontenacs (SO)",
+   "20250130 Kingston Frontenacs 9-5 Saginaw Spirit",
+   "20260108 Kingston Frontenacs 6-1 Saginaw Spirit",
+   "20260123 Saginaw Spirit 2-8 Kingston Frontenacs"
+  ],
+  "Guelph Storm | Oshawa Generals": [
+   "20250126 Guelph Storm 6-1 Oshawa Generals",
+   "20250214 Oshawa Generals 7-5 Guelph Storm",
+   "20250926 Oshawa Generals 7-1 Guelph Storm",
+   "20260301 Guelph Storm 1-4 Oshawa Generals",
+   "20260925 Oshawa Generals 0-6 Guelph Storm"
+  ],
+  "Brampton Steelheads | Peterborough Petes": [
+   "20250321 Peterborough Petes 1-6 Brampton Steelheads",
+   "20250927 Peterborough Petes 4-2 Brampton Steelheads",
+   "20251120 Brampton Steelheads 1-7 Peterborough Petes",
+   "20260220 Peterborough Petes 4-1 Brampton Steelheads",
+   "20261115 Peterborough Petes 8-1 Brampton Steelheads"
+  ],
+  "Guelph Storm | Sarnia Sting": [
+   "20251102 Sarnia Sting 1-4 Guelph Storm",
+   "20251212 Sarnia Sting 3-2 Guelph Storm (SO)",
+   "20251214 Guelph Storm 4-6 Sarnia Sting",
+   "20260218 Guelph Storm 3-2 Sarnia Sting (OT)",
+   "20261014 Guelph Storm 5-2 Sarnia Sting"
+  ],
+  "Brantford Bulldogs | Soo Greyhounds": [
+   "20250131 Brantford Bulldogs 6-4 Soo Greyhounds",
+   "20250217 Soo Greyhounds 6-8 Brantford Bulldogs",
+   "20260201 Soo Greyhounds 2-3 Brantford Bulldogs (SO)",
+   "20260315 Brantford Bulldogs 3-0 Soo Greyhounds",
+   "20261018 Soo Greyhounds 2-5 Brantford Bulldogs"
+  ],
+  "Flint Firebirds | Kingston Frontenacs": [
+   "20250201 Kingston Frontenacs 7-4 Flint Firebirds",
+   "20250207 Flint Firebirds 1-3 Kingston Frontenacs",
+   "20251205 Flint Firebirds 4-2 Kingston Frontenacs",
+   "20260110 Kingston Frontenacs 1-4 Flint Firebirds"
+  ],
+  "Brantford Bulldogs | Saginaw Spirit": [
+   "20250207 Saginaw Spirit 2-4 Brantford Bulldogs",
+   "20250308 Brantford Bulldogs 11-3 Saginaw Spirit",
+   "20251102 Brantford Bulldogs 6-2 Saginaw Spirit",
+   "20260306 Saginaw Spirit 1-5 Brantford Bulldogs"
+  ],
+  "Barrie Colts | Soo Greyhounds": [
+   "20250208 Soo Greyhounds 2-4 Barrie Colts",
+   "20250307 Barrie Colts 3-2 Soo Greyhounds",
+   "20251002 Soo Greyhounds 5-4 Barrie Colts (SO)",
+   "20251108 Barrie Colts 3-4 Soo Greyhounds (SO)",
+   "20261107 Barrie Colts 1-2 Soo Greyhounds"
+  ],
+  "Oshawa Generals | Soo Greyhounds": [
+   "20250209 Soo Greyhounds 0-6 Oshawa Generals",
+   "20250308 Oshawa Generals 4-3 Soo Greyhounds (SO)",
+   "20251101 Soo Greyhounds 6-1 Oshawa Generals",
+   "20251205 Oshawa Generals 2-11 Soo Greyhounds"
+  ],
+  "Saginaw Spirit | Sudbury Wolves": [
+   "20250215 Sudbury Wolves 3-8 Saginaw Spirit",
+   "20250228 Saginaw Spirit 7-2 Sudbury Wolves",
+   "20251115 Saginaw Spirit 1-2 Sudbury Wolves",
+   "20260219 Sudbury Wolves 1-2 Saginaw Spirit"
+  ],
+  "Erie Otters | Oshawa Generals": [
+   "20250217 Erie Otters 1-2 Oshawa Generals (OT)",
+   "20250221 Oshawa Generals 3-2 Erie Otters",
+   "20251116 Erie Otters 0-1 Oshawa Generals",
+   "20260220 Oshawa Generals 4-3 Erie Otters (OT)"
+  ],
+  "North Bay Battalion | Saginaw Spirit": [
+   "20250220 North Bay Battalion 1-5 Saginaw Spirit",
+   "20250302 Saginaw Spirit 8-3 North Bay Battalion",
+   "20251108 North Bay Battalion 7-1 Saginaw Spirit",
+   "20251116 Saginaw Spirit 5-6 North Bay Battalion (SO)"
+  ],
+  "Barrie Colts | Saginaw Spirit": [
+   "20250227 Saginaw Spirit 4-5 Barrie Colts (OT)",
+   "20250306 Barrie Colts 4-7 Saginaw Spirit",
+   "20251113 Saginaw Spirit 2-1 Barrie Colts (OT)",
+   "20260131 Barrie Colts 4-2 Saginaw Spirit",
+   "20261030 Barrie Colts 2-0 Saginaw Spirit"
+  ],
+  "Kingston Frontenacs | Windsor Spitfires": [
+   "20250228 Windsor Spitfires 2-4 Kingston Frontenacs",
+   "20250306 Kingston Frontenacs 1-7 Windsor Spitfires",
+   "20251106 Kingston Frontenacs 0-3 Windsor Spitfires",
+   "20251212 Windsor Spitfires 3-4 Kingston Frontenacs",
+   "20261108 Windsor Spitfires 4-3 Kingston Frontenacs"
+  ],
+  "Gatineau Olympiques | Ottawa 67s": [
+   "20260116 Gatineau Olympiques 1-2 Ottawa 67s",
+   "20260117 Ottawa 67s 5-3 Gatineau Olympiques"
+  ],
+  "Rouyn-Noranda Huskies | Sudbury Wolves": [
+   "20260118 Rouyn-Noranda Huskies 3-5 Sudbury Wolves",
+   "20260125 Sudbury Wolves 4-3 Rouyn-Noranda Huskies (OT)",
+   "20261101 Rouyn-Noranda Huskies 4-3 Sudbury Wolves"
+  ],
+  "North Bay Battalion | Val-d'Or Foreurs": [
+   "20261101 Val-d'Or Foreurs 4-2 North Bay Battalion"
+  ]
+ }
+}
