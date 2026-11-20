@@ -30,6 +30,8 @@ def _float(x):
 
 
 class NBACollector:
+    api = API
+    league = "NBA"
 
     def __init__(self, sleep: float = 0.4):
         self.session = requests.Session()
@@ -37,7 +39,7 @@ class NBACollector:
         self.sleep = sleep
 
     def _get(self, path: str, params: dict = None, retries: int = 3):
-        url = f"{API}{path}"
+        url = f"{self.api}{path}"
         last = None
         for i in range(retries):
             try:
@@ -50,7 +52,7 @@ class NBACollector:
             except Exception as e:
                 last = str(e)
             time.sleep(2 * (i + 1))
-        raise RuntimeError(f"NBA API 실패 {path}: {last}")
+        raise RuntimeError(f"{self.league} API 실패 {path}: {last}")
 
     # ------------------------------------------------------------------
     def collect_daily(self, date: str) -> dict:
@@ -66,10 +68,10 @@ class NBACollector:
             try:
                 games.append(self._build_game(ev))
             except Exception as e:
-                print(f"  [NBA] 경기 {ev.get('id')} 파싱 실패: {e}")
+                print(f"  [{self.league}] 경기 {ev.get('id')} 파싱 실패: {e}")
             time.sleep(self.sleep)
 
-        return {"date": date, "league": "NBA", "games": games}
+        return {"date": date, "league": self.league, "games": games}
 
     # ------------------------------------------------------------------
     def _build_game(self, ev: dict) -> dict:
