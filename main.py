@@ -11,6 +11,7 @@ from collectors.kovo_collector import KOVOCollector
 from collectors.flashscore_kbl import FlashscoreKBL
 from collectors.flashscore_hockey_collector import FlashscoreHockeyCollector
 from collectors.flashscore_soccer import FlashscoreSoccer, SOCCER_LEAGUES
+from collectors.abl_statsapi import ABLCollector
 from uploader.github_uploader import GitHubUploader
 
 def get_dates(manual_date: str = None, manual_mlb_date: str = None):
@@ -195,6 +196,17 @@ def run_daily(date: str = None, mlb_date: str = None):
         except Exception as e:
             print(f"  [{league}] 실패: {e}")
 
+    # 호주 프로야구(ABL) (KST 날짜 = KST 어제, MLB StatsAPI sportId=17 leagueId=595)
+    try:
+        abl_data = ABLCollector().collect_daily(npb_date)
+        if abl_data["games"]:
+            uploader.upload_json(abl_data, "ABL", npb_date, "daily")
+            print(f"  [ABL] {len(abl_data['games'])}경기 완료")
+        else:
+            print(f"  [ABL] 경기 없음")
+    except Exception as e:
+        print(f"  [ABL] 실패: {e}")
+
     if not date:
         catch_up(uploader, npb_date, {"KHL": KHLCollector,
                                       "DEL": lambda: FlashscoreHockeyCollector("DEL"),
@@ -207,6 +219,7 @@ def run_daily(date: str = None, mlb_date: str = None):
                                       "BLEAGUE": lambda: FlashscoreKBL("BLEAGUE"),
                                       "KOVO": lambda: KOVOCollector("KOVO"),
                                       "WKOVO": lambda: KOVOCollector("WKOVO"),
+                                      "ABL": ABLCollector,
                                       **{lg: (lambda lg=lg: FlashscoreSoccer(lg)) for lg in SOCCER_LEAGUES}})
 
     # NPB/KBO는 별도 스크래퍼 구성 예정
