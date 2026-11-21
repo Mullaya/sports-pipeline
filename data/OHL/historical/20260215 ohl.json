@@ -43,8 +43,40 @@
       ],
       "home_stats": {},
       "away_stats": {},
-      "home_goalies": [],
-      "away_goalies": [],
+      "home_goalies": [
+        {
+          "player_id": "ohl:9316",
+          "name": "Lisson J.",
+          "starter": true,
+          "toi": 60.0,
+          "shots_against": 45,
+          "saves": 44,
+          "goals_against": 1,
+          "sv_pct": 0.978
+        }
+      ],
+      "away_goalies": [
+        {
+          "player_id": "ohl:8683",
+          "name": "Robertson C.",
+          "starter": true,
+          "toi": 7.5,
+          "shots_against": 6,
+          "saves": 3,
+          "goals_against": 3,
+          "sv_pct": 0.5
+        },
+        {
+          "player_id": "ohl:9376",
+          "name": "Yermolenko V.",
+          "starter": false,
+          "toi": 52.5,
+          "shots_against": 31,
+          "saves": 25,
+          "goals_against": 6,
+          "sv_pct": 0.806
+        }
+      ],
       "goals": [
         {
           "period": "1st Period",
@@ -151,7 +183,8 @@
             "Procyszyn E."
           ]
         }
-      ]
+      ],
+      "goalie_source": "hockeytech"
     }
   ]
 }

@@ -49,8 +49,30 @@
       ],
       "home_stats": {},
       "away_stats": {},
-      "home_goalies": [],
-      "away_goalies": [],
+      "home_goalies": [
+        {
+          "player_id": "ohl:8832",
+          "name": "Bowen Z.",
+          "starter": true,
+          "toi": 63.98,
+          "shots_against": 23,
+          "saves": 22,
+          "goals_against": 1,
+          "sv_pct": 0.957
+        }
+      ],
+      "away_goalies": [
+        {
+          "player_id": "ohl:9087",
+          "name": "Koprowski M.",
+          "starter": true,
+          "toi": 63.98,
+          "shots_against": 23,
+          "saves": 21,
+          "goals_against": 2,
+          "sv_pct": 0.913
+        }
+      ],
       "goals": [
         {
           "period": "2nd Period",
@@ -82,7 +104,8 @@
             "Green D."
           ]
         }
-      ]
+      ],
+      "goalie_source": "hockeytech"
     }
   ]
 }

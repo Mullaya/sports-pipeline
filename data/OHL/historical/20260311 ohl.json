@@ -43,8 +43,30 @@
       ],
       "home_stats": {},
       "away_stats": {},
-      "home_goalies": [],
-      "away_goalies": [],
+      "home_goalies": [
+        {
+          "player_id": "ohl:9445",
+          "name": "Cholette J.",
+          "starter": true,
+          "toi": 59.8,
+          "shots_against": 31,
+          "saves": 26,
+          "goals_against": 5,
+          "sv_pct": 0.839
+        }
+      ],
+      "away_goalies": [
+        {
+          "player_id": "ohl:9679",
+          "name": "Frasca P.",
+          "starter": true,
+          "toi": 59.92,
+          "shots_against": 42,
+          "saves": 38,
+          "goals_against": 4,
+          "sv_pct": 0.905
+        }
+      ],
       "goals": [
         {
           "period": "1st Period",
@@ -144,7 +166,8 @@
             "Chovan J."
           ]
         }
-      ]
+      ],
+      "goalie_source": "hockeytech"
     }
   ]
 }

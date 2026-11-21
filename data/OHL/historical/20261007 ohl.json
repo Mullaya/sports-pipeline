@@ -43,8 +43,30 @@
       ],
       "home_stats": {},
       "away_stats": {},
-      "home_goalies": [],
-      "away_goalies": [],
+      "home_goalies": [
+        {
+          "player_id": "ohl:9512",
+          "name": "Courville M.",
+          "starter": true,
+          "toi": 60.0,
+          "shots_against": 24,
+          "saves": 22,
+          "goals_against": 2,
+          "sv_pct": 0.917
+        }
+      ],
+      "away_goalies": [
+        {
+          "player_id": "ohl:9486",
+          "name": "Hriczov M.",
+          "starter": true,
+          "toi": 59.08,
+          "shots_against": 27,
+          "saves": 23,
+          "goals_against": 4,
+          "sv_pct": 0.852
+        }
+      ],
       "goals": [
         {
           "period": "1st Period",
@@ -121,7 +143,8 @@
             "Bogas N."
           ]
         }
-      ]
+      ],
+      "goalie_source": "hockeytech"
     }
   ]
 }

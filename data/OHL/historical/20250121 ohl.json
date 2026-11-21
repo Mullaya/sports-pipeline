@@ -43,8 +43,30 @@
       ],
       "home_stats": {},
       "away_stats": {},
-      "home_goalies": [],
-      "away_goalies": [],
+      "home_goalies": [
+        {
+          "player_id": "ohl:8464",
+          "name": "Parsons J.",
+          "starter": true,
+          "toi": 60.0,
+          "shots_against": 30,
+          "saves": 28,
+          "goals_against": 2,
+          "sv_pct": 0.933
+        }
+      ],
+      "away_goalies": [
+        {
+          "player_id": "ohl:8983",
+          "name": "Medvedev A.",
+          "starter": true,
+          "toi": 59.37,
+          "shots_against": 29,
+          "saves": 25,
+          "goals_against": 4,
+          "sv_pct": 0.862
+        }
+      ],
       "goals": [
         {
           "period": "1st Period",
@@ -123,7 +145,8 @@
             "Reid C."
           ]
         }
-      ]
+      ],
+      "goalie_source": "hockeytech"
     }
   ]
 }

@@ -47,6 +47,9 @@ LEAGUES = {
     # 북미 AHL — 날짜는 미국 동부 현지 기준(서부 경기 늦은 시작도 같은 날로 묶임)
     "AHL": {"path": "hockey/usa/ahl", "country": "200", "tournament": None,
             "tz": "America/New_York"},
+    # 캐나다 주니어 OHL — 날짜는 미국 동부(토론토) 현지 기준
+    "OHL": {"path": "hockey/canada/ohl", "country": "39", "tournament": None,
+            "tz": "America/Toronto"},
     # 아시아리그 아이스하키 (한국·일본) — 파일 날짜 = KST(=JST) 현지 날짜. country는 결과 페이지에서 추출
     "ALH": {"path": "hockey/asia/asia-league", "country": None, "tournament": None,
             "tz": "Asia/Seoul"},
@@ -128,6 +131,11 @@ class FlashscoreHockeyCollector:
         self.session = requests.Session()
         self.session.headers.update({"User-Agent": UA, "Accept": "*/*"})
         self._season_cache = {}     # (y1, y2) -> {match_id: record}
+        # Flashscore 라인업 피드가 비어 있는 북미 리그는 HockeyTech 공개 피드로 골리 보완
+        self._gk = None
+        if league == "OHL":
+            from collectors.hockeytech_goalies import HockeyTechGoalies
+            self._gk = HockeyTechGoalies(league)
 
     # ------------------------------------------------------------------
     def _get(self, url: str, feed: bool = False, retries: int = 3) -> str:
@@ -210,6 +218,18 @@ class FlashscoreHockeyCollector:
             except Exception as e:
                 print(f"  [{self.league}] 경기 {rec.get('AA')} 파싱 실패: {e}")
             time.sleep(self.sleep)
+        if self._gk:
+            for g in games:
+                if g.get("home_goalies") and g.get("away_goalies"):
+                    continue
+                try:
+                    got = self._gk.goalies(date, g["home_team"], g["away_team"])
+                except Exception as e:
+                    print(f"  [{self.league}] 골리 보완 실패 {g['home_team']}: {e}")
+                    continue
+                if got.get("home") or got.get("away"):
+                    g["home_goalies"], g["away_goalies"] = got.get("home", []), got.get("away", [])
+                    g["goalie_source"] = "hockeytech"
         if self._unmapped:
             print(f"  [{self.league}] ⚠️ 팀명 매핑 없음(원문 유지): {sorted(self._unmapped)}")
         return {"date": date, "league": self.league, "source": "flashscore", "games": games}

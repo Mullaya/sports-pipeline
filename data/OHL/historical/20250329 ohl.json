@@ -43,8 +43,30 @@
       ],
       "home_stats": {},
       "away_stats": {},
-      "home_goalies": [],
-      "away_goalies": [],
+      "home_goalies": [
+        {
+          "player_id": "ohl:8993",
+          "name": "Papineau K.",
+          "starter": true,
+          "toi": 59.37,
+          "shots_against": 42,
+          "saves": 34,
+          "goals_against": 8,
+          "sv_pct": 0.81
+        }
+      ],
+      "away_goalies": [
+        {
+          "player_id": "ohl:9134",
+          "name": "Erliden N.",
+          "starter": true,
+          "toi": 60.0,
+          "shots_against": 33,
+          "saves": 28,
+          "goals_against": 5,
+          "sv_pct": 0.848
+        }
+      ],
       "goals": [
         {
           "period": "1st Period",
@@ -196,7 +218,8 @@
           "author": "Fimis P.",
           "assists": []
         }
-      ]
+      ],
+      "goalie_source": "hockeytech"
     },
     {
       "game_id": "j3W5Dpl2",
@@ -238,8 +261,40 @@
       ],
       "home_stats": {},
       "away_stats": {},
-      "home_goalies": [],
-      "away_goalies": [],
+      "home_goalies": [
+        {
+          "player_id": "ohl:8466",
+          "name": "Costanzo J.",
+          "starter": true,
+          "toi": 60.0,
+          "shots_against": 25,
+          "saves": 24,
+          "goals_against": 1,
+          "sv_pct": 0.96
+        }
+      ],
+      "away_goalies": [
+        {
+          "player_id": "ohl:8528",
+          "name": "Lalonde N.",
+          "starter": true,
+          "toi": 49.62,
+          "shots_against": 28,
+          "saves": 22,
+          "goals_against": 6,
+          "sv_pct": 0.786
+        },
+        {
+          "player_id": "ohl:8809",
+          "name": "Miller L.",
+          "starter": false,
+          "toi": 10.38,
+          "shots_against": 6,
+          "saves": 5,
+          "goals_against": 1,
+          "sv_pct": 0.833
+        }
+      ],
       "goals": [
         {
           "period": "1st Period",
@@ -326,7 +381,8 @@
           "author": "Spellacy A.",
           "assists": []
         }
-      ]
+      ],
+      "goalie_source": "hockeytech"
     }
   ]
 }

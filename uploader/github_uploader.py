@@ -8,6 +8,10 @@ from datetime import datetime
 # 리그별 파일명 접미사 — MLB 파일(20261001.json)과 구분되도록
 # 예: NHL → "20261001 nhl.json"
 FILE_SUFFIX = {
+    "ABL": " abl",
+    "LMP": " lmp",
+    "OHL": " ohl",
+    "NBL": " nbl",
     "NHL": " nhl",
     "NFL": " nfl",
     "KHL": " khl",

@@ -43,8 +43,40 @@
       ],
       "home_stats": {},
       "away_stats": {},
-      "home_goalies": [],
-      "away_goalies": [],
+      "home_goalies": [
+        {
+          "player_id": "ohl:9297",
+          "name": "Bennett T.",
+          "starter": true,
+          "toi": 27.62,
+          "shots_against": 17,
+          "saves": 10,
+          "goals_against": 7,
+          "sv_pct": 0.588
+        },
+        {
+          "player_id": "ohl:9752",
+          "name": "Durno D.",
+          "starter": false,
+          "toi": 32.38,
+          "shots_against": 13,
+          "saves": 10,
+          "goals_against": 3,
+          "sv_pct": 0.769
+        }
+      ],
+      "away_goalies": [
+        {
+          "player_id": "ohl:8371",
+          "name": "Vaccari M.",
+          "starter": true,
+          "toi": 60.0,
+          "shots_against": 32,
+          "saves": 32,
+          "goals_against": 0,
+          "sv_pct": 1.0
+        }
+      ],
       "goals": [
         {
           "period": "1st Period",
@@ -150,7 +182,8 @@
             "Tessier X."
           ]
         }
-      ]
+      ],
+      "goalie_source": "hockeytech"
     }
   ]
 }

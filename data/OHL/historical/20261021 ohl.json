@@ -43,8 +43,30 @@
       ],
       "home_stats": {},
       "away_stats": {},
-      "home_goalies": [],
-      "away_goalies": [],
+      "home_goalies": [
+        {
+          "player_id": "ohl:9995",
+          "name": "Tkach-Tkachenko I.",
+          "starter": true,
+          "toi": 59.63,
+          "shots_against": 20,
+          "saves": 16,
+          "goals_against": 4,
+          "sv_pct": 0.8
+        }
+      ],
+      "away_goalies": [
+        {
+          "player_id": "ohl:8983",
+          "name": "Medvedev A.",
+          "starter": true,
+          "toi": 55.8,
+          "shots_against": 31,
+          "saves": 25,
+          "goals_against": 6,
+          "sv_pct": 0.806
+        }
+      ],
       "goals": [
         {
           "period": "1st Period",
@@ -154,7 +176,8 @@
             "Walos E."
           ]
         }
-      ]
+      ],
+      "goalie_source": "hockeytech"
     }
   ]
 }
