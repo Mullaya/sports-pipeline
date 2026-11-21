@@ -12,6 +12,7 @@ from collectors.flashscore_kbl import FlashscoreKBL
 from collectors.flashscore_hockey_collector import FlashscoreHockeyCollector
 from collectors.flashscore_soccer import FlashscoreSoccer, SOCCER_LEAGUES
 from collectors.abl_statsapi import ABLCollector
+from collectors.lmp_statsapi import LMPCollector
 from collectors.nbl_collector import NBLCollector
 from uploader.github_uploader import GitHubUploader
 
@@ -86,6 +87,17 @@ def run_daily(date: str = None, mlb_date: str = None):
         except Exception as e:
             print(f"  [AHL] 실패: {e}")
 
+        # 멕시코 퍼시픽리그 LMP (멕시코 현지 날짜 = MLB와 같은 기준, MLB StatsAPI leagueId=132)
+        try:
+            lmp_data = LMPCollector().collect_daily(mlb_date)
+            if lmp_data["games"]:
+                uploader.upload_json(lmp_data, "LMP", mlb_date, "daily")
+                print(f"  [LMP] {len(lmp_data['games'])}경기 완료")
+            else:
+                print(f"  [LMP] 경기 없음")
+        except Exception as e:
+            print(f"  [LMP] 실패: {e}")
+
         # 캐나다 주니어 OHL (북미 현지 날짜, Flashscore 피드)
         try:
             ohl_data = FlashscoreHockeyCollector("OHL").collect_daily(mlb_date)
@@ -101,7 +113,8 @@ def run_daily(date: str = None, mlb_date: str = None):
         if not date:
             catch_up(uploader, mlb_date, {"NHL": NHLCollector, "NBA": NBACollector,
                                           "AHL": lambda: FlashscoreHockeyCollector("AHL"),
-                                          "OHL": lambda: FlashscoreHockeyCollector("OHL")})
+                                          "OHL": lambda: FlashscoreHockeyCollector("OHL"),
+                                          "LMP": LMPCollector})
 
         # NFL 수집 (미국 현지 날짜 = MLB와 동일 기준, 경기 있는 날만 파일 생성)
         try:

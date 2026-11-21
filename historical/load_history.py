@@ -15,6 +15,7 @@ from collectors.khl_collector import KHLCollector
 from collectors.nba_collector import NBACollector
 from collectors.nbl_collector import NBLCollector
 from collectors.abl_statsapi import ABLCollector
+from collectors.lmp_statsapi import LMPCollector
 from collectors.kbl_collector import KBLCollector
 from collectors.kovo_collector import KOVOCollector
 from collectors.flashscore_hockey_collector import FlashscoreHockeyCollector
@@ -34,6 +35,7 @@ def load_history(league: str, start: str, end: str):
         "NBA": NBACollector(),
         "NBL": NBLCollector(),
         "ABL": ABLCollector(),
+        "LMP": LMPCollector(),
         "KBL": KBLCollector(),
         "KOVO": KOVOCollector("KOVO"),
         "WKOVO": KOVOCollector("WKOVO"),
@@ -92,7 +94,7 @@ def load_history(league: str, start: str, end: str):
                     fail += 1
 
                 # NHL/NFL/KHL/NBA/KBL은 선수 기록이 일별 파일에 포함되어 있어 별도 추출 불필요
-                player_data = extract_player_data(data, league, date_str) if league not in ("NHL", "NFL", "KHL", "NBA", "NBL", "ABL", "KBL", "KOVO", "WKOVO", "DEL", "CZE", "LIIGA", "SHL", "AHL", "OHL", "ALH", "KHL_FS", "WKBL", "BLEAGUE", *SOCCER_LEAGUES) else {"players": []}
+                player_data = extract_player_data(data, league, date_str) if league not in ("NHL", "NFL", "KHL", "NBA", "NBL", "ABL", "LMP", "KBL", "KOVO", "WKOVO", "DEL", "CZE", "LIIGA", "SHL", "AHL", "OHL", "ALH", "KHL_FS", "WKBL", "BLEAGUE", *SOCCER_LEAGUES) else {"players": []}
                 if player_data["players"]:
                     uploader.upload_json(
                         player_data, league, date_str, "historical_players"

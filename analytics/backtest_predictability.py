@@ -20,7 +20,7 @@ from datetime import datetime
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MIN_GP = 8
 LEAGUES = {  # 리그: (종목, 하키 정규시간 키 사용 여부)
-    "ABL": "baseball", "MLB": "baseball",
+    "ABL": "baseball", "LMP": "baseball", "MLB": "baseball",
     "NHL": "hockey", "KHL": "hockey", "LIIGA": "hockey", "SHL": "hockey", "DEL": "hockey", "CZE": "hockey", "AHL": "hockey", "OHL": "hockey",
     "NBA": "basketball", "NBL": "basketball", "KBL": "basketball", "WKBL": "basketball", "BLEAGUE": "basketball",
     "J1": "soccer", "K1": "soccer", "J2": "soccer",

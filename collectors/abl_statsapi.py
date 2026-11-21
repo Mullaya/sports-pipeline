@@ -22,7 +22,7 @@ def _get(path, **params):
     return r.json()
 
 
-def normalize(g):
+def normalize(g, tz=KST):
     a, h = g["teams"]["away"], g["teams"]["home"]
     ls = g.get("linescore") or {}
     dt = datetime.fromisoformat(g["gameDate"].replace("Z", "+00:00"))
@@ -35,7 +35,7 @@ def normalize(g):
     final = g["status"]["abstractGameState"] == "Final"
     return {
         "game_id": g["gamePk"], "season": int(g.get("season") or dt.year), "game_type": g.get("gameType"),
-        "status": g["status"]["detailedState"], "start_utc": g["gameDate"], "date_kst": dt.astimezone(KST).strftime("%Y%m%d"),
+        "status": g["status"]["detailedState"], "start_utc": g["gameDate"], "date_kst": dt.astimezone(KST).strftime("%Y%m%d"), "date_local": dt.astimezone(tz).strftime("%Y%m%d"),
         "double_header": g.get("doubleHeader"), "game_number": g.get("gameNumber"),
         "scheduled_innings": ls.get("scheduledInnings", g.get("scheduledInnings")),
         "venue": (g.get("venue") or {}).get("name"),
@@ -56,9 +56,9 @@ def normalize(g):
     }
 
 
-def fetch(**params):
-    r = _get("schedule", sportId=SPORT, leagueId=LEAGUE, hydrate=HYDRATE, **params)
-    return [normalize(g) for d in r.get("dates", []) for g in d["games"]]
+def fetch(league_id=LEAGUE, tz=KST, **params):
+    r = _get("schedule", sportId=SPORT, leagueId=league_id, hydrate=HYDRATE, **params)
+    return [normalize(g, tz) for d in r.get("dates", []) for g in d["games"]]
 
 
 class ABLCollector:

@@ -1,4 +1,5 @@
-"""ABL(호주 프로야구) 통계 집계 → analytics/ABL_stats.json
+"""윈터리그 야구 통계 집계 — ABL(호주) → analytics/ABL_stats.json, LMP(멕시코 퍼시픽) → analytics/LMP_stats.json
+사용: python analytics/build_abl_stats.py [ABL|LMP]
 
 - 팀: 시즌 전적, 홈/원정, 최근 10경기, 경기당 득실(rpg/rapg), 득실차, 9이닝/7이닝 분리
 - 토탈: 리그·구장별 평균 득점, 7.5/8/8.5/9 오버 비율 (9이닝 정규 경기 기준)
@@ -16,14 +17,17 @@ from datetime import datetime, timedelta, timezone
 import requests
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-LINES = (7.5, 8, 8.5, 9)
+LINES = (7.5, 8, 8.5, 9, 9.5, 10)
 KST = timezone(timedelta(hours=9))
+
+
+LEAGUE = (os.sys.argv[1] if len(os.sys.argv) > 1 else "ABL").upper()
 
 
 def load_games():
     seen = {}
     for sub in ("historical", "daily"):
-        for f in sorted(glob.glob(os.path.join(ROOT, "data/ABL", sub, "*.json"))):
+        for f in sorted(glob.glob(os.path.join(ROOT, "data", LEAGUE, sub, "*.json"))):
             for g in json.load(open(f, encoding="utf-8")).get("games", []):
                 if g.get("total_runs") is None or g.get("game_type") != "R":
                     continue
@@ -54,7 +58,7 @@ def team_summary(rows):
 def build(games):
     seasons = sorted({g["season"] for g in games})
     cur = seasons[-1]
-    res = {"league": "ABL", "updated_kst": datetime.now(KST).strftime("%Y-%m-%d %H:%M"),
+    res = {"league": LEAGUE, "updated_kst": datetime.now(KST).strftime("%Y-%m-%d %H:%M"),
            "current_season": cur, "seasons": {}}
     for s in seasons:
         gs = [g for g in games if g["season"] == s]
@@ -63,7 +67,7 @@ def build(games):
             inn = g.get("scheduled_innings") or 9
             for side, opp in (("home", "away"), ("away", "home")):
                 rf, ra = g[f"{side}_score"], g[f"{opp}_score"]
-                rows[g[f"{side}_team"]].append({"date": g["date_kst"], "opp": g[f"{opp}_team"], "side": side,
+                rows[g[f"{side}_team"]].append({"date": g.get("date_local") or g["date_kst"], "opp": g[f"{opp}_team"], "side": side,
                                                 "rf": rf, "ra": ra, "win": int(rf > ra), "inn": inn})
         teams = {}
         for t, rs in rows.items():
@@ -79,7 +83,7 @@ def build(games):
         h2h = defaultdict(list)
         for g in gs:
             k = " vs ".join(sorted([g["home_team"], g["away_team"]]))
-            h2h[k].append(f'{g["date_kst"]} {g["away_team"]} {g["away_score"]} @ {g["home_team"]} {g["home_score"]}')
+            h2h[k].append(f'{g.get("date_local") or g["date_kst"]} {g["away_team"]} {g["away_score"]} @ {g["home_team"]} {g["home_score"]}')
         res["seasons"][str(s)] = {
             "games": len(gs),
             "league": {"avg_total_9inn": round(sum(g["total_runs"] for g in nine) / len(nine), 2) if nine else None,
@@ -106,7 +110,7 @@ def upload(content, path):
     url = f"https://api.github.com/repos/{repo}/contents/{path}"
     for attempt in range(5):
         r = requests.get(url, headers=h)
-        payload = {"message": "[ABL] 통계 집계 업데이트",
+        payload = {"message": f"[{LEAGUE}] 통계 집계 업데이트",
                    "content": base64.b64encode(content.encode()).decode(), "branch": "main"}
         if r.status_code == 200:
             payload["sha"] = r.json()["sha"]
@@ -121,5 +125,5 @@ def upload(content, path):
 
 if __name__ == "__main__":
     gs = load_games()
-    print(f"[ABL] 정규시즌 완료 경기 {len(gs)}")
-    upload(json.dumps(build(gs), ensure_ascii=False, indent=2), "analytics/ABL_stats.json")
+    print(f"[{LEAGUE}] 정규시즌 완료 경기 {len(gs)}")
+    upload(json.dumps(build(gs), ensure_ascii=False, indent=2), f"analytics/{LEAGUE}_stats.json")
