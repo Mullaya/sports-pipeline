@@ -183,6 +183,16 @@ def run_daily(date: str = None, mlb_date: str = None):
         except Exception as e:
             print(f"  [{league}] 실패: {e}")
 
+    # DEL 시즌 골리 기록표 (공식 penny-del.org) — 골리별 SV%·GAA
+    try:
+        from collectors.goalie_sources import del_goalie_table
+        gt = del_goalie_table(npb_date)
+        if gt["goalies"]:
+            uploader.upload_json(gt, "DEL", npb_date, "goalies")
+            print(f"  [DEL 골리] {len(gt['goalies'])}명 완료")
+    except Exception as e:
+        print(f"  [DEL 골리] 실패: {e}")
+
     # J리그(J1~J3)·K리그(K1·K2) 축구 (현지 날짜 = KST 어제, Flashscore 피드)
     for league in SOCCER_LEAGUES:
         try:
