@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generated_kst": "2026-11-21 00:40",
+  "generated_kst": "2026-11-21 13:26",
   "league": "KHL",
   "season_start": "20260801",
-  "games": 305,
+  "games": 309,
   "last_game_date": "20261120",
   "points_rule": {
    "reg_win": 2,
@@ -11,19 +11,110 @@
    "ot_loss": 1
   },
   "league_avg": {
-   "avg_reg_total": 4.92,
+   "avg_reg_total": 4.91,
    "reg_draw_rate": 0.223,
    "home_win_rate": 0.528,
-   "home_reg_win_rate": 0.416,
+   "home_reg_win_rate": 0.414,
    "over_rate_reg": {
-    "4.5": 0.554,
-    "5.5": 0.393,
-    "6.5": 0.216
+    "4.5": 0.55,
+    "5.5": 0.388,
+    "6.5": 0.214
    }
   },
   "notes": "reg_* = 정규시간(60분) 기준 (하키 언오버 사이트 정산 기준) / w = 정규승+연장승 / shot_share = 유효슈팅 점유율 / rank_pts = 전체 승점 순위"
  },
  "teams": {
+  "CSKA": {
+   "gp": 28,
+   "w": 21,
+   "reg_wins": 18,
+   "ot_wins": 3,
+   "otl": 2,
+   "l": 5,
+   "pts": 44,
+   "reg_w": 18,
+   "reg_d": 5,
+   "reg_l": 5,
+   "gf_pg": 3.32,
+   "ga_pg": 1.79,
+   "avg_reg_total": 4.93,
+   "sf_pg": 28.3,
+   "sa_pg": 23.5,
+   "shot_share": 0.547,
+   "sh_pct": 0.117,
+   "sv_pct": 0.925,
+   "pdo": 104.2,
+   "pp_pct": 0.226,
+   "pk_pct": 0.8,
+   "reg_draw_rate": 0.179,
+   "over_rate_reg": {
+    "4.5": 0.643,
+    "5.5": 0.357,
+    "6.5": 0.107
+   },
+   "home": {
+    "gp": 14,
+    "w": 10,
+    "reg_wins": 9,
+    "ot_wins": 1,
+    "otl": 1,
+    "l": 3,
+    "pts": 21,
+    "reg_w": 9,
+    "reg_d": 2,
+    "reg_l": 3,
+    "gf_pg": 3.29,
+    "ga_pg": 1.93,
+    "avg_reg_total": 5.07
+   },
+   "away": {
+    "gp": 14,
+    "w": 11,
+    "reg_wins": 9,
+    "ot_wins": 2,
+    "otl": 1,
+    "l": 2,
+    "pts": 23,
+    "reg_w": 9,
+    "reg_d": 3,
+    "reg_l": 2,
+    "gf_pg": 3.36,
+    "ga_pg": 1.64,
+    "avg_reg_total": 4.79
+   },
+   "last10": {
+    "gp": 10,
+    "w": 8,
+    "reg_wins": 7,
+    "ot_wins": 1,
+    "otl": 2,
+    "l": 0,
+    "pts": 18,
+    "reg_w": 7,
+    "reg_d": 3,
+    "reg_l": 0,
+    "gf_pg": 3.8,
+    "ga_pg": 1.5,
+    "avg_reg_total": 5.0
+   },
+   "last10_log": [
+    "20261025 @ SKA 3-1 W",
+    "20261028 vs Traktor 5-1 W",
+    "20261101 @ Traktor 3-2 OTW",
+    "20261103 @ Metallurg Mg 7-3 W",
+    "20261105 @ Avangard 1-2 OTL",
+    "20261109 vs Sibir 4-1 W",
+    "20261111 vs Torpedo 5-1 W",
+    "20261116 vs Amur 1-2 OTL",
+    "20261118 vs Lokomotiv 4-2 W",
+    "20261120 @ Dragons 5-0 W"
+   ],
+   "streak": "W2",
+   "last_game_date": "20261120",
+   "days_since_last": 1,
+   "last_was_b2b": false,
+   "rank_pts": 1
+  },
   "Metallurg Mg": {
    "gp": 29,
    "w": 20,
@@ -113,126 +204,35 @@
    "last_game_date": "20261119",
    "days_since_last": 2,
    "last_was_b2b": false,
-   "rank_pts": 1
-  },
-  "CSKA": {
-   "gp": 27,
-   "w": 20,
-   "reg_wins": 17,
-   "ot_wins": 3,
-   "otl": 2,
-   "l": 5,
-   "pts": 42,
-   "reg_w": 17,
-   "reg_d": 5,
-   "reg_l": 5,
-   "gf_pg": 3.26,
-   "ga_pg": 1.85,
-   "avg_reg_total": 4.93,
-   "sf_pg": 28.3,
-   "sa_pg": 23.3,
-   "shot_share": 0.548,
-   "sh_pct": 0.115,
-   "sv_pct": 0.921,
-   "pdo": 103.6,
-   "pp_pct": 0.228,
-   "pk_pct": 0.8,
-   "reg_draw_rate": 0.185,
-   "over_rate_reg": {
-    "4.5": 0.63,
-    "5.5": 0.37,
-    "6.5": 0.111
-   },
-   "home": {
-    "gp": 14,
-    "w": 10,
-    "reg_wins": 9,
-    "ot_wins": 1,
-    "otl": 1,
-    "l": 3,
-    "pts": 21,
-    "reg_w": 9,
-    "reg_d": 2,
-    "reg_l": 3,
-    "gf_pg": 3.29,
-    "ga_pg": 1.93,
-    "avg_reg_total": 5.07
-   },
-   "away": {
-    "gp": 13,
-    "w": 10,
-    "reg_wins": 8,
-    "ot_wins": 2,
-    "otl": 1,
-    "l": 2,
-    "pts": 21,
-    "reg_w": 8,
-    "reg_d": 3,
-    "reg_l": 2,
-    "gf_pg": 3.23,
-    "ga_pg": 1.77,
-    "avg_reg_total": 4.77
-   },
-   "last10": {
-    "gp": 10,
-    "w": 7,
-    "reg_wins": 6,
-    "ot_wins": 1,
-    "otl": 2,
-    "l": 1,
-    "pts": 16,
-    "reg_w": 6,
-    "reg_d": 3,
-    "reg_l": 1,
-    "gf_pg": 3.4,
-    "ga_pg": 2.0,
-    "avg_reg_total": 5.1
-   },
-   "last10_log": [
-    "20261023 @ Avtomobilist 1-5 L",
-    "20261025 @ SKA 3-1 W",
-    "20261028 vs Traktor 5-1 W",
-    "20261101 @ Traktor 3-2 OTW",
-    "20261103 @ Metallurg Mg 7-3 W",
-    "20261105 @ Avangard 1-2 OTL",
-    "20261109 vs Sibir 4-1 W",
-    "20261111 vs Torpedo 5-1 W",
-    "20261116 vs Amur 1-2 OTL",
-    "20261118 vs Lokomotiv 4-2 W"
-   ],
-   "streak": "W1",
-   "last_game_date": "20261118",
-   "days_since_last": 3,
-   "last_was_b2b": false,
    "rank_pts": 2
   },
   "Lokomotiv": {
-   "gp": 27,
-   "w": 19,
-   "reg_wins": 17,
+   "gp": 28,
+   "w": 20,
+   "reg_wins": 18,
    "ot_wins": 2,
    "otl": 1,
    "l": 7,
-   "pts": 39,
-   "reg_w": 17,
+   "pts": 41,
+   "reg_w": 18,
    "reg_d": 3,
    "reg_l": 7,
-   "gf_pg": 2.74,
-   "ga_pg": 1.59,
-   "avg_reg_total": 4.22,
-   "sf_pg": 30.7,
-   "sa_pg": 22.7,
-   "shot_share": 0.575,
+   "gf_pg": 2.75,
+   "ga_pg": 1.57,
+   "avg_reg_total": 4.21,
+   "sf_pg": 30.8,
+   "sa_pg": 23.0,
+   "shot_share": 0.573,
    "sh_pct": 0.089,
-   "sv_pct": 0.939,
-   "pdo": 102.8,
-   "pp_pct": 0.189,
-   "pk_pct": 0.893,
-   "reg_draw_rate": 0.111,
+   "sv_pct": 0.94,
+   "pdo": 102.9,
+   "pp_pct": 0.182,
+   "pk_pct": 0.888,
+   "reg_draw_rate": 0.107,
    "over_rate_reg": {
-    "4.5": 0.481,
-    "5.5": 0.296,
-    "6.5": 0.185
+    "4.5": 0.464,
+    "5.5": 0.286,
+    "6.5": 0.179
    },
    "home": {
     "gp": 14,
@@ -250,37 +250,36 @@
     "avg_reg_total": 3.71
    },
    "away": {
-    "gp": 13,
-    "w": 8,
-    "reg_wins": 8,
+    "gp": 14,
+    "w": 9,
+    "reg_wins": 9,
     "ot_wins": 0,
     "otl": 1,
     "l": 4,
-    "pts": 17,
-    "reg_w": 8,
+    "pts": 19,
+    "reg_w": 9,
     "reg_d": 1,
     "reg_l": 4,
-    "gf_pg": 2.77,
-    "ga_pg": 2.08,
-    "avg_reg_total": 4.77
+    "gf_pg": 2.79,
+    "ga_pg": 2.0,
+    "avg_reg_total": 4.71
    },
    "last10": {
     "gp": 10,
     "w": 7,
-    "reg_wins": 6,
-    "ot_wins": 1,
+    "reg_wins": 7,
+    "ot_wins": 0,
     "otl": 1,
     "l": 2,
     "pts": 15,
-    "reg_w": 6,
-    "reg_d": 2,
+    "reg_w": 7,
+    "reg_d": 1,
     "reg_l": 2,
-    "gf_pg": 2.8,
+    "gf_pg": 2.9,
     "ga_pg": 1.1,
-    "avg_reg_total": 3.7
+    "avg_reg_total": 3.9
    },
    "last10_log": [
-    "20261023 vs Dynamo Msk 2-1 OTW",
     "20261025 vs Severstal 1-0 W",
     "20261029 vs HC Sochi 6-2 W",
     "20261102 vs Lada 0-1 L",
@@ -289,102 +288,103 @@
     "20261108 @ Neftekhimik 5-1 W",
     "20261114 vs Dragons 5-0 W",
     "20261116 vs HC Sochi 3-0 W",
-    "20261118 @ CSKA 2-4 L"
+    "20261118 @ CSKA 2-4 L",
+    "20261120 @ Torpedo 3-1 W"
    ],
-   "streak": "L1",
-   "last_game_date": "20261118",
-   "days_since_last": 3,
+   "streak": "W1",
+   "last_game_date": "20261120",
+   "days_since_last": 1,
    "last_was_b2b": false,
    "rank_pts": 3
   },
-  "Torpedo": {
-   "gp": 26,
-   "w": 16,
+  "Severstal": {
+   "gp": 28,
+   "w": 17,
    "reg_wins": 13,
-   "ot_wins": 3,
-   "otl": 3,
-   "l": 7,
-   "pts": 35,
+   "ot_wins": 4,
+   "otl": 2,
+   "l": 9,
+   "pts": 36,
    "reg_w": 13,
    "reg_d": 6,
-   "reg_l": 7,
-   "gf_pg": 2.65,
-   "ga_pg": 2.19,
-   "avg_reg_total": 4.62,
-   "sf_pg": 27.2,
-   "sa_pg": 24.6,
-   "shot_share": 0.525,
-   "sh_pct": 0.097,
-   "sv_pct": 0.921,
+   "reg_l": 9,
+   "gf_pg": 2.5,
+   "ga_pg": 2.29,
+   "avg_reg_total": 4.57,
+   "sf_pg": 28.7,
+   "sa_pg": 27.9,
+   "shot_share": 0.507,
+   "sh_pct": 0.087,
+   "sv_pct": 0.931,
    "pdo": 101.8,
-   "pp_pct": 0.154,
-   "pk_pct": 0.821,
-   "reg_draw_rate": 0.231,
+   "pp_pct": 0.148,
+   "pk_pct": 0.839,
+   "reg_draw_rate": 0.214,
    "over_rate_reg": {
-    "4.5": 0.5,
-    "5.5": 0.346,
-    "6.5": 0.192
+    "4.5": 0.571,
+    "5.5": 0.357,
+    "6.5": 0.179
    },
    "home": {
-    "gp": 13,
-    "w": 8,
+    "gp": 17,
+    "w": 12,
     "reg_wins": 8,
-    "ot_wins": 0,
-    "otl": 2,
-    "l": 3,
-    "pts": 18,
-    "reg_w": 8,
-    "reg_d": 2,
-    "reg_l": 3,
-    "gf_pg": 2.62,
-    "ga_pg": 2.0,
-    "avg_reg_total": 4.46
-   },
-   "away": {
-    "gp": 13,
-    "w": 8,
-    "reg_wins": 5,
-    "ot_wins": 3,
+    "ot_wins": 4,
     "otl": 1,
     "l": 4,
-    "pts": 17,
-    "reg_w": 5,
-    "reg_d": 4,
+    "pts": 25,
+    "reg_w": 8,
+    "reg_d": 5,
     "reg_l": 4,
-    "gf_pg": 2.69,
-    "ga_pg": 2.38,
-    "avg_reg_total": 4.77
+    "gf_pg": 2.76,
+    "ga_pg": 2.24,
+    "avg_reg_total": 4.71
+   },
+   "away": {
+    "gp": 11,
+    "w": 5,
+    "reg_wins": 5,
+    "ot_wins": 0,
+    "otl": 1,
+    "l": 5,
+    "pts": 11,
+    "reg_w": 5,
+    "reg_d": 1,
+    "reg_l": 5,
+    "gf_pg": 2.09,
+    "ga_pg": 2.36,
+    "avg_reg_total": 4.36
    },
    "last10": {
     "gp": 10,
     "w": 6,
-    "reg_wins": 5,
-    "ot_wins": 1,
-    "otl": 2,
-    "l": 2,
-    "pts": 14,
-    "reg_w": 5,
+    "reg_wins": 3,
+    "ot_wins": 3,
+    "otl": 0,
+    "l": 4,
+    "pts": 12,
+    "reg_w": 3,
     "reg_d": 3,
-    "reg_l": 2,
-    "gf_pg": 2.3,
-    "ga_pg": 2.4,
-    "avg_reg_total": 4.4
+    "reg_l": 4,
+    "gf_pg": 2.5,
+    "ga_pg": 2.5,
+    "avg_reg_total": 4.7
    },
    "last10_log": [
-    "20261021 @ Ak Bars 2-1 OTW",
-    "20261024 vs Dinamo Mn 1-2 OTL",
-    "20261027 @ SKA 4-3 W",
-    "20261029 @ Avtomobilist 2-3 OTL",
-    "20261101 vs Spartak 3-1 W",
-    "20261107 vs Dynamo Msk 4-3 W",
-    "20261109 @ Ak Bars 2-5 L",
-    "20261111 @ CSKA 1-5 L",
-    "20261113 vs Lada 3-1 W",
-    "20261115 vs Dinamo Mn 1-0 W"
+    "20261023 @ Spartak 1-3 L",
+    "20261025 @ Lokomotiv 0-1 L",
+    "20261029 vs Spartak 3-2 OTW",
+    "20261030 vs Spartak 1-5 L",
+    "20261103 @ Dragons 1-3 L",
+    "20261105 @ HC Sochi 4-1 W",
+    "20261109 vs Lada 4-3 W",
+    "20261113 vs Traktor 4-3 OTW",
+    "20261118 vs HC Sochi 4-2 W",
+    "20261120 vs Amur 3-2 OTW"
    ],
-   "streak": "W2",
-   "last_game_date": "20261115",
-   "days_since_last": 6,
+   "streak": "W5",
+   "last_game_date": "20261120",
+   "days_since_last": 1,
    "last_was_b2b": false,
    "rank_pts": 4
   },
@@ -479,124 +479,124 @@
    "last_was_b2b": false,
    "rank_pts": 5
   },
-  "Severstal": {
+  "Torpedo": {
    "gp": 27,
    "w": 16,
    "reg_wins": 13,
    "ot_wins": 3,
-   "otl": 2,
-   "l": 9,
-   "pts": 34,
+   "otl": 3,
+   "l": 8,
+   "pts": 35,
    "reg_w": 13,
-   "reg_d": 5,
-   "reg_l": 9,
-   "gf_pg": 2.48,
-   "ga_pg": 2.3,
+   "reg_d": 6,
+   "reg_l": 8,
+   "gf_pg": 2.59,
+   "ga_pg": 2.22,
    "avg_reg_total": 4.59,
-   "sf_pg": 28.2,
-   "sa_pg": 28.0,
-   "shot_share": 0.502,
-   "sh_pct": 0.088,
-   "sv_pct": 0.931,
-   "pdo": 101.9,
-   "pp_pct": 0.143,
-   "pk_pct": 0.831,
-   "reg_draw_rate": 0.185,
+   "sf_pg": 27.3,
+   "sa_pg": 25.0,
+   "shot_share": 0.523,
+   "sh_pct": 0.095,
+   "sv_pct": 0.92,
+   "pdo": 101.5,
+   "pp_pct": 0.158,
+   "pk_pct": 0.829,
+   "reg_draw_rate": 0.222,
    "over_rate_reg": {
-    "4.5": 0.593,
-    "5.5": 0.37,
+    "4.5": 0.481,
+    "5.5": 0.333,
     "6.5": 0.185
    },
    "home": {
-    "gp": 16,
-    "w": 11,
+    "gp": 14,
+    "w": 8,
     "reg_wins": 8,
+    "ot_wins": 0,
+    "otl": 2,
+    "l": 4,
+    "pts": 18,
+    "reg_w": 8,
+    "reg_d": 2,
+    "reg_l": 4,
+    "gf_pg": 2.5,
+    "ga_pg": 2.07,
+    "avg_reg_total": 4.43
+   },
+   "away": {
+    "gp": 13,
+    "w": 8,
+    "reg_wins": 5,
     "ot_wins": 3,
     "otl": 1,
     "l": 4,
-    "pts": 23,
-    "reg_w": 8,
+    "pts": 17,
+    "reg_w": 5,
     "reg_d": 4,
     "reg_l": 4,
-    "gf_pg": 2.75,
-    "ga_pg": 2.25,
-    "avg_reg_total": 4.75
-   },
-   "away": {
-    "gp": 11,
-    "w": 5,
-    "reg_wins": 5,
-    "ot_wins": 0,
-    "otl": 1,
-    "l": 5,
-    "pts": 11,
-    "reg_w": 5,
-    "reg_d": 1,
-    "reg_l": 5,
-    "gf_pg": 2.09,
-    "ga_pg": 2.36,
-    "avg_reg_total": 4.36
+    "gf_pg": 2.69,
+    "ga_pg": 2.38,
+    "avg_reg_total": 4.77
    },
    "last10": {
     "gp": 10,
     "w": 5,
-    "reg_wins": 3,
-    "ot_wins": 2,
-    "otl": 0,
-    "l": 5,
-    "pts": 10,
-    "reg_w": 3,
+    "reg_wins": 5,
+    "ot_wins": 0,
+    "otl": 2,
+    "l": 3,
+    "pts": 12,
+    "reg_w": 5,
     "reg_d": 2,
-    "reg_l": 5,
-    "gf_pg": 2.3,
-    "ga_pg": 2.8,
-    "avg_reg_total": 4.9
+    "reg_l": 3,
+    "gf_pg": 2.2,
+    "ga_pg": 2.6,
+    "avg_reg_total": 4.6
    },
    "last10_log": [
-    "20261021 vs Dragons 1-5 L",
-    "20261023 @ Spartak 1-3 L",
-    "20261025 @ Lokomotiv 0-1 L",
-    "20261029 vs Spartak 3-2 OTW",
-    "20261030 vs Spartak 1-5 L",
-    "20261103 @ Dragons 1-3 L",
-    "20261105 @ HC Sochi 4-1 W",
-    "20261109 vs Lada 4-3 W",
-    "20261113 vs Traktor 4-3 OTW",
-    "20261118 vs HC Sochi 4-2 W"
+    "20261024 vs Dinamo Mn 1-2 OTL",
+    "20261027 @ SKA 4-3 W",
+    "20261029 @ Avtomobilist 2-3 OTL",
+    "20261101 vs Spartak 3-1 W",
+    "20261107 vs Dynamo Msk 4-3 W",
+    "20261109 @ Ak Bars 2-5 L",
+    "20261111 @ CSKA 1-5 L",
+    "20261113 vs Lada 3-1 W",
+    "20261115 vs Dinamo Mn 1-0 W",
+    "20261120 vs Lokomotiv 1-3 L"
    ],
-   "streak": "W4",
-   "last_game_date": "20261118",
-   "days_since_last": 3,
+   "streak": "L1",
+   "last_game_date": "20261120",
+   "days_since_last": 1,
    "last_was_b2b": false,
    "rank_pts": 6
   },
   "Amur": {
-   "gp": 27,
+   "gp": 28,
    "w": 16,
    "reg_wins": 14,
    "ot_wins": 2,
-   "otl": 1,
+   "otl": 2,
    "l": 10,
-   "pts": 33,
+   "pts": 34,
    "reg_w": 14,
-   "reg_d": 3,
+   "reg_d": 4,
    "reg_l": 10,
    "gf_pg": 2.11,
-   "ga_pg": 1.63,
-   "avg_reg_total": 3.63,
-   "sf_pg": 25.9,
-   "sa_pg": 29.3,
-   "shot_share": 0.469,
+   "ga_pg": 1.68,
+   "avg_reg_total": 3.64,
+   "sf_pg": 25.8,
+   "sa_pg": 29.7,
+   "shot_share": 0.465,
    "sh_pct": 0.082,
    "sv_pct": 0.95,
    "pdo": 103.2,
-   "pp_pct": 0.126,
-   "pk_pct": 0.91,
-   "reg_draw_rate": 0.111,
+   "pp_pct": 0.121,
+   "pk_pct": 0.902,
+   "reg_draw_rate": 0.143,
    "over_rate_reg": {
-    "4.5": 0.259,
-    "5.5": 0.185,
-    "6.5": 0.148
+    "4.5": 0.25,
+    "5.5": 0.179,
+    "6.5": 0.143
    },
    "home": {
     "gp": 12,
@@ -614,37 +614,36 @@
     "avg_reg_total": 3.67
    },
    "away": {
-    "gp": 15,
+    "gp": 16,
     "w": 9,
     "reg_wins": 7,
     "ot_wins": 2,
-    "otl": 1,
+    "otl": 2,
     "l": 5,
-    "pts": 19,
+    "pts": 20,
     "reg_w": 7,
-    "reg_d": 3,
+    "reg_d": 4,
     "reg_l": 5,
-    "gf_pg": 2.07,
-    "ga_pg": 1.73,
-    "avg_reg_total": 3.6
+    "gf_pg": 2.06,
+    "ga_pg": 1.81,
+    "avg_reg_total": 3.62
    },
    "last10": {
     "gp": 10,
-    "w": 7,
-    "reg_wins": 5,
+    "w": 6,
+    "reg_wins": 4,
     "ot_wins": 2,
-    "otl": 0,
+    "otl": 1,
     "l": 3,
-    "pts": 14,
-    "reg_w": 5,
-    "reg_d": 2,
+    "pts": 13,
+    "reg_w": 4,
+    "reg_d": 3,
     "reg_l": 3,
-    "gf_pg": 2.5,
-    "ga_pg": 1.6,
-    "avg_reg_total": 3.9
+    "gf_pg": 2.4,
+    "ga_pg": 1.9,
+    "avg_reg_total": 4.0
    },
    "last10_log": [
-    "20261025 vs Admiral 3-0 W",
     "20261028 @ Dynamo Msk 1-2 L",
     "20261030 @ Ak Bars 1-3 L",
     "20261101 @ Admiral 5-2 W",
@@ -653,56 +652,57 @@
     "20261112 @ Spartak 4-3 W",
     "20261114 @ HC Sochi 2-0 W",
     "20261116 @ CSKA 2-1 OTW",
-    "20261118 @ Dragons 3-2 OTW"
+    "20261118 @ Dragons 3-2 OTW",
+    "20261120 @ Severstal 2-3 OTL"
    ],
-   "streak": "W5",
-   "last_game_date": "20261118",
-   "days_since_last": 3,
+   "streak": "L1",
+   "last_game_date": "20261120",
+   "days_since_last": 1,
    "last_was_b2b": false,
    "rank_pts": 7
   },
   "Avangard": {
-   "gp": 26,
-   "w": 15,
-   "reg_wins": 7,
+   "gp": 27,
+   "w": 16,
+   "reg_wins": 8,
    "ot_wins": 8,
    "otl": 2,
    "l": 9,
-   "pts": 32,
-   "reg_w": 7,
+   "pts": 34,
+   "reg_w": 8,
    "reg_d": 10,
    "reg_l": 9,
-   "gf_pg": 2.23,
-   "ga_pg": 2.31,
+   "gf_pg": 2.26,
+   "ga_pg": 2.26,
    "avg_reg_total": 4.15,
-   "sf_pg": 31.6,
-   "sa_pg": 28.2,
-   "shot_share": 0.528,
-   "sh_pct": 0.071,
-   "sv_pct": 0.918,
-   "pdo": 98.9,
-   "pp_pct": 0.138,
-   "pk_pct": 0.727,
-   "reg_draw_rate": 0.385,
+   "sf_pg": 31.5,
+   "sa_pg": 28.6,
+   "shot_share": 0.525,
+   "sh_pct": 0.072,
+   "sv_pct": 0.921,
+   "pdo": 99.3,
+   "pp_pct": 0.14,
+   "pk_pct": 0.734,
+   "reg_draw_rate": 0.37,
    "over_rate_reg": {
-    "4.5": 0.385,
-    "5.5": 0.269,
+    "4.5": 0.37,
+    "5.5": 0.259,
     "6.5": 0.0
    },
    "home": {
-    "gp": 12,
-    "w": 9,
-    "reg_wins": 4,
+    "gp": 13,
+    "w": 10,
+    "reg_wins": 5,
     "ot_wins": 5,
     "otl": 0,
     "l": 3,
-    "pts": 18,
-    "reg_w": 4,
+    "pts": 20,
+    "reg_w": 5,
     "reg_d": 5,
     "reg_l": 3,
-    "gf_pg": 2.67,
-    "ga_pg": 2.17,
-    "avg_reg_total": 4.42
+    "gf_pg": 2.69,
+    "ga_pg": 2.08,
+    "avg_reg_total": 4.38
    },
    "away": {
     "gp": 14,
@@ -722,20 +722,19 @@
    "last10": {
     "gp": 10,
     "w": 7,
-    "reg_wins": 3,
-    "ot_wins": 4,
+    "reg_wins": 4,
+    "ot_wins": 3,
     "otl": 2,
     "l": 1,
     "pts": 16,
-    "reg_w": 3,
-    "reg_d": 6,
+    "reg_w": 4,
+    "reg_d": 5,
     "reg_l": 1,
     "gf_pg": 2.8,
-    "ga_pg": 2.0,
+    "ga_pg": 1.9,
     "avg_reg_total": 4.2
    },
    "last10_log": [
-    "20261026 @ Dynamo Msk 3-2 OTW",
     "20261028 @ Ak Bars 4-0 W",
     "20261030 @ Lada 2-3 OTL",
     "20261101 @ HC Sochi 1-2 OTL",
@@ -744,11 +743,12 @@
     "20261110 @ Dinamo Mn 0-4 L",
     "20261112 @ Metallurg Mg 4-3 OTW",
     "20261114 @ Neftekhimik 5-1 W",
-    "20261118 vs Admiral 3-1 W"
+    "20261118 vs Admiral 3-1 W",
+    "20261120 vs Barys 3-1 W"
    ],
-   "streak": "W3",
-   "last_game_date": "20261118",
-   "days_since_last": 3,
+   "streak": "W4",
+   "last_game_date": "20261120",
+   "days_since_last": 1,
    "last_was_b2b": false,
    "rank_pts": 8
   },
@@ -935,46 +935,46 @@
    "rank_pts": 10
   },
   "Dragons": {
-   "gp": 26,
+   "gp": 27,
    "w": 14,
    "reg_wins": 11,
    "ot_wins": 3,
    "otl": 3,
-   "l": 9,
+   "l": 10,
    "pts": 31,
    "reg_w": 11,
    "reg_d": 6,
-   "reg_l": 9,
-   "gf_pg": 2.77,
-   "ga_pg": 2.73,
-   "avg_reg_total": 5.27,
+   "reg_l": 10,
+   "gf_pg": 2.67,
+   "ga_pg": 2.81,
+   "avg_reg_total": 5.26,
    "sf_pg": 26.6,
-   "sa_pg": 32.3,
-   "shot_share": 0.452,
-   "sh_pct": 0.104,
-   "sv_pct": 0.921,
-   "pdo": 102.5,
+   "sa_pg": 32.1,
+   "shot_share": 0.454,
+   "sh_pct": 0.1,
+   "sv_pct": 0.917,
+   "pdo": 101.7,
    "pp_pct": 0.204,
-   "pk_pct": 0.805,
-   "reg_draw_rate": 0.231,
+   "pk_pct": 0.807,
+   "reg_draw_rate": 0.222,
    "over_rate_reg": {
-    "4.5": 0.731,
-    "5.5": 0.385,
-    "6.5": 0.192
+    "4.5": 0.741,
+    "5.5": 0.37,
+    "6.5": 0.185
    },
    "home": {
-    "gp": 12,
+    "gp": 13,
     "w": 6,
     "reg_wins": 6,
     "ot_wins": 0,
     "otl": 2,
-    "l": 4,
+    "l": 5,
     "pts": 14,
     "reg_w": 6,
     "reg_d": 2,
-    "reg_l": 4,
-    "gf_pg": 2.58,
-    "ga_pg": 2.5,
+    "reg_l": 5,
+    "gf_pg": 2.38,
+    "ga_pg": 2.69,
     "avg_reg_total": 4.92
    },
    "away": {
@@ -994,21 +994,20 @@
    },
    "last10": {
     "gp": 10,
-    "w": 4,
-    "reg_wins": 3,
+    "w": 3,
+    "reg_wins": 2,
     "ot_wins": 1,
     "otl": 1,
-    "l": 5,
-    "pts": 9,
-    "reg_w": 3,
+    "l": 6,
+    "pts": 7,
+    "reg_w": 2,
     "reg_d": 2,
-    "reg_l": 5,
-    "gf_pg": 2.2,
-    "ga_pg": 3.0,
-    "avg_reg_total": 5.0
+    "reg_l": 6,
+    "gf_pg": 2.0,
+    "ga_pg": 3.5,
+    "avg_reg_total": 5.3
    },
    "last10_log": [
-    "20261023 @ Lada 2-0 W",
     "20261025 @ Spartak 4-3 OTW",
     "20261030 vs Barys 2-4 L",
     "20261101 vs Salavat Yulaev 3-2 W",
@@ -1017,11 +1016,12 @@
     "20261110 @ Traktor 2-5 L",
     "20261112 @ Avtomobilist 2-4 L",
     "20261114 @ Lokomotiv 0-5 L",
-    "20261118 vs Amur 2-3 OTL"
+    "20261118 vs Amur 2-3 OTL",
+    "20261120 vs CSKA 0-5 L"
    ],
-   "streak": "L5",
-   "last_game_date": "20261118",
-   "days_since_last": 3,
+   "streak": "L6",
+   "last_game_date": "20261120",
+   "days_since_last": 1,
    "last_was_b2b": false,
    "rank_pts": 11
   },
@@ -1299,32 +1299,32 @@
    "rank_pts": 14
   },
   "Barys": {
-   "gp": 27,
+   "gp": 28,
    "w": 14,
    "reg_wins": 12,
    "ot_wins": 2,
    "otl": 1,
-   "l": 12,
+   "l": 13,
    "pts": 29,
    "reg_w": 12,
    "reg_d": 3,
-   "reg_l": 12,
-   "gf_pg": 3.26,
-   "ga_pg": 2.85,
-   "avg_reg_total": 6.0,
-   "sf_pg": 32.7,
+   "reg_l": 13,
+   "gf_pg": 3.18,
+   "ga_pg": 2.86,
+   "avg_reg_total": 5.93,
+   "sf_pg": 32.9,
    "sa_pg": 29.4,
-   "shot_share": 0.527,
-   "sh_pct": 0.1,
+   "shot_share": 0.528,
+   "sh_pct": 0.097,
    "sv_pct": 0.914,
-   "pdo": 101.4,
-   "pp_pct": 0.178,
-   "pk_pct": 0.851,
-   "reg_draw_rate": 0.111,
+   "pdo": 101.1,
+   "pp_pct": 0.175,
+   "pk_pct": 0.849,
+   "reg_draw_rate": 0.107,
    "over_rate_reg": {
-    "4.5": 0.778,
-    "5.5": 0.556,
-    "6.5": 0.37
+    "4.5": 0.75,
+    "5.5": 0.536,
+    "6.5": 0.357
    },
    "home": {
     "gp": 10,
@@ -1342,37 +1342,36 @@
     "avg_reg_total": 7.4
    },
    "away": {
-    "gp": 17,
+    "gp": 18,
     "w": 8,
     "reg_wins": 6,
     "ot_wins": 2,
     "otl": 1,
-    "l": 8,
+    "l": 9,
     "pts": 17,
     "reg_w": 6,
     "reg_d": 3,
-    "reg_l": 8,
-    "gf_pg": 2.71,
-    "ga_pg": 2.65,
-    "avg_reg_total": 5.18
+    "reg_l": 9,
+    "gf_pg": 2.61,
+    "ga_pg": 2.67,
+    "avg_reg_total": 5.11
    },
    "last10": {
     "gp": 10,
     "w": 4,
     "reg_wins": 4,
     "ot_wins": 0,
-    "otl": 1,
-    "l": 5,
-    "pts": 9,
+    "otl": 0,
+    "l": 6,
+    "pts": 8,
     "reg_w": 4,
-    "reg_d": 1,
-    "reg_l": 5,
-    "gf_pg": 2.7,
-    "ga_pg": 3.1,
-    "avg_reg_total": 5.7
+    "reg_d": 0,
+    "reg_l": 6,
+    "gf_pg": 2.4,
+    "ga_pg": 2.9,
+    "avg_reg_total": 5.3
    },
    "last10_log": [
-    "20261021 @ Admiral 4-5 OTL",
     "20261026 @ Avtomobilist 1-4 L",
     "20261028 @ Dinamo Mn 1-0 W",
     "20261030 @ Dragons 4-2 W",
@@ -1381,11 +1380,12 @@
     "20261108 @ Amur 0-2 L",
     "20261112 vs Admiral 4-2 W",
     "20261115 vs Metallurg Mg 5-4 W",
-    "20261118 @ Salavat Yulaev 3-5 L"
+    "20261118 @ Salavat Yulaev 3-5 L",
+    "20261120 @ Avangard 1-3 L"
    ],
-   "streak": "L1",
-   "last_game_date": "20261118",
-   "days_since_last": 3,
+   "streak": "L2",
+   "last_game_date": "20261120",
+   "days_since_last": 1,
    "last_was_b2b": false,
    "rank_pts": 15
   },
@@ -2251,6 +2251,34 @@
     "20261118 @ Dragons 20/22 W"
    ]
   },
+  "Amur|35709": {
+   "name": "Kobozev Viktor",
+   "team": "Amur",
+   "starts": 1,
+   "w": 0,
+   "gp_with_sv": 1,
+   "sv_pct": 0.951,
+   "gaa": 1.85,
+   "last5_starts": {
+    "gp_with_sv": 1,
+    "sv_pct": 0.951,
+    "gaa": 1.85
+   },
+   "home": {
+    "gp_with_sv": 0,
+    "sv_pct": null,
+    "gaa": null
+   },
+   "away": {
+    "gp_with_sv": 1,
+    "sv_pct": 0.951,
+    "gaa": 1.85
+   },
+   "last_start_date": "20261120",
+   "log": [
+    "20261120 @ Severstal 39/41 L"
+   ]
+  },
   "Avangard|5077": {
    "name": "Serebryakov Nikita",
    "team": "Avangard",
@@ -2286,33 +2314,33 @@
   "Avangard|43579": {
    "name": "Prosvetov Ivan",
    "team": "Avangard",
-   "starts": 8,
-   "w": 4,
-   "gp_with_sv": 8,
-   "sv_pct": 0.917,
-   "gaa": 2.42,
+   "starts": 9,
+   "w": 5,
+   "gp_with_sv": 9,
+   "sv_pct": 0.925,
+   "gaa": 2.26,
    "last5_starts": {
     "gp_with_sv": 5,
-    "sv_pct": 0.897,
-    "gaa": 3.06
+    "sv_pct": 0.927,
+    "gaa": 2.24
    },
    "home": {
-    "gp_with_sv": 3,
-    "sv_pct": 0.911,
-    "gaa": 2.68
+    "gp_with_sv": 4,
+    "sv_pct": 0.93,
+    "gaa": 2.26
    },
    "away": {
     "gp_with_sv": 5,
     "sv_pct": 0.921,
     "gaa": 2.25
    },
-   "last_start_date": "20261110",
+   "last_start_date": "20261120",
    "log": [
-    "20260928 vs Metallurg Mg 28/33 L",
     "20261016 vs Avtomobilist 29/31 W",
     "20261026 @ Dynamo Msk 23/25 W",
     "20261101 @ HC Sochi 28/30 L",
-    "20261110 @ Dinamo Mn 22/26 L"
+    "20261110 @ Dinamo Mn 22/26 L",
+    "20261120 vs Barys 37/38 W"
    ]
   },
   "Avtomobilist|5491": {
@@ -2471,6 +2499,34 @@
     "20261108 @ Amur 20/22 L"
    ]
   },
+  "Barys|32009": {
+   "name": "Nikolayev Dmitry N.",
+   "team": "Barys",
+   "starts": 1,
+   "w": 0,
+   "gp_with_sv": 1,
+   "sv_pct": 0.9,
+   "gaa": 3.07,
+   "last5_starts": {
+    "gp_with_sv": 1,
+    "sv_pct": 0.9,
+    "gaa": 3.07
+   },
+   "home": {
+    "gp_with_sv": 0,
+    "sv_pct": null,
+    "gaa": null
+   },
+   "away": {
+    "gp_with_sv": 1,
+    "sv_pct": 0.9,
+    "gaa": 3.07
+   },
+   "last_start_date": "20261120",
+   "log": [
+    "20261120 @ Avangard 27/30 L"
+   ]
+  },
   "CSKA|31781": {
    "name": "Gamzin Dmitry",
    "team": "CSKA",
@@ -2506,15 +2562,15 @@
   "CSKA|1965": {
    "name": "Samonov Alexander",
    "team": "CSKA",
-   "starts": 12,
-   "w": 10,
-   "gp_with_sv": 12,
-   "sv_pct": 0.917,
-   "gaa": 1.98,
+   "starts": 13,
+   "w": 11,
+   "gp_with_sv": 13,
+   "sv_pct": 0.924,
+   "gaa": 1.83,
    "last5_starts": {
     "gp_with_sv": 5,
-    "sv_pct": 0.911,
-    "gaa": 2.18
+    "sv_pct": 0.953,
+    "gaa": 1.18
    },
    "home": {
     "gp_with_sv": 6,
@@ -2522,17 +2578,17 @@
     "gaa": 1.95
    },
    "away": {
-    "gp_with_sv": 6,
-    "sv_pct": 0.908,
-    "gaa": 2.02
+    "gp_with_sv": 7,
+    "sv_pct": 0.924,
+    "gaa": 1.73
    },
-   "last_start_date": "20261116",
+   "last_start_date": "20261120",
    "log": [
-    "20261023 @ Avtomobilist 16/21 L",
     "20261028 vs Traktor 23/24 W",
     "20261103 @ Metallurg Mg 24/27 W",
     "20261109 vs Sibir 22/23 W",
-    "20261116 vs Amur 27/28 L"
+    "20261116 vs Amur 27/28 L",
+    "20261120 @ Dragons 27/27 W"
    ]
   },
   "Dinamo Mn|39731": {
@@ -2631,33 +2687,33 @@
   "Dragons|25737": {
    "name": "Miftakhov Amir",
    "team": "Dragons",
-   "starts": 12,
+   "starts": 13,
    "w": 6,
-   "gp_with_sv": 10,
-   "sv_pct": 0.917,
-   "gaa": 2.77,
+   "gp_with_sv": 11,
+   "sv_pct": 0.909,
+   "gaa": 2.99,
    "last5_starts": {
     "gp_with_sv": 4,
-    "sv_pct": 0.875,
-    "gaa": 4.09
+    "sv_pct": 0.858,
+    "gaa": 4.35
    },
    "home": {
-    "gp_with_sv": 4,
-    "sv_pct": 0.907,
-    "gaa": 2.54
+    "gp_with_sv": 5,
+    "sv_pct": 0.889,
+    "gaa": 3.04
    },
    "away": {
     "gp_with_sv": 6,
     "sv_pct": 0.922,
     "gaa": 2.94
    },
-   "last_start_date": "20261114",
+   "last_start_date": "20261120",
    "log": [
-    "20261030 vs Barys 29/33 L",
     "20261101 vs Salavat Yulaev 21/23 W",
     "20261105 vs Dynamo Msk 23/26 L",
     "20261110 @ Traktor 25/30 L",
-    "20261114 @ Lokomotiv SV 미상 L"
+    "20261114 @ Lokomotiv SV 미상 L",
+    "20261120 vs CSKA 22/27 L"
    ]
   },
   "Dragons|17671": {
@@ -3032,15 +3088,15 @@
   "Lokomotiv|20965": {
    "name": "Melnichuk Alexei",
    "team": "Lokomotiv",
-   "starts": 8,
-   "w": 4,
-   "gp_with_sv": 6,
-   "sv_pct": 0.937,
-   "gaa": 1.5,
+   "starts": 9,
+   "w": 5,
+   "gp_with_sv": 7,
+   "sv_pct": 0.942,
+   "gaa": 1.43,
    "last5_starts": {
-    "gp_with_sv": 4,
-    "sv_pct": 0.943,
-    "gaa": 1.24
+    "gp_with_sv": 5,
+    "sv_pct": 0.949,
+    "gaa": 1.19
    },
    "home": {
     "gp_with_sv": 2,
@@ -3048,17 +3104,17 @@
     "gaa": 0.51
    },
    "away": {
-    "gp_with_sv": 4,
-    "sv_pct": 0.923,
-    "gaa": 1.97
+    "gp_with_sv": 5,
+    "sv_pct": 0.933,
+    "gaa": 1.78
    },
-   "last_start_date": "20261118",
+   "last_start_date": "20261120",
    "log": [
-    "20261029 vs HC Sochi SV 미상 W",
     "20261102 vs Lada 17/18 L",
     "20261106 @ Lada 23/23 L",
     "20261116 vs HC Sochi 20/20 W",
-    "20261118 @ CSKA 22/26 L"
+    "20261118 @ CSKA 22/26 L",
+    "20261120 @ Torpedo 29/30 W"
    ]
   },
   "Metallurg Mg|41431": {
@@ -3374,33 +3430,33 @@
   "Severstal|4953": {
    "name": "Samoilov Alexander",
    "team": "Severstal",
-   "starts": 21,
-   "w": 13,
-   "gp_with_sv": 18,
-   "sv_pct": 0.934,
+   "starts": 22,
+   "w": 14,
+   "gp_with_sv": 19,
+   "sv_pct": 0.933,
    "gaa": 1.83,
    "last5_starts": {
     "gp_with_sv": 5,
-    "sv_pct": 0.909,
-    "gaa": 2.37
+    "sv_pct": 0.918,
+    "gaa": 2.13
    },
    "home": {
-    "gp_with_sv": 13,
-    "sv_pct": 0.932,
-    "gaa": 1.9
+    "gp_with_sv": 14,
+    "sv_pct": 0.931,
+    "gaa": 1.89
    },
    "away": {
     "gp_with_sv": 5,
     "sv_pct": 0.938,
     "gaa": 1.63
    },
-   "last_start_date": "20261118",
+   "last_start_date": "20261120",
    "log": [
-    "20261103 @ Dragons 20/23 L",
     "20261105 @ HC Sochi 27/28 W",
     "20261109 vs Lada 20/23 W",
     "20261113 vs Traktor 24/27 W",
-    "20261118 vs HC Sochi 29/31 W"
+    "20261118 vs HC Sochi 29/31 W",
+    "20261120 vs Amur 23/25 W"
    ]
   },
   "Severstal|25077": {
@@ -3594,33 +3650,33 @@
   "Torpedo|3281": {
    "name": "Kostin Denis",
    "team": "Torpedo",
-   "starts": 17,
+   "starts": 18,
    "w": 11,
-   "gp_with_sv": 17,
-   "sv_pct": 0.925,
-   "gaa": 1.91,
+   "gp_with_sv": 18,
+   "sv_pct": 0.924,
+   "gaa": 1.98,
    "last5_starts": {
     "gp_with_sv": 5,
-    "sv_pct": 0.941,
-    "gaa": 1.38
+    "sv_pct": 0.942,
+    "gaa": 1.61
    },
    "home": {
-    "gp_with_sv": 10,
-    "sv_pct": 0.923,
-    "gaa": 2.0
+    "gp_with_sv": 11,
+    "sv_pct": 0.922,
+    "gaa": 2.1
    },
    "away": {
     "gp_with_sv": 7,
     "sv_pct": 0.928,
     "gaa": 1.8
    },
-   "last_start_date": "20261115",
+   "last_start_date": "20261120",
    "log": [
-    "20261029 @ Avtomobilist 13/15 L",
     "20261101 vs Spartak 30/31 W",
     "20261107 vs Dynamo Msk 14/17 W",
     "20261113 vs Lada 27/28 W",
-    "20261115 vs Dinamo Mn 27/27 W"
+    "20261115 vs Dinamo Mn 27/27 W",
+    "20261120 vs Lokomotiv 31/34 L"
    ]
   },
   "Torpedo|28785": {
@@ -3904,9 +3960,9 @@
   "Torpedo": [
    {
     "name": "Seroukh Daniil",
-    "g": 10,
+    "g": 11,
     "a": 0,
-    "pts": 10
+    "pts": 11
    },
    {
     "name": "Goncharuk Sergei",
@@ -4099,13 +4155,13 @@
     "pts": 9
    },
    {
-    "name": "Ivantsov Ilya",
-    "g": 7,
+    "name": "Abrosimov Ruslan",
+    "g": 8,
     "a": 0,
-    "pts": 7
+    "pts": 8
    },
    {
-    "name": "Abrosimov Ruslan",
+    "name": "Ivantsov Ilya",
     "g": 7,
     "a": 0,
     "pts": 7
@@ -4123,10 +4179,10 @@
     "pts": 5
    },
    {
-    "name": "Kvochko Ilya",
-    "g": 3,
+    "name": "Stepanov Yegor A.",
+    "g": 4,
     "a": 0,
-    "pts": 3
+    "pts": 4
    }
   ],
   "Salavat Yulaev": [
@@ -4213,25 +4269,25 @@
     "pts": 7
    },
    {
+    "name": "Likhachyov Yaroslav",
+    "g": 6,
+    "a": 0,
+    "pts": 6
+   },
+   {
     "name": "Pilipenko Kirill",
     "g": 5,
     "a": 0,
     "pts": 5
    },
    {
-    "name": "Likhachyov Yaroslav",
+    "name": "Kruchinin Alexei",
     "g": 5,
     "a": 0,
     "pts": 5
    },
    {
     "name": "Shvaryov Artyom",
-    "g": 4,
-    "a": 0,
-    "pts": 4
-   },
-   {
-    "name": "Kruchinin Alexei",
     "g": 4,
     "a": 0,
     "pts": 4
@@ -4441,13 +4497,13 @@
     "pts": 15
    },
    {
-    "name": "Poltapov Prokhor",
-    "g": 9,
+    "name": "Kovalenko Nikolai",
+    "g": 10,
     "a": 0,
-    "pts": 9
+    "pts": 10
    },
    {
-    "name": "Kovalenko Nikolai",
+    "name": "Poltapov Prokhor",
     "g": 9,
     "a": 0,
     "pts": 9
@@ -4466,9 +4522,9 @@
    },
    {
     "name": "Khairullin Marat",
-    "g": 6,
+    "g": 7,
     "a": 0,
-    "pts": 6
+    "pts": 7
    }
   ],
   "HC Sochi": [
@@ -4511,13 +4567,19 @@
   ],
   "Avangard": [
    {
+    "name": "Leivo Joshua",
+    "g": 10,
+    "a": 0,
+    "pts": 10
+   },
+   {
     "name": "Ponomaryov Vasily",
     "g": 8,
     "a": 0,
     "pts": 8
    },
    {
-    "name": "Leivo Joshua",
+    "name": "Poturalski Andrew",
     "g": 8,
     "a": 0,
     "pts": 8
@@ -4527,12 +4589,6 @@
     "g": 8,
     "a": 0,
     "pts": 8
-   },
-   {
-    "name": "Poturalski Andrew",
-    "g": 7,
-    "a": 0,
-    "pts": 7
    },
    {
     "name": "Afanasyev Yegor Y.",
@@ -7001,11 +7057,11 @@
    "20261104 Ak Bars 1-3 Sibir"
   ],
   "Avangard | Barys": [
-   "20251016 Avangard 2-6 Barys",
    "20251029 Barys 3-4 Avangard",
    "20251123 Avangard 5-2 Barys",
    "20251230 Barys 4-2 Avangard",
-   "20261010 Avangard 1-5 Barys"
+   "20261010 Avangard 1-5 Barys",
+   "20261120 Barys 1-3 Avangard"
   ],
   "Amur | Lada": [
    "20251017 Lada 0-3 Amur",
@@ -7038,7 +7094,8 @@
   "Amur | Severstal": [
    "20251019 Severstal 3-2 Amur (SO)",
    "20251028 Amur 2-6 Severstal",
-   "20260921 Severstal 4-1 Amur"
+   "20260921 Severstal 4-1 Amur",
+   "20261120 Amur 2-3 Severstal (SO)"
   ],
   "Metallurg Mg | Neftekhimik": [
    "20251205 Metallurg Mg 1-2 Neftekhimik (OT)",
@@ -7289,7 +7346,8 @@
    "20251110 Lokomotiv 1-2 Torpedo",
    "20251230 Torpedo 0-1 Lokomotiv",
    "20260114 Lokomotiv 0-3 Torpedo",
-   "20260119 Torpedo 3-1 Lokomotiv"
+   "20260119 Torpedo 3-1 Lokomotiv",
+   "20261120 Lokomotiv 3-1 Torpedo"
   ],
   "Sibir | Spartak": [
    "20251110 Sibir 3-6 Spartak",
@@ -7580,7 +7638,8 @@
    "20260109 Dragons 2-3 CSKA",
    "20260205 CSKA 1-0 Dragons",
    "20260215 CSKA 2-1 Dragons (OT)",
-   "20260227 Dragons 5-6 CSKA (OT)"
+   "20260227 Dragons 5-6 CSKA (OT)",
+   "20261120 CSKA 5-0 Dragons"
   ],
   "Avangard | CSKA": [
    "20260410 CSKA 2-3 Avangard",
