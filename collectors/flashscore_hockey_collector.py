@@ -214,6 +214,12 @@ class FlashscoreHockeyCollector:
             print(f"  [{self.league}] ⚠️ 팀명 매핑 없음(원문 유지): {sorted(self._unmapped)}")
         return {"date": date, "league": self.league, "source": "flashscore", "games": games}
 
+    def _liiga_src(self):
+        if not hasattr(self, "_liiga"):
+            from collectors.goalie_sources import LiigaStarters
+            self._liiga = LiigaStarters()
+        return self._liiga
+
     def _name(self, raw: str) -> str:
         if not self.names:
             return raw
@@ -248,6 +254,13 @@ class FlashscoreHockeyCollector:
         time.sleep(self.sleep)
         starters = self._starting_goalies(mid)
         time.sleep(self.sleep)
+        if not starters and self.league == "LIIGA":
+            # Flashscore 라인업 피드 중단(2026-11) → liiga.fi 공식 라인업으로 선발 골리 보완
+            try:
+                start_utc = datetime.fromtimestamp(_int(r["AD"]), timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+                starters = self._liiga_src().starters(start_utc, self._name(r.get("AE", "")), self._name(r.get("AF", "")))
+            except Exception as e:
+                print(f"  [LIIGA] liiga.fi 선발 골리 조회 실패 {mid}: {e}")
         goals = self._goals(mid)
 
         h_st, a_st = stats.get("home", {}), stats.get("away", {})
