@@ -1,14 +1,25 @@
-import requests, json
-S=requests.Session(); S.headers.update({"User-Agent":"Mozilla/5.0"})
-B="https://lscluster.hockeytech.com/feed/index.php"; K={"key":"f1aa699db3d81487","client_code":"ohl"}
-def j(**p):
-    t=S.get(B,params={**p,**K},timeout=30).text.strip()
-    if t.startswith("("): t=t[1:-1]
-    return json.loads(t)
-s=j(feed="modulekit",view="seasons")["SiteKit"]["Seasons"]
-print([(x["season_id"],x["season_name"]) for x in s[:8]])
-sc=j(feed="modulekit",view="schedule",season_id="88")["SiteKit"]["Schedule"]
-g=[x for x in sc if x["date_played"]=="2026-11-15"][0]; print({k:g[k] for k in ("game_id","home_team","visiting_team","home_goal_count","visiting_goal_count")})
-d=j(feed="statviewfeed",view="gameSummary",game_id=g["game_id"],lang="en",site_id="0")
-for side in ("homeTeam","visitingTeam"):
-    for gk in d[side]["goalies"]: print(side, gk.get("starting"), gk["info"].get("firstName"), gk["info"].get("lastName"), gk.get("stats"))
+import sys, os, json
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from concurrent.futures import ThreadPoolExecutor
+from htg import HockeyTechGoalies
+h = HockeyTechGoalies("OHL", sleep=0.1)
+h.season_ids("20261101")
+sids = [s["season_id"] for s in h._seasons if s["season_name"][:4] in ("2024","2025","2026") and ("Regular" in s["season_name"] or "Playoffs" in s["season_name"])]
+games = []
+for sid in sids:
+    for g in h.schedule(sid):
+        if str(g.get("final")) == "1" or g.get("status") == "4":
+            games.append((sid, g))
+print("seasons", sids, "games", len(games), file=sys.stderr)
+def work(x):
+    sid, g = x
+    try:
+        r = h.summary(g["game_id"])
+    except Exception as e:
+        return None
+    return {"date": g["date_played"].replace("-", ""), "home": h._teams.get(str(g["home_team"])), "away": h._teams.get(str(g["visiting_team"])),
+            "gid": g["game_id"], "h": r.get("home"), "a": r.get("away")}
+with ThreadPoolExecutor(6) as ex:
+    out = [r for r in ex.map(work, games) if r]
+print("N", len(out))
+print("JSON" + json.dumps(out, ensure_ascii=False, separators=(",", ":")))
