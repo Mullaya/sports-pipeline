@@ -23,9 +23,13 @@ CLIENTS = {
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
 
 
+ALIASES = {"mississaugasteelheads": "bramptonsteelheads"}     # 2026 연고 이전, 피드는 옛 이름 유지
+
+
 def _norm(s: str) -> str:
     s = unicodedata.normalize("NFKD", s or "").encode("ascii", "ignore").decode().lower()
-    return re.sub(r"[^a-z0-9]", "", s)
+    s = re.sub(r"[^a-z0-9]", "", s)
+    return ALIASES.get(s, s)
 
 
 def parse_summary(d: dict, prefix: str) -> dict:
