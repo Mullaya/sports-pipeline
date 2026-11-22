@@ -69,6 +69,13 @@ jobs:
         run: |
           git pull --ff-only origin main || git pull origin main
           python analytics/build_kbl_stats.py KBL
+      - name: NBA 통계 집계
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          git pull --ff-only origin main || git pull origin main
+          python analytics/build_kbl_stats.py NBA
       - name: B리그·WKBL 통계 집계
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
