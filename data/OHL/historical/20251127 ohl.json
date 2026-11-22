@@ -43,8 +43,30 @@
       ],
       "home_stats": {},
       "away_stats": {},
-      "home_goalies": [],
-      "away_goalies": [],
+      "home_goalies": [
+        {
+          "player_id": "ohl:8823",
+          "name": "Rye E.",
+          "starter": true,
+          "toi": 59.33,
+          "shots_against": 39,
+          "saves": 37,
+          "goals_against": 2,
+          "sv_pct": 0.949
+        }
+      ],
+      "away_goalies": [
+        {
+          "player_id": "ohl:8833",
+          "name": "McIvor M.",
+          "starter": true,
+          "toi": 60.0,
+          "shots_against": 30,
+          "saves": 29,
+          "goals_against": 1,
+          "sv_pct": 0.967
+        }
+      ],
       "goals": [
         {
           "period": "2nd Period",
@@ -88,7 +110,8 @@
             "Amidovski L."
           ]
         }
-      ]
+      ],
+      "goalie_source": "hockeytech"
     }
   ]
 }

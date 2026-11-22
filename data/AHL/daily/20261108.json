@@ -61,8 +61,30 @@
         "pp_opps": 6,
         "en_goals": 1
       },
-      "home_goalies": [],
-      "away_goalies": [],
+      "home_goalies": [
+        {
+          "player_id": "ahl:10766",
+          "name": "S. Berezhnoy",
+          "starter": true,
+          "toi": 58.33,
+          "shots_against": 32,
+          "saves": 28,
+          "goals_against": 4,
+          "sv_pct": 0.875
+        }
+      ],
+      "away_goalies": [
+        {
+          "player_id": "ahl:10305",
+          "name": "W. Rousseau",
+          "starter": true,
+          "toi": 59.67,
+          "shots_against": 21,
+          "saves": 19,
+          "goals_against": 2,
+          "sv_pct": 0.905
+        }
+      ],
       "goals": [
         {
           "period": "1st Period",
@@ -137,7 +159,8 @@
             "Lambos C."
           ]
         }
-      ]
+      ],
+      "goalie_source": "hockeytech"
     }
   ]
 }

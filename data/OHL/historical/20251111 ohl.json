@@ -43,8 +43,30 @@
       ],
       "home_stats": {},
       "away_stats": {},
-      "home_goalies": [],
-      "away_goalies": [],
+      "home_goalies": [
+        {
+          "player_id": "ohl:8823",
+          "name": "Rye E.",
+          "starter": true,
+          "toi": 60.0,
+          "shots_against": 36,
+          "saves": 34,
+          "goals_against": 2,
+          "sv_pct": 0.944
+        }
+      ],
+      "away_goalies": [
+        {
+          "player_id": "ohl:9445",
+          "name": "Cholette J.",
+          "starter": true,
+          "toi": 59.35,
+          "shots_against": 28,
+          "saves": 23,
+          "goals_against": 5,
+          "sv_pct": 0.821
+        }
+      ],
       "goals": [
         {
           "period": "1st Period",
@@ -128,7 +150,8 @@
             "Young A."
           ]
         }
-      ]
+      ],
+      "goalie_source": "hockeytech"
     }
   ]
 }

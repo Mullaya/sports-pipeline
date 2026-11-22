@@ -43,8 +43,30 @@
       ],
       "home_stats": {},
       "away_stats": {},
-      "home_goalies": [],
-      "away_goalies": [],
+      "home_goalies": [
+        {
+          "player_id": "ohl:9678",
+          "name": "Osipenko K.",
+          "starter": true,
+          "toi": 56.92,
+          "shots_against": 30,
+          "saves": 26,
+          "goals_against": 4,
+          "sv_pct": 0.867
+        }
+      ],
+      "away_goalies": [
+        {
+          "player_id": "ohl:9167",
+          "name": "Jovanovski Z.",
+          "starter": true,
+          "toi": 59.7,
+          "shots_against": 29,
+          "saves": 27,
+          "goals_against": 2,
+          "sv_pct": 0.931
+        }
+      ],
       "goals": [
         {
           "period": "1st Period",
@@ -119,7 +141,8 @@
             "Roobroeck R."
           ]
         }
-      ]
+      ],
+      "goalie_source": "hockeytech"
     }
   ]
 }

@@ -43,8 +43,30 @@
       ],
       "home_stats": {},
       "away_stats": {},
-      "home_goalies": [],
-      "away_goalies": [],
+      "home_goalies": [
+        {
+          "player_id": "ohl:9134",
+          "name": "Erliden N.",
+          "starter": true,
+          "toi": 60.0,
+          "shots_against": 25,
+          "saves": 21,
+          "goals_against": 4,
+          "sv_pct": 0.84
+        }
+      ],
+      "away_goalies": [
+        {
+          "player_id": "ohl:8949",
+          "name": "Ivankovic J.",
+          "starter": true,
+          "toi": 60.0,
+          "shots_against": 46,
+          "saves": 39,
+          "goals_against": 7,
+          "sv_pct": 0.848
+        }
+      ],
       "goals": [
         {
           "period": "1st Period",
@@ -160,7 +182,8 @@
             "Fimis P."
           ]
         }
-      ]
+      ],
+      "goalie_source": "hockeytech"
     }
   ]
 }

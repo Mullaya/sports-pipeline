@@ -43,8 +43,30 @@
       ],
       "home_stats": {},
       "away_stats": {},
-      "home_goalies": [],
-      "away_goalies": [],
+      "home_goalies": [
+        {
+          "player_id": "ohl:9372",
+          "name": "Kirsch C.",
+          "starter": true,
+          "toi": 60.0,
+          "shots_against": 19,
+          "saves": 18,
+          "goals_against": 1,
+          "sv_pct": 0.947
+        }
+      ],
+      "away_goalies": [
+        {
+          "player_id": "ohl:9167",
+          "name": "Jovanovski Z.",
+          "starter": true,
+          "toi": 60.0,
+          "shots_against": 24,
+          "saves": 18,
+          "goals_against": 6,
+          "sv_pct": 0.75
+        }
+      ],
       "goals": [
         {
           "period": "1st Period",
@@ -117,7 +139,8 @@
             "Humphreys C."
           ]
         }
-      ]
+      ],
+      "goalie_source": "hockeytech"
     }
   ]
 }

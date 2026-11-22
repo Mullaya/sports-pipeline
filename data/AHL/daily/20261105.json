@@ -67,8 +67,30 @@
         "pp_opps": 8,
         "en_goals": 0
       },
-      "home_goalies": [],
-      "away_goalies": [],
+      "home_goalies": [
+        {
+          "player_id": "ahl:10305",
+          "name": "W. Rousseau",
+          "starter": true,
+          "toi": 65.0,
+          "shots_against": 37,
+          "saves": 34,
+          "goals_against": 3,
+          "sv_pct": 0.919
+        }
+      ],
+      "away_goalies": [
+        {
+          "player_id": "ahl:9717",
+          "name": "D. Commesso",
+          "starter": true,
+          "toi": 64.9,
+          "shots_against": 33,
+          "saves": 30,
+          "goals_against": 3,
+          "sv_pct": 0.909
+        }
+      ],
       "goals": [
         {
           "period": "1st Period",
@@ -135,7 +157,8 @@
             "Toninato D."
           ]
         }
-      ]
+      ],
+      "goalie_source": "hockeytech"
     }
   ]
 }

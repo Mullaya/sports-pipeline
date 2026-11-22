@@ -43,8 +43,30 @@
       ],
       "home_stats": {},
       "away_stats": {},
-      "home_goalies": [],
-      "away_goalies": [],
+      "home_goalies": [
+        {
+          "player_id": "ohl:9372",
+          "name": "Kirsch C.",
+          "starter": true,
+          "toi": 60.0,
+          "shots_against": 22,
+          "saves": 21,
+          "goals_against": 1,
+          "sv_pct": 0.955
+        }
+      ],
+      "away_goalies": [
+        {
+          "player_id": "ohl:9171",
+          "name": "Ellsworth C.",
+          "starter": true,
+          "toi": 59.75,
+          "shots_against": 40,
+          "saves": 38,
+          "goals_against": 2,
+          "sv_pct": 0.95
+        }
+      ],
       "goals": [
         {
           "period": "2nd Period",
@@ -89,7 +111,8 @@
             "Lam T."
           ]
         }
-      ]
+      ],
+      "goalie_source": "hockeytech"
     }
   ]
 }

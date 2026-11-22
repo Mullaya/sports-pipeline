@@ -43,8 +43,30 @@
       ],
       "home_stats": {},
       "away_stats": {},
-      "home_goalies": [],
-      "away_goalies": [],
+      "home_goalies": [
+        {
+          "player_id": "ohl:8558",
+          "name": "Schenkel C.",
+          "starter": true,
+          "toi": 60.0,
+          "shots_against": 17,
+          "saves": 13,
+          "goals_against": 4,
+          "sv_pct": 0.765
+        }
+      ],
+      "away_goalies": [
+        {
+          "player_id": "ohl:9065",
+          "name": "Hrebik B.",
+          "starter": true,
+          "toi": 58.58,
+          "shots_against": 35,
+          "saves": 30,
+          "goals_against": 5,
+          "sv_pct": 0.857
+        }
+      ],
       "goals": [
         {
           "period": "1st Period",
@@ -148,7 +170,8 @@
             "Hay E."
           ]
         }
-      ]
+      ],
+      "goalie_source": "hockeytech"
     }
   ]
 }

@@ -43,8 +43,30 @@
       ],
       "home_stats": {},
       "away_stats": {},
-      "home_goalies": [],
-      "away_goalies": [],
+      "home_goalies": [
+        {
+          "player_id": "ohl:9206",
+          "name": "Marshall F.",
+          "starter": true,
+          "toi": 60.0,
+          "shots_against": 20,
+          "saves": 19,
+          "goals_against": 1,
+          "sv_pct": 0.95
+        }
+      ],
+      "away_goalies": [
+        {
+          "player_id": "ohl:8558",
+          "name": "Schenkel C.",
+          "starter": true,
+          "toi": 59.78,
+          "shots_against": 35,
+          "saves": 33,
+          "goals_against": 2,
+          "sv_pct": 0.943
+        }
+      ],
       "goals": [
         {
           "period": "1st Period",
@@ -94,7 +116,8 @@
             "Walton K."
           ]
         }
-      ]
+      ],
+      "goalie_source": "hockeytech"
     }
   ]
 }

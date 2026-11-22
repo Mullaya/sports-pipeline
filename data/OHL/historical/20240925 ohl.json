@@ -49,8 +49,30 @@
       ],
       "home_stats": {},
       "away_stats": {},
-      "home_goalies": [],
-      "away_goalies": [],
+      "home_goalies": [
+        {
+          "player_id": "ohl:8369",
+          "name": "Oke A.",
+          "starter": true,
+          "toi": 60.77,
+          "shots_against": 44,
+          "saves": 39,
+          "goals_against": 5,
+          "sv_pct": 0.886
+        }
+      ],
+      "away_goalies": [
+        {
+          "player_id": "ohl:8466",
+          "name": "Costanzo J.",
+          "starter": true,
+          "toi": 60.98,
+          "shots_against": 33,
+          "saves": 29,
+          "goals_against": 4,
+          "sv_pct": 0.879
+        }
+      ],
       "goals": [
         {
           "period": "1st Period",
@@ -150,7 +172,8 @@
             "Mathurin T."
           ]
         }
-      ]
+      ],
+      "goalie_source": "hockeytech"
     }
   ]
 }

@@ -65,8 +65,30 @@
         "fo_won": 35,
         "en_goals": 0
       },
-      "home_goalies": [],
-      "away_goalies": [],
+      "home_goalies": [
+        {
+          "name": "Armalis M.",
+          "player_id": "liiga:61011727",
+          "starter": true,
+          "shots_against": 21,
+          "goals_against": 1,
+          "saves": 20,
+          "sv_pct": 0.952,
+          "note": "팀 세이브 기준(골리 교체 시 합산값)"
+        }
+      ],
+      "away_goalies": [
+        {
+          "name": "Piiroinen K.",
+          "player_id": "liiga:33502782",
+          "starter": true,
+          "shots_against": 27,
+          "goals_against": 3,
+          "saves": 24,
+          "sv_pct": 0.889,
+          "note": "팀 세이브 기준(골리 교체 시 합산값)"
+        }
+      ],
       "goals": [
         {
           "period": "1st Period",
@@ -112,7 +134,10 @@
             "Jasek L."
           ]
         }
-      ]
+      ],
+      "home_xg": 3.1,
+      "away_xg": 1.35,
+      "goalie_source": "liiga.fi"
     }
   ]
 }

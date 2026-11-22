@@ -3,6 +3,7 @@
 대상 리그 (SOCCER_LEAGUES):
   J1 / J2 / J3 : 일본 J리그 (2026-27 시즌부터 8월~5월 추계춘제 → 시즌 URL "-2026-2027")
   K1 / K2      : 한국 K리그1·K리그2 (춘추제 → 시즌 URL "-2026")
+  EPL / LALIGA / BUNDESLIGA / SERIEA / LIGUE1 : 유럽 5대 리그 (추계춘제, 현지 시간대 날짜)
 
 수집 단위: 현지 날짜(J리그 Asia/Tokyo, K리그 Asia/Seoul) YYYYMMDD 하루치 종료 경기
 - 결과: 최종 스코어, 전·후반 스코어, 스테이지(정규/파이널A·B/플레이오프), 라운드
@@ -33,6 +34,17 @@ SOCCER_LEAGUES = {
            "tz": "Asia/Seoul", "calendar": "year"},
     "K2": {"path": "football/south-korea/k-league-2", "country": "106", "tournament": None,
            "tz": "Asia/Seoul", "calendar": "year"},
+    # 유럽 5대 리그 (추계춘제, 파일 날짜 = 현지 날짜)
+    "EPL": {"path": "football/england/premier-league", "country": "198", "tournament": None,
+            "tz": "Europe/London", "calendar": "split"},
+    "LALIGA": {"path": "football/spain/laliga", "country": "176", "tournament": None,
+               "tz": "Europe/Madrid", "calendar": "split"},
+    "BUNDESLIGA": {"path": "football/germany/bundesliga", "country": "81", "tournament": None,
+                   "tz": "Europe/Berlin", "calendar": "split"},
+    "SERIEA": {"path": "football/italy/serie-a", "country": "98", "tournament": None,
+               "tz": "Europe/Rome", "calendar": "split"},
+    "LIGUE1": {"path": "football/france/ligue-1", "country": "77", "tournament": None,
+               "tz": "Europe/Paris", "calendar": "split"},
 }
 for _k, _v in SOCCER_LEAGUES.items():
     LEAGUES.setdefault(f"{_k}_FS", _v)

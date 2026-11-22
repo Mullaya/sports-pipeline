@@ -43,8 +43,30 @@
       ],
       "home_stats": {},
       "away_stats": {},
-      "home_goalies": [],
-      "away_goalies": [],
+      "home_goalies": [
+        {
+          "player_id": "ohl:9297",
+          "name": "Bennett T.",
+          "starter": true,
+          "toi": 60.0,
+          "shots_against": 37,
+          "saves": 37,
+          "goals_against": 0,
+          "sv_pct": 1.0
+        }
+      ],
+      "away_goalies": [
+        {
+          "player_id": "ohl:9171",
+          "name": "Ellsworth C.",
+          "starter": true,
+          "toi": 60.0,
+          "shots_against": 21,
+          "saves": 20,
+          "goals_against": 1,
+          "sv_pct": 0.952
+        }
+      ],
       "goals": [
         {
           "period": "2nd Period",
@@ -57,7 +79,8 @@
             "McDonald B."
           ]
         }
-      ]
+      ],
+      "goalie_source": "hockeytech"
     }
   ]
 }

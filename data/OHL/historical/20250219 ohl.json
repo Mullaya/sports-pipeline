@@ -43,8 +43,30 @@
       ],
       "home_stats": {},
       "away_stats": {},
-      "home_goalies": [],
-      "away_goalies": [],
+      "home_goalies": [
+        {
+          "player_id": "ohl:8880",
+          "name": "Gillespie B.",
+          "starter": true,
+          "toi": 60.0,
+          "shots_against": 27,
+          "saves": 25,
+          "goals_against": 2,
+          "sv_pct": 0.926
+        }
+      ],
+      "away_goalies": [
+        {
+          "player_id": "ohl:8567",
+          "name": "Oster J.",
+          "starter": true,
+          "toi": 57.9,
+          "shots_against": 28,
+          "saves": 25,
+          "goals_against": 3,
+          "sv_pct": 0.893
+        }
+      ],
       "goals": [
         {
           "period": "1st Period",
@@ -111,7 +133,8 @@
             "Van Volsen J."
           ]
         }
-      ]
+      ],
+      "goalie_source": "hockeytech"
     }
   ]
 }

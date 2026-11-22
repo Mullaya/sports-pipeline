@@ -49,8 +49,30 @@
       ],
       "home_stats": {},
       "away_stats": {},
-      "home_goalies": [],
-      "away_goalies": [],
+      "home_goalies": [
+        {
+          "player_id": "ohl:8832",
+          "name": "Bowen Z.",
+          "starter": true,
+          "toi": 65.0,
+          "shots_against": 38,
+          "saves": 35,
+          "goals_against": 3,
+          "sv_pct": 0.921
+        }
+      ],
+      "away_goalies": [
+        {
+          "player_id": "ohl:8935",
+          "name": "Gravelle I.",
+          "starter": true,
+          "toi": 64.7,
+          "shots_against": 32,
+          "saves": 29,
+          "goals_against": 3,
+          "sv_pct": 0.906
+        }
+      ],
       "goals": [
         {
           "period": "1st Period",
@@ -116,7 +138,8 @@
             "D'Amato L."
           ]
         }
-      ]
+      ],
+      "goalie_source": "hockeytech"
     }
   ]
 }

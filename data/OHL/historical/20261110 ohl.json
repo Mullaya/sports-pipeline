@@ -43,8 +43,30 @@
       ],
       "home_stats": {},
       "away_stats": {},
-      "home_goalies": [],
-      "away_goalies": [],
+      "home_goalies": [
+        {
+          "player_id": "ohl:9669",
+          "name": "Bronas B.",
+          "starter": true,
+          "toi": 60.0,
+          "shots_against": 28,
+          "saves": 27,
+          "goals_against": 1,
+          "sv_pct": 0.964
+        }
+      ],
+      "away_goalies": [
+        {
+          "player_id": "ohl:9968",
+          "name": "Vermirovsky D.",
+          "starter": true,
+          "toi": 60.0,
+          "shots_against": 28,
+          "saves": 24,
+          "goals_against": 4,
+          "sv_pct": 0.857
+        }
+      ],
       "goals": [
         {
           "period": "1st Period",
@@ -100,7 +122,8 @@
           "author": "Nemec A.",
           "assists": []
         }
-      ]
+      ],
+      "goalie_source": "hockeytech"
     }
   ]
 }

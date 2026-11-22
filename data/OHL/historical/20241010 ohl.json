@@ -43,8 +43,30 @@
       ],
       "home_stats": {},
       "away_stats": {},
-      "home_goalies": [],
-      "away_goalies": [],
+      "home_goalies": [
+        {
+          "player_id": "ohl:8498",
+          "name": "Sztuska L.",
+          "starter": true,
+          "toi": 58.92,
+          "shots_against": 45,
+          "saves": 44,
+          "goals_against": 1,
+          "sv_pct": 0.978
+        }
+      ],
+      "away_goalies": [
+        {
+          "player_id": "ohl:9206",
+          "name": "Marshall F.",
+          "starter": true,
+          "toi": 59.52,
+          "shots_against": 40,
+          "saves": 40,
+          "goals_against": 0,
+          "sv_pct": 1.0
+        }
+      ],
       "goals": [
         {
           "period": "1st Period",
@@ -57,7 +79,8 @@
             "Henderson R."
           ]
         }
-      ]
+      ],
+      "goalie_source": "hockeytech"
     }
   ]
 }

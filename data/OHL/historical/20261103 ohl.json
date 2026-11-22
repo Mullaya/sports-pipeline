@@ -43,8 +43,30 @@
       ],
       "home_stats": {},
       "away_stats": {},
-      "home_goalies": [],
-      "away_goalies": [],
+      "home_goalies": [
+        {
+          "player_id": "ohl:9163",
+          "name": "Schaubel J.",
+          "starter": true,
+          "toi": 58.6,
+          "shots_against": 37,
+          "saves": 34,
+          "goals_against": 3,
+          "sv_pct": 0.919
+        }
+      ],
+      "away_goalies": [
+        {
+          "player_id": "ohl:9065",
+          "name": "Hrebik B.",
+          "starter": true,
+          "toi": 60.0,
+          "shots_against": 18,
+          "saves": 16,
+          "goals_against": 2,
+          "sv_pct": 0.889
+        }
+      ],
       "goals": [
         {
           "period": "1st Period",
@@ -99,7 +121,8 @@
             "Roobroeck R."
           ]
         }
-      ]
+      ],
+      "goalie_source": "hockeytech"
     }
   ]
 }

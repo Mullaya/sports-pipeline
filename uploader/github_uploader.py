@@ -1,6 +1,7 @@
 import os
 import json
 import base64
+import random
 import time
 import requests
 from datetime import datetime
@@ -8,6 +9,10 @@ from datetime import datetime
 # 리그별 파일명 접미사 — MLB 파일(20261001.json)과 구분되도록
 # 예: NHL → "20261001 nhl.json"
 FILE_SUFFIX = {
+    "ABL": " abl",
+    "LMP": " lmp",
+    "OHL": " ohl",
+    "NBL": " nbl",
     "NHL": " nhl",
     "NFL": " nfl",
     "KHL": " khl",
@@ -26,6 +31,11 @@ FILE_SUFFIX = {
     "J3": " j3",
     "K1": " k1",
     "K2": " k2",
+    "EPL": " epl",
+    "LALIGA": " laliga",
+    "BUNDESLIGA": " bundesliga",
+    "SERIEA": " seriea",
+    "LIGUE1": " ligue1",
 }
 
 
@@ -49,7 +59,7 @@ class GitHubUploader:
         url = f"{self.api_base}/contents/{path}"
         # 여러 워크플로우가 동시에 main에 커밋하면 409(브랜치 이동)·422(sha 불일치)가 난다
         # → sha를 다시 읽고 재시도 (이전엔 조용히 실패해 일부 날짜가 누락됐음)
-        for attempt in range(5):
+        for attempt in range(10):
             sha = self._get_file_sha(path)   # 기존 파일 SHA 확인 (업데이트 시 필요)
             payload = {
                 "message": f"[{league}] {date} 데이터 업데이트",
@@ -62,8 +72,9 @@ class GitHubUploader:
             if resp.status_code in [200, 201]:
                 print(f"  📁 {league}/{subfolder}/{filename} 업로드 완료")
                 return True
-            if resp.status_code in (409, 422, 500, 502, 503) and attempt < 4:
-                time.sleep(2 * (attempt + 1))
+            if resp.status_code in (409, 422, 500, 502, 503) and attempt < 9:
+                # 병렬 백필 때 같은 순간 재시도가 겹치지 않게 지터를 섞어 대기
+                time.sleep(min(30, 2 * (attempt + 1)) + random.uniform(0, 3))
                 continue
             break
         print(f"  ❌ 업로드 실패: {resp.status_code} {resp.text[:200]}")

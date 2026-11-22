@@ -49,8 +49,30 @@
       ],
       "home_stats": {},
       "away_stats": {},
-      "home_goalies": [],
-      "away_goalies": [],
+      "home_goalies": [
+        {
+          "player_id": "ohl:9134",
+          "name": "Erliden N.",
+          "starter": true,
+          "toi": 65.0,
+          "shots_against": 25,
+          "saves": 24,
+          "goals_against": 1,
+          "sv_pct": 0.96
+        }
+      ],
+      "away_goalies": [
+        {
+          "player_id": "ohl:8496",
+          "name": "Day N.",
+          "starter": true,
+          "toi": 65.0,
+          "shots_against": 34,
+          "saves": 33,
+          "goals_against": 1,
+          "sv_pct": 0.971
+        }
+      ],
       "goals": [
         {
           "period": "2nd Period",
@@ -73,7 +95,8 @@
             "Colosimo J."
           ]
         }
-      ]
+      ],
+      "goalie_source": "hockeytech"
     }
   ]
 }

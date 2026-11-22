@@ -43,8 +43,30 @@
       ],
       "home_stats": {},
       "away_stats": {},
-      "home_goalies": [],
-      "away_goalies": [],
+      "home_goalies": [
+        {
+          "player_id": "ohl:8466",
+          "name": "Costanzo J.",
+          "starter": true,
+          "toi": 58.73,
+          "shots_against": 20,
+          "saves": 18,
+          "goals_against": 2,
+          "sv_pct": 0.9
+        }
+      ],
+      "away_goalies": [
+        {
+          "player_id": "ohl:8809",
+          "name": "Miller L.",
+          "starter": true,
+          "toi": 60.0,
+          "shots_against": 32,
+          "saves": 31,
+          "goals_against": 1,
+          "sv_pct": 0.969
+        }
+      ],
       "goals": [
         {
           "period": "1st Period",
@@ -87,7 +109,8 @@
             "Gibson A."
           ]
         }
-      ]
+      ],
+      "goalie_source": "hockeytech"
     }
   ]
 }

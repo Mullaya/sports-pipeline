@@ -1,0 +1,3595 @@
+{
+ "meta": {
+  "generated_kst": "2026-11-22 22:04",
+  "league": "SERIEA",
+  "season_start": "20260701",
+  "games": 114,
+  "last_game_date": "20261121",
+  "league_avg": {
+   "games": 114,
+   "home_win": 0.474,
+   "draw": 0.167,
+   "away_win": 0.36,
+   "goals_pg": 3.11,
+   "home_gf_pg": 1.61,
+   "away_gf_pg": 1.5,
+   "over": {
+    "1.5": 0.851,
+    "2.5": 0.596,
+    "3.5": 0.316
+   },
+   "btts": 0.57
+  },
+  "notes": "REG만 집계 / over는 해당 기준점 초과 비율 / g_minus_xg +는 득점 과열(회귀 후보) / rest_days는 오늘(KST) 기준"
+ },
+ "teams": {
+  "Lazio": {
+   "season": {
+    "gp": 12,
+    "w": 10,
+    "d": 2,
+    "l": 0,
+    "gf_pg": 2.33,
+    "ga_pg": 0.75,
+    "total_pg": 3.08,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.667,
+     "3.5": 0.25
+    },
+    "btts": 0.583,
+    "clean_sheet": 0.417,
+    "failed_to_score": 0.0,
+    "ppg": 2.67,
+    "xg_pg": 1.54,
+    "xga_pg": 1.2,
+    "xg_n": 12,
+    "g_minus_xg": 0.79,
+    "ga_minus_xga": -0.45,
+    "sot_pg": 4.8,
+    "sota_pg": 4.1
+   },
+   "home": {
+    "gp": 6,
+    "w": 5,
+    "d": 1,
+    "l": 0,
+    "gf_pg": 2.17,
+    "ga_pg": 0.83,
+    "total_pg": 3.0,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.833,
+     "3.5": 0.333
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.0,
+    "ppg": 2.67,
+    "xg_pg": 1.56,
+    "xga_pg": 1.0,
+    "xg_n": 6,
+    "g_minus_xg": 0.61,
+    "ga_minus_xga": -0.17,
+    "sot_pg": 5.0,
+    "sota_pg": 3.8
+   },
+   "away": {
+    "gp": 6,
+    "w": 5,
+    "d": 1,
+    "l": 0,
+    "gf_pg": 2.5,
+    "ga_pg": 0.67,
+    "total_pg": 3.17,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.5,
+     "3.5": 0.167
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.5,
+    "failed_to_score": 0.0,
+    "ppg": 2.67,
+    "xg_pg": 1.52,
+    "xga_pg": 1.4,
+    "xg_n": 6,
+    "g_minus_xg": 0.98,
+    "ga_minus_xga": -0.73,
+    "sot_pg": 4.7,
+    "sota_pg": 4.3
+   },
+   "last6": {
+    "gp": 6,
+    "w": 5,
+    "d": 1,
+    "l": 0,
+    "gf_pg": 2.83,
+    "ga_pg": 0.83,
+    "total_pg": 3.67,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.833,
+     "3.5": 0.167
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.0,
+    "ppg": 2.67,
+    "xg_pg": 1.48,
+    "xga_pg": 1.07,
+    "xg_n": 6,
+    "g_minus_xg": 1.35,
+    "ga_minus_xga": -0.24,
+    "sot_pg": 5.3,
+    "sota_pg": 3.0
+   },
+   "last6_log": [
+    "20261018 A Juventus 3-0 (xG 0.57-0.75)",
+    "20261024 H Parma 2-1 (xG 1.74-0.81)",
+    "20261027 A Sassuolo 6-2 (xG 3.57-0.76)",
+    "20261101 H Cagliari 2-1 (xG 1.01-0.98)",
+    "20261108 A Napoli 1-1 (xG 0.86-2.33)",
+    "20261121 H Lecce 3-0 (xG 1.14-0.78)"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 1,
+   "points": 32
+  },
+  "AS Roma": {
+   "season": {
+    "gp": 12,
+    "w": 9,
+    "d": 3,
+    "l": 0,
+    "gf_pg": 3.0,
+    "ga_pg": 0.92,
+    "total_pg": 3.92,
+    "over": {
+     "1.5": 0.917,
+     "2.5": 0.75,
+     "3.5": 0.583
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.5,
+    "failed_to_score": 0.083,
+    "ppg": 2.5,
+    "xg_pg": 2.46,
+    "xga_pg": 1.38,
+    "xg_n": 12,
+    "g_minus_xg": 0.54,
+    "ga_minus_xga": -0.47,
+    "sot_pg": 6.8,
+    "sota_pg": 4.4
+   },
+   "home": {
+    "gp": 6,
+    "w": 5,
+    "d": 1,
+    "l": 0,
+    "gf_pg": 2.83,
+    "ga_pg": 0.83,
+    "total_pg": 3.67,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.833,
+     "3.5": 0.5
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.5,
+    "failed_to_score": 0.0,
+    "ppg": 2.67,
+    "xg_pg": 2.6,
+    "xga_pg": 1.21,
+    "xg_n": 6,
+    "g_minus_xg": 0.23,
+    "ga_minus_xga": -0.38,
+    "sot_pg": 7.3,
+    "sota_pg": 3.5
+   },
+   "away": {
+    "gp": 6,
+    "w": 4,
+    "d": 2,
+    "l": 0,
+    "gf_pg": 3.17,
+    "ga_pg": 1.0,
+    "total_pg": 4.17,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.667,
+     "3.5": 0.667
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.5,
+    "failed_to_score": 0.167,
+    "ppg": 2.33,
+    "xg_pg": 2.31,
+    "xga_pg": 1.55,
+    "xg_n": 6,
+    "g_minus_xg": 0.86,
+    "ga_minus_xga": -0.55,
+    "sot_pg": 6.2,
+    "sota_pg": 5.3
+   },
+   "last6": {
+    "gp": 6,
+    "w": 5,
+    "d": 1,
+    "l": 0,
+    "gf_pg": 3.67,
+    "ga_pg": 1.33,
+    "total_pg": 5.0,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.833,
+     "3.5": 0.667
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.0,
+    "ppg": 2.67,
+    "xg_pg": 2.6,
+    "xga_pg": 1.61,
+    "xg_n": 6,
+    "g_minus_xg": 1.07,
+    "ga_minus_xga": -0.28,
+    "sot_pg": 7.3,
+    "sota_pg": 5.3
+   },
+   "last6_log": [
+    "20261017 H Genoa 2-0 (xG 1.33-0.47)",
+    "20261024 A Napoli 3-3 (xG 1.9-2.43)",
+    "20261027 H Cagliari 4-2 (xG 2.88-2.62)",
+    "20261031 A Udinese 5-2 (xG 2.76-1.77)",
+    "20261107 H Sassuolo 3-0 (xG 3.73-0.28)",
+    "20261121 A Parma 5-1 (xG 3.01-2.1)"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 2,
+   "points": 30
+  },
+  "Inter": {
+   "season": {
+    "gp": 11,
+    "w": 9,
+    "d": 1,
+    "l": 1,
+    "gf_pg": 2.55,
+    "ga_pg": 1.18,
+    "total_pg": 3.73,
+    "over": {
+     "1.5": 0.909,
+     "2.5": 0.727,
+     "3.5": 0.545
+    },
+    "btts": 0.636,
+    "clean_sheet": 0.364,
+    "failed_to_score": 0.0,
+    "ppg": 2.55,
+    "xg_pg": 2.64,
+    "xga_pg": 0.99,
+    "xg_n": 11,
+    "g_minus_xg": -0.1,
+    "ga_minus_xga": 0.2,
+    "sot_pg": 6.9,
+    "sota_pg": 3.3
+   },
+   "home": {
+    "gp": 6,
+    "w": 6,
+    "d": 0,
+    "l": 0,
+    "gf_pg": 3.17,
+    "ga_pg": 1.17,
+    "total_pg": 4.33,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.833,
+     "3.5": 0.5
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.0,
+    "ppg": 3.0,
+    "xg_pg": 2.56,
+    "xga_pg": 0.91,
+    "xg_n": 6,
+    "g_minus_xg": 0.61,
+    "ga_minus_xga": 0.25,
+    "sot_pg": 7.7,
+    "sota_pg": 3.3
+   },
+   "away": {
+    "gp": 5,
+    "w": 3,
+    "d": 1,
+    "l": 1,
+    "gf_pg": 1.8,
+    "ga_pg": 1.2,
+    "total_pg": 3.0,
+    "over": {
+     "1.5": 0.8,
+     "2.5": 0.6,
+     "3.5": 0.6
+    },
+    "btts": 0.6,
+    "clean_sheet": 0.4,
+    "failed_to_score": 0.0,
+    "ppg": 2.0,
+    "xg_pg": 2.74,
+    "xga_pg": 1.07,
+    "xg_n": 5,
+    "g_minus_xg": -0.94,
+    "ga_minus_xga": 0.13,
+    "sot_pg": 6.0,
+    "sota_pg": 3.2
+   },
+   "last6": {
+    "gp": 6,
+    "w": 5,
+    "d": 0,
+    "l": 1,
+    "gf_pg": 2.17,
+    "ga_pg": 0.83,
+    "total_pg": 3.0,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.667,
+     "3.5": 0.333
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.5,
+    "failed_to_score": 0.0,
+    "ppg": 2.5,
+    "xg_pg": 2.43,
+    "xga_pg": 0.69,
+    "xg_n": 6,
+    "g_minus_xg": -0.26,
+    "ga_minus_xga": 0.15,
+    "sot_pg": 6.5,
+    "sota_pg": 2.8
+   },
+   "last6_log": [
+    "20261010 H Parma 3-0 (xG 2.42-0.45)",
+    "20261017 A Bologna 3-1 (xG 3.16-1.01)",
+    "20261025 H Fiorentina 2-1 (xG 3.15-0.23)",
+    "20261028 A Venezia 2-0 (xG 2.33-1.59)",
+    "20261031 A AC Milan 1-3 (xG 1.68-0.62)",
+    "20261108 H Como 2-0 (xG 1.82-0.21)"
+   ],
+   "last_game_date": "20261108",
+   "rest_days": 13,
+   "rank": 3,
+   "points": 28
+  },
+  "Como": {
+   "season": {
+    "gp": 12,
+    "w": 8,
+    "d": 2,
+    "l": 2,
+    "gf_pg": 1.67,
+    "ga_pg": 0.83,
+    "total_pg": 2.5,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.417,
+     "3.5": 0.25
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.25,
+    "ppg": 2.17,
+    "xg_pg": 1.61,
+    "xga_pg": 1.24,
+    "xg_n": 12,
+    "g_minus_xg": 0.05,
+    "ga_minus_xga": -0.41,
+    "sot_pg": 5.8,
+    "sota_pg": 3.1
+   },
+   "home": {
+    "gp": 5,
+    "w": 4,
+    "d": 1,
+    "l": 0,
+    "gf_pg": 1.4,
+    "ga_pg": 0.2,
+    "total_pg": 1.6,
+    "over": {
+     "1.5": 0.6,
+     "2.5": 0.2,
+     "3.5": 0.0
+    },
+    "btts": 0.2,
+    "clean_sheet": 0.8,
+    "failed_to_score": 0.2,
+    "ppg": 2.6,
+    "xg_pg": 1.77,
+    "xga_pg": 0.67,
+    "xg_n": 5,
+    "g_minus_xg": -0.37,
+    "ga_minus_xga": -0.47,
+    "sot_pg": 5.4,
+    "sota_pg": 1.6
+   },
+   "away": {
+    "gp": 7,
+    "w": 4,
+    "d": 1,
+    "l": 2,
+    "gf_pg": 1.86,
+    "ga_pg": 1.29,
+    "total_pg": 3.14,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.571,
+     "3.5": 0.429
+    },
+    "btts": 0.714,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.286,
+    "ppg": 1.86,
+    "xg_pg": 1.5,
+    "xga_pg": 1.65,
+    "xg_n": 7,
+    "g_minus_xg": 0.35,
+    "ga_minus_xga": -0.36,
+    "sot_pg": 6.1,
+    "sota_pg": 4.1
+   },
+   "last6": {
+    "gp": 6,
+    "w": 5,
+    "d": 0,
+    "l": 1,
+    "gf_pg": 1.83,
+    "ga_pg": 0.67,
+    "total_pg": 2.5,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.333,
+     "3.5": 0.333
+    },
+    "btts": 0.333,
+    "clean_sheet": 0.5,
+    "failed_to_score": 0.167,
+    "ppg": 2.5,
+    "xg_pg": 1.43,
+    "xga_pg": 1.03,
+    "xg_n": 6,
+    "g_minus_xg": 0.4,
+    "ga_minus_xga": -0.37,
+    "sot_pg": 5.0,
+    "sota_pg": 3.0
+   },
+   "last6_log": [
+    "20261018 A Fiorentina 3-1 (xG 1.59-2.11)",
+    "20261024 H Sassuolo 2-0 (xG 2.07-0.32)",
+    "20261027 A Torino 3-1 (xG 2.26-1.13)",
+    "20261101 H Venezia 1-0 (xG 1.63-0.16)",
+    "20261108 A Inter 0-2 (xG 0.21-1.82)",
+    "20261121 H Cagliari 2-0 (xG 0.81-0.66)"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 4,
+   "points": 26
+  },
+  "AC Milan": {
+   "season": {
+    "gp": 11,
+    "w": 7,
+    "d": 3,
+    "l": 1,
+    "gf_pg": 2.09,
+    "ga_pg": 1.18,
+    "total_pg": 3.27,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.636,
+     "3.5": 0.364
+    },
+    "btts": 0.727,
+    "clean_sheet": 0.273,
+    "failed_to_score": 0.0,
+    "ppg": 2.18,
+    "xg_pg": 1.66,
+    "xga_pg": 1.3,
+    "xg_n": 11,
+    "g_minus_xg": 0.43,
+    "ga_minus_xga": -0.12,
+    "sot_pg": 4.5,
+    "sota_pg": 4.4
+   },
+   "home": {
+    "gp": 5,
+    "w": 4,
+    "d": 0,
+    "l": 1,
+    "gf_pg": 2.6,
+    "ga_pg": 1.4,
+    "total_pg": 4.0,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.8,
+     "3.5": 0.6
+    },
+    "btts": 0.6,
+    "clean_sheet": 0.4,
+    "failed_to_score": 0.0,
+    "ppg": 2.4,
+    "xg_pg": 1.88,
+    "xga_pg": 1.3,
+    "xg_n": 5,
+    "g_minus_xg": 0.72,
+    "ga_minus_xga": 0.1,
+    "sot_pg": 4.4,
+    "sota_pg": 4.4
+   },
+   "away": {
+    "gp": 6,
+    "w": 3,
+    "d": 3,
+    "l": 0,
+    "gf_pg": 1.67,
+    "ga_pg": 1.0,
+    "total_pg": 2.67,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.5,
+     "3.5": 0.167
+    },
+    "btts": 0.833,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.0,
+    "ppg": 2.0,
+    "xg_pg": 1.48,
+    "xga_pg": 1.3,
+    "xg_n": 6,
+    "g_minus_xg": 0.18,
+    "ga_minus_xga": -0.3,
+    "sot_pg": 4.5,
+    "sota_pg": 4.3
+   },
+   "last6": {
+    "gp": 6,
+    "w": 4,
+    "d": 1,
+    "l": 1,
+    "gf_pg": 2.17,
+    "ga_pg": 1.5,
+    "total_pg": 3.67,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.667,
+     "3.5": 0.5
+    },
+    "btts": 0.833,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.0,
+    "ppg": 2.17,
+    "xg_pg": 1.73,
+    "xga_pg": 1.4,
+    "xg_n": 6,
+    "g_minus_xg": 0.43,
+    "ga_minus_xga": 0.1,
+    "sot_pg": 4.7,
+    "sota_pg": 5.2
+   },
+   "last6_log": [
+    "20261011 A Sassuolo 1-1 (xG 1.17-1.19)",
+    "20261018 H Atalanta 3-2 (xG 2.58-1.74)",
+    "20261025 A Udinese 2-0 (xG 3.59-0.55)",
+    "20261028 H Bologna 2-4 (xG 1.8-2.09)",
+    "20261031 H Inter 3-1 (xG 0.62-1.68)",
+    "20261108 A Genoa 2-1 (xG 0.63-1.15)"
+   ],
+   "last_game_date": "20261108",
+   "rest_days": 13,
+   "rank": 5,
+   "points": 24
+  },
+  "Frosinone": {
+   "season": {
+    "gp": 11,
+    "w": 6,
+    "d": 2,
+    "l": 3,
+    "gf_pg": 2.18,
+    "ga_pg": 1.36,
+    "total_pg": 3.55,
+    "over": {
+     "1.5": 0.818,
+     "2.5": 0.545,
+     "3.5": 0.364
+    },
+    "btts": 0.455,
+    "clean_sheet": 0.273,
+    "failed_to_score": 0.273,
+    "ppg": 1.82,
+    "xg_pg": 1.84,
+    "xga_pg": 2.0,
+    "xg_n": 11,
+    "g_minus_xg": 0.34,
+    "ga_minus_xga": -0.64,
+    "sot_pg": 6.8,
+    "sota_pg": 5.6
+   },
+   "home": {
+    "gp": 6,
+    "w": 5,
+    "d": 0,
+    "l": 1,
+    "gf_pg": 2.67,
+    "ga_pg": 1.0,
+    "total_pg": 3.67,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.5,
+     "3.5": 0.5
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.167,
+    "ppg": 2.5,
+    "xg_pg": 2.02,
+    "xga_pg": 1.73,
+    "xg_n": 6,
+    "g_minus_xg": 0.65,
+    "ga_minus_xga": -0.73,
+    "sot_pg": 7.2,
+    "sota_pg": 5.3
+   },
+   "away": {
+    "gp": 5,
+    "w": 1,
+    "d": 2,
+    "l": 2,
+    "gf_pg": 1.6,
+    "ga_pg": 1.8,
+    "total_pg": 3.4,
+    "over": {
+     "1.5": 0.8,
+     "2.5": 0.6,
+     "3.5": 0.2
+    },
+    "btts": 0.4,
+    "clean_sheet": 0.2,
+    "failed_to_score": 0.4,
+    "ppg": 1.0,
+    "xg_pg": 1.62,
+    "xga_pg": 2.33,
+    "xg_n": 5,
+    "g_minus_xg": -0.02,
+    "ga_minus_xga": -0.53,
+    "sot_pg": 6.4,
+    "sota_pg": 6.0
+   },
+   "last6": {
+    "gp": 6,
+    "w": 3,
+    "d": 1,
+    "l": 2,
+    "gf_pg": 2.5,
+    "ga_pg": 1.83,
+    "total_pg": 4.33,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.667,
+     "3.5": 0.5
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.333,
+    "ppg": 1.67,
+    "xg_pg": 2.12,
+    "xga_pg": 1.99,
+    "xg_n": 6,
+    "g_minus_xg": 0.38,
+    "ga_minus_xga": -0.15,
+    "sot_pg": 7.8,
+    "sota_pg": 6.0
+   },
+   "last6_log": [
+    "20261010 A Napoli 0-3 (xG 1.01-3.13)",
+    "20261016 H Sassuolo 4-2 (xG 2.55-2.02)",
+    "20261025 A Atalanta 4-4 (xG 1.95-3.88)",
+    "20261029 H Lecce 5-1 (xG 3.36-1.4)",
+    "20261101 H Torino 2-0 (xG 1.73-0.51)",
+    "20261107 A Cagliari 0-1 (xG 2.11-0.97)"
+   ],
+   "last_game_date": "20261107",
+   "rest_days": 14,
+   "rank": 6,
+   "points": 20
+  },
+  "Napoli": {
+   "season": {
+    "gp": 12,
+    "w": 5,
+    "d": 3,
+    "l": 4,
+    "gf_pg": 1.58,
+    "ga_pg": 1.17,
+    "total_pg": 2.75,
+    "over": {
+     "1.5": 0.75,
+     "2.5": 0.417,
+     "3.5": 0.25
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.167,
+    "ppg": 1.5,
+    "xg_pg": 1.79,
+    "xga_pg": 1.19,
+    "xg_n": 12,
+    "g_minus_xg": -0.21,
+    "ga_minus_xga": -0.02,
+    "sot_pg": 6.0,
+    "sota_pg": 4.1
+   },
+   "home": {
+    "gp": 6,
+    "w": 3,
+    "d": 2,
+    "l": 1,
+    "gf_pg": 1.67,
+    "ga_pg": 1.0,
+    "total_pg": 2.67,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.5,
+     "3.5": 0.167
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.5,
+    "failed_to_score": 0.0,
+    "ppg": 1.83,
+    "xg_pg": 2.04,
+    "xga_pg": 0.94,
+    "xg_n": 6,
+    "g_minus_xg": -0.37,
+    "ga_minus_xga": 0.06,
+    "sot_pg": 6.3,
+    "sota_pg": 3.5
+   },
+   "away": {
+    "gp": 6,
+    "w": 2,
+    "d": 1,
+    "l": 3,
+    "gf_pg": 1.5,
+    "ga_pg": 1.33,
+    "total_pg": 2.83,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.333,
+     "3.5": 0.333
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.333,
+    "ppg": 1.17,
+    "xg_pg": 1.54,
+    "xga_pg": 1.43,
+    "xg_n": 6,
+    "g_minus_xg": -0.04,
+    "ga_minus_xga": -0.1,
+    "sot_pg": 5.7,
+    "sota_pg": 4.7
+   },
+   "last6": {
+    "gp": 6,
+    "w": 2,
+    "d": 2,
+    "l": 2,
+    "gf_pg": 1.5,
+    "ga_pg": 1.33,
+    "total_pg": 2.83,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.333,
+     "3.5": 0.333
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.333,
+    "ppg": 1.33,
+    "xg_pg": 1.86,
+    "xga_pg": 1.03,
+    "xg_n": 6,
+    "g_minus_xg": -0.36,
+    "ga_minus_xga": 0.3,
+    "sot_pg": 7.2,
+    "sota_pg": 4.3
+   },
+   "last6_log": [
+    "20261017 A Venezia 0-1 (xG 2.36-0.97)",
+    "20261024 H AS Roma 3-3 (xG 2.43-1.9)",
+    "20261028 A Monza 4-1 (xG 1.78-1.17)",
+    "20261101 A Juventus 0-2 (xG 0.52-0.79)",
+    "20261108 H Lazio 1-1 (xG 2.33-0.86)",
+    "20261121 H Torino 1-0 (xG 1.75-0.52)"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 7,
+   "points": 18
+  },
+  "Juventus": {
+   "season": {
+    "gp": 11,
+    "w": 5,
+    "d": 3,
+    "l": 3,
+    "gf_pg": 1.36,
+    "ga_pg": 1.09,
+    "total_pg": 2.45,
+    "over": {
+     "1.5": 0.909,
+     "2.5": 0.273,
+     "3.5": 0.182
+    },
+    "btts": 0.364,
+    "clean_sheet": 0.455,
+    "failed_to_score": 0.182,
+    "ppg": 1.64,
+    "xg_pg": 1.46,
+    "xga_pg": 0.73,
+    "xg_n": 11,
+    "g_minus_xg": -0.09,
+    "ga_minus_xga": 0.36,
+    "sot_pg": 5.2,
+    "sota_pg": 2.9
+   },
+   "home": {
+    "gp": 5,
+    "w": 3,
+    "d": 1,
+    "l": 1,
+    "gf_pg": 1.4,
+    "ga_pg": 0.8,
+    "total_pg": 2.2,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.2,
+     "3.5": 0.0
+    },
+    "btts": 0.2,
+    "clean_sheet": 0.6,
+    "failed_to_score": 0.2,
+    "ppg": 2.0,
+    "xg_pg": 1.2,
+    "xga_pg": 0.41,
+    "xg_n": 5,
+    "g_minus_xg": 0.2,
+    "ga_minus_xga": 0.39,
+    "sot_pg": 4.4,
+    "sota_pg": 2.0
+   },
+   "away": {
+    "gp": 6,
+    "w": 2,
+    "d": 2,
+    "l": 2,
+    "gf_pg": 1.33,
+    "ga_pg": 1.33,
+    "total_pg": 2.67,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.333,
+     "3.5": 0.333
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.167,
+    "ppg": 1.33,
+    "xg_pg": 1.67,
+    "xga_pg": 0.99,
+    "xg_n": 6,
+    "g_minus_xg": -0.33,
+    "ga_minus_xga": 0.35,
+    "sot_pg": 5.8,
+    "sota_pg": 3.7
+   },
+   "last6": {
+    "gp": 6,
+    "w": 2,
+    "d": 2,
+    "l": 2,
+    "gf_pg": 1.17,
+    "ga_pg": 1.33,
+    "total_pg": 2.5,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.333,
+     "3.5": 0.167
+    },
+    "btts": 0.333,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.333,
+    "ppg": 1.33,
+    "xg_pg": 1.38,
+    "xga_pg": 0.93,
+    "xg_n": 6,
+    "g_minus_xg": -0.21,
+    "ga_minus_xga": 0.4,
+    "sot_pg": 4.7,
+    "sota_pg": 3.0
+   },
+   "last6_log": [
+    "20261011 A Cagliari 1-1 (xG 1.95-0.52)",
+    "20261018 H Lazio 0-3 (xG 0.75-0.57)",
+    "20261025 A Lecce 2-0 (xG 1.06-0.86)",
+    "20261028 A Genoa 0-2 (xG 1.26-1.01)",
+    "20261101 H Napoli 2-0 (xG 0.79-0.52)",
+    "20261108 A Fiorentina 2-2 (xG 2.44-2.1)"
+   ],
+   "last_game_date": "20261108",
+   "rest_days": 13,
+   "rank": 8,
+   "points": 18
+  },
+  "Bologna": {
+   "season": {
+    "gp": 11,
+    "w": 5,
+    "d": 2,
+    "l": 4,
+    "gf_pg": 1.45,
+    "ga_pg": 1.27,
+    "total_pg": 2.73,
+    "over": {
+     "1.5": 0.727,
+     "2.5": 0.545,
+     "3.5": 0.273
+    },
+    "btts": 0.636,
+    "clean_sheet": 0.091,
+    "failed_to_score": 0.273,
+    "ppg": 1.55,
+    "xg_pg": 1.66,
+    "xga_pg": 1.36,
+    "xg_n": 11,
+    "g_minus_xg": -0.2,
+    "ga_minus_xga": -0.08,
+    "sot_pg": 4.5,
+    "sota_pg": 3.6
+   },
+   "home": {
+    "gp": 5,
+    "w": 1,
+    "d": 2,
+    "l": 2,
+    "gf_pg": 1.2,
+    "ga_pg": 1.6,
+    "total_pg": 2.8,
+    "over": {
+     "1.5": 0.8,
+     "2.5": 0.6,
+     "3.5": 0.4
+    },
+    "btts": 0.8,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.2,
+    "ppg": 1.0,
+    "xg_pg": 1.52,
+    "xga_pg": 1.67,
+    "xg_n": 5,
+    "g_minus_xg": -0.32,
+    "ga_minus_xga": -0.07,
+    "sot_pg": 4.0,
+    "sota_pg": 4.8
+   },
+   "away": {
+    "gp": 6,
+    "w": 4,
+    "d": 0,
+    "l": 2,
+    "gf_pg": 1.67,
+    "ga_pg": 1.0,
+    "total_pg": 2.67,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.5,
+     "3.5": 0.167
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.333,
+    "ppg": 2.0,
+    "xg_pg": 1.77,
+    "xga_pg": 1.1,
+    "xg_n": 6,
+    "g_minus_xg": -0.1,
+    "ga_minus_xga": -0.1,
+    "sot_pg": 5.0,
+    "sota_pg": 2.7
+   },
+   "last6": {
+    "gp": 6,
+    "w": 5,
+    "d": 0,
+    "l": 1,
+    "gf_pg": 2.17,
+    "ga_pg": 1.33,
+    "total_pg": 3.5,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.833,
+     "3.5": 0.333
+    },
+    "btts": 0.833,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.0,
+    "ppg": 2.5,
+    "xg_pg": 2.05,
+    "xga_pg": 1.7,
+    "xg_n": 6,
+    "g_minus_xg": 0.12,
+    "ga_minus_xga": -0.36,
+    "sot_pg": 5.7,
+    "sota_pg": 3.8
+   },
+   "last6_log": [
+    "20261011 A Lecce 2-1 (xG 1.99-1.49)",
+    "20261017 H Inter 1-3 (xG 1.01-3.16)",
+    "20261024 A Cagliari 2-0 (xG 1.66-0.51)",
+    "20261028 A AC Milan 4-2 (xG 2.09-1.8)",
+    "20261031 H Monza 2-1 (xG 2.03-1.79)",
+    "20261107 A Parma 2-1 (xG 3.52-1.44)"
+   ],
+   "last_game_date": "20261107",
+   "rest_days": 14,
+   "rank": 9,
+   "points": 17
+  },
+  "Cagliari": {
+   "season": {
+    "gp": 12,
+    "w": 5,
+    "d": 1,
+    "l": 6,
+    "gf_pg": 0.83,
+    "ga_pg": 1.42,
+    "total_pg": 2.25,
+    "over": {
+     "1.5": 0.583,
+     "2.5": 0.333,
+     "3.5": 0.167
+    },
+    "btts": 0.333,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.333,
+    "ppg": 1.33,
+    "xg_pg": 1.15,
+    "xga_pg": 1.74,
+    "xg_n": 12,
+    "g_minus_xg": -0.32,
+    "ga_minus_xga": -0.32,
+    "sot_pg": 3.8,
+    "sota_pg": 5.8
+   },
+   "home": {
+    "gp": 5,
+    "w": 2,
+    "d": 1,
+    "l": 2,
+    "gf_pg": 0.6,
+    "ga_pg": 0.8,
+    "total_pg": 1.4,
+    "over": {
+     "1.5": 0.4,
+     "2.5": 0.0,
+     "3.5": 0.0
+    },
+    "btts": 0.2,
+    "clean_sheet": 0.4,
+    "failed_to_score": 0.4,
+    "ppg": 1.4,
+    "xg_pg": 0.82,
+    "xga_pg": 1.98,
+    "xg_n": 5,
+    "g_minus_xg": -0.22,
+    "ga_minus_xga": -1.18,
+    "sot_pg": 3.2,
+    "sota_pg": 6.8
+   },
+   "away": {
+    "gp": 7,
+    "w": 3,
+    "d": 0,
+    "l": 4,
+    "gf_pg": 1.0,
+    "ga_pg": 1.86,
+    "total_pg": 2.86,
+    "over": {
+     "1.5": 0.714,
+     "2.5": 0.571,
+     "3.5": 0.286
+    },
+    "btts": 0.429,
+    "clean_sheet": 0.286,
+    "failed_to_score": 0.286,
+    "ppg": 1.29,
+    "xg_pg": 1.39,
+    "xga_pg": 1.56,
+    "xg_n": 7,
+    "g_minus_xg": -0.39,
+    "ga_minus_xga": 0.29,
+    "sot_pg": 4.1,
+    "sota_pg": 5.0
+   },
+   "last6": {
+    "gp": 6,
+    "w": 1,
+    "d": 0,
+    "l": 5,
+    "gf_pg": 0.67,
+    "ga_pg": 2.33,
+    "total_pg": 3.0,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.5,
+     "3.5": 0.333
+    },
+    "btts": 0.333,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.5,
+    "ppg": 0.5,
+    "xg_pg": 1.3,
+    "xga_pg": 1.75,
+    "xg_n": 6,
+    "g_minus_xg": -0.64,
+    "ga_minus_xga": 0.58,
+    "sot_pg": 3.7,
+    "sota_pg": 6.3
+   },
+   "last6_log": [
+    "20261019 A Monza 0-4 (xG 2.09-2.06)",
+    "20261024 H Bologna 0-2 (xG 0.51-1.66)",
+    "20261027 A AS Roma 2-4 (xG 2.62-2.88)",
+    "20261101 A Lazio 1-2 (xG 0.98-1.01)",
+    "20261107 H Frosinone 1-0 (xG 0.97-2.11)",
+    "20261121 A Como 0-2 (xG 0.66-0.81)"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 10,
+   "points": 16
+  },
+  "Torino": {
+   "season": {
+    "gp": 12,
+    "w": 4,
+    "d": 2,
+    "l": 6,
+    "gf_pg": 1.25,
+    "ga_pg": 1.5,
+    "total_pg": 2.75,
+    "over": {
+     "1.5": 0.917,
+     "2.5": 0.583,
+     "3.5": 0.167
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.083,
+    "failed_to_score": 0.25,
+    "ppg": 1.17,
+    "xg_pg": 1.14,
+    "xga_pg": 1.45,
+    "xg_n": 12,
+    "g_minus_xg": 0.11,
+    "ga_minus_xga": 0.05,
+    "sot_pg": 3.4,
+    "sota_pg": 4.9
+   },
+   "home": {
+    "gp": 6,
+    "w": 2,
+    "d": 1,
+    "l": 3,
+    "gf_pg": 1.33,
+    "ga_pg": 1.83,
+    "total_pg": 3.17,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.667,
+     "3.5": 0.333
+    },
+    "btts": 0.833,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.167,
+    "ppg": 1.17,
+    "xg_pg": 1.35,
+    "xga_pg": 1.32,
+    "xg_n": 6,
+    "g_minus_xg": -0.02,
+    "ga_minus_xga": 0.51,
+    "sot_pg": 3.7,
+    "sota_pg": 3.2
+   },
+   "away": {
+    "gp": 6,
+    "w": 2,
+    "d": 1,
+    "l": 3,
+    "gf_pg": 1.17,
+    "ga_pg": 1.17,
+    "total_pg": 2.33,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.5,
+     "3.5": 0.0
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.333,
+    "ppg": 1.17,
+    "xg_pg": 0.93,
+    "xga_pg": 1.58,
+    "xg_n": 6,
+    "g_minus_xg": 0.24,
+    "ga_minus_xga": -0.41,
+    "sot_pg": 3.2,
+    "sota_pg": 6.7
+   },
+   "last6": {
+    "gp": 6,
+    "w": 2,
+    "d": 1,
+    "l": 3,
+    "gf_pg": 1.33,
+    "ga_pg": 1.5,
+    "total_pg": 2.83,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.5,
+     "3.5": 0.333
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.333,
+    "ppg": 1.17,
+    "xg_pg": 0.99,
+    "xga_pg": 1.37,
+    "xg_n": 6,
+    "g_minus_xg": 0.34,
+    "ga_minus_xga": 0.13,
+    "sot_pg": 3.7,
+    "sota_pg": 5.8
+   },
+   "last6_log": [
+    "20261019 A Parma 3-0 (xG 1.56-1.57)",
+    "20261023 H Monza 3-2 (xG 1.36-0.66)",
+    "20261027 H Como 1-3 (xG 1.13-2.26)",
+    "20261101 A Frosinone 0-2 (xG 0.51-1.73)",
+    "20261107 H Lecce 1-1 (xG 0.86-0.25)",
+    "20261121 A Napoli 0-1 (xG 0.52-1.75)"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 11,
+   "points": 14
+  },
+  "Atalanta": {
+   "season": {
+    "gp": 11,
+    "w": 4,
+    "d": 2,
+    "l": 5,
+    "gf_pg": 1.55,
+    "ga_pg": 1.82,
+    "total_pg": 3.36,
+    "over": {
+     "1.5": 0.818,
+     "2.5": 0.727,
+     "3.5": 0.364
+    },
+    "btts": 0.636,
+    "clean_sheet": 0.182,
+    "failed_to_score": 0.182,
+    "ppg": 1.27,
+    "xg_pg": 1.52,
+    "xga_pg": 1.79,
+    "xg_n": 11,
+    "g_minus_xg": 0.02,
+    "ga_minus_xga": 0.03,
+    "sot_pg": 5.4,
+    "sota_pg": 5.9
+   },
+   "home": {
+    "gp": 6,
+    "w": 3,
+    "d": 1,
+    "l": 2,
+    "gf_pg": 1.83,
+    "ga_pg": 1.83,
+    "total_pg": 3.67,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.833,
+     "3.5": 0.333
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.167,
+    "ppg": 1.67,
+    "xg_pg": 1.89,
+    "xga_pg": 1.66,
+    "xg_n": 6,
+    "g_minus_xg": -0.06,
+    "ga_minus_xga": 0.17,
+    "sot_pg": 6.5,
+    "sota_pg": 5.5
+   },
+   "away": {
+    "gp": 5,
+    "w": 1,
+    "d": 1,
+    "l": 3,
+    "gf_pg": 1.2,
+    "ga_pg": 1.8,
+    "total_pg": 3.0,
+    "over": {
+     "1.5": 0.8,
+     "2.5": 0.6,
+     "3.5": 0.4
+    },
+    "btts": 0.6,
+    "clean_sheet": 0.2,
+    "failed_to_score": 0.2,
+    "ppg": 0.8,
+    "xg_pg": 1.08,
+    "xga_pg": 1.94,
+    "xg_n": 5,
+    "g_minus_xg": 0.12,
+    "ga_minus_xga": -0.14,
+    "sot_pg": 4.0,
+    "sota_pg": 6.4
+   },
+   "last6": {
+    "gp": 6,
+    "w": 2,
+    "d": 2,
+    "l": 2,
+    "gf_pg": 2.0,
+    "ga_pg": 2.17,
+    "total_pg": 4.17,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.833,
+     "3.5": 0.667
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.167,
+    "ppg": 1.33,
+    "xg_pg": 2.18,
+    "xga_pg": 1.72,
+    "xg_n": 6,
+    "g_minus_xg": -0.18,
+    "ga_minus_xga": 0.44,
+    "sot_pg": 7.0,
+    "sota_pg": 5.7
+   },
+   "last6_log": [
+    "20261012 H Venezia 3-1 (xG 2.18-2.48)",
+    "20261018 A AC Milan 2-3 (xG 1.74-2.58)",
+    "20261025 H Frosinone 4-4 (xG 3.88-1.95)",
+    "20261029 A Fiorentina 2-2 (xG 1.0-1.52)",
+    "20261102 H Parma 0-3 (xG 2.94-0.46)",
+    "20261108 A Monza 1-0 (xG 1.36-1.35)"
+   ],
+   "last_game_date": "20261108",
+   "rest_days": 13,
+   "rank": 12,
+   "points": 14
+  },
+  "Genoa": {
+   "season": {
+    "gp": 11,
+    "w": 4,
+    "d": 1,
+    "l": 6,
+    "gf_pg": 1.0,
+    "ga_pg": 1.45,
+    "total_pg": 2.45,
+    "over": {
+     "1.5": 0.818,
+     "2.5": 0.455,
+     "3.5": 0.091
+    },
+    "btts": 0.545,
+    "clean_sheet": 0.182,
+    "failed_to_score": 0.273,
+    "ppg": 1.18,
+    "xg_pg": 0.93,
+    "xga_pg": 1.26,
+    "xg_n": 11,
+    "g_minus_xg": 0.07,
+    "ga_minus_xga": 0.2,
+    "sot_pg": 3.1,
+    "sota_pg": 4.5
+   },
+   "home": {
+    "gp": 7,
+    "w": 3,
+    "d": 1,
+    "l": 3,
+    "gf_pg": 1.14,
+    "ga_pg": 1.43,
+    "total_pg": 2.57,
+    "over": {
+     "1.5": 0.857,
+     "2.5": 0.429,
+     "3.5": 0.143
+    },
+    "btts": 0.571,
+    "clean_sheet": 0.286,
+    "failed_to_score": 0.143,
+    "ppg": 1.43,
+    "xg_pg": 1.04,
+    "xga_pg": 1.31,
+    "xg_n": 7,
+    "g_minus_xg": 0.1,
+    "ga_minus_xga": 0.12,
+    "sot_pg": 3.4,
+    "sota_pg": 4.7
+   },
+   "away": {
+    "gp": 4,
+    "w": 1,
+    "d": 0,
+    "l": 3,
+    "gf_pg": 0.75,
+    "ga_pg": 1.5,
+    "total_pg": 2.25,
+    "over": {
+     "1.5": 0.75,
+     "2.5": 0.5,
+     "3.5": 0.0
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.5,
+    "ppg": 0.75,
+    "xg_pg": 0.73,
+    "xga_pg": 1.17,
+    "xg_n": 4,
+    "g_minus_xg": 0.02,
+    "ga_minus_xga": 0.33,
+    "sot_pg": 2.5,
+    "sota_pg": 4.0
+   },
+   "last6": {
+    "gp": 6,
+    "w": 4,
+    "d": 0,
+    "l": 2,
+    "gf_pg": 1.33,
+    "ga_pg": 1.0,
+    "total_pg": 2.33,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.5,
+     "3.5": 0.0
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.167,
+    "ppg": 2.0,
+    "xg_pg": 0.96,
+    "xga_pg": 1.2,
+    "xg_n": 6,
+    "g_minus_xg": 0.37,
+    "ga_minus_xga": -0.2,
+    "sot_pg": 3.2,
+    "sota_pg": 4.3
+   },
+   "last6_log": [
+    "20261010 H Fiorentina 2-1 (xG 1.46-0.82)",
+    "20261017 A AS Roma 0-2 (xG 0.47-1.33)",
+    "20261025 H Venezia 1-0 (xG 0.34-1.98)",
+    "20261028 H Juventus 2-0 (xG 1.01-1.26)",
+    "20261101 A Lecce 2-1 (xG 1.34-1.19)",
+    "20261108 H AC Milan 1-2 (xG 1.15-0.63)"
+   ],
+   "last_game_date": "20261108",
+   "rest_days": 13,
+   "rank": 13,
+   "points": 13
+  },
+  "Lecce": {
+   "season": {
+    "gp": 12,
+    "w": 3,
+    "d": 1,
+    "l": 8,
+    "gf_pg": 1.0,
+    "ga_pg": 2.08,
+    "total_pg": 3.08,
+    "over": {
+     "1.5": 0.917,
+     "2.5": 0.667,
+     "3.5": 0.25
+    },
+    "btts": 0.417,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.417,
+    "ppg": 0.83,
+    "xg_pg": 1.23,
+    "xga_pg": 1.82,
+    "xg_n": 12,
+    "g_minus_xg": -0.23,
+    "ga_minus_xga": 0.26,
+    "sot_pg": 4.4,
+    "sota_pg": 5.7
+   },
+   "home": {
+    "gp": 5,
+    "w": 1,
+    "d": 0,
+    "l": 4,
+    "gf_pg": 1.0,
+    "ga_pg": 2.4,
+    "total_pg": 3.4,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.8,
+     "3.5": 0.4
+    },
+    "btts": 0.6,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.4,
+    "ppg": 0.6,
+    "xg_pg": 1.08,
+    "xga_pg": 2.02,
+    "xg_n": 5,
+    "g_minus_xg": -0.08,
+    "ga_minus_xga": 0.38,
+    "sot_pg": 4.4,
+    "sota_pg": 5.8
+   },
+   "away": {
+    "gp": 7,
+    "w": 2,
+    "d": 1,
+    "l": 4,
+    "gf_pg": 1.0,
+    "ga_pg": 1.86,
+    "total_pg": 2.86,
+    "over": {
+     "1.5": 0.857,
+     "2.5": 0.571,
+     "3.5": 0.143
+    },
+    "btts": 0.286,
+    "clean_sheet": 0.286,
+    "failed_to_score": 0.429,
+    "ppg": 1.0,
+    "xg_pg": 1.33,
+    "xga_pg": 1.68,
+    "xg_n": 7,
+    "g_minus_xg": -0.33,
+    "ga_minus_xga": 0.18,
+    "sot_pg": 4.4,
+    "sota_pg": 5.6
+   },
+   "last6": {
+    "gp": 6,
+    "w": 1,
+    "d": 1,
+    "l": 4,
+    "gf_pg": 1.0,
+    "ga_pg": 2.17,
+    "total_pg": 3.17,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.667,
+     "3.5": 0.167
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.333,
+    "ppg": 0.67,
+    "xg_pg": 1.32,
+    "xga_pg": 1.38,
+    "xg_n": 6,
+    "g_minus_xg": -0.33,
+    "ga_minus_xga": 0.78,
+    "sot_pg": 5.2,
+    "sota_pg": 4.0
+   },
+   "last6_log": [
+    "20261018 A Udinese 3-0 (xG 3.47-0.54)",
+    "20261025 H Juventus 0-2 (xG 0.86-1.06)",
+    "20261029 A Frosinone 1-5 (xG 1.4-3.36)",
+    "20261101 H Genoa 1-2 (xG 1.19-1.34)",
+    "20261107 A Torino 1-1 (xG 0.25-0.86)",
+    "20261121 A Lazio 0-3 (xG 0.78-1.14)"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 14,
+   "points": 10
+  },
+  "Fiorentina": {
+   "season": {
+    "gp": 11,
+    "w": 2,
+    "d": 3,
+    "l": 6,
+    "gf_pg": 1.55,
+    "ga_pg": 2.27,
+    "total_pg": 3.82,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.909,
+     "3.5": 0.545
+    },
+    "btts": 0.818,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.182,
+    "ppg": 0.82,
+    "xg_pg": 1.58,
+    "xga_pg": 1.57,
+    "xg_n": 11,
+    "g_minus_xg": -0.04,
+    "ga_minus_xga": 0.7,
+    "sot_pg": 5.1,
+    "sota_pg": 5.6
+   },
+   "home": {
+    "gp": 6,
+    "w": 0,
+    "d": 3,
+    "l": 3,
+    "gf_pg": 1.17,
+    "ga_pg": 2.17,
+    "total_pg": 3.33,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.833,
+     "3.5": 0.5
+    },
+    "btts": 0.833,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.167,
+    "ppg": 0.5,
+    "xg_pg": 1.72,
+    "xga_pg": 1.35,
+    "xg_n": 6,
+    "g_minus_xg": -0.55,
+    "ga_minus_xga": 0.81,
+    "sot_pg": 5.2,
+    "sota_pg": 5.7
+   },
+   "away": {
+    "gp": 5,
+    "w": 2,
+    "d": 0,
+    "l": 3,
+    "gf_pg": 2.0,
+    "ga_pg": 2.4,
+    "total_pg": 4.4,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 1.0,
+     "3.5": 0.6
+    },
+    "btts": 0.8,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.2,
+    "ppg": 1.2,
+    "xg_pg": 1.42,
+    "xga_pg": 1.83,
+    "xg_n": 5,
+    "g_minus_xg": 0.58,
+    "ga_minus_xga": 0.57,
+    "sot_pg": 5.0,
+    "sota_pg": 5.6
+   },
+   "last6": {
+    "gp": 6,
+    "w": 1,
+    "d": 2,
+    "l": 3,
+    "gf_pg": 1.83,
+    "ga_pg": 2.17,
+    "total_pg": 4.0,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 1.0,
+     "3.5": 0.667
+    },
+    "btts": 1.0,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.0,
+    "ppg": 0.83,
+    "xg_pg": 1.53,
+    "xga_pg": 1.77,
+    "xg_n": 6,
+    "g_minus_xg": 0.3,
+    "ga_minus_xga": 0.4,
+    "sot_pg": 4.7,
+    "sota_pg": 6.0
+   },
+   "last6_log": [
+    "20261010 A Genoa 1-2 (xG 0.82-1.46)",
+    "20261018 H Como 1-3 (xG 2.11-1.59)",
+    "20261025 A Inter 1-2 (xG 0.23-3.15)",
+    "20261029 H Atalanta 2-2 (xG 1.52-1.0)",
+    "20261102 A Sassuolo 4-2 (xG 2.39-0.98)",
+    "20261108 H Juventus 2-2 (xG 2.1-2.44)"
+   ],
+   "last_game_date": "20261108",
+   "rest_days": 13,
+   "rank": 15,
+   "points": 9
+  },
+  "Parma": {
+   "season": {
+    "gp": 12,
+    "w": 2,
+    "d": 2,
+    "l": 8,
+    "gf_pg": 0.83,
+    "ga_pg": 1.83,
+    "total_pg": 2.67,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.667,
+     "3.5": 0.083
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.417,
+    "ppg": 0.67,
+    "xg_pg": 0.95,
+    "xga_pg": 2.04,
+    "xg_n": 12,
+    "g_minus_xg": -0.11,
+    "ga_minus_xga": -0.21,
+    "sot_pg": 3.4,
+    "sota_pg": 6.0
+   },
+   "home": {
+    "gp": 7,
+    "w": 1,
+    "d": 2,
+    "l": 4,
+    "gf_pg": 0.71,
+    "ga_pg": 1.86,
+    "total_pg": 2.57,
+    "over": {
+     "1.5": 0.714,
+     "2.5": 0.571,
+     "3.5": 0.143
+    },
+    "btts": 0.571,
+    "clean_sheet": 0.143,
+    "failed_to_score": 0.429,
+    "ppg": 0.71,
+    "xg_pg": 1.18,
+    "xga_pg": 1.83,
+    "xg_n": 7,
+    "g_minus_xg": -0.46,
+    "ga_minus_xga": 0.03,
+    "sot_pg": 3.6,
+    "sota_pg": 6.0
+   },
+   "away": {
+    "gp": 5,
+    "w": 1,
+    "d": 0,
+    "l": 4,
+    "gf_pg": 1.0,
+    "ga_pg": 1.8,
+    "total_pg": 2.8,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.8,
+     "3.5": 0.0
+    },
+    "btts": 0.4,
+    "clean_sheet": 0.2,
+    "failed_to_score": 0.4,
+    "ppg": 0.6,
+    "xg_pg": 0.63,
+    "xga_pg": 2.33,
+    "xg_n": 5,
+    "g_minus_xg": 0.37,
+    "ga_minus_xga": -0.53,
+    "sot_pg": 3.2,
+    "sota_pg": 6.0
+   },
+   "last6": {
+    "gp": 6,
+    "w": 1,
+    "d": 1,
+    "l": 4,
+    "gf_pg": 1.0,
+    "ga_pg": 2.0,
+    "total_pg": 3.0,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.833,
+     "3.5": 0.167
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.333,
+    "ppg": 0.67,
+    "xg_pg": 1.25,
+    "xga_pg": 2.36,
+    "xg_n": 6,
+    "g_minus_xg": -0.25,
+    "ga_minus_xga": -0.36,
+    "sot_pg": 4.2,
+    "sota_pg": 6.3
+   },
+   "last6_log": [
+    "20261019 H Torino 0-3 (xG 1.57-1.56)",
+    "20261024 A Lazio 1-2 (xG 0.81-1.74)",
+    "20261028 H Udinese 0-0 (xG 1.12-1.37)",
+    "20261102 A Atalanta 3-0 (xG 0.46-2.94)",
+    "20261107 H Bologna 1-2 (xG 1.44-3.52)",
+    "20261121 H AS Roma 1-5 (xG 2.1-3.01)"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 16,
+   "points": 8
+  },
+  "Sassuolo": {
+   "season": {
+    "gp": 11,
+    "w": 2,
+    "d": 2,
+    "l": 7,
+    "gf_pg": 1.45,
+    "ga_pg": 2.64,
+    "total_pg": 4.09,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.818,
+     "3.5": 0.455
+    },
+    "btts": 0.818,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.182,
+    "ppg": 0.73,
+    "xg_pg": 1.29,
+    "xga_pg": 2.01,
+    "xg_n": 11,
+    "g_minus_xg": 0.16,
+    "ga_minus_xga": 0.63,
+    "sot_pg": 4.5,
+    "sota_pg": 6.8
+   },
+   "home": {
+    "gp": 5,
+    "w": 2,
+    "d": 1,
+    "l": 2,
+    "gf_pg": 2.0,
+    "ga_pg": 2.8,
+    "total_pg": 4.8,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.8,
+     "3.5": 0.6
+    },
+    "btts": 1.0,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.0,
+    "ppg": 1.4,
+    "xg_pg": 1.16,
+    "xga_pg": 1.9,
+    "xg_n": 5,
+    "g_minus_xg": 0.84,
+    "ga_minus_xga": 0.9,
+    "sot_pg": 4.0,
+    "sota_pg": 6.4
+   },
+   "away": {
+    "gp": 6,
+    "w": 0,
+    "d": 1,
+    "l": 5,
+    "gf_pg": 1.0,
+    "ga_pg": 2.5,
+    "total_pg": 3.5,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.833,
+     "3.5": 0.333
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.333,
+    "ppg": 0.17,
+    "xg_pg": 1.4,
+    "xga_pg": 2.1,
+    "xg_n": 6,
+    "g_minus_xg": -0.4,
+    "ga_minus_xga": 0.4,
+    "sot_pg": 4.8,
+    "sota_pg": 7.2
+   },
+   "last6": {
+    "gp": 6,
+    "w": 0,
+    "d": 1,
+    "l": 5,
+    "gf_pg": 1.17,
+    "ga_pg": 3.33,
+    "total_pg": 4.5,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.667,
+     "3.5": 0.5
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.333,
+    "ppg": 0.17,
+    "xg_pg": 0.92,
+    "xga_pg": 2.58,
+    "xg_n": 6,
+    "g_minus_xg": 0.24,
+    "ga_minus_xga": 0.75,
+    "sot_pg": 2.3,
+    "sota_pg": 7.5
+   },
+   "last6_log": [
+    "20261011 H AC Milan 1-1 (xG 1.19-1.17)",
+    "20261016 A Frosinone 2-4 (xG 2.02-2.55)",
+    "20261024 A Como 0-2 (xG 0.32-2.07)",
+    "20261027 H Lazio 2-6 (xG 0.76-3.57)",
+    "20261102 H Fiorentina 2-4 (xG 0.98-2.39)",
+    "20261107 A AS Roma 0-3 (xG 0.28-3.73)"
+   ],
+   "last_game_date": "20261107",
+   "rest_days": 14,
+   "rank": 17,
+   "points": 8
+  },
+  "Monza": {
+   "season": {
+    "gp": 11,
+    "w": 2,
+    "d": 1,
+    "l": 8,
+    "gf_pg": 1.55,
+    "ga_pg": 2.27,
+    "total_pg": 3.82,
+    "over": {
+     "1.5": 0.909,
+     "2.5": 0.818,
+     "3.5": 0.636
+    },
+    "btts": 0.818,
+    "clean_sheet": 0.091,
+    "failed_to_score": 0.091,
+    "ppg": 0.64,
+    "xg_pg": 1.58,
+    "xga_pg": 1.43,
+    "xg_n": 11,
+    "g_minus_xg": -0.04,
+    "ga_minus_xga": 0.84,
+    "sot_pg": 5.6,
+    "sota_pg": 5.6
+   },
+   "home": {
+    "gp": 5,
+    "w": 2,
+    "d": 0,
+    "l": 3,
+    "gf_pg": 1.8,
+    "ga_pg": 1.8,
+    "total_pg": 3.6,
+    "over": {
+     "1.5": 0.8,
+     "2.5": 0.8,
+     "3.5": 0.6
+    },
+    "btts": 0.6,
+    "clean_sheet": 0.2,
+    "failed_to_score": 0.2,
+    "ppg": 1.2,
+    "xg_pg": 1.56,
+    "xga_pg": 1.54,
+    "xg_n": 5,
+    "g_minus_xg": 0.24,
+    "ga_minus_xga": 0.26,
+    "sot_pg": 6.0,
+    "sota_pg": 6.4
+   },
+   "away": {
+    "gp": 6,
+    "w": 0,
+    "d": 1,
+    "l": 5,
+    "gf_pg": 1.33,
+    "ga_pg": 2.67,
+    "total_pg": 4.0,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.833,
+     "3.5": 0.667
+    },
+    "btts": 1.0,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.0,
+    "ppg": 0.17,
+    "xg_pg": 1.61,
+    "xga_pg": 1.34,
+    "xg_n": 6,
+    "g_minus_xg": -0.27,
+    "ga_minus_xga": 1.32,
+    "sot_pg": 5.3,
+    "sota_pg": 5.0
+   },
+   "last6": {
+    "gp": 6,
+    "w": 1,
+    "d": 0,
+    "l": 5,
+    "gf_pg": 1.5,
+    "ga_pg": 2.17,
+    "total_pg": 3.67,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.833,
+     "3.5": 0.667
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.167,
+    "ppg": 0.5,
+    "xg_pg": 1.47,
+    "xga_pg": 1.74,
+    "xg_n": 6,
+    "g_minus_xg": 0.03,
+    "ga_minus_xga": 0.43,
+    "sot_pg": 5.3,
+    "sota_pg": 6.3
+   },
+   "last6_log": [
+    "20261011 A Lazio 1-3 (xG 1.76-1.83)",
+    "20261019 H Cagliari 4-0 (xG 2.06-2.09)",
+    "20261023 A Torino 2-3 (xG 0.66-1.36)",
+    "20261028 H Napoli 1-4 (xG 1.17-1.78)",
+    "20261031 A Bologna 1-2 (xG 1.79-2.03)",
+    "20261108 H Atalanta 0-1 (xG 1.35-1.36)"
+   ],
+   "last_game_date": "20261108",
+   "rest_days": 13,
+   "rank": 18,
+   "points": 7
+  },
+  "Venezia": {
+   "season": {
+    "gp": 11,
+    "w": 2,
+    "d": 0,
+    "l": 9,
+    "gf_pg": 0.73,
+    "ga_pg": 1.91,
+    "total_pg": 2.64,
+    "over": {
+     "1.5": 0.727,
+     "2.5": 0.364,
+     "3.5": 0.273
+    },
+    "btts": 0.364,
+    "clean_sheet": 0.091,
+    "failed_to_score": 0.545,
+    "ppg": 0.55,
+    "xg_pg": 1.46,
+    "xga_pg": 1.97,
+    "xg_n": 11,
+    "g_minus_xg": -0.74,
+    "ga_minus_xga": -0.06,
+    "sot_pg": 4.0,
+    "sota_pg": 6.0
+   },
+   "home": {
+    "gp": 6,
+    "w": 2,
+    "d": 0,
+    "l": 4,
+    "gf_pg": 0.83,
+    "ga_pg": 1.83,
+    "total_pg": 2.67,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.333,
+     "3.5": 0.167
+    },
+    "btts": 0.333,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.5,
+    "ppg": 1.0,
+    "xg_pg": 1.42,
+    "xga_pg": 2.23,
+    "xg_n": 6,
+    "g_minus_xg": -0.59,
+    "ga_minus_xga": -0.4,
+    "sot_pg": 4.7,
+    "sota_pg": 5.7
+   },
+   "away": {
+    "gp": 5,
+    "w": 0,
+    "d": 0,
+    "l": 5,
+    "gf_pg": 0.6,
+    "ga_pg": 2.0,
+    "total_pg": 2.6,
+    "over": {
+     "1.5": 0.6,
+     "2.5": 0.4,
+     "3.5": 0.4
+    },
+    "btts": 0.4,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.6,
+    "ppg": 0.0,
+    "xg_pg": 1.52,
+    "xga_pg": 1.65,
+    "xg_n": 5,
+    "g_minus_xg": -0.92,
+    "ga_minus_xga": 0.35,
+    "sot_pg": 3.2,
+    "sota_pg": 6.4
+   },
+   "last6": {
+    "gp": 6,
+    "w": 2,
+    "d": 0,
+    "l": 4,
+    "gf_pg": 0.67,
+    "ga_pg": 1.33,
+    "total_pg": 2.0,
+    "over": {
+     "1.5": 0.5,
+     "2.5": 0.333,
+     "3.5": 0.167
+    },
+    "btts": 0.333,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.5,
+    "ppg": 1.0,
+    "xg_pg": 1.45,
+    "xga_pg": 1.64,
+    "xg_n": 6,
+    "g_minus_xg": -0.78,
+    "ga_minus_xga": -0.31,
+    "sot_pg": 3.7,
+    "sota_pg": 6.0
+   },
+   "last6_log": [
+    "20261012 A Atalanta 1-3 (xG 2.48-2.18)",
+    "20261017 H Napoli 1-0 (xG 0.97-2.36)",
+    "20261025 A Genoa 0-1 (xG 1.98-0.34)",
+    "20261028 H Inter 0-2 (xG 1.59-2.33)",
+    "20261101 A Como 0-1 (xG 0.16-1.63)",
+    "20261106 H Udinese 2-1 (xG 1.52-1.03)"
+   ],
+   "last_game_date": "20261106",
+   "rest_days": 15,
+   "rank": 19,
+   "points": 6
+  },
+  "Udinese": {
+   "season": {
+    "gp": 11,
+    "w": 1,
+    "d": 2,
+    "l": 8,
+    "gf_pg": 1.09,
+    "ga_pg": 2.27,
+    "total_pg": 3.36,
+    "over": {
+     "1.5": 0.818,
+     "2.5": 0.636,
+     "3.5": 0.273
+    },
+    "btts": 0.636,
+    "clean_sheet": 0.091,
+    "failed_to_score": 0.364,
+    "ppg": 0.45,
+    "xg_pg": 1.19,
+    "xga_pg": 2.21,
+    "xg_n": 11,
+    "g_minus_xg": -0.09,
+    "ga_minus_xga": 0.06,
+    "sot_pg": 4.5,
+    "sota_pg": 6.2
+   },
+   "home": {
+    "gp": 6,
+    "w": 0,
+    "d": 1,
+    "l": 5,
+    "gf_pg": 0.67,
+    "ga_pg": 2.33,
+    "total_pg": 3.0,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.5,
+     "3.5": 0.167
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.5,
+    "ppg": 0.17,
+    "xg_pg": 1.33,
+    "xga_pg": 2.38,
+    "xg_n": 6,
+    "g_minus_xg": -0.66,
+    "ga_minus_xga": -0.05,
+    "sot_pg": 4.7,
+    "sota_pg": 6.8
+   },
+   "away": {
+    "gp": 5,
+    "w": 1,
+    "d": 1,
+    "l": 3,
+    "gf_pg": 1.6,
+    "ga_pg": 2.2,
+    "total_pg": 3.8,
+    "over": {
+     "1.5": 0.8,
+     "2.5": 0.8,
+     "3.5": 0.4
+    },
+    "btts": 0.8,
+    "clean_sheet": 0.2,
+    "failed_to_score": 0.2,
+    "ppg": 0.8,
+    "xg_pg": 1.01,
+    "xga_pg": 2.0,
+    "xg_n": 5,
+    "g_minus_xg": 0.59,
+    "ga_minus_xga": 0.2,
+    "sot_pg": 4.2,
+    "sota_pg": 5.4
+   },
+   "last6": {
+    "gp": 6,
+    "w": 0,
+    "d": 1,
+    "l": 5,
+    "gf_pg": 0.67,
+    "ga_pg": 2.33,
+    "total_pg": 3.0,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.667,
+     "3.5": 0.167
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.5,
+    "ppg": 0.17,
+    "xg_pg": 1.01,
+    "xga_pg": 2.51,
+    "xg_n": 6,
+    "g_minus_xg": -0.34,
+    "ga_minus_xga": -0.18,
+    "sot_pg": 4.2,
+    "sota_pg": 6.2
+   },
+   "last6_log": [
+    "20261012 A Torino 1-2 (xG 0.77-2.62)",
+    "20261018 H Lecce 0-3 (xG 0.54-3.47)",
+    "20261025 H AC Milan 0-2 (xG 0.55-3.59)",
+    "20261028 A Parma 0-0 (xG 1.37-1.12)",
+    "20261031 H AS Roma 2-5 (xG 1.77-2.76)",
+    "20261106 A Venezia 1-2 (xG 1.03-1.52)"
+   ],
+   "last_game_date": "20261106",
+   "rest_days": 15,
+   "rank": 20,
+   "points": 5
+  }
+ },
+ "h2h": {
+  "Frosinone vs Napoli": [
+   "20230819 Frosinone 1-3 Napoli",
+   "20240414 Napoli 2-2 Frosinone",
+   "20261010 Napoli 3-0 Frosinone"
+  ],
+  "Fiorentina vs Genoa": [
+   "20240415 Fiorentina 1-1 Genoa",
+   "20241031 Genoa 0-1 Fiorentina",
+   "20250202 Fiorentina 2-1 Genoa",
+   "20251109 Genoa 2-2 Fiorentina",
+   "20260510 Fiorentina 0-0 Genoa",
+   "20261010 Genoa 2-1 Fiorentina"
+  ],
+  "Inter vs Monza": [
+   "20230819 Inter 2-0 Monza",
+   "20240113 Monza 1-5 Inter",
+   "20240915 Monza 1-1 Inter",
+   "20250308 Inter 3-2 Monza",
+   "20260822 Inter 4-1 Monza"
+  ],
+  "Atalanta vs Sassuolo": [
+   "20230820 Sassuolo 0-2 Atalanta",
+   "20240217 Atalanta 3-0 Sassuolo",
+   "20251109 Atalanta 0-3 Sassuolo",
+   "20260301 Sassuolo 2-1 Atalanta",
+   "20260823 Atalanta 2-1 Sassuolo"
+  ],
+  "Lazio vs Lecce": [
+   "20240114 Lazio 1-0 Lecce",
+   "20241221 Lecce 1-2 Lazio",
+   "20250525 Lazio 0-1 Lecce",
+   "20251123 Lazio 2-0 Lecce",
+   "20260124 Lecce 0-0 Lazio",
+   "20261121 Lazio 3-0 Lecce"
+  ],
+  "Juventus vs Udinese": [
+   "20230820 Udinese 0-3 Juventus",
+   "20240212 Juventus 0-1 Udinese",
+   "20241102 Udinese 0-2 Juventus",
+   "20250518 Juventus 2-0 Udinese",
+   "20251029 Juventus 3-1 Udinese",
+   "20260314 Udinese 0-1 Juventus"
+  ],
+  "Cagliari vs Torino": [
+   "20230821 Torino 0-0 Cagliari",
+   "20240126 Cagliari 1-2 Torino",
+   "20241020 Cagliari 3-2 Torino",
+   "20250124 Torino 2-0 Cagliari",
+   "20251227 Torino 1-2 Cagliari",
+   "20260517 Cagliari 2-1 Torino"
+  ],
+  "AC Milan vs Bologna": [
+   "20240127 AC Milan 2-2 Bologna",
+   "20250227 Bologna 2-1 AC Milan",
+   "20250509 AC Milan 3-1 Bologna",
+   "20250914 AC Milan 1-0 Bologna",
+   "20260203 Bologna 0-3 AC Milan",
+   "20261028 AC Milan 2-4 Bologna"
+  ],
+  "Atalanta vs Frosinone": [
+   "20230826 Frosinone 2-1 Atalanta",
+   "20240115 Atalanta 5-0 Frosinone",
+   "20261025 Atalanta 4-4 Frosinone"
+  ],
+  "AC Milan vs Torino": [
+   "20240518 Torino 3-1 AC Milan",
+   "20240817 AC Milan 2-2 Torino",
+   "20250222 Torino 2-1 AC Milan",
+   "20251208 Torino 2-3 AC Milan",
+   "20260321 AC Milan 3-2 Torino",
+   "20260823 Torino 1-2 AC Milan"
+  ],
+  "Fiorentina vs Lecce": [
+   "20230827 Fiorentina 2-2 Lecce",
+   "20240202 Lecce 3-2 Fiorentina",
+   "20241020 Lecce 0-6 Fiorentina",
+   "20250228 Fiorentina 1-0 Lecce",
+   "20251102 Fiorentina 0-1 Lecce",
+   "20260420 Lecce 1-1 Fiorentina"
+  ],
+  "Bologna vs Juventus": [
+   "20230827 Juventus 1-1 Bologna",
+   "20240520 Bologna 3-3 Juventus",
+   "20241207 Juventus 2-2 Bologna",
+   "20250504 Bologna 1-1 Juventus",
+   "20251214 Bologna 0-1 Juventus",
+   "20260419 Juventus 2-0 Bologna"
+  ],
+  "Genoa vs Lazio": [
+   "20240419 Genoa 0-1 Lazio",
+   "20241027 Lazio 3-0 Genoa",
+   "20250423 Genoa 0-2 Lazio",
+   "20250929 Genoa 0-3 Lazio",
+   "20260130 Lazio 3-2 Genoa",
+   "20260830 Lazio 1-0 Genoa"
+  ],
+  "Napoli vs Sassuolo": [
+   "20230827 Napoli 2-0 Sassuolo",
+   "20240228 Sassuolo 1-6 Napoli",
+   "20250823 Sassuolo 0-2 Napoli",
+   "20260117 Napoli 1-0 Sassuolo"
+  ],
+  "Cagliari vs Inter": [
+   "20240414 Inter 2-2 Cagliari",
+   "20241228 Cagliari 0-3 Inter",
+   "20250412 Inter 3-1 Cagliari",
+   "20250927 Cagliari 0-2 Inter",
+   "20260417 Inter 3-0 Cagliari",
+   "20260830 Cagliari 0-1 Inter"
+  ],
+  "AC Milan vs AS Roma": [
+   "20230901 AS Roma 1-2 AC Milan",
+   "20240114 AC Milan 3-1 AS Roma",
+   "20241229 AC Milan 1-1 AS Roma",
+   "20250518 AS Roma 3-1 AC Milan",
+   "20251102 AC Milan 1-0 AS Roma",
+   "20260125 AS Roma 1-1 AC Milan"
+  ],
+  "Bologna vs Cagliari": [
+   "20240114 Cagliari 2-1 Bologna",
+   "20241029 Cagliari 0-2 Bologna",
+   "20250302 Bologna 2-1 Cagliari",
+   "20251019 Cagliari 0-2 Bologna",
+   "20260503 Bologna 0-0 Cagliari",
+   "20261024 Cagliari 0-2 Bologna"
+  ],
+  "Frosinone vs Udinese": [
+   "20230902 Udinese 0-0 Frosinone",
+   "20240526 Frosinone 0-1 Udinese"
+  ],
+  "Atalanta vs Monza": [
+   "20230902 Atalanta 3-0 Monza",
+   "20240421 Monza 1-2 Atalanta",
+   "20241030 Atalanta 2-0 Monza",
+   "20250504 Monza 0-4 Atalanta",
+   "20261108 Monza 0-1 Atalanta"
+  ],
+  "Lazio vs Napoli": [
+   "20240128 Lazio 0-0 Napoli",
+   "20241208 Napoli 0-1 Lazio",
+   "20250215 Lazio 2-2 Napoli",
+   "20260104 Lazio 0-2 Napoli",
+   "20260418 Napoli 0-2 Lazio",
+   "20261108 Napoli 1-1 Lazio"
+  ],
+  "Fiorentina vs Inter": [
+   "20240128 Fiorentina 0-1 Inter",
+   "20250206 Fiorentina 3-0 Inter",
+   "20250210 Inter 2-1 Fiorentina",
+   "20251029 Inter 3-0 Fiorentina",
+   "20260322 Fiorentina 1-1 Inter",
+   "20261025 Inter 2-1 Fiorentina"
+  ],
+  "Genoa vs Torino": [
+   "20230903 Torino 1-0 Genoa",
+   "20240113 Genoa 0-0 Torino",
+   "20241207 Genoa 0-0 Torino",
+   "20250208 Torino 1-1 Genoa",
+   "20251026 Torino 2-1 Genoa",
+   "20260222 Genoa 3-0 Torino"
+  ],
+  "Juventus vs Lazio": [
+   "20240330 Lazio 1-0 Juventus",
+   "20241019 Juventus 1-0 Lazio",
+   "20250510 Lazio 1-1 Juventus",
+   "20251026 Lazio 1-0 Juventus",
+   "20260208 Juventus 2-2 Lazio",
+   "20261018 Juventus 0-3 Lazio"
+  ],
+  "AC Milan vs Inter": [
+   "20240422 AC Milan 1-2 Inter",
+   "20240922 Inter 1-2 AC Milan",
+   "20250202 AC Milan 1-1 Inter",
+   "20251123 Inter 0-1 AC Milan",
+   "20260308 AC Milan 1-0 Inter",
+   "20261031 AC Milan 3-1 Inter"
+  ],
+  "Genoa vs Napoli": [
+   "20240217 Napoli 1-1 Genoa",
+   "20241221 Genoa 1-2 Napoli",
+   "20250511 Napoli 2-2 Genoa",
+   "20251005 Napoli 2-1 Genoa",
+   "20260207 Genoa 2-3 Napoli",
+   "20260822 Genoa 0-2 Napoli"
+  ],
+  "Cagliari vs Udinese": [
+   "20240218 Udinese 1-1 Cagliari",
+   "20241025 Udinese 2-0 Cagliari",
+   "20250503 Cagliari 1-2 Udinese",
+   "20251005 Udinese 1-1 Cagliari",
+   "20260509 Cagliari 0-2 Udinese",
+   "20260919 Udinese 0-1 Cagliari"
+  ],
+  "Frosinone vs Sassuolo": [
+   "20230917 Frosinone 4-2 Sassuolo",
+   "20240309 Sassuolo 1-0 Frosinone",
+   "20261016 Frosinone 4-2 Sassuolo"
+  ],
+  "Lecce vs Monza": [
+   "20230917 Monza 1-1 Lecce",
+   "20240427 Lecce 1-1 Monza",
+   "20241215 Lecce 2-1 Monza",
+   "20250216 Monza 0-0 Lecce",
+   "20260913 Lecce 3-2 Monza"
+  ],
+  "Atalanta vs Fiorentina": [
+   "20240602 Atalanta 2-3 Fiorentina",
+   "20240915 Atalanta 3-2 Fiorentina",
+   "20250330 Fiorentina 1-0 Atalanta",
+   "20251130 Atalanta 2-0 Fiorentina",
+   "20260522 Fiorentina 1-1 Atalanta",
+   "20261029 Fiorentina 2-2 Atalanta"
+  ],
+  "Genoa vs Lecce": [
+   "20240128 Genoa 2-1 Lecce",
+   "20250105 Lecce 0-0 Genoa",
+   "20250314 Genoa 2-1 Lecce",
+   "20250823 Genoa 0-0 Lecce",
+   "20260524 Lecce 1-0 Genoa",
+   "20261101 Lecce 1-2 Genoa"
+  ],
+  "Juventus vs Sassuolo": [
+   "20230923 Sassuolo 4-2 Juventus",
+   "20240116 Juventus 3-0 Sassuolo",
+   "20260106 Sassuolo 0-3 Juventus",
+   "20260321 Juventus 1-1 Sassuolo",
+   "20260913 Sassuolo 3-2 Juventus"
+  ],
+  "Lazio vs Monza": [
+   "20230923 Lazio 1-1 Monza",
+   "20240504 Monza 2-2 Lazio",
+   "20241110 Monza 0-1 Lazio",
+   "20250209 Lazio 5-1 Monza",
+   "20261011 Lazio 3-1 Monza"
+  ],
+  "Atalanta vs Cagliari": [
+   "20240407 Cagliari 2-1 Atalanta",
+   "20241214 Cagliari 0-1 Atalanta",
+   "20250215 Atalanta 0-0 Cagliari",
+   "20251213 Atalanta 2-1 Cagliari",
+   "20260427 Cagliari 3-2 Atalanta",
+   "20260912 Atalanta 1-2 Cagliari"
+  ],
+  "Fiorentina vs Udinese": [
+   "20230924 Udinese 0-2 Fiorentina",
+   "20240114 Fiorentina 2-2 Udinese",
+   "20241223 Fiorentina 1-2 Udinese",
+   "20250525 Udinese 2-3 Fiorentina",
+   "20251221 Fiorentina 5-1 Udinese",
+   "20260302 Udinese 3-0 Fiorentina"
+  ],
+  "Bologna vs Napoli": [
+   "20240511 Napoli 0-2 Bologna",
+   "20240825 Napoli 3-0 Bologna",
+   "20250407 Bologna 1-1 Napoli",
+   "20251109 Bologna 2-0 Napoli",
+   "20260511 Napoli 2-3 Bologna",
+   "20260913 Napoli 1-0 Bologna"
+  ],
+  "AS Roma vs Torino": [
+   "20240226 AS Roma 3-2 Torino",
+   "20241031 AS Roma 1-0 Torino",
+   "20250525 Torino 0-2 AS Roma",
+   "20250914 AS Roma 0-1 Torino",
+   "20260118 Torino 0-2 AS Roma",
+   "20260914 Torino 0-2 AS Roma"
+  ],
+  "Juventus vs Lecce": [
+   "20240121 Lecce 0-3 Juventus",
+   "20241201 Lecce 1-1 Juventus",
+   "20250412 Juventus 2-1 Lecce",
+   "20260103 Juventus 1-1 Lecce",
+   "20260509 Lecce 0-1 Juventus",
+   "20261025 Lecce 0-2 Juventus"
+  ],
+  "AC Milan vs Cagliari": [
+   "20230927 Cagliari 1-3 AC Milan",
+   "20240511 AC Milan 5-1 Cagliari",
+   "20241109 Cagliari 3-3 AC Milan",
+   "20250111 AC Milan 1-1 Cagliari",
+   "20260102 Cagliari 0-1 AC Milan",
+   "20260524 AC Milan 1-2 Cagliari"
+  ],
+  "Inter vs Sassuolo": [
+   "20230927 Inter 1-2 Sassuolo",
+   "20240504 Sassuolo 1-0 Inter",
+   "20250921 Inter 2-1 Sassuolo",
+   "20260208 Sassuolo 0-5 Inter"
+  ],
+  "Lazio vs Torino": [
+   "20230927 Lazio 2-0 Torino",
+   "20240222 Torino 0-2 Lazio",
+   "20240929 Torino 2-3 Lazio",
+   "20250331 Lazio 1-1 Torino",
+   "20251004 Lazio 3-3 Torino",
+   "20260301 Torino 2-0 Lazio"
+  ],
+  "Napoli vs Udinese": [
+   "20230927 Napoli 4-1 Udinese",
+   "20240506 Udinese 1-1 Napoli",
+   "20241214 Udinese 1-3 Napoli",
+   "20250209 Napoli 1-1 Udinese",
+   "20251214 Udinese 1-0 Napoli",
+   "20260524 Napoli 1-0 Udinese"
+  ],
+  "Fiorentina vs Frosinone": [
+   "20230928 Frosinone 1-1 Fiorentina",
+   "20240211 Fiorentina 5-1 Frosinone",
+   "20260829 Fiorentina 0-3 Frosinone"
+  ],
+  "Bologna vs Monza": [
+   "20230928 Monza 0-0 Bologna",
+   "20240413 Bologna 0-0 Monza",
+   "20240922 Monza 1-2 Bologna",
+   "20250118 Bologna 3-1 Monza",
+   "20261031 Bologna 2-1 Monza"
+  ],
+  "AS Roma vs Genoa": [
+   "20240519 AS Roma 1-0 Genoa",
+   "20240915 Genoa 1-1 AS Roma",
+   "20250117 AS Roma 3-1 Genoa",
+   "20251229 AS Roma 3-1 Genoa",
+   "20260308 Genoa 2-1 AS Roma",
+   "20261017 AS Roma 2-0 Genoa"
+  ],
+  "Lecce vs Napoli": [
+   "20230930 Lecce 0-4 Napoli",
+   "20240526 Napoli 0-0 Lecce",
+   "20241026 Napoli 1-0 Lecce",
+   "20250503 Lecce 0-1 Napoli",
+   "20251028 Lecce 0-1 Napoli",
+   "20260314 Napoli 2-1 Lecce"
+  ],
+  "AC Milan vs Lazio": [
+   "20240301 Lazio 0-1 AC Milan",
+   "20240831 Lazio 2-2 AC Milan",
+   "20250302 AC Milan 1-2 Lazio",
+   "20251129 AC Milan 1-0 Lazio",
+   "20260315 Lazio 1-0 AC Milan",
+   "20260912 Lazio 2-2 AC Milan"
+  ],
+  "Genoa vs Udinese": [
+   "20231001 Udinese 2-2 Genoa",
+   "20240224 Genoa 2-0 Udinese",
+   "20241201 Udinese 0-2 Genoa",
+   "20250404 Genoa 1-0 Udinese",
+   "20251208 Udinese 1-2 Genoa",
+   "20260320 Genoa 0-2 Udinese"
+  ],
+  "Atalanta vs Juventus": [
+   "20240310 Juventus 2-2 Atalanta",
+   "20250114 Atalanta 1-1 Juventus",
+   "20250309 Juventus 0-4 Atalanta",
+   "20250927 Juventus 1-1 Atalanta",
+   "20260411 Atalanta 0-1 Juventus",
+   "20260920 Juventus 2-0 Atalanta"
+  ],
+  "AS Roma vs Frosinone": [
+   "20231001 AS Roma 2-0 Frosinone",
+   "20240218 Frosinone 0-3 AS Roma"
+  ],
+  "Monza vs Sassuolo": [
+   "20231002 Sassuolo 0-1 Monza",
+   "20240128 Monza 1-0 Sassuolo",
+   "20260918 Monza 2-1 Sassuolo"
+  ],
+  "Cagliari vs Fiorentina": [
+   "20231002 Fiorentina 3-0 Cagliari",
+   "20240523 Cagliari 2-3 Fiorentina",
+   "20241208 Fiorentina 1-0 Cagliari",
+   "20250423 Cagliari 1-2 Fiorentina",
+   "20250824 Cagliari 1-1 Fiorentina",
+   "20260124 Fiorentina 1-2 Cagliari"
+  ],
+  "Lecce vs Sassuolo": [
+   "20231006 Lecce 1-1 Sassuolo",
+   "20240421 Sassuolo 0-3 Lecce",
+   "20251018 Lecce 0-0 Sassuolo",
+   "20260517 Sassuolo 2-3 Lecce"
+  ],
+  "Bologna vs Inter": [
+   "20240309 Bologna 0-1 Inter",
+   "20250115 Inter 2-2 Bologna",
+   "20250420 Bologna 1-0 Inter",
+   "20260104 Inter 3-1 Bologna",
+   "20260523 Bologna 3-3 Inter",
+   "20261017 Bologna 1-3 Inter"
+  ],
+  "Juventus vs Torino": [
+   "20231007 Juventus 2-0 Torino",
+   "20240413 Torino 0-0 Juventus",
+   "20241109 Juventus 2-0 Torino",
+   "20250111 Torino 1-1 Juventus",
+   "20251108 Juventus 0-0 Torino",
+   "20260524 Torino 2-2 Juventus"
+  ],
+  "AC Milan vs Genoa": [
+   "20240505 AC Milan 3-3 Genoa",
+   "20241215 AC Milan 0-0 Genoa",
+   "20250505 Genoa 1-2 AC Milan",
+   "20260108 AC Milan 1-1 Genoa",
+   "20260517 Genoa 1-2 AC Milan",
+   "20261108 Genoa 1-2 AC Milan"
+  ],
+  "Atalanta vs Lazio": [
+   "20231008 Lazio 3-2 Atalanta",
+   "20240204 Atalanta 3-1 Lazio",
+   "20241228 Lazio 1-1 Atalanta",
+   "20250406 Atalanta 0-1 Lazio",
+   "20251019 Atalanta 0-0 Lazio",
+   "20260214 Lazio 0-2 Atalanta"
+  ],
+  "AS Roma vs Cagliari": [
+   "20240205 AS Roma 4-0 Cagliari",
+   "20240818 Cagliari 0-0 AS Roma",
+   "20250316 AS Roma 1-0 Cagliari",
+   "20251207 Cagliari 1-0 AS Roma",
+   "20260209 AS Roma 2-0 Cagliari",
+   "20261027 AS Roma 4-2 Cagliari"
+  ],
+  "Fiorentina vs Napoli": [
+   "20240517 Fiorentina 2-2 Napoli",
+   "20250104 Fiorentina 0-3 Napoli",
+   "20250309 Napoli 2-1 Fiorentina",
+   "20250913 Fiorentina 1-3 Napoli",
+   "20260131 Napoli 2-1 Fiorentina",
+   "20260920 Fiorentina 1-1 Napoli"
+  ],
+  "Inter vs Torino": [
+   "20231021 Torino 0-3 Inter",
+   "20240428 Inter 2-0 Torino",
+   "20241005 Inter 3-2 Torino",
+   "20250511 Torino 0-2 Inter",
+   "20250825 Inter 5-0 Torino",
+   "20260426 Torino 2-2 Inter"
+  ],
+  "Lazio vs Sassuolo": [
+   "20231021 Sassuolo 0-2 Lazio",
+   "20240526 Lazio 1-1 Sassuolo",
+   "20250914 Sassuolo 1-0 Lazio",
+   "20260309 Lazio 2-1 Sassuolo",
+   "20261027 Sassuolo 2-6 Lazio"
+  ],
+  "AS Roma vs Monza": [
+   "20231022 AS Roma 1-0 Monza",
+   "20240302 Monza 1-4 AS Roma",
+   "20241006 Monza 1-1 AS Roma",
+   "20250224 AS Roma 4-0 Monza"
+  ],
+  "Bologna vs Frosinone": [
+   "20231022 Bologna 2-1 Frosinone",
+   "20240407 Frosinone 0-0 Bologna"
+  ],
+  "Atalanta vs Genoa": [
+   "20231022 Atalanta 2-0 Genoa",
+   "20240211 Genoa 1-4 Atalanta",
+   "20241005 Atalanta 5-1 Genoa",
+   "20250517 Genoa 2-3 Atalanta",
+   "20251221 Genoa 0-1 Atalanta",
+   "20260502 Atalanta 0-0 Genoa"
+  ],
+  "AC Milan vs Juventus": [
+   "20240427 Juventus 0-0 AC Milan",
+   "20241123 AC Milan 0-0 Juventus",
+   "20250118 Juventus 2-0 AC Milan",
+   "20251005 Juventus 0-0 AC Milan",
+   "20260426 AC Milan 0-0 Juventus",
+   "20260906 Juventus 1-1 AC Milan"
+  ],
+  "Lecce vs Udinese": [
+   "20240513 Lecce 0-2 Udinese",
+   "20241005 Udinese 1-0 Lecce",
+   "20250221 Lecce 0-1 Udinese",
+   "20251025 Udinese 3-2 Lecce",
+   "20260208 Lecce 2-1 Udinese",
+   "20261018 Udinese 0-3 Lecce"
+  ],
+  "Bologna vs Sassuolo": [
+   "20231028 Sassuolo 1-1 Bologna",
+   "20240203 Bologna 4-2 Sassuolo",
+   "20251228 Bologna 1-1 Sassuolo",
+   "20260315 Sassuolo 0-1 Bologna",
+   "20260906 Bologna 2-2 Sassuolo"
+  ],
+  "Lecce vs Torino": [
+   "20240216 Torino 2-0 Lecce",
+   "20240915 Torino 0-0 Lecce",
+   "20250518 Lecce 1-0 Torino",
+   "20251130 Lecce 2-1 Torino",
+   "20260201 Torino 1-0 Lecce",
+   "20261107 Torino 1-1 Lecce"
+  ],
+  "Cagliari vs Frosinone": [
+   "20231029 Cagliari 4-3 Frosinone",
+   "20240121 Frosinone 3-1 Cagliari",
+   "20261107 Cagliari 1-0 Frosinone"
+  ],
+  "Monza vs Udinese": [
+   "20231029 Monza 1-1 Udinese",
+   "20240203 Udinese 0-0 Monza",
+   "20241209 Monza 1-2 Udinese",
+   "20250511 Udinese 1-2 Monza",
+   "20260829 Monza 2-3 Udinese"
+  ],
+  "AS Roma vs Inter": [
+   "20240210 AS Roma 2-4 Inter",
+   "20241020 AS Roma 0-1 Inter",
+   "20250427 Inter 0-1 AS Roma",
+   "20251018 AS Roma 0-1 Inter",
+   "20260405 Inter 5-2 AS Roma",
+   "20260919 AS Roma 2-2 Inter"
+  ],
+  "AC Milan vs Napoli": [
+   "20231029 Napoli 2-2 AC Milan",
+   "20240211 AC Milan 1-0 Napoli",
+   "20241029 AC Milan 0-2 Napoli",
+   "20250330 Napoli 2-1 AC Milan",
+   "20250928 AC Milan 2-1 Napoli",
+   "20260406 Napoli 1-0 AC Milan"
+  ],
+  "Fiorentina vs Lazio": [
+   "20231030 Lazio 1-0 Fiorentina",
+   "20240226 Fiorentina 2-1 Lazio",
+   "20240922 Fiorentina 2-1 Lazio",
+   "20250126 Lazio 1-2 Fiorentina",
+   "20260107 Lazio 2-2 Fiorentina",
+   "20260413 Fiorentina 1-0 Lazio"
+  ],
+  "Bologna vs Lazio": [
+   "20240218 Lazio 1-2 Bologna",
+   "20241124 Lazio 3-0 Bologna",
+   "20250316 Bologna 5-0 Lazio",
+   "20251207 Lazio 1-1 Bologna",
+   "20260322 Bologna 0-2 Lazio",
+   "20260824 Bologna 0-1 Lazio"
+  ],
+  "Atalanta vs Inter": [
+   "20231104 Atalanta 1-2 Inter",
+   "20240228 Inter 4-0 Atalanta",
+   "20240830 Inter 4-0 Atalanta",
+   "20250316 Atalanta 0-2 Inter",
+   "20251228 Atalanta 0-1 Inter",
+   "20260314 Inter 1-1 Atalanta"
+  ],
+  "AC Milan vs Udinese": [
+   "20240120 Udinese 2-3 AC Milan",
+   "20241019 AC Milan 1-0 Udinese",
+   "20250411 Udinese 0-4 AC Milan",
+   "20250920 Udinese 0-3 AC Milan",
+   "20260411 AC Milan 0-3 Udinese",
+   "20261025 Udinese 0-2 AC Milan"
+  ],
+  "Cagliari vs Genoa": [
+   "20231105 Cagliari 2-1 Genoa",
+   "20240429 Genoa 3-0 Cagliari",
+   "20241124 Genoa 2-2 Cagliari",
+   "20250307 Cagliari 1-1 Genoa",
+   "20251122 Cagliari 3-3 Genoa",
+   "20260112 Genoa 3-0 Cagliari"
+  ],
+  "AS Roma vs Lecce": [
+   "20240401 Lecce 0-0 AS Roma",
+   "20241207 AS Roma 4-1 Lecce",
+   "20250329 Lecce 0-1 AS Roma",
+   "20260106 Lecce 0-2 AS Roma",
+   "20260322 AS Roma 1-0 Lecce",
+   "20260831 Lecce 0-4 AS Roma"
+  ],
+  "Fiorentina vs Juventus": [
+   "20240407 Juventus 1-0 Fiorentina",
+   "20241229 Juventus 2-2 Fiorentina",
+   "20250316 Fiorentina 3-0 Juventus",
+   "20251122 Fiorentina 1-1 Juventus",
+   "20260517 Juventus 0-2 Fiorentina",
+   "20261108 Fiorentina 2-2 Juventus"
+  ],
+  "Sassuolo vs Torino": [
+   "20231106 Torino 2-1 Sassuolo",
+   "20240210 Sassuolo 1-1 Torino",
+   "20251221 Sassuolo 0-1 Torino",
+   "20260508 Torino 2-1 Sassuolo",
+   "20260829 Sassuolo 2-1 Torino"
+  ],
+  "AC Milan vs Lecce": [
+   "20240406 AC Milan 3-0 Lecce",
+   "20240927 AC Milan 3-0 Lecce",
+   "20250308 Lecce 2-3 AC Milan",
+   "20250829 Lecce 0-2 AC Milan",
+   "20260118 AC Milan 1-0 Lecce",
+   "20260920 AC Milan 3-0 Lecce"
+  ],
+  "Cagliari vs Juventus": [
+   "20240419 Cagliari 2-2 Juventus",
+   "20241006 Juventus 1-1 Cagliari",
+   "20250223 Cagliari 0-1 Juventus",
+   "20251129 Juventus 2-1 Cagliari",
+   "20260117 Cagliari 1-0 Juventus",
+   "20261011 Cagliari 1-1 Juventus"
+  ],
+  "Monza vs Torino": [
+   "20231111 Monza 1-1 Torino",
+   "20240330 Torino 1-0 Monza",
+   "20241124 Torino 1-1 Monza",
+   "20250302 Monza 0-2 Torino",
+   "20261023 Torino 3-2 Monza"
+  ],
+  "Bologna vs Fiorentina": [
+   "20231112 Fiorentina 2-1 Bologna",
+   "20240214 Bologna 2-0 Fiorentina",
+   "20241215 Bologna 1-0 Fiorentina",
+   "20250518 Fiorentina 3-2 Bologna",
+   "20251026 Fiorentina 2-2 Bologna",
+   "20260118 Bologna 1-2 Fiorentina"
+  ],
+  "Atalanta vs Udinese": [
+   "20231112 Udinese 1-1 Atalanta",
+   "20240127 Atalanta 2-0 Udinese",
+   "20241110 Atalanta 2-1 Udinese",
+   "20250111 Udinese 0-0 Atalanta",
+   "20251101 Udinese 1-0 Atalanta",
+   "20260307 Atalanta 2-2 Udinese"
+  ],
+  "AS Roma vs Lazio": [
+   "20231112 Lazio 0-0 AS Roma",
+   "20240406 AS Roma 1-0 Lazio",
+   "20250105 AS Roma 2-0 Lazio",
+   "20250413 Lazio 1-1 AS Roma",
+   "20250921 Lazio 0-1 AS Roma",
+   "20260517 AS Roma 2-0 Lazio"
+  ],
+  "Frosinone vs Inter": [
+   "20231112 Inter 2-0 Frosinone",
+   "20240510 Frosinone 0-5 Inter"
+  ],
+  "Atalanta vs Napoli": [
+   "20231125 Atalanta 1-2 Napoli",
+   "20240330 Napoli 0-3 Atalanta",
+   "20241103 Napoli 0-3 Atalanta",
+   "20250118 Atalanta 2-3 Napoli",
+   "20251122 Napoli 3-1 Atalanta",
+   "20260222 Atalanta 2-1 Napoli"
+  ],
+  "AC Milan vs Fiorentina": [
+   "20231125 AC Milan 1-0 Fiorentina",
+   "20240330 Fiorentina 1-2 AC Milan",
+   "20241006 Fiorentina 2-1 AC Milan",
+   "20250405 AC Milan 2-2 Fiorentina",
+   "20251019 AC Milan 2-1 Fiorentina",
+   "20260111 Fiorentina 1-1 AC Milan"
+  ],
+  "Cagliari vs Monza": [
+   "20231126 Cagliari 1-1 Monza",
+   "20240316 Monza 1-0 Cagliari",
+   "20250105 Monza 1-2 Cagliari",
+   "20250330 Cagliari 3-0 Monza",
+   "20261019 Monza 4-0 Cagliari"
+  ],
+  "Frosinone vs Genoa": [
+   "20231126 Frosinone 2-1 Genoa",
+   "20240330 Genoa 1-1 Frosinone",
+   "20260912 Genoa 1-1 Frosinone"
+  ],
+  "AS Roma vs Udinese": [
+   "20240425 Udinese 1-2 AS Roma",
+   "20240922 AS Roma 3-0 Udinese",
+   "20250126 Udinese 1-2 AS Roma",
+   "20251109 AS Roma 2-0 Udinese",
+   "20260202 Udinese 1-0 AS Roma",
+   "20261031 Udinese 2-5 AS Roma"
+  ],
+  "Inter vs Juventus": [
+   "20231126 Juventus 1-1 Inter",
+   "20240204 Inter 1-0 Juventus",
+   "20241027 Inter 4-4 Juventus",
+   "20250216 Juventus 1-0 Inter",
+   "20250913 Juventus 4-3 Inter",
+   "20260214 Inter 3-2 Juventus"
+  ],
+  "Bologna vs Torino": [
+   "20240503 Torino 0-0 Bologna",
+   "20241221 Torino 0-2 Bologna",
+   "20250214 Bologna 3-2 Torino",
+   "20251029 Bologna 0-0 Torino",
+   "20260215 Torino 1-2 Bologna",
+   "20260919 Bologna 1-1 Torino"
+  ],
+  "Juventus vs Monza": [
+   "20231201 Monza 1-2 Juventus",
+   "20240525 Juventus 2-0 Monza",
+   "20241222 Monza 1-2 Juventus",
+   "20250427 Juventus 2-0 Monza"
+  ],
+  "Cagliari vs Lazio": [
+   "20240210 Cagliari 1-3 Lazio",
+   "20241104 Lazio 2-1 Cagliari",
+   "20250203 Cagliari 1-2 Lazio",
+   "20251103 Lazio 2-0 Cagliari",
+   "20260221 Cagliari 0-0 Lazio",
+   "20261101 Lazio 2-1 Cagliari"
+  ],
+  "AC Milan vs Frosinone": [
+   "20231202 AC Milan 3-1 Frosinone",
+   "20240203 Frosinone 2-3 AC Milan"
+  ],
+  "Bologna vs Lecce": [
+   "20240211 Bologna 4-0 Lecce",
+   "20241102 Bologna 1-0 Lecce",
+   "20250209 Lecce 0-0 Bologna",
+   "20250928 Lecce 2-2 Bologna",
+   "20260412 Bologna 2-0 Lecce",
+   "20261011 Lecce 1-2 Bologna"
+  ],
+  "AS Roma vs Sassuolo": [
+   "20231203 Sassuolo 1-2 AS Roma",
+   "20240317 AS Roma 1-0 Sassuolo",
+   "20251026 Sassuolo 0-1 AS Roma",
+   "20260110 AS Roma 2-0 Sassuolo",
+   "20261107 AS Roma 3-0 Sassuolo"
+  ],
+  "Inter vs Napoli": [
+   "20240317 Inter 1-1 Napoli",
+   "20241110 Inter 1-1 Napoli",
+   "20250301 Napoli 1-1 Inter",
+   "20251025 Napoli 3-1 Inter",
+   "20260111 Inter 2-2 Napoli",
+   "20260905 Inter 3-2 Napoli"
+  ],
+  "Atalanta vs Torino": [
+   "20231204 Torino 3-0 Atalanta",
+   "20240526 Atalanta 3-0 Torino",
+   "20240825 Torino 2-1 Atalanta",
+   "20250201 Atalanta 1-1 Torino",
+   "20250921 Torino 0-3 Atalanta",
+   "20260110 Atalanta 2-0 Torino"
+  ],
+  "Juventus vs Napoli": [
+   "20240303 Napoli 2-1 Juventus",
+   "20240921 Juventus 0-0 Napoli",
+   "20250125 Napoli 2-1 Juventus",
+   "20251207 Napoli 2-1 Juventus",
+   "20260125 Juventus 3-0 Napoli",
+   "20261101 Juventus 2-0 Napoli"
+  ],
+  "AC Milan vs Atalanta": [
+   "20240225 AC Milan 1-1 Atalanta",
+   "20241206 Atalanta 2-1 AC Milan",
+   "20250420 AC Milan 0-1 Atalanta",
+   "20251028 Atalanta 1-1 AC Milan",
+   "20260510 AC Milan 2-3 Atalanta",
+   "20261018 AC Milan 3-2 Atalanta"
+  ],
+  "Inter vs Udinese": [
+   "20240408 Udinese 1-2 Inter",
+   "20240928 Udinese 2-3 Inter",
+   "20250330 Inter 2-1 Udinese",
+   "20250831 Inter 1-2 Udinese",
+   "20260117 Udinese 0-1 Inter",
+   "20260914 Inter 5-3 Udinese"
+  ],
+  "Frosinone vs Torino": [
+   "20231210 Frosinone 0-0 Torino",
+   "20240421 Torino 0-0 Frosinone",
+   "20261101 Frosinone 2-0 Torino"
+  ],
+  "Genoa vs Monza": [
+   "20231210 Monza 1-0 Genoa",
+   "20240309 Genoa 2-3 Monza",
+   "20240824 Monza 0-1 Genoa",
+   "20250127 Genoa 2-0 Monza"
+  ],
+  "AS Roma vs Fiorentina": [
+   "20240310 Fiorentina 2-2 AS Roma",
+   "20241027 Fiorentina 5-1 AS Roma",
+   "20250504 AS Roma 1-0 Fiorentina",
+   "20251005 Fiorentina 1-2 AS Roma",
+   "20260504 AS Roma 4-0 Fiorentina",
+   "20260824 AS Roma 4-0 Fiorentina"
+  ],
+  "Cagliari vs Sassuolo": [
+   "20231211 Cagliari 2-1 Sassuolo",
+   "20240519 Sassuolo 0-2 Cagliari",
+   "20251030 Cagliari 1-2 Sassuolo",
+   "20260404 Sassuolo 2-1 Cagliari"
+  ],
+  "Genoa vs Juventus": [
+   "20240317 Juventus 0-0 Genoa",
+   "20240928 Genoa 0-3 Juventus",
+   "20250329 Juventus 1-0 Genoa",
+   "20250831 Genoa 0-1 Juventus",
+   "20260406 Juventus 2-0 Genoa",
+   "20261028 Genoa 2-0 Juventus"
+  ],
+  "Frosinone vs Lecce": [
+   "20231216 Lecce 2-1 Frosinone",
+   "20240303 Frosinone 1-1 Lecce",
+   "20261029 Frosinone 5-1 Lecce"
+  ],
+  "Cagliari vs Napoli": [
+   "20231216 Napoli 2-1 Cagliari",
+   "20240225 Cagliari 1-1 Napoli",
+   "20240915 Cagliari 0-4 Napoli",
+   "20250523 Napoli 2-0 Cagliari",
+   "20250830 Napoli 1-0 Cagliari",
+   "20260320 Cagliari 0-1 Napoli"
+  ],
+  "AC Milan vs Monza": [
+   "20231217 AC Milan 3-0 Monza",
+   "20240218 Monza 4-2 AC Milan",
+   "20241102 Monza 0-1 AC Milan",
+   "20250524 AC Milan 2-0 Monza"
+  ],
+  "Sassuolo vs Udinese": [
+   "20231217 Udinese 2-2 Sassuolo",
+   "20240401 Sassuolo 1-1 Udinese",
+   "20250928 Sassuolo 3-1 Udinese",
+   "20260215 Udinese 1-2 Sassuolo"
+  ],
+  "AS Roma vs Bologna": [
+   "20231217 Bologna 2-0 AS Roma",
+   "20240422 AS Roma 1-3 Bologna",
+   "20241110 AS Roma 2-3 Bologna",
+   "20250112 Bologna 2-2 AS Roma",
+   "20250823 AS Roma 1-0 Bologna",
+   "20260425 Bologna 0-2 AS Roma"
+  ],
+  "Inter vs Lazio": [
+   "20231217 Lazio 0-2 Inter",
+   "20240519 Inter 1-1 Lazio",
+   "20241216 Lazio 0-6 Inter",
+   "20250518 Inter 2-2 Lazio",
+   "20251109 Inter 2-0 Lazio",
+   "20260509 Lazio 0-3 Inter"
+  ],
+  "Genoa vs Sassuolo": [
+   "20231222 Sassuolo 1-2 Genoa",
+   "20240512 Genoa 2-1 Sassuolo",
+   "20251103 Sassuolo 1-2 Genoa",
+   "20260412 Genoa 2-1 Sassuolo"
+  ],
+  "Fiorentina vs Monza": [
+   "20231222 Monza 0-1 Fiorentina",
+   "20240513 Fiorentina 2-1 Monza",
+   "20240901 Fiorentina 2-2 Monza",
+   "20250113 Monza 2-1 Fiorentina"
+  ],
+  "Frosinone vs Juventus": [
+   "20231223 Frosinone 1-2 Juventus",
+   "20240225 Juventus 3-2 Frosinone",
+   "20260823 Frosinone 0-1 Juventus"
+  ],
+  "Atalanta vs Bologna": [
+   "20240303 Atalanta 1-2 Bologna",
+   "20240928 Bologna 1-1 Atalanta",
+   "20250413 Atalanta 2-0 Bologna",
+   "20260107 Bologna 0-2 Atalanta",
+   "20260517 Atalanta 0-1 Bologna",
+   "20260831 Atalanta 1-0 Bologna"
+  ],
+  "Torino vs Udinese": [
+   "20240316 Udinese 0-2 Torino",
+   "20241229 Udinese 2-2 Torino",
+   "20250423 Torino 2-0 Udinese",
+   "20260107 Torino 1-2 Udinese",
+   "20260502 Udinese 2-0 Torino",
+   "20261012 Torino 2-1 Udinese"
+  ],
+  "Inter vs Lecce": [
+   "20231223 Inter 2-0 Lecce",
+   "20240225 Lecce 0-4 Inter",
+   "20240824 Inter 2-0 Lecce",
+   "20250126 Lecce 0-4 Inter",
+   "20260114 Inter 1-0 Lecce",
+   "20260221 Lecce 0-2 Inter"
+  ],
+  "AS Roma vs Napoli": [
+   "20240428 Napoli 2-2 AS Roma",
+   "20241124 Napoli 1-0 AS Roma",
+   "20250202 AS Roma 1-1 Napoli",
+   "20251130 AS Roma 0-1 Napoli",
+   "20260215 Napoli 2-2 AS Roma",
+   "20261024 Napoli 3-3 AS Roma"
+  ],
+  "Fiorentina vs Torino": [
+   "20240302 Torino 0-0 Fiorentina",
+   "20241103 Torino 0-1 Fiorentina",
+   "20250119 Fiorentina 1-1 Torino",
+   "20250831 Torino 0-0 Fiorentina",
+   "20260207 Fiorentina 2-2 Torino",
+   "20260905 Fiorentina 1-2 Torino"
+  ],
+  "Monza vs Napoli": [
+   "20231229 Napoli 0-0 Monza",
+   "20240407 Monza 2-4 Napoli",
+   "20240929 Napoli 2-0 Monza",
+   "20250419 Monza 0-1 Napoli",
+   "20261028 Monza 1-4 Napoli"
+  ],
+  "Genoa vs Inter": [
+   "20231229 Genoa 1-1 Inter",
+   "20240304 Inter 2-1 Genoa",
+   "20240817 Genoa 2-2 Inter",
+   "20250222 Inter 1-0 Genoa",
+   "20251214 Genoa 1-2 Inter",
+   "20260228 Inter 2-0 Genoa"
+  ],
+  "Frosinone vs Lazio": [
+   "20231229 Lazio 3-1 Frosinone",
+   "20240316 Frosinone 2-3 Lazio"
+  ],
+  "Atalanta vs Lecce": [
+   "20231230 Atalanta 1-0 Lecce",
+   "20240518 Lecce 0-2 Atalanta",
+   "20240819 Lecce 0-4 Atalanta",
+   "20250427 Atalanta 1-1 Lecce",
+   "20250914 Atalanta 4-1 Lecce",
+   "20260406 Lecce 0-3 Atalanta"
+  ],
+  "Bologna vs Udinese": [
+   "20231230 Udinese 3-0 Bologna",
+   "20240428 Bologna 1-1 Udinese",
+   "20240818 Bologna 1-1 Udinese",
+   "20250428 Udinese 0-0 Bologna",
+   "20251122 Udinese 0-3 Bologna",
+   "20260223 Bologna 1-0 Udinese"
+  ],
+  "AC Milan vs Sassuolo": [
+   "20231230 AC Milan 1-0 Sassuolo",
+   "20240414 Sassuolo 3-3 AC Milan",
+   "20251214 AC Milan 2-2 Sassuolo",
+   "20260503 Sassuolo 2-0 AC Milan",
+   "20261011 Sassuolo 1-1 AC Milan"
+  ],
+  "AS Roma vs Juventus": [
+   "20231230 Juventus 1-0 AS Roma",
+   "20240505 AS Roma 1-1 Juventus",
+   "20240901 Juventus 0-0 AS Roma",
+   "20250406 AS Roma 1-1 Juventus",
+   "20251220 Juventus 2-1 AS Roma",
+   "20260301 AS Roma 3-3 Juventus"
+  ],
+  "Bologna vs Genoa": [
+   "20240105 Bologna 1-1 Genoa",
+   "20240524 Genoa 2-0 Bologna",
+   "20241019 Genoa 2-2 Bologna",
+   "20250524 Bologna 1-3 Genoa",
+   "20250920 Bologna 2-1 Genoa",
+   "20260125 Genoa 3-2 Bologna"
+  ],
+  "Frosinone vs Monza": [
+   "20240106 Frosinone 2-3 Monza",
+   "20240519 Monza 0-1 Frosinone"
+  ],
+  "Cagliari vs Lecce": [
+   "20240505 Cagliari 1-1 Lecce",
+   "20240831 Lecce 1-0 Cagliari",
+   "20250119 Cagliari 4-1 Lecce",
+   "20250919 Lecce 1-2 Cagliari",
+   "20260216 Cagliari 0-2 Lecce",
+   "20260907 Cagliari 1-0 Lecce"
+  ],
+  "Fiorentina vs Sassuolo": [
+   "20240106 Sassuolo 1-0 Fiorentina",
+   "20240428 Fiorentina 5-1 Sassuolo",
+   "20251206 Sassuolo 3-1 Fiorentina",
+   "20260426 Fiorentina 0-0 Sassuolo",
+   "20261102 Sassuolo 2-4 Fiorentina"
+  ],
+  "Napoli vs Torino": [
+   "20240308 Napoli 1-1 Torino",
+   "20241201 Torino 0-1 Napoli",
+   "20250427 Napoli 2-0 Torino",
+   "20251018 Torino 1-0 Napoli",
+   "20260306 Napoli 2-1 Torino",
+   "20261121 Napoli 1-0 Torino"
+  ],
+  "Lazio vs Udinese": [
+   "20240311 Lazio 1-2 Udinese",
+   "20240824 Udinese 2-1 Lazio",
+   "20250310 Lazio 1-1 Udinese",
+   "20251227 Udinese 1-1 Lazio",
+   "20260427 Lazio 3-3 Udinese",
+   "20260907 Udinese 1-2 Lazio"
+  ],
+  "AS Roma vs Atalanta": [
+   "20240512 Atalanta 2-1 AS Roma",
+   "20241202 AS Roma 0-2 Atalanta",
+   "20250512 Atalanta 2-1 AS Roma",
+   "20260103 Atalanta 1-0 AS Roma",
+   "20260418 AS Roma 1-1 Atalanta",
+   "20260905 AS Roma 2-1 Atalanta"
+  ],
+  "Fiorentina vs Parma": [
+   "20240817 Parma 1-1 Fiorentina",
+   "20250413 Fiorentina 0-0 Parma",
+   "20251227 Parma 1-0 Fiorentina",
+   "20260308 Fiorentina 0-0 Parma"
+  ],
+  "Lazio vs Venezia": [
+   "20240818 Lazio 3-1 Venezia",
+   "20250222 Venezia 0-0 Lazio",
+   "20260919 Venezia 0-2 Lazio"
+  ],
+  "Como vs Juventus": [
+   "20240819 Juventus 3-0 Como",
+   "20250207 Como 1-2 Juventus",
+   "20251019 Como 2-0 Juventus",
+   "20260221 Juventus 0-2 Como"
+  ],
+  "AC Milan vs Parma": [
+   "20240824 Parma 2-1 AC Milan",
+   "20250126 AC Milan 3-2 Parma",
+   "20251108 Parma 2-2 AC Milan",
+   "20260222 AC Milan 0-1 Parma"
+  ],
+  "Fiorentina vs Venezia": [
+   "20240825 Fiorentina 0-0 Venezia",
+   "20250512 Venezia 2-1 Fiorentina",
+   "20260911 Venezia 2-4 Fiorentina"
+  ],
+  "Cagliari vs Como": [
+   "20240826 Cagliari 1-1 Como",
+   "20250510 Como 3-1 Cagliari",
+   "20251108 Como 0-0 Cagliari",
+   "20260307 Cagliari 1-2 Como",
+   "20261121 Como 2-0 Cagliari"
+  ],
+  "Torino vs Venezia": [
+   "20240830 Venezia 0-1 Torino",
+   "20250502 Torino 1-1 Venezia"
+  ],
+  "Napoli vs Parma": [
+   "20240831 Napoli 2-1 Parma",
+   "20250518 Parma 0-0 Napoli",
+   "20260114 Napoli 0-0 Parma",
+   "20260412 Parma 1-1 Napoli"
+  ],
+  "Como vs Udinese": [
+   "20240901 Udinese 1-0 Como",
+   "20250120 Como 4-1 Udinese",
+   "20260103 Como 1-0 Udinese",
+   "20260406 Udinese 0-0 Como",
+   "20260822 Udinese 1-1 Como"
+  ],
+  "Bologna vs Como": [
+   "20240914 Como 2-2 Bologna",
+   "20250201 Bologna 2-0 Como",
+   "20250830 Bologna 1-0 Como",
+   "20260110 Como 1-1 Bologna"
+  ],
+  "AC Milan vs Venezia": [
+   "20240914 AC Milan 4-0 Venezia",
+   "20250427 Venezia 0-2 AC Milan",
+   "20260828 AC Milan 2-0 Venezia"
+  ],
+  "Parma vs Udinese": [
+   "20240916 Parma 2-3 Udinese",
+   "20250301 Udinese 1-0 Parma",
+   "20251129 Parma 0-2 Udinese",
+   "20260418 Udinese 0-1 Parma",
+   "20261028 Parma 0-0 Udinese"
+  ],
+  "Genoa vs Venezia": [
+   "20240921 Venezia 2-0 Genoa",
+   "20250217 Genoa 2-0 Venezia",
+   "20261025 Genoa 1-0 Venezia"
+  ],
+  "Lecce vs Parma": [
+   "20240921 Lecce 2-2 Parma",
+   "20250131 Parma 1-3 Lecce",
+   "20251004 Parma 0-1 Lecce",
+   "20260111 Lecce 1-2 Parma"
+  ],
+  "Atalanta vs Como": [
+   "20240924 Atalanta 2-3 Como",
+   "20250125 Como 1-2 Atalanta",
+   "20251004 Atalanta 1-1 Como",
+   "20260201 Como 0-0 Atalanta"
+  ],
+  "AS Roma vs Venezia": [
+   "20240929 AS Roma 2-1 Venezia",
+   "20250209 Venezia 0-1 AS Roma"
+  ],
+  "Cagliari vs Parma": [
+   "20240930 Parma 2-3 Cagliari",
+   "20250209 Cagliari 2-1 Parma",
+   "20250913 Cagliari 2-0 Parma",
+   "20260227 Parma 1-1 Cagliari",
+   "20260822 Parma 0-1 Cagliari"
+  ],
+  "Como vs Napoli": [
+   "20241004 Napoli 3-1 Como",
+   "20250223 Como 2-1 Napoli",
+   "20251101 Napoli 0-0 Como",
+   "20260502 Como 0-0 Napoli",
+   "20260830 Napoli 1-2 Como"
+  ],
+  "Bologna vs Parma": [
+   "20241006 Bologna 0-0 Parma",
+   "20250222 Parma 2-0 Bologna",
+   "20251102 Parma 1-3 Bologna",
+   "20260208 Bologna 0-1 Parma",
+   "20261107 Parma 1-2 Bologna"
+  ],
+  "Como vs Parma": [
+   "20241019 Como 1-1 Parma",
+   "20250503 Parma 0-1 Como",
+   "20251025 Parma 0-0 Como",
+   "20260517 Como 1-0 Parma",
+   "20260914 Como 2-1 Parma"
+  ],
+  "Atalanta vs Venezia": [
+   "20241020 Venezia 0-2 Atalanta",
+   "20250301 Atalanta 0-0 Venezia",
+   "20261012 Atalanta 3-1 Venezia"
+  ],
+  "Como vs Torino": [
+   "20241025 Torino 1-0 Como",
+   "20250413 Como 1-0 Torino",
+   "20251124 Torino 1-5 Como",
+   "20260124 Como 6-0 Torino",
+   "20261027 Torino 1-3 Como"
+  ],
+  "Monza vs Venezia": [
+   "20241027 Monza 2-2 Venezia",
+   "20250412 Venezia 1-0 Monza"
+  ],
+  "Udinese vs Venezia": [
+   "20241030 Venezia 3-2 Udinese",
+   "20250201 Udinese 3-2 Venezia",
+   "20261106 Venezia 2-1 Udinese"
+  ],
+  "Juventus vs Parma": [
+   "20241030 Juventus 2-2 Parma",
+   "20250423 Parma 1-0 Juventus",
+   "20250824 Juventus 2-0 Parma",
+   "20260201 Parma 1-4 Juventus",
+   "20260829 Juventus 2-0 Parma"
+  ],
+  "Como vs Lazio": [
+   "20241031 Como 1-5 Lazio",
+   "20250110 Lazio 1-1 Como",
+   "20250824 Como 2-0 Lazio",
+   "20260119 Lazio 0-3 Como"
+  ],
+  "Inter vs Venezia": [
+   "20241103 Inter 1-0 Venezia",
+   "20250112 Venezia 0-1 Inter",
+   "20261028 Venezia 0-2 Inter"
+  ],
+  "Genoa vs Parma": [
+   "20241104 Parma 0-1 Genoa",
+   "20250112 Genoa 1-0 Parma",
+   "20251019 Genoa 0-0 Parma",
+   "20260118 Parma 0-0 Genoa",
+   "20260920 Parma 2-1 Genoa"
+  ],
+  "Como vs Genoa": [
+   "20241107 Genoa 1-1 Como",
+   "20250427 Como 1-0 Genoa",
+   "20250915 Como 1-1 Genoa",
+   "20260426 Genoa 0-2 Como",
+   "20260904 Genoa 1-4 Como"
+  ],
+  "Parma vs Venezia": [
+   "20241109 Venezia 1-2 Parma",
+   "20250119 Parma 1-1 Venezia"
+  ],
+  "Atalanta vs Parma": [
+   "20241123 Parma 1-3 Atalanta",
+   "20250525 Atalanta 2-3 Parma",
+   "20250830 Parma 1-1 Atalanta",
+   "20260125 Atalanta 4-0 Parma",
+   "20261102 Atalanta 0-3 Parma"
+  ],
+  "Como vs Fiorentina": [
+   "20241124 Como 0-2 Fiorentina",
+   "20250216 Fiorentina 0-2 Como",
+   "20250921 Fiorentina 1-2 Como",
+   "20260214 Como 1-2 Fiorentina",
+   "20261018 Fiorentina 1-3 Como"
+  ],
+  "Lecce vs Venezia": [
+   "20241125 Venezia 0-1 Lecce",
+   "20250406 Lecce 1-1 Venezia",
+   "20260823 Venezia 0-2 Lecce"
+  ],
+  "Como vs Monza": [
+   "20241130 Como 1-1 Monza",
+   "20250405 Monza 1-3 Como"
+  ],
+  "Bologna vs Venezia": [
+   "20241130 Bologna 3-0 Venezia",
+   "20250329 Venezia 0-1 Bologna"
+  ],
+  "Lazio vs Parma": [
+   "20241201 Parma 3-1 Lazio",
+   "20250428 Lazio 2-2 Parma",
+   "20251213 Parma 0-1 Lazio",
+   "20260404 Lazio 1-1 Parma",
+   "20261024 Lazio 2-1 Parma"
+  ],
+  "Inter vs Parma": [
+   "20241206 Inter 3-1 Parma",
+   "20250405 Parma 2-2 Inter",
+   "20260107 Parma 0-2 Inter",
+   "20260503 Inter 2-0 Parma",
+   "20261010 Inter 3-0 Parma"
+  ],
+  "Como vs Venezia": [
+   "20241208 Venezia 2-2 Como",
+   "20250308 Como 1-1 Venezia",
+   "20261101 Como 1-0 Venezia"
+  ],
+  "Juventus vs Venezia": [
+   "20241214 Juventus 2-2 Venezia",
+   "20250525 Venezia 2-3 Juventus"
+  ],
+  "AS Roma vs Como": [
+   "20241215 Como 2-0 AS Roma",
+   "20250302 AS Roma 2-1 Como",
+   "20251215 AS Roma 1-0 Como",
+   "20260315 Como 2-1 AS Roma",
+   "20261011 Como 0-0 AS Roma"
+  ],
+  "AS Roma vs Parma": [
+   "20241222 AS Roma 5-0 Parma",
+   "20250216 Parma 0-1 AS Roma",
+   "20251029 AS Roma 2-1 Parma",
+   "20260510 Parma 2-3 AS Roma",
+   "20261121 Parma 1-5 AS Roma"
+  ],
+  "Cagliari vs Venezia": [
+   "20241222 Venezia 2-1 Cagliari",
+   "20250518 Cagliari 3-0 Venezia"
+  ],
+  "Como vs Inter": [
+   "20241223 Inter 2-0 Como",
+   "20250523 Como 0-2 Inter",
+   "20251206 Inter 4-0 Como",
+   "20260412 Como 3-4 Inter",
+   "20261108 Inter 2-0 Como"
+  ],
+  "Monza vs Parma": [
+   "20241228 Parma 2-1 Monza",
+   "20250315 Monza 1-1 Parma",
+   "20260906 Parma 1-1 Monza"
+  ],
+  "Napoli vs Venezia": [
+   "20241229 Napoli 1-0 Venezia",
+   "20250316 Venezia 0-0 Napoli",
+   "20261017 Venezia 1-0 Napoli"
+  ],
+  "Como vs Lecce": [
+   "20241230 Como 2-0 Lecce",
+   "20250419 Lecce 0-3 Como",
+   "20251227 Lecce 0-3 Como",
+   "20260228 Como 3-1 Lecce"
+  ],
+  "Parma vs Torino": [
+   "20250105 Torino 0-0 Parma",
+   "20250308 Parma 2-2 Torino",
+   "20250929 Parma 2-1 Torino",
+   "20260313 Torino 4-1 Parma",
+   "20261019 Parma 0-3 Torino"
+  ],
+  "AC Milan vs Como": [
+   "20250114 Como 1-2 AC Milan",
+   "20250315 AC Milan 2-1 Como",
+   "20260115 Como 1-3 AC Milan",
+   "20260218 AC Milan 1-1 Como"
+  ],
+  "Como vs Sassuolo": [
+   "20251128 Como 2-0 Sassuolo",
+   "20260417 Sassuolo 2-1 Como",
+   "20261024 Como 2-0 Sassuolo"
+  ],
+  "Parma vs Sassuolo": [
+   "20260103 Sassuolo 1-1 Parma",
+   "20260524 Parma 1-0 Sassuolo"
+  ],
+  "Frosinone vs Venezia": [
+   "20260906 Frosinone 3-2 Venezia"
+  ],
+  "Como vs Frosinone": [
+   "20260920 Frosinone 2-0 Como"
+  ]
+ }
+}

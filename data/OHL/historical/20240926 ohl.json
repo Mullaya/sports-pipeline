@@ -43,8 +43,30 @@
       ],
       "home_stats": {},
       "away_stats": {},
-      "home_goalies": [],
-      "away_goalies": [],
+      "home_goalies": [
+        {
+          "player_id": "ohl:8832",
+          "name": "Bowen Z.",
+          "starter": true,
+          "toi": 60.0,
+          "shots_against": 53,
+          "saves": 46,
+          "goals_against": 7,
+          "sv_pct": 0.868
+        }
+      ],
+      "away_goalies": [
+        {
+          "player_id": "ohl:8371",
+          "name": "Vaccari M.",
+          "starter": true,
+          "toi": 59.92,
+          "shots_against": 32,
+          "saves": 30,
+          "goals_against": 2,
+          "sv_pct": 0.938
+        }
+      ],
       "goals": [
         {
           "period": "1st Period",
@@ -141,7 +163,8 @@
             "Burns Q."
           ]
         }
-      ]
+      ],
+      "goalie_source": "hockeytech"
     }
   ]
 }

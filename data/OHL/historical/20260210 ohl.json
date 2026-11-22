@@ -43,8 +43,30 @@
       ],
       "home_stats": {},
       "away_stats": {},
-      "home_goalies": [],
-      "away_goalies": [],
+      "home_goalies": [
+        {
+          "player_id": "ohl:9372",
+          "name": "Kirsch C.",
+          "starter": true,
+          "toi": 60.0,
+          "shots_against": 23,
+          "saves": 21,
+          "goals_against": 2,
+          "sv_pct": 0.913
+        }
+      ],
+      "away_goalies": [
+        {
+          "player_id": "ohl:9443",
+          "name": "Gatto S.",
+          "starter": true,
+          "toi": 58.37,
+          "shots_against": 38,
+          "saves": 34,
+          "goals_against": 4,
+          "sv_pct": 0.895
+        }
+      ],
       "goals": [
         {
           "period": "1st Period",
@@ -124,7 +146,8 @@
             "Edwards D."
           ]
         }
-      ]
+      ],
+      "goalie_source": "hockeytech"
     }
   ]
 }

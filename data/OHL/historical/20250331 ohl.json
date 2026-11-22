@@ -43,8 +43,40 @@
       ],
       "home_stats": {},
       "away_stats": {},
-      "home_goalies": [],
-      "away_goalies": [],
+      "home_goalies": [
+        {
+          "player_id": "ohl:8841",
+          "name": "Hillebrandt S.",
+          "starter": true,
+          "toi": 60.0,
+          "shots_against": 28,
+          "saves": 23,
+          "goals_against": 5,
+          "sv_pct": 0.821
+        }
+      ],
+      "away_goalies": [
+        {
+          "player_id": "ohl:9269",
+          "name": "Moffett F.",
+          "starter": true,
+          "toi": 20.0,
+          "shots_against": 16,
+          "saves": 13,
+          "goals_against": 3,
+          "sv_pct": 0.812
+        },
+        {
+          "player_id": "ohl:8427",
+          "name": "Flores O.",
+          "starter": false,
+          "toi": 39.3,
+          "shots_against": 35,
+          "saves": 32,
+          "goals_against": 3,
+          "sv_pct": 0.914
+        }
+      ],
       "goals": [
         {
           "period": "1st Period",
@@ -178,7 +210,8 @@
             "Hemming E."
           ]
         }
-      ]
+      ],
+      "goalie_source": "hockeytech"
     },
     {
       "game_id": "Wb9hylt9",
@@ -226,8 +259,30 @@
       ],
       "home_stats": {},
       "away_stats": {},
-      "home_goalies": [],
-      "away_goalies": [],
+      "home_goalies": [
+        {
+          "player_id": "ohl:8528",
+          "name": "Lalonde N.",
+          "starter": true,
+          "toi": 67.52,
+          "shots_against": 33,
+          "saves": 31,
+          "goals_against": 2,
+          "sv_pct": 0.939
+        }
+      ],
+      "away_goalies": [
+        {
+          "player_id": "ohl:8466",
+          "name": "Costanzo J.",
+          "starter": true,
+          "toi": 66.45,
+          "shots_against": 33,
+          "saves": 30,
+          "goals_against": 3,
+          "sv_pct": 0.909
+        }
+      ],
       "goals": [
         {
           "period": "1st Period",
@@ -281,7 +336,8 @@
             "Reid C."
           ]
         }
-      ]
+      ],
+      "goalie_source": "hockeytech"
     }
   ]
 }
