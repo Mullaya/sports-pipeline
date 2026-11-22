@@ -30,6 +30,11 @@ FILE_SUFFIX = {
     "J3": " j3",
     "K1": " k1",
     "K2": " k2",
+    "EPL": " epl",
+    "LALIGA": " laliga",
+    "BUNDESLIGA": " bundesliga",
+    "SERIEA": " seriea",
+    "LIGUE1": " ligue1",
 }
 
 

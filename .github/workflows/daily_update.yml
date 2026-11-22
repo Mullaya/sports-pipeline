@@ -102,6 +102,13 @@ jobs:
           python analytics/build_abl_stats.py ABL
           python analytics/build_abl_stats.py LMP
           python analytics/build_nbl_stats.py
+      - name: 축구(J·K리그·유럽 5대 리그) 통계 집계
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          git pull --ff-only origin main || git pull origin main
+          python analytics/build_soccer_stats.py
       - name: 유럽 하키(KHL·DEL·체코·Liiga·SHL) 통계 집계
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
