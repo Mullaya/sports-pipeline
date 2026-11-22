@@ -1,0 +1,2759 @@
+{
+ "meta": {
+  "generated_kst": "2026-11-22 23:53",
+  "league": "J1",
+  "season_start": "20260701",
+  "games": 150,
+  "last_game_date": "20261121",
+  "league_avg": {
+   "games": 150,
+   "home_win": 0.427,
+   "draw": 0.253,
+   "away_win": 0.32,
+   "goals_pg": 2.87,
+   "home_gf_pg": 1.55,
+   "away_gf_pg": 1.32,
+   "over": {
+    "1.5": 0.78,
+    "2.5": 0.56,
+    "3.5": 0.34
+   },
+   "btts": 0.54
+  },
+  "notes": "REG만 집계 / over는 해당 기준점 초과 비율 / g_minus_xg +는 득점 과열(회귀 후보) / rest_days는 오늘(KST) 기준"
+ },
+ "teams": {
+  "FC Tokyo": {
+   "season": {
+    "gp": 15,
+    "w": 11,
+    "d": 3,
+    "l": 1,
+    "gf_pg": 2.4,
+    "ga_pg": 0.53,
+    "total_pg": 2.93,
+    "over": {
+     "1.5": 0.867,
+     "2.5": 0.533,
+     "3.5": 0.333
+    },
+    "btts": 0.2,
+    "clean_sheet": 0.8,
+    "failed_to_score": 0.067,
+    "ppg": 2.4,
+    "xg_pg": 1.96,
+    "xga_pg": 0.82,
+    "xg_n": 15,
+    "g_minus_xg": 0.44,
+    "ga_minus_xga": -0.29,
+    "sot_pg": 5.5,
+    "sota_pg": 2.4
+   },
+   "home": {
+    "gp": 8,
+    "w": 6,
+    "d": 1,
+    "l": 1,
+    "gf_pg": 2.12,
+    "ga_pg": 0.62,
+    "total_pg": 2.75,
+    "over": {
+     "1.5": 0.75,
+     "2.5": 0.375,
+     "3.5": 0.25
+    },
+    "btts": 0.125,
+    "clean_sheet": 0.875,
+    "failed_to_score": 0.125,
+    "ppg": 2.38,
+    "xg_pg": 1.68,
+    "xga_pg": 0.93,
+    "xg_n": 8,
+    "g_minus_xg": 0.44,
+    "ga_minus_xga": -0.3,
+    "sot_pg": 4.9,
+    "sota_pg": 2.8
+   },
+   "away": {
+    "gp": 7,
+    "w": 5,
+    "d": 2,
+    "l": 0,
+    "gf_pg": 2.71,
+    "ga_pg": 0.43,
+    "total_pg": 3.14,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.714,
+     "3.5": 0.429
+    },
+    "btts": 0.286,
+    "clean_sheet": 0.714,
+    "failed_to_score": 0.0,
+    "ppg": 2.43,
+    "xg_pg": 2.27,
+    "xga_pg": 0.7,
+    "xg_n": 7,
+    "g_minus_xg": 0.44,
+    "ga_minus_xga": -0.27,
+    "sot_pg": 6.3,
+    "sota_pg": 2.0
+   },
+   "last6": {
+    "gp": 6,
+    "w": 5,
+    "d": 1,
+    "l": 0,
+    "gf_pg": 3.17,
+    "ga_pg": 0.0,
+    "total_pg": 3.17,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.667,
+     "3.5": 0.5
+    },
+    "btts": 0.0,
+    "clean_sheet": 1.0,
+    "failed_to_score": 0.167,
+    "ppg": 2.67,
+    "xg_pg": 2.25,
+    "xga_pg": 0.65,
+    "xg_n": 6,
+    "g_minus_xg": 0.91,
+    "ga_minus_xga": -0.65,
+    "sot_pg": 6.7,
+    "sota_pg": 1.8
+   },
+   "last6_log": [
+    "20261017 A Verdy 4-0 (xG 2.52-0.13)",
+    "20261021 H Kashiwa Reysol 0-0 (xG 1.56-1.95)",
+    "20261025 H Mito 6-0 (xG 2.51-0.74)",
+    "20261031 A Okayama 4-0 (xG 4.05-0.75)",
+    "20261107 H Kashima Antlers 2-0 (xG 1.23-0.27)",
+    "20261121 A Cerezo Osaka 3-0 (xG 1.65-0.05)"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 1,
+   "points": 36
+  },
+  "Sanfrecce Hiroshima": {
+   "season": {
+    "gp": 15,
+    "w": 9,
+    "d": 4,
+    "l": 2,
+    "gf_pg": 2.27,
+    "ga_pg": 0.8,
+    "total_pg": 3.07,
+    "over": {
+     "1.5": 0.8,
+     "2.5": 0.667,
+     "3.5": 0.4
+    },
+    "btts": 0.333,
+    "clean_sheet": 0.6,
+    "failed_to_score": 0.2,
+    "ppg": 2.07,
+    "xg_pg": 2.09,
+    "xga_pg": 0.7,
+    "xg_n": 15,
+    "g_minus_xg": 0.17,
+    "ga_minus_xga": 0.1,
+    "sot_pg": 6.9,
+    "sota_pg": 3.1
+   },
+   "home": {
+    "gp": 7,
+    "w": 5,
+    "d": 2,
+    "l": 0,
+    "gf_pg": 3.14,
+    "ga_pg": 0.57,
+    "total_pg": 3.71,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.857,
+     "3.5": 0.429
+    },
+    "btts": 0.429,
+    "clean_sheet": 0.571,
+    "failed_to_score": 0.0,
+    "ppg": 2.43,
+    "xg_pg": 2.21,
+    "xga_pg": 0.63,
+    "xg_n": 7,
+    "g_minus_xg": 0.94,
+    "ga_minus_xga": -0.06,
+    "sot_pg": 7.6,
+    "sota_pg": 3.9
+   },
+   "away": {
+    "gp": 8,
+    "w": 4,
+    "d": 2,
+    "l": 2,
+    "gf_pg": 1.5,
+    "ga_pg": 1.0,
+    "total_pg": 2.5,
+    "over": {
+     "1.5": 0.625,
+     "2.5": 0.5,
+     "3.5": 0.375
+    },
+    "btts": 0.25,
+    "clean_sheet": 0.625,
+    "failed_to_score": 0.375,
+    "ppg": 1.75,
+    "xg_pg": 2.0,
+    "xga_pg": 0.76,
+    "xg_n": 8,
+    "g_minus_xg": -0.5,
+    "ga_minus_xga": 0.24,
+    "sot_pg": 6.2,
+    "sota_pg": 2.5
+   },
+   "last6": {
+    "gp": 6,
+    "w": 3,
+    "d": 2,
+    "l": 1,
+    "gf_pg": 2.0,
+    "ga_pg": 1.0,
+    "total_pg": 3.0,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.833,
+     "3.5": 0.5
+    },
+    "btts": 0.167,
+    "clean_sheet": 0.667,
+    "failed_to_score": 0.333,
+    "ppg": 1.83,
+    "xg_pg": 1.58,
+    "xga_pg": 0.86,
+    "xg_n": 6,
+    "g_minus_xg": 0.42,
+    "ga_minus_xga": 0.14,
+    "sot_pg": 6.2,
+    "sota_pg": 3.5
+   },
+   "last6_log": [
+    "20261017 H Kyoto 3-0 (xG 1.86-0.69)",
+    "20261021 A V-Varen Nagasaki 0-4 (xG 1.33-1.95)",
+    "20261024 H Shimizu S-Pulse 4-0 (xG 2.06-0.53)",
+    "20261031 A Mito 3-0 (xG 1.52-0.04)",
+    "20261108 A Machida 0-0 (xG 0.87-0.8)",
+    "20261121 H Yokohama F. Marinos 2-2 (xG 1.82-1.15)"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 2,
+   "points": 31
+  },
+  "Kashiwa Reysol": {
+   "season": {
+    "gp": 15,
+    "w": 10,
+    "d": 1,
+    "l": 4,
+    "gf_pg": 2.07,
+    "ga_pg": 1.4,
+    "total_pg": 3.47,
+    "over": {
+     "1.5": 0.8,
+     "2.5": 0.667,
+     "3.5": 0.533
+    },
+    "btts": 0.6,
+    "clean_sheet": 0.2,
+    "failed_to_score": 0.267,
+    "ppg": 2.07,
+    "xg_pg": 1.63,
+    "xga_pg": 1.25,
+    "xg_n": 15,
+    "g_minus_xg": 0.44,
+    "ga_minus_xga": 0.15,
+    "sot_pg": 5.7,
+    "sota_pg": 3.2
+   },
+   "home": {
+    "gp": 8,
+    "w": 5,
+    "d": 0,
+    "l": 3,
+    "gf_pg": 2.12,
+    "ga_pg": 1.5,
+    "total_pg": 3.62,
+    "over": {
+     "1.5": 0.875,
+     "2.5": 0.75,
+     "3.5": 0.5
+    },
+    "btts": 0.625,
+    "clean_sheet": 0.125,
+    "failed_to_score": 0.25,
+    "ppg": 1.88,
+    "xg_pg": 1.48,
+    "xga_pg": 1.2,
+    "xg_n": 8,
+    "g_minus_xg": 0.65,
+    "ga_minus_xga": 0.3,
+    "sot_pg": 5.9,
+    "sota_pg": 3.5
+   },
+   "away": {
+    "gp": 7,
+    "w": 5,
+    "d": 1,
+    "l": 1,
+    "gf_pg": 2.0,
+    "ga_pg": 1.29,
+    "total_pg": 3.29,
+    "over": {
+     "1.5": 0.714,
+     "2.5": 0.571,
+     "3.5": 0.571
+    },
+    "btts": 0.571,
+    "clean_sheet": 0.286,
+    "failed_to_score": 0.286,
+    "ppg": 2.29,
+    "xg_pg": 1.8,
+    "xga_pg": 1.31,
+    "xg_n": 7,
+    "g_minus_xg": 0.2,
+    "ga_minus_xga": -0.02,
+    "sot_pg": 5.6,
+    "sota_pg": 2.9
+   },
+   "last6": {
+    "gp": 6,
+    "w": 3,
+    "d": 1,
+    "l": 2,
+    "gf_pg": 1.67,
+    "ga_pg": 1.17,
+    "total_pg": 2.83,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.667,
+     "3.5": 0.5
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.333,
+    "ppg": 1.67,
+    "xg_pg": 1.29,
+    "xga_pg": 1.17,
+    "xg_n": 6,
+    "g_minus_xg": 0.37,
+    "ga_minus_xga": -0.0,
+    "sot_pg": 6.2,
+    "sota_pg": 2.8
+   },
+   "last6_log": [
+    "20261017 H Nagoya Grampus 1-3 (xG 0.95-1.01)",
+    "20261021 A FC Tokyo 0-0 (xG 1.95-1.56)",
+    "20261024 A Kashima Antlers 3-2 (xG 0.65-1.53)",
+    "20261031 H Urawa Reds 4-0 (xG 1.24-1.45)",
+    "20261107 H Kawasaki Frontale 2-1 (xG 1.59-0.97)",
+    "20261120 H Chiba 0-1 (xG 1.39-0.49)"
+   ],
+   "last_game_date": "20261120",
+   "rest_days": 1,
+   "rank": 3,
+   "points": 31
+  },
+  "Machida": {
+   "season": {
+    "gp": 15,
+    "w": 8,
+    "d": 6,
+    "l": 1,
+    "gf_pg": 2.0,
+    "ga_pg": 0.67,
+    "total_pg": 2.67,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.533,
+     "3.5": 0.4
+    },
+    "btts": 0.467,
+    "clean_sheet": 0.533,
+    "failed_to_score": 0.267,
+    "ppg": 2.0,
+    "xg_pg": 1.66,
+    "xga_pg": 1.02,
+    "xg_n": 15,
+    "g_minus_xg": 0.34,
+    "ga_minus_xga": -0.35,
+    "sot_pg": 5.5,
+    "sota_pg": 4.1
+   },
+   "home": {
+    "gp": 8,
+    "w": 3,
+    "d": 4,
+    "l": 1,
+    "gf_pg": 1.38,
+    "ga_pg": 0.88,
+    "total_pg": 2.25,
+    "over": {
+     "1.5": 0.625,
+     "2.5": 0.5,
+     "3.5": 0.25
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.5,
+    "failed_to_score": 0.375,
+    "ppg": 1.62,
+    "xg_pg": 1.27,
+    "xga_pg": 1.13,
+    "xg_n": 8,
+    "g_minus_xg": 0.11,
+    "ga_minus_xga": -0.25,
+    "sot_pg": 4.6,
+    "sota_pg": 4.8
+   },
+   "away": {
+    "gp": 7,
+    "w": 5,
+    "d": 2,
+    "l": 0,
+    "gf_pg": 2.71,
+    "ga_pg": 0.43,
+    "total_pg": 3.14,
+    "over": {
+     "1.5": 0.714,
+     "2.5": 0.571,
+     "3.5": 0.571
+    },
+    "btts": 0.429,
+    "clean_sheet": 0.571,
+    "failed_to_score": 0.143,
+    "ppg": 2.43,
+    "xg_pg": 2.12,
+    "xga_pg": 0.9,
+    "xg_n": 7,
+    "g_minus_xg": 0.6,
+    "ga_minus_xga": -0.47,
+    "sot_pg": 6.4,
+    "sota_pg": 3.3
+   },
+   "last6": {
+    "gp": 6,
+    "w": 2,
+    "d": 4,
+    "l": 0,
+    "gf_pg": 1.33,
+    "ga_pg": 0.0,
+    "total_pg": 1.33,
+    "over": {
+     "1.5": 0.333,
+     "2.5": 0.333,
+     "3.5": 0.167
+    },
+    "btts": 0.0,
+    "clean_sheet": 1.0,
+    "failed_to_score": 0.667,
+    "ppg": 1.67,
+    "xg_pg": 1.78,
+    "xga_pg": 0.86,
+    "xg_n": 6,
+    "g_minus_xg": -0.45,
+    "ga_minus_xga": -0.86,
+    "sot_pg": 6.2,
+    "sota_pg": 4.7
+   },
+   "last6_log": [
+    "20261018 H Avispa Fukuoka 3-0 (xG 1.64-0.7)",
+    "20261021 A Shimizu S-Pulse 5-0 (xG 3.73-0.29)",
+    "20261024 A Vissel Kobe 0-0 (xG 1.94-1.25)",
+    "20261101 H Gamba Osaka 0-0 (xG 1.26-1.31)",
+    "20261108 H Sanfrecce Hiroshima 0-0 (xG 0.8-0.87)",
+    "20261121 H V-Varen Nagasaki 0-0 (xG 1.31-0.72)"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 4,
+   "points": 30
+  },
+  "Vissel Kobe": {
+   "season": {
+    "gp": 15,
+    "w": 8,
+    "d": 3,
+    "l": 4,
+    "gf_pg": 1.6,
+    "ga_pg": 1.07,
+    "total_pg": 2.67,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.6,
+     "3.5": 0.333
+    },
+    "btts": 0.533,
+    "clean_sheet": 0.4,
+    "failed_to_score": 0.133,
+    "ppg": 1.8,
+    "xg_pg": 1.53,
+    "xga_pg": 1.17,
+    "xg_n": 15,
+    "g_minus_xg": 0.07,
+    "ga_minus_xga": -0.1,
+    "sot_pg": 4.7,
+    "sota_pg": 3.9
+   },
+   "home": {
+    "gp": 8,
+    "w": 4,
+    "d": 3,
+    "l": 1,
+    "gf_pg": 1.75,
+    "ga_pg": 1.12,
+    "total_pg": 2.88,
+    "over": {
+     "1.5": 0.75,
+     "2.5": 0.75,
+     "3.5": 0.5
+    },
+    "btts": 0.75,
+    "clean_sheet": 0.25,
+    "failed_to_score": 0.125,
+    "ppg": 1.88,
+    "xg_pg": 1.68,
+    "xga_pg": 1.18,
+    "xg_n": 8,
+    "g_minus_xg": 0.07,
+    "ga_minus_xga": -0.05,
+    "sot_pg": 5.1,
+    "sota_pg": 4.1
+   },
+   "away": {
+    "gp": 7,
+    "w": 4,
+    "d": 0,
+    "l": 3,
+    "gf_pg": 1.43,
+    "ga_pg": 1.0,
+    "total_pg": 2.43,
+    "over": {
+     "1.5": 0.571,
+     "2.5": 0.429,
+     "3.5": 0.143
+    },
+    "btts": 0.286,
+    "clean_sheet": 0.571,
+    "failed_to_score": 0.143,
+    "ppg": 1.71,
+    "xg_pg": 1.36,
+    "xga_pg": 1.15,
+    "xg_n": 7,
+    "g_minus_xg": 0.07,
+    "ga_minus_xga": -0.15,
+    "sot_pg": 4.1,
+    "sota_pg": 3.6
+   },
+   "last6": {
+    "gp": 6,
+    "w": 2,
+    "d": 2,
+    "l": 2,
+    "gf_pg": 1.67,
+    "ga_pg": 1.17,
+    "total_pg": 2.83,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.833,
+     "3.5": 0.333
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.167,
+    "ppg": 1.33,
+    "xg_pg": 1.62,
+    "xga_pg": 1.46,
+    "xg_n": 6,
+    "g_minus_xg": 0.05,
+    "ga_minus_xga": -0.29,
+    "sot_pg": 5.3,
+    "sota_pg": 5.7
+   },
+   "last6_log": [
+    "20261018 A Okayama 3-0 (xG 1.98-1.1)",
+    "20261021 A Kawasaki Frontale 1-2 (xG 1.34-1.96)",
+    "20261024 H Machida 0-0 (xG 1.25-1.94)",
+    "20261031 H Nagoya Grampus 3-1 (xG 1.94-1.31)",
+    "20261108 H Urawa Reds 2-2 (xG 1.64-1.8)",
+    "20261120 H Mito 1-2 (xG 1.55-0.65)"
+   ],
+   "last_game_date": "20261120",
+   "rest_days": 1,
+   "rank": 5,
+   "points": 27
+  },
+  "Kawasaki Frontale": {
+   "season": {
+    "gp": 15,
+    "w": 7,
+    "d": 4,
+    "l": 4,
+    "gf_pg": 1.93,
+    "ga_pg": 1.6,
+    "total_pg": 3.53,
+    "over": {
+     "1.5": 0.867,
+     "2.5": 0.733,
+     "3.5": 0.4
+    },
+    "btts": 0.867,
+    "clean_sheet": 0.133,
+    "failed_to_score": 0.0,
+    "ppg": 1.67,
+    "xg_pg": 1.54,
+    "xga_pg": 1.31,
+    "xg_n": 15,
+    "g_minus_xg": 0.39,
+    "ga_minus_xga": 0.29,
+    "sot_pg": 5.5,
+    "sota_pg": 5.0
+   },
+   "home": {
+    "gp": 8,
+    "w": 5,
+    "d": 2,
+    "l": 1,
+    "gf_pg": 2.25,
+    "ga_pg": 1.5,
+    "total_pg": 3.75,
+    "over": {
+     "1.5": 0.875,
+     "2.5": 0.875,
+     "3.5": 0.5
+    },
+    "btts": 0.875,
+    "clean_sheet": 0.125,
+    "failed_to_score": 0.0,
+    "ppg": 2.12,
+    "xg_pg": 1.84,
+    "xga_pg": 1.11,
+    "xg_n": 8,
+    "g_minus_xg": 0.41,
+    "ga_minus_xga": 0.39,
+    "sot_pg": 6.2,
+    "sota_pg": 4.6
+   },
+   "away": {
+    "gp": 7,
+    "w": 2,
+    "d": 2,
+    "l": 3,
+    "gf_pg": 1.57,
+    "ga_pg": 1.71,
+    "total_pg": 3.29,
+    "over": {
+     "1.5": 0.857,
+     "2.5": 0.571,
+     "3.5": 0.286
+    },
+    "btts": 0.857,
+    "clean_sheet": 0.143,
+    "failed_to_score": 0.0,
+    "ppg": 1.14,
+    "xg_pg": 1.21,
+    "xga_pg": 1.54,
+    "xg_n": 7,
+    "g_minus_xg": 0.36,
+    "ga_minus_xga": 0.17,
+    "sot_pg": 4.7,
+    "sota_pg": 5.4
+   },
+   "last6": {
+    "gp": 6,
+    "w": 4,
+    "d": 0,
+    "l": 2,
+    "gf_pg": 2.0,
+    "ga_pg": 1.67,
+    "total_pg": 3.67,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.833,
+     "3.5": 0.333
+    },
+    "btts": 0.833,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.0,
+    "ppg": 2.0,
+    "xg_pg": 1.4,
+    "xga_pg": 1.46,
+    "xg_n": 6,
+    "g_minus_xg": 0.6,
+    "ga_minus_xga": 0.21,
+    "sot_pg": 4.5,
+    "sota_pg": 4.3
+   },
+   "last6_log": [
+    "20261017 A Cerezo Osaka 4-2 (xG 1.46-2.06)",
+    "20261021 H Vissel Kobe 2-1 (xG 1.96-1.34)",
+    "20261025 H Okayama 2-1 (xG 0.83-1.04)",
+    "20261101 A Yokohama F. Marinos 2-4 (xG 1.34-2.01)",
+    "20261107 A Kashiwa Reysol 1-2 (xG 0.97-1.59)",
+    "20261121 H Avispa Fukuoka 1-0 (xG 1.82-0.72)"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 6,
+   "points": 25
+  },
+  "Kashima Antlers": {
+   "season": {
+    "gp": 15,
+    "w": 7,
+    "d": 3,
+    "l": 5,
+    "gf_pg": 2.0,
+    "ga_pg": 1.67,
+    "total_pg": 3.67,
+    "over": {
+     "1.5": 0.933,
+     "2.5": 0.6,
+     "3.5": 0.467
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.2,
+    "failed_to_score": 0.133,
+    "ppg": 1.6,
+    "xg_pg": 1.45,
+    "xga_pg": 1.06,
+    "xg_n": 15,
+    "g_minus_xg": 0.55,
+    "ga_minus_xga": 0.6,
+    "sot_pg": 4.5,
+    "sota_pg": 4.0
+   },
+   "home": {
+    "gp": 8,
+    "w": 5,
+    "d": 1,
+    "l": 2,
+    "gf_pg": 2.0,
+    "ga_pg": 1.12,
+    "total_pg": 3.12,
+    "over": {
+     "1.5": 0.875,
+     "2.5": 0.5,
+     "3.5": 0.375
+    },
+    "btts": 0.625,
+    "clean_sheet": 0.25,
+    "failed_to_score": 0.125,
+    "ppg": 2.0,
+    "xg_pg": 1.36,
+    "xga_pg": 0.97,
+    "xg_n": 8,
+    "g_minus_xg": 0.64,
+    "ga_minus_xga": 0.15,
+    "sot_pg": 3.9,
+    "sota_pg": 3.8
+   },
+   "away": {
+    "gp": 7,
+    "w": 2,
+    "d": 2,
+    "l": 3,
+    "gf_pg": 2.0,
+    "ga_pg": 2.29,
+    "total_pg": 4.29,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.714,
+     "3.5": 0.571
+    },
+    "btts": 0.714,
+    "clean_sheet": 0.143,
+    "failed_to_score": 0.143,
+    "ppg": 1.14,
+    "xg_pg": 1.55,
+    "xga_pg": 1.17,
+    "xg_n": 7,
+    "g_minus_xg": 0.45,
+    "ga_minus_xga": 1.12,
+    "sot_pg": 5.3,
+    "sota_pg": 4.3
+   },
+   "last6": {
+    "gp": 6,
+    "w": 2,
+    "d": 2,
+    "l": 2,
+    "gf_pg": 1.83,
+    "ga_pg": 1.5,
+    "total_pg": 3.33,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.5,
+     "3.5": 0.5
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.167,
+    "ppg": 1.33,
+    "xg_pg": 1.29,
+    "xga_pg": 0.91,
+    "xg_n": 6,
+    "g_minus_xg": 0.55,
+    "ga_minus_xga": 0.59,
+    "sot_pg": 4.7,
+    "sota_pg": 3.5
+   },
+   "last6_log": [
+    "20261017 H V-Varen Nagasaki 2-0 (xG 1.22-1.29)",
+    "20261021 A Kyoto 2-2 (xG 1.37-0.33)",
+    "20261024 H Kashiwa Reysol 2-3 (xG 1.53-0.65)",
+    "20261031 H Cerezo Osaka 4-1 (xG 2.43-1.3)",
+    "20261107 A FC Tokyo 0-2 (xG 0.27-1.23)",
+    "20261120 H Shimizu S-Pulse 1-1 (xG 0.9-0.63)"
+   ],
+   "last_game_date": "20261120",
+   "rest_days": 1,
+   "rank": 7,
+   "points": 24
+  },
+  "Yokohama F. Marinos": {
+   "season": {
+    "gp": 15,
+    "w": 5,
+    "d": 8,
+    "l": 2,
+    "gf_pg": 1.53,
+    "ga_pg": 1.13,
+    "total_pg": 2.67,
+    "over": {
+     "1.5": 0.733,
+     "2.5": 0.333,
+     "3.5": 0.333
+    },
+    "btts": 0.6,
+    "clean_sheet": 0.4,
+    "failed_to_score": 0.133,
+    "ppg": 1.53,
+    "xg_pg": 1.23,
+    "xga_pg": 1.5,
+    "xg_n": 15,
+    "g_minus_xg": 0.3,
+    "ga_minus_xga": -0.37,
+    "sot_pg": 4.1,
+    "sota_pg": 4.1
+   },
+   "home": {
+    "gp": 7,
+    "w": 3,
+    "d": 3,
+    "l": 1,
+    "gf_pg": 2.0,
+    "ga_pg": 1.43,
+    "total_pg": 3.43,
+    "over": {
+     "1.5": 0.857,
+     "2.5": 0.429,
+     "3.5": 0.429
+    },
+    "btts": 0.714,
+    "clean_sheet": 0.286,
+    "failed_to_score": 0.0,
+    "ppg": 1.71,
+    "xg_pg": 1.44,
+    "xga_pg": 1.51,
+    "xg_n": 7,
+    "g_minus_xg": 0.56,
+    "ga_minus_xga": -0.09,
+    "sot_pg": 3.7,
+    "sota_pg": 3.4
+   },
+   "away": {
+    "gp": 8,
+    "w": 2,
+    "d": 5,
+    "l": 1,
+    "gf_pg": 1.12,
+    "ga_pg": 0.88,
+    "total_pg": 2.0,
+    "over": {
+     "1.5": 0.625,
+     "2.5": 0.25,
+     "3.5": 0.25
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.5,
+    "failed_to_score": 0.25,
+    "ppg": 1.38,
+    "xg_pg": 1.05,
+    "xga_pg": 1.48,
+    "xg_n": 8,
+    "g_minus_xg": 0.07,
+    "ga_minus_xga": -0.61,
+    "sot_pg": 4.4,
+    "sota_pg": 4.8
+   },
+   "last6": {
+    "gp": 6,
+    "w": 1,
+    "d": 5,
+    "l": 0,
+    "gf_pg": 1.67,
+    "ga_pg": 1.33,
+    "total_pg": 3.0,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.5,
+     "3.5": 0.5
+    },
+    "btts": 0.833,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.167,
+    "ppg": 1.33,
+    "xg_pg": 1.36,
+    "xga_pg": 1.58,
+    "xg_n": 6,
+    "g_minus_xg": 0.31,
+    "ga_minus_xga": -0.25,
+    "sot_pg": 5.3,
+    "sota_pg": 5.0
+   },
+   "last6_log": [
+    "20261017 A Chiba 0-0 (xG 0.7-0.66)",
+    "20261021 H Verdy 2-2 (xG 1.91-1.3)",
+    "20261025 A Nagoya Grampus 1-1 (xG 1.41-2.33)",
+    "20261101 H Kawasaki Frontale 4-2 (xG 2.01-1.34)",
+    "20261107 H Okayama 1-1 (xG 0.98-2.05)",
+    "20261121 A Sanfrecce Hiroshima 2-2 (xG 1.15-1.82)"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 8,
+   "points": 23
+  },
+  "Urawa Reds": {
+   "season": {
+    "gp": 15,
+    "w": 7,
+    "d": 1,
+    "l": 7,
+    "gf_pg": 1.6,
+    "ga_pg": 2.07,
+    "total_pg": 3.67,
+    "over": {
+     "1.5": 0.8,
+     "2.5": 0.8,
+     "3.5": 0.6
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.2,
+    "failed_to_score": 0.133,
+    "ppg": 1.47,
+    "xg_pg": 1.45,
+    "xga_pg": 1.27,
+    "xg_n": 15,
+    "g_minus_xg": 0.15,
+    "ga_minus_xga": 0.79,
+    "sot_pg": 4.3,
+    "sota_pg": 4.9
+   },
+   "home": {
+    "gp": 6,
+    "w": 4,
+    "d": 0,
+    "l": 2,
+    "gf_pg": 2.0,
+    "ga_pg": 1.83,
+    "total_pg": 3.83,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.833,
+     "3.5": 0.667
+    },
+    "btts": 0.833,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.0,
+    "ppg": 2.0,
+    "xg_pg": 1.2,
+    "xga_pg": 1.35,
+    "xg_n": 6,
+    "g_minus_xg": 0.8,
+    "ga_minus_xga": 0.48,
+    "sot_pg": 4.0,
+    "sota_pg": 3.7
+   },
+   "away": {
+    "gp": 9,
+    "w": 3,
+    "d": 1,
+    "l": 5,
+    "gf_pg": 1.33,
+    "ga_pg": 2.22,
+    "total_pg": 3.56,
+    "over": {
+     "1.5": 0.778,
+     "2.5": 0.778,
+     "3.5": 0.556
+    },
+    "btts": 0.556,
+    "clean_sheet": 0.222,
+    "failed_to_score": 0.222,
+    "ppg": 1.11,
+    "xg_pg": 1.61,
+    "xga_pg": 1.22,
+    "xg_n": 9,
+    "g_minus_xg": -0.28,
+    "ga_minus_xga": 1.0,
+    "sot_pg": 4.4,
+    "sota_pg": 5.7
+   },
+   "last6": {
+    "gp": 6,
+    "w": 3,
+    "d": 1,
+    "l": 2,
+    "gf_pg": 1.33,
+    "ga_pg": 1.67,
+    "total_pg": 3.0,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.667,
+     "3.5": 0.5
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.167,
+    "ppg": 1.67,
+    "xg_pg": 1.6,
+    "xga_pg": 1.04,
+    "xg_n": 6,
+    "g_minus_xg": -0.27,
+    "ga_minus_xga": 0.63,
+    "sot_pg": 4.8,
+    "sota_pg": 3.7
+   },
+   "last6_log": [
+    "20261017 A Mito 1-0 (xG 2.35-0.03)",
+    "20261021 H Chiba 3-2 (xG 1.4-1.55)",
+    "20261025 H V-Varen Nagasaki 1-0 (xG 1.27-0.66)",
+    "20261031 A Kashiwa Reysol 0-4 (xG 1.45-1.24)",
+    "20261108 A Vissel Kobe 2-2 (xG 1.8-1.64)",
+    "20261121 A Kyoto 1-2 (xG 1.35-1.12)"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 9,
+   "points": 22
+  },
+  "Okayama": {
+   "season": {
+    "gp": 15,
+    "w": 6,
+    "d": 2,
+    "l": 7,
+    "gf_pg": 1.13,
+    "ga_pg": 1.47,
+    "total_pg": 2.6,
+    "over": {
+     "1.5": 0.8,
+     "2.5": 0.667,
+     "3.5": 0.133
+    },
+    "btts": 0.6,
+    "clean_sheet": 0.267,
+    "failed_to_score": 0.2,
+    "ppg": 1.33,
+    "xg_pg": 1.1,
+    "xga_pg": 1.17,
+    "xg_n": 15,
+    "g_minus_xg": 0.03,
+    "ga_minus_xga": 0.29,
+    "sot_pg": 3.3,
+    "sota_pg": 3.5
+   },
+   "home": {
+    "gp": 7,
+    "w": 3,
+    "d": 1,
+    "l": 3,
+    "gf_pg": 1.0,
+    "ga_pg": 1.57,
+    "total_pg": 2.57,
+    "over": {
+     "1.5": 0.714,
+     "2.5": 0.571,
+     "3.5": 0.286
+    },
+    "btts": 0.286,
+    "clean_sheet": 0.429,
+    "failed_to_score": 0.429,
+    "ppg": 1.43,
+    "xg_pg": 1.01,
+    "xga_pg": 1.32,
+    "xg_n": 7,
+    "g_minus_xg": -0.01,
+    "ga_minus_xga": 0.25,
+    "sot_pg": 3.6,
+    "sota_pg": 4.1
+   },
+   "away": {
+    "gp": 8,
+    "w": 3,
+    "d": 1,
+    "l": 4,
+    "gf_pg": 1.25,
+    "ga_pg": 1.38,
+    "total_pg": 2.62,
+    "over": {
+     "1.5": 0.875,
+     "2.5": 0.75,
+     "3.5": 0.0
+    },
+    "btts": 0.875,
+    "clean_sheet": 0.125,
+    "failed_to_score": 0.0,
+    "ppg": 1.25,
+    "xg_pg": 1.18,
+    "xga_pg": 1.05,
+    "xg_n": 8,
+    "g_minus_xg": 0.07,
+    "ga_minus_xga": 0.33,
+    "sot_pg": 3.0,
+    "sota_pg": 3.0
+   },
+   "last6": {
+    "gp": 6,
+    "w": 2,
+    "d": 1,
+    "l": 3,
+    "gf_pg": 0.83,
+    "ga_pg": 1.67,
+    "total_pg": 2.5,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.5,
+     "3.5": 0.167
+    },
+    "btts": 0.333,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.333,
+    "ppg": 1.17,
+    "xg_pg": 1.13,
+    "xga_pg": 1.53,
+    "xg_n": 6,
+    "g_minus_xg": -0.3,
+    "ga_minus_xga": 0.14,
+    "sot_pg": 3.5,
+    "sota_pg": 4.3
+   },
+   "last6_log": [
+    "20261018 H Vissel Kobe 0-3 (xG 1.1-1.98)",
+    "20261021 H Mito 2-0 (xG 1.03-0.25)",
+    "20261025 A Kawasaki Frontale 1-2 (xG 1.04-0.83)",
+    "20261031 H FC Tokyo 0-4 (xG 0.75-4.05)",
+    "20261107 A Yokohama F. Marinos 1-1 (xG 2.05-0.98)",
+    "20261121 A Gamba Osaka 1-0 (xG 0.83-1.07)"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 10,
+   "points": 20
+  },
+  "Kyoto": {
+   "season": {
+    "gp": 15,
+    "w": 5,
+    "d": 4,
+    "l": 6,
+    "gf_pg": 1.4,
+    "ga_pg": 1.6,
+    "total_pg": 3.0,
+    "over": {
+     "1.5": 0.933,
+     "2.5": 0.667,
+     "3.5": 0.333
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.133,
+    "failed_to_score": 0.2,
+    "ppg": 1.27,
+    "xg_pg": 1.02,
+    "xga_pg": 1.42,
+    "xg_n": 15,
+    "g_minus_xg": 0.38,
+    "ga_minus_xga": 0.18,
+    "sot_pg": 4.1,
+    "sota_pg": 5.2
+   },
+   "home": {
+    "gp": 7,
+    "w": 3,
+    "d": 1,
+    "l": 3,
+    "gf_pg": 1.57,
+    "ga_pg": 1.57,
+    "total_pg": 3.14,
+    "over": {
+     "1.5": 0.857,
+     "2.5": 0.714,
+     "3.5": 0.429
+    },
+    "btts": 0.714,
+    "clean_sheet": 0.143,
+    "failed_to_score": 0.143,
+    "ppg": 1.43,
+    "xg_pg": 1.19,
+    "xga_pg": 1.34,
+    "xg_n": 7,
+    "g_minus_xg": 0.38,
+    "ga_minus_xga": 0.24,
+    "sot_pg": 4.3,
+    "sota_pg": 5.9
+   },
+   "away": {
+    "gp": 8,
+    "w": 2,
+    "d": 3,
+    "l": 3,
+    "gf_pg": 1.25,
+    "ga_pg": 1.62,
+    "total_pg": 2.88,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.625,
+     "3.5": 0.25
+    },
+    "btts": 0.625,
+    "clean_sheet": 0.125,
+    "failed_to_score": 0.25,
+    "ppg": 1.12,
+    "xg_pg": 0.88,
+    "xga_pg": 1.49,
+    "xg_n": 8,
+    "g_minus_xg": 0.38,
+    "ga_minus_xga": 0.14,
+    "sot_pg": 4.0,
+    "sota_pg": 4.6
+   },
+   "last6": {
+    "gp": 6,
+    "w": 3,
+    "d": 2,
+    "l": 1,
+    "gf_pg": 1.67,
+    "ga_pg": 1.33,
+    "total_pg": 3.0,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.667,
+     "3.5": 0.333
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.167,
+    "ppg": 1.83,
+    "xg_pg": 0.9,
+    "xga_pg": 1.18,
+    "xg_n": 6,
+    "g_minus_xg": 0.77,
+    "ga_minus_xga": 0.15,
+    "sot_pg": 4.2,
+    "sota_pg": 5.3
+   },
+   "last6_log": [
+    "20261017 A Sanfrecce Hiroshima 0-3 (xG 0.69-1.86)",
+    "20261021 H Kashima Antlers 2-2 (xG 0.33-1.37)",
+    "20261024 A Gamba Osaka 2-2 (xG 1.33-1.24)",
+    "20261031 H Shimizu S-Pulse 2-0 (xG 1.16-0.51)",
+    "20261107 A Nagoya Grampus 2-0 (xG 0.77-0.77)",
+    "20261121 H Urawa Reds 2-1 (xG 1.12-1.35)"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 11,
+   "points": 19
+  },
+  "Cerezo Osaka": {
+   "season": {
+    "gp": 15,
+    "w": 4,
+    "d": 5,
+    "l": 6,
+    "gf_pg": 1.07,
+    "ga_pg": 1.87,
+    "total_pg": 2.93,
+    "over": {
+     "1.5": 0.733,
+     "2.5": 0.533,
+     "3.5": 0.333
+    },
+    "btts": 0.533,
+    "clean_sheet": 0.267,
+    "failed_to_score": 0.333,
+    "ppg": 1.13,
+    "xg_pg": 1.04,
+    "xga_pg": 1.68,
+    "xg_n": 15,
+    "g_minus_xg": 0.03,
+    "ga_minus_xga": 0.19,
+    "sot_pg": 3.6,
+    "sota_pg": 4.7
+   },
+   "home": {
+    "gp": 8,
+    "w": 3,
+    "d": 3,
+    "l": 2,
+    "gf_pg": 1.12,
+    "ga_pg": 1.25,
+    "total_pg": 2.38,
+    "over": {
+     "1.5": 0.625,
+     "2.5": 0.5,
+     "3.5": 0.25
+    },
+    "btts": 0.375,
+    "clean_sheet": 0.5,
+    "failed_to_score": 0.375,
+    "ppg": 1.5,
+    "xg_pg": 1.05,
+    "xga_pg": 1.4,
+    "xg_n": 8,
+    "g_minus_xg": 0.08,
+    "ga_minus_xga": -0.15,
+    "sot_pg": 3.1,
+    "sota_pg": 4.0
+   },
+   "away": {
+    "gp": 7,
+    "w": 1,
+    "d": 2,
+    "l": 4,
+    "gf_pg": 1.0,
+    "ga_pg": 2.57,
+    "total_pg": 3.57,
+    "over": {
+     "1.5": 0.857,
+     "2.5": 0.571,
+     "3.5": 0.429
+    },
+    "btts": 0.714,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.286,
+    "ppg": 0.71,
+    "xg_pg": 1.03,
+    "xga_pg": 2.0,
+    "xg_n": 7,
+    "g_minus_xg": -0.03,
+    "ga_minus_xga": 0.57,
+    "sot_pg": 4.1,
+    "sota_pg": 5.4
+   },
+   "last6": {
+    "gp": 6,
+    "w": 1,
+    "d": 2,
+    "l": 3,
+    "gf_pg": 1.5,
+    "ga_pg": 2.67,
+    "total_pg": 4.17,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.833,
+     "3.5": 0.667
+    },
+    "btts": 0.833,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.167,
+    "ppg": 0.83,
+    "xg_pg": 1.14,
+    "xga_pg": 1.6,
+    "xg_n": 6,
+    "g_minus_xg": 0.37,
+    "ga_minus_xga": 1.07,
+    "sot_pg": 4.0,
+    "sota_pg": 5.3
+   },
+   "last6_log": [
+    "20261017 H Kawasaki Frontale 2-4 (xG 2.06-1.46)",
+    "20261021 A Nagoya Grampus 1-1 (xG 0.71-1.23)",
+    "20261025 H Chiba 2-2 (xG 1.55-1.47)",
+    "20261031 A Kashima Antlers 1-4 (xG 1.3-2.43)",
+    "20261108 A Gamba Osaka 3-2 (xG 1.14-1.37)",
+    "20261121 H FC Tokyo 0-3 (xG 0.05-1.65)"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 12,
+   "points": 17
+  },
+  "Chiba": {
+   "season": {
+    "gp": 15,
+    "w": 4,
+    "d": 4,
+    "l": 7,
+    "gf_pg": 1.13,
+    "ga_pg": 1.6,
+    "total_pg": 2.73,
+    "over": {
+     "1.5": 0.8,
+     "2.5": 0.533,
+     "3.5": 0.267
+    },
+    "btts": 0.467,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.267,
+    "ppg": 1.07,
+    "xg_pg": 1.19,
+    "xga_pg": 1.36,
+    "xg_n": 15,
+    "g_minus_xg": -0.06,
+    "ga_minus_xga": 0.24,
+    "sot_pg": 3.6,
+    "sota_pg": 4.1
+   },
+   "home": {
+    "gp": 7,
+    "w": 3,
+    "d": 2,
+    "l": 2,
+    "gf_pg": 1.14,
+    "ga_pg": 1.0,
+    "total_pg": 2.14,
+    "over": {
+     "1.5": 0.714,
+     "2.5": 0.429,
+     "3.5": 0.143
+    },
+    "btts": 0.286,
+    "clean_sheet": 0.571,
+    "failed_to_score": 0.286,
+    "ppg": 1.57,
+    "xg_pg": 1.28,
+    "xga_pg": 0.88,
+    "xg_n": 7,
+    "g_minus_xg": -0.13,
+    "ga_minus_xga": 0.12,
+    "sot_pg": 3.1,
+    "sota_pg": 2.4
+   },
+   "away": {
+    "gp": 8,
+    "w": 1,
+    "d": 2,
+    "l": 5,
+    "gf_pg": 1.12,
+    "ga_pg": 2.12,
+    "total_pg": 3.25,
+    "over": {
+     "1.5": 0.875,
+     "2.5": 0.625,
+     "3.5": 0.375
+    },
+    "btts": 0.625,
+    "clean_sheet": 0.125,
+    "failed_to_score": 0.25,
+    "ppg": 0.62,
+    "xg_pg": 1.12,
+    "xga_pg": 1.77,
+    "xg_n": 8,
+    "g_minus_xg": 0.01,
+    "ga_minus_xga": 0.35,
+    "sot_pg": 4.0,
+    "sota_pg": 5.6
+   },
+   "last6": {
+    "gp": 6,
+    "w": 3,
+    "d": 2,
+    "l": 1,
+    "gf_pg": 1.5,
+    "ga_pg": 0.83,
+    "total_pg": 2.33,
+    "over": {
+     "1.5": 0.5,
+     "2.5": 0.5,
+     "3.5": 0.333
+    },
+    "btts": 0.333,
+    "clean_sheet": 0.667,
+    "failed_to_score": 0.167,
+    "ppg": 1.83,
+    "xg_pg": 1.35,
+    "xga_pg": 1.0,
+    "xg_n": 6,
+    "g_minus_xg": 0.15,
+    "ga_minus_xga": -0.16,
+    "sot_pg": 3.3,
+    "sota_pg": 3.3
+   },
+   "last6_log": [
+    "20261017 H Yokohama F. Marinos 0-0 (xG 0.66-0.7)",
+    "20261021 A Urawa Reds 2-3 (xG 1.55-1.4)",
+    "20261025 A Cerezo Osaka 2-2 (xG 1.47-1.55)",
+    "20261101 H Avispa Fukuoka 3-0 (xG 1.78-0.15)",
+    "20261108 H Mito 1-0 (xG 2.16-0.79)",
+    "20261120 A Kashiwa Reysol 1-0 (xG 0.49-1.39)"
+   ],
+   "last_game_date": "20261120",
+   "rest_days": 1,
+   "rank": 13,
+   "points": 16
+  },
+  "Nagoya Grampus": {
+   "season": {
+    "gp": 15,
+    "w": 4,
+    "d": 3,
+    "l": 8,
+    "gf_pg": 1.0,
+    "ga_pg": 1.53,
+    "total_pg": 2.53,
+    "over": {
+     "1.5": 0.8,
+     "2.5": 0.533,
+     "3.5": 0.267
+    },
+    "btts": 0.6,
+    "clean_sheet": 0.067,
+    "failed_to_score": 0.4,
+    "ppg": 1.0,
+    "xg_pg": 1.17,
+    "xga_pg": 1.29,
+    "xg_n": 15,
+    "g_minus_xg": -0.17,
+    "ga_minus_xga": 0.24,
+    "sot_pg": 3.9,
+    "sota_pg": 4.7
+   },
+   "home": {
+    "gp": 7,
+    "w": 2,
+    "d": 2,
+    "l": 3,
+    "gf_pg": 1.14,
+    "ga_pg": 1.43,
+    "total_pg": 2.57,
+    "over": {
+     "1.5": 0.857,
+     "2.5": 0.429,
+     "3.5": 0.286
+    },
+    "btts": 0.714,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.286,
+    "ppg": 1.14,
+    "xg_pg": 1.53,
+    "xga_pg": 1.31,
+    "xg_n": 7,
+    "g_minus_xg": -0.39,
+    "ga_minus_xga": 0.12,
+    "sot_pg": 5.1,
+    "sota_pg": 4.7
+   },
+   "away": {
+    "gp": 8,
+    "w": 2,
+    "d": 1,
+    "l": 5,
+    "gf_pg": 0.88,
+    "ga_pg": 1.62,
+    "total_pg": 2.5,
+    "over": {
+     "1.5": 0.75,
+     "2.5": 0.625,
+     "3.5": 0.25
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.125,
+    "failed_to_score": 0.5,
+    "ppg": 0.88,
+    "xg_pg": 0.86,
+    "xga_pg": 1.27,
+    "xg_n": 8,
+    "g_minus_xg": 0.01,
+    "ga_minus_xga": 0.35,
+    "sot_pg": 2.9,
+    "sota_pg": 4.6
+   },
+   "last6": {
+    "gp": 6,
+    "w": 1,
+    "d": 3,
+    "l": 2,
+    "gf_pg": 1.0,
+    "ga_pg": 1.33,
+    "total_pg": 2.33,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.333,
+     "3.5": 0.333
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.333,
+    "ppg": 1.0,
+    "xg_pg": 1.27,
+    "xga_pg": 1.01,
+    "xg_n": 6,
+    "g_minus_xg": -0.27,
+    "ga_minus_xga": 0.32,
+    "sot_pg": 4.2,
+    "sota_pg": 4.7
+   },
+   "last6_log": [
+    "20261017 A Kashiwa Reysol 3-1 (xG 1.01-0.95)",
+    "20261021 H Cerezo Osaka 1-1 (xG 1.23-0.71)",
+    "20261025 H Yokohama F. Marinos 1-1 (xG 2.33-1.41)",
+    "20261031 A Vissel Kobe 1-3 (xG 1.31-1.94)",
+    "20261107 H Kyoto 0-2 (xG 0.77-0.77)",
+    "20261121 A Verdy 0-0 (xG 0.96-0.29)"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 14,
+   "points": 15
+  },
+  "Verdy": {
+   "season": {
+    "gp": 15,
+    "w": 3,
+    "d": 6,
+    "l": 6,
+    "gf_pg": 0.8,
+    "ga_pg": 1.47,
+    "total_pg": 2.27,
+    "over": {
+     "1.5": 0.733,
+     "2.5": 0.4,
+     "3.5": 0.333
+    },
+    "btts": 0.467,
+    "clean_sheet": 0.267,
+    "failed_to_score": 0.467,
+    "ppg": 1.0,
+    "xg_pg": 0.77,
+    "xga_pg": 1.42,
+    "xg_n": 15,
+    "g_minus_xg": 0.03,
+    "ga_minus_xga": 0.05,
+    "sot_pg": 2.5,
+    "sota_pg": 4.5
+   },
+   "home": {
+    "gp": 9,
+    "w": 1,
+    "d": 3,
+    "l": 5,
+    "gf_pg": 0.67,
+    "ga_pg": 1.78,
+    "total_pg": 2.44,
+    "over": {
+     "1.5": 0.889,
+     "2.5": 0.333,
+     "3.5": 0.333
+    },
+    "btts": 0.444,
+    "clean_sheet": 0.111,
+    "failed_to_score": 0.556,
+    "ppg": 0.67,
+    "xg_pg": 0.8,
+    "xga_pg": 1.62,
+    "xg_n": 9,
+    "g_minus_xg": -0.13,
+    "ga_minus_xga": 0.16,
+    "sot_pg": 3.1,
+    "sota_pg": 5.1
+   },
+   "away": {
+    "gp": 6,
+    "w": 2,
+    "d": 3,
+    "l": 1,
+    "gf_pg": 1.0,
+    "ga_pg": 1.0,
+    "total_pg": 2.0,
+    "over": {
+     "1.5": 0.5,
+     "2.5": 0.5,
+     "3.5": 0.333
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.5,
+    "failed_to_score": 0.333,
+    "ppg": 1.5,
+    "xg_pg": 0.73,
+    "xga_pg": 1.12,
+    "xg_n": 6,
+    "g_minus_xg": 0.27,
+    "ga_minus_xga": -0.12,
+    "sot_pg": 1.7,
+    "sota_pg": 3.5
+   },
+   "last6": {
+    "gp": 6,
+    "w": 3,
+    "d": 2,
+    "l": 1,
+    "gf_pg": 1.33,
+    "ga_pg": 1.33,
+    "total_pg": 2.67,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.667,
+     "3.5": 0.5
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.333,
+    "ppg": 1.83,
+    "xg_pg": 0.73,
+    "xga_pg": 1.45,
+    "xg_n": 6,
+    "g_minus_xg": 0.61,
+    "ga_minus_xga": -0.12,
+    "sot_pg": 2.8,
+    "sota_pg": 4.3
+   },
+   "last6_log": [
+    "20261017 H FC Tokyo 0-4 (xG 0.13-2.52)",
+    "20261021 A Yokohama F. Marinos 2-2 (xG 1.3-1.91)",
+    "20261024 H Avispa Fukuoka 3-1 (xG 1.14-1.14)",
+    "20261101 A V-Varen Nagasaki 2-1 (xG 1.03-1.8)",
+    "20261107 A Shimizu S-Pulse 1-0 (xG 0.46-0.38)",
+    "20261121 H Nagoya Grampus 0-0 (xG 0.29-0.96)"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 15,
+   "points": 15
+  },
+  "Shimizu S-Pulse": {
+   "season": {
+    "gp": 15,
+    "w": 4,
+    "d": 3,
+    "l": 8,
+    "gf_pg": 0.73,
+    "ga_pg": 1.6,
+    "total_pg": 2.33,
+    "over": {
+     "1.5": 0.6,
+     "2.5": 0.4,
+     "3.5": 0.267
+    },
+    "btts": 0.4,
+    "clean_sheet": 0.133,
+    "failed_to_score": 0.467,
+    "ppg": 1.0,
+    "xg_pg": 0.93,
+    "xga_pg": 1.46,
+    "xg_n": 15,
+    "g_minus_xg": -0.19,
+    "ga_minus_xga": 0.14,
+    "sot_pg": 3.1,
+    "sota_pg": 4.8
+   },
+   "home": {
+    "gp": 8,
+    "w": 2,
+    "d": 2,
+    "l": 4,
+    "gf_pg": 0.75,
+    "ga_pg": 1.5,
+    "total_pg": 2.25,
+    "over": {
+     "1.5": 0.5,
+     "2.5": 0.375,
+     "3.5": 0.25
+    },
+    "btts": 0.375,
+    "clean_sheet": 0.125,
+    "failed_to_score": 0.5,
+    "ppg": 1.0,
+    "xg_pg": 0.83,
+    "xga_pg": 1.48,
+    "xg_n": 8,
+    "g_minus_xg": -0.08,
+    "ga_minus_xga": 0.02,
+    "sot_pg": 3.1,
+    "sota_pg": 4.1
+   },
+   "away": {
+    "gp": 7,
+    "w": 2,
+    "d": 1,
+    "l": 4,
+    "gf_pg": 0.71,
+    "ga_pg": 1.71,
+    "total_pg": 2.43,
+    "over": {
+     "1.5": 0.714,
+     "2.5": 0.429,
+     "3.5": 0.286
+    },
+    "btts": 0.429,
+    "clean_sheet": 0.143,
+    "failed_to_score": 0.429,
+    "ppg": 1.0,
+    "xg_pg": 1.04,
+    "xga_pg": 1.44,
+    "xg_n": 7,
+    "g_minus_xg": -0.32,
+    "ga_minus_xga": 0.27,
+    "sot_pg": 3.0,
+    "sota_pg": 5.6
+   },
+   "last6": {
+    "gp": 6,
+    "w": 0,
+    "d": 2,
+    "l": 4,
+    "gf_pg": 0.5,
+    "ga_pg": 2.5,
+    "total_pg": 3.0,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.5,
+     "3.5": 0.5
+    },
+    "btts": 0.333,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.667,
+    "ppg": 0.33,
+    "xg_pg": 0.51,
+    "xga_pg": 1.65,
+    "xg_n": 6,
+    "g_minus_xg": -0.01,
+    "ga_minus_xga": 0.85,
+    "sot_pg": 2.5,
+    "sota_pg": 5.7
+   },
+   "last6_log": [
+    "20261017 H Gamba Osaka 2-2 (xG 0.72-1.58)",
+    "20261021 H Machida 0-5 (xG 0.29-3.73)",
+    "20261024 A Sanfrecce Hiroshima 0-4 (xG 0.53-2.06)",
+    "20261031 A Kyoto 0-2 (xG 0.51-1.16)",
+    "20261107 H Verdy 0-1 (xG 0.38-0.46)",
+    "20261120 A Kashima Antlers 1-1 (xG 0.63-0.9)"
+   ],
+   "last_game_date": "20261120",
+   "rest_days": 1,
+   "rank": 16,
+   "points": 15
+  },
+  "V-Varen Nagasaki": {
+   "season": {
+    "gp": 15,
+    "w": 3,
+    "d": 5,
+    "l": 7,
+    "gf_pg": 1.13,
+    "ga_pg": 1.47,
+    "total_pg": 2.6,
+    "over": {
+     "1.5": 0.8,
+     "2.5": 0.467,
+     "3.5": 0.267
+    },
+    "btts": 0.533,
+    "clean_sheet": 0.2,
+    "failed_to_score": 0.333,
+    "ppg": 0.93,
+    "xg_pg": 1.18,
+    "xga_pg": 1.44,
+    "xg_n": 15,
+    "g_minus_xg": -0.04,
+    "ga_minus_xga": 0.03,
+    "sot_pg": 3.3,
+    "sota_pg": 4.0
+   },
+   "home": {
+    "gp": 7,
+    "w": 3,
+    "d": 2,
+    "l": 2,
+    "gf_pg": 1.71,
+    "ga_pg": 1.29,
+    "total_pg": 3.0,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.714,
+     "3.5": 0.286
+    },
+    "btts": 0.571,
+    "clean_sheet": 0.286,
+    "failed_to_score": 0.143,
+    "ppg": 1.57,
+    "xg_pg": 1.8,
+    "xga_pg": 1.3,
+    "xg_n": 7,
+    "g_minus_xg": -0.08,
+    "ga_minus_xga": -0.02,
+    "sot_pg": 4.7,
+    "sota_pg": 4.0
+   },
+   "away": {
+    "gp": 8,
+    "w": 0,
+    "d": 3,
+    "l": 5,
+    "gf_pg": 0.62,
+    "ga_pg": 1.62,
+    "total_pg": 2.25,
+    "over": {
+     "1.5": 0.625,
+     "2.5": 0.25,
+     "3.5": 0.25
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.125,
+    "failed_to_score": 0.5,
+    "ppg": 0.38,
+    "xg_pg": 0.64,
+    "xga_pg": 1.56,
+    "xg_n": 8,
+    "g_minus_xg": -0.01,
+    "ga_minus_xga": 0.06,
+    "sot_pg": 2.0,
+    "sota_pg": 4.0
+   },
+   "last6": {
+    "gp": 6,
+    "w": 1,
+    "d": 2,
+    "l": 3,
+    "gf_pg": 1.0,
+    "ga_pg": 1.0,
+    "total_pg": 2.0,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.333,
+     "3.5": 0.167
+    },
+    "btts": 0.333,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.5,
+    "ppg": 0.83,
+    "xg_pg": 1.1,
+    "xga_pg": 1.14,
+    "xg_n": 6,
+    "g_minus_xg": -0.1,
+    "ga_minus_xga": -0.14,
+    "sot_pg": 2.7,
+    "sota_pg": 3.0
+   },
+   "last6_log": [
+    "20261017 A Kashima Antlers 0-2 (xG 1.29-1.22)",
+    "20261021 H Sanfrecce Hiroshima 4-0 (xG 1.95-1.33)",
+    "20261025 A Urawa Reds 0-1 (xG 0.66-1.27)",
+    "20261101 H Verdy 1-2 (xG 1.8-1.03)",
+    "20261107 A Avispa Fukuoka 1-1 (xG 0.19-0.65)",
+    "20261121 A Machida 0-0 (xG 0.72-1.31)"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 17,
+   "points": 14
+  },
+  "Gamba Osaka": {
+   "season": {
+    "gp": 15,
+    "w": 2,
+    "d": 6,
+    "l": 7,
+    "gf_pg": 1.07,
+    "ga_pg": 1.67,
+    "total_pg": 2.73,
+    "over": {
+     "1.5": 0.733,
+     "2.5": 0.467,
+     "3.5": 0.4
+    },
+    "btts": 0.533,
+    "clean_sheet": 0.133,
+    "failed_to_score": 0.467,
+    "ppg": 0.8,
+    "xg_pg": 1.16,
+    "xga_pg": 1.51,
+    "xg_n": 15,
+    "g_minus_xg": -0.09,
+    "ga_minus_xga": 0.16,
+    "sot_pg": 4.7,
+    "sota_pg": 5.2
+   },
+   "home": {
+    "gp": 7,
+    "w": 1,
+    "d": 2,
+    "l": 4,
+    "gf_pg": 1.14,
+    "ga_pg": 1.71,
+    "total_pg": 2.86,
+    "over": {
+     "1.5": 0.571,
+     "2.5": 0.429,
+     "3.5": 0.429
+    },
+    "btts": 0.429,
+    "clean_sheet": 0.143,
+    "failed_to_score": 0.571,
+    "ppg": 0.71,
+    "xg_pg": 1.07,
+    "xga_pg": 1.66,
+    "xg_n": 7,
+    "g_minus_xg": 0.07,
+    "ga_minus_xga": 0.06,
+    "sot_pg": 4.9,
+    "sota_pg": 4.4
+   },
+   "away": {
+    "gp": 8,
+    "w": 1,
+    "d": 4,
+    "l": 3,
+    "gf_pg": 1.0,
+    "ga_pg": 1.62,
+    "total_pg": 2.62,
+    "over": {
+     "1.5": 0.875,
+     "2.5": 0.5,
+     "3.5": 0.375
+    },
+    "btts": 0.625,
+    "clean_sheet": 0.125,
+    "failed_to_score": 0.375,
+    "ppg": 0.88,
+    "xg_pg": 1.23,
+    "xga_pg": 1.37,
+    "xg_n": 8,
+    "g_minus_xg": -0.23,
+    "ga_minus_xga": 0.25,
+    "sot_pg": 4.5,
+    "sota_pg": 5.9
+   },
+   "last6": {
+    "gp": 6,
+    "w": 1,
+    "d": 3,
+    "l": 2,
+    "gf_pg": 1.33,
+    "ga_pg": 1.5,
+    "total_pg": 2.83,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.667,
+     "3.5": 0.5
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.333,
+    "ppg": 1.0,
+    "xg_pg": 1.19,
+    "xga_pg": 1.0,
+    "xg_n": 6,
+    "g_minus_xg": 0.14,
+    "ga_minus_xga": 0.5,
+    "sot_pg": 5.3,
+    "sota_pg": 4.2
+   },
+   "last6_log": [
+    "20261017 A Shimizu S-Pulse 2-2 (xG 1.58-0.72)",
+    "20261021 A Avispa Fukuoka 2-1 (xG 0.58-0.72)",
+    "20261024 H Kyoto 2-2 (xG 1.24-1.33)",
+    "20261101 A Machida 0-0 (xG 1.31-1.26)",
+    "20261108 H Cerezo Osaka 2-3 (xG 1.37-1.14)",
+    "20261121 H Okayama 0-1 (xG 1.07-0.83)"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 18,
+   "points": 12
+  },
+  "Mito": {
+   "season": {
+    "gp": 15,
+    "w": 3,
+    "d": 3,
+    "l": 9,
+    "gf_pg": 0.93,
+    "ga_pg": 1.8,
+    "total_pg": 2.73,
+    "over": {
+     "1.5": 0.8,
+     "2.5": 0.467,
+     "3.5": 0.2
+    },
+    "btts": 0.533,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.467,
+    "ppg": 0.8,
+    "xg_pg": 0.79,
+    "xga_pg": 1.65,
+    "xg_n": 15,
+    "g_minus_xg": 0.14,
+    "ga_minus_xga": 0.15,
+    "sot_pg": 2.7,
+    "sota_pg": 5.6
+   },
+   "home": {
+    "gp": 7,
+    "w": 1,
+    "d": 2,
+    "l": 4,
+    "gf_pg": 1.0,
+    "ga_pg": 1.57,
+    "total_pg": 2.57,
+    "over": {
+     "1.5": 0.714,
+     "2.5": 0.429,
+     "3.5": 0.143
+    },
+    "btts": 0.571,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.429,
+    "ppg": 0.71,
+    "xg_pg": 0.77,
+    "xga_pg": 1.69,
+    "xg_n": 7,
+    "g_minus_xg": 0.23,
+    "ga_minus_xga": -0.12,
+    "sot_pg": 2.6,
+    "sota_pg": 5.4
+   },
+   "away": {
+    "gp": 8,
+    "w": 2,
+    "d": 1,
+    "l": 5,
+    "gf_pg": 0.88,
+    "ga_pg": 2.0,
+    "total_pg": 2.88,
+    "over": {
+     "1.5": 0.875,
+     "2.5": 0.5,
+     "3.5": 0.25
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.5,
+    "ppg": 0.88,
+    "xg_pg": 0.81,
+    "xga_pg": 1.62,
+    "xg_n": 8,
+    "g_minus_xg": 0.06,
+    "ga_minus_xga": 0.38,
+    "sot_pg": 2.8,
+    "sota_pg": 5.8
+   },
+   "last6": {
+    "gp": 6,
+    "w": 1,
+    "d": 0,
+    "l": 5,
+    "gf_pg": 0.33,
+    "ga_pg": 2.33,
+    "total_pg": 2.67,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.5,
+     "3.5": 0.167
+    },
+    "btts": 0.167,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.833,
+    "ppg": 0.5,
+    "xg_pg": 0.42,
+    "xga_pg": 1.85,
+    "xg_n": 6,
+    "g_minus_xg": -0.08,
+    "ga_minus_xga": 0.48,
+    "sot_pg": 1.5,
+    "sota_pg": 6.3
+   },
+   "last6_log": [
+    "20261017 H Urawa Reds 0-1 (xG 0.03-2.35)",
+    "20261021 A Okayama 0-2 (xG 0.25-1.03)",
+    "20261025 A FC Tokyo 0-6 (xG 0.74-2.51)",
+    "20261031 H Sanfrecce Hiroshima 0-3 (xG 0.04-1.52)",
+    "20261108 A Chiba 0-1 (xG 0.79-2.16)",
+    "20261120 A Vissel Kobe 2-1 (xG 0.65-1.55)"
+   ],
+   "last_game_date": "20261120",
+   "rest_days": 1,
+   "rank": 19,
+   "points": 12
+  },
+  "Avispa Fukuoka": {
+   "season": {
+    "gp": 15,
+    "w": 2,
+    "d": 2,
+    "l": 11,
+    "gf_pg": 0.93,
+    "ga_pg": 1.73,
+    "total_pg": 2.67,
+    "over": {
+     "1.5": 0.733,
+     "2.5": 0.6,
+     "3.5": 0.2
+    },
+    "btts": 0.533,
+    "clean_sheet": 0.067,
+    "failed_to_score": 0.4,
+    "ppg": 0.53,
+    "xg_pg": 0.91,
+    "xga_pg": 1.31,
+    "xg_n": 15,
+    "g_minus_xg": 0.02,
+    "ga_minus_xga": 0.42,
+    "sot_pg": 3.7,
+    "sota_pg": 4.2
+   },
+   "home": {
+    "gp": 8,
+    "w": 2,
+    "d": 2,
+    "l": 4,
+    "gf_pg": 1.25,
+    "ga_pg": 1.25,
+    "total_pg": 2.5,
+    "over": {
+     "1.5": 0.75,
+     "2.5": 0.5,
+     "3.5": 0.125
+    },
+    "btts": 0.625,
+    "clean_sheet": 0.125,
+    "failed_to_score": 0.25,
+    "ppg": 1.0,
+    "xg_pg": 0.97,
+    "xga_pg": 1.28,
+    "xg_n": 8,
+    "g_minus_xg": 0.28,
+    "ga_minus_xga": -0.03,
+    "sot_pg": 4.1,
+    "sota_pg": 3.9
+   },
+   "away": {
+    "gp": 7,
+    "w": 0,
+    "d": 0,
+    "l": 7,
+    "gf_pg": 0.57,
+    "ga_pg": 2.29,
+    "total_pg": 2.86,
+    "over": {
+     "1.5": 0.714,
+     "2.5": 0.714,
+     "3.5": 0.286
+    },
+    "btts": 0.429,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.571,
+    "ppg": 0.0,
+    "xg_pg": 0.84,
+    "xga_pg": 1.35,
+    "xg_n": 7,
+    "g_minus_xg": -0.27,
+    "ga_minus_xga": 0.93,
+    "sot_pg": 3.3,
+    "sota_pg": 4.6
+   },
+   "last6": {
+    "gp": 6,
+    "w": 0,
+    "d": 1,
+    "l": 5,
+    "gf_pg": 0.5,
+    "ga_pg": 2.17,
+    "total_pg": 2.67,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.667,
+     "3.5": 0.167
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.5,
+    "ppg": 0.17,
+    "xg_pg": 0.68,
+    "xga_pg": 1.19,
+    "xg_n": 6,
+    "g_minus_xg": -0.18,
+    "ga_minus_xga": 0.97,
+    "sot_pg": 2.2,
+    "sota_pg": 4.5
+   },
+   "last6_log": [
+    "20261018 A Machida 0-3 (xG 0.7-1.64)",
+    "20261021 H Gamba Osaka 1-2 (xG 0.72-0.58)",
+    "20261024 A Verdy 1-3 (xG 1.14-1.14)",
+    "20261101 A Chiba 0-3 (xG 0.15-1.78)",
+    "20261107 H V-Varen Nagasaki 1-1 (xG 0.65-0.19)",
+    "20261121 A Kawasaki Frontale 0-1 (xG 0.72-1.82)"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 20,
+   "points": 8
+  }
+ },
+ "h2h": {
+  "Kashima Antlers vs Yokohama F. Marinos": [
+   "20260807 Yokohama F. Marinos 3-4 Kashima Antlers"
+  ],
+  "Gamba Osaka vs Urawa Reds": [
+   "20260807 Gamba Osaka 4-3 Urawa Reds"
+  ],
+  "Avispa Fukuoka vs Vissel Kobe": [
+   "20260808 Avispa Fukuoka 0-1 Vissel Kobe"
+  ],
+  "Cerezo Osaka vs Okayama": [
+   "20260808 Cerezo Osaka 2-1 Okayama"
+  ],
+  "FC Tokyo vs Machida": [
+   "20260808 FC Tokyo 1-5 Machida"
+  ],
+  "Kashiwa Reysol vs Mito": [
+   "20260808 Kashiwa Reysol 2-1 Mito"
+  ],
+  "Nagoya Grampus vs Shimizu S-Pulse": [
+   "20260808 Nagoya Grampus 0-1 Shimizu S-Pulse"
+  ],
+  "Chiba vs Sanfrecce Hiroshima": [
+   "20260808 Sanfrecce Hiroshima 3-0 Chiba"
+  ],
+  "Kawasaki Frontale vs Verdy": [
+   "20260809 Verdy 1-1 Kawasaki Frontale"
+  ],
+  "Kyoto vs V-Varen Nagasaki": [
+   "20260809 V-Varen Nagasaki 2-1 Kyoto"
+  ],
+  "Kashiwa Reysol vs Verdy": [
+   "20260814 Verdy 1-3 Kashiwa Reysol"
+  ],
+  "Kashima Antlers vs Nagoya Grampus": [
+   "20260815 Kashima Antlers 2-1 Nagoya Grampus"
+  ],
+  "Gamba Osaka vs Mito": [
+   "20260815 Mito 1-1 Gamba Osaka"
+  ],
+  "Shimizu S-Pulse vs Yokohama F. Marinos": [
+   "20260815 Shimizu S-Pulse 0-1 Yokohama F. Marinos"
+  ],
+  "Okayama vs V-Varen Nagasaki": [
+   "20260815 Okayama 1-0 V-Varen Nagasaki"
+  ],
+  "Avispa Fukuoka vs Cerezo Osaka": [
+   "20260815 Avispa Fukuoka 3-0 Cerezo Osaka"
+  ],
+  "Chiba vs Machida": [
+   "20260815 Chiba 0-4 Machida"
+  ],
+  "Kawasaki Frontale vs Kyoto": [
+   "20260815 Kawasaki Frontale 2-2 Kyoto"
+  ],
+  "Sanfrecce Hiroshima vs Urawa Reds": [
+   "20260815 Urawa Reds 1-4 Sanfrecce Hiroshima"
+  ],
+  "FC Tokyo vs Vissel Kobe": [
+   "20260815 Vissel Kobe 2-2 FC Tokyo"
+  ],
+  "Kashiwa Reysol vs V-Varen Nagasaki": [
+   "20260821 Kashiwa Reysol 4-2 V-Varen Nagasaki"
+  ],
+  "Chiba vs FC Tokyo": [
+   "20260821 FC Tokyo 2-0 Chiba"
+  ],
+  "Avispa Fukuoka vs Kashima Antlers": [
+   "20260822 Kashima Antlers 3-2 Avispa Fukuoka"
+  ],
+  "Okayama vs Verdy": [
+   "20260822 Okayama 0-0 Verdy"
+  ],
+  "Cerezo Osaka vs Shimizu S-Pulse": [
+   "20260822 Cerezo Osaka 1-0 Shimizu S-Pulse"
+  ],
+  "Kyoto vs Mito": [
+   "20260822 Kyoto 1-3 Mito"
+  ],
+  "Gamba Osaka vs Nagoya Grampus": [
+   "20260822 Nagoya Grampus 3-1 Gamba Osaka"
+  ],
+  "Kawasaki Frontale vs Sanfrecce Hiroshima": [
+   "20260822 Sanfrecce Hiroshima 1-1 Kawasaki Frontale"
+  ],
+  "Vissel Kobe vs Yokohama F. Marinos": [
+   "20260822 Yokohama F. Marinos 1-0 Vissel Kobe"
+  ],
+  "Machida vs Urawa Reds": [
+   "20260823 Machida 3-1 Urawa Reds"
+  ],
+  "Gamba Osaka vs Sanfrecce Hiroshima": [
+   "20260829 Gamba Osaka 0-0 Sanfrecce Hiroshima"
+  ],
+  "Machida vs Mito": [
+   "20260829 Mito 1-1 Machida"
+  ],
+  "Kashiwa Reysol vs Shimizu S-Pulse": [
+   "20260829 Shimizu S-Pulse 0-1 Kashiwa Reysol"
+  ],
+  "FC Tokyo vs V-Varen Nagasaki": [
+   "20260829 V-Varen Nagasaki 0-3 FC Tokyo"
+  ],
+  "Chiba vs Kawasaki Frontale": [
+   "20260829 Kawasaki Frontale 4-2 Chiba"
+  ],
+  "Avispa Fukuoka vs Kyoto": [
+   "20260829 Kyoto 2-1 Avispa Fukuoka"
+  ],
+  "Nagoya Grampus vs Okayama": [
+   "20260829 Nagoya Grampus 2-1 Okayama"
+  ],
+  "Urawa Reds vs Yokohama F. Marinos": [
+   "20260829 Urawa Reds 3-2 Yokohama F. Marinos"
+  ],
+  "Kashima Antlers vs Verdy": [
+   "20260829 Verdy 0-2 Kashima Antlers"
+  ],
+  "Cerezo Osaka vs Vissel Kobe": [
+   "20260829 Vissel Kobe 1-0 Cerezo Osaka"
+  ],
+  "Avispa Fukuoka vs Urawa Reds": [
+   "20260902 Avispa Fukuoka 2-3 Urawa Reds"
+  ],
+  "Cerezo Osaka vs Kashiwa Reysol": [
+   "20260902 Cerezo Osaka 2-0 Kashiwa Reysol"
+  ],
+  "Chiba vs Okayama": [
+   "20260902 Chiba 1-2 Okayama"
+  ],
+  "Kawasaki Frontale vs Machida": [
+   "20260902 Machida 2-1 Kawasaki Frontale"
+  ],
+  "Kashima Antlers vs Mito": [
+   "20260902 Mito 4-2 Kashima Antlers"
+  ],
+  "Nagoya Grampus vs Sanfrecce Hiroshima": [
+   "20260902 Sanfrecce Hiroshima 3-0 Nagoya Grampus"
+  ],
+  "FC Tokyo vs Shimizu S-Pulse": [
+   "20260902 Shimizu S-Pulse 1-1 FC Tokyo"
+  ],
+  "Verdy vs Vissel Kobe": [
+   "20260902 Verdy 0-2 Vissel Kobe"
+  ],
+  "Gamba Osaka vs V-Varen Nagasaki": [
+   "20260902 V-Varen Nagasaki 2-2 Gamba Osaka"
+  ],
+  "Kyoto vs Yokohama F. Marinos": [
+   "20260902 Yokohama F. Marinos 1-1 Kyoto"
+  ],
+  "Avispa Fukuoka vs Mito": [
+   "20260905 Avispa Fukuoka 1-1 Mito"
+  ],
+  "Chiba vs Gamba Osaka": [
+   "20260906 Chiba 2-0 Gamba Osaka"
+  ],
+  "Kashima Antlers vs Urawa Reds": [
+   "20260906 Kashima Antlers 0-1 Urawa Reds"
+  ],
+  "Machida vs Nagoya Grampus": [
+   "20260906 Nagoya Grampus 1-3 Machida"
+  ],
+  "Okayama vs Sanfrecce Hiroshima": [
+   "20260906 Okayama 3-2 Sanfrecce Hiroshima"
+  ],
+  "Cerezo Osaka vs Verdy": [
+   "20260906 Cerezo Osaka 0-0 Verdy"
+  ],
+  "Kashiwa Reysol vs Yokohama F. Marinos": [
+   "20260906 Kashiwa Reysol 0-2 Yokohama F. Marinos"
+  ],
+  "Kawasaki Frontale vs Shimizu S-Pulse": [
+   "20260906 Kawasaki Frontale 3-1 Shimizu S-Pulse"
+  ],
+  "V-Varen Nagasaki vs Vissel Kobe": [
+   "20260906 Vissel Kobe 3-1 V-Varen Nagasaki"
+  ],
+  "FC Tokyo vs Kyoto": [
+   "20260906 FC Tokyo 2-0 Kyoto"
+  ],
+  "Kashiwa Reysol vs Kyoto": [
+   "20260911 Kyoto 2-3 Kashiwa Reysol"
+  ],
+  "Kashima Antlers vs Vissel Kobe": [
+   "20260911 Vissel Kobe 2-1 Kashima Antlers"
+  ],
+  "Kawasaki Frontale vs Mito": [
+   "20260912 Mito 0-1 Kawasaki Frontale"
+  ],
+  "Avispa Fukuoka vs Shimizu S-Pulse": [
+   "20260912 Shimizu S-Pulse 1-0 Avispa Fukuoka"
+  ],
+  "FC Tokyo vs Gamba Osaka": [
+   "20260912 Gamba Osaka 0-2 FC Tokyo"
+  ],
+  "Machida vs Yokohama F. Marinos": [
+   "20260912 Machida 1-1 Yokohama F. Marinos"
+  ],
+  "Cerezo Osaka vs Sanfrecce Hiroshima": [
+   "20260912 Sanfrecce Hiroshima 6-1 Cerezo Osaka"
+  ],
+  "Nagoya Grampus vs V-Varen Nagasaki": [
+   "20260912 V-Varen Nagasaki 2-0 Nagoya Grampus"
+  ],
+  "Chiba vs Verdy": [
+   "20260913 Verdy 1-1 Chiba"
+  ],
+  "Okayama vs Urawa Reds": [
+   "20260913 Urawa Reds 1-2 Okayama"
+  ],
+  "Avispa Fukuoka vs Sanfrecce Hiroshima": [
+   "20260919 Avispa Fukuoka 0-1 Sanfrecce Hiroshima"
+  ],
+  "Kashima Antlers vs Kawasaki Frontale": [
+   "20260919 Kawasaki Frontale 3-3 Kashima Antlers"
+  ],
+  "Chiba vs Shimizu S-Pulse": [
+   "20260919 Shimizu S-Pulse 2-1 Chiba"
+  ],
+  "Urawa Reds vs Verdy": [
+   "20260919 Urawa Reds 3-1 Verdy"
+  ],
+  "Cerezo Osaka vs V-Varen Nagasaki": [
+   "20260919 V-Varen Nagasaki 1-1 Cerezo Osaka"
+  ],
+  "FC Tokyo vs Nagoya Grampus": [
+   "20260919 FC Tokyo 1-0 Nagoya Grampus"
+  ],
+  "Kyoto vs Okayama": [
+   "20260919 Okayama 1-2 Kyoto"
+  ],
+  "Mito vs Yokohama F. Marinos": [
+   "20260919 Yokohama F. Marinos 2-0 Mito"
+  ],
+  "Gamba Osaka vs Vissel Kobe": [
+   "20260920 Gamba Osaka 0-1 Vissel Kobe"
+  ],
+  "Kashiwa Reysol vs Machida": [
+   "20260920 Machida 2-4 Kashiwa Reysol"
+  ],
+  "Gamba Osaka vs Kashima Antlers": [
+   "20261009 Kashima Antlers 2-0 Gamba Osaka"
+  ],
+  "Kashiwa Reysol vs Vissel Kobe": [
+   "20261009 Kashiwa Reysol 4-2 Vissel Kobe"
+  ],
+  "Cerezo Osaka vs Yokohama F. Marinos": [
+   "20261010 Cerezo Osaka 0-0 Yokohama F. Marinos"
+  ],
+  "Avispa Fukuoka vs Okayama": [
+   "20261010 Avispa Fukuoka 2-1 Okayama"
+  ],
+  "FC Tokyo vs Urawa Reds": [
+   "20261010 FC Tokyo 3-0 Urawa Reds"
+  ],
+  "Kyoto vs Machida": [
+   "20261010 Kyoto 0-1 Machida"
+  ],
+  "Chiba vs V-Varen Nagasaki": [
+   "20261011 Chiba 1-1 V-Varen Nagasaki"
+  ],
+  "Mito vs Shimizu S-Pulse": [
+   "20261011 Mito 1-2 Shimizu S-Pulse"
+  ],
+  "Sanfrecce Hiroshima vs Verdy": [
+   "20261011 Verdy 0-2 Sanfrecce Hiroshima"
+  ],
+  "Kawasaki Frontale vs Nagoya Grampus": [
+   "20261011 Kawasaki Frontale 1-2 Nagoya Grampus"
+  ],
+  "Gamba Osaka vs Shimizu S-Pulse": [
+   "20261017 Shimizu S-Pulse 2-2 Gamba Osaka"
+  ],
+  "Chiba vs Yokohama F. Marinos": [
+   "20261017 Chiba 0-0 Yokohama F. Marinos"
+  ],
+  "Kyoto vs Sanfrecce Hiroshima": [
+   "20261017 Sanfrecce Hiroshima 3-0 Kyoto"
+  ],
+  "FC Tokyo vs Verdy": [
+   "20261017 Verdy 0-4 FC Tokyo"
+  ],
+  "Cerezo Osaka vs Kawasaki Frontale": [
+   "20261017 Cerezo Osaka 2-4 Kawasaki Frontale"
+  ],
+  "Kashima Antlers vs V-Varen Nagasaki": [
+   "20261017 Kashima Antlers 2-0 V-Varen Nagasaki"
+  ],
+  "Mito vs Urawa Reds": [
+   "20261017 Mito 0-1 Urawa Reds"
+  ],
+  "Kashiwa Reysol vs Nagoya Grampus": [
+   "20261017 Kashiwa Reysol 1-3 Nagoya Grampus"
+  ],
+  "Okayama vs Vissel Kobe": [
+   "20261018 Okayama 0-3 Vissel Kobe"
+  ],
+  "Avispa Fukuoka vs Machida": [
+   "20261018 Machida 3-0 Avispa Fukuoka"
+  ],
+  "Avispa Fukuoka vs Gamba Osaka": [
+   "20261021 Avispa Fukuoka 1-2 Gamba Osaka"
+  ],
+  "FC Tokyo vs Kashiwa Reysol": [
+   "20261021 FC Tokyo 0-0 Kashiwa Reysol"
+  ],
+  "Kawasaki Frontale vs Vissel Kobe": [
+   "20261021 Kawasaki Frontale 2-1 Vissel Kobe"
+  ],
+  "Kashima Antlers vs Kyoto": [
+   "20261021 Kyoto 2-2 Kashima Antlers"
+  ],
+  "Cerezo Osaka vs Nagoya Grampus": [
+   "20261021 Nagoya Grampus 1-1 Cerezo Osaka"
+  ],
+  "Mito vs Okayama": [
+   "20261021 Okayama 2-0 Mito"
+  ],
+  "Machida vs Shimizu S-Pulse": [
+   "20261021 Shimizu S-Pulse 0-5 Machida"
+  ],
+  "Sanfrecce Hiroshima vs V-Varen Nagasaki": [
+   "20261021 V-Varen Nagasaki 4-0 Sanfrecce Hiroshima"
+  ],
+  "Verdy vs Yokohama F. Marinos": [
+   "20261021 Yokohama F. Marinos 2-2 Verdy"
+  ],
+  "Chiba vs Urawa Reds": [
+   "20261021 Urawa Reds 3-2 Chiba"
+  ],
+  "Sanfrecce Hiroshima vs Shimizu S-Pulse": [
+   "20261024 Sanfrecce Hiroshima 4-0 Shimizu S-Pulse"
+  ],
+  "Kashima Antlers vs Kashiwa Reysol": [
+   "20261024 Kashima Antlers 2-3 Kashiwa Reysol"
+  ],
+  "Avispa Fukuoka vs Verdy": [
+   "20261024 Verdy 3-1 Avispa Fukuoka"
+  ],
+  "Machida vs Vissel Kobe": [
+   "20261024 Vissel Kobe 0-0 Machida"
+  ],
+  "Gamba Osaka vs Kyoto": [
+   "20261024 Gamba Osaka 2-2 Kyoto"
+  ],
+  "Nagoya Grampus vs Yokohama F. Marinos": [
+   "20261025 Nagoya Grampus 1-1 Yokohama F. Marinos"
+  ],
+  "Cerezo Osaka vs Chiba": [
+   "20261025 Cerezo Osaka 2-2 Chiba"
+  ],
+  "Urawa Reds vs V-Varen Nagasaki": [
+   "20261025 Urawa Reds 1-0 V-Varen Nagasaki"
+  ],
+  "FC Tokyo vs Mito": [
+   "20261025 FC Tokyo 6-0 Mito"
+  ],
+  "Kawasaki Frontale vs Okayama": [
+   "20261025 Kawasaki Frontale 2-1 Okayama"
+  ],
+  "Kyoto vs Shimizu S-Pulse": [
+   "20261031 Kyoto 2-0 Shimizu S-Pulse"
+  ],
+  "Mito vs Sanfrecce Hiroshima": [
+   "20261031 Mito 0-3 Sanfrecce Hiroshima"
+  ],
+  "FC Tokyo vs Okayama": [
+   "20261031 Okayama 0-4 FC Tokyo"
+  ],
+  "Cerezo Osaka vs Kashima Antlers": [
+   "20261031 Kashima Antlers 4-1 Cerezo Osaka"
+  ],
+  "Nagoya Grampus vs Vissel Kobe": [
+   "20261031 Vissel Kobe 3-1 Nagoya Grampus"
+  ],
+  "Kashiwa Reysol vs Urawa Reds": [
+   "20261031 Kashiwa Reysol 4-0 Urawa Reds"
+  ],
+  "Kawasaki Frontale vs Yokohama F. Marinos": [
+   "20261101 Yokohama F. Marinos 4-2 Kawasaki Frontale"
+  ],
+  "Avispa Fukuoka vs Chiba": [
+   "20261101 Chiba 3-0 Avispa Fukuoka"
+  ],
+  "V-Varen Nagasaki vs Verdy": [
+   "20261101 V-Varen Nagasaki 1-2 Verdy"
+  ],
+  "Gamba Osaka vs Machida": [
+   "20261101 Machida 0-0 Gamba Osaka"
+  ],
+  "Shimizu S-Pulse vs Verdy": [
+   "20261107 Shimizu S-Pulse 0-1 Verdy"
+  ],
+  "Kyoto vs Nagoya Grampus": [
+   "20261107 Nagoya Grampus 0-2 Kyoto"
+  ],
+  "Okayama vs Yokohama F. Marinos": [
+   "20261107 Yokohama F. Marinos 1-1 Okayama"
+  ],
+  "Avispa Fukuoka vs V-Varen Nagasaki": [
+   "20261107 Avispa Fukuoka 1-1 V-Varen Nagasaki"
+  ],
+  "FC Tokyo vs Kashima Antlers": [
+   "20261107 FC Tokyo 2-0 Kashima Antlers"
+  ],
+  "Kashiwa Reysol vs Kawasaki Frontale": [
+   "20261107 Kashiwa Reysol 2-1 Kawasaki Frontale"
+  ],
+  "Machida vs Sanfrecce Hiroshima": [
+   "20261108 Machida 0-0 Sanfrecce Hiroshima"
+  ],
+  "Urawa Reds vs Vissel Kobe": [
+   "20261108 Vissel Kobe 2-2 Urawa Reds"
+  ],
+  "Cerezo Osaka vs Gamba Osaka": [
+   "20261108 Gamba Osaka 2-3 Cerezo Osaka"
+  ],
+  "Chiba vs Mito": [
+   "20261108 Chiba 1-0 Mito"
+  ],
+  "Kashima Antlers vs Shimizu S-Pulse": [
+   "20261120 Kashima Antlers 1-1 Shimizu S-Pulse"
+  ],
+  "Chiba vs Kashiwa Reysol": [
+   "20261120 Kashiwa Reysol 0-1 Chiba"
+  ],
+  "Mito vs Vissel Kobe": [
+   "20261120 Vissel Kobe 1-2 Mito"
+  ],
+  "Kyoto vs Urawa Reds": [
+   "20261121 Kyoto 2-1 Urawa Reds"
+  ],
+  "Machida vs V-Varen Nagasaki": [
+   "20261121 Machida 0-0 V-Varen Nagasaki"
+  ],
+  "Sanfrecce Hiroshima vs Yokohama F. Marinos": [
+   "20261121 Sanfrecce Hiroshima 2-2 Yokohama F. Marinos"
+  ],
+  "Nagoya Grampus vs Verdy": [
+   "20261121 Verdy 0-0 Nagoya Grampus"
+  ],
+  "Cerezo Osaka vs FC Tokyo": [
+   "20261121 Cerezo Osaka 0-3 FC Tokyo"
+  ],
+  "Avispa Fukuoka vs Kawasaki Frontale": [
+   "20261121 Kawasaki Frontale 1-0 Avispa Fukuoka"
+  ],
+  "Gamba Osaka vs Okayama": [
+   "20261121 Gamba Osaka 0-1 Okayama"
+  ]
+ }
+}
