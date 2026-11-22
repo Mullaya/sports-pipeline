@@ -1,6 +1,6 @@
 {
  "meta": {
-  "generated_kst": "2026-11-22 19:41",
+  "generated_kst": "2026-11-22 22:04",
   "league": "LIGUE1",
   "season_start": "20260701",
   "games": 96,
@@ -2077,74 +2077,573 @@
   }
  },
  "h2h": {
+  "Lille vs Nice": [
+   "20240519 Lille 2-2 Nice",
+   "20241110 Nice 2-2 Lille",
+   "20250117 Lille 2-1 Nice",
+   "20251029 Nice 2-0 Lille",
+   "20260418 Lille 0-0 Nice",
+   "20260920 Nice 2-1 Lille"
+  ],
+  "Brest vs Le Havre": [
+   "20240303 Brest 1-0 Le Havre",
+   "20241006 Brest 2-0 Le Havre",
+   "20250126 Le Havre 0-1 Brest",
+   "20251029 Le Havre 1-0 Brest",
+   "20260308 Brest 2-0 Le Havre",
+   "20260905 Le Havre 1-2 Brest"
+  ],
+  "Lorient vs Nice": [
+   "20230820 Lorient 1-1 Nice",
+   "20240419 Nice 3-0 Lorient",
+   "20251130 Lorient 3-1 Nice",
+   "20260222 Nice 3-3 Lorient",
+   "20260822 Nice 0-0 Lorient"
+  ],
+  "Monaco vs Strasbourg": [
+   "20240310 Strasbourg 0-1 Monaco",
+   "20241109 Strasbourg 1-3 Monaco",
+   "20250419 Monaco 0-0 Strasbourg",
+   "20250831 Monaco 3-2 Strasbourg",
+   "20260517 Strasbourg 5-4 Monaco",
+   "20260912 Strasbourg 1-1 Monaco"
+  ],
+  "Strasbourg vs Toulouse": [
+   "20240407 Toulouse 0-0 Strasbourg",
+   "20250112 Toulouse 1-2 Strasbourg",
+   "20250316 Strasbourg 2-1 Toulouse",
+   "20251206 Toulouse 1-0 Strasbourg",
+   "20260503 Strasbourg 1-2 Toulouse",
+   "20261106 Toulouse 3-1 Strasbourg"
+  ],
+  "Lyon vs Nice": [
+   "20240216 Lyon 1-0 Nice",
+   "20241201 Lyon 4-1 Nice",
+   "20250309 Nice 0-2 Lyon",
+   "20251018 Nice 3-2 Lyon",
+   "20260215 Lyon 2-0 Nice",
+   "20261018 Lyon 2-1 Nice"
+  ],
+  "Lens vs Monaco": [
+   "20240225 Lens 2-3 Monaco",
+   "20240901 Monaco 1-1 Lens",
+   "20250517 Lens 4-0 Monaco",
+   "20251108 Monaco 1-4 Lens",
+   "20260221 Lens 2-3 Monaco",
+   "20260918 Monaco 2-1 Lens"
+  ],
+  "Le Havre vs Lorient": [
+   "20230903 Le Havre 3-0 Lorient",
+   "20240128 Lorient 3-3 Le Havre",
+   "20250921 Le Havre 1-1 Lorient",
+   "20260517 Lorient 0-2 Le Havre",
+   "20261108 Le Havre 0-2 Lorient"
+  ],
+  "Nice vs Strasbourg": [
+   "20240428 Strasbourg 1-3 Nice",
+   "20241124 Nice 2-1 Strasbourg",
+   "20250412 Strasbourg 2-2 Nice",
+   "20260103 Nice 1-1 Strasbourg",
+   "20260404 Strasbourg 3-1 Nice",
+   "20261011 Nice 2-1 Strasbourg"
+  ],
+  "Lyon vs PSG": [
+   "20240421 PSG 4-1 Lyon",
+   "20241215 PSG 3-1 Lyon",
+   "20250223 Lyon 2-3 PSG",
+   "20251109 Lyon 2-3 PSG",
+   "20260419 PSG 1-2 Lyon",
+   "20261026 PSG 2-0 Lyon"
+  ],
+  "Nice vs PSG": [
+   "20240515 Nice 1-2 PSG",
+   "20241006 Nice 1-1 PSG",
+   "20250425 PSG 1-3 Nice",
+   "20251101 PSG 1-0 Nice",
+   "20260321 Nice 0-4 PSG",
+   "20261121 Nice 2-3 PSG"
+  ],
+  "Lille vs Rennes": [
+   "20240310 Lille 2-2 Rennes",
+   "20241124 Lille 1-0 Rennes",
+   "20250216 Rennes 0-2 Lille",
+   "20260103 Lille 0-2 Rennes",
+   "20260315 Rennes 1-2 Lille",
+   "20261108 Rennes 1-2 Lille"
+  ],
+  "Lorient vs Monaco": [
+   "20230917 Lorient 2-2 Monaco",
+   "20240317 Monaco 2-2 Lorient",
+   "20250927 Lorient 3-1 Monaco",
+   "20260116 Monaco 1-3 Lorient",
+   "20261018 Lorient 1-0 Monaco"
+  ],
+  "Marseille vs Toulouse": [
+   "20240421 Toulouse 2-2 Marseille",
+   "20240831 Toulouse 1-3 Marseille",
+   "20250406 Marseille 3-2 Toulouse",
+   "20251129 Marseille 2-2 Toulouse",
+   "20260307 Toulouse 0-1 Marseille",
+   "20261101 Marseille 2-0 Toulouse"
+  ],
+  "Le Havre vs Lyon": [
+   "20240114 Le Havre 3-1 Lyon",
+   "20241020 Le Havre 0-4 Lyon",
+   "20250316 Lyon 4-2 Le Havre",
+   "20251214 Lyon 1-0 Le Havre",
+   "20260315 Le Havre 0-0 Lyon",
+   "20260829 Lyon 1-1 Le Havre"
+  ],
+  "Brest vs Lyon": [
+   "20240414 Lyon 4-3 Brest",
+   "20250111 Brest 2-1 Lyon",
+   "20250302 Lyon 2-1 Brest",
+   "20251102 Brest 0-0 Lyon",
+   "20260118 Lyon 2-1 Brest",
+   "20261108 Brest 2-0 Lyon"
+  ],
+  "Lens vs Toulouse": [
+   "20240128 Toulouse 0-2 Lens",
+   "20250105 Lens 0-1 Toulouse",
+   "20250510 Toulouse 1-1 Lens",
+   "20260102 Toulouse 0-3 Lens",
+   "20260417 Lens 3-2 Toulouse",
+   "20261121 Lens 1-1 Toulouse"
+  ],
+  "Marseille vs PSG": [
+   "20240331 Marseille 0-2 PSG",
+   "20241027 Marseille 0-3 PSG",
+   "20250316 PSG 3-1 Marseille",
+   "20250922 Marseille 1-0 PSG",
+   "20260208 PSG 5-0 Marseille",
+   "20260920 Marseille 1-2 PSG"
+  ],
+  "Lens vs Strasbourg": [
+   "20240210 Lens 3-1 Strasbourg",
+   "20241006 Strasbourg 2-2 Lens",
+   "20250216 Lens 0-2 Strasbourg",
+   "20251122 Lens 1-0 Strasbourg",
+   "20260227 Strasbourg 1-1 Lens",
+   "20260829 Strasbourg 2-1 Lens"
+  ],
+  "Marseille vs Monaco": [
+   "20240127 Marseille 2-2 Monaco",
+   "20241201 Marseille 2-1 Monaco",
+   "20250412 Monaco 3-0 Marseille",
+   "20251214 Marseille 1-0 Monaco",
+   "20260405 Monaco 2-1 Marseille",
+   "20260830 Monaco 2-0 Marseille"
+  ],
+  "Le Havre vs Lille": [
+   "20240217 Lille 3-0 Le Havre",
+   "20240928 Le Havre 0-3 Lille",
+   "20250208 Lille 1-2 Le Havre",
+   "20251130 Le Havre 0-1 Lille",
+   "20260503 Lille 1-1 Le Havre",
+   "20261010 Lille 1-0 Le Havre"
+  ],
+  "Brest vs Nice": [
+   "20240204 Brest 0-0 Nice",
+   "20241102 Brest 0-1 Nice",
+   "20250517 Nice 6-0 Brest",
+   "20250920 Brest 4-1 Nice",
+   "20260201 Nice 2-2 Brest",
+   "20261023 Brest 1-2 Nice"
+  ],
+  "Le Havre vs Marseille": [
+   "20240519 Le Havre 1-2 Marseille",
+   "20250105 Marseille 5-1 Le Havre",
+   "20250510 Le Havre 1-3 Marseille",
+   "20251018 Marseille 6-2 Le Havre",
+   "20260510 Le Havre 0-1 Marseille",
+   "20261025 Marseille 4-3 Le Havre"
+  ],
+  "Brest vs Toulouse": [
+   "20240519 Toulouse 0-3 Brest",
+   "20240922 Brest 2-0 Toulouse",
+   "20250330 Toulouse 2-4 Brest",
+   "20250824 Toulouse 2-0 Brest",
+   "20260125 Brest 0-2 Toulouse",
+   "20260829 Brest 2-2 Toulouse"
+  ],
+  "Lens vs Lille": [
+   "20240329 Lille 2-1 Lens",
+   "20241026 Lens 0-2 Lille",
+   "20250330 Lille 1-0 Lens",
+   "20250920 Lens 3-0 Lille",
+   "20260404 Lille 3-0 Lens",
+   "20261030 Lille 1-0 Lens"
+  ],
+  "PSG vs Rennes": [
+   "20240225 PSG 1-1 Rennes",
+   "20240927 PSG 3-1 Rennes",
+   "20250308 Rennes 1-4 PSG",
+   "20251206 PSG 5-0 Rennes",
+   "20260213 Rennes 3-1 PSG",
+   "20260823 Rennes 2-2 PSG"
+  ],
+  "PSG vs Strasbourg": [
+   "20240202 Strasbourg 1-2 PSG",
+   "20241019 PSG 4-2 Strasbourg",
+   "20250503 Strasbourg 2-1 PSG",
+   "20251017 PSG 3-3 Strasbourg",
+   "20260201 Strasbourg 1-2 PSG",
+   "20261017 Strasbourg 1-3 PSG"
+  ],
+  "Brest vs Lille": [
+   "20240317 Brest 1-1 Lille",
+   "20241206 Lille 3-1 Brest",
+   "20250510 Brest 2-0 Lille",
+   "20250817 Brest 3-3 Lille",
+   "20260214 Lille 1-1 Brest",
+   "20261017 Lille 1-1 Brest"
+  ],
+  "Brest vs PSG": [
+   "20240128 PSG 2-2 Brest",
+   "20240914 PSG 3-1 Brest",
+   "20250201 Brest 2-5 PSG",
+   "20251025 Brest 0-3 PSG",
+   "20260510 PSG 1-0 Brest",
+   "20260913 Brest 0-1 PSG"
+  ],
+  "Lille vs Monaco": [
+   "20240424 Monaco 1-0 Lille",
+   "20241018 Monaco 0-0 Lille",
+   "20250222 Lille 2-1 Monaco",
+   "20250824 Lille 1-0 Monaco",
+   "20260510 Monaco 0-1 Lille",
+   "20261025 Monaco 1-1 Lille"
+  ],
+  "Rennes vs Strasbourg": [
+   "20240331 Strasbourg 2-0 Rennes",
+   "20240825 Strasbourg 3-1 Rennes",
+   "20250202 Rennes 1-0 Strasbourg",
+   "20251102 Rennes 4-1 Strasbourg",
+   "20260419 Strasbourg 0-3 Rennes",
+   "20261025 Rennes 3-0 Strasbourg"
+  ],
+  "Lens vs Lorient": [
+   "20231104 Lorient 0-0 Lens",
+   "20240503 Lens 2-0 Lorient",
+   "20251102 Lens 3-0 Lorient",
+   "20260314 Lorient 2-1 Lens",
+   "20260905 Lens 0-1 Lorient"
+  ],
+  "Le Havre vs Toulouse": [
+   "20240310 Le Havre 1-0 Toulouse",
+   "20240915 Toulouse 2-0 Le Havre",
+   "20250223 Le Havre 1-4 Toulouse",
+   "20251102 Toulouse 0-0 Le Havre",
+   "20260215 Le Havre 2-1 Toulouse",
+   "20260919 Toulouse 3-2 Le Havre"
+  ],
+  "Nice vs Rennes": [
+   "20240113 Rennes 2-0 Nice",
+   "20250103 Nice 3-2 Rennes",
+   "20250510 Rennes 2-0 Nice",
+   "20251026 Rennes 1-2 Nice",
+   "20260308 Nice 0-4 Rennes",
+   "20261030 Nice 5-2 Rennes"
+  ],
+  "Le Havre vs Monaco": [
+   "20240204 Monaco 1-1 Le Havre",
+   "20240922 Monaco 3-1 Le Havre",
+   "20250426 Le Havre 1-1 Monaco",
+   "20250816 Monaco 3-1 Le Havre",
+   "20260124 Le Havre 0-0 Monaco",
+   "20260823 Le Havre 0-1 Monaco"
+  ],
+  "Lille vs Toulouse": [
+   "20240225 Toulouse 3-1 Lille",
+   "20241005 Lille 2-1 Toulouse",
+   "20250412 Toulouse 1-2 Lille",
+   "20250914 Lille 2-1 Toulouse",
+   "20260412 Toulouse 0-4 Lille",
+   "20260903 Toulouse 0-1 Lille"
+  ],
+  "Lyon vs Rennes": [
+   "20240126 Lyon 2-3 Rennes",
+   "20240818 Rennes 3-0 Lyon",
+   "20250426 Lyon 4-1 Rennes",
+   "20250914 Rennes 3-1 Lyon",
+   "20260503 Lyon 4-2 Rennes",
+   "20260919 Lyon 4-0 Rennes"
+  ],
+  "Lens vs Marseille": [
+   "20240428 Marseille 2-1 Lens",
+   "20241123 Lens 1-3 Marseille",
+   "20250308 Marseille 0-1 Lens",
+   "20251025 Lens 2-1 Marseille",
+   "20260124 Marseille 3-1 Lens",
+   "20261108 Lens 1-2 Marseille"
+  ],
+  "Monaco vs PSG": [
+   "20240301 Monaco 0-0 PSG",
+   "20241218 Monaco 2-4 PSG",
+   "20250207 PSG 4-1 Monaco",
+   "20251129 Monaco 1-0 PSG",
+   "20260306 PSG 1-3 Monaco",
+   "20260904 PSG 1-2 Monaco"
+  ],
   "Marseille vs Strasbourg": [
+   "20240112 Marseille 1-1 Strasbourg",
+   "20240929 Strasbourg 1-0 Marseille",
+   "20250119 Marseille 1-1 Strasbourg",
+   "20250926 Strasbourg 1-2 Marseille",
+   "20260214 Marseille 2-2 Strasbourg",
    "20260821 Marseille 4-0 Strasbourg"
   ],
+  "Lille vs Lyon": [
+   "20240506 Lille 3-4 Lyon",
+   "20241101 Lille 1-1 Lyon",
+   "20250405 Lyon 2-1 Lille",
+   "20250928 Lille 0-1 Lyon",
+   "20260201 Lyon 1-0 Lille",
+   "20261121 Lille 0-1 Lyon"
+  ],
+  "Lens vs Lyon": [
+   "20240303 Lyon 0-3 Lens",
+   "20240915 Lens 0-0 Lyon",
+   "20250504 Lyon 1-2 Lens",
+   "20250816 Lens 0-1 Lyon",
+   "20260517 Lyon 0-4 Lens",
+   "20261009 Lens 2-1 Lyon"
+  ],
+  "Le Havre vs PSG": [
+   "20240427 PSG 3-3 Le Havre",
+   "20240816 Le Havre 1-4 PSG",
+   "20250419 PSG 2-1 Le Havre",
+   "20251122 PSG 3-0 Le Havre",
+   "20260228 Le Havre 0-1 PSG",
+   "20261030 Le Havre 1-5 PSG"
+  ],
+  "Lorient vs Toulouse": [
+   "20231203 Toulouse 1-1 Lorient",
+   "20240428 Lorient 1-2 Toulouse",
+   "20251109 Lorient 1-1 Toulouse",
+   "20260321 Toulouse 1-0 Lorient",
+   "20260912 Lorient 2-2 Toulouse"
+  ],
+  "Marseille vs Rennes": [
+   "20240317 Rennes 2-0 Marseille",
+   "20250111 Rennes 1-2 Marseille",
+   "20250517 Marseille 4-2 Rennes",
+   "20250815 Rennes 1-0 Marseille",
+   "20260517 Marseille 3-1 Rennes",
+   "20260911 Rennes 1-0 Marseille"
+  ],
+  "Brest vs Strasbourg": [
+   "20240224 Strasbourg 0-3 Brest",
+   "20241130 Brest 3-1 Strasbourg",
+   "20250223 Strasbourg 0-0 Brest",
+   "20251130 Strasbourg 1-2 Brest",
+   "20260513 Brest 1-2 Strasbourg",
+   "20261121 Strasbourg 0-1 Brest"
+  ],
+  "Lyon vs Toulouse": [
+   "20240315 Toulouse 2-3 Lyon",
+   "20240929 Toulouse 1-2 Lyon",
+   "20250118 Lyon 0-0 Toulouse",
+   "20251005 Lyon 1-2 Toulouse",
+   "20260510 Toulouse 2-1 Lyon",
+   "20260822 Toulouse 0-2 Lyon"
+  ],
+  "Lille vs PSG": [
+   "20240210 PSG 3-1 Lille",
+   "20240901 Lille 1-3 PSG",
+   "20250301 PSG 4-1 Lille",
+   "20251005 Lille 1-1 PSG",
+   "20260116 PSG 3-0 Lille",
+   "20260828 Lille 2-2 PSG"
+  ],
+  "Brest vs Lorient": [
+   "20231220 Brest 4-0 Lorient",
+   "20240331 Lorient 0-1 Brest",
+   "20251019 Lorient 3-3 Brest",
+   "20260207 Brest 2-0 Lorient",
+   "20261102 Lorient 0-2 Brest"
+  ],
+  "Monaco vs Toulouse": [
+   "20240218 Monaco 1-2 Toulouse",
+   "20241207 Monaco 2-0 Toulouse",
+   "20250307 Toulouse 1-1 Monaco",
+   "20251025 Monaco 1-0 Toulouse",
+   "20260425 Toulouse 2-2 Monaco",
+   "20261010 Monaco 2-2 Toulouse"
+  ],
+  "Auxerre vs Nice": [
+   "20240818 Auxerre 2-1 Nice",
+   "20250314 Nice 1-1 Auxerre",
+   "20250823 Nice 3-1 Auxerre",
+   "20260510 Auxerre 2-1 Nice",
+   "20260912 Auxerre 1-0 Nice"
+  ],
+  "Angers vs Lille": [
+   "20240824 Lille 2-0 Angers",
+   "20250427 Angers 0-2 Lille",
+   "20251102 Lille 1-0 Angers",
+   "20260222 Angers 0-1 Lille",
+   "20260823 Angers 0-2 Lille"
+  ],
+  "Angers vs Nice": [
+   "20240901 Angers 1-4 Nice",
+   "20250420 Nice 2-1 Angers",
+   "20251207 Nice 0-1 Angers",
+   "20260314 Angers 0-2 Nice",
+   "20261108 Angers 0-2 Nice"
+  ],
+  "Auxerre vs Le Havre": [
+   "20240901 Le Havre 3-1 Auxerre",
+   "20250504 Auxerre 1-2 Le Havre",
+   "20251026 Auxerre 0-1 Le Havre",
+   "20260405 Le Havre 1-1 Auxerre",
+   "20261018 Le Havre 1-3 Auxerre"
+  ],
+  "Auxerre vs Monaco": [
+   "20240914 Auxerre 0-3 Monaco",
+   "20250201 Monaco 4-2 Auxerre",
+   "20250913 Auxerre 1-2 Monaco",
+   "20260419 Monaco 2-2 Auxerre",
+   "20261121 Monaco 1-1 Auxerre"
+  ],
+  "Auxerre vs Brest": [
+   "20240927 Auxerre 3-0 Brest",
+   "20250214 Brest 2-2 Auxerre",
+   "20260104 Brest 2-0 Auxerre",
+   "20260321 Auxerre 3-0 Brest",
+   "20260920 Auxerre 2-1 Brest"
+  ],
+  "Angers vs Marseille": [
+   "20241004 Marseille 1-1 Angers",
+   "20250209 Angers 0-2 Marseille",
+   "20251029 Marseille 2-2 Angers",
+   "20260117 Angers 2-5 Marseille",
+   "20261018 Angers 2-5 Marseille"
+  ],
+  "Auxerre vs Lyon": [
+   "20241027 Lyon 2-2 Auxerre",
+   "20250413 Auxerre 1-3 Lyon",
+   "20251123 Auxerre 0-0 Lyon",
+   "20260425 Lyon 3-2 Auxerre",
+   "20260904 Lyon 3-1 Auxerre"
+  ],
+  "Auxerre vs Rennes": [
+   "20241103 Auxerre 4-0 Rennes",
+   "20250406 Rennes 0-1 Auxerre",
+   "20251019 Rennes 2-2 Auxerre",
+   "20260222 Auxerre 0-3 Rennes",
+   "20261011 Rennes 4-1 Auxerre"
+  ],
+  "Angers vs Auxerre": [
+   "20241124 Auxerre 1-0 Angers",
+   "20250119 Angers 2-0 Auxerre",
+   "20251109 Angers 2-0 Auxerre",
+   "20260503 Auxerre 3-1 Angers",
+   "20260829 Auxerre 1-3 Angers"
+  ],
+  "Angers vs Le Havre": [
+   "20241201 Le Havre 0-1 Angers",
+   "20250202 Angers 1-1 Le Havre",
+   "20260104 Le Havre 2-1 Angers",
+   "20260418 Angers 1-1 Le Havre",
+   "20260912 Le Havre 0-0 Angers"
+  ],
+  "Angers vs Lyon": [
+   "20241207 Angers 0-3 Lyon",
+   "20250517 Lyon 2-0 Angers",
+   "20250919 Lyon 1-0 Angers",
+   "20260405 Angers 0-0 Lyon",
+   "20261101 Lyon 2-0 Angers"
+  ],
   "Auxerre vs Lens": [
+   "20241214 Auxerre 2-2 Lens",
+   "20250427 Lens 0-4 Auxerre",
+   "20251004 Auxerre 1-2 Lens",
+   "20260117 Lens 1-0 Auxerre",
    "20260822 Lens 5-2 Auxerre"
+  ],
+  "Angers vs Rennes": [
+   "20241215 Rennes 2-0 Angers",
+   "20250330 Angers 0-3 Rennes",
+   "20250831 Angers 1-1 Rennes",
+   "20260411 Rennes 2-1 Angers",
+   "20260906 Angers 1-2 Rennes"
+  ],
+  "Angers vs Brest": [
+   "20250105 Angers 2-0 Brest",
+   "20250309 Brest 2-0 Angers",
+   "20250928 Angers 0-2 Brest",
+   "20260517 Brest 1-1 Angers",
+   "20261010 Brest 5-1 Angers"
+  ],
+  "Auxerre vs Strasbourg": [
+   "20250105 Strasbourg 3-1 Auxerre",
+   "20250302 Auxerre 0-1 Strasbourg",
+   "20251029 Strasbourg 3-0 Auxerre",
+   "20260307 Auxerre 0-0 Strasbourg",
+   "20261101 Strasbourg 5-1 Auxerre"
+  ],
+  "Marseille vs Paris FC": [
+   "20250823 Marseille 5-2 Paris FC",
+   "20260131 Paris FC 2-2 Marseille",
+   "20260906 Marseille 2-3 Paris FC"
+  ],
+  "Paris FC vs Strasbourg": [
+   "20250921 Paris FC 2-3 Strasbourg",
+   "20260315 Strasbourg 0-0 Paris FC",
+   "20260919 Paris FC 2-1 Strasbourg"
+  ],
+  "Nice vs Paris FC": [
+   "20250928 Nice 1-1 Paris FC",
+   "20260301 Paris FC 1-0 Nice",
+   "20260830 Paris FC 3-0 Nice"
+  ],
+  "Lorient vs Paris FC": [
+   "20251003 Paris FC 2-0 Lorient",
+   "20260405 Lorient 1-1 Paris FC",
+   "20261010 Lorient 1-0 Paris FC"
+  ],
+  "Lens vs Paris FC": [
+   "20251019 Lens 2-1 Paris FC",
+   "20260214 Paris FC 0-5 Lens",
+   "20261024 Lens 2-1 Paris FC"
+  ],
+  "Angers vs Lorient": [
+   "20251026 Angers 2-0 Lorient",
+   "20260215 Lorient 2-0 Angers",
+   "20261025 Angers 0-0 Lorient"
+  ],
+  "Lyon vs Paris FC": [
+   "20251029 Paris FC 3-3 Lyon",
+   "20260308 Lyon 1-1 Paris FC",
+   "20260912 Paris FC 0-0 Lyon"
+  ],
+  "Monaco vs Paris FC": [
+   "20251101 Monaco 0-1 Paris FC",
+   "20260410 Paris FC 4-1 Monaco",
+   "20261101 Paris FC 3-1 Monaco"
+  ],
+  "Paris FC vs Rennes": [
+   "20251107 Paris FC 0-1 Rennes",
+   "20260510 Rennes 2-1 Paris FC",
+   "20261018 Paris FC 4-3 Rennes"
+  ],
+  "Auxerre vs Paris FC": [
+   "20251129 Paris FC 1-1 Auxerre",
+   "20260208 Auxerre 0-0 Paris FC",
+   "20261107 Auxerre 0-1 Paris FC"
   ],
   "Brest vs Le Mans": [
    "20260822 Le Mans 2-2 Brest"
   ],
-  "Lorient vs Nice": [
-   "20260822 Nice 0-0 Lorient"
-  ],
-  "Lyon vs Toulouse": [
-   "20260822 Toulouse 0-2 Lyon"
-  ],
   "Paris FC vs Troyes": [
    "20260822 Troyes 0-0 Paris FC"
-  ],
-  "Angers vs Lille": [
-   "20260823 Angers 0-2 Lille"
-  ],
-  "Le Havre vs Monaco": [
-   "20260823 Le Havre 0-1 Monaco"
-  ],
-  "PSG vs Rennes": [
-   "20260823 Rennes 2-2 PSG"
-  ],
-  "Lille vs PSG": [
-   "20260828 Lille 2-2 PSG"
-  ],
-  "Lens vs Strasbourg": [
-   "20260829 Strasbourg 2-1 Lens"
-  ],
-  "Angers vs Auxerre": [
-   "20260829 Auxerre 1-3 Angers"
-  ],
-  "Brest vs Toulouse": [
-   "20260829 Brest 2-2 Toulouse"
   ],
   "Lorient vs Troyes": [
    "20260829 Lorient 1-2 Troyes"
   ],
-  "Le Havre vs Lyon": [
-   "20260829 Lyon 1-1 Le Havre"
-  ],
-  "Nice vs Paris FC": [
-   "20260830 Paris FC 3-0 Nice"
-  ],
   "Le Mans vs Rennes": [
    "20260830 Rennes 3-2 Le Mans"
-  ],
-  "Marseille vs Monaco": [
-   "20260830 Monaco 2-0 Marseille"
-  ],
-  "Lille vs Toulouse": [
-   "20260903 Toulouse 0-1 Lille"
-  ],
-  "Auxerre vs Lyon": [
-   "20260904 Lyon 3-1 Auxerre"
-  ],
-  "Monaco vs PSG": [
-   "20260904 PSG 1-2 Monaco"
-  ],
-  "Lens vs Lorient": [
-   "20260905 Lens 0-1 Lorient"
-  ],
-  "Brest vs Le Havre": [
-   "20260905 Le Havre 1-2 Brest"
   ],
   "Le Mans vs Nice": [
    "20260905 Nice 1-1 Le Mans"
@@ -2152,44 +2651,11 @@
   "Strasbourg vs Troyes": [
    "20260906 Troyes 2-6 Strasbourg"
   ],
-  "Angers vs Rennes": [
-   "20260906 Angers 1-2 Rennes"
-  ],
-  "Marseille vs Paris FC": [
-   "20260906 Marseille 2-3 Paris FC"
-  ],
-  "Marseille vs Rennes": [
-   "20260911 Rennes 1-0 Marseille"
-  ],
-  "Monaco vs Strasbourg": [
-   "20260912 Strasbourg 1-1 Monaco"
-  ],
-  "Auxerre vs Nice": [
-   "20260912 Auxerre 1-0 Nice"
-  ],
-  "Angers vs Le Havre": [
-   "20260912 Le Havre 0-0 Angers"
-  ],
-  "Lorient vs Toulouse": [
-   "20260912 Lorient 2-2 Toulouse"
-  ],
-  "Lyon vs Paris FC": [
-   "20260912 Paris FC 0-0 Lyon"
-  ],
   "Lille vs Troyes": [
    "20260913 Lille 2-0 Troyes"
   ],
   "Le Mans vs Lens": [
    "20260913 Le Mans 2-2 Lens"
-  ],
-  "Brest vs PSG": [
-   "20260913 Brest 0-1 PSG"
-  ],
-  "Lens vs Monaco": [
-   "20260918 Monaco 2-1 Lens"
-  ],
-  "Paris FC vs Strasbourg": [
-   "20260919 Paris FC 2-1 Strasbourg"
   ],
   "Angers vs Troyes": [
    "20260919 Angers 2-0 Troyes"
@@ -2197,44 +2663,8 @@
   "Le Mans vs Lorient": [
    "20260919 Le Mans 2-1 Lorient"
   ],
-  "Lyon vs Rennes": [
-   "20260919 Lyon 4-0 Rennes"
-  ],
-  "Le Havre vs Toulouse": [
-   "20260919 Toulouse 3-2 Le Havre"
-  ],
-  "Auxerre vs Brest": [
-   "20260920 Auxerre 2-1 Brest"
-  ],
-  "Lille vs Nice": [
-   "20260920 Nice 2-1 Lille"
-  ],
-  "Marseille vs PSG": [
-   "20260920 Marseille 1-2 PSG"
-  ],
-  "Lens vs Lyon": [
-   "20261009 Lens 2-1 Lyon"
-  ],
-  "Le Havre vs Lille": [
-   "20261010 Lille 1-0 Le Havre"
-  ],
-  "Angers vs Brest": [
-   "20261010 Brest 5-1 Angers"
-  ],
-  "Lorient vs Paris FC": [
-   "20261010 Lorient 1-0 Paris FC"
-  ],
-  "Monaco vs Toulouse": [
-   "20261010 Monaco 2-2 Toulouse"
-  ],
   "Le Mans vs PSG": [
    "20261010 PSG 3-1 Le Mans"
-  ],
-  "Nice vs Strasbourg": [
-   "20261011 Nice 2-1 Strasbourg"
-  ],
-  "Auxerre vs Rennes": [
-   "20261011 Rennes 4-1 Auxerre"
   ],
   "Marseille vs Troyes": [
    "20261011 Troyes 0-2 Marseille"
@@ -2242,128 +2672,26 @@
   "Le Mans vs Toulouse": [
    "20261016 Le Mans 0-3 Toulouse"
   ],
-  "PSG vs Strasbourg": [
-   "20261017 Strasbourg 1-3 PSG"
-  ],
-  "Brest vs Lille": [
-   "20261017 Lille 1-1 Brest"
-  ],
   "Lens vs Troyes": [
    "20261017 Troyes 1-3 Lens"
-  ],
-  "Angers vs Marseille": [
-   "20261018 Angers 2-5 Marseille"
-  ],
-  "Auxerre vs Le Havre": [
-   "20261018 Le Havre 1-3 Auxerre"
-  ],
-  "Lorient vs Monaco": [
-   "20261018 Lorient 1-0 Monaco"
-  ],
-  "Paris FC vs Rennes": [
-   "20261018 Paris FC 4-3 Rennes"
-  ],
-  "Lyon vs Nice": [
-   "20261018 Lyon 2-1 Nice"
-  ],
-  "Brest vs Nice": [
-   "20261023 Brest 1-2 Nice"
-  ],
-  "Lens vs Paris FC": [
-   "20261024 Lens 2-1 Paris FC"
-  ],
-  "Lille vs Monaco": [
-   "20261025 Monaco 1-1 Lille"
-  ],
-  "Angers vs Lorient": [
-   "20261025 Angers 0-0 Lorient"
   ],
   "Auxerre vs Le Mans": [
    "20261025 Auxerre 1-1 Le Mans"
   ],
-  "Le Havre vs Marseille": [
-   "20261025 Marseille 4-3 Le Havre"
-  ],
-  "Rennes vs Strasbourg": [
-   "20261025 Rennes 3-0 Strasbourg"
-  ],
   "Toulouse vs Troyes": [
    "20261025 Toulouse 0-0 Troyes"
-  ],
-  "Lyon vs PSG": [
-   "20261026 PSG 2-0 Lyon"
-  ],
-  "Le Havre vs PSG": [
-   "20261030 Le Havre 1-5 PSG"
-  ],
-  "Nice vs Rennes": [
-   "20261030 Nice 5-2 Rennes"
-  ],
-  "Lens vs Lille": [
-   "20261030 Lille 1-0 Lens"
   ],
   "Le Mans vs Troyes": [
    "20261031 Troyes 2-0 Le Mans"
   ],
-  "Auxerre vs Strasbourg": [
-   "20261101 Strasbourg 5-1 Auxerre"
-  ],
-  "Angers vs Lyon": [
-   "20261101 Lyon 2-0 Angers"
-  ],
-  "Monaco vs Paris FC": [
-   "20261101 Paris FC 3-1 Monaco"
-  ],
-  "Marseille vs Toulouse": [
-   "20261101 Marseille 2-0 Toulouse"
-  ],
-  "Brest vs Lorient": [
-   "20261102 Lorient 0-2 Brest"
-  ],
-  "Strasbourg vs Toulouse": [
-   "20261106 Toulouse 3-1 Strasbourg"
-  ],
-  "Auxerre vs Paris FC": [
-   "20261107 Auxerre 0-1 Paris FC"
-  ],
   "PSG vs Troyes": [
    "20261107 PSG 1-0 Troyes"
-  ],
-  "Lille vs Rennes": [
-   "20261108 Rennes 1-2 Lille"
-  ],
-  "Angers vs Nice": [
-   "20261108 Angers 0-2 Nice"
-  ],
-  "Brest vs Lyon": [
-   "20261108 Brest 2-0 Lyon"
-  ],
-  "Le Havre vs Lorient": [
-   "20261108 Le Havre 0-2 Lorient"
   ],
   "Le Mans vs Monaco": [
    "20261108 Le Mans 1-1 Monaco"
   ],
-  "Lens vs Marseille": [
-   "20261108 Lens 1-2 Marseille"
-  ],
   "Le Havre vs Troyes": [
    "20261120 Troyes 3-1 Le Havre"
-  ],
-  "Nice vs PSG": [
-   "20261121 Nice 2-3 PSG"
-  ],
-  "Lens vs Toulouse": [
-   "20261121 Lens 1-1 Toulouse"
-  ],
-  "Lille vs Lyon": [
-   "20261121 Lille 0-1 Lyon"
-  ],
-  "Auxerre vs Monaco": [
-   "20261121 Monaco 1-1 Auxerre"
-  ],
-  "Brest vs Strasbourg": [
-   "20261121 Strasbourg 0-1 Brest"
   ]
  }
 }
