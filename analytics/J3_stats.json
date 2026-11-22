@@ -1,0 +1,2440 @@
+{
+ "meta": {
+  "generated_kst": "2026-11-22 23:53",
+  "league": "J3",
+  "season_start": "20260701",
+  "games": 177,
+  "last_game_date": "20261121",
+  "league_avg": {
+   "games": 177,
+   "home_win": 0.446,
+   "draw": 0.203,
+   "away_win": 0.35,
+   "goals_pg": 2.79,
+   "home_gf_pg": 1.49,
+   "away_gf_pg": 1.3,
+   "over": {
+    "1.5": 0.706,
+    "2.5": 0.531,
+    "3.5": 0.333
+   },
+   "btts": 0.514
+  },
+  "notes": "REG만 집계 / over는 해당 기준점 초과 비율 / g_minus_xg +는 득점 과열(회귀 후보) / rest_days는 오늘(KST) 기준"
+ },
+ "teams": {
+  "Gifu": {
+   "season": {
+    "gp": 18,
+    "w": 11,
+    "d": 2,
+    "l": 5,
+    "gf_pg": 1.72,
+    "ga_pg": 0.89,
+    "total_pg": 2.61,
+    "over": {
+     "1.5": 0.556,
+     "2.5": 0.5,
+     "3.5": 0.222
+    },
+    "btts": 0.389,
+    "clean_sheet": 0.444,
+    "failed_to_score": 0.278,
+    "ppg": 1.94,
+    "sot_pg": 5.1,
+    "sota_pg": 3.8
+   },
+   "home": {
+    "gp": 9,
+    "w": 6,
+    "d": 1,
+    "l": 2,
+    "gf_pg": 1.78,
+    "ga_pg": 0.56,
+    "total_pg": 2.33,
+    "over": {
+     "1.5": 0.444,
+     "2.5": 0.333,
+     "3.5": 0.222
+    },
+    "btts": 0.222,
+    "clean_sheet": 0.556,
+    "failed_to_score": 0.333,
+    "ppg": 2.11,
+    "sot_pg": 4.2,
+    "sota_pg": 2.6
+   },
+   "away": {
+    "gp": 9,
+    "w": 5,
+    "d": 1,
+    "l": 3,
+    "gf_pg": 1.67,
+    "ga_pg": 1.22,
+    "total_pg": 2.89,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.667,
+     "3.5": 0.222
+    },
+    "btts": 0.556,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.222,
+    "ppg": 1.78,
+    "sot_pg": 6.0,
+    "sota_pg": 5.1
+   },
+   "last6": {
+    "gp": 6,
+    "w": 4,
+    "d": 1,
+    "l": 1,
+    "gf_pg": 1.33,
+    "ga_pg": 0.83,
+    "total_pg": 2.17,
+    "over": {
+     "1.5": 0.5,
+     "2.5": 0.5,
+     "3.5": 0.167
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.5,
+    "failed_to_score": 0.167,
+    "ppg": 2.17,
+    "sot_pg": 4.3,
+    "sota_pg": 4.2
+   },
+   "last6_log": [
+    "20261025 A Kumamoto 1-2",
+    "20261031 H Osaka 1-0",
+    "20261103 A Ryukyu 3-2",
+    "20261107 H Giravanz Kitakyushu 1-0",
+    "20261114 H Yamaga 0-0",
+    "20261121 A Ehime 2-1"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 1,
+   "points": 35
+  },
+  "Sagamihara": {
+   "season": {
+    "gp": 18,
+    "w": 10,
+    "d": 4,
+    "l": 4,
+    "gf_pg": 1.67,
+    "ga_pg": 0.89,
+    "total_pg": 2.56,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.556,
+     "3.5": 0.333
+    },
+    "btts": 0.556,
+    "clean_sheet": 0.389,
+    "failed_to_score": 0.167,
+    "ppg": 1.89,
+    "sot_pg": 6.3,
+    "sota_pg": 4.2
+   },
+   "home": {
+    "gp": 8,
+    "w": 4,
+    "d": 3,
+    "l": 1,
+    "gf_pg": 1.12,
+    "ga_pg": 0.75,
+    "total_pg": 1.88,
+    "over": {
+     "1.5": 0.5,
+     "2.5": 0.375,
+     "3.5": 0.125
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.5,
+    "failed_to_score": 0.25,
+    "ppg": 1.88,
+    "sot_pg": 6.0,
+    "sota_pg": 4.4
+   },
+   "away": {
+    "gp": 10,
+    "w": 6,
+    "d": 1,
+    "l": 3,
+    "gf_pg": 2.1,
+    "ga_pg": 1.0,
+    "total_pg": 3.1,
+    "over": {
+     "1.5": 0.8,
+     "2.5": 0.7,
+     "3.5": 0.5
+    },
+    "btts": 0.6,
+    "clean_sheet": 0.3,
+    "failed_to_score": 0.1,
+    "ppg": 1.9,
+    "sot_pg": 6.6,
+    "sota_pg": 4.0
+   },
+   "last6": {
+    "gp": 6,
+    "w": 4,
+    "d": 1,
+    "l": 1,
+    "gf_pg": 1.5,
+    "ga_pg": 0.33,
+    "total_pg": 1.83,
+    "over": {
+     "1.5": 0.333,
+     "2.5": 0.333,
+     "3.5": 0.333
+    },
+    "btts": 0.167,
+    "clean_sheet": 0.667,
+    "failed_to_score": 0.333,
+    "ppg": 2.17,
+    "sot_pg": 5.5,
+    "sota_pg": 2.3
+   },
+   "last6_log": [
+    "20261024 H Tochigi SC 0-0",
+    "20261031 A Kochi United 3-1",
+    "20261103 A Gainare Tottori 1-0",
+    "20261108 H Kagoshima Utd 1-0",
+    "20261114 A Fukushima Utd 0-1",
+    "20261121 A Nara Club 4-0"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 2,
+   "points": 34
+  },
+  "Kagoshima Utd": {
+   "season": {
+    "gp": 18,
+    "w": 9,
+    "d": 5,
+    "l": 4,
+    "gf_pg": 1.61,
+    "ga_pg": 1.22,
+    "total_pg": 2.83,
+    "over": {
+     "1.5": 0.722,
+     "2.5": 0.556,
+     "3.5": 0.333
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.278,
+    "ppg": 1.78,
+    "sot_pg": 5.2,
+    "sota_pg": 3.7
+   },
+   "home": {
+    "gp": 9,
+    "w": 6,
+    "d": 2,
+    "l": 1,
+    "gf_pg": 1.89,
+    "ga_pg": 1.22,
+    "total_pg": 3.11,
+    "over": {
+     "1.5": 0.778,
+     "2.5": 0.667,
+     "3.5": 0.444
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.222,
+    "failed_to_score": 0.222,
+    "ppg": 2.22,
+    "sot_pg": 4.8,
+    "sota_pg": 3.4
+   },
+   "away": {
+    "gp": 9,
+    "w": 3,
+    "d": 3,
+    "l": 3,
+    "gf_pg": 1.33,
+    "ga_pg": 1.22,
+    "total_pg": 2.56,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.444,
+     "3.5": 0.222
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.111,
+    "failed_to_score": 0.333,
+    "ppg": 1.33,
+    "sot_pg": 5.6,
+    "sota_pg": 3.9
+   },
+   "last6": {
+    "gp": 6,
+    "w": 0,
+    "d": 3,
+    "l": 3,
+    "gf_pg": 0.5,
+    "ga_pg": 1.33,
+    "total_pg": 1.83,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.333,
+     "3.5": 0.0
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.5,
+    "ppg": 0.5,
+    "sot_pg": 5.8,
+    "sota_pg": 4.5
+   },
+   "last6_log": [
+    "20261024 A Osaka 1-2",
+    "20261031 H Kumamoto 1-1",
+    "20261103 A Renofa Yamaguchi 1-1",
+    "20261108 A Sagamihara 0-1",
+    "20261115 H Gainare Tottori 0-3",
+    "20261121 A Kanazawa 0-0"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 3,
+   "points": 32
+  },
+  "Nara Club": {
+   "season": {
+    "gp": 18,
+    "w": 10,
+    "d": 2,
+    "l": 6,
+    "gf_pg": 1.83,
+    "ga_pg": 1.44,
+    "total_pg": 3.28,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.667,
+     "3.5": 0.556
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.167,
+    "ppg": 1.78,
+    "sot_pg": 5.3,
+    "sota_pg": 5.4
+   },
+   "home": {
+    "gp": 9,
+    "w": 6,
+    "d": 0,
+    "l": 3,
+    "gf_pg": 2.33,
+    "ga_pg": 1.44,
+    "total_pg": 3.78,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.889,
+     "3.5": 0.667
+    },
+    "btts": 0.556,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.111,
+    "ppg": 2.0,
+    "sot_pg": 5.9,
+    "sota_pg": 5.2
+   },
+   "away": {
+    "gp": 9,
+    "w": 4,
+    "d": 2,
+    "l": 3,
+    "gf_pg": 1.33,
+    "ga_pg": 1.44,
+    "total_pg": 2.78,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.444,
+     "3.5": 0.444
+    },
+    "btts": 0.444,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.222,
+    "ppg": 1.56,
+    "sot_pg": 4.7,
+    "sota_pg": 5.7
+   },
+   "last6": {
+    "gp": 6,
+    "w": 3,
+    "d": 0,
+    "l": 3,
+    "gf_pg": 1.83,
+    "ga_pg": 1.33,
+    "total_pg": 3.17,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.667,
+     "3.5": 0.5
+    },
+    "btts": 0.167,
+    "clean_sheet": 0.5,
+    "failed_to_score": 0.333,
+    "ppg": 1.5,
+    "sot_pg": 6.0,
+    "sota_pg": 5.8
+   },
+   "last6_log": [
+    "20261024 H Ryukyu 1-3",
+    "20261031 A Kamatamare 2-0",
+    "20261103 H Kusatsu 3-0",
+    "20261107 H Kochi United 5-0",
+    "20261115 A Tochigi SC 0-1",
+    "20261121 H Sagamihara 0-4"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 4,
+   "points": 32
+  },
+  "Renofa Yamaguchi": {
+   "season": {
+    "gp": 17,
+    "w": 9,
+    "d": 4,
+    "l": 4,
+    "gf_pg": 1.35,
+    "ga_pg": 0.82,
+    "total_pg": 2.18,
+    "over": {
+     "1.5": 0.765,
+     "2.5": 0.353,
+     "3.5": 0.118
+    },
+    "btts": 0.412,
+    "clean_sheet": 0.471,
+    "failed_to_score": 0.176,
+    "ppg": 1.82,
+    "sot_pg": 4.8,
+    "sota_pg": 4.4
+   },
+   "home": {
+    "gp": 7,
+    "w": 3,
+    "d": 3,
+    "l": 1,
+    "gf_pg": 1.14,
+    "ga_pg": 0.71,
+    "total_pg": 1.86,
+    "over": {
+     "1.5": 0.714,
+     "2.5": 0.143,
+     "3.5": 0.143
+    },
+    "btts": 0.286,
+    "clean_sheet": 0.571,
+    "failed_to_score": 0.286,
+    "ppg": 1.71,
+    "sot_pg": 4.7,
+    "sota_pg": 5.3
+   },
+   "away": {
+    "gp": 10,
+    "w": 6,
+    "d": 1,
+    "l": 3,
+    "gf_pg": 1.5,
+    "ga_pg": 0.9,
+    "total_pg": 2.4,
+    "over": {
+     "1.5": 0.8,
+     "2.5": 0.5,
+     "3.5": 0.1
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.4,
+    "failed_to_score": 0.1,
+    "ppg": 1.9,
+    "sot_pg": 4.9,
+    "sota_pg": 3.8
+   },
+   "last6": {
+    "gp": 6,
+    "w": 2,
+    "d": 2,
+    "l": 2,
+    "gf_pg": 1.17,
+    "ga_pg": 1.17,
+    "total_pg": 2.33,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.333,
+     "3.5": 0.0
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.167,
+    "ppg": 1.33,
+    "sot_pg": 4.0,
+    "sota_pg": 5.2
+   },
+   "last6_log": [
+    "20261021 A Ehime 1-2",
+    "20261025 A Yamaga 2-0",
+    "20261031 H Giravanz Kitakyushu 0-2",
+    "20261103 H Kagoshima Utd 1-1",
+    "20261108 A Kumamoto 2-1",
+    "20261115 A Kamatamare 1-1"
+   ],
+   "last_game_date": "20261115",
+   "rest_days": 6,
+   "rank": 5,
+   "points": 31
+  },
+  "Osaka": {
+   "season": {
+    "gp": 17,
+    "w": 8,
+    "d": 6,
+    "l": 3,
+    "gf_pg": 1.65,
+    "ga_pg": 1.0,
+    "total_pg": 2.65,
+    "over": {
+     "1.5": 0.765,
+     "2.5": 0.529,
+     "3.5": 0.294
+    },
+    "btts": 0.647,
+    "clean_sheet": 0.235,
+    "failed_to_score": 0.235,
+    "ppg": 1.76,
+    "sot_pg": 5.1,
+    "sota_pg": 4.0
+   },
+   "home": {
+    "gp": 8,
+    "w": 6,
+    "d": 2,
+    "l": 0,
+    "gf_pg": 2.38,
+    "ga_pg": 1.12,
+    "total_pg": 3.5,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.75,
+     "3.5": 0.375
+    },
+    "btts": 0.875,
+    "clean_sheet": 0.125,
+    "failed_to_score": 0.0,
+    "ppg": 2.5,
+    "sot_pg": 5.4,
+    "sota_pg": 4.9
+   },
+   "away": {
+    "gp": 9,
+    "w": 2,
+    "d": 4,
+    "l": 3,
+    "gf_pg": 1.0,
+    "ga_pg": 0.89,
+    "total_pg": 1.89,
+    "over": {
+     "1.5": 0.556,
+     "2.5": 0.333,
+     "3.5": 0.222
+    },
+    "btts": 0.444,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.444,
+    "ppg": 1.11,
+    "sot_pg": 4.9,
+    "sota_pg": 3.2
+   },
+   "last6": {
+    "gp": 6,
+    "w": 4,
+    "d": 1,
+    "l": 1,
+    "gf_pg": 1.5,
+    "ga_pg": 0.83,
+    "total_pg": 2.33,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.5,
+     "3.5": 0.0
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.167,
+    "ppg": 2.17,
+    "sot_pg": 4.5,
+    "sota_pg": 3.2
+   },
+   "last6_log": [
+    "20261021 H Nara Club 2-0",
+    "20261024 H Kagoshima Utd 2-1",
+    "20261031 A Gifu 0-1",
+    "20261104 H Kumamoto 2-1",
+    "20261107 A Kusatsu 2-1",
+    "20261115 A Reilac Shiga 1-1"
+   ],
+   "last_game_date": "20261115",
+   "rest_days": 6,
+   "rank": 6,
+   "points": 30
+  },
+  "Ryukyu": {
+   "season": {
+    "gp": 18,
+    "w": 9,
+    "d": 2,
+    "l": 7,
+    "gf_pg": 1.67,
+    "ga_pg": 1.39,
+    "total_pg": 3.06,
+    "over": {
+     "1.5": 0.722,
+     "2.5": 0.611,
+     "3.5": 0.333
+    },
+    "btts": 0.556,
+    "clean_sheet": 0.278,
+    "failed_to_score": 0.167,
+    "ppg": 1.61,
+    "sot_pg": 4.9,
+    "sota_pg": 4.7
+   },
+   "home": {
+    "gp": 9,
+    "w": 6,
+    "d": 1,
+    "l": 2,
+    "gf_pg": 1.78,
+    "ga_pg": 1.0,
+    "total_pg": 2.78,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.444,
+     "3.5": 0.222
+    },
+    "btts": 0.444,
+    "clean_sheet": 0.444,
+    "failed_to_score": 0.111,
+    "ppg": 2.11,
+    "sot_pg": 4.0,
+    "sota_pg": 4.0
+   },
+   "away": {
+    "gp": 9,
+    "w": 3,
+    "d": 1,
+    "l": 5,
+    "gf_pg": 1.56,
+    "ga_pg": 1.78,
+    "total_pg": 3.33,
+    "over": {
+     "1.5": 0.778,
+     "2.5": 0.778,
+     "3.5": 0.444
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.111,
+    "failed_to_score": 0.222,
+    "ppg": 1.11,
+    "sot_pg": 5.8,
+    "sota_pg": 5.4
+   },
+   "last6": {
+    "gp": 6,
+    "w": 4,
+    "d": 0,
+    "l": 2,
+    "gf_pg": 2.83,
+    "ga_pg": 1.83,
+    "total_pg": 4.67,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.833,
+     "3.5": 0.833
+    },
+    "btts": 0.833,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.0,
+    "ppg": 2.0,
+    "sot_pg": 5.7,
+    "sota_pg": 6.3
+   },
+   "last6_log": [
+    "20261024 A Nara Club 3-1",
+    "20261031 H Gainare Tottori 5-2",
+    "20261103 H Gifu 2-3",
+    "20261107 A Fukushima Utd 1-4",
+    "20261115 H Kochi United 1-0",
+    "20261121 A Yamaga 5-1"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 7,
+   "points": 29
+  },
+  "Ehime": {
+   "season": {
+    "gp": 18,
+    "w": 9,
+    "d": 2,
+    "l": 7,
+    "gf_pg": 1.78,
+    "ga_pg": 1.56,
+    "total_pg": 3.33,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.667,
+     "3.5": 0.444
+    },
+    "btts": 0.611,
+    "clean_sheet": 0.222,
+    "failed_to_score": 0.167,
+    "ppg": 1.61,
+    "sot_pg": 4.6,
+    "sota_pg": 4.5
+   },
+   "home": {
+    "gp": 9,
+    "w": 7,
+    "d": 0,
+    "l": 2,
+    "gf_pg": 2.56,
+    "ga_pg": 1.33,
+    "total_pg": 3.89,
+    "over": {
+     "1.5": 0.889,
+     "2.5": 0.889,
+     "3.5": 0.556
+    },
+    "btts": 0.778,
+    "clean_sheet": 0.222,
+    "failed_to_score": 0.0,
+    "ppg": 2.33,
+    "sot_pg": 5.1,
+    "sota_pg": 4.0
+   },
+   "away": {
+    "gp": 9,
+    "w": 2,
+    "d": 2,
+    "l": 5,
+    "gf_pg": 1.0,
+    "ga_pg": 1.78,
+    "total_pg": 2.78,
+    "over": {
+     "1.5": 0.778,
+     "2.5": 0.444,
+     "3.5": 0.333
+    },
+    "btts": 0.444,
+    "clean_sheet": 0.222,
+    "failed_to_score": 0.333,
+    "ppg": 0.89,
+    "sot_pg": 4.1,
+    "sota_pg": 5.0
+   },
+   "last6": {
+    "gp": 6,
+    "w": 1,
+    "d": 0,
+    "l": 5,
+    "gf_pg": 0.67,
+    "ga_pg": 2.17,
+    "total_pg": 2.83,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.5,
+     "3.5": 0.333
+    },
+    "btts": 0.333,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.5,
+    "ppg": 0.5,
+    "sot_pg": 3.8,
+    "sota_pg": 5.3
+   },
+   "last6_log": [
+    "20261025 H Fukushima Utd 2-4",
+    "20261031 A Tochigi SC 0-2",
+    "20261103 A Kochi United 0-4",
+    "20261107 H Reilac Shiga 1-0",
+    "20261115 A Nagano 0-1",
+    "20261121 H Gifu 1-2"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 8,
+   "points": 29
+  },
+  "Nagano": {
+   "season": {
+    "gp": 18,
+    "w": 9,
+    "d": 2,
+    "l": 7,
+    "gf_pg": 1.44,
+    "ga_pg": 1.22,
+    "total_pg": 2.67,
+    "over": {
+     "1.5": 0.611,
+     "2.5": 0.444,
+     "3.5": 0.333
+    },
+    "btts": 0.556,
+    "clean_sheet": 0.278,
+    "failed_to_score": 0.167,
+    "ppg": 1.61,
+    "sot_pg": 4.4,
+    "sota_pg": 4.7
+   },
+   "home": {
+    "gp": 10,
+    "w": 5,
+    "d": 1,
+    "l": 4,
+    "gf_pg": 1.0,
+    "ga_pg": 0.8,
+    "total_pg": 1.8,
+    "over": {
+     "1.5": 0.4,
+     "2.5": 0.3,
+     "3.5": 0.1
+    },
+    "btts": 0.4,
+    "clean_sheet": 0.3,
+    "failed_to_score": 0.3,
+    "ppg": 1.6,
+    "sot_pg": 3.9,
+    "sota_pg": 4.6
+   },
+   "away": {
+    "gp": 8,
+    "w": 4,
+    "d": 1,
+    "l": 3,
+    "gf_pg": 2.0,
+    "ga_pg": 1.75,
+    "total_pg": 3.75,
+    "over": {
+     "1.5": 0.875,
+     "2.5": 0.625,
+     "3.5": 0.625
+    },
+    "btts": 0.75,
+    "clean_sheet": 0.25,
+    "failed_to_score": 0.0,
+    "ppg": 1.62,
+    "sot_pg": 5.1,
+    "sota_pg": 4.8
+   },
+   "last6": {
+    "gp": 6,
+    "w": 4,
+    "d": 0,
+    "l": 2,
+    "gf_pg": 1.67,
+    "ga_pg": 1.0,
+    "total_pg": 2.67,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.5,
+     "3.5": 0.5
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.167,
+    "ppg": 2.0,
+    "sot_pg": 4.3,
+    "sota_pg": 3.5
+   },
+   "last6_log": [
+    "20261025 A Giravanz Kitakyushu 1-3",
+    "20261031 H Reilac Shiga 3-1",
+    "20261103 A Kanazawa 2-0",
+    "20261108 H Kamatamare 0-1",
+    "20261115 H Ehime 1-0",
+    "20261121 A Gainare Tottori 3-1"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 9,
+   "points": 29
+  },
+  "Kanazawa": {
+   "season": {
+    "gp": 18,
+    "w": 8,
+    "d": 3,
+    "l": 7,
+    "gf_pg": 1.72,
+    "ga_pg": 1.28,
+    "total_pg": 3.0,
+    "over": {
+     "1.5": 0.722,
+     "2.5": 0.5,
+     "3.5": 0.389
+    },
+    "btts": 0.556,
+    "clean_sheet": 0.278,
+    "failed_to_score": 0.222,
+    "ppg": 1.5,
+    "sot_pg": 5.4,
+    "sota_pg": 4.2
+   },
+   "home": {
+    "gp": 9,
+    "w": 4,
+    "d": 1,
+    "l": 4,
+    "gf_pg": 1.78,
+    "ga_pg": 1.33,
+    "total_pg": 3.11,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.556,
+     "3.5": 0.444
+    },
+    "btts": 0.444,
+    "clean_sheet": 0.222,
+    "failed_to_score": 0.444,
+    "ppg": 1.44,
+    "sot_pg": 6.2,
+    "sota_pg": 4.7
+   },
+   "away": {
+    "gp": 9,
+    "w": 4,
+    "d": 2,
+    "l": 3,
+    "gf_pg": 1.67,
+    "ga_pg": 1.22,
+    "total_pg": 2.89,
+    "over": {
+     "1.5": 0.778,
+     "2.5": 0.444,
+     "3.5": 0.333
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.0,
+    "ppg": 1.56,
+    "sot_pg": 4.6,
+    "sota_pg": 3.7
+   },
+   "last6": {
+    "gp": 6,
+    "w": 4,
+    "d": 1,
+    "l": 1,
+    "gf_pg": 2.17,
+    "ga_pg": 0.83,
+    "total_pg": 3.0,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.5,
+     "3.5": 0.5
+    },
+    "btts": 0.333,
+    "clean_sheet": 0.5,
+    "failed_to_score": 0.333,
+    "ppg": 2.17,
+    "sot_pg": 6.0,
+    "sota_pg": 3.8
+   },
+   "last6_log": [
+    "20261025 A Reilac Shiga 5-1",
+    "20261031 H Kusatsu 4-0",
+    "20261103 H Nagano 0-2",
+    "20261107 A Yamaga 1-0",
+    "20261115 H Kumamoto 3-2",
+    "20261121 H Kagoshima Utd 0-0"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 10,
+   "points": 27
+  },
+  "Tochigi SC": {
+   "season": {
+    "gp": 18,
+    "w": 7,
+    "d": 6,
+    "l": 5,
+    "gf_pg": 1.0,
+    "ga_pg": 0.89,
+    "total_pg": 1.89,
+    "over": {
+     "1.5": 0.5,
+     "2.5": 0.278,
+     "3.5": 0.222
+    },
+    "btts": 0.333,
+    "clean_sheet": 0.556,
+    "failed_to_score": 0.333,
+    "ppg": 1.5,
+    "sot_pg": 3.8,
+    "sota_pg": 3.3
+   },
+   "home": {
+    "gp": 9,
+    "w": 5,
+    "d": 2,
+    "l": 2,
+    "gf_pg": 1.33,
+    "ga_pg": 0.78,
+    "total_pg": 2.11,
+    "over": {
+     "1.5": 0.556,
+     "2.5": 0.333,
+     "3.5": 0.222
+    },
+    "btts": 0.333,
+    "clean_sheet": 0.556,
+    "failed_to_score": 0.222,
+    "ppg": 1.89,
+    "sot_pg": 4.6,
+    "sota_pg": 2.7
+   },
+   "away": {
+    "gp": 9,
+    "w": 2,
+    "d": 4,
+    "l": 3,
+    "gf_pg": 0.67,
+    "ga_pg": 1.0,
+    "total_pg": 1.67,
+    "over": {
+     "1.5": 0.444,
+     "2.5": 0.222,
+     "3.5": 0.222
+    },
+    "btts": 0.333,
+    "clean_sheet": 0.556,
+    "failed_to_score": 0.444,
+    "ppg": 1.11,
+    "sot_pg": 3.1,
+    "sota_pg": 3.9
+   },
+   "last6": {
+    "gp": 6,
+    "w": 4,
+    "d": 2,
+    "l": 0,
+    "gf_pg": 1.0,
+    "ga_pg": 0.0,
+    "total_pg": 1.0,
+    "over": {
+     "1.5": 0.333,
+     "2.5": 0.0,
+     "3.5": 0.0
+    },
+    "btts": 0.0,
+    "clean_sheet": 1.0,
+    "failed_to_score": 0.333,
+    "ppg": 2.33,
+    "sot_pg": 4.3,
+    "sota_pg": 2.2
+   },
+   "last6_log": [
+    "20261024 A Sagamihara 0-0",
+    "20261031 H Ehime 2-0",
+    "20261103 H Fukushima Utd 0-0",
+    "20261108 A Gainare Tottori 1-0",
+    "20261115 H Nara Club 1-0",
+    "20261121 A Kusatsu 2-0"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 11,
+   "points": 27
+  },
+  "Kumamoto": {
+   "season": {
+    "gp": 17,
+    "w": 6,
+    "d": 6,
+    "l": 5,
+    "gf_pg": 1.18,
+    "ga_pg": 0.88,
+    "total_pg": 2.06,
+    "over": {
+     "1.5": 0.647,
+     "2.5": 0.471,
+     "3.5": 0.118
+    },
+    "btts": 0.412,
+    "clean_sheet": 0.471,
+    "failed_to_score": 0.353,
+    "ppg": 1.41,
+    "sot_pg": 4.8,
+    "sota_pg": 4.4
+   },
+   "home": {
+    "gp": 8,
+    "w": 2,
+    "d": 3,
+    "l": 3,
+    "gf_pg": 1.0,
+    "ga_pg": 1.0,
+    "total_pg": 2.0,
+    "over": {
+     "1.5": 0.625,
+     "2.5": 0.5,
+     "3.5": 0.125
+    },
+    "btts": 0.375,
+    "clean_sheet": 0.375,
+    "failed_to_score": 0.5,
+    "ppg": 1.12,
+    "sot_pg": 5.4,
+    "sota_pg": 4.5
+   },
+   "away": {
+    "gp": 9,
+    "w": 4,
+    "d": 3,
+    "l": 2,
+    "gf_pg": 1.33,
+    "ga_pg": 0.78,
+    "total_pg": 2.11,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.444,
+     "3.5": 0.111
+    },
+    "btts": 0.444,
+    "clean_sheet": 0.556,
+    "failed_to_score": 0.222,
+    "ppg": 1.67,
+    "sot_pg": 4.2,
+    "sota_pg": 4.3
+   },
+   "last6": {
+    "gp": 6,
+    "w": 2,
+    "d": 1,
+    "l": 3,
+    "gf_pg": 1.67,
+    "ga_pg": 1.5,
+    "total_pg": 3.17,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.833,
+     "3.5": 0.167
+    },
+    "btts": 0.833,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.0,
+    "ppg": 1.17,
+    "sot_pg": 5.5,
+    "sota_pg": 5.0
+   },
+   "last6_log": [
+    "20261021 H Gainare Tottori 3-0",
+    "20261025 H Gifu 2-1",
+    "20261031 A Kagoshima Utd 1-1",
+    "20261104 A Osaka 1-2",
+    "20261108 H Renofa Yamaguchi 1-2",
+    "20261115 A Kanazawa 2-3"
+   ],
+   "last_game_date": "20261115",
+   "rest_days": 6,
+   "rank": 12,
+   "points": 24
+  },
+  "Fukushima Utd": {
+   "season": {
+    "gp": 18,
+    "w": 6,
+    "d": 4,
+    "l": 8,
+    "gf_pg": 1.94,
+    "ga_pg": 2.0,
+    "total_pg": 3.94,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.833,
+     "3.5": 0.611
+    },
+    "btts": 0.833,
+    "clean_sheet": 0.111,
+    "failed_to_score": 0.111,
+    "ppg": 1.22,
+    "sot_pg": 5.4,
+    "sota_pg": 4.6
+   },
+   "home": {
+    "gp": 9,
+    "w": 4,
+    "d": 2,
+    "l": 3,
+    "gf_pg": 2.0,
+    "ga_pg": 1.78,
+    "total_pg": 3.78,
+    "over": {
+     "1.5": 0.889,
+     "2.5": 0.889,
+     "3.5": 0.556
+    },
+    "btts": 0.889,
+    "clean_sheet": 0.111,
+    "failed_to_score": 0.0,
+    "ppg": 1.56,
+    "sot_pg": 5.2,
+    "sota_pg": 4.8
+   },
+   "away": {
+    "gp": 9,
+    "w": 2,
+    "d": 2,
+    "l": 5,
+    "gf_pg": 1.89,
+    "ga_pg": 2.22,
+    "total_pg": 4.11,
+    "over": {
+     "1.5": 0.778,
+     "2.5": 0.778,
+     "3.5": 0.667
+    },
+    "btts": 0.778,
+    "clean_sheet": 0.111,
+    "failed_to_score": 0.222,
+    "ppg": 0.89,
+    "sot_pg": 5.7,
+    "sota_pg": 4.4
+   },
+   "last6": {
+    "gp": 6,
+    "w": 3,
+    "d": 2,
+    "l": 1,
+    "gf_pg": 2.17,
+    "ga_pg": 1.5,
+    "total_pg": 3.67,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.667,
+     "3.5": 0.667
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.167,
+    "ppg": 1.83,
+    "sot_pg": 5.3,
+    "sota_pg": 5.2
+   },
+   "last6_log": [
+    "20261025 A Ehime 4-2",
+    "20261031 H Yamaga 1-3",
+    "20261103 A Tochigi SC 0-0",
+    "20261107 H Ryukyu 4-1",
+    "20261114 H Sagamihara 1-0",
+    "20261121 A Kochi United 3-3"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 13,
+   "points": 22
+  },
+  "Giravanz Kitakyushu": {
+   "season": {
+    "gp": 17,
+    "w": 6,
+    "d": 4,
+    "l": 7,
+    "gf_pg": 1.47,
+    "ga_pg": 1.59,
+    "total_pg": 3.06,
+    "over": {
+     "1.5": 0.824,
+     "2.5": 0.529,
+     "3.5": 0.353
+    },
+    "btts": 0.588,
+    "clean_sheet": 0.176,
+    "failed_to_score": 0.294,
+    "ppg": 1.29,
+    "sot_pg": 3.6,
+    "sota_pg": 4.8
+   },
+   "home": {
+    "gp": 9,
+    "w": 4,
+    "d": 3,
+    "l": 2,
+    "gf_pg": 1.78,
+    "ga_pg": 1.33,
+    "total_pg": 3.11,
+    "over": {
+     "1.5": 0.778,
+     "2.5": 0.444,
+     "3.5": 0.444
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.222,
+    "failed_to_score": 0.222,
+    "ppg": 1.67,
+    "sot_pg": 4.1,
+    "sota_pg": 3.4
+   },
+   "away": {
+    "gp": 8,
+    "w": 2,
+    "d": 1,
+    "l": 5,
+    "gf_pg": 1.12,
+    "ga_pg": 1.88,
+    "total_pg": 3.0,
+    "over": {
+     "1.5": 0.875,
+     "2.5": 0.625,
+     "3.5": 0.25
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.125,
+    "failed_to_score": 0.375,
+    "ppg": 0.88,
+    "sot_pg": 3.0,
+    "sota_pg": 6.2
+   },
+   "last6": {
+    "gp": 6,
+    "w": 3,
+    "d": 0,
+    "l": 3,
+    "gf_pg": 1.67,
+    "ga_pg": 1.33,
+    "total_pg": 3.0,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.5,
+     "3.5": 0.333
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.333,
+    "ppg": 1.5,
+    "sot_pg": 4.2,
+    "sota_pg": 4.5
+   },
+   "last6_log": [
+    "20261021 A Fukushima Utd 1-2",
+    "20261025 H Nagano 3-1",
+    "20261031 A Renofa Yamaguchi 2-0",
+    "20261103 H Reilac Shiga 0-1",
+    "20261107 A Gifu 0-1",
+    "20261114 H Kusatsu 4-3"
+   ],
+   "last_game_date": "20261114",
+   "rest_days": 7,
+   "rank": 14,
+   "points": 22
+  },
+  "Yamaga": {
+   "season": {
+    "gp": 18,
+    "w": 4,
+    "d": 6,
+    "l": 8,
+    "gf_pg": 0.89,
+    "ga_pg": 1.28,
+    "total_pg": 2.17,
+    "over": {
+     "1.5": 0.556,
+     "2.5": 0.389,
+     "3.5": 0.278
+    },
+    "btts": 0.444,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.444,
+    "ppg": 1.0,
+    "sot_pg": 3.9,
+    "sota_pg": 3.6
+   },
+   "home": {
+    "gp": 10,
+    "w": 2,
+    "d": 2,
+    "l": 6,
+    "gf_pg": 0.9,
+    "ga_pg": 1.7,
+    "total_pg": 2.6,
+    "over": {
+     "1.5": 0.6,
+     "2.5": 0.4,
+     "3.5": 0.4
+    },
+    "btts": 0.4,
+    "clean_sheet": 0.3,
+    "failed_to_score": 0.4,
+    "ppg": 0.8,
+    "sot_pg": 4.0,
+    "sota_pg": 3.9
+   },
+   "away": {
+    "gp": 8,
+    "w": 2,
+    "d": 4,
+    "l": 2,
+    "gf_pg": 0.88,
+    "ga_pg": 0.75,
+    "total_pg": 1.62,
+    "over": {
+     "1.5": 0.5,
+     "2.5": 0.375,
+     "3.5": 0.125
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.375,
+    "failed_to_score": 0.5,
+    "ppg": 1.25,
+    "sot_pg": 3.9,
+    "sota_pg": 3.2
+   },
+   "last6": {
+    "gp": 6,
+    "w": 1,
+    "d": 1,
+    "l": 4,
+    "gf_pg": 0.67,
+    "ga_pg": 1.67,
+    "total_pg": 2.33,
+    "over": {
+     "1.5": 0.5,
+     "2.5": 0.333,
+     "3.5": 0.333
+    },
+    "btts": 0.333,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.667,
+    "ppg": 0.67,
+    "sot_pg": 4.7,
+    "sota_pg": 3.8
+   },
+   "last6_log": [
+    "20261025 H Renofa Yamaguchi 0-2",
+    "20261031 A Fukushima Utd 3-1",
+    "20261103 A Kamatamare 0-1",
+    "20261107 H Kanazawa 0-1",
+    "20261114 A Gifu 0-0",
+    "20261121 H Ryukyu 1-5"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 15,
+   "points": 18
+  },
+  "Reilac Shiga": {
+   "season": {
+    "gp": 17,
+    "w": 5,
+    "d": 3,
+    "l": 9,
+    "gf_pg": 1.18,
+    "ga_pg": 1.71,
+    "total_pg": 2.88,
+    "over": {
+     "1.5": 0.706,
+     "2.5": 0.588,
+     "3.5": 0.353
+    },
+    "btts": 0.471,
+    "clean_sheet": 0.235,
+    "failed_to_score": 0.353,
+    "ppg": 1.06,
+    "sot_pg": 3.8,
+    "sota_pg": 5.4
+   },
+   "home": {
+    "gp": 8,
+    "w": 1,
+    "d": 2,
+    "l": 5,
+    "gf_pg": 0.75,
+    "ga_pg": 1.75,
+    "total_pg": 2.5,
+    "over": {
+     "1.5": 0.75,
+     "2.5": 0.5,
+     "3.5": 0.125
+    },
+    "btts": 0.375,
+    "clean_sheet": 0.25,
+    "failed_to_score": 0.5,
+    "ppg": 0.62,
+    "sot_pg": 3.5,
+    "sota_pg": 6.5
+   },
+   "away": {
+    "gp": 9,
+    "w": 4,
+    "d": 1,
+    "l": 4,
+    "gf_pg": 1.56,
+    "ga_pg": 1.67,
+    "total_pg": 3.22,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.667,
+     "3.5": 0.556
+    },
+    "btts": 0.556,
+    "clean_sheet": 0.222,
+    "failed_to_score": 0.222,
+    "ppg": 1.44,
+    "sot_pg": 4.0,
+    "sota_pg": 4.4
+   },
+   "last6": {
+    "gp": 6,
+    "w": 1,
+    "d": 1,
+    "l": 4,
+    "gf_pg": 0.67,
+    "ga_pg": 1.83,
+    "total_pg": 2.5,
+    "over": {
+     "1.5": 0.5,
+     "2.5": 0.333,
+     "3.5": 0.333
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.333,
+    "ppg": 0.67,
+    "sot_pg": 2.0,
+    "sota_pg": 5.2
+   },
+   "last6_log": [
+    "20261021 A Tochigi SC 0-1",
+    "20261025 H Kanazawa 1-5",
+    "20261031 A Nagano 1-3",
+    "20261103 A Giravanz Kitakyushu 1-0",
+    "20261107 A Ehime 0-1",
+    "20261115 H Osaka 1-1"
+   ],
+   "last_game_date": "20261115",
+   "rest_days": 6,
+   "rank": 16,
+   "points": 18
+  },
+  "Gainare Tottori": {
+   "season": {
+    "gp": 18,
+    "w": 5,
+    "d": 3,
+    "l": 10,
+    "gf_pg": 1.06,
+    "ga_pg": 1.83,
+    "total_pg": 2.89,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.556,
+     "3.5": 0.333
+    },
+    "btts": 0.444,
+    "clean_sheet": 0.222,
+    "failed_to_score": 0.389,
+    "ppg": 1.0,
+    "sot_pg": 4.1,
+    "sota_pg": 5.8
+   },
+   "home": {
+    "gp": 10,
+    "w": 1,
+    "d": 3,
+    "l": 6,
+    "gf_pg": 0.7,
+    "ga_pg": 1.5,
+    "total_pg": 2.2,
+    "over": {
+     "1.5": 0.6,
+     "2.5": 0.4,
+     "3.5": 0.2
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.1,
+    "failed_to_score": 0.5,
+    "ppg": 0.6,
+    "sot_pg": 3.3,
+    "sota_pg": 5.2
+   },
+   "away": {
+    "gp": 8,
+    "w": 4,
+    "d": 0,
+    "l": 4,
+    "gf_pg": 1.5,
+    "ga_pg": 2.25,
+    "total_pg": 3.75,
+    "over": {
+     "1.5": 0.75,
+     "2.5": 0.75,
+     "3.5": 0.5
+    },
+    "btts": 0.375,
+    "clean_sheet": 0.375,
+    "failed_to_score": 0.25,
+    "ppg": 1.5,
+    "sot_pg": 5.1,
+    "sota_pg": 6.6
+   },
+   "last6": {
+    "gp": 6,
+    "w": 1,
+    "d": 1,
+    "l": 4,
+    "gf_pg": 1.0,
+    "ga_pg": 1.67,
+    "total_pg": 2.67,
+    "over": {
+     "1.5": 0.5,
+     "2.5": 0.5,
+     "3.5": 0.333
+    },
+    "btts": 0.333,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.5,
+    "ppg": 0.67,
+    "sot_pg": 4.3,
+    "sota_pg": 5.7
+   },
+   "last6_log": [
+    "20261025 H Kochi United 0-0",
+    "20261031 A Ryukyu 2-5",
+    "20261103 H Sagamihara 0-1",
+    "20261108 H Tochigi SC 0-1",
+    "20261115 A Kagoshima Utd 3-0",
+    "20261121 H Nagano 1-3"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 17,
+   "points": 18
+  },
+  "Kamatamare": {
+   "season": {
+    "gp": 17,
+    "w": 4,
+    "d": 3,
+    "l": 10,
+    "gf_pg": 1.06,
+    "ga_pg": 1.65,
+    "total_pg": 2.71,
+    "over": {
+     "1.5": 0.647,
+     "2.5": 0.529,
+     "3.5": 0.235
+    },
+    "btts": 0.471,
+    "clean_sheet": 0.235,
+    "failed_to_score": 0.412,
+    "ppg": 0.88,
+    "sot_pg": 4.0,
+    "sota_pg": 5.2
+   },
+   "home": {
+    "gp": 9,
+    "w": 2,
+    "d": 2,
+    "l": 5,
+    "gf_pg": 1.22,
+    "ga_pg": 2.0,
+    "total_pg": 3.22,
+    "over": {
+     "1.5": 0.778,
+     "2.5": 0.556,
+     "3.5": 0.333
+    },
+    "btts": 0.444,
+    "clean_sheet": 0.222,
+    "failed_to_score": 0.444,
+    "ppg": 0.89,
+    "sot_pg": 4.8,
+    "sota_pg": 6.0
+   },
+   "away": {
+    "gp": 8,
+    "w": 2,
+    "d": 1,
+    "l": 5,
+    "gf_pg": 0.88,
+    "ga_pg": 1.25,
+    "total_pg": 2.12,
+    "over": {
+     "1.5": 0.5,
+     "2.5": 0.5,
+     "3.5": 0.125
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.25,
+    "failed_to_score": 0.375,
+    "ppg": 0.88,
+    "sot_pg": 3.1,
+    "sota_pg": 4.2
+   },
+   "last6": {
+    "gp": 6,
+    "w": 3,
+    "d": 1,
+    "l": 2,
+    "gf_pg": 1.0,
+    "ga_pg": 0.83,
+    "total_pg": 1.83,
+    "over": {
+     "1.5": 0.5,
+     "2.5": 0.167,
+     "3.5": 0.167
+    },
+    "btts": 0.333,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.333,
+    "ppg": 1.67,
+    "sot_pg": 4.8,
+    "sota_pg": 3.7
+   },
+   "last6_log": [
+    "20261021 H Kanazawa 3-1",
+    "20261024 A Kusatsu 0-1",
+    "20261031 H Nara Club 0-2",
+    "20261103 H Yamaga 1-0",
+    "20261108 A Nagano 1-0",
+    "20261115 H Renofa Yamaguchi 1-1"
+   ],
+   "last_game_date": "20261115",
+   "rest_days": 6,
+   "rank": 18,
+   "points": 15
+  },
+  "Kusatsu": {
+   "season": {
+    "gp": 18,
+    "w": 4,
+    "d": 1,
+    "l": 13,
+    "gf_pg": 0.89,
+    "ga_pg": 2.06,
+    "total_pg": 2.94,
+    "over": {
+     "1.5": 0.778,
+     "2.5": 0.556,
+     "3.5": 0.333
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.111,
+    "failed_to_score": 0.389,
+    "ppg": 0.72,
+    "sot_pg": 3.6,
+    "sota_pg": 5.8
+   },
+   "home": {
+    "gp": 9,
+    "w": 3,
+    "d": 0,
+    "l": 6,
+    "gf_pg": 1.0,
+    "ga_pg": 1.78,
+    "total_pg": 2.78,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.556,
+     "3.5": 0.333
+    },
+    "btts": 0.556,
+    "clean_sheet": 0.222,
+    "failed_to_score": 0.222,
+    "ppg": 1.0,
+    "sot_pg": 4.0,
+    "sota_pg": 5.6
+   },
+   "away": {
+    "gp": 9,
+    "w": 1,
+    "d": 1,
+    "l": 7,
+    "gf_pg": 0.78,
+    "ga_pg": 2.33,
+    "total_pg": 3.11,
+    "over": {
+     "1.5": 0.889,
+     "2.5": 0.556,
+     "3.5": 0.333
+    },
+    "btts": 0.444,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.556,
+    "ppg": 0.44,
+    "sot_pg": 3.2,
+    "sota_pg": 6.1
+   },
+   "last6": {
+    "gp": 6,
+    "w": 1,
+    "d": 0,
+    "l": 5,
+    "gf_pg": 0.83,
+    "ga_pg": 2.5,
+    "total_pg": 3.33,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.667,
+     "3.5": 0.333
+    },
+    "btts": 0.333,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.5,
+    "ppg": 0.5,
+    "sot_pg": 2.5,
+    "sota_pg": 6.0
+   },
+   "last6_log": [
+    "20261024 H Kamatamare 1-0",
+    "20261031 A Kanazawa 0-4",
+    "20261103 A Nara Club 0-3",
+    "20261107 H Osaka 1-2",
+    "20261114 A Giravanz Kitakyushu 3-4",
+    "20261121 H Tochigi SC 0-2"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 19,
+   "points": 13
+  },
+  "Kochi United": {
+   "season": {
+    "gp": 18,
+    "w": 2,
+    "d": 4,
+    "l": 12,
+    "gf_pg": 0.72,
+    "ga_pg": 2.22,
+    "total_pg": 2.94,
+    "over": {
+     "1.5": 0.778,
+     "2.5": 0.5,
+     "3.5": 0.444
+    },
+    "btts": 0.333,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.611,
+    "ppg": 0.56,
+    "sot_pg": 3.3,
+    "sota_pg": 5.2
+   },
+   "home": {
+    "gp": 9,
+    "w": 2,
+    "d": 3,
+    "l": 4,
+    "gf_pg": 1.33,
+    "ga_pg": 1.89,
+    "total_pg": 3.22,
+    "over": {
+     "1.5": 0.889,
+     "2.5": 0.667,
+     "3.5": 0.556
+    },
+    "btts": 0.556,
+    "clean_sheet": 0.222,
+    "failed_to_score": 0.333,
+    "ppg": 1.0,
+    "sot_pg": 4.7,
+    "sota_pg": 4.9
+   },
+   "away": {
+    "gp": 9,
+    "w": 0,
+    "d": 1,
+    "l": 8,
+    "gf_pg": 0.11,
+    "ga_pg": 2.56,
+    "total_pg": 2.67,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.333,
+     "3.5": 0.333
+    },
+    "btts": 0.111,
+    "clean_sheet": 0.111,
+    "failed_to_score": 0.889,
+    "ppg": 0.11,
+    "sot_pg": 2.0,
+    "sota_pg": 5.4
+   },
+   "last6": {
+    "gp": 6,
+    "w": 1,
+    "d": 2,
+    "l": 3,
+    "gf_pg": 1.33,
+    "ga_pg": 2.0,
+    "total_pg": 3.33,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.667,
+     "3.5": 0.667
+    },
+    "btts": 0.333,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.5,
+    "ppg": 0.83,
+    "sot_pg": 3.3,
+    "sota_pg": 5.3
+   },
+   "last6_log": [
+    "20261025 A Gainare Tottori 0-0",
+    "20261031 H Sagamihara 1-3",
+    "20261103 H Ehime 4-0",
+    "20261107 A Nara Club 0-5",
+    "20261115 A Ryukyu 0-1",
+    "20261121 H Fukushima Utd 3-3"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 20,
+   "points": 10
+  }
+ },
+ "h2h": {
+  "Nagano vs Renofa Yamaguchi": [
+   "20260808 Nagano 1-0 Renofa Yamaguchi"
+  ],
+  "Kumamoto vs Sagamihara": [
+   "20260808 Sagamihara 0-0 Kumamoto"
+  ],
+  "Gainare Tottori vs Osaka": [
+   "20260808 Gainare Tottori 1-1 Osaka"
+  ],
+  "Kagoshima Utd vs Kusatsu": [
+   "20260808 Kagoshima Utd 1-0 Kusatsu"
+  ],
+  "Kochi United vs Yamaga": [
+   "20260808 Kochi United 0-0 Yamaga"
+  ],
+  "Fukushima Utd vs Kamatamare": [
+   "20260809 Fukushima Utd 1-2 Kamatamare"
+  ],
+  "Gifu vs Reilac Shiga": [
+   "20260809 Reilac Shiga 0-3 Gifu"
+  ],
+  "Ehime vs Nara Club": [
+   "20260809 Ehime 4-1 Nara Club"
+  ],
+  "Kanazawa vs Tochigi SC": [
+   "20260809 Tochigi SC 3-2 Kanazawa"
+  ],
+  "Gifu vs Kochi United": [
+   "20260815 Gifu 7-0 Kochi United"
+  ],
+  "Giravanz Kitakyushu vs Kamatamare": [
+   "20260815 Giravanz Kitakyushu 0-0 Kamatamare"
+  ],
+  "Kumamoto vs Tochigi SC": [
+   "20260815 Kumamoto 0-0 Tochigi SC"
+  ],
+  "Kusatsu vs Sagamihara": [
+   "20260815 Kusatsu 1-4 Sagamihara"
+  ],
+  "Renofa Yamaguchi vs Ryukyu": [
+   "20260815 Renofa Yamaguchi 1-0 Ryukyu"
+  ],
+  "Fukushima Utd vs Kanazawa": [
+   "20260815 Kanazawa 4-3 Fukushima Utd"
+  ],
+  "Kagoshima Utd vs Nara Club": [
+   "20260816 Nara Club 1-3 Kagoshima Utd"
+  ],
+  "Nagano vs Osaka": [
+   "20260816 Osaka 4-2 Nagano"
+  ],
+  "Ehime vs Gainare Tottori": [
+   "20260816 Ehime 4-0 Gainare Tottori"
+  ],
+  "Reilac Shiga vs Yamaga": [
+   "20260816 Yamaga 2-3 Reilac Shiga"
+  ],
+  "Nara Club vs Renofa Yamaguchi": [
+   "20260822 Nara Club 3-1 Renofa Yamaguchi"
+  ],
+  "Osaka vs Ryukyu": [
+   "20260822 Osaka 2-2 Ryukyu"
+  ],
+  "Ehime vs Yamaga": [
+   "20260822 Yamaga 2-2 Ehime"
+  ],
+  "Fukushima Utd vs Gainare Tottori": [
+   "20260822 Gainare Tottori 2-1 Fukushima Utd"
+  ],
+  "Gifu vs Kagoshima Utd": [
+   "20260822 Kagoshima Utd 0-0 Gifu"
+  ],
+  "Kumamoto vs Nagano": [
+   "20260822 Kumamoto 0-1 Nagano"
+  ],
+  "Kusatsu vs Reilac Shiga": [
+   "20260822 Kusatsu 2-3 Reilac Shiga"
+  ],
+  "Giravanz Kitakyushu vs Tochigi SC": [
+   "20260822 Tochigi SC 2-2 Giravanz Kitakyushu"
+  ],
+  "Kanazawa vs Sagamihara": [
+   "20260823 Sagamihara 2-1 Kanazawa"
+  ],
+  "Kamatamare vs Kochi United": [
+   "20260823 Kochi United 2-1 Kamatamare"
+  ],
+  "Fukushima Utd vs Nara Club": [
+   "20260829 Fukushima Utd 2-2 Nara Club"
+  ],
+  "Gifu vs Tochigi SC": [
+   "20260829 Gifu 4-1 Tochigi SC"
+  ],
+  "Kagoshima Utd vs Kamatamare": [
+   "20260829 Kamatamare 3-4 Kagoshima Utd"
+  ],
+  "Ryukyu vs Sagamihara": [
+   "20260829 Ryukyu 2-1 Sagamihara"
+  ],
+  "Giravanz Kitakyushu vs Yamaga": [
+   "20260830 Giravanz Kitakyushu 1-1 Yamaga"
+  ],
+  "Kusatsu vs Nagano": [
+   "20260830 Nagano 1-2 Kusatsu"
+  ],
+  "Gainare Tottori vs Reilac Shiga": [
+   "20260830 Reilac Shiga 0-1 Gainare Tottori"
+  ],
+  "Ehime vs Kanazawa": [
+   "20260830 Kanazawa 0-1 Ehime"
+  ],
+  "Kochi United vs Kumamoto": [
+   "20260830 Kochi United 0-2 Kumamoto"
+  ],
+  "Osaka vs Renofa Yamaguchi": [
+   "20260830 Renofa Yamaguchi 0-0 Osaka"
+  ],
+  "Gifu vs Kanazawa": [
+   "20260905 Gifu 0-1 Kanazawa"
+  ],
+  "Kamatamare vs Reilac Shiga": [
+   "20260905 Kamatamare 0-3 Reilac Shiga"
+  ],
+  "Nagano vs Sagamihara": [
+   "20260905 Sagamihara 1-1 Nagano"
+  ],
+  "Osaka vs Yamaga": [
+   "20260905 Yamaga 0-0 Osaka"
+  ],
+  "Ehime vs Giravanz Kitakyushu": [
+   "20260905 Ehime 4-2 Giravanz Kitakyushu"
+  ],
+  "Gainare Tottori vs Renofa Yamaguchi": [
+   "20260905 Gainare Tottori 0-3 Renofa Yamaguchi"
+  ],
+  "Kagoshima Utd vs Ryukyu": [
+   "20260905 Kagoshima Utd 2-1 Ryukyu"
+  ],
+  "Fukushima Utd vs Kusatsu": [
+   "20260905 Kusatsu 1-3 Fukushima Utd"
+  ],
+  "Kochi United vs Tochigi SC": [
+   "20260905 Tochigi SC 2-0 Kochi United"
+  ],
+  "Kumamoto vs Nara Club": [
+   "20260906 Kumamoto 2-2 Nara Club"
+  ],
+  "Giravanz Kitakyushu vs Ryukyu": [
+   "20260909 Ryukyu 3-0 Giravanz Kitakyushu"
+  ],
+  "Fukushima Utd vs Kumamoto": [
+   "20260912 Fukushima Utd 1-2 Kumamoto"
+  ],
+  "Gainare Tottori vs Giravanz Kitakyushu": [
+   "20260912 Giravanz Kitakyushu 2-4 Gainare Tottori"
+  ],
+  "Gifu vs Nara Club": [
+   "20260912 Nara Club 2-1 Gifu"
+  ],
+  "Kusatsu vs Renofa Yamaguchi": [
+   "20260912 Renofa Yamaguchi 2-0 Kusatsu"
+  ],
+  "Kamatamare vs Ryukyu": [
+   "20260913 Ryukyu 1-0 Kamatamare"
+  ],
+  "Sagamihara vs Yamaga": [
+   "20260913 Yamaga 1-3 Sagamihara"
+  ],
+  "Kagoshima Utd vs Reilac Shiga": [
+   "20260913 Reilac Shiga 1-2 Kagoshima Utd"
+  ],
+  "Kanazawa vs Kochi United": [
+   "20260913 Kochi United 1-1 Kanazawa"
+  ],
+  "Nagano vs Tochigi SC": [
+   "20260913 Nagano 1-1 Tochigi SC"
+  ],
+  "Ehime vs Osaka": [
+   "20260914 Osaka 2-1 Ehime"
+  ],
+  "Kumamoto vs Yamaga": [
+   "20260918 Kumamoto 0-0 Yamaga"
+  ],
+  "Fukushima Utd vs Osaka": [
+   "20260918 Osaka 4-1 Fukushima Utd"
+  ],
+  "Ehime vs Kamatamare": [
+   "20260919 Ehime 2-1 Kamatamare"
+  ],
+  "Gainare Tottori vs Nara Club": [
+   "20260919 Gainare Tottori 2-3 Nara Club"
+  ],
+  "Kagoshima Utd vs Tochigi SC": [
+   "20260919 Kagoshima Utd 3-1 Tochigi SC"
+  ],
+  "Kochi United vs Kusatsu": [
+   "20260919 Kusatsu 1-0 Kochi United"
+  ],
+  "Kanazawa vs Renofa Yamaguchi": [
+   "20260920 Kanazawa 1-2 Renofa Yamaguchi"
+  ],
+  "Gifu vs Nagano": [
+   "20260920 Nagano 1-0 Gifu"
+  ],
+  "Reilac Shiga vs Ryukyu": [
+   "20260920 Reilac Shiga 3-0 Ryukyu"
+  ],
+  "Giravanz Kitakyushu vs Sagamihara": [
+   "20260920 Sagamihara 1-2 Giravanz Kitakyushu"
+  ],
+  "Gainare Tottori vs Kanazawa": [
+   "20260926 Kanazawa 4-1 Gainare Tottori"
+  ],
+  "Renofa Yamaguchi vs Sagamihara": [
+   "20260926 Renofa Yamaguchi 2-2 Sagamihara"
+  ],
+  "Nara Club vs Reilac Shiga": [
+   "20260926 Nara Club 4-1 Reilac Shiga"
+  ],
+  "Fukushima Utd vs Nagano": [
+   "20260926 Fukushima Utd 4-3 Nagano"
+  ],
+  "Giravanz Kitakyushu vs Kagoshima Utd": [
+   "20260926 Giravanz Kitakyushu 1-1 Kagoshima Utd"
+  ],
+  "Gifu vs Kamatamare": [
+   "20260926 Kamatamare 3-4 Gifu"
+  ],
+  "Kochi United vs Osaka": [
+   "20260926 Kochi United 0-4 Osaka"
+  ],
+  "Kumamoto vs Kusatsu": [
+   "20260926 Kusatsu 0-1 Kumamoto"
+  ],
+  "Ehime vs Ryukyu": [
+   "20260926 Ryukyu 1-1 Ehime"
+  ],
+  "Tochigi SC vs Yamaga": [
+   "20260926 Tochigi SC 1-2 Yamaga"
+  ],
+  "Kumamoto vs Reilac Shiga": [
+   "20261002 Reilac Shiga 0-0 Kumamoto"
+  ],
+  "Gifu vs Renofa Yamaguchi": [
+   "20261003 Gifu 0-2 Renofa Yamaguchi"
+  ],
+  "Nagano vs Nara Club": [
+   "20261003 Nagano 0-1 Nara Club"
+  ],
+  "Gainare Tottori vs Yamaga": [
+   "20261003 Yamaga 0-1 Gainare Tottori"
+  ],
+  "Ehime vs Kusatsu": [
+   "20261003 Ehime 3-1 Kusatsu"
+  ],
+  "Giravanz Kitakyushu vs Kochi United": [
+   "20261003 Giravanz Kitakyushu 2-0 Kochi United"
+  ],
+  "Kanazawa vs Ryukyu": [
+   "20261003 Ryukyu 0-2 Kanazawa"
+  ],
+  "Osaka vs Sagamihara": [
+   "20261003 Sagamihara 1-0 Osaka"
+  ],
+  "Kamatamare vs Tochigi SC": [
+   "20261004 Kamatamare 0-0 Tochigi SC"
+  ],
+  "Fukushima Utd vs Kagoshima Utd": [
+   "20261004 Kagoshima Utd 3-2 Fukushima Utd"
+  ],
+  "Kamatamare vs Sagamihara": [
+   "20261009 Sagamihara 3-2 Kamatamare"
+  ],
+  "Kanazawa vs Osaka": [
+   "20261009 Osaka 1-1 Kanazawa"
+  ],
+  "Kochi United vs Nagano": [
+   "20261010 Kochi United 1-3 Nagano"
+  ],
+  "Kusatsu vs Ryukyu": [
+   "20261010 Kusatsu 2-1 Ryukyu"
+  ],
+  "Giravanz Kitakyushu vs Nara Club": [
+   "20261010 Nara Club 2-0 Giravanz Kitakyushu"
+  ],
+  "Fukushima Utd vs Reilac Shiga": [
+   "20261010 Fukushima Utd 2-2 Reilac Shiga"
+  ],
+  "Ehime vs Kumamoto": [
+   "20261011 Kumamoto 0-2 Ehime"
+  ],
+  "Kagoshima Utd vs Yamaga": [
+   "20261011 Yamaga 1-0 Kagoshima Utd"
+  ],
+  "Gainare Tottori vs Gifu": [
+   "20261011 Gainare Tottori 0-1 Gifu"
+  ],
+  "Renofa Yamaguchi vs Tochigi SC": [
+   "20261011 Tochigi SC 0-1 Renofa Yamaguchi"
+  ],
+  "Gainare Tottori vs Kusatsu": [
+   "20261017 Gainare Tottori 1-1 Kusatsu"
+  ],
+  "Fukushima Utd vs Gifu": [
+   "20261017 Gifu 1-0 Fukushima Utd"
+  ],
+  "Giravanz Kitakyushu vs Osaka": [
+   "20261017 Giravanz Kitakyushu 3-1 Osaka"
+  ],
+  "Ehime vs Kagoshima Utd": [
+   "20261017 Kagoshima Utd 4-2 Ehime"
+  ],
+  "Kanazawa vs Nara Club": [
+   "20261017 Kanazawa 0-1 Nara Club"
+  ],
+  "Ryukyu vs Tochigi SC": [
+   "20261017 Ryukyu 1-0 Tochigi SC"
+  ],
+  "Kamatamare vs Kumamoto": [
+   "20261018 Kamatamare 0-3 Kumamoto"
+  ],
+  "Reilac Shiga vs Sagamihara": [
+   "20261018 Reilac Shiga 0-2 Sagamihara"
+  ],
+  "Kochi United vs Renofa Yamaguchi": [
+   "20261018 Renofa Yamaguchi 2-0 Kochi United"
+  ],
+  "Nagano vs Yamaga": [
+   "20261018 Nagano 2-1 Yamaga"
+  ],
+  "Fukushima Utd vs Giravanz Kitakyushu": [
+   "20261021 Fukushima Utd 2-1 Giravanz Kitakyushu"
+  ],
+  "Nagano vs Ryukyu": [
+   "20261021 Nagano 0-1 Ryukyu"
+  ],
+  "Reilac Shiga vs Tochigi SC": [
+   "20261021 Tochigi SC 1-0 Reilac Shiga"
+  ],
+  "Ehime vs Renofa Yamaguchi": [
+   "20261021 Ehime 2-1 Renofa Yamaguchi"
+  ],
+  "Gifu vs Sagamihara": [
+   "20261021 Gifu 2-1 Sagamihara"
+  ],
+  "Kagoshima Utd vs Kochi United": [
+   "20261021 Kagoshima Utd 3-1 Kochi United"
+  ],
+  "Kamatamare vs Kanazawa": [
+   "20261021 Kamatamare 3-1 Kanazawa"
+  ],
+  "Gainare Tottori vs Kumamoto": [
+   "20261021 Kumamoto 3-0 Gainare Tottori"
+  ],
+  "Nara Club vs Osaka": [
+   "20261021 Osaka 2-0 Nara Club"
+  ],
+  "Kusatsu vs Yamaga": [
+   "20261021 Yamaga 2-0 Kusatsu"
+  ],
+  "Kamatamare vs Kusatsu": [
+   "20261024 Kusatsu 1-0 Kamatamare"
+  ],
+  "Nara Club vs Ryukyu": [
+   "20261024 Nara Club 1-3 Ryukyu"
+  ],
+  "Kagoshima Utd vs Osaka": [
+   "20261024 Osaka 2-1 Kagoshima Utd"
+  ],
+  "Sagamihara vs Tochigi SC": [
+   "20261024 Sagamihara 0-0 Tochigi SC"
+  ],
+  "Gainare Tottori vs Kochi United": [
+   "20261025 Gainare Tottori 0-0 Kochi United"
+  ],
+  "Gifu vs Kumamoto": [
+   "20261025 Kumamoto 2-1 Gifu"
+  ],
+  "Giravanz Kitakyushu vs Nagano": [
+   "20261025 Giravanz Kitakyushu 3-1 Nagano"
+  ],
+  "Kanazawa vs Reilac Shiga": [
+   "20261025 Reilac Shiga 1-5 Kanazawa"
+  ],
+  "Renofa Yamaguchi vs Yamaga": [
+   "20261025 Yamaga 0-2 Renofa Yamaguchi"
+  ],
+  "Ehime vs Fukushima Utd": [
+   "20261025 Ehime 2-4 Fukushima Utd"
+  ],
+  "Fukushima Utd vs Yamaga": [
+   "20261031 Fukushima Utd 1-3 Yamaga"
+  ],
+  "Gifu vs Osaka": [
+   "20261031 Gifu 1-0 Osaka"
+  ],
+  "Kamatamare vs Nara Club": [
+   "20261031 Kamatamare 0-2 Nara Club"
+  ],
+  "Kanazawa vs Kusatsu": [
+   "20261031 Kanazawa 4-0 Kusatsu"
+  ],
+  "Kochi United vs Sagamihara": [
+   "20261031 Kochi United 1-3 Sagamihara"
+  ],
+  "Ehime vs Tochigi SC": [
+   "20261031 Tochigi SC 2-0 Ehime"
+  ],
+  "Giravanz Kitakyushu vs Renofa Yamaguchi": [
+   "20261031 Renofa Yamaguchi 0-2 Giravanz Kitakyushu"
+  ],
+  "Nagano vs Reilac Shiga": [
+   "20261031 Nagano 3-1 Reilac Shiga"
+  ],
+  "Gainare Tottori vs Ryukyu": [
+   "20261031 Ryukyu 5-2 Gainare Tottori"
+  ],
+  "Kagoshima Utd vs Kumamoto": [
+   "20261031 Kagoshima Utd 1-1 Kumamoto"
+  ],
+  "Gainare Tottori vs Sagamihara": [
+   "20261103 Gainare Tottori 0-1 Sagamihara"
+  ],
+  "Giravanz Kitakyushu vs Reilac Shiga": [
+   "20261103 Giravanz Kitakyushu 0-1 Reilac Shiga"
+  ],
+  "Kamatamare vs Yamaga": [
+   "20261103 Kamatamare 1-0 Yamaga"
+  ],
+  "Kanazawa vs Nagano": [
+   "20261103 Kanazawa 0-2 Nagano"
+  ],
+  "Ehime vs Kochi United": [
+   "20261103 Kochi United 4-0 Ehime"
+  ],
+  "Kusatsu vs Nara Club": [
+   "20261103 Nara Club 3-0 Kusatsu"
+  ],
+  "Kagoshima Utd vs Renofa Yamaguchi": [
+   "20261103 Renofa Yamaguchi 1-1 Kagoshima Utd"
+  ],
+  "Fukushima Utd vs Tochigi SC": [
+   "20261103 Tochigi SC 0-0 Fukushima Utd"
+  ],
+  "Gifu vs Ryukyu": [
+   "20261103 Ryukyu 2-3 Gifu"
+  ],
+  "Kumamoto vs Osaka": [
+   "20261104 Osaka 2-1 Kumamoto"
+  ],
+  "Fukushima Utd vs Ryukyu": [
+   "20261107 Fukushima Utd 4-1 Ryukyu"
+  ],
+  "Gifu vs Giravanz Kitakyushu": [
+   "20261107 Gifu 1-0 Giravanz Kitakyushu"
+  ],
+  "Kusatsu vs Osaka": [
+   "20261107 Kusatsu 1-2 Osaka"
+  ],
+  "Kochi United vs Nara Club": [
+   "20261107 Nara Club 5-0 Kochi United"
+  ],
+  "Kanazawa vs Yamaga": [
+   "20261107 Yamaga 0-1 Kanazawa"
+  ],
+  "Ehime vs Reilac Shiga": [
+   "20261107 Ehime 1-0 Reilac Shiga"
+  ],
+  "Kumamoto vs Renofa Yamaguchi": [
+   "20261108 Kumamoto 1-2 Renofa Yamaguchi"
+  ],
+  "Gainare Tottori vs Tochigi SC": [
+   "20261108 Gainare Tottori 0-1 Tochigi SC"
+  ],
+  "Kamatamare vs Nagano": [
+   "20261108 Nagano 0-1 Kamatamare"
+  ],
+  "Kagoshima Utd vs Sagamihara": [
+   "20261108 Sagamihara 1-0 Kagoshima Utd"
+  ],
+  "Fukushima Utd vs Sagamihara": [
+   "20261114 Fukushima Utd 1-0 Sagamihara"
+  ],
+  "Gifu vs Yamaga": [
+   "20261114 Gifu 0-0 Yamaga"
+  ],
+  "Giravanz Kitakyushu vs Kusatsu": [
+   "20261114 Giravanz Kitakyushu 4-3 Kusatsu"
+  ],
+  "Gainare Tottori vs Kagoshima Utd": [
+   "20261115 Kagoshima Utd 0-3 Gainare Tottori"
+  ],
+  "Kamatamare vs Renofa Yamaguchi": [
+   "20261115 Kamatamare 1-1 Renofa Yamaguchi"
+  ],
+  "Kanazawa vs Kumamoto": [
+   "20261115 Kanazawa 3-2 Kumamoto"
+  ],
+  "Ehime vs Nagano": [
+   "20261115 Nagano 1-0 Ehime"
+  ],
+  "Nara Club vs Tochigi SC": [
+   "20261115 Tochigi SC 1-0 Nara Club"
+  ],
+  "Kochi United vs Ryukyu": [
+   "20261115 Ryukyu 1-0 Kochi United"
+  ],
+  "Osaka vs Reilac Shiga": [
+   "20261115 Reilac Shiga 1-1 Osaka"
+  ],
+  "Ehime vs Gifu": [
+   "20261121 Ehime 1-2 Gifu"
+  ],
+  "Gainare Tottori vs Nagano": [
+   "20261121 Gainare Tottori 1-3 Nagano"
+  ],
+  "Kagoshima Utd vs Kanazawa": [
+   "20261121 Kanazawa 0-0 Kagoshima Utd"
+  ],
+  "Fukushima Utd vs Kochi United": [
+   "20261121 Kochi United 3-3 Fukushima Utd"
+  ],
+  "Kusatsu vs Tochigi SC": [
+   "20261121 Kusatsu 0-2 Tochigi SC"
+  ],
+  "Nara Club vs Sagamihara": [
+   "20261121 Nara Club 0-4 Sagamihara"
+  ],
+  "Ryukyu vs Yamaga": [
+   "20261121 Yamaga 1-5 Ryukyu"
+  ]
+ }
+}
