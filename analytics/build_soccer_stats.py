@@ -175,7 +175,8 @@ def build(league: str) -> bool:
     for g in games:
         k = " vs ".join(sorted((g["home_team"], g["away_team"])))
         h2h.setdefault(k, []).append(f"{g['date']} {g['home_team']} {g['home_score']}-{g['away_score']} {g['away_team']}")
-    h2h = {k: v[-6:] for k, v in h2h.items() if any(x[:8] >= start for x in v)}
+    tset = set(teams)
+    h2h = {k: v[-6:] for k, v in h2h.items() if all(t in tset for t in k.split(" vs "))}   # 이번 시즌 두 팀 모두 같은 리그면 지난 시즌 맞대결도 포함
     out = {"meta": {"generated_kst": kst.strftime("%Y-%m-%d %H:%M"), "league": league,
                     "season_start": start, "games": len(season),
                     "last_game_date": season[-1]["date"], "league_avg": league_avg(season),
