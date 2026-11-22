@@ -1,0 +1,2339 @@
+{
+ "meta": {
+  "generated_kst": "2026-11-22 19:41",
+  "league": "BUNDESLIGA",
+  "season_start": "20260701",
+  "games": 86,
+  "last_game_date": "20261121",
+  "league_avg": {
+   "games": 86,
+   "home_win": 0.5,
+   "draw": 0.221,
+   "away_win": 0.279,
+   "goals_pg": 3.34,
+   "home_gf_pg": 2.07,
+   "away_gf_pg": 1.27,
+   "over": {
+    "1.5": 0.779,
+    "2.5": 0.663,
+    "3.5": 0.477
+   },
+   "btts": 0.581
+  },
+  "notes": "REG만 집계 / over는 해당 기준점 초과 비율 / g_minus_xg +는 득점 과열(회귀 후보) / rest_days는 오늘(KST) 기준"
+ },
+ "teams": {
+  "Dortmund": {
+   "season": {
+    "gp": 10,
+    "w": 7,
+    "d": 3,
+    "l": 0,
+    "gf_pg": 1.7,
+    "ga_pg": 0.7,
+    "total_pg": 2.4,
+    "over": {
+     "1.5": 0.6,
+     "2.5": 0.5,
+     "3.5": 0.3
+    },
+    "btts": 0.4,
+    "clean_sheet": 0.6,
+    "failed_to_score": 0.1,
+    "ppg": 2.4,
+    "xg_pg": 1.55,
+    "xga_pg": 1.34,
+    "xg_n": 10,
+    "g_minus_xg": 0.15,
+    "ga_minus_xga": -0.64,
+    "sot_pg": 5.5,
+    "sota_pg": 3.5
+   },
+   "home": {
+    "gp": 5,
+    "w": 4,
+    "d": 1,
+    "l": 0,
+    "gf_pg": 2.0,
+    "ga_pg": 0.6,
+    "total_pg": 2.6,
+    "over": {
+     "1.5": 0.8,
+     "2.5": 0.6,
+     "3.5": 0.2
+    },
+    "btts": 0.4,
+    "clean_sheet": 0.6,
+    "failed_to_score": 0.0,
+    "ppg": 2.6,
+    "xg_pg": 1.73,
+    "xga_pg": 0.96,
+    "xg_n": 5,
+    "g_minus_xg": 0.27,
+    "ga_minus_xga": -0.36,
+    "sot_pg": 7.2,
+    "sota_pg": 3.4
+   },
+   "away": {
+    "gp": 5,
+    "w": 3,
+    "d": 2,
+    "l": 0,
+    "gf_pg": 1.4,
+    "ga_pg": 0.8,
+    "total_pg": 2.2,
+    "over": {
+     "1.5": 0.4,
+     "2.5": 0.4,
+     "3.5": 0.4
+    },
+    "btts": 0.4,
+    "clean_sheet": 0.6,
+    "failed_to_score": 0.2,
+    "ppg": 2.2,
+    "xg_pg": 1.36,
+    "xga_pg": 1.73,
+    "xg_n": 5,
+    "g_minus_xg": 0.04,
+    "ga_minus_xga": -0.93,
+    "sot_pg": 3.8,
+    "sota_pg": 3.6
+   },
+   "last6": {
+    "gp": 6,
+    "w": 3,
+    "d": 3,
+    "l": 0,
+    "gf_pg": 1.33,
+    "ga_pg": 0.83,
+    "total_pg": 2.17,
+    "over": {
+     "1.5": 0.5,
+     "2.5": 0.5,
+     "3.5": 0.333
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.5,
+    "failed_to_score": 0.167,
+    "ppg": 2.0,
+    "xg_pg": 1.47,
+    "xga_pg": 1.52,
+    "xg_n": 6,
+    "g_minus_xg": -0.14,
+    "ga_minus_xga": -0.69,
+    "sot_pg": 5.7,
+    "sota_pg": 3.5
+   },
+   "last6_log": [
+    "20261009 H Werder Bremen 2-2 (xG 2.31-1.31)",
+    "20261017 A Union Berlin 0-0 (xG 1.09-0.8)",
+    "20261024 H Eintracht Frankfurt 1-0 (xG 1.48-0.85)",
+    "20261031 A Bayern Munich 2-2 (xG 0.75-4.49)",
+    "20261107 H Elversberg 2-1 (xG 1.57-1.22)",
+    "20261121 A B. Monchengladbach 1-0 (xG 1.61-0.47)"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 1,
+   "points": 24
+  },
+  "Bayern Munich": {
+   "season": {
+    "gp": 10,
+    "w": 6,
+    "d": 4,
+    "l": 0,
+    "gf_pg": 3.0,
+    "ga_pg": 1.0,
+    "total_pg": 4.0,
+    "over": {
+     "1.5": 0.9,
+     "2.5": 0.8,
+     "3.5": 0.6
+    },
+    "btts": 0.8,
+    "clean_sheet": 0.2,
+    "failed_to_score": 0.1,
+    "ppg": 2.2,
+    "xg_pg": 3.22,
+    "xga_pg": 0.97,
+    "xg_n": 10,
+    "g_minus_xg": -0.22,
+    "ga_minus_xga": 0.03,
+    "sot_pg": 8.6,
+    "sota_pg": 3.2
+   },
+   "home": {
+    "gp": 5,
+    "w": 3,
+    "d": 2,
+    "l": 0,
+    "gf_pg": 4.2,
+    "ga_pg": 1.0,
+    "total_pg": 5.2,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.8,
+     "3.5": 0.8
+    },
+    "btts": 0.8,
+    "clean_sheet": 0.2,
+    "failed_to_score": 0.0,
+    "ppg": 2.2,
+    "xg_pg": 3.35,
+    "xga_pg": 0.94,
+    "xg_n": 5,
+    "g_minus_xg": 0.85,
+    "ga_minus_xga": 0.06,
+    "sot_pg": 9.4,
+    "sota_pg": 4.0
+   },
+   "away": {
+    "gp": 5,
+    "w": 3,
+    "d": 2,
+    "l": 0,
+    "gf_pg": 1.8,
+    "ga_pg": 1.0,
+    "total_pg": 2.8,
+    "over": {
+     "1.5": 0.8,
+     "2.5": 0.8,
+     "3.5": 0.4
+    },
+    "btts": 0.8,
+    "clean_sheet": 0.2,
+    "failed_to_score": 0.2,
+    "ppg": 2.2,
+    "xg_pg": 3.08,
+    "xga_pg": 1.01,
+    "xg_n": 5,
+    "g_minus_xg": -1.28,
+    "ga_minus_xga": -0.01,
+    "sot_pg": 7.8,
+    "sota_pg": 2.4
+   },
+   "last6": {
+    "gp": 6,
+    "w": 3,
+    "d": 3,
+    "l": 0,
+    "gf_pg": 2.67,
+    "ga_pg": 1.33,
+    "total_pg": 4.0,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.833,
+     "3.5": 0.667
+    },
+    "btts": 1.0,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.0,
+    "ppg": 2.0,
+    "xg_pg": 3.27,
+    "xga_pg": 1.25,
+    "xg_n": 6,
+    "g_minus_xg": -0.6,
+    "ga_minus_xga": 0.08,
+    "sot_pg": 8.5,
+    "sota_pg": 4.0
+   },
+   "last6_log": [
+    "20261010 A Augsburg 2-2 (xG 4.97-2.37)",
+    "20261017 H RB Leipzig 6-1 (xG 3.4-0.84)",
+    "20261025 A Freiburg 3-1 (xG 2.9-1.0)",
+    "20261031 H Dortmund 2-2 (xG 4.49-0.75)",
+    "20261107 A Mainz 2-1 (xG 2.78-0.54)",
+    "20261120 H FC Koln 1-1 (xG 1.08-1.99)"
+   ],
+   "last_game_date": "20261120",
+   "rest_days": 1,
+   "rank": 2,
+   "points": 22
+  },
+  "Freiburg": {
+   "season": {
+    "gp": 10,
+    "w": 7,
+    "d": 1,
+    "l": 2,
+    "gf_pg": 2.1,
+    "ga_pg": 1.0,
+    "total_pg": 3.1,
+    "over": {
+     "1.5": 0.8,
+     "2.5": 0.7,
+     "3.5": 0.4
+    },
+    "btts": 0.6,
+    "clean_sheet": 0.4,
+    "failed_to_score": 0.0,
+    "ppg": 2.2,
+    "xg_pg": 1.73,
+    "xga_pg": 1.12,
+    "xg_n": 10,
+    "g_minus_xg": 0.37,
+    "ga_minus_xga": -0.12,
+    "sot_pg": 4.8,
+    "sota_pg": 3.1
+   },
+   "home": {
+    "gp": 5,
+    "w": 4,
+    "d": 0,
+    "l": 1,
+    "gf_pg": 2.8,
+    "ga_pg": 1.0,
+    "total_pg": 3.8,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.8,
+     "3.5": 0.6
+    },
+    "btts": 0.6,
+    "clean_sheet": 0.4,
+    "failed_to_score": 0.0,
+    "ppg": 2.4,
+    "xg_pg": 1.94,
+    "xga_pg": 0.86,
+    "xg_n": 5,
+    "g_minus_xg": 0.86,
+    "ga_minus_xga": 0.14,
+    "sot_pg": 6.2,
+    "sota_pg": 2.6
+   },
+   "away": {
+    "gp": 5,
+    "w": 3,
+    "d": 1,
+    "l": 1,
+    "gf_pg": 1.4,
+    "ga_pg": 1.0,
+    "total_pg": 2.4,
+    "over": {
+     "1.5": 0.6,
+     "2.5": 0.6,
+     "3.5": 0.2
+    },
+    "btts": 0.6,
+    "clean_sheet": 0.4,
+    "failed_to_score": 0.0,
+    "ppg": 2.0,
+    "xg_pg": 1.52,
+    "xga_pg": 1.39,
+    "xg_n": 5,
+    "g_minus_xg": -0.12,
+    "ga_minus_xga": -0.39,
+    "sot_pg": 3.4,
+    "sota_pg": 3.6
+   },
+   "last6": {
+    "gp": 6,
+    "w": 4,
+    "d": 0,
+    "l": 2,
+    "gf_pg": 1.5,
+    "ga_pg": 1.17,
+    "total_pg": 2.67,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.667,
+     "3.5": 0.167
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.0,
+    "ppg": 2.0,
+    "xg_pg": 1.33,
+    "xga_pg": 1.26,
+    "xg_n": 6,
+    "g_minus_xg": 0.17,
+    "ga_minus_xga": -0.09,
+    "sot_pg": 3.7,
+    "sota_pg": 3.7
+   },
+   "last6_log": [
+    "20261011 H Schalke 2-1 (xG 1.14-0.32)",
+    "20261018 A Bayer Leverkusen 1-2 (xG 1.21-1.64)",
+    "20261025 H Bayern Munich 1-3 (xG 1.0-2.9)",
+    "20261031 A Augsburg 2-1 (xG 1.19-1.2)",
+    "20261108 H Union Berlin 2-0 (xG 2.58-0.34)",
+    "20261121 A Elversberg 1-0 (xG 0.86-1.15)"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 3,
+   "points": 22
+  },
+  "RB Leipzig": {
+   "season": {
+    "gp": 10,
+    "w": 7,
+    "d": 0,
+    "l": 3,
+    "gf_pg": 3.2,
+    "ga_pg": 1.4,
+    "total_pg": 4.6,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.8,
+     "3.5": 0.7
+    },
+    "btts": 0.4,
+    "clean_sheet": 0.5,
+    "failed_to_score": 0.1,
+    "ppg": 2.1,
+    "xg_pg": 2.84,
+    "xga_pg": 1.44,
+    "xg_n": 10,
+    "g_minus_xg": 0.36,
+    "ga_minus_xga": -0.04,
+    "sot_pg": 7.2,
+    "sota_pg": 6.5
+   },
+   "home": {
+    "gp": 5,
+    "w": 5,
+    "d": 0,
+    "l": 0,
+    "gf_pg": 4.6,
+    "ga_pg": 0.4,
+    "total_pg": 5.0,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 1.0,
+     "3.5": 0.8
+    },
+    "btts": 0.2,
+    "clean_sheet": 0.8,
+    "failed_to_score": 0.0,
+    "ppg": 3.0,
+    "xg_pg": 3.1,
+    "xga_pg": 1.29,
+    "xg_n": 5,
+    "g_minus_xg": 1.5,
+    "ga_minus_xga": -0.89,
+    "sot_pg": 8.0,
+    "sota_pg": 5.2
+   },
+   "away": {
+    "gp": 5,
+    "w": 2,
+    "d": 0,
+    "l": 3,
+    "gf_pg": 1.8,
+    "ga_pg": 2.4,
+    "total_pg": 4.2,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.6,
+     "3.5": 0.6
+    },
+    "btts": 0.6,
+    "clean_sheet": 0.2,
+    "failed_to_score": 0.2,
+    "ppg": 1.2,
+    "xg_pg": 2.58,
+    "xga_pg": 1.59,
+    "xg_n": 5,
+    "g_minus_xg": -0.78,
+    "ga_minus_xga": 0.81,
+    "sot_pg": 6.4,
+    "sota_pg": 7.8
+   },
+   "last6": {
+    "gp": 6,
+    "w": 5,
+    "d": 0,
+    "l": 1,
+    "gf_pg": 3.83,
+    "ga_pg": 1.5,
+    "total_pg": 5.33,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.833,
+     "3.5": 0.833
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.5,
+    "failed_to_score": 0.0,
+    "ppg": 2.5,
+    "xg_pg": 3.26,
+    "xga_pg": 1.5,
+    "xg_n": 6,
+    "g_minus_xg": 0.57,
+    "ga_minus_xga": -0.0,
+    "sot_pg": 7.8,
+    "sota_pg": 7.3
+   },
+   "last6_log": [
+    "20261010 H Eintracht Frankfurt 6-0 (xG 4.02-1.46)",
+    "20261017 A Bayern Munich 1-6 (xG 0.84-3.4)",
+    "20261024 H Elversberg 4-0 (xG 2.87-0.79)",
+    "20261031 A Schalke 2-0 (xG 3.65-0.49)",
+    "20261107 H Augsburg 5-2 (xG 2.23-2.03)",
+    "20261121 A Union Berlin 5-1 (xG 5.94-0.86)"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 4,
+   "points": 21
+  },
+  "Bayer Leverkusen": {
+   "season": {
+    "gp": 10,
+    "w": 6,
+    "d": 1,
+    "l": 3,
+    "gf_pg": 2.4,
+    "ga_pg": 1.7,
+    "total_pg": 4.1,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.9,
+     "3.5": 0.6
+    },
+    "btts": 0.6,
+    "clean_sheet": 0.3,
+    "failed_to_score": 0.1,
+    "ppg": 1.9,
+    "xg_pg": 2.22,
+    "xga_pg": 1.63,
+    "xg_n": 10,
+    "g_minus_xg": 0.18,
+    "ga_minus_xga": 0.07,
+    "sot_pg": 6.4,
+    "sota_pg": 4.1
+   },
+   "home": {
+    "gp": 5,
+    "w": 4,
+    "d": 0,
+    "l": 1,
+    "gf_pg": 2.8,
+    "ga_pg": 1.0,
+    "total_pg": 3.8,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.8,
+     "3.5": 0.6
+    },
+    "btts": 0.4,
+    "clean_sheet": 0.6,
+    "failed_to_score": 0.0,
+    "ppg": 2.4,
+    "xg_pg": 2.63,
+    "xga_pg": 1.14,
+    "xg_n": 5,
+    "g_minus_xg": 0.17,
+    "ga_minus_xga": -0.14,
+    "sot_pg": 7.8,
+    "sota_pg": 2.6
+   },
+   "away": {
+    "gp": 5,
+    "w": 2,
+    "d": 1,
+    "l": 2,
+    "gf_pg": 2.0,
+    "ga_pg": 2.4,
+    "total_pg": 4.4,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 1.0,
+     "3.5": 0.6
+    },
+    "btts": 0.8,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.2,
+    "ppg": 1.4,
+    "xg_pg": 1.81,
+    "xga_pg": 2.12,
+    "xg_n": 5,
+    "g_minus_xg": 0.19,
+    "ga_minus_xga": 0.28,
+    "sot_pg": 5.0,
+    "sota_pg": 5.6
+   },
+   "last6": {
+    "gp": 6,
+    "w": 4,
+    "d": 0,
+    "l": 2,
+    "gf_pg": 2.33,
+    "ga_pg": 2.0,
+    "total_pg": 4.33,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 1.0,
+     "3.5": 0.5
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.167,
+    "ppg": 2.0,
+    "xg_pg": 2.05,
+    "xga_pg": 2.09,
+    "xg_n": 6,
+    "g_minus_xg": 0.28,
+    "ga_minus_xga": -0.09,
+    "sot_pg": 6.5,
+    "sota_pg": 4.5
+   },
+   "last6_log": [
+    "20261010 A Mainz 4-3 (xG 2.09-3.13)",
+    "20261018 H Freiburg 2-1 (xG 1.64-1.21)",
+    "20261025 A Hoffenheim 0-3 (xG 0.57-3.46)",
+    "20261031 H Stuttgart 2-4 (xG 1.79-2.61)",
+    "20261108 A FC Koln 2-1 (xG 1.86-1.61)",
+    "20261121 H Paderborn 4-0 (xG 4.37-0.51)"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 5,
+   "points": 19
+  },
+  "Werder Bremen": {
+   "season": {
+    "gp": 9,
+    "w": 4,
+    "d": 3,
+    "l": 2,
+    "gf_pg": 1.89,
+    "ga_pg": 1.67,
+    "total_pg": 3.56,
+    "over": {
+     "1.5": 0.889,
+     "2.5": 0.667,
+     "3.5": 0.667
+    },
+    "btts": 0.778,
+    "clean_sheet": 0.111,
+    "failed_to_score": 0.111,
+    "ppg": 1.67,
+    "xg_pg": 1.7,
+    "xga_pg": 1.51,
+    "xg_n": 9,
+    "g_minus_xg": 0.19,
+    "ga_minus_xga": 0.16,
+    "sot_pg": 6.4,
+    "sota_pg": 5.4
+   },
+   "home": {
+    "gp": 4,
+    "w": 3,
+    "d": 1,
+    "l": 0,
+    "gf_pg": 2.5,
+    "ga_pg": 1.25,
+    "total_pg": 3.75,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.75,
+     "3.5": 0.75
+    },
+    "btts": 0.75,
+    "clean_sheet": 0.25,
+    "failed_to_score": 0.0,
+    "ppg": 2.5,
+    "xg_pg": 2.06,
+    "xga_pg": 1.22,
+    "xg_n": 4,
+    "g_minus_xg": 0.44,
+    "ga_minus_xga": 0.03,
+    "sot_pg": 8.2,
+    "sota_pg": 3.8
+   },
+   "away": {
+    "gp": 5,
+    "w": 1,
+    "d": 2,
+    "l": 2,
+    "gf_pg": 1.4,
+    "ga_pg": 2.0,
+    "total_pg": 3.4,
+    "over": {
+     "1.5": 0.8,
+     "2.5": 0.6,
+     "3.5": 0.6
+    },
+    "btts": 0.8,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.2,
+    "ppg": 1.0,
+    "xg_pg": 1.41,
+    "xga_pg": 1.75,
+    "xg_n": 5,
+    "g_minus_xg": -0.01,
+    "ga_minus_xga": 0.25,
+    "sot_pg": 5.0,
+    "sota_pg": 6.8
+   },
+   "last6": {
+    "gp": 6,
+    "w": 3,
+    "d": 2,
+    "l": 1,
+    "gf_pg": 2.0,
+    "ga_pg": 1.5,
+    "total_pg": 3.5,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.667,
+     "3.5": 0.667
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.167,
+    "ppg": 1.83,
+    "xg_pg": 2.11,
+    "xga_pg": 1.34,
+    "xg_n": 6,
+    "g_minus_xg": -0.11,
+    "ga_minus_xga": 0.15,
+    "sot_pg": 7.2,
+    "sota_pg": 5.5
+   },
+   "last6_log": [
+    "20260919 H Augsburg 3-2 (xG 2.77-1.12)",
+    "20261009 A Dortmund 2-2 (xG 1.31-2.31)",
+    "20261017 H Paderborn 2-2 (xG 3.22-1.15)",
+    "20261024 A Mainz 3-2 (xG 2.69-1.69)",
+    "20261031 H Hoffenheim 2-0 (xG 1.28-1.09)",
+    "20261107 A Stuttgart 0-1 (xG 1.4-0.71)"
+   ],
+   "last_game_date": "20261107",
+   "rest_days": 14,
+   "rank": 6,
+   "points": 15
+  },
+  "Eintracht Frankfurt": {
+   "season": {
+    "gp": 9,
+    "w": 4,
+    "d": 3,
+    "l": 2,
+    "gf_pg": 1.67,
+    "ga_pg": 1.78,
+    "total_pg": 3.44,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.667,
+     "3.5": 0.667
+    },
+    "btts": 0.556,
+    "clean_sheet": 0.222,
+    "failed_to_score": 0.222,
+    "ppg": 1.67,
+    "xg_pg": 1.76,
+    "xga_pg": 2.1,
+    "xg_n": 9,
+    "g_minus_xg": -0.09,
+    "ga_minus_xga": -0.32,
+    "sot_pg": 5.4,
+    "sota_pg": 5.6
+   },
+   "home": {
+    "gp": 4,
+    "w": 3,
+    "d": 1,
+    "l": 0,
+    "gf_pg": 1.75,
+    "ga_pg": 0.75,
+    "total_pg": 2.5,
+    "over": {
+     "1.5": 0.5,
+     "2.5": 0.5,
+     "3.5": 0.5
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.5,
+    "failed_to_score": 0.0,
+    "ppg": 2.5,
+    "xg_pg": 2.06,
+    "xga_pg": 1.81,
+    "xg_n": 4,
+    "g_minus_xg": -0.31,
+    "ga_minus_xga": -1.06,
+    "sot_pg": 6.5,
+    "sota_pg": 4.2
+   },
+   "away": {
+    "gp": 5,
+    "w": 1,
+    "d": 2,
+    "l": 2,
+    "gf_pg": 1.6,
+    "ga_pg": 2.6,
+    "total_pg": 4.2,
+    "over": {
+     "1.5": 0.8,
+     "2.5": 0.8,
+     "3.5": 0.8
+    },
+    "btts": 0.6,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.4,
+    "ppg": 1.0,
+    "xg_pg": 1.51,
+    "xga_pg": 2.34,
+    "xg_n": 5,
+    "g_minus_xg": 0.09,
+    "ga_minus_xga": 0.26,
+    "sot_pg": 4.6,
+    "sota_pg": 6.6
+   },
+   "last6": {
+    "gp": 6,
+    "w": 3,
+    "d": 1,
+    "l": 2,
+    "gf_pg": 1.17,
+    "ga_pg": 1.67,
+    "total_pg": 2.83,
+    "over": {
+     "1.5": 0.5,
+     "2.5": 0.5,
+     "3.5": 0.5
+    },
+    "btts": 0.333,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.333,
+    "ppg": 1.67,
+    "xg_pg": 1.69,
+    "xga_pg": 1.98,
+    "xg_n": 6,
+    "g_minus_xg": -0.52,
+    "ga_minus_xga": -0.31,
+    "sot_pg": 6.3,
+    "sota_pg": 4.7
+   },
+   "last6_log": [
+    "20261010 A RB Leipzig 0-6 (xG 1.46-4.02)",
+    "20261016 H FC Koln 1-0 (xG 1.8-0.8)",
+    "20261024 A Dortmund 0-1 (xG 0.85-1.48)",
+    "20261101 H Hamburger SV 3-1 (xG 1.95-1.17)",
+    "20261107 A Paderborn 2-2 (xG 1.75-2.22)",
+    "20261121 H Hoffenheim 1-0 (xG 2.32-2.18)"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 7,
+   "points": 15
+  },
+  "Stuttgart": {
+   "season": {
+    "gp": 10,
+    "w": 4,
+    "d": 1,
+    "l": 5,
+    "gf_pg": 1.5,
+    "ga_pg": 1.5,
+    "total_pg": 3.0,
+    "over": {
+     "1.5": 0.6,
+     "2.5": 0.5,
+     "3.5": 0.4
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.3,
+    "failed_to_score": 0.3,
+    "ppg": 1.3,
+    "xg_pg": 1.96,
+    "xga_pg": 2.25,
+    "xg_n": 10,
+    "g_minus_xg": -0.46,
+    "ga_minus_xga": -0.75,
+    "sot_pg": 5.6,
+    "sota_pg": 5.7
+   },
+   "home": {
+    "gp": 4,
+    "w": 2,
+    "d": 0,
+    "l": 2,
+    "gf_pg": 1.75,
+    "ga_pg": 1.25,
+    "total_pg": 3.0,
+    "over": {
+     "1.5": 0.5,
+     "2.5": 0.5,
+     "3.5": 0.5
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.25,
+    "failed_to_score": 0.25,
+    "ppg": 1.5,
+    "xg_pg": 1.71,
+    "xga_pg": 2.15,
+    "xg_n": 4,
+    "g_minus_xg": 0.04,
+    "ga_minus_xga": -0.9,
+    "sot_pg": 5.8,
+    "sota_pg": 4.0
+   },
+   "away": {
+    "gp": 6,
+    "w": 2,
+    "d": 1,
+    "l": 3,
+    "gf_pg": 1.33,
+    "ga_pg": 1.67,
+    "total_pg": 3.0,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.5,
+     "3.5": 0.333
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.333,
+    "ppg": 1.17,
+    "xg_pg": 2.13,
+    "xga_pg": 2.31,
+    "xg_n": 6,
+    "g_minus_xg": -0.8,
+    "ga_minus_xga": -0.65,
+    "sot_pg": 5.5,
+    "sota_pg": 6.8
+   },
+   "last6": {
+    "gp": 6,
+    "w": 3,
+    "d": 1,
+    "l": 2,
+    "gf_pg": 1.5,
+    "ga_pg": 1.0,
+    "total_pg": 2.5,
+    "over": {
+     "1.5": 0.5,
+     "2.5": 0.333,
+     "3.5": 0.333
+    },
+    "btts": 0.333,
+    "clean_sheet": 0.5,
+    "failed_to_score": 0.333,
+    "ppg": 1.67,
+    "xg_pg": 2.01,
+    "xga_pg": 1.93,
+    "xg_n": 6,
+    "g_minus_xg": -0.51,
+    "ga_minus_xga": -0.93,
+    "sot_pg": 5.7,
+    "sota_pg": 5.8
+   },
+   "last6_log": [
+    "20261010 A Paderborn 2-0 (xG 2.47-1.96)",
+    "20261017 A Hamburger SV 0-1 (xG 2.29-1.49)",
+    "20261023 H B. Monchengladbach 2-3 (xG 1.52-3.08)",
+    "20261031 A Bayer Leverkusen 4-2 (xG 2.61-1.79)",
+    "20261107 H Werder Bremen 1-0 (xG 0.71-1.4)",
+    "20261121 A Schalke 0-0 (xG 2.46-1.83)"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 8,
+   "points": 13
+  },
+  "Elversberg": {
+   "season": {
+    "gp": 10,
+    "w": 4,
+    "d": 1,
+    "l": 5,
+    "gf_pg": 1.7,
+    "ga_pg": 1.9,
+    "total_pg": 3.6,
+    "over": {
+     "1.5": 0.7,
+     "2.5": 0.7,
+     "3.5": 0.5
+    },
+    "btts": 0.6,
+    "clean_sheet": 0.1,
+    "failed_to_score": 0.4,
+    "ppg": 1.3,
+    "xg_pg": 1.36,
+    "xga_pg": 1.96,
+    "xg_n": 10,
+    "g_minus_xg": 0.34,
+    "ga_minus_xga": -0.06,
+    "sot_pg": 4.4,
+    "sota_pg": 4.6
+   },
+   "home": {
+    "gp": 5,
+    "w": 3,
+    "d": 0,
+    "l": 2,
+    "gf_pg": 2.4,
+    "ga_pg": 1.8,
+    "total_pg": 4.2,
+    "over": {
+     "1.5": 0.8,
+     "2.5": 0.8,
+     "3.5": 0.6
+    },
+    "btts": 0.8,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.2,
+    "ppg": 1.8,
+    "xg_pg": 1.61,
+    "xga_pg": 2.13,
+    "xg_n": 5,
+    "g_minus_xg": 0.79,
+    "ga_minus_xga": -0.33,
+    "sot_pg": 4.6,
+    "sota_pg": 4.2
+   },
+   "away": {
+    "gp": 5,
+    "w": 1,
+    "d": 1,
+    "l": 3,
+    "gf_pg": 1.0,
+    "ga_pg": 2.0,
+    "total_pg": 3.0,
+    "over": {
+     "1.5": 0.6,
+     "2.5": 0.6,
+     "3.5": 0.4
+    },
+    "btts": 0.4,
+    "clean_sheet": 0.2,
+    "failed_to_score": 0.6,
+    "ppg": 0.8,
+    "xg_pg": 1.11,
+    "xga_pg": 1.79,
+    "xg_n": 5,
+    "g_minus_xg": -0.11,
+    "ga_minus_xga": 0.21,
+    "sot_pg": 4.2,
+    "sota_pg": 5.0
+   },
+   "last6": {
+    "gp": 6,
+    "w": 2,
+    "d": 0,
+    "l": 4,
+    "gf_pg": 1.5,
+    "ga_pg": 2.0,
+    "total_pg": 3.5,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.667,
+     "3.5": 0.5
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.5,
+    "ppg": 1.0,
+    "xg_pg": 1.35,
+    "xga_pg": 1.92,
+    "xg_n": 6,
+    "g_minus_xg": 0.15,
+    "ga_minus_xga": 0.08,
+    "sot_pg": 4.3,
+    "sota_pg": 4.8
+   },
+   "last6_log": [
+    "20261010 A Union Berlin 0-1 (xG 0.23-1.13)",
+    "20261017 H Augsburg 4-3 (xG 3.78-3.92)",
+    "20261024 A RB Leipzig 0-4 (xG 0.79-2.87)",
+    "20261030 H Mainz 4-1 (xG 0.94-1.17)",
+    "20261107 A Dortmund 1-2 (xG 1.22-1.57)",
+    "20261121 H Freiburg 0-1 (xG 1.15-0.86)"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 9,
+   "points": 13
+  },
+  "Hoffenheim": {
+   "season": {
+    "gp": 10,
+    "w": 4,
+    "d": 0,
+    "l": 6,
+    "gf_pg": 1.6,
+    "ga_pg": 1.8,
+    "total_pg": 3.4,
+    "over": {
+     "1.5": 0.9,
+     "2.5": 0.8,
+     "3.5": 0.4
+    },
+    "btts": 0.7,
+    "clean_sheet": 0.1,
+    "failed_to_score": 0.2,
+    "ppg": 1.2,
+    "xg_pg": 1.96,
+    "xga_pg": 1.54,
+    "xg_n": 10,
+    "g_minus_xg": -0.36,
+    "ga_minus_xga": 0.26,
+    "sot_pg": 5.1,
+    "sota_pg": 4.4
+   },
+   "home": {
+    "gp": 5,
+    "w": 3,
+    "d": 0,
+    "l": 2,
+    "gf_pg": 2.2,
+    "ga_pg": 1.6,
+    "total_pg": 3.8,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 1.0,
+     "3.5": 0.4
+    },
+    "btts": 0.8,
+    "clean_sheet": 0.2,
+    "failed_to_score": 0.0,
+    "ppg": 1.8,
+    "xg_pg": 2.23,
+    "xga_pg": 1.73,
+    "xg_n": 5,
+    "g_minus_xg": -0.03,
+    "ga_minus_xga": -0.13,
+    "sot_pg": 6.2,
+    "sota_pg": 4.0
+   },
+   "away": {
+    "gp": 5,
+    "w": 1,
+    "d": 0,
+    "l": 4,
+    "gf_pg": 1.0,
+    "ga_pg": 2.0,
+    "total_pg": 3.0,
+    "over": {
+     "1.5": 0.8,
+     "2.5": 0.6,
+     "3.5": 0.4
+    },
+    "btts": 0.6,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.4,
+    "ppg": 0.6,
+    "xg_pg": 1.69,
+    "xga_pg": 1.34,
+    "xg_n": 5,
+    "g_minus_xg": -0.69,
+    "ga_minus_xga": 0.66,
+    "sot_pg": 4.0,
+    "sota_pg": 4.8
+   },
+   "last6": {
+    "gp": 6,
+    "w": 3,
+    "d": 0,
+    "l": 3,
+    "gf_pg": 1.5,
+    "ga_pg": 1.33,
+    "total_pg": 2.83,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.667,
+     "3.5": 0.167
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.333,
+    "ppg": 1.5,
+    "xg_pg": 1.95,
+    "xga_pg": 1.42,
+    "xg_n": 6,
+    "g_minus_xg": -0.45,
+    "ga_minus_xga": -0.09,
+    "sot_pg": 5.2,
+    "sota_pg": 4.0
+   },
+   "last6_log": [
+    "20261010 H Hamburger SV 2-3 (xG 0.93-1.28)",
+    "20261018 A B. Monchengladbach 2-1 (xG 1.8-0.47)",
+    "20261025 H Bayer Leverkusen 3-0 (xG 3.46-0.57)",
+    "20261031 A Werder Bremen 0-2 (xG 1.09-1.28)",
+    "20261108 H Schalke 2-1 (xG 2.23-2.61)",
+    "20261121 A Eintracht Frankfurt 0-1 (xG 2.18-2.32)"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 10,
+   "points": 12
+  },
+  "Hamburger SV": {
+   "season": {
+    "gp": 8,
+    "w": 4,
+    "d": 0,
+    "l": 4,
+    "gf_pg": 1.25,
+    "ga_pg": 1.88,
+    "total_pg": 3.12,
+    "over": {
+     "1.5": 0.75,
+     "2.5": 0.625,
+     "3.5": 0.5
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.125,
+    "failed_to_score": 0.375,
+    "ppg": 1.5,
+    "xg_pg": 1.27,
+    "xga_pg": 1.77,
+    "xg_n": 8,
+    "g_minus_xg": -0.02,
+    "ga_minus_xga": 0.11,
+    "sot_pg": 4.2,
+    "sota_pg": 6.1
+   },
+   "home": {
+    "gp": 3,
+    "w": 3,
+    "d": 0,
+    "l": 0,
+    "gf_pg": 2.0,
+    "ga_pg": 0.67,
+    "total_pg": 2.67,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.667,
+     "3.5": 0.333
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.0,
+    "ppg": 3.0,
+    "xg_pg": 1.74,
+    "xga_pg": 1.97,
+    "xg_n": 3,
+    "g_minus_xg": 0.26,
+    "ga_minus_xga": -1.31,
+    "sot_pg": 6.3,
+    "sota_pg": 5.3
+   },
+   "away": {
+    "gp": 5,
+    "w": 1,
+    "d": 0,
+    "l": 4,
+    "gf_pg": 0.8,
+    "ga_pg": 2.6,
+    "total_pg": 3.4,
+    "over": {
+     "1.5": 0.8,
+     "2.5": 0.6,
+     "3.5": 0.6
+    },
+    "btts": 0.4,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.6,
+    "ppg": 0.6,
+    "xg_pg": 0.98,
+    "xga_pg": 1.64,
+    "xg_n": 5,
+    "g_minus_xg": -0.18,
+    "ga_minus_xga": 0.96,
+    "sot_pg": 3.0,
+    "sota_pg": 6.6
+   },
+   "last6": {
+    "gp": 6,
+    "w": 4,
+    "d": 0,
+    "l": 2,
+    "gf_pg": 1.67,
+    "ga_pg": 1.33,
+    "total_pg": 3.0,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.667,
+     "3.5": 0.5
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.167,
+    "ppg": 2.0,
+    "xg_pg": 1.35,
+    "xga_pg": 1.7,
+    "xg_n": 6,
+    "g_minus_xg": 0.31,
+    "ga_minus_xga": -0.36,
+    "sot_pg": 4.5,
+    "sota_pg": 6.0
+   },
+   "last6_log": [
+    "20260919 H FC Koln 2-1 (xG 1.45-1.41)",
+    "20261010 A Hoffenheim 3-2 (xG 1.28-0.93)",
+    "20261017 H Stuttgart 1-0 (xG 1.49-2.29)",
+    "20261024 A Paderborn 0-1 (xG 0.46-1.37)",
+    "20261101 A Eintracht Frankfurt 1-3 (xG 1.17-1.95)",
+    "20261106 H B. Monchengladbach 3-1 (xG 2.28-2.22)"
+   ],
+   "last_game_date": "20261106",
+   "rest_days": 15,
+   "rank": 11,
+   "points": 12
+  },
+  "FC Koln": {
+   "season": {
+    "gp": 10,
+    "w": 2,
+    "d": 4,
+    "l": 4,
+    "gf_pg": 1.1,
+    "ga_pg": 1.5,
+    "total_pg": 2.6,
+    "over": {
+     "1.5": 0.8,
+     "2.5": 0.5,
+     "3.5": 0.2
+    },
+    "btts": 0.8,
+    "clean_sheet": 0.1,
+    "failed_to_score": 0.2,
+    "ppg": 1.0,
+    "xg_pg": 1.59,
+    "xga_pg": 1.51,
+    "xg_n": 10,
+    "g_minus_xg": -0.49,
+    "ga_minus_xga": -0.01,
+    "sot_pg": 4.7,
+    "sota_pg": 5.0
+   },
+   "home": {
+    "gp": 5,
+    "w": 2,
+    "d": 2,
+    "l": 1,
+    "gf_pg": 1.4,
+    "ga_pg": 1.2,
+    "total_pg": 2.6,
+    "over": {
+     "1.5": 0.8,
+     "2.5": 0.6,
+     "3.5": 0.2
+    },
+    "btts": 0.8,
+    "clean_sheet": 0.2,
+    "failed_to_score": 0.2,
+    "ppg": 1.6,
+    "xg_pg": 1.55,
+    "xga_pg": 1.33,
+    "xg_n": 5,
+    "g_minus_xg": -0.15,
+    "ga_minus_xga": -0.13,
+    "sot_pg": 6.0,
+    "sota_pg": 5.0
+   },
+   "away": {
+    "gp": 5,
+    "w": 0,
+    "d": 2,
+    "l": 3,
+    "gf_pg": 0.8,
+    "ga_pg": 1.8,
+    "total_pg": 2.6,
+    "over": {
+     "1.5": 0.8,
+     "2.5": 0.4,
+     "3.5": 0.2
+    },
+    "btts": 0.8,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.2,
+    "ppg": 0.4,
+    "xg_pg": 1.63,
+    "xga_pg": 1.7,
+    "xg_n": 5,
+    "g_minus_xg": -0.83,
+    "ga_minus_xga": 0.1,
+    "sot_pg": 3.4,
+    "sota_pg": 5.0
+   },
+   "last6": {
+    "gp": 6,
+    "w": 1,
+    "d": 3,
+    "l": 2,
+    "gf_pg": 0.83,
+    "ga_pg": 1.0,
+    "total_pg": 1.83,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.333,
+     "3.5": 0.0
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.333,
+    "ppg": 1.0,
+    "xg_pg": 1.36,
+    "xga_pg": 1.2,
+    "xg_n": 6,
+    "g_minus_xg": -0.52,
+    "ga_minus_xga": -0.2,
+    "sot_pg": 4.5,
+    "sota_pg": 4.3
+   },
+   "last6_log": [
+    "20261011 H B. Monchengladbach 2-1 (xG 1.32-1.17)",
+    "20261016 A Eintracht Frankfurt 0-1 (xG 0.8-1.8)",
+    "20261024 H Schalke 0-0 (xG 1.24-0.61)",
+    "20261101 A Union Berlin 1-1 (xG 1.17-0.68)",
+    "20261108 H Bayer Leverkusen 1-2 (xG 1.61-1.86)",
+    "20261120 A Bayern Munich 1-1 (xG 1.99-1.08)"
+   ],
+   "last_game_date": "20261120",
+   "rest_days": 1,
+   "rank": 12,
+   "points": 10
+  },
+  "Paderborn": {
+   "season": {
+    "gp": 10,
+    "w": 2,
+    "d": 4,
+    "l": 4,
+    "gf_pg": 0.8,
+    "ga_pg": 1.5,
+    "total_pg": 2.3,
+    "over": {
+     "1.5": 0.6,
+     "2.5": 0.5,
+     "3.5": 0.4
+    },
+    "btts": 0.3,
+    "clean_sheet": 0.3,
+    "failed_to_score": 0.6,
+    "ppg": 1.0,
+    "xg_pg": 1.09,
+    "xga_pg": 1.93,
+    "xg_n": 10,
+    "g_minus_xg": -0.29,
+    "ga_minus_xga": -0.43,
+    "sot_pg": 3.2,
+    "sota_pg": 5.6
+   },
+   "home": {
+    "gp": 5,
+    "w": 2,
+    "d": 1,
+    "l": 2,
+    "gf_pg": 1.2,
+    "ga_pg": 1.2,
+    "total_pg": 2.4,
+    "over": {
+     "1.5": 0.6,
+     "2.5": 0.4,
+     "3.5": 0.4
+    },
+    "btts": 0.4,
+    "clean_sheet": 0.2,
+    "failed_to_score": 0.4,
+    "ppg": 1.4,
+    "xg_pg": 1.4,
+    "xga_pg": 1.49,
+    "xg_n": 5,
+    "g_minus_xg": -0.2,
+    "ga_minus_xga": -0.29,
+    "sot_pg": 4.6,
+    "sota_pg": 3.8
+   },
+   "away": {
+    "gp": 5,
+    "w": 0,
+    "d": 3,
+    "l": 2,
+    "gf_pg": 0.4,
+    "ga_pg": 1.8,
+    "total_pg": 2.2,
+    "over": {
+     "1.5": 0.6,
+     "2.5": 0.6,
+     "3.5": 0.4
+    },
+    "btts": 0.2,
+    "clean_sheet": 0.4,
+    "failed_to_score": 0.8,
+    "ppg": 0.6,
+    "xg_pg": 0.77,
+    "xga_pg": 2.38,
+    "xg_n": 5,
+    "g_minus_xg": -0.37,
+    "ga_minus_xga": -0.58,
+    "sot_pg": 1.8,
+    "sota_pg": 7.4
+   },
+   "last6": {
+    "gp": 6,
+    "w": 1,
+    "d": 3,
+    "l": 2,
+    "gf_pg": 0.83,
+    "ga_pg": 1.67,
+    "total_pg": 2.5,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.5,
+     "3.5": 0.5
+    },
+    "btts": 0.333,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.5,
+    "ppg": 1.0,
+    "xg_pg": 1.37,
+    "xga_pg": 2.26,
+    "xg_n": 6,
+    "g_minus_xg": -0.53,
+    "ga_minus_xga": -0.6,
+    "sot_pg": 4.0,
+    "sota_pg": 6.2
+   },
+   "last6_log": [
+    "20261010 H Stuttgart 0-2 (xG 1.96-2.47)",
+    "20261017 A Werder Bremen 2-2 (xG 1.15-3.22)",
+    "20261024 H Hamburger SV 1-0 (xG 1.37-0.46)",
+    "20261031 A B. Monchengladbach 0-0 (xG 0.99-1.31)",
+    "20261107 H Eintracht Frankfurt 2-2 (xG 2.22-1.75)",
+    "20261121 A Bayer Leverkusen 0-4 (xG 0.51-4.37)"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 13,
+   "points": 10
+  },
+  "Schalke": {
+   "season": {
+    "gp": 10,
+    "w": 1,
+    "d": 4,
+    "l": 5,
+    "gf_pg": 0.5,
+    "ga_pg": 1.1,
+    "total_pg": 1.6,
+    "over": {
+     "1.5": 0.5,
+     "2.5": 0.4,
+     "3.5": 0.1
+    },
+    "btts": 0.3,
+    "clean_sheet": 0.4,
+    "failed_to_score": 0.7,
+    "ppg": 0.7,
+    "xg_pg": 1.21,
+    "xga_pg": 2.13,
+    "xg_n": 10,
+    "g_minus_xg": -0.71,
+    "ga_minus_xga": -1.03,
+    "sot_pg": 3.6,
+    "sota_pg": 6.3
+   },
+   "home": {
+    "gp": 5,
+    "w": 0,
+    "d": 3,
+    "l": 2,
+    "gf_pg": 0.0,
+    "ga_pg": 0.6,
+    "total_pg": 0.6,
+    "over": {
+     "1.5": 0.2,
+     "2.5": 0.0,
+     "3.5": 0.0
+    },
+    "btts": 0.0,
+    "clean_sheet": 0.6,
+    "failed_to_score": 1.0,
+    "ppg": 0.6,
+    "xg_pg": 0.79,
+    "xga_pg": 2.2,
+    "xg_n": 5,
+    "g_minus_xg": -0.79,
+    "ga_minus_xga": -1.6,
+    "sot_pg": 2.6,
+    "sota_pg": 5.2
+   },
+   "away": {
+    "gp": 5,
+    "w": 1,
+    "d": 1,
+    "l": 3,
+    "gf_pg": 1.0,
+    "ga_pg": 1.6,
+    "total_pg": 2.6,
+    "over": {
+     "1.5": 0.8,
+     "2.5": 0.8,
+     "3.5": 0.2
+    },
+    "btts": 0.6,
+    "clean_sheet": 0.2,
+    "failed_to_score": 0.4,
+    "ppg": 0.8,
+    "xg_pg": 1.63,
+    "xga_pg": 2.06,
+    "xg_n": 5,
+    "g_minus_xg": -0.63,
+    "ga_minus_xga": -0.46,
+    "sot_pg": 4.6,
+    "sota_pg": 7.4
+   },
+   "last6": {
+    "gp": 6,
+    "w": 0,
+    "d": 2,
+    "l": 4,
+    "gf_pg": 0.33,
+    "ga_pg": 1.17,
+    "total_pg": 1.5,
+    "over": {
+     "1.5": 0.5,
+     "2.5": 0.333,
+     "3.5": 0.0
+    },
+    "btts": 0.333,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.667,
+    "ppg": 0.33,
+    "xg_pg": 1.05,
+    "xga_pg": 2.11,
+    "xg_n": 6,
+    "g_minus_xg": -0.71,
+    "ga_minus_xga": -0.94,
+    "sot_pg": 3.2,
+    "sota_pg": 6.0
+   },
+   "last6_log": [
+    "20261011 A Freiburg 1-2 (xG 0.32-1.14)",
+    "20261017 H Mainz 0-1 (xG 0.43-1.94)",
+    "20261024 A FC Koln 0-0 (xG 0.61-1.24)",
+    "20261031 H RB Leipzig 0-2 (xG 0.49-3.65)",
+    "20261108 A Hoffenheim 1-2 (xG 2.61-2.23)",
+    "20261121 H Stuttgart 0-0 (xG 1.83-2.46)"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 14,
+   "points": 7
+  },
+  "Mainz": {
+   "season": {
+    "gp": 8,
+    "w": 2,
+    "d": 1,
+    "l": 5,
+    "gf_pg": 1.62,
+    "ga_pg": 2.38,
+    "total_pg": 4.0,
+    "over": {
+     "1.5": 0.75,
+     "2.5": 0.75,
+     "3.5": 0.625
+    },
+    "btts": 0.75,
+    "clean_sheet": 0.25,
+    "failed_to_score": 0.125,
+    "ppg": 0.88,
+    "xg_pg": 1.83,
+    "xga_pg": 1.87,
+    "xg_n": 8,
+    "g_minus_xg": -0.2,
+    "ga_minus_xga": 0.51,
+    "sot_pg": 4.9,
+    "sota_pg": 5.6
+   },
+   "home": {
+    "gp": 5,
+    "w": 0,
+    "d": 1,
+    "l": 4,
+    "gf_pg": 1.4,
+    "ga_pg": 2.4,
+    "total_pg": 3.8,
+    "over": {
+     "1.5": 0.8,
+     "2.5": 0.8,
+     "3.5": 0.6
+    },
+    "btts": 0.8,
+    "clean_sheet": 0.2,
+    "failed_to_score": 0.2,
+    "ppg": 0.2,
+    "xg_pg": 1.74,
+    "xga_pg": 2.07,
+    "xg_n": 5,
+    "g_minus_xg": -0.34,
+    "ga_minus_xga": 0.33,
+    "sot_pg": 4.6,
+    "sota_pg": 5.8
+   },
+   "away": {
+    "gp": 3,
+    "w": 2,
+    "d": 0,
+    "l": 1,
+    "gf_pg": 2.0,
+    "ga_pg": 2.33,
+    "total_pg": 4.33,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.667,
+     "3.5": 0.667
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.0,
+    "ppg": 2.0,
+    "xg_pg": 1.97,
+    "xga_pg": 1.54,
+    "xg_n": 3,
+    "g_minus_xg": 0.03,
+    "ga_minus_xga": 0.8,
+    "sot_pg": 5.3,
+    "sota_pg": 5.3
+   },
+   "last6": {
+    "gp": 6,
+    "w": 2,
+    "d": 0,
+    "l": 4,
+    "gf_pg": 2.0,
+    "ga_pg": 2.67,
+    "total_pg": 4.67,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.833,
+     "3.5": 0.667
+    },
+    "btts": 0.833,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.0,
+    "ppg": 1.0,
+    "xg_pg": 1.88,
+    "xga_pg": 2.03,
+    "xg_n": 6,
+    "g_minus_xg": 0.12,
+    "ga_minus_xga": 0.64,
+    "sot_pg": 5.0,
+    "sota_pg": 6.7
+   },
+   "last6_log": [
+    "20260919 A B. Monchengladbach 4-3 (xG 2.81-3.24)",
+    "20261010 H Bayer Leverkusen 3-4 (xG 3.13-2.09)",
+    "20261017 A Schalke 1-0 (xG 1.94-0.43)",
+    "20261024 H Werder Bremen 2-3 (xG 1.69-2.69)",
+    "20261030 A Elversberg 1-4 (xG 1.17-0.94)",
+    "20261107 H Bayern Munich 1-2 (xG 0.54-2.78)"
+   ],
+   "last_game_date": "20261107",
+   "rest_days": 14,
+   "rank": 15,
+   "points": 7
+  },
+  "Union Berlin": {
+   "season": {
+    "gp": 10,
+    "w": 1,
+    "d": 4,
+    "l": 5,
+    "gf_pg": 0.8,
+    "ga_pg": 2.6,
+    "total_pg": 3.4,
+    "over": {
+     "1.5": 0.8,
+     "2.5": 0.5,
+     "3.5": 0.5
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.2,
+    "failed_to_score": 0.4,
+    "ppg": 0.7,
+    "xg_pg": 0.95,
+    "xga_pg": 2.37,
+    "xg_n": 10,
+    "g_minus_xg": -0.15,
+    "ga_minus_xga": 0.23,
+    "sot_pg": 3.7,
+    "sota_pg": 6.8
+   },
+   "home": {
+    "gp": 6,
+    "w": 1,
+    "d": 3,
+    "l": 2,
+    "gf_pg": 1.17,
+    "ga_pg": 2.0,
+    "total_pg": 3.17,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.5,
+     "3.5": 0.5
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.167,
+    "ppg": 1.0,
+    "xg_pg": 1.21,
+    "xga_pg": 2.07,
+    "xg_n": 6,
+    "g_minus_xg": -0.04,
+    "ga_minus_xga": -0.07,
+    "sot_pg": 5.7,
+    "sota_pg": 4.8
+   },
+   "away": {
+    "gp": 4,
+    "w": 0,
+    "d": 1,
+    "l": 3,
+    "gf_pg": 0.25,
+    "ga_pg": 3.5,
+    "total_pg": 3.75,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.5,
+     "3.5": 0.5
+    },
+    "btts": 0.25,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.75,
+    "ppg": 0.25,
+    "xg_pg": 0.56,
+    "xga_pg": 2.83,
+    "xg_n": 4,
+    "g_minus_xg": -0.31,
+    "ga_minus_xga": 0.67,
+    "sot_pg": 0.8,
+    "sota_pg": 9.8
+   },
+   "last6": {
+    "gp": 6,
+    "w": 1,
+    "d": 3,
+    "l": 2,
+    "gf_pg": 0.67,
+    "ga_pg": 1.5,
+    "total_pg": 2.17,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.167,
+     "3.5": 0.167
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.333,
+    "ppg": 1.0,
+    "xg_pg": 0.83,
+    "xga_pg": 2.15,
+    "xg_n": 6,
+    "g_minus_xg": -0.16,
+    "ga_minus_xga": -0.65,
+    "sot_pg": 2.8,
+    "sota_pg": 5.0
+   },
+   "last6_log": [
+    "20261010 H Elversberg 1-0 (xG 1.13-0.23)",
+    "20261017 H Dortmund 0-0 (xG 0.8-1.09)",
+    "20261024 A Augsburg 1-1 (xG 1.15-1.92)",
+    "20261101 H FC Koln 1-1 (xG 0.68-1.17)",
+    "20261108 A Freiburg 0-2 (xG 0.34-2.58)",
+    "20261121 H RB Leipzig 1-5 (xG 0.86-5.94)"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 16,
+   "points": 7
+  },
+  "Augsburg": {
+   "season": {
+    "gp": 8,
+    "w": 1,
+    "d": 3,
+    "l": 4,
+    "gf_pg": 2.0,
+    "ga_pg": 2.38,
+    "total_pg": 4.38,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.875,
+     "3.5": 0.625
+    },
+    "btts": 0.875,
+    "clean_sheet": 0.125,
+    "failed_to_score": 0.0,
+    "ppg": 0.75,
+    "xg_pg": 2.17,
+    "xga_pg": 2.6,
+    "xg_n": 8,
+    "g_minus_xg": -0.17,
+    "ga_minus_xga": -0.23,
+    "sot_pg": 6.6,
+    "sota_pg": 6.1
+   },
+   "home": {
+    "gp": 5,
+    "w": 1,
+    "d": 3,
+    "l": 1,
+    "gf_pg": 1.8,
+    "ga_pg": 1.4,
+    "total_pg": 3.2,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.8,
+     "3.5": 0.4
+    },
+    "btts": 0.8,
+    "clean_sheet": 0.2,
+    "failed_to_score": 0.0,
+    "ppg": 1.2,
+    "xg_pg": 2.06,
+    "xga_pg": 2.41,
+    "xg_n": 5,
+    "g_minus_xg": -0.26,
+    "ga_minus_xga": -1.01,
+    "sot_pg": 6.6,
+    "sota_pg": 4.6
+   },
+   "away": {
+    "gp": 3,
+    "w": 0,
+    "d": 0,
+    "l": 3,
+    "gf_pg": 2.33,
+    "ga_pg": 4.0,
+    "total_pg": 6.33,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 1.0,
+     "3.5": 1.0
+    },
+    "btts": 1.0,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.0,
+    "ppg": 0.0,
+    "xg_pg": 2.36,
+    "xga_pg": 2.93,
+    "xg_n": 3,
+    "g_minus_xg": -0.02,
+    "ga_minus_xga": 1.07,
+    "sot_pg": 6.7,
+    "sota_pg": 8.7
+   },
+   "last6": {
+    "gp": 6,
+    "w": 0,
+    "d": 2,
+    "l": 4,
+    "gf_pg": 1.83,
+    "ga_pg": 2.83,
+    "total_pg": 4.67,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.833,
+     "3.5": 0.667
+    },
+    "btts": 1.0,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.0,
+    "ppg": 0.33,
+    "xg_pg": 2.09,
+    "xga_pg": 2.68,
+    "xg_n": 6,
+    "g_minus_xg": -0.26,
+    "ga_minus_xga": 0.15,
+    "sot_pg": 5.8,
+    "sota_pg": 6.5
+   },
+   "last6_log": [
+    "20260919 A Werder Bremen 2-3 (xG 1.12-2.77)",
+    "20261010 H Bayern Munich 2-2 (xG 2.37-4.97)",
+    "20261017 A Elversberg 3-4 (xG 3.92-3.78)",
+    "20261024 H Union Berlin 1-1 (xG 1.92-1.15)",
+    "20261031 H Freiburg 1-2 (xG 1.2-1.19)",
+    "20261107 A RB Leipzig 2-5 (xG 2.03-2.23)"
+   ],
+   "last_game_date": "20261107",
+   "rest_days": 14,
+   "rank": 17,
+   "points": 6
+  },
+  "B. Monchengladbach": {
+   "season": {
+    "gp": 10,
+    "w": 1,
+    "d": 1,
+    "l": 8,
+    "gf_pg": 1.2,
+    "ga_pg": 2.6,
+    "total_pg": 3.8,
+    "over": {
+     "1.5": 0.8,
+     "2.5": 0.8,
+     "3.5": 0.5
+    },
+    "btts": 0.6,
+    "clean_sheet": 0.1,
+    "failed_to_score": 0.4,
+    "ppg": 0.4,
+    "xg_pg": 1.56,
+    "xga_pg": 2.12,
+    "xg_n": 10,
+    "g_minus_xg": -0.36,
+    "ga_minus_xga": 0.48,
+    "sot_pg": 4.5,
+    "sota_pg": 7.6
+   },
+   "home": {
+    "gp": 5,
+    "w": 0,
+    "d": 1,
+    "l": 4,
+    "gf_pg": 1.4,
+    "ga_pg": 2.2,
+    "total_pg": 3.6,
+    "over": {
+     "1.5": 0.6,
+     "2.5": 0.6,
+     "3.5": 0.4
+    },
+    "btts": 0.6,
+    "clean_sheet": 0.2,
+    "failed_to_score": 0.4,
+    "ppg": 0.2,
+    "xg_pg": 1.57,
+    "xga_pg": 1.9,
+    "xg_n": 5,
+    "g_minus_xg": -0.17,
+    "ga_minus_xga": 0.3,
+    "sot_pg": 4.4,
+    "sota_pg": 7.0
+   },
+   "away": {
+    "gp": 5,
+    "w": 1,
+    "d": 0,
+    "l": 4,
+    "gf_pg": 1.0,
+    "ga_pg": 3.0,
+    "total_pg": 4.0,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 1.0,
+     "3.5": 0.6
+    },
+    "btts": 0.6,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.4,
+    "ppg": 0.6,
+    "xg_pg": 1.55,
+    "xga_pg": 2.34,
+    "xg_n": 5,
+    "g_minus_xg": -0.55,
+    "ga_minus_xga": 0.66,
+    "sot_pg": 4.6,
+    "sota_pg": 8.2
+   },
+   "last6": {
+    "gp": 6,
+    "w": 1,
+    "d": 1,
+    "l": 4,
+    "gf_pg": 1.0,
+    "ga_pg": 1.67,
+    "total_pg": 2.67,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.667,
+     "3.5": 0.333
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.333,
+    "ppg": 0.67,
+    "xg_pg": 1.45,
+    "xga_pg": 1.59,
+    "xg_n": 6,
+    "g_minus_xg": -0.45,
+    "ga_minus_xga": 0.08,
+    "sot_pg": 4.7,
+    "sota_pg": 6.3
+   },
+   "last6_log": [
+    "20261011 A FC Koln 1-2 (xG 1.17-1.32)",
+    "20261018 H Hoffenheim 1-2 (xG 0.47-1.8)",
+    "20261023 A Stuttgart 3-2 (xG 3.08-1.52)",
+    "20261031 H Paderborn 0-0 (xG 1.31-0.99)",
+    "20261106 A Hamburger SV 1-3 (xG 2.22-2.28)",
+    "20261121 H Dortmund 0-1 (xG 0.47-1.61)"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 0,
+   "rank": 18,
+   "points": 4
+  }
+ },
+ "h2h": {
+  "Bayern Munich vs Stuttgart": [
+   "20260828 Bayern Munich 5-1 Stuttgart"
+  ],
+  "Bayer Leverkusen vs Elversberg": [
+   "20260829 Elversberg 3-2 Bayer Leverkusen"
+  ],
+  "FC Koln vs Hoffenheim": [
+   "20260829 FC Koln 3-2 Hoffenheim"
+  ],
+  "Mainz vs Paderborn": [
+   "20260829 Mainz 0-0 Paderborn"
+  ],
+  "B. Monchengladbach vs RB Leipzig": [
+   "20260829 RB Leipzig 3-0 B. Monchengladbach"
+  ],
+  "Eintracht Frankfurt vs Union Berlin": [
+   "20260829 Union Berlin 3-3 Eintracht Frankfurt"
+  ],
+  "Dortmund vs Hamburger SV": [
+   "20260829 Dortmund 2-0 Hamburger SV"
+  ],
+  "Freiburg vs Werder Bremen": [
+   "20260830 Freiburg 4-1 Werder Bremen"
+  ],
+  "Augsburg vs Schalke": [
+   "20260830 Augsburg 3-0 Schalke"
+  ],
+  "FC Koln vs Stuttgart": [
+   "20260904 Stuttgart 4-1 FC Koln"
+  ],
+  "Bayer Leverkusen vs Union Berlin": [
+   "20260905 Bayer Leverkusen 4-0 Union Berlin"
+  ],
+  "B. Monchengladbach vs Elversberg": [
+   "20260905 B. Monchengladbach 3-4 Elversberg"
+  ],
+  "Dortmund vs Hoffenheim": [
+   "20260905 Hoffenheim 2-3 Dortmund"
+  ],
+  "Freiburg vs Paderborn": [
+   "20260905 Paderborn 0-1 Freiburg"
+  ],
+  "RB Leipzig vs Werder Bremen": [
+   "20260905 Werder Bremen 3-1 RB Leipzig"
+  ],
+  "Bayern Munich vs Schalke": [
+   "20260905 Schalke 0-0 Bayern Munich"
+  ],
+  "Schalke vs Union Berlin": [
+   "20260911 Union Berlin 1-3 Schalke"
+  ],
+  "Augsburg vs Bayer Leverkusen": [
+   "20260912 Augsburg 2-2 Bayer Leverkusen"
+  ],
+  "Dortmund vs Paderborn": [
+   "20260912 Dortmund 3-0 Paderborn"
+  ],
+  "B. Monchengladbach vs Freiburg": [
+   "20260912 Freiburg 5-0 B. Monchengladbach"
+  ],
+  "Hoffenheim vs Stuttgart": [
+   "20260912 Hoffenheim 2-1 Stuttgart"
+  ],
+  "Eintracht Frankfurt vs Mainz": [
+   "20260912 Mainz 1-3 Eintracht Frankfurt"
+  ],
+  "FC Koln vs Werder Bremen": [
+   "20260912 FC Koln 1-1 Werder Bremen"
+  ],
+  "Hamburger SV vs RB Leipzig": [
+   "20260913 RB Leipzig 5-0 Hamburger SV"
+  ],
+  "Bayern Munich vs Elversberg": [
+   "20260913 Elversberg 1-2 Bayern Munich"
+  ],
+  "Bayern Munich vs Union Berlin": [
+   "20260918 Bayern Munich 7-0 Union Berlin"
+  ],
+  "B. Monchengladbach vs Mainz": [
+   "20260919 B. Monchengladbach 3-4 Mainz"
+  ],
+  "Eintracht Frankfurt vs Freiburg": [
+   "20260919 Eintracht Frankfurt 2-2 Freiburg"
+  ],
+  "FC Koln vs Hamburger SV": [
+   "20260919 Hamburger SV 2-1 FC Koln"
+  ],
+  "Augsburg vs Werder Bremen": [
+   "20260919 Werder Bremen 3-2 Augsburg"
+  ],
+  "Dortmund vs Stuttgart": [
+   "20260919 Stuttgart 0-1 Dortmund"
+  ],
+  "Bayer Leverkusen vs RB Leipzig": [
+   "20260920 Bayer Leverkusen 2-0 RB Leipzig"
+  ],
+  "Elversberg vs Schalke": [
+   "20260920 Schalke 0-0 Elversberg"
+  ],
+  "Hoffenheim vs Paderborn": [
+   "20260920 Paderborn 3-1 Hoffenheim"
+  ],
+  "Dortmund vs Werder Bremen": [
+   "20261009 Dortmund 2-2 Werder Bremen"
+  ],
+  "Augsburg vs Bayern Munich": [
+   "20261010 Augsburg 2-2 Bayern Munich"
+  ],
+  "Hamburger SV vs Hoffenheim": [
+   "20261010 Hoffenheim 2-3 Hamburger SV"
+  ],
+  "Bayer Leverkusen vs Mainz": [
+   "20261010 Mainz 3-4 Bayer Leverkusen"
+  ],
+  "Paderborn vs Stuttgart": [
+   "20261010 Paderborn 0-2 Stuttgart"
+  ],
+  "Elversberg vs Union Berlin": [
+   "20261010 Union Berlin 1-0 Elversberg"
+  ],
+  "Eintracht Frankfurt vs RB Leipzig": [
+   "20261010 RB Leipzig 6-0 Eintracht Frankfurt"
+  ],
+  "B. Monchengladbach vs FC Koln": [
+   "20261011 FC Koln 2-1 B. Monchengladbach"
+  ],
+  "Freiburg vs Schalke": [
+   "20261011 Freiburg 2-1 Schalke"
+  ],
+  "Eintracht Frankfurt vs FC Koln": [
+   "20261016 Eintracht Frankfurt 1-0 FC Koln"
+  ],
+  "Augsburg vs Elversberg": [
+   "20261017 Elversberg 4-3 Augsburg"
+  ],
+  "Hamburger SV vs Stuttgart": [
+   "20261017 Hamburger SV 1-0 Stuttgart"
+  ],
+  "Mainz vs Schalke": [
+   "20261017 Schalke 0-1 Mainz"
+  ],
+  "Dortmund vs Union Berlin": [
+   "20261017 Union Berlin 0-0 Dortmund"
+  ],
+  "Paderborn vs Werder Bremen": [
+   "20261017 Werder Bremen 2-2 Paderborn"
+  ],
+  "Bayern Munich vs RB Leipzig": [
+   "20261017 Bayern Munich 6-1 RB Leipzig"
+  ],
+  "Bayer Leverkusen vs Freiburg": [
+   "20261018 Bayer Leverkusen 2-1 Freiburg"
+  ],
+  "B. Monchengladbach vs Hoffenheim": [
+   "20261018 B. Monchengladbach 1-2 Hoffenheim"
+  ],
+  "B. Monchengladbach vs Stuttgart": [
+   "20261023 Stuttgart 2-3 B. Monchengladbach"
+  ],
+  "Augsburg vs Union Berlin": [
+   "20261024 Augsburg 1-1 Union Berlin"
+  ],
+  "FC Koln vs Schalke": [
+   "20261024 FC Koln 0-0 Schalke"
+  ],
+  "Mainz vs Werder Bremen": [
+   "20261024 Mainz 2-3 Werder Bremen"
+  ],
+  "Hamburger SV vs Paderborn": [
+   "20261024 Paderborn 1-0 Hamburger SV"
+  ],
+  "Elversberg vs RB Leipzig": [
+   "20261024 RB Leipzig 4-0 Elversberg"
+  ],
+  "Dortmund vs Eintracht Frankfurt": [
+   "20261024 Dortmund 1-0 Eintracht Frankfurt"
+  ],
+  "Bayer Leverkusen vs Hoffenheim": [
+   "20261025 Hoffenheim 3-0 Bayer Leverkusen"
+  ],
+  "Bayern Munich vs Freiburg": [
+   "20261025 Freiburg 1-3 Bayern Munich"
+  ],
+  "Elversberg vs Mainz": [
+   "20261030 Elversberg 4-1 Mainz"
+  ],
+  "Augsburg vs Freiburg": [
+   "20261031 Augsburg 1-2 Freiburg"
+  ],
+  "Bayer Leverkusen vs Stuttgart": [
+   "20261031 Bayer Leverkusen 2-4 Stuttgart"
+  ],
+  "B. Monchengladbach vs Paderborn": [
+   "20261031 B. Monchengladbach 0-0 Paderborn"
+  ],
+  "RB Leipzig vs Schalke": [
+   "20261031 Schalke 0-2 RB Leipzig"
+  ],
+  "Hoffenheim vs Werder Bremen": [
+   "20261031 Werder Bremen 2-0 Hoffenheim"
+  ],
+  "Bayern Munich vs Dortmund": [
+   "20261031 Bayern Munich 2-2 Dortmund"
+  ],
+  "FC Koln vs Union Berlin": [
+   "20261101 Union Berlin 1-1 FC Koln"
+  ],
+  "Eintracht Frankfurt vs Hamburger SV": [
+   "20261101 Eintracht Frankfurt 3-1 Hamburger SV"
+  ],
+  "B. Monchengladbach vs Hamburger SV": [
+   "20261106 Hamburger SV 3-1 B. Monchengladbach"
+  ],
+  "Dortmund vs Elversberg": [
+   "20261107 Dortmund 2-1 Elversberg"
+  ],
+  "Bayern Munich vs Mainz": [
+   "20261107 Mainz 1-2 Bayern Munich"
+  ],
+  "Eintracht Frankfurt vs Paderborn": [
+   "20261107 Paderborn 2-2 Eintracht Frankfurt"
+  ],
+  "Augsburg vs RB Leipzig": [
+   "20261107 RB Leipzig 5-2 Augsburg"
+  ],
+  "Stuttgart vs Werder Bremen": [
+   "20261107 Stuttgart 1-0 Werder Bremen"
+  ],
+  "Bayer Leverkusen vs FC Koln": [
+   "20261108 FC Koln 1-2 Bayer Leverkusen"
+  ],
+  "Freiburg vs Union Berlin": [
+   "20261108 Freiburg 2-0 Union Berlin"
+  ],
+  "Hoffenheim vs Schalke": [
+   "20261108 Hoffenheim 2-1 Schalke"
+  ],
+  "Bayern Munich vs FC Koln": [
+   "20261120 Bayern Munich 1-1 FC Koln"
+  ],
+  "Bayer Leverkusen vs Paderborn": [
+   "20261121 Bayer Leverkusen 4-0 Paderborn"
+  ],
+  "B. Monchengladbach vs Dortmund": [
+   "20261121 B. Monchengladbach 0-1 Dortmund"
+  ],
+  "Eintracht Frankfurt vs Hoffenheim": [
+   "20261121 Eintracht Frankfurt 1-0 Hoffenheim"
+  ],
+  "Elversberg vs Freiburg": [
+   "20261121 Elversberg 0-1 Freiburg"
+  ],
+  "RB Leipzig vs Union Berlin": [
+   "20261121 Union Berlin 1-5 RB Leipzig"
+  ],
+  "Schalke vs Stuttgart": [
+   "20261121 Schalke 0-0 Stuttgart"
+  ]
+ }
+}
