@@ -1,0 +1,2449 @@
+{
+ "meta": {
+  "generated_kst": "2026-11-23 13:13",
+  "league": "J2",
+  "season_start": "20260701",
+  "games": 180,
+  "last_game_date": "20261122",
+  "league_avg": {
+   "games": 180,
+   "home_win": 0.428,
+   "draw": 0.233,
+   "away_win": 0.339,
+   "goals_pg": 2.58,
+   "home_gf_pg": 1.39,
+   "away_gf_pg": 1.19,
+   "over": {
+    "1.5": 0.75,
+    "2.5": 0.483,
+    "3.5": 0.244
+   },
+   "btts": 0.522
+  },
+  "notes": "REG만 집계 / over는 해당 기준점 초과 비율 / g_minus_xg +는 득점 과열(회귀 후보) / rest_days는 오늘(KST) 기준"
+ },
+ "teams": {
+  "Albirex Niigata": {
+   "season": {
+    "gp": 18,
+    "w": 11,
+    "d": 2,
+    "l": 5,
+    "gf_pg": 1.5,
+    "ga_pg": 1.5,
+    "total_pg": 3.0,
+    "over": {
+     "1.5": 0.722,
+     "2.5": 0.667,
+     "3.5": 0.333
+    },
+    "btts": 0.611,
+    "clean_sheet": 0.278,
+    "failed_to_score": 0.111,
+    "ppg": 1.94,
+    "sot_pg": 4.7,
+    "sota_pg": 4.7
+   },
+   "home": {
+    "gp": 10,
+    "w": 8,
+    "d": 0,
+    "l": 2,
+    "gf_pg": 1.6,
+    "ga_pg": 1.1,
+    "total_pg": 2.7,
+    "over": {
+     "1.5": 0.7,
+     "2.5": 0.7,
+     "3.5": 0.2
+    },
+    "btts": 0.7,
+    "clean_sheet": 0.3,
+    "failed_to_score": 0.0,
+    "ppg": 2.4,
+    "sot_pg": 4.1,
+    "sota_pg": 4.3
+   },
+   "away": {
+    "gp": 8,
+    "w": 3,
+    "d": 2,
+    "l": 3,
+    "gf_pg": 1.38,
+    "ga_pg": 2.0,
+    "total_pg": 3.38,
+    "over": {
+     "1.5": 0.75,
+     "2.5": 0.625,
+     "3.5": 0.5
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.25,
+    "failed_to_score": 0.25,
+    "ppg": 1.38,
+    "sot_pg": 5.5,
+    "sota_pg": 5.1
+   },
+   "last6": {
+    "gp": 6,
+    "w": 4,
+    "d": 0,
+    "l": 2,
+    "gf_pg": 1.67,
+    "ga_pg": 1.17,
+    "total_pg": 2.83,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.667,
+     "3.5": 0.333
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.5,
+    "failed_to_score": 0.0,
+    "ppg": 2.0,
+    "sot_pg": 5.8,
+    "sota_pg": 5.5
+   },
+   "last6_log": [
+    "20261025 H Vegalta Sendai 2-1",
+    "20261031 H Toyama 2-3",
+    "20261103 A Kofu 1-0",
+    "20261107 H Imabari 1-0",
+    "20261114 H Tegevajaro Miyazaki 1-3",
+    "20261121 A Tochigi City 3-0"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 1,
+   "rank": 1,
+   "points": 35
+  },
+  "Vegalta Sendai": {
+   "season": {
+    "gp": 18,
+    "w": 10,
+    "d": 4,
+    "l": 4,
+    "gf_pg": 1.83,
+    "ga_pg": 0.89,
+    "total_pg": 2.72,
+    "over": {
+     "1.5": 0.778,
+     "2.5": 0.5,
+     "3.5": 0.333
+    },
+    "btts": 0.556,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.222,
+    "ppg": 1.89,
+    "sot_pg": 6.1,
+    "sota_pg": 3.1
+   },
+   "home": {
+    "gp": 9,
+    "w": 5,
+    "d": 3,
+    "l": 1,
+    "gf_pg": 2.22,
+    "ga_pg": 0.89,
+    "total_pg": 3.11,
+    "over": {
+     "1.5": 0.778,
+     "2.5": 0.667,
+     "3.5": 0.444
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.222,
+    "ppg": 2.0,
+    "sot_pg": 7.6,
+    "sota_pg": 2.1
+   },
+   "away": {
+    "gp": 9,
+    "w": 5,
+    "d": 1,
+    "l": 3,
+    "gf_pg": 1.44,
+    "ga_pg": 0.89,
+    "total_pg": 2.33,
+    "over": {
+     "1.5": 0.778,
+     "2.5": 0.333,
+     "3.5": 0.222
+    },
+    "btts": 0.444,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.222,
+    "ppg": 1.78,
+    "sot_pg": 4.7,
+    "sota_pg": 4.1
+   },
+   "last6": {
+    "gp": 6,
+    "w": 2,
+    "d": 1,
+    "l": 3,
+    "gf_pg": 2.0,
+    "ga_pg": 1.17,
+    "total_pg": 3.17,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.667,
+     "3.5": 0.333
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.167,
+    "ppg": 1.17,
+    "sot_pg": 6.7,
+    "sota_pg": 4.0
+   },
+   "last6_log": [
+    "20261025 A Albirex Niigata 1-2",
+    "20261031 H Omiya Ardija 1-2",
+    "20261103 A Toyama 0-1",
+    "20261108 H Kofu 5-1",
+    "20261115 H Blaublitz 4-0",
+    "20261121 A Sagan Tosu 1-1"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 1,
+   "rank": 2,
+   "points": 34
+  },
+  "Omiya Ardija": {
+   "season": {
+    "gp": 18,
+    "w": 9,
+    "d": 6,
+    "l": 3,
+    "gf_pg": 1.78,
+    "ga_pg": 1.17,
+    "total_pg": 2.94,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.667,
+     "3.5": 0.333
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.222,
+    "failed_to_score": 0.222,
+    "ppg": 1.83,
+    "sot_pg": 5.1,
+    "sota_pg": 4.1
+   },
+   "home": {
+    "gp": 9,
+    "w": 5,
+    "d": 3,
+    "l": 1,
+    "gf_pg": 1.89,
+    "ga_pg": 1.22,
+    "total_pg": 3.11,
+    "over": {
+     "1.5": 0.778,
+     "2.5": 0.778,
+     "3.5": 0.444
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.222,
+    "failed_to_score": 0.222,
+    "ppg": 2.0,
+    "sot_pg": 5.6,
+    "sota_pg": 3.8
+   },
+   "away": {
+    "gp": 9,
+    "w": 4,
+    "d": 3,
+    "l": 2,
+    "gf_pg": 1.67,
+    "ga_pg": 1.11,
+    "total_pg": 2.78,
+    "over": {
+     "1.5": 0.889,
+     "2.5": 0.556,
+     "3.5": 0.222
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.222,
+    "failed_to_score": 0.222,
+    "ppg": 1.67,
+    "sot_pg": 4.7,
+    "sota_pg": 4.4
+   },
+   "last6": {
+    "gp": 6,
+    "w": 4,
+    "d": 1,
+    "l": 1,
+    "gf_pg": 1.83,
+    "ga_pg": 1.17,
+    "total_pg": 3.0,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.833,
+     "3.5": 0.167
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.167,
+    "ppg": 2.17,
+    "sot_pg": 4.7,
+    "sota_pg": 4.8
+   },
+   "last6_log": [
+    "20261024 H Yokohama FC 2-2",
+    "20261031 A Vegalta Sendai 2-1",
+    "20261103 H Iwaki 2-1",
+    "20261108 A Tochigi City 3-0",
+    "20261114 H Montedio Yamagata 2-1",
+    "20261121 A Iwata 0-2"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 1,
+   "rank": 3,
+   "points": 33
+  },
+  "Tegevajaro Miyazaki": {
+   "season": {
+    "gp": 18,
+    "w": 9,
+    "d": 6,
+    "l": 3,
+    "gf_pg": 1.67,
+    "ga_pg": 1.06,
+    "total_pg": 2.72,
+    "over": {
+     "1.5": 0.889,
+     "2.5": 0.444,
+     "3.5": 0.222
+    },
+    "btts": 0.611,
+    "clean_sheet": 0.278,
+    "failed_to_score": 0.167,
+    "ppg": 1.83,
+    "sot_pg": 4.9,
+    "sota_pg": 3.9
+   },
+   "home": {
+    "gp": 10,
+    "w": 5,
+    "d": 4,
+    "l": 1,
+    "gf_pg": 1.6,
+    "ga_pg": 0.9,
+    "total_pg": 2.5,
+    "over": {
+     "1.5": 0.8,
+     "2.5": 0.4,
+     "3.5": 0.2
+    },
+    "btts": 0.6,
+    "clean_sheet": 0.3,
+    "failed_to_score": 0.2,
+    "ppg": 1.9,
+    "sot_pg": 5.3,
+    "sota_pg": 3.2
+   },
+   "away": {
+    "gp": 8,
+    "w": 4,
+    "d": 2,
+    "l": 2,
+    "gf_pg": 1.75,
+    "ga_pg": 1.25,
+    "total_pg": 3.0,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.5,
+     "3.5": 0.25
+    },
+    "btts": 0.625,
+    "clean_sheet": 0.25,
+    "failed_to_score": 0.125,
+    "ppg": 1.75,
+    "sot_pg": 4.4,
+    "sota_pg": 4.8
+   },
+   "last6": {
+    "gp": 6,
+    "w": 5,
+    "d": 1,
+    "l": 0,
+    "gf_pg": 2.17,
+    "ga_pg": 0.5,
+    "total_pg": 2.67,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.5,
+     "3.5": 0.167
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.5,
+    "failed_to_score": 0.0,
+    "ppg": 2.67,
+    "sot_pg": 6.2,
+    "sota_pg": 3.5
+   },
+   "last6_log": [
+    "20261025 A Montedio Yamagata 2-0",
+    "20261031 H Oita Trinita 2-0",
+    "20261103 H Tochigi City 3-0",
+    "20261107 A Tokushima 2-1",
+    "20261114 A Albirex Niigata 3-1",
+    "20261121 H Iwaki 1-1"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 1,
+   "rank": 4,
+   "points": 33
+  },
+  "Toyama": {
+   "season": {
+    "gp": 18,
+    "w": 9,
+    "d": 5,
+    "l": 4,
+    "gf_pg": 1.78,
+    "ga_pg": 1.06,
+    "total_pg": 2.83,
+    "over": {
+     "1.5": 0.778,
+     "2.5": 0.5,
+     "3.5": 0.333
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.389,
+    "failed_to_score": 0.167,
+    "ppg": 1.78,
+    "sot_pg": 7.7,
+    "sota_pg": 4.1
+   },
+   "home": {
+    "gp": 10,
+    "w": 2,
+    "d": 5,
+    "l": 3,
+    "gf_pg": 1.5,
+    "ga_pg": 1.3,
+    "total_pg": 2.8,
+    "over": {
+     "1.5": 0.7,
+     "2.5": 0.4,
+     "3.5": 0.4
+    },
+    "btts": 0.6,
+    "clean_sheet": 0.3,
+    "failed_to_score": 0.2,
+    "ppg": 1.1,
+    "sot_pg": 8.4,
+    "sota_pg": 4.3
+   },
+   "away": {
+    "gp": 8,
+    "w": 7,
+    "d": 0,
+    "l": 1,
+    "gf_pg": 2.12,
+    "ga_pg": 0.75,
+    "total_pg": 2.88,
+    "over": {
+     "1.5": 0.875,
+     "2.5": 0.625,
+     "3.5": 0.25
+    },
+    "btts": 0.375,
+    "clean_sheet": 0.5,
+    "failed_to_score": 0.125,
+    "ppg": 2.62,
+    "sot_pg": 6.8,
+    "sota_pg": 3.8
+   },
+   "last6": {
+    "gp": 6,
+    "w": 3,
+    "d": 1,
+    "l": 2,
+    "gf_pg": 1.5,
+    "ga_pg": 1.33,
+    "total_pg": 2.83,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.5,
+     "3.5": 0.333
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.167,
+    "ppg": 1.67,
+    "sot_pg": 8.2,
+    "sota_pg": 5.3
+   },
+   "last6_log": [
+    "20261025 H Hokkaido Consadole Sapporo 0-1",
+    "20261031 A Albirex Niigata 3-2",
+    "20261103 H Vegalta Sendai 1-0",
+    "20261107 A Sagan Tosu 2-1",
+    "20261115 H Tokushima 2-3",
+    "20261121 H Oita Trinita 1-1"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 1,
+   "rank": 5,
+   "points": 32
+  },
+  "Yokohama FC": {
+   "season": {
+    "gp": 18,
+    "w": 9,
+    "d": 4,
+    "l": 5,
+    "gf_pg": 1.78,
+    "ga_pg": 1.17,
+    "total_pg": 2.94,
+    "over": {
+     "1.5": 0.889,
+     "2.5": 0.556,
+     "3.5": 0.333
+    },
+    "btts": 0.444,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.222,
+    "ppg": 1.72,
+    "sot_pg": 4.7,
+    "sota_pg": 4.6
+   },
+   "home": {
+    "gp": 8,
+    "w": 5,
+    "d": 1,
+    "l": 2,
+    "gf_pg": 2.38,
+    "ga_pg": 1.12,
+    "total_pg": 3.5,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.875,
+     "3.5": 0.5
+    },
+    "btts": 0.625,
+    "clean_sheet": 0.25,
+    "failed_to_score": 0.125,
+    "ppg": 2.0,
+    "sot_pg": 5.1,
+    "sota_pg": 3.5
+   },
+   "away": {
+    "gp": 10,
+    "w": 4,
+    "d": 3,
+    "l": 3,
+    "gf_pg": 1.3,
+    "ga_pg": 1.2,
+    "total_pg": 2.5,
+    "over": {
+     "1.5": 0.8,
+     "2.5": 0.3,
+     "3.5": 0.2
+    },
+    "btts": 0.3,
+    "clean_sheet": 0.4,
+    "failed_to_score": 0.3,
+    "ppg": 1.5,
+    "sot_pg": 4.4,
+    "sota_pg": 5.5
+   },
+   "last6": {
+    "gp": 6,
+    "w": 3,
+    "d": 1,
+    "l": 2,
+    "gf_pg": 1.5,
+    "ga_pg": 1.17,
+    "total_pg": 2.67,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.5,
+     "3.5": 0.333
+    },
+    "btts": 0.333,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.333,
+    "ppg": 1.67,
+    "sot_pg": 5.2,
+    "sota_pg": 3.7
+   },
+   "last6_log": [
+    "20261024 A Omiya Ardija 2-2",
+    "20261031 A Tokushima 1-0",
+    "20261103 H Blaublitz 2-1",
+    "20261107 H Fujieda MYFC 4-0",
+    "20261114 A Shonan Bellmare 0-2",
+    "20261121 H Hokkaido Consadole Sapporo 0-2"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 1,
+   "rank": 6,
+   "points": 31
+  },
+  "Iwata": {
+   "season": {
+    "gp": 18,
+    "w": 8,
+    "d": 5,
+    "l": 5,
+    "gf_pg": 1.28,
+    "ga_pg": 0.94,
+    "total_pg": 2.22,
+    "over": {
+     "1.5": 0.778,
+     "2.5": 0.389,
+     "3.5": 0.111
+    },
+    "btts": 0.611,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.111,
+    "ppg": 1.61,
+    "sot_pg": 4.9,
+    "sota_pg": 4.8
+   },
+   "home": {
+    "gp": 9,
+    "w": 4,
+    "d": 3,
+    "l": 2,
+    "gf_pg": 1.11,
+    "ga_pg": 0.67,
+    "total_pg": 1.78,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.222,
+     "3.5": 0.0
+    },
+    "btts": 0.444,
+    "clean_sheet": 0.444,
+    "failed_to_score": 0.222,
+    "ppg": 1.67,
+    "sot_pg": 5.1,
+    "sota_pg": 4.0
+   },
+   "away": {
+    "gp": 9,
+    "w": 4,
+    "d": 2,
+    "l": 3,
+    "gf_pg": 1.44,
+    "ga_pg": 1.22,
+    "total_pg": 2.67,
+    "over": {
+     "1.5": 0.889,
+     "2.5": 0.556,
+     "3.5": 0.222
+    },
+    "btts": 0.778,
+    "clean_sheet": 0.222,
+    "failed_to_score": 0.0,
+    "ppg": 1.56,
+    "sot_pg": 4.7,
+    "sota_pg": 5.6
+   },
+   "last6": {
+    "gp": 6,
+    "w": 4,
+    "d": 2,
+    "l": 0,
+    "gf_pg": 1.67,
+    "ga_pg": 0.5,
+    "total_pg": 2.17,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.167,
+     "3.5": 0.0
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.5,
+    "failed_to_score": 0.0,
+    "ppg": 2.33,
+    "sot_pg": 6.3,
+    "sota_pg": 5.0
+   },
+   "last6_log": [
+    "20261025 A Iwaki 1-1",
+    "20261031 H Sagan Tosu 2-0",
+    "20261103 A Fujieda MYFC 2-1",
+    "20261108 H Shonan Bellmare 1-1",
+    "20261115 A Imabari 2-0",
+    "20261121 H Omiya Ardija 2-0"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 1,
+   "rank": 7,
+   "points": 29
+  },
+  "Shonan Bellmare": {
+   "season": {
+    "gp": 18,
+    "w": 7,
+    "d": 8,
+    "l": 3,
+    "gf_pg": 1.11,
+    "ga_pg": 0.89,
+    "total_pg": 2.0,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.278,
+     "3.5": 0.111
+    },
+    "btts": 0.611,
+    "clean_sheet": 0.278,
+    "failed_to_score": 0.167,
+    "ppg": 1.61,
+    "sot_pg": 3.8,
+    "sota_pg": 5.2
+   },
+   "home": {
+    "gp": 8,
+    "w": 3,
+    "d": 3,
+    "l": 2,
+    "gf_pg": 1.12,
+    "ga_pg": 1.0,
+    "total_pg": 2.12,
+    "over": {
+     "1.5": 0.75,
+     "2.5": 0.25,
+     "3.5": 0.125
+    },
+    "btts": 0.625,
+    "clean_sheet": 0.25,
+    "failed_to_score": 0.125,
+    "ppg": 1.5,
+    "sot_pg": 4.0,
+    "sota_pg": 5.2
+   },
+   "away": {
+    "gp": 10,
+    "w": 4,
+    "d": 5,
+    "l": 1,
+    "gf_pg": 1.1,
+    "ga_pg": 0.8,
+    "total_pg": 1.9,
+    "over": {
+     "1.5": 0.6,
+     "2.5": 0.3,
+     "3.5": 0.1
+    },
+    "btts": 0.6,
+    "clean_sheet": 0.3,
+    "failed_to_score": 0.2,
+    "ppg": 1.7,
+    "sot_pg": 3.7,
+    "sota_pg": 5.1
+   },
+   "last6": {
+    "gp": 6,
+    "w": 3,
+    "d": 1,
+    "l": 2,
+    "gf_pg": 1.17,
+    "ga_pg": 0.83,
+    "total_pg": 2.0,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.333,
+     "3.5": 0.0
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.333,
+    "ppg": 1.67,
+    "sot_pg": 4.3,
+    "sota_pg": 4.8
+   },
+   "last6_log": [
+    "20261025 H Tochigi City 2-1",
+    "20261031 A Hokkaido Consadole Sapporo 0-1",
+    "20261103 H Sagan Tosu 0-1",
+    "20261108 A Iwata 1-1",
+    "20261114 H Yokohama FC 2-0",
+    "20261122 A Tokushima 2-1"
+   ],
+   "last_game_date": "20261122",
+   "rest_days": 0,
+   "rank": 8,
+   "points": 29
+  },
+  "Hokkaido Consadole Sapporo": {
+   "season": {
+    "gp": 18,
+    "w": 9,
+    "d": 2,
+    "l": 7,
+    "gf_pg": 1.39,
+    "ga_pg": 1.17,
+    "total_pg": 2.56,
+    "over": {
+     "1.5": 0.722,
+     "2.5": 0.444,
+     "3.5": 0.222
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.444,
+    "failed_to_score": 0.056,
+    "ppg": 1.61,
+    "sot_pg": 3.7,
+    "sota_pg": 4.6
+   },
+   "home": {
+    "gp": 8,
+    "w": 4,
+    "d": 1,
+    "l": 3,
+    "gf_pg": 1.25,
+    "ga_pg": 1.5,
+    "total_pg": 2.75,
+    "over": {
+     "1.5": 0.75,
+     "2.5": 0.5,
+     "3.5": 0.25
+    },
+    "btts": 0.625,
+    "clean_sheet": 0.375,
+    "failed_to_score": 0.0,
+    "ppg": 1.62,
+    "sot_pg": 4.0,
+    "sota_pg": 4.0
+   },
+   "away": {
+    "gp": 10,
+    "w": 5,
+    "d": 1,
+    "l": 4,
+    "gf_pg": 1.5,
+    "ga_pg": 0.9,
+    "total_pg": 2.4,
+    "over": {
+     "1.5": 0.7,
+     "2.5": 0.4,
+     "3.5": 0.2
+    },
+    "btts": 0.4,
+    "clean_sheet": 0.5,
+    "failed_to_score": 0.1,
+    "ppg": 1.6,
+    "sot_pg": 3.5,
+    "sota_pg": 5.1
+   },
+   "last6": {
+    "gp": 6,
+    "w": 5,
+    "d": 0,
+    "l": 1,
+    "gf_pg": 1.67,
+    "ga_pg": 0.33,
+    "total_pg": 2.0,
+    "over": {
+     "1.5": 0.5,
+     "2.5": 0.333,
+     "3.5": 0.167
+    },
+    "btts": 0.167,
+    "clean_sheet": 0.833,
+    "failed_to_score": 0.0,
+    "ppg": 2.5,
+    "sot_pg": 3.8,
+    "sota_pg": 5.7
+   },
+   "last6_log": [
+    "20261025 A Toyama 1-0",
+    "20261031 H Shonan Bellmare 1-0",
+    "20261103 A Imabari 4-0",
+    "20261108 A Vanraure 1-0",
+    "20261115 H Sagan Tosu 1-2",
+    "20261121 A Yokohama FC 2-0"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 1,
+   "rank": 9,
+   "points": 29
+  },
+  "Iwaki": {
+   "season": {
+    "gp": 18,
+    "w": 7,
+    "d": 4,
+    "l": 7,
+    "gf_pg": 1.61,
+    "ga_pg": 1.39,
+    "total_pg": 3.0,
+    "over": {
+     "1.5": 0.889,
+     "2.5": 0.556,
+     "3.5": 0.389
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.222,
+    "failed_to_score": 0.111,
+    "ppg": 1.39,
+    "sot_pg": 5.2,
+    "sota_pg": 4.1
+   },
+   "home": {
+    "gp": 8,
+    "w": 5,
+    "d": 1,
+    "l": 2,
+    "gf_pg": 1.88,
+    "ga_pg": 0.88,
+    "total_pg": 2.75,
+    "over": {
+     "1.5": 0.875,
+     "2.5": 0.375,
+     "3.5": 0.25
+    },
+    "btts": 0.375,
+    "clean_sheet": 0.5,
+    "failed_to_score": 0.125,
+    "ppg": 2.0,
+    "sot_pg": 6.0,
+    "sota_pg": 3.9
+   },
+   "away": {
+    "gp": 10,
+    "w": 2,
+    "d": 3,
+    "l": 5,
+    "gf_pg": 1.4,
+    "ga_pg": 1.8,
+    "total_pg": 3.2,
+    "over": {
+     "1.5": 0.9,
+     "2.5": 0.7,
+     "3.5": 0.5
+    },
+    "btts": 0.9,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.1,
+    "ppg": 0.9,
+    "sot_pg": 4.5,
+    "sota_pg": 4.3
+   },
+   "last6": {
+    "gp": 6,
+    "w": 2,
+    "d": 3,
+    "l": 1,
+    "gf_pg": 1.67,
+    "ga_pg": 1.17,
+    "total_pg": 2.83,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.5,
+     "3.5": 0.333
+    },
+    "btts": 0.833,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.0,
+    "ppg": 1.5,
+    "sot_pg": 5.7,
+    "sota_pg": 4.5
+   },
+   "last6_log": [
+    "20261025 H Iwata 1-1",
+    "20261031 A Tochigi City 3-1",
+    "20261103 A Omiya Ardija 1-2",
+    "20261107 H Montedio Yamagata 2-0",
+    "20261115 A Vanraure 2-2",
+    "20261121 A Tegevajaro Miyazaki 1-1"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 1,
+   "rank": 10,
+   "points": 25
+  },
+  "Sagan Tosu": {
+   "season": {
+    "gp": 18,
+    "w": 7,
+    "d": 3,
+    "l": 8,
+    "gf_pg": 1.06,
+    "ga_pg": 1.17,
+    "total_pg": 2.22,
+    "over": {
+     "1.5": 0.722,
+     "2.5": 0.389,
+     "3.5": 0.167
+    },
+    "btts": 0.444,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.278,
+    "ppg": 1.33,
+    "sot_pg": 5.2,
+    "sota_pg": 4.4
+   },
+   "home": {
+    "gp": 9,
+    "w": 5,
+    "d": 1,
+    "l": 3,
+    "gf_pg": 1.44,
+    "ga_pg": 1.11,
+    "total_pg": 2.56,
+    "over": {
+     "1.5": 0.889,
+     "2.5": 0.444,
+     "3.5": 0.222
+    },
+    "btts": 0.556,
+    "clean_sheet": 0.444,
+    "failed_to_score": 0.0,
+    "ppg": 1.78,
+    "sot_pg": 6.2,
+    "sota_pg": 5.1
+   },
+   "away": {
+    "gp": 9,
+    "w": 2,
+    "d": 2,
+    "l": 5,
+    "gf_pg": 0.67,
+    "ga_pg": 1.22,
+    "total_pg": 1.89,
+    "over": {
+     "1.5": 0.556,
+     "2.5": 0.333,
+     "3.5": 0.111
+    },
+    "btts": 0.333,
+    "clean_sheet": 0.222,
+    "failed_to_score": 0.556,
+    "ppg": 0.89,
+    "sot_pg": 4.1,
+    "sota_pg": 3.7
+   },
+   "last6": {
+    "gp": 6,
+    "w": 3,
+    "d": 1,
+    "l": 2,
+    "gf_pg": 1.17,
+    "ga_pg": 1.0,
+    "total_pg": 2.17,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.333,
+     "3.5": 0.0
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.167,
+    "ppg": 1.67,
+    "sot_pg": 7.3,
+    "sota_pg": 5.7
+   },
+   "last6_log": [
+    "20261025 H Vanraure 2-0",
+    "20261031 A Iwata 0-2",
+    "20261103 A Shonan Bellmare 1-0",
+    "20261107 H Toyama 1-2",
+    "20261115 A Hokkaido Consadole Sapporo 2-1",
+    "20261121 H Vegalta Sendai 1-1"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 1,
+   "rank": 11,
+   "points": 24
+  },
+  "Oita Trinita": {
+   "season": {
+    "gp": 18,
+    "w": 5,
+    "d": 8,
+    "l": 5,
+    "gf_pg": 1.17,
+    "ga_pg": 1.17,
+    "total_pg": 2.33,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.333,
+     "3.5": 0.167
+    },
+    "btts": 0.611,
+    "clean_sheet": 0.222,
+    "failed_to_score": 0.333,
+    "ppg": 1.28,
+    "sot_pg": 4.2,
+    "sota_pg": 5.6
+   },
+   "home": {
+    "gp": 9,
+    "w": 4,
+    "d": 3,
+    "l": 2,
+    "gf_pg": 1.78,
+    "ga_pg": 1.44,
+    "total_pg": 3.22,
+    "over": {
+     "1.5": 0.778,
+     "2.5": 0.444,
+     "3.5": 0.333
+    },
+    "btts": 0.778,
+    "clean_sheet": 0.111,
+    "failed_to_score": 0.111,
+    "ppg": 1.67,
+    "sot_pg": 4.7,
+    "sota_pg": 5.6
+   },
+   "away": {
+    "gp": 9,
+    "w": 1,
+    "d": 5,
+    "l": 3,
+    "gf_pg": 0.56,
+    "ga_pg": 0.89,
+    "total_pg": 1.44,
+    "over": {
+     "1.5": 0.556,
+     "2.5": 0.222,
+     "3.5": 0.0
+    },
+    "btts": 0.444,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.556,
+    "ppg": 0.89,
+    "sot_pg": 3.7,
+    "sota_pg": 5.6
+   },
+   "last6": {
+    "gp": 6,
+    "w": 1,
+    "d": 2,
+    "l": 3,
+    "gf_pg": 0.83,
+    "ga_pg": 2.0,
+    "total_pg": 2.83,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.333,
+     "3.5": 0.167
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.167,
+    "ppg": 0.83,
+    "sot_pg": 5.2,
+    "sota_pg": 7.8
+   },
+   "last6_log": [
+    "20261025 H Kofu 1-1",
+    "20261031 A Tegevajaro Miyazaki 0-2",
+    "20261103 H Vanraure 1-0",
+    "20261107 A Blaublitz 1-2",
+    "20261114 H Tochigi City 1-6",
+    "20261121 A Toyama 1-1"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 1,
+   "rank": 12,
+   "points": 23
+  },
+  "Blaublitz": {
+   "season": {
+    "gp": 18,
+    "w": 6,
+    "d": 5,
+    "l": 7,
+    "gf_pg": 1.17,
+    "ga_pg": 1.28,
+    "total_pg": 2.44,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.5,
+     "3.5": 0.278
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.222,
+    "failed_to_score": 0.333,
+    "ppg": 1.28,
+    "sot_pg": 4.1,
+    "sota_pg": 4.1
+   },
+   "home": {
+    "gp": 10,
+    "w": 6,
+    "d": 3,
+    "l": 1,
+    "gf_pg": 1.7,
+    "ga_pg": 1.0,
+    "total_pg": 2.7,
+    "over": {
+     "1.5": 0.7,
+     "2.5": 0.6,
+     "3.5": 0.4
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.4,
+    "failed_to_score": 0.2,
+    "ppg": 2.1,
+    "sot_pg": 4.8,
+    "sota_pg": 3.5
+   },
+   "away": {
+    "gp": 8,
+    "w": 0,
+    "d": 2,
+    "l": 6,
+    "gf_pg": 0.5,
+    "ga_pg": 1.62,
+    "total_pg": 2.12,
+    "over": {
+     "1.5": 0.625,
+     "2.5": 0.375,
+     "3.5": 0.125
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.5,
+    "ppg": 0.25,
+    "sot_pg": 3.1,
+    "sota_pg": 4.8
+   },
+   "last6": {
+    "gp": 6,
+    "w": 3,
+    "d": 1,
+    "l": 2,
+    "gf_pg": 1.33,
+    "ga_pg": 1.5,
+    "total_pg": 2.83,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.667,
+     "3.5": 0.333
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.167,
+    "ppg": 1.67,
+    "sot_pg": 4.8,
+    "sota_pg": 4.5
+   },
+   "last6_log": [
+    "20261025 H Imabari 1-0",
+    "20261031 H Fujieda MYFC 1-1",
+    "20261103 A Yokohama FC 1-2",
+    "20261107 H Oita Trinita 2-1",
+    "20261115 A Vegalta Sendai 0-4",
+    "20261121 H Montedio Yamagata 3-1"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 1,
+   "rank": 13,
+   "points": 23
+  },
+  "Tokushima": {
+   "season": {
+    "gp": 18,
+    "w": 6,
+    "d": 2,
+    "l": 10,
+    "gf_pg": 0.89,
+    "ga_pg": 1.17,
+    "total_pg": 2.06,
+    "over": {
+     "1.5": 0.5,
+     "2.5": 0.444,
+     "3.5": 0.111
+    },
+    "btts": 0.389,
+    "clean_sheet": 0.389,
+    "failed_to_score": 0.333,
+    "ppg": 1.11,
+    "sot_pg": 3.9,
+    "sota_pg": 5.1
+   },
+   "home": {
+    "gp": 9,
+    "w": 3,
+    "d": 1,
+    "l": 5,
+    "gf_pg": 0.89,
+    "ga_pg": 0.89,
+    "total_pg": 1.78,
+    "over": {
+     "1.5": 0.444,
+     "2.5": 0.444,
+     "3.5": 0.0
+    },
+    "btts": 0.333,
+    "clean_sheet": 0.444,
+    "failed_to_score": 0.333,
+    "ppg": 1.11,
+    "sot_pg": 5.0,
+    "sota_pg": 4.6
+   },
+   "away": {
+    "gp": 9,
+    "w": 3,
+    "d": 1,
+    "l": 5,
+    "gf_pg": 0.89,
+    "ga_pg": 1.44,
+    "total_pg": 2.33,
+    "over": {
+     "1.5": 0.556,
+     "2.5": 0.444,
+     "3.5": 0.222
+    },
+    "btts": 0.444,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.333,
+    "ppg": 1.11,
+    "sot_pg": 2.9,
+    "sota_pg": 5.7
+   },
+   "last6": {
+    "gp": 6,
+    "w": 2,
+    "d": 0,
+    "l": 4,
+    "gf_pg": 1.0,
+    "ga_pg": 1.33,
+    "total_pg": 2.33,
+    "over": {
+     "1.5": 0.5,
+     "2.5": 0.5,
+     "3.5": 0.167
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.333,
+    "ppg": 1.0,
+    "sot_pg": 3.8,
+    "sota_pg": 5.8
+   },
+   "last6_log": [
+    "20261024 A Fujieda MYFC 1-0",
+    "20261031 H Yokohama FC 0-1",
+    "20261103 A Montedio Yamagata 0-1",
+    "20261107 H Tegevajaro Miyazaki 1-2",
+    "20261115 A Toyama 3-2",
+    "20261122 H Shonan Bellmare 1-2"
+   ],
+   "last_game_date": "20261122",
+   "rest_days": 0,
+   "rank": 14,
+   "points": 20
+  },
+  "Fujieda MYFC": {
+   "season": {
+    "gp": 18,
+    "w": 4,
+    "d": 7,
+    "l": 7,
+    "gf_pg": 1.0,
+    "ga_pg": 1.22,
+    "total_pg": 2.22,
+    "over": {
+     "1.5": 0.611,
+     "2.5": 0.333,
+     "3.5": 0.278
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.222,
+    "failed_to_score": 0.389,
+    "ppg": 1.06,
+    "sot_pg": 3.6,
+    "sota_pg": 5.4
+   },
+   "home": {
+    "gp": 10,
+    "w": 3,
+    "d": 4,
+    "l": 3,
+    "gf_pg": 0.9,
+    "ga_pg": 0.7,
+    "total_pg": 1.6,
+    "over": {
+     "1.5": 0.5,
+     "2.5": 0.2,
+     "3.5": 0.1
+    },
+    "btts": 0.4,
+    "clean_sheet": 0.4,
+    "failed_to_score": 0.4,
+    "ppg": 1.3,
+    "sot_pg": 3.7,
+    "sota_pg": 4.7
+   },
+   "away": {
+    "gp": 8,
+    "w": 1,
+    "d": 3,
+    "l": 4,
+    "gf_pg": 1.12,
+    "ga_pg": 1.88,
+    "total_pg": 3.0,
+    "over": {
+     "1.5": 0.75,
+     "2.5": 0.5,
+     "3.5": 0.5
+    },
+    "btts": 0.625,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.375,
+    "ppg": 0.75,
+    "sot_pg": 3.5,
+    "sota_pg": 6.2
+   },
+   "last6": {
+    "gp": 6,
+    "w": 1,
+    "d": 1,
+    "l": 4,
+    "gf_pg": 0.5,
+    "ga_pg": 1.5,
+    "total_pg": 2.0,
+    "over": {
+     "1.5": 0.5,
+     "2.5": 0.333,
+     "3.5": 0.167
+    },
+    "btts": 0.333,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.5,
+    "ppg": 0.67,
+    "sot_pg": 3.3,
+    "sota_pg": 5.8
+   },
+   "last6_log": [
+    "20261024 H Tokushima 0-1",
+    "20261031 A Blaublitz 1-1",
+    "20261103 H Iwata 1-2",
+    "20261107 A Yokohama FC 0-4",
+    "20261114 H Kofu 1-0",
+    "20261121 H Imabari 0-1"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 1,
+   "rank": 15,
+   "points": 19
+  },
+  "Montedio Yamagata": {
+   "season": {
+    "gp": 18,
+    "w": 6,
+    "d": 1,
+    "l": 11,
+    "gf_pg": 0.89,
+    "ga_pg": 1.17,
+    "total_pg": 2.06,
+    "over": {
+     "1.5": 0.722,
+     "2.5": 0.333,
+     "3.5": 0.056
+    },
+    "btts": 0.278,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.444,
+    "ppg": 1.06,
+    "sot_pg": 4.0,
+    "sota_pg": 4.4
+   },
+   "home": {
+    "gp": 9,
+    "w": 4,
+    "d": 0,
+    "l": 5,
+    "gf_pg": 0.89,
+    "ga_pg": 1.0,
+    "total_pg": 1.89,
+    "over": {
+     "1.5": 0.778,
+     "2.5": 0.111,
+     "3.5": 0.0
+    },
+    "btts": 0.111,
+    "clean_sheet": 0.444,
+    "failed_to_score": 0.444,
+    "ppg": 1.33,
+    "sot_pg": 4.2,
+    "sota_pg": 4.6
+   },
+   "away": {
+    "gp": 9,
+    "w": 2,
+    "d": 1,
+    "l": 6,
+    "gf_pg": 0.89,
+    "ga_pg": 1.33,
+    "total_pg": 2.22,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.556,
+     "3.5": 0.111
+    },
+    "btts": 0.444,
+    "clean_sheet": 0.222,
+    "failed_to_score": 0.444,
+    "ppg": 0.78,
+    "sot_pg": 3.8,
+    "sota_pg": 4.2
+   },
+   "last6": {
+    "gp": 6,
+    "w": 2,
+    "d": 0,
+    "l": 4,
+    "gf_pg": 0.83,
+    "ga_pg": 1.67,
+    "total_pg": 2.5,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.5,
+     "3.5": 0.167
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.333,
+    "ppg": 1.0,
+    "sot_pg": 3.7,
+    "sota_pg": 5.7
+   },
+   "last6_log": [
+    "20261025 H Tegevajaro Miyazaki 0-2",
+    "20261031 A Vanraure 2-1",
+    "20261103 H Tokushima 1-0",
+    "20261107 A Iwaki 0-2",
+    "20261114 A Omiya Ardija 1-2",
+    "20261121 A Blaublitz 1-3"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 1,
+   "rank": 16,
+   "points": 19
+  },
+  "Vanraure": {
+   "season": {
+    "gp": 18,
+    "w": 5,
+    "d": 3,
+    "l": 10,
+    "gf_pg": 0.83,
+    "ga_pg": 1.56,
+    "total_pg": 2.39,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.389,
+     "3.5": 0.222
+    },
+    "btts": 0.278,
+    "clean_sheet": 0.278,
+    "failed_to_score": 0.5,
+    "ppg": 1.0,
+    "sot_pg": 5.0,
+    "sota_pg": 4.4
+   },
+   "home": {
+    "gp": 9,
+    "w": 2,
+    "d": 1,
+    "l": 6,
+    "gf_pg": 0.67,
+    "ga_pg": 1.44,
+    "total_pg": 2.11,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.333,
+     "3.5": 0.111
+    },
+    "btts": 0.222,
+    "clean_sheet": 0.222,
+    "failed_to_score": 0.556,
+    "ppg": 0.78,
+    "sot_pg": 5.0,
+    "sota_pg": 3.7
+   },
+   "away": {
+    "gp": 9,
+    "w": 3,
+    "d": 2,
+    "l": 4,
+    "gf_pg": 1.0,
+    "ga_pg": 1.67,
+    "total_pg": 2.67,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.444,
+     "3.5": 0.333
+    },
+    "btts": 0.333,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.444,
+    "ppg": 1.22,
+    "sot_pg": 5.0,
+    "sota_pg": 5.2
+   },
+   "last6": {
+    "gp": 6,
+    "w": 1,
+    "d": 1,
+    "l": 4,
+    "gf_pg": 0.83,
+    "ga_pg": 1.33,
+    "total_pg": 2.17,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.333,
+     "3.5": 0.167
+    },
+    "btts": 0.333,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.5,
+    "ppg": 0.67,
+    "sot_pg": 7.5,
+    "sota_pg": 4.5
+   },
+   "last6_log": [
+    "20261025 A Sagan Tosu 0-2",
+    "20261031 H Montedio Yamagata 1-2",
+    "20261103 A Oita Trinita 0-1",
+    "20261108 H Hokkaido Consadole Sapporo 0-1",
+    "20261115 H Iwaki 2-2",
+    "20261121 A Kofu 2-0"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 1,
+   "rank": 17,
+   "points": 18
+  },
+  "Tochigi City": {
+   "season": {
+    "gp": 18,
+    "w": 4,
+    "d": 3,
+    "l": 11,
+    "gf_pg": 1.5,
+    "ga_pg": 1.94,
+    "total_pg": 3.44,
+    "over": {
+     "1.5": 0.944,
+     "2.5": 0.833,
+     "3.5": 0.444
+    },
+    "btts": 0.611,
+    "clean_sheet": 0.111,
+    "failed_to_score": 0.333,
+    "ppg": 0.83,
+    "sot_pg": 4.9,
+    "sota_pg": 7.2
+   },
+   "home": {
+    "gp": 9,
+    "w": 1,
+    "d": 2,
+    "l": 6,
+    "gf_pg": 1.33,
+    "ga_pg": 2.22,
+    "total_pg": 3.56,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.889,
+     "3.5": 0.556
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.111,
+    "failed_to_score": 0.222,
+    "ppg": 0.56,
+    "sot_pg": 4.1,
+    "sota_pg": 6.8
+   },
+   "away": {
+    "gp": 9,
+    "w": 3,
+    "d": 1,
+    "l": 5,
+    "gf_pg": 1.67,
+    "ga_pg": 1.67,
+    "total_pg": 3.33,
+    "over": {
+     "1.5": 0.889,
+     "2.5": 0.778,
+     "3.5": 0.333
+    },
+    "btts": 0.556,
+    "clean_sheet": 0.111,
+    "failed_to_score": 0.444,
+    "ppg": 1.11,
+    "sot_pg": 5.7,
+    "sota_pg": 7.7
+   },
+   "last6": {
+    "gp": 6,
+    "w": 1,
+    "d": 0,
+    "l": 5,
+    "gf_pg": 1.33,
+    "ga_pg": 2.5,
+    "total_pg": 3.83,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 1.0,
+     "3.5": 0.333
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.5,
+    "ppg": 0.5,
+    "sot_pg": 4.3,
+    "sota_pg": 8.7
+   },
+   "last6_log": [
+    "20261025 A Shonan Bellmare 1-2",
+    "20261031 H Iwaki 1-3",
+    "20261103 A Tegevajaro Miyazaki 0-3",
+    "20261108 H Omiya Ardija 0-3",
+    "20261114 A Oita Trinita 6-1",
+    "20261121 H Albirex Niigata 0-3"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 1,
+   "rank": 18,
+   "points": 15
+  },
+  "Imabari": {
+   "season": {
+    "gp": 18,
+    "w": 4,
+    "d": 3,
+    "l": 11,
+    "gf_pg": 0.94,
+    "ga_pg": 1.89,
+    "total_pg": 2.83,
+    "over": {
+     "1.5": 0.778,
+     "2.5": 0.611,
+     "3.5": 0.278
+    },
+    "btts": 0.556,
+    "clean_sheet": 0.111,
+    "failed_to_score": 0.333,
+    "ppg": 0.83,
+    "sot_pg": 4.2,
+    "sota_pg": 4.7
+   },
+   "home": {
+    "gp": 8,
+    "w": 1,
+    "d": 2,
+    "l": 5,
+    "gf_pg": 1.0,
+    "ga_pg": 2.25,
+    "total_pg": 3.25,
+    "over": {
+     "1.5": 0.875,
+     "2.5": 0.625,
+     "3.5": 0.375
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.125,
+    "failed_to_score": 0.375,
+    "ppg": 0.62,
+    "sot_pg": 4.8,
+    "sota_pg": 4.5
+   },
+   "away": {
+    "gp": 10,
+    "w": 3,
+    "d": 1,
+    "l": 6,
+    "gf_pg": 0.9,
+    "ga_pg": 1.6,
+    "total_pg": 2.5,
+    "over": {
+     "1.5": 0.7,
+     "2.5": 0.6,
+     "3.5": 0.2
+    },
+    "btts": 0.6,
+    "clean_sheet": 0.1,
+    "failed_to_score": 0.3,
+    "ppg": 1.0,
+    "sot_pg": 3.7,
+    "sota_pg": 4.9
+   },
+   "last6": {
+    "gp": 6,
+    "w": 1,
+    "d": 1,
+    "l": 4,
+    "gf_pg": 0.33,
+    "ga_pg": 1.5,
+    "total_pg": 1.83,
+    "over": {
+     "1.5": 0.5,
+     "2.5": 0.167,
+     "3.5": 0.167
+    },
+    "btts": 0.167,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.667,
+    "ppg": 0.67,
+    "sot_pg": 4.5,
+    "sota_pg": 4.2
+   },
+   "last6_log": [
+    "20261025 A Blaublitz 0-1",
+    "20261031 H Kofu 1-1",
+    "20261103 H Hokkaido Consadole Sapporo 0-4",
+    "20261107 A Albirex Niigata 0-1",
+    "20261115 H Iwata 0-2",
+    "20261121 A Fujieda MYFC 1-0"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 1,
+   "rank": 19,
+   "points": 15
+  },
+  "Kofu": {
+   "season": {
+    "gp": 18,
+    "w": 3,
+    "d": 3,
+    "l": 12,
+    "gf_pg": 0.67,
+    "ga_pg": 2.06,
+    "total_pg": 2.72,
+    "over": {
+     "1.5": 0.778,
+     "2.5": 0.5,
+     "3.5": 0.167
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.5,
+    "ppg": 0.67,
+    "sot_pg": 3.8,
+    "sota_pg": 5.2
+   },
+   "home": {
+    "gp": 9,
+    "w": 2,
+    "d": 1,
+    "l": 6,
+    "gf_pg": 0.67,
+    "ga_pg": 1.44,
+    "total_pg": 2.11,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.444,
+     "3.5": 0.0
+    },
+    "btts": 0.444,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.556,
+    "ppg": 0.78,
+    "sot_pg": 4.2,
+    "sota_pg": 4.0
+   },
+   "away": {
+    "gp": 9,
+    "w": 1,
+    "d": 2,
+    "l": 6,
+    "gf_pg": 0.67,
+    "ga_pg": 2.67,
+    "total_pg": 3.33,
+    "over": {
+     "1.5": 0.889,
+     "2.5": 0.556,
+     "3.5": 0.333
+    },
+    "btts": 0.556,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.444,
+    "ppg": 0.56,
+    "sot_pg": 3.3,
+    "sota_pg": 6.4
+   },
+   "last6": {
+    "gp": 6,
+    "w": 0,
+    "d": 2,
+    "l": 4,
+    "gf_pg": 0.5,
+    "ga_pg": 1.83,
+    "total_pg": 2.33,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.167,
+     "3.5": 0.167
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.5,
+    "ppg": 0.33,
+    "sot_pg": 3.5,
+    "sota_pg": 5.3
+   },
+   "last6_log": [
+    "20261025 A Oita Trinita 1-1",
+    "20261031 A Imabari 1-1",
+    "20261103 H Albirex Niigata 0-1",
+    "20261108 A Vegalta Sendai 1-5",
+    "20261114 A Fujieda MYFC 0-1",
+    "20261121 H Vanraure 0-2"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 1,
+   "rank": 20,
+   "points": 12
+  }
+ },
+ "h2h": {
+  "Hokkaido Consadole Sapporo vs Tokushima": [
+   "20260808 Hokkaido Consadole Sapporo 2-0 Tokushima"
+  ],
+  "Fujieda MYFC vs Vegalta Sendai": [
+   "20260808 Fujieda MYFC 2-0 Vegalta Sendai"
+  ],
+  "Toyama vs Vanraure": [
+   "20260808 Vanraure 2-0 Toyama"
+  ],
+  "Blaublitz vs Iwata": [
+   "20260808 Iwata 1-1 Blaublitz"
+  ],
+  "Oita Trinita vs Shonan Bellmare": [
+   "20260808 Oita Trinita 0-1 Shonan Bellmare"
+  ],
+  "Albirex Niigata vs Omiya Ardija": [
+   "20260808 Omiya Ardija 1-0 Albirex Niigata"
+  ],
+  "Tegevajaro Miyazaki vs Yokohama FC": [
+   "20260808 Tegevajaro Miyazaki 0-1 Yokohama FC"
+  ],
+  "Kofu vs Sagan Tosu": [
+   "20260808 Sagan Tosu 2-0 Kofu"
+  ],
+  "Imabari vs Iwaki": [
+   "20260809 Iwaki 2-1 Imabari"
+  ],
+  "Montedio Yamagata vs Tochigi City": [
+   "20260809 Montedio Yamagata 2-0 Tochigi City"
+  ],
+  "Blaublitz vs Toyama": [
+   "20260815 Blaublitz 0-4 Toyama"
+  ],
+  "Tochigi City vs Vanraure": [
+   "20260815 Tochigi City 5-0 Vanraure"
+  ],
+  "Fujieda MYFC vs Iwaki": [
+   "20260815 Fujieda MYFC 3-1 Iwaki"
+  ],
+  "Albirex Niigata vs Hokkaido Consadole Sapporo": [
+   "20260815 Albirex Niigata 2-1 Hokkaido Consadole Sapporo"
+  ],
+  "Imabari vs Omiya Ardija": [
+   "20260815 Imabari 2-3 Omiya Ardija"
+  ],
+  "Kofu vs Tegevajaro Miyazaki": [
+   "20260815 Kofu 1-1 Tegevajaro Miyazaki"
+  ],
+  "Montedio Yamagata vs Shonan Bellmare": [
+   "20260815 Shonan Bellmare 1-0 Montedio Yamagata"
+  ],
+  "Oita Trinita vs Vegalta Sendai": [
+   "20260815 Vegalta Sendai 0-0 Oita Trinita"
+  ],
+  "Iwata vs Yokohama FC": [
+   "20260816 Yokohama FC 3-1 Iwata"
+  ],
+  "Sagan Tosu vs Tokushima": [
+   "20260816 Tokushima 0-0 Sagan Tosu"
+  ],
+  "Hokkaido Consadole Sapporo vs Omiya Ardija": [
+   "20260822 Hokkaido Consadole Sapporo 1-4 Omiya Ardija"
+  ],
+  "Vanraure vs Vegalta Sendai": [
+   "20260822 Vanraure 0-2 Vegalta Sendai"
+  ],
+  "Blaublitz vs Kofu": [
+   "20260822 Blaublitz 3-0 Kofu"
+  ],
+  "Imabari vs Toyama": [
+   "20260822 Toyama 4-0 Imabari"
+  ],
+  "Albirex Niigata vs Fujieda MYFC": [
+   "20260822 Albirex Niigata 1-0 Fujieda MYFC"
+  ],
+  "Iwata vs Tokushima": [
+   "20260822 Iwata 2-1 Tokushima"
+  ],
+  "Montedio Yamagata vs Yokohama FC": [
+   "20260822 Montedio Yamagata 2-0 Yokohama FC"
+  ],
+  "Iwaki vs Oita Trinita": [
+   "20260822 Oita Trinita 4-1 Iwaki"
+  ],
+  "Sagan Tosu vs Tochigi City": [
+   "20260822 Sagan Tosu 1-3 Tochigi City"
+  ],
+  "Shonan Bellmare vs Tegevajaro Miyazaki": [
+   "20260822 Tegevajaro Miyazaki 0-0 Shonan Bellmare"
+  ],
+  "Albirex Niigata vs Iwaki": [
+   "20260829 Iwaki 2-3 Albirex Niigata"
+  ],
+  "Iwata vs Tochigi City": [
+   "20260829 Tochigi City 1-3 Iwata"
+  ],
+  "Fujieda MYFC vs Toyama": [
+   "20260829 Toyama 2-3 Fujieda MYFC"
+  ],
+  "Blaublitz vs Vanraure": [
+   "20260829 Vanraure 1-0 Blaublitz"
+  ],
+  "Imabari vs Montedio Yamagata": [
+   "20260829 Imabari 0-3 Montedio Yamagata"
+  ],
+  "Hokkaido Consadole Sapporo vs Kofu": [
+   "20260829 Kofu 2-1 Hokkaido Consadole Sapporo"
+  ],
+  "Omiya Ardija vs Shonan Bellmare": [
+   "20260829 Omiya Ardija 2-2 Shonan Bellmare"
+  ],
+  "Oita Trinita vs Tokushima": [
+   "20260829 Tokushima 1-0 Oita Trinita"
+  ],
+  "Tegevajaro Miyazaki vs Vegalta Sendai": [
+   "20260829 Vegalta Sendai 4-2 Tegevajaro Miyazaki"
+  ],
+  "Sagan Tosu vs Yokohama FC": [
+   "20260829 Yokohama FC 2-2 Sagan Tosu"
+  ],
+  "Fujieda MYFC vs Vanraure": [
+   "20260905 Fujieda MYFC 0-0 Vanraure"
+  ],
+  "Kofu vs Montedio Yamagata": [
+   "20260905 Montedio Yamagata 1-2 Kofu"
+  ],
+  "Sagan Tosu vs Tegevajaro Miyazaki": [
+   "20260905 Sagan Tosu 2-0 Tegevajaro Miyazaki"
+  ],
+  "Shonan Bellmare vs Vegalta Sendai": [
+   "20260905 Shonan Bellmare 1-3 Vegalta Sendai"
+  ],
+  "Iwaki vs Tokushima": [
+   "20260905 Tokushima 1-0 Iwaki"
+  ],
+  "Hokkaido Consadole Sapporo vs Tochigi City": [
+   "20260906 Hokkaido Consadole Sapporo 1-4 Tochigi City"
+  ],
+  "Blaublitz vs Omiya Ardija": [
+   "20260906 Blaublitz 0-0 Omiya Ardija"
+  ],
+  "Albirex Niigata vs Yokohama FC": [
+   "20260906 Yokohama FC 5-0 Albirex Niigata"
+  ],
+  "Iwata vs Toyama": [
+   "20260906 Iwata 0-1 Toyama"
+  ],
+  "Imabari vs Oita Trinita": [
+   "20260906 Oita Trinita 1-1 Imabari"
+  ],
+  "Blaublitz vs Tokushima": [
+   "20260912 Blaublitz 4-1 Tokushima"
+  ],
+  "Iwaki vs Yokohama FC": [
+   "20260912 Iwaki 2-0 Yokohama FC"
+  ],
+  "Tochigi City vs Toyama": [
+   "20260912 Toyama 0-0 Tochigi City"
+  ],
+  "Shonan Bellmare vs Vanraure": [
+   "20260912 Vanraure 0-1 Shonan Bellmare"
+  ],
+  "Imabari vs Sagan Tosu": [
+   "20260912 Imabari 1-0 Sagan Tosu"
+  ],
+  "Iwata vs Kofu": [
+   "20260912 Kofu 0-1 Iwata"
+  ],
+  "Oita Trinita vs Omiya Ardija": [
+   "20260912 Omiya Ardija 0-0 Oita Trinita"
+  ],
+  "Fujieda MYFC vs Tegevajaro Miyazaki": [
+   "20260912 Tegevajaro Miyazaki 3-2 Fujieda MYFC"
+  ],
+  "Albirex Niigata vs Montedio Yamagata": [
+   "20260913 Albirex Niigata 1-0 Montedio Yamagata"
+  ],
+  "Hokkaido Consadole Sapporo vs Vegalta Sendai": [
+   "20260913 Vegalta Sendai 1-1 Hokkaido Consadole Sapporo"
+  ],
+  "Tegevajaro Miyazaki vs Vanraure": [
+   "20260918 Vanraure 0-3 Tegevajaro Miyazaki"
+  ],
+  "Hokkaido Consadole Sapporo vs Oita Trinita": [
+   "20260919 Hokkaido Consadole Sapporo 1-1 Oita Trinita"
+  ],
+  "Fujieda MYFC vs Omiya Ardija": [
+   "20260919 Fujieda MYFC 1-1 Omiya Ardija"
+  ],
+  "Albirex Niigata vs Iwata": [
+   "20260919 Albirex Niigata 2-1 Iwata"
+  ],
+  "Kofu vs Tokushima": [
+   "20260919 Kofu 0-1 Tokushima"
+  ],
+  "Montedio Yamagata vs Toyama": [
+   "20260919 Montedio Yamagata 0-2 Toyama"
+  ],
+  "Iwaki vs Sagan Tosu": [
+   "20260919 Sagan Tosu 1-3 Iwaki"
+  ],
+  "Blaublitz vs Shonan Bellmare": [
+   "20260919 Shonan Bellmare 1-1 Blaublitz"
+  ],
+  "Imabari vs Yokohama FC": [
+   "20260919 Yokohama FC 2-1 Imabari"
+  ],
+  "Tochigi City vs Vegalta Sendai": [
+   "20260920 Tochigi City 1-3 Vegalta Sendai"
+  ],
+  "Albirex Niigata vs Blaublitz": [
+   "20260926 Blaublitz 2-2 Albirex Niigata"
+  ],
+  "Imabari vs Shonan Bellmare": [
+   "20260926 Imabari 1-2 Shonan Bellmare"
+  ],
+  "Iwaki vs Vegalta Sendai": [
+   "20260926 Iwaki 0-2 Vegalta Sendai"
+  ],
+  "Iwata vs Vanraure": [
+   "20260926 Iwata 1-2 Vanraure"
+  ],
+  "Montedio Yamagata vs Sagan Tosu": [
+   "20260926 Montedio Yamagata 2-0 Sagan Tosu"
+  ],
+  "Fujieda MYFC vs Oita Trinita": [
+   "20260926 Oita Trinita 1-1 Fujieda MYFC"
+  ],
+  "Kofu vs Omiya Ardija": [
+   "20260926 Omiya Ardija 5-1 Kofu"
+  ],
+  "Hokkaido Consadole Sapporo vs Tegevajaro Miyazaki": [
+   "20260926 Tegevajaro Miyazaki 3-2 Hokkaido Consadole Sapporo"
+  ],
+  "Tochigi City vs Tokushima": [
+   "20260926 Tokushima 3-0 Tochigi City"
+  ],
+  "Toyama vs Yokohama FC": [
+   "20260926 Toyama 3-3 Yokohama FC"
+  ],
+  "Albirex Niigata vs Tokushima": [
+   "20261003 Albirex Niigata 2-1 Tokushima"
+  ],
+  "Fujieda MYFC vs Shonan Bellmare": [
+   "20261003 Fujieda MYFC 1-1 Shonan Bellmare"
+  ],
+  "Kofu vs Toyama": [
+   "20261003 Kofu 1-2 Toyama"
+  ],
+  "Montedio Yamagata vs Oita Trinita": [
+   "20261003 Oita Trinita 2-1 Montedio Yamagata"
+  ],
+  "Imabari vs Tochigi City": [
+   "20261003 Tochigi City 1-2 Imabari"
+  ],
+  "Hokkaido Consadole Sapporo vs Iwaki": [
+   "20261004 Hokkaido Consadole Sapporo 2-1 Iwaki"
+  ],
+  "Vanraure vs Yokohama FC": [
+   "20261004 Vanraure 0-2 Yokohama FC"
+  ],
+  "Blaublitz vs Sagan Tosu": [
+   "20261004 Blaublitz 1-0 Sagan Tosu"
+  ],
+  "Iwata vs Vegalta Sendai": [
+   "20261004 Vegalta Sendai 2-1 Iwata"
+  ],
+  "Omiya Ardija vs Tegevajaro Miyazaki": [
+   "20261004 Tegevajaro Miyazaki 1-1 Omiya Ardija"
+  ],
+  "Omiya Ardija vs Vanraure": [
+   "20261010 Omiya Ardija 3-1 Vanraure"
+  ],
+  "Fujieda MYFC vs Sagan Tosu": [
+   "20261010 Sagan Tosu 1-0 Fujieda MYFC"
+  ],
+  "Imabari vs Tokushima": [
+   "20261010 Tokushima 1-2 Imabari"
+  ],
+  "Oita Trinita vs Yokohama FC": [
+   "20261010 Yokohama FC 1-2 Oita Trinita"
+  ],
+  "Kofu vs Tochigi City": [
+   "20261010 Kofu 2-1 Tochigi City"
+  ],
+  "Hokkaido Consadole Sapporo vs Iwata": [
+   "20261010 Iwata 1-0 Hokkaido Consadole Sapporo"
+  ],
+  "Montedio Yamagata vs Vegalta Sendai": [
+   "20261011 Montedio Yamagata 0-1 Vegalta Sendai"
+  ],
+  "Tegevajaro Miyazaki vs Toyama": [
+   "20261011 Toyama 1-1 Tegevajaro Miyazaki"
+  ],
+  "Blaublitz vs Iwaki": [
+   "20261011 Iwaki 1-0 Blaublitz"
+  ],
+  "Albirex Niigata vs Shonan Bellmare": [
+   "20261011 Shonan Bellmare 1-1 Albirex Niigata"
+  ],
+  "Fujieda MYFC vs Montedio Yamagata": [
+   "20261017 Fujieda MYFC 0-0 Montedio Yamagata"
+  ],
+  "Blaublitz vs Hokkaido Consadole Sapporo": [
+   "20261017 Hokkaido Consadole Sapporo 1-0 Blaublitz"
+  ],
+  "Imabari vs Vanraure": [
+   "20261017 Imabari 3-3 Vanraure"
+  ],
+  "Albirex Niigata vs Oita Trinita": [
+   "20261017 Oita Trinita 5-1 Albirex Niigata"
+  ],
+  "Omiya Ardija vs Sagan Tosu": [
+   "20261017 Sagan Tosu 2-1 Omiya Ardija"
+  ],
+  "Tochigi City vs Yokohama FC": [
+   "20261017 Tochigi City 1-1 Yokohama FC"
+  ],
+  "Tokushima vs Vegalta Sendai": [
+   "20261017 Vegalta Sendai 0-0 Tokushima"
+  ],
+  "Shonan Bellmare vs Toyama": [
+   "20261017 Toyama 1-1 Shonan Bellmare"
+  ],
+  "Iwata vs Tegevajaro Miyazaki": [
+   "20261017 Tegevajaro Miyazaki 1-1 Iwata"
+  ],
+  "Iwaki vs Kofu": [
+   "20261018 Iwaki 5-0 Kofu"
+  ],
+  "Hokkaido Consadole Sapporo vs Montedio Yamagata": [
+   "20261021 Montedio Yamagata 0-2 Hokkaido Consadole Sapporo"
+  ],
+  "Albirex Niigata vs Sagan Tosu": [
+   "20261021 Albirex Niigata 2-1 Sagan Tosu"
+  ],
+  "Iwata vs Oita Trinita": [
+   "20261021 Iwata 0-0 Oita Trinita"
+  ],
+  "Kofu vs Yokohama FC": [
+   "20261021 Kofu 0-3 Yokohama FC"
+  ],
+  "Omiya Ardija vs Toyama": [
+   "20261021 Omiya Ardija 0-3 Toyama"
+  ],
+  "Iwaki vs Shonan Bellmare": [
+   "20261021 Shonan Bellmare 1-1 Iwaki"
+  ],
+  "Blaublitz vs Tegevajaro Miyazaki": [
+   "20261021 Tegevajaro Miyazaki 2-1 Blaublitz"
+  ],
+  "Fujieda MYFC vs Tochigi City": [
+   "20261021 Tochigi City 2-2 Fujieda MYFC"
+  ],
+  "Tokushima vs Vanraure": [
+   "20261021 Tokushima 0-1 Vanraure"
+  ],
+  "Imabari vs Vegalta Sendai": [
+   "20261021 Vegalta Sendai 3-1 Imabari"
+  ],
+  "Fujieda MYFC vs Tokushima": [
+   "20261024 Fujieda MYFC 0-1 Tokushima"
+  ],
+  "Omiya Ardija vs Yokohama FC": [
+   "20261024 Omiya Ardija 2-2 Yokohama FC"
+  ],
+  "Albirex Niigata vs Vegalta Sendai": [
+   "20261025 Albirex Niigata 2-1 Vegalta Sendai"
+  ],
+  "Blaublitz vs Imabari": [
+   "20261025 Blaublitz 1-0 Imabari"
+  ],
+  "Montedio Yamagata vs Tegevajaro Miyazaki": [
+   "20261025 Montedio Yamagata 0-2 Tegevajaro Miyazaki"
+  ],
+  "Kofu vs Oita Trinita": [
+   "20261025 Oita Trinita 1-1 Kofu"
+  ],
+  "Sagan Tosu vs Vanraure": [
+   "20261025 Sagan Tosu 2-0 Vanraure"
+  ],
+  "Hokkaido Consadole Sapporo vs Toyama": [
+   "20261025 Toyama 0-1 Hokkaido Consadole Sapporo"
+  ],
+  "Iwaki vs Iwata": [
+   "20261025 Iwaki 1-1 Iwata"
+  ],
+  "Shonan Bellmare vs Tochigi City": [
+   "20261025 Shonan Bellmare 2-1 Tochigi City"
+  ],
+  "Hokkaido Consadole Sapporo vs Shonan Bellmare": [
+   "20261031 Hokkaido Consadole Sapporo 1-0 Shonan Bellmare"
+  ],
+  "Albirex Niigata vs Toyama": [
+   "20261031 Albirex Niigata 2-3 Toyama"
+  ],
+  "Blaublitz vs Fujieda MYFC": [
+   "20261031 Blaublitz 1-1 Fujieda MYFC"
+  ],
+  "Iwata vs Sagan Tosu": [
+   "20261031 Iwata 2-0 Sagan Tosu"
+  ],
+  "Oita Trinita vs Tegevajaro Miyazaki": [
+   "20261031 Tegevajaro Miyazaki 2-0 Oita Trinita"
+  ],
+  "Iwaki vs Tochigi City": [
+   "20261031 Tochigi City 1-3 Iwaki"
+  ],
+  "Tokushima vs Yokohama FC": [
+   "20261031 Tokushima 0-1 Yokohama FC"
+  ],
+  "Montedio Yamagata vs Vanraure": [
+   "20261031 Vanraure 1-2 Montedio Yamagata"
+  ],
+  "Omiya Ardija vs Vegalta Sendai": [
+   "20261031 Vegalta Sendai 1-2 Omiya Ardija"
+  ],
+  "Imabari vs Kofu": [
+   "20261031 Imabari 1-1 Kofu"
+  ],
+  "Toyama vs Vegalta Sendai": [
+   "20261103 Toyama 1-0 Vegalta Sendai"
+  ],
+  "Fujieda MYFC vs Iwata": [
+   "20261103 Fujieda MYFC 1-2 Iwata"
+  ],
+  "Albirex Niigata vs Kofu": [
+   "20261103 Kofu 0-1 Albirex Niigata"
+  ],
+  "Montedio Yamagata vs Tokushima": [
+   "20261103 Montedio Yamagata 1-0 Tokushima"
+  ],
+  "Oita Trinita vs Vanraure": [
+   "20261103 Oita Trinita 1-0 Vanraure"
+  ],
+  "Iwaki vs Omiya Ardija": [
+   "20261103 Omiya Ardija 2-1 Iwaki"
+  ],
+  "Sagan Tosu vs Shonan Bellmare": [
+   "20261103 Shonan Bellmare 0-1 Sagan Tosu"
+  ],
+  "Tegevajaro Miyazaki vs Tochigi City": [
+   "20261103 Tegevajaro Miyazaki 3-0 Tochigi City"
+  ],
+  "Blaublitz vs Yokohama FC": [
+   "20261103 Yokohama FC 2-1 Blaublitz"
+  ],
+  "Hokkaido Consadole Sapporo vs Imabari": [
+   "20261103 Imabari 0-4 Hokkaido Consadole Sapporo"
+  ],
+  "Albirex Niigata vs Imabari": [
+   "20261107 Albirex Niigata 1-0 Imabari"
+  ],
+  "Blaublitz vs Oita Trinita": [
+   "20261107 Blaublitz 2-1 Oita Trinita"
+  ],
+  "Iwaki vs Montedio Yamagata": [
+   "20261107 Iwaki 2-0 Montedio Yamagata"
+  ],
+  "Sagan Tosu vs Toyama": [
+   "20261107 Sagan Tosu 1-2 Toyama"
+  ],
+  "Tegevajaro Miyazaki vs Tokushima": [
+   "20261107 Tokushima 1-2 Tegevajaro Miyazaki"
+  ],
+  "Fujieda MYFC vs Yokohama FC": [
+   "20261107 Yokohama FC 4-0 Fujieda MYFC"
+  ],
+  "Hokkaido Consadole Sapporo vs Vanraure": [
+   "20261108 Vanraure 0-1 Hokkaido Consadole Sapporo"
+  ],
+  "Iwata vs Shonan Bellmare": [
+   "20261108 Iwata 1-1 Shonan Bellmare"
+  ],
+  "Omiya Ardija vs Tochigi City": [
+   "20261108 Tochigi City 0-3 Omiya Ardija"
+  ],
+  "Kofu vs Vegalta Sendai": [
+   "20261108 Vegalta Sendai 5-1 Kofu"
+  ],
+  "Albirex Niigata vs Tegevajaro Miyazaki": [
+   "20261114 Albirex Niigata 1-3 Tegevajaro Miyazaki"
+  ],
+  "Fujieda MYFC vs Kofu": [
+   "20261114 Fujieda MYFC 1-0 Kofu"
+  ],
+  "Oita Trinita vs Tochigi City": [
+   "20261114 Oita Trinita 1-6 Tochigi City"
+  ],
+  "Montedio Yamagata vs Omiya Ardija": [
+   "20261114 Omiya Ardija 2-1 Montedio Yamagata"
+  ],
+  "Shonan Bellmare vs Yokohama FC": [
+   "20261114 Shonan Bellmare 2-0 Yokohama FC"
+  ],
+  "Hokkaido Consadole Sapporo vs Sagan Tosu": [
+   "20261115 Hokkaido Consadole Sapporo 1-2 Sagan Tosu"
+  ],
+  "Iwaki vs Vanraure": [
+   "20261115 Vanraure 2-2 Iwaki"
+  ],
+  "Blaublitz vs Vegalta Sendai": [
+   "20261115 Vegalta Sendai 4-0 Blaublitz"
+  ],
+  "Imabari vs Iwata": [
+   "20261115 Imabari 0-2 Iwata"
+  ],
+  "Tokushima vs Toyama": [
+   "20261115 Toyama 2-3 Tokushima"
+  ],
+  "Blaublitz vs Montedio Yamagata": [
+   "20261121 Blaublitz 3-1 Montedio Yamagata"
+  ],
+  "Fujieda MYFC vs Imabari": [
+   "20261121 Fujieda MYFC 0-1 Imabari"
+  ],
+  "Iwata vs Omiya Ardija": [
+   "20261121 Iwata 2-0 Omiya Ardija"
+  ],
+  "Kofu vs Vanraure": [
+   "20261121 Kofu 0-2 Vanraure"
+  ],
+  "Sagan Tosu vs Vegalta Sendai": [
+   "20261121 Sagan Tosu 1-1 Vegalta Sendai"
+  ],
+  "Iwaki vs Tegevajaro Miyazaki": [
+   "20261121 Tegevajaro Miyazaki 1-1 Iwaki"
+  ],
+  "Albirex Niigata vs Tochigi City": [
+   "20261121 Tochigi City 0-3 Albirex Niigata"
+  ],
+  "Oita Trinita vs Toyama": [
+   "20261121 Toyama 1-1 Oita Trinita"
+  ],
+  "Hokkaido Consadole Sapporo vs Yokohama FC": [
+   "20261121 Yokohama FC 0-2 Hokkaido Consadole Sapporo"
+  ],
+  "Shonan Bellmare vs Tokushima": [
+   "20261122 Tokushima 1-2 Shonan Bellmare"
+  ]
+ }
+}

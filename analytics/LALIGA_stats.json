@@ -1,78 +1,78 @@
 {
  "meta": {
-  "generated_kst": "2026-11-22 22:04",
+  "generated_kst": "2026-11-23 13:13",
   "league": "LALIGA",
   "season_start": "20260701",
-  "games": 124,
-  "last_game_date": "20261121",
+  "games": 128,
+  "last_game_date": "20261122",
   "league_avg": {
-   "games": 124,
-   "home_win": 0.435,
-   "draw": 0.258,
-   "away_win": 0.306,
-   "goals_pg": 2.86,
+   "games": 128,
+   "home_win": 0.445,
+   "draw": 0.25,
+   "away_win": 0.305,
+   "goals_pg": 2.88,
    "home_gf_pg": 1.6,
-   "away_gf_pg": 1.27,
+   "away_gf_pg": 1.28,
    "over": {
     "1.5": 0.75,
-    "2.5": 0.548,
-    "3.5": 0.315
+    "2.5": 0.555,
+    "3.5": 0.32
    },
-   "btts": 0.556
+   "btts": 0.555
   },
   "notes": "REG만 집계 / over는 해당 기준점 초과 비율 / g_minus_xg +는 득점 과열(회귀 후보) / rest_days는 오늘(KST) 기준"
  },
  "teams": {
   "Barcelona": {
    "season": {
-    "gp": 12,
-    "w": 11,
+    "gp": 13,
+    "w": 12,
     "d": 0,
     "l": 1,
-    "gf_pg": 4.0,
-    "ga_pg": 1.08,
+    "gf_pg": 3.92,
+    "ga_pg": 1.15,
     "total_pg": 5.08,
     "over": {
      "1.5": 1.0,
-     "2.5": 0.917,
-     "3.5": 0.667
+     "2.5": 0.923,
+     "3.5": 0.692
     },
-    "btts": 0.667,
-    "clean_sheet": 0.333,
+    "btts": 0.692,
+    "clean_sheet": 0.308,
     "failed_to_score": 0.0,
-    "ppg": 2.75,
+    "ppg": 2.77,
     "xg_pg": 3.3,
-    "xga_pg": 1.11,
-    "xg_n": 12,
-    "g_minus_xg": 0.7,
-    "ga_minus_xga": -0.03,
+    "xga_pg": 1.04,
+    "xg_n": 13,
+    "g_minus_xg": 0.63,
+    "ga_minus_xga": 0.11,
     "sot_pg": 7.8,
-    "sota_pg": 3.3
+    "sota_pg": 3.2
    },
    "home": {
-    "gp": 6,
-    "w": 5,
+    "gp": 7,
+    "w": 6,
     "d": 0,
     "l": 1,
-    "gf_pg": 4.0,
-    "ga_pg": 1.17,
-    "total_pg": 5.17,
+    "gf_pg": 3.86,
+    "ga_pg": 1.29,
+    "total_pg": 5.14,
     "over": {
      "1.5": 1.0,
-     "2.5": 0.833,
-     "3.5": 0.5
+     "2.5": 0.857,
+     "3.5": 0.571
     },
-    "btts": 0.667,
-    "clean_sheet": 0.333,
+    "btts": 0.714,
+    "clean_sheet": 0.286,
     "failed_to_score": 0.0,
-    "ppg": 2.5,
-    "xg_pg": 3.4,
-    "xga_pg": 1.05,
-    "xg_n": 6,
-    "g_minus_xg": 0.6,
-    "ga_minus_xga": 0.12,
-    "sot_pg": 8.2,
-    "sota_pg": 2.8
+    "ppg": 2.57,
+    "xg_pg": 3.38,
+    "xga_pg": 0.93,
+    "xg_n": 7,
+    "g_minus_xg": 0.48,
+    "ga_minus_xga": 0.36,
+    "sot_pg": 8.3,
+    "sota_pg": 2.7
    },
    "away": {
     "gp": 6,
@@ -105,8 +105,8 @@
     "d": 0,
     "l": 1,
     "gf_pg": 3.33,
-    "ga_pg": 1.17,
-    "total_pg": 4.5,
+    "ga_pg": 1.33,
+    "total_pg": 4.67,
     "over": {
      "1.5": 1.0,
      "2.5": 1.0,
@@ -116,26 +116,26 @@
     "clean_sheet": 0.167,
     "failed_to_score": 0.0,
     "ppg": 2.5,
-    "xg_pg": 2.43,
-    "xga_pg": 1.02,
+    "xg_pg": 2.39,
+    "xga_pg": 0.99,
     "xg_n": 6,
-    "g_minus_xg": 0.9,
-    "ga_minus_xga": 0.14,
-    "sot_pg": 7.0,
-    "sota_pg": 3.5
+    "g_minus_xg": 0.94,
+    "ga_minus_xga": 0.34,
+    "sot_pg": 7.3,
+    "sota_pg": 3.3
    },
    "last6_log": [
-    "20260919 A Sevilla 3-1 (xG 3.48-0.4)",
     "20261010 H Getafe 3-0 (xG 1.94-0.14)",
     "20261017 A Betis 5-2 (xG 3.11-1.23)",
     "20261025 H Real Madrid 1-2 (xG 1.19-1.94)",
     "20261031 H Alaves 6-1 (xG 3.26-0.76)",
-    "20261108 A Atl. Madrid 2-1 (xG 1.6-1.67)"
+    "20261108 A Atl. Madrid 2-1 (xG 1.6-1.67)",
+    "20261122 H Villarreal 3-2 (xG 3.23-0.2)"
    ],
-   "last_game_date": "20261108",
-   "rest_days": 13,
+   "last_game_date": "20261122",
+   "rest_days": 0,
    "rank": 1,
-   "points": 33
+   "points": 36
   },
   "Real Madrid": {
    "season": {
@@ -247,35 +247,35 @@
     "20261121 H Celta Vigo 2-1 (xG 3.76-1.5)"
    ],
    "last_game_date": "20261121",
-   "rest_days": 0,
+   "rest_days": 1,
    "rank": 2,
    "points": 33
   },
   "Atl. Madrid": {
    "season": {
-    "gp": 12,
-    "w": 9,
+    "gp": 13,
+    "w": 10,
     "d": 1,
     "l": 2,
-    "gf_pg": 1.92,
-    "ga_pg": 0.83,
-    "total_pg": 2.75,
+    "gf_pg": 2.0,
+    "ga_pg": 0.77,
+    "total_pg": 2.77,
     "over": {
-     "1.5": 0.833,
-     "2.5": 0.667,
-     "3.5": 0.25
+     "1.5": 0.846,
+     "2.5": 0.692,
+     "3.5": 0.231
     },
-    "btts": 0.417,
-    "clean_sheet": 0.5,
-    "failed_to_score": 0.083,
-    "ppg": 2.33,
-    "xg_pg": 1.61,
-    "xga_pg": 1.13,
-    "xg_n": 12,
-    "g_minus_xg": 0.31,
-    "ga_minus_xga": -0.3,
-    "sot_pg": 5.9,
-    "sota_pg": 3.4
+    "btts": 0.385,
+    "clean_sheet": 0.538,
+    "failed_to_score": 0.077,
+    "ppg": 2.38,
+    "xg_pg": 1.81,
+    "xga_pg": 1.08,
+    "xg_n": 13,
+    "g_minus_xg": 0.19,
+    "ga_minus_xga": -0.31,
+    "sot_pg": 6.2,
+    "sota_pg": 3.2
    },
    "home": {
     "gp": 6,
@@ -303,67 +303,67 @@
     "sota_pg": 3.3
    },
    "away": {
-    "gp": 6,
-    "w": 5,
+    "gp": 7,
+    "w": 6,
     "d": 0,
     "l": 1,
-    "gf_pg": 1.83,
-    "ga_pg": 0.83,
-    "total_pg": 2.67,
+    "gf_pg": 2.0,
+    "ga_pg": 0.71,
+    "total_pg": 2.71,
     "over": {
-     "1.5": 0.833,
-     "2.5": 0.667,
-     "3.5": 0.167
+     "1.5": 0.857,
+     "2.5": 0.714,
+     "3.5": 0.143
     },
-    "btts": 0.333,
-    "clean_sheet": 0.5,
-    "failed_to_score": 0.167,
-    "ppg": 2.5,
-    "xg_pg": 1.37,
-    "xga_pg": 0.96,
-    "xg_n": 6,
-    "g_minus_xg": 0.46,
-    "ga_minus_xga": -0.13,
-    "sot_pg": 5.5,
-    "sota_pg": 3.5
+    "btts": 0.286,
+    "clean_sheet": 0.571,
+    "failed_to_score": 0.143,
+    "ppg": 2.57,
+    "xg_pg": 1.77,
+    "xga_pg": 0.9,
+    "xg_n": 7,
+    "g_minus_xg": 0.23,
+    "ga_minus_xga": -0.18,
+    "sot_pg": 6.1,
+    "sota_pg": 3.1
    },
    "last6": {
     "gp": 6,
     "w": 5,
     "d": 0,
     "l": 1,
-    "gf_pg": 1.5,
-    "ga_pg": 0.67,
+    "gf_pg": 1.67,
+    "ga_pg": 0.5,
     "total_pg": 2.17,
     "over": {
      "1.5": 0.667,
      "2.5": 0.5,
      "3.5": 0.0
     },
-    "btts": 0.5,
-    "clean_sheet": 0.5,
+    "btts": 0.333,
+    "clean_sheet": 0.667,
     "failed_to_score": 0.0,
     "ppg": 2.5,
-    "xg_pg": 1.61,
-    "xga_pg": 1.13,
+    "xg_pg": 1.91,
+    "xga_pg": 1.16,
     "xg_n": 6,
-    "g_minus_xg": -0.11,
-    "ga_minus_xga": -0.46,
-    "sot_pg": 5.8,
-    "sota_pg": 3.5
+    "g_minus_xg": -0.24,
+    "ga_minus_xga": -0.66,
+    "sot_pg": 6.0,
+    "sota_pg": 3.2
    },
    "last6_log": [
-    "20260920 H Real Madrid 2-1 (xG 2.35-0.3)",
     "20261010 A Alaves 2-1 (xG 2.05-1.3)",
     "20261017 A Espanyol 1-0 (xG 1.47-0.51)",
     "20261024 H Dep. A Coruna 1-0 (xG 1.41-1.67)",
     "20261031 A Levante 2-0 (xG 0.69-1.4)",
-    "20261108 H Barcelona 1-2 (xG 1.67-1.6)"
+    "20261108 H Barcelona 1-2 (xG 1.67-1.6)",
+    "20261122 A Getafe 3-0 (xG 4.14-0.5)"
    ],
-   "last_game_date": "20261108",
-   "rest_days": 13,
+   "last_game_date": "20261122",
+   "rest_days": 0,
    "rank": 3,
-   "points": 28
+   "points": 31
   },
   "Betis": {
    "season": {
@@ -475,35 +475,35 @@
     "20261121 A Sevilla 1-1 (xG 0.62-2.32)"
    ],
    "last_game_date": "20261121",
-   "rest_days": 0,
+   "rest_days": 1,
    "rank": 4,
    "points": 27
   },
   "Real Sociedad": {
    "season": {
-    "gp": 12,
+    "gp": 13,
     "w": 7,
     "d": 1,
-    "l": 4,
-    "gf_pg": 1.75,
-    "ga_pg": 1.67,
-    "total_pg": 3.42,
+    "l": 5,
+    "gf_pg": 1.77,
+    "ga_pg": 1.77,
+    "total_pg": 3.54,
     "over": {
-     "1.5": 0.75,
-     "2.5": 0.75,
-     "3.5": 0.417
+     "1.5": 0.769,
+     "2.5": 0.769,
+     "3.5": 0.462
     },
-    "btts": 0.667,
-    "clean_sheet": 0.167,
-    "failed_to_score": 0.25,
-    "ppg": 1.83,
-    "xg_pg": 1.44,
-    "xga_pg": 1.66,
-    "xg_n": 12,
-    "g_minus_xg": 0.31,
+    "btts": 0.692,
+    "clean_sheet": 0.154,
+    "failed_to_score": 0.231,
+    "ppg": 1.69,
+    "xg_pg": 1.62,
+    "xga_pg": 1.76,
+    "xg_n": 13,
+    "g_minus_xg": 0.15,
     "ga_minus_xga": 0.0,
-    "sot_pg": 5.0,
-    "sota_pg": 5.3
+    "sot_pg": 5.2,
+    "sota_pg": 5.5
    },
    "home": {
     "gp": 6,
@@ -531,37 +531,37 @@
     "sota_pg": 3.7
    },
    "away": {
-    "gp": 6,
+    "gp": 7,
     "w": 3,
     "d": 0,
-    "l": 3,
-    "gf_pg": 2.17,
-    "ga_pg": 2.17,
-    "total_pg": 4.33,
+    "l": 4,
+    "gf_pg": 2.14,
+    "ga_pg": 2.29,
+    "total_pg": 4.43,
     "over": {
-     "1.5": 0.833,
-     "2.5": 0.833,
-     "3.5": 0.667
+     "1.5": 0.857,
+     "2.5": 0.857,
+     "3.5": 0.714
     },
-    "btts": 0.833,
+    "btts": 0.857,
     "clean_sheet": 0.0,
-    "failed_to_score": 0.167,
-    "ppg": 1.5,
-    "xg_pg": 1.48,
-    "xga_pg": 2.12,
-    "xg_n": 6,
-    "g_minus_xg": 0.68,
+    "failed_to_score": 0.143,
+    "ppg": 1.29,
+    "xg_pg": 1.8,
+    "xga_pg": 2.24,
+    "xg_n": 7,
+    "g_minus_xg": 0.34,
     "ga_minus_xga": 0.05,
-    "sot_pg": 5.3,
-    "sota_pg": 7.0
+    "sot_pg": 5.6,
+    "sota_pg": 7.1
    },
    "last6": {
     "gp": 6,
-    "w": 5,
+    "w": 4,
     "d": 0,
-    "l": 1,
-    "gf_pg": 2.5,
-    "ga_pg": 1.5,
+    "l": 2,
+    "gf_pg": 2.33,
+    "ga_pg": 1.67,
     "total_pg": 4.0,
     "over": {
      "1.5": 0.833,
@@ -571,25 +571,25 @@
     "btts": 0.833,
     "clean_sheet": 0.167,
     "failed_to_score": 0.0,
-    "ppg": 2.5,
-    "xg_pg": 1.93,
-    "xga_pg": 1.66,
+    "ppg": 2.0,
+    "xg_pg": 2.1,
+    "xga_pg": 1.89,
     "xg_n": 6,
-    "g_minus_xg": 0.57,
-    "ga_minus_xga": -0.15,
-    "sot_pg": 5.0,
-    "sota_pg": 4.3
+    "g_minus_xg": 0.24,
+    "ga_minus_xga": -0.22,
+    "sot_pg": 5.2,
+    "sota_pg": 4.8
    },
    "last6_log": [
-    "20260920 A Valencia 3-2 (xG 2.71-1.59)",
     "20261011 H Dep. A Coruna 3-2 (xG 1.43-2.12)",
     "20261018 A Malaga 5-2 (xG 2.44-1.24)",
     "20261025 H Levante 2-1 (xG 2.22-0.48)",
     "20261101 A Ath Bilbao 1-2 (xG 1.15-3.08)",
-    "20261108 H Rayo Vallecano 1-0 (xG 1.62-1.42)"
+    "20261108 H Rayo Vallecano 1-0 (xG 1.62-1.42)",
+    "20261122 A Racing Santander 2-3 (xG 3.71-2.97)"
    ],
-   "last_game_date": "20261108",
-   "rest_days": 13,
+   "last_game_date": "20261122",
+   "rest_days": 0,
    "rank": 5,
    "points": 22
   },
@@ -703,9 +703,123 @@
     "20261121 H Betis 1-1 (xG 2.32-0.62)"
    ],
    "last_game_date": "20261121",
-   "rest_days": 0,
+   "rest_days": 1,
    "rank": 6,
    "points": 19
+  },
+  "Racing Santander": {
+   "season": {
+    "gp": 13,
+    "w": 5,
+    "d": 2,
+    "l": 6,
+    "gf_pg": 1.54,
+    "ga_pg": 2.46,
+    "total_pg": 4.0,
+    "over": {
+     "1.5": 0.923,
+     "2.5": 0.846,
+     "3.5": 0.538
+    },
+    "btts": 0.692,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.308,
+    "ppg": 1.31,
+    "xg_pg": 1.55,
+    "xga_pg": 2.34,
+    "xg_n": 13,
+    "g_minus_xg": -0.02,
+    "ga_minus_xga": 0.12,
+    "sot_pg": 5.0,
+    "sota_pg": 6.4
+   },
+   "home": {
+    "gp": 7,
+    "w": 4,
+    "d": 2,
+    "l": 1,
+    "gf_pg": 2.0,
+    "ga_pg": 1.86,
+    "total_pg": 3.86,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 1.0,
+     "3.5": 0.571
+    },
+    "btts": 0.857,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.143,
+    "ppg": 2.0,
+    "xg_pg": 1.87,
+    "xga_pg": 1.86,
+    "xg_n": 7,
+    "g_minus_xg": 0.13,
+    "ga_minus_xga": -0.01,
+    "sot_pg": 6.0,
+    "sota_pg": 5.6
+   },
+   "away": {
+    "gp": 6,
+    "w": 1,
+    "d": 0,
+    "l": 5,
+    "gf_pg": 1.0,
+    "ga_pg": 3.17,
+    "total_pg": 4.17,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.667,
+     "3.5": 0.5
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.5,
+    "ppg": 0.5,
+    "xg_pg": 1.18,
+    "xga_pg": 2.9,
+    "xg_n": 6,
+    "g_minus_xg": -0.18,
+    "ga_minus_xga": 0.27,
+    "sot_pg": 3.8,
+    "sota_pg": 7.3
+   },
+   "last6": {
+    "gp": 6,
+    "w": 3,
+    "d": 1,
+    "l": 2,
+    "gf_pg": 1.5,
+    "ga_pg": 1.83,
+    "total_pg": 3.33,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.833,
+     "3.5": 0.333
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.333,
+    "ppg": 1.67,
+    "xg_pg": 1.68,
+    "xga_pg": 2.5,
+    "xg_n": 6,
+    "g_minus_xg": -0.18,
+    "ga_minus_xga": -0.67,
+    "sot_pg": 6.2,
+    "sota_pg": 5.3
+   },
+   "last6_log": [
+    "20261011 H Valencia 2-2 (xG 1.28-1.79)",
+    "20261018 A Osasuna 0-2 (xG 0.28-3.65)",
+    "20261024 H Espanyol 2-1 (xG 2.27-0.51)",
+    "20261101 H Real Madrid 0-3 (xG 0.97-3.35)",
+    "20261107 A Malaga 2-1 (xG 2.31-2.02)",
+    "20261122 H Real Sociedad 3-2 (xG 2.97-3.71)"
+   ],
+   "last_game_date": "20261122",
+   "rest_days": 0,
+   "rank": 7,
+   "points": 17
   },
   "Ath Bilbao": {
    "season": {
@@ -804,7 +918,7 @@
     "xga_pg": 1.0,
     "xg_n": 6,
     "g_minus_xg": -0.36,
-    "ga_minus_xga": 0.0,
+    "ga_minus_xga": -0.0,
     "sot_pg": 3.8,
     "sota_pg": 4.0
    },
@@ -817,8 +931,8 @@
     "20261120 H Espanyol 0-1 (xG 1.45-0.54)"
    ],
    "last_game_date": "20261120",
-   "rest_days": 1,
-   "rank": 7,
+   "rest_days": 2,
+   "rank": 8,
    "points": 16
   },
   "Alaves": {
@@ -931,35 +1045,35 @@
     "20261121 H Dep. A Coruna 3-1 (xG 3.33-0.31)"
    ],
    "last_game_date": "20261121",
-   "rest_days": 0,
-   "rank": 8,
+   "rest_days": 1,
+   "rank": 9,
    "points": 16
   },
   "Villarreal": {
    "season": {
-    "gp": 12,
+    "gp": 13,
     "w": 4,
     "d": 3,
-    "l": 5,
-    "gf_pg": 1.42,
-    "ga_pg": 1.25,
-    "total_pg": 2.67,
+    "l": 6,
+    "gf_pg": 1.46,
+    "ga_pg": 1.38,
+    "total_pg": 2.85,
     "over": {
-     "1.5": 0.667,
-     "2.5": 0.583,
-     "3.5": 0.417
+     "1.5": 0.692,
+     "2.5": 0.615,
+     "3.5": 0.462
     },
-    "btts": 0.583,
-    "clean_sheet": 0.167,
-    "failed_to_score": 0.333,
-    "ppg": 1.25,
-    "xg_pg": 2.02,
-    "xga_pg": 1.06,
-    "xg_n": 12,
-    "g_minus_xg": -0.6,
-    "ga_minus_xga": 0.19,
-    "sot_pg": 5.9,
-    "sota_pg": 3.3
+    "btts": 0.615,
+    "clean_sheet": 0.154,
+    "failed_to_score": 0.308,
+    "ppg": 1.15,
+    "xg_pg": 1.88,
+    "xga_pg": 1.22,
+    "xg_n": 13,
+    "g_minus_xg": -0.42,
+    "ga_minus_xga": 0.16,
+    "sot_pg": 5.6,
+    "sota_pg": 3.8
    },
    "home": {
     "gp": 6,
@@ -987,38 +1101,38 @@
     "sota_pg": 3.5
    },
    "away": {
-    "gp": 6,
+    "gp": 7,
     "w": 2,
     "d": 2,
-    "l": 2,
-    "gf_pg": 1.5,
-    "ga_pg": 1.33,
-    "total_pg": 2.83,
+    "l": 3,
+    "gf_pg": 1.57,
+    "ga_pg": 1.57,
+    "total_pg": 3.14,
     "over": {
-     "1.5": 0.667,
-     "2.5": 0.667,
-     "3.5": 0.5
+     "1.5": 0.714,
+     "2.5": 0.714,
+     "3.5": 0.571
     },
-    "btts": 0.667,
+    "btts": 0.714,
     "clean_sheet": 0.0,
-    "failed_to_score": 0.333,
-    "ppg": 1.33,
-    "xg_pg": 1.89,
-    "xga_pg": 1.08,
-    "xg_n": 6,
-    "g_minus_xg": -0.39,
-    "ga_minus_xga": 0.25,
-    "sot_pg": 5.5,
-    "sota_pg": 3.2
+    "failed_to_score": 0.286,
+    "ppg": 1.14,
+    "xg_pg": 1.64,
+    "xga_pg": 1.39,
+    "xg_n": 7,
+    "g_minus_xg": -0.07,
+    "ga_minus_xga": 0.18,
+    "sot_pg": 5.0,
+    "sota_pg": 4.0
    },
    "last6": {
     "gp": 6,
-    "w": 3,
+    "w": 2,
     "d": 1,
-    "l": 2,
-    "gf_pg": 1.17,
-    "ga_pg": 0.67,
-    "total_pg": 1.83,
+    "l": 3,
+    "gf_pg": 1.0,
+    "ga_pg": 1.0,
+    "total_pg": 2.0,
     "over": {
      "1.5": 0.5,
      "2.5": 0.333,
@@ -1027,26 +1141,26 @@
     "btts": 0.333,
     "clean_sheet": 0.333,
     "failed_to_score": 0.5,
-    "ppg": 1.67,
-    "xg_pg": 1.99,
-    "xga_pg": 0.69,
+    "ppg": 1.17,
+    "xg_pg": 1.31,
+    "xga_pg": 1.15,
     "xg_n": 6,
-    "g_minus_xg": -0.82,
-    "ga_minus_xga": -0.02,
-    "sot_pg": 5.3,
-    "sota_pg": 2.5
+    "g_minus_xg": -0.31,
+    "ga_minus_xga": -0.15,
+    "sot_pg": 4.5,
+    "sota_pg": 3.8
    },
    "last6_log": [
-    "20260920 H Levante 3-1 (xG 4.27-0.46)",
     "20261010 A Real Madrid 0-1 (xG 0.6-1.43)",
     "20261017 H Elche 0-0 (xG 2.38-0.3)",
     "20261024 A Valencia 2-1 (xG 1.5-1.13)",
     "20261030 H Espanyol 0-1 (xG 0.88-0.21)",
-    "20261108 H Getafe 2-0 (xG 2.3-0.62)"
+    "20261108 H Getafe 2-0 (xG 2.3-0.62)",
+    "20261122 A Barcelona 2-3 (xG 0.2-3.23)"
    ],
-   "last_game_date": "20261108",
-   "rest_days": 13,
-   "rank": 9,
+   "last_game_date": "20261122",
+   "rest_days": 0,
+   "rank": 10,
    "points": 15
   },
   "Espanyol": {
@@ -1159,8 +1273,8 @@
     "20261120 A Ath Bilbao 1-0 (xG 0.54-1.45)"
    ],
    "last_game_date": "20261120",
-   "rest_days": 1,
-   "rank": 10,
+   "rest_days": 2,
+   "rank": 11,
    "points": 15
   },
   "Dep. A Coruna": {
@@ -1273,123 +1387,123 @@
     "20261121 A Alaves 1-3 (xG 0.31-3.33)"
    ],
    "last_game_date": "20261121",
-   "rest_days": 0,
-   "rank": 11,
+   "rest_days": 1,
+   "rank": 12,
    "points": 15
   },
-  "Racing Santander": {
+  "Osasuna": {
    "season": {
-    "gp": 12,
+    "gp": 13,
     "w": 4,
-    "d": 2,
+    "d": 3,
     "l": 6,
-    "gf_pg": 1.42,
-    "ga_pg": 2.5,
-    "total_pg": 3.92,
+    "gf_pg": 1.0,
+    "ga_pg": 1.77,
+    "total_pg": 2.77,
     "over": {
-     "1.5": 0.917,
-     "2.5": 0.833,
-     "3.5": 0.5
+     "1.5": 0.769,
+     "2.5": 0.385,
+     "3.5": 0.231
     },
-    "btts": 0.667,
-    "clean_sheet": 0.0,
-    "failed_to_score": 0.333,
-    "ppg": 1.17,
-    "xg_pg": 1.44,
-    "xga_pg": 2.23,
-    "xg_n": 12,
-    "g_minus_xg": -0.02,
-    "ga_minus_xga": 0.27,
-    "sot_pg": 4.8,
-    "sota_pg": 6.3
+    "btts": 0.462,
+    "clean_sheet": 0.308,
+    "failed_to_score": 0.308,
+    "ppg": 1.15,
+    "xg_pg": 1.38,
+    "xga_pg": 1.48,
+    "xg_n": 13,
+    "g_minus_xg": -0.38,
+    "ga_minus_xga": 0.29,
+    "sot_pg": 3.8,
+    "sota_pg": 4.1
    },
    "home": {
-    "gp": 6,
+    "gp": 7,
     "w": 3,
-    "d": 2,
+    "d": 3,
     "l": 1,
-    "gf_pg": 1.83,
-    "ga_pg": 1.83,
-    "total_pg": 3.67,
+    "gf_pg": 0.86,
+    "ga_pg": 0.57,
+    "total_pg": 1.43,
     "over": {
-     "1.5": 1.0,
-     "2.5": 1.0,
-     "3.5": 0.5
+     "1.5": 0.571,
+     "2.5": 0.0,
+     "3.5": 0.0
     },
-    "btts": 0.833,
-    "clean_sheet": 0.0,
-    "failed_to_score": 0.167,
-    "ppg": 1.83,
-    "xg_pg": 1.69,
-    "xga_pg": 1.55,
-    "xg_n": 6,
-    "g_minus_xg": 0.14,
-    "ga_minus_xga": 0.28,
-    "sot_pg": 5.7,
-    "sota_pg": 5.3
+    "btts": 0.286,
+    "clean_sheet": 0.571,
+    "failed_to_score": 0.286,
+    "ppg": 1.71,
+    "xg_pg": 1.36,
+    "xga_pg": 1.08,
+    "xg_n": 7,
+    "g_minus_xg": -0.5,
+    "ga_minus_xga": -0.51,
+    "sot_pg": 4.3,
+    "sota_pg": 1.7
    },
    "away": {
     "gp": 6,
     "w": 1,
     "d": 0,
     "l": 5,
-    "gf_pg": 1.0,
+    "gf_pg": 1.17,
     "ga_pg": 3.17,
-    "total_pg": 4.17,
+    "total_pg": 4.33,
     "over": {
-     "1.5": 0.833,
-     "2.5": 0.667,
+     "1.5": 1.0,
+     "2.5": 0.833,
      "3.5": 0.5
     },
-    "btts": 0.5,
+    "btts": 0.667,
     "clean_sheet": 0.0,
-    "failed_to_score": 0.5,
+    "failed_to_score": 0.333,
     "ppg": 0.5,
-    "xg_pg": 1.18,
-    "xga_pg": 2.9,
+    "xg_pg": 1.4,
+    "xga_pg": 1.95,
     "xg_n": 6,
-    "g_minus_xg": -0.18,
-    "ga_minus_xga": 0.27,
-    "sot_pg": 3.8,
-    "sota_pg": 7.3
+    "g_minus_xg": -0.24,
+    "ga_minus_xga": 1.22,
+    "sot_pg": 3.3,
+    "sota_pg": 6.8
    },
    "last6": {
     "gp": 6,
     "w": 2,
     "d": 1,
     "l": 3,
-    "gf_pg": 1.0,
-    "ga_pg": 2.33,
-    "total_pg": 3.33,
+    "gf_pg": 1.17,
+    "ga_pg": 1.67,
+    "total_pg": 2.83,
     "over": {
-     "1.5": 1.0,
-     "2.5": 0.833,
-     "3.5": 0.333
+     "1.5": 0.833,
+     "2.5": 0.333,
+     "3.5": 0.167
     },
     "btts": 0.5,
-    "clean_sheet": 0.0,
-    "failed_to_score": 0.5,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.167,
     "ppg": 1.17,
-    "xg_pg": 1.31,
-    "xga_pg": 2.24,
+    "xg_pg": 1.54,
+    "xga_pg": 1.59,
     "xg_n": 6,
-    "g_minus_xg": -0.31,
-    "ga_minus_xga": 0.09,
-    "sot_pg": 5.7,
-    "sota_pg": 5.7
+    "g_minus_xg": -0.37,
+    "ga_minus_xga": 0.07,
+    "sot_pg": 3.8,
+    "sota_pg": 4.3
    },
    "last6_log": [
-    "20260919 A Celta Vigo 0-5 (xG 0.75-2.14)",
-    "20261011 H Valencia 2-2 (xG 1.28-1.79)",
-    "20261018 A Osasuna 0-2 (xG 0.28-3.65)",
-    "20261024 H Espanyol 2-1 (xG 2.27-0.51)",
-    "20261101 H Real Madrid 0-3 (xG 0.97-3.35)",
-    "20261107 A Malaga 2-1 (xG 2.31-2.02)"
+    "20261011 A Betis 2-5 (xG 1.94-2.88)",
+    "20261018 H Racing Santander 2-0 (xG 3.65-0.28)",
+    "20261026 A Sevilla 0-2 (xG 0.61-1.16)",
+    "20261102 A Dep. A Coruna 1-2 (xG 1.14-2.35)",
+    "20261107 H Ath Bilbao 1-1 (xG 0.65-2.27)",
+    "20261122 H Malaga 1-0 (xG 1.24-0.63)"
    ],
-   "last_game_date": "20261107",
-   "rest_days": 14,
-   "rank": 12,
-   "points": 14
+   "last_game_date": "20261122",
+   "rest_days": 0,
+   "rank": 13,
+   "points": 15
   },
   "Celta Vigo": {
    "season": {
@@ -1501,8 +1615,8 @@
     "20261121 A Real Madrid 1-2 (xG 1.5-3.76)"
    ],
    "last_game_date": "20261121",
-   "rest_days": 0,
-   "rank": 13,
+   "rest_days": 1,
+   "rank": 14,
    "points": 13
   },
   "Rayo Vallecano": {
@@ -1615,121 +1729,7 @@
     "20261121 H Valencia 0-1 (xG 0.73-0.66)"
    ],
    "last_game_date": "20261121",
-   "rest_days": 0,
-   "rank": 14,
-   "points": 12
-  },
-  "Getafe": {
-   "season": {
-    "gp": 12,
-    "w": 3,
-    "d": 3,
-    "l": 6,
-    "gf_pg": 0.67,
-    "ga_pg": 1.5,
-    "total_pg": 2.17,
-    "over": {
-     "1.5": 0.667,
-     "2.5": 0.333,
-     "3.5": 0.167
-    },
-    "btts": 0.333,
-    "clean_sheet": 0.167,
-    "failed_to_score": 0.5,
-    "ppg": 1.0,
-    "xg_pg": 0.68,
-    "xga_pg": 1.43,
-    "xg_n": 12,
-    "g_minus_xg": -0.01,
-    "ga_minus_xga": 0.07,
-    "sot_pg": 2.6,
-    "sota_pg": 4.9
-   },
-   "home": {
-    "gp": 6,
-    "w": 3,
-    "d": 3,
-    "l": 0,
-    "gf_pg": 1.33,
-    "ga_pg": 0.67,
-    "total_pg": 2.0,
-    "over": {
-     "1.5": 0.667,
-     "2.5": 0.167,
-     "3.5": 0.167
-    },
-    "btts": 0.667,
-    "clean_sheet": 0.333,
-    "failed_to_score": 0.0,
-    "ppg": 2.0,
-    "xg_pg": 0.96,
-    "xga_pg": 1.12,
-    "xg_n": 6,
-    "g_minus_xg": 0.37,
-    "ga_minus_xga": -0.45,
-    "sot_pg": 3.8,
-    "sota_pg": 3.7
-   },
-   "away": {
-    "gp": 6,
-    "w": 0,
-    "d": 0,
-    "l": 6,
-    "gf_pg": 0.0,
-    "ga_pg": 2.33,
-    "total_pg": 2.33,
-    "over": {
-     "1.5": 0.667,
-     "2.5": 0.5,
-     "3.5": 0.167
-    },
-    "btts": 0.0,
-    "clean_sheet": 0.0,
-    "failed_to_score": 1.0,
-    "ppg": 0.0,
-    "xg_pg": 0.4,
-    "xga_pg": 1.74,
-    "xg_n": 6,
-    "g_minus_xg": -0.4,
-    "ga_minus_xga": 0.59,
-    "sot_pg": 1.3,
-    "sota_pg": 6.2
-   },
-   "last6": {
-    "gp": 6,
-    "w": 2,
-    "d": 1,
-    "l": 3,
-    "gf_pg": 0.83,
-    "ga_pg": 1.83,
-    "total_pg": 2.67,
-    "over": {
-     "1.5": 0.833,
-     "2.5": 0.5,
-     "3.5": 0.333
-    },
-    "btts": 0.333,
-    "clean_sheet": 0.167,
-    "failed_to_score": 0.5,
-    "ppg": 1.17,
-    "xg_pg": 0.72,
-    "xga_pg": 1.42,
-    "xg_n": 6,
-    "g_minus_xg": 0.12,
-    "ga_minus_xga": 0.42,
-    "sot_pg": 3.2,
-    "sota_pg": 5.3
-   },
-   "last6_log": [
-    "20260920 H Malaga 1-0 (xG 0.96-0.52)",
-    "20261010 A Barcelona 0-3 (xG 0.14-1.94)",
-    "20261019 H Rayo Vallecano 1-1 (xG 0.57-2.24)",
-    "20261025 A Ath Bilbao 0-4 (xG 0.43-0.72)",
-    "20261101 H Sevilla 3-1 (xG 1.58-0.77)",
-    "20261108 A Villarreal 0-2 (xG 0.62-2.3)"
-   ],
-   "last_game_date": "20261108",
-   "rest_days": 13,
+   "rest_days": 1,
    "rank": 15,
    "points": 12
   },
@@ -1830,7 +1830,7 @@
     "xga_pg": 1.28,
     "xg_n": 6,
     "g_minus_xg": -0.16,
-    "ga_minus_xga": -0.12,
+    "ga_minus_xga": -0.11,
     "sot_pg": 2.8,
     "sota_pg": 5.8
    },
@@ -1843,121 +1843,121 @@
     "20261121 A Rayo Vallecano 1-0 (xG 0.66-0.73)"
    ],
    "last_game_date": "20261121",
-   "rest_days": 0,
+   "rest_days": 1,
    "rank": 16,
    "points": 12
   },
-  "Osasuna": {
+  "Getafe": {
    "season": {
-    "gp": 12,
+    "gp": 13,
     "w": 3,
     "d": 3,
-    "l": 6,
-    "gf_pg": 1.0,
-    "ga_pg": 1.92,
-    "total_pg": 2.92,
+    "l": 7,
+    "gf_pg": 0.62,
+    "ga_pg": 1.62,
+    "total_pg": 2.23,
     "over": {
-     "1.5": 0.833,
-     "2.5": 0.417,
-     "3.5": 0.25
+     "1.5": 0.692,
+     "2.5": 0.385,
+     "3.5": 0.154
     },
-    "btts": 0.5,
-    "clean_sheet": 0.25,
-    "failed_to_score": 0.333,
-    "ppg": 1.0,
-    "xg_pg": 1.39,
-    "xga_pg": 1.55,
-    "xg_n": 12,
-    "g_minus_xg": -0.39,
-    "ga_minus_xga": 0.36,
-    "sot_pg": 4.0,
-    "sota_pg": 4.4
+    "btts": 0.308,
+    "clean_sheet": 0.154,
+    "failed_to_score": 0.538,
+    "ppg": 0.92,
+    "xg_pg": 0.67,
+    "xga_pg": 1.64,
+    "xg_n": 13,
+    "g_minus_xg": -0.05,
+    "ga_minus_xga": -0.02,
+    "sot_pg": 2.5,
+    "sota_pg": 5.3
    },
    "home": {
-    "gp": 6,
-    "w": 2,
+    "gp": 7,
+    "w": 3,
     "d": 3,
     "l": 1,
-    "gf_pg": 0.83,
-    "ga_pg": 0.67,
-    "total_pg": 1.5,
+    "gf_pg": 1.14,
+    "ga_pg": 1.0,
+    "total_pg": 2.14,
     "over": {
-     "1.5": 0.667,
-     "2.5": 0.0,
-     "3.5": 0.0
+     "1.5": 0.714,
+     "2.5": 0.286,
+     "3.5": 0.143
     },
-    "btts": 0.333,
-    "clean_sheet": 0.5,
-    "failed_to_score": 0.333,
-    "ppg": 1.5,
-    "xg_pg": 1.38,
-    "xga_pg": 1.16,
-    "xg_n": 6,
-    "g_minus_xg": -0.54,
-    "ga_minus_xga": -0.49,
-    "sot_pg": 4.7,
-    "sota_pg": 2.0
+    "btts": 0.571,
+    "clean_sheet": 0.286,
+    "failed_to_score": 0.143,
+    "ppg": 1.71,
+    "xg_pg": 0.9,
+    "xga_pg": 1.55,
+    "xg_n": 7,
+    "g_minus_xg": 0.25,
+    "ga_minus_xga": -0.55,
+    "sot_pg": 3.4,
+    "sota_pg": 4.6
    },
    "away": {
     "gp": 6,
-    "w": 1,
+    "w": 0,
     "d": 0,
-    "l": 5,
-    "gf_pg": 1.17,
-    "ga_pg": 3.17,
-    "total_pg": 4.33,
+    "l": 6,
+    "gf_pg": 0.0,
+    "ga_pg": 2.33,
+    "total_pg": 2.33,
     "over": {
-     "1.5": 1.0,
-     "2.5": 0.833,
-     "3.5": 0.5
+     "1.5": 0.667,
+     "2.5": 0.5,
+     "3.5": 0.167
     },
-    "btts": 0.667,
+    "btts": 0.0,
     "clean_sheet": 0.0,
-    "failed_to_score": 0.333,
-    "ppg": 0.5,
-    "xg_pg": 1.4,
-    "xga_pg": 1.95,
+    "failed_to_score": 1.0,
+    "ppg": 0.0,
+    "xg_pg": 0.4,
+    "xga_pg": 1.74,
     "xg_n": 6,
-    "g_minus_xg": -0.24,
-    "ga_minus_xga": 1.22,
-    "sot_pg": 3.3,
-    "sota_pg": 6.8
+    "g_minus_xg": -0.4,
+    "ga_minus_xga": 0.59,
+    "sot_pg": 1.3,
+    "sota_pg": 6.2
    },
    "last6": {
     "gp": 6,
     "w": 1,
-    "d": 2,
-    "l": 3,
-    "gf_pg": 1.17,
-    "ga_pg": 1.83,
+    "d": 1,
+    "l": 4,
+    "gf_pg": 0.67,
+    "ga_pg": 2.33,
     "total_pg": 3.0,
     "over": {
      "1.5": 1.0,
-     "2.5": 0.333,
-     "3.5": 0.167
+     "2.5": 0.667,
+     "3.5": 0.333
     },
-    "btts": 0.667,
-    "clean_sheet": 0.167,
-    "failed_to_score": 0.167,
-    "ppg": 0.83,
-    "xg_pg": 1.42,
-    "xga_pg": 1.66,
+    "btts": 0.333,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.667,
+    "ppg": 0.67,
+    "xg_pg": 0.64,
+    "xga_pg": 2.02,
     "xg_n": 6,
-    "g_minus_xg": -0.25,
-    "ga_minus_xga": 0.18,
-    "sot_pg": 4.0,
-    "sota_pg": 4.7
+    "g_minus_xg": 0.03,
+    "ga_minus_xga": 0.32,
+    "sot_pg": 2.2,
+    "sota_pg": 6.3
    },
    "last6_log": [
-    "20260919 H Rayo Vallecano 1-1 (xG 0.53-1.01)",
-    "20261011 A Betis 2-5 (xG 1.94-2.88)",
-    "20261018 H Racing Santander 2-0 (xG 3.65-0.28)",
-    "20261026 A Sevilla 0-2 (xG 0.61-1.16)",
-    "20261102 A Dep. A Coruna 1-2 (xG 1.14-2.35)",
-    "20261107 H Ath Bilbao 1-1 (xG 0.65-2.27)"
+    "20261010 A Barcelona 0-3 (xG 0.14-1.94)",
+    "20261019 H Rayo Vallecano 1-1 (xG 0.57-2.24)",
+    "20261025 A Ath Bilbao 0-4 (xG 0.43-0.72)",
+    "20261101 H Sevilla 3-1 (xG 1.58-0.77)",
+    "20261108 A Villarreal 0-2 (xG 0.62-2.3)",
+    "20261122 H Atl. Madrid 0-3 (xG 0.5-4.14)"
    ],
-   "last_game_date": "20261107",
-   "rest_days": 14,
+   "last_game_date": "20261122",
+   "rest_days": 0,
    "rank": 17,
    "points": 12
   },
@@ -2071,7 +2071,7 @@
     "20261108 A Celta Vigo 0-0 (xG 0.28-3.16)"
    ],
    "last_game_date": "20261108",
-   "rest_days": 13,
+   "rest_days": 14,
    "rank": 18,
    "points": 11
   },
@@ -2185,35 +2185,35 @@
     "20261108 H Betis 0-2 (xG 0.84-1.78)"
    ],
    "last_game_date": "20261108",
-   "rest_days": 13,
+   "rest_days": 14,
    "rank": 19,
    "points": 10
   },
   "Malaga": {
    "season": {
-    "gp": 12,
+    "gp": 13,
     "w": 0,
     "d": 5,
-    "l": 7,
-    "gf_pg": 0.75,
-    "ga_pg": 1.92,
-    "total_pg": 2.67,
+    "l": 8,
+    "gf_pg": 0.69,
+    "ga_pg": 1.85,
+    "total_pg": 2.54,
     "over": {
-     "1.5": 0.833,
-     "2.5": 0.417,
-     "3.5": 0.25
+     "1.5": 0.769,
+     "2.5": 0.385,
+     "3.5": 0.231
     },
-    "btts": 0.667,
-    "clean_sheet": 0.083,
-    "failed_to_score": 0.333,
-    "ppg": 0.42,
-    "xg_pg": 0.96,
-    "xga_pg": 1.74,
-    "xg_n": 12,
-    "g_minus_xg": -0.21,
-    "ga_minus_xga": 0.18,
-    "sot_pg": 3.6,
-    "sota_pg": 5.8
+    "btts": 0.615,
+    "clean_sheet": 0.077,
+    "failed_to_score": 0.385,
+    "ppg": 0.38,
+    "xg_pg": 0.93,
+    "xga_pg": 1.7,
+    "xg_n": 13,
+    "g_minus_xg": -0.24,
+    "ga_minus_xga": 0.15,
+    "sot_pg": 3.3,
+    "sota_pg": 5.5
    },
    "home": {
     "gp": 6,
@@ -2241,29 +2241,29 @@
     "sota_pg": 5.7
    },
    "away": {
-    "gp": 6,
+    "gp": 7,
     "w": 0,
     "d": 2,
-    "l": 4,
-    "gf_pg": 0.5,
-    "ga_pg": 1.83,
-    "total_pg": 2.33,
+    "l": 5,
+    "gf_pg": 0.43,
+    "ga_pg": 1.71,
+    "total_pg": 2.14,
     "over": {
-     "1.5": 0.833,
-     "2.5": 0.333,
-     "3.5": 0.167
+     "1.5": 0.714,
+     "2.5": 0.286,
+     "3.5": 0.143
     },
-    "btts": 0.5,
+    "btts": 0.429,
     "clean_sheet": 0.0,
-    "failed_to_score": 0.5,
-    "ppg": 0.33,
-    "xg_pg": 0.57,
-    "xga_pg": 1.62,
-    "xg_n": 6,
-    "g_minus_xg": -0.07,
-    "ga_minus_xga": 0.21,
-    "sot_pg": 2.7,
-    "sota_pg": 6.0
+    "failed_to_score": 0.571,
+    "ppg": 0.29,
+    "xg_pg": 0.58,
+    "xga_pg": 1.57,
+    "xg_n": 7,
+    "g_minus_xg": -0.15,
+    "ga_minus_xga": 0.15,
+    "sot_pg": 2.3,
+    "sota_pg": 5.4
    },
    "last6": {
     "gp": 6,
@@ -2282,24 +2282,24 @@
     "clean_sheet": 0.0,
     "failed_to_score": 0.167,
     "ppg": 0.33,
-    "xg_pg": 1.02,
-    "xga_pg": 1.68,
+    "xg_pg": 1.03,
+    "xga_pg": 1.73,
     "xg_n": 6,
-    "g_minus_xg": -0.02,
-    "ga_minus_xga": 0.32,
-    "sot_pg": 5.5,
-    "sota_pg": 6.2
+    "g_minus_xg": -0.03,
+    "ga_minus_xga": 0.27,
+    "sot_pg": 4.8,
+    "sota_pg": 5.3
    },
    "last6_log": [
-    "20260920 A Getafe 0-1 (xG 0.52-0.96)",
     "20261009 H Espanyol 1-1 (xG 0.69-1.08)",
     "20261018 H Real Sociedad 2-5 (xG 1.24-2.44)",
     "20261023 A Alaves 1-1 (xG 0.47-1.51)",
     "20261031 A Betis 1-2 (xG 1.16-1.8)",
-    "20261107 H Racing Santander 1-2 (xG 2.02-2.31)"
+    "20261107 H Racing Santander 1-2 (xG 2.02-2.31)",
+    "20261122 A Osasuna 0-1 (xG 0.63-1.24)"
    ],
-   "last_game_date": "20261107",
-   "rest_days": 14,
+   "last_game_date": "20261122",
+   "rest_days": 0,
    "rank": 20,
    "points": 5
   }
@@ -2386,12 +2386,12 @@
    "20261121 Real Madrid 2-1 Celta Vigo"
   ],
   "Barcelona vs Villarreal": [
-   "20230827 Villarreal 3-4 Barcelona",
    "20240127 Barcelona 3-5 Villarreal",
    "20240922 Villarreal 1-5 Barcelona",
    "20250518 Barcelona 2-3 Villarreal",
    "20251221 Villarreal 0-2 Barcelona",
-   "20260228 Barcelona 4-1 Villarreal"
+   "20260228 Barcelona 4-1 Villarreal",
+   "20261122 Barcelona 3-2 Villarreal"
   ],
   "Osasuna vs Valencia": [
    "20230827 Valencia 1-2 Osasuna",
@@ -2962,12 +2962,12 @@
    "20261121 Rayo Vallecano 0-1 Valencia"
   ],
   "Atl. Madrid vs Getafe": [
-   "20231219 Atl. Madrid 3-3 Getafe",
    "20240515 Getafe 0-3 Atl. Madrid",
    "20241215 Atl. Madrid 1-0 Getafe",
    "20250309 Getafe 2-1 Atl. Madrid",
    "20251123 Getafe 0-1 Atl. Madrid",
-   "20260314 Atl. Madrid 1-0 Getafe"
+   "20260314 Atl. Madrid 1-0 Getafe",
+   "20261122 Getafe 0-3 Atl. Madrid"
   ],
   "Celta Vigo vs Villarreal": [
    "20231220 Villarreal 3-2 Celta Vigo",
@@ -3373,6 +3373,12 @@
   ],
   "Alaves vs Dep. A Coruna": [
    "20261121 Alaves 3-1 Dep. A Coruna"
+  ],
+  "Racing Santander vs Real Sociedad": [
+   "20261122 Racing Santander 3-2 Real Sociedad"
+  ],
+  "Malaga vs Osasuna": [
+   "20261122 Osasuna 1-0 Malaga"
   ]
  }
 }

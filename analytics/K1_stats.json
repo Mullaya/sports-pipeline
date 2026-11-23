@@ -1,0 +1,1487 @@
+{
+ "meta": {
+  "generated_kst": "2026-11-23 13:13",
+  "league": "K1",
+  "season_start": "20260201",
+  "games": 198,
+  "last_game_date": "20261024",
+  "league_avg": {
+   "games": 198,
+   "home_win": 0.318,
+   "draw": 0.338,
+   "away_win": 0.343,
+   "goals_pg": 2.51,
+   "home_gf_pg": 1.22,
+   "away_gf_pg": 1.29,
+   "over": {
+    "1.5": 0.722,
+    "2.5": 0.47,
+    "3.5": 0.247
+   },
+   "btts": 0.545
+  },
+  "notes": "REG만 집계 / over는 해당 기준점 초과 비율 / g_minus_xg +는 득점 과열(회귀 후보) / rest_days는 오늘(KST) 기준"
+ },
+ "teams": {
+  "Seoul": {
+   "season": {
+    "gp": 33,
+    "w": 20,
+    "d": 7,
+    "l": 6,
+    "gf_pg": 1.85,
+    "ga_pg": 0.88,
+    "total_pg": 2.73,
+    "over": {
+     "1.5": 0.636,
+     "2.5": 0.576,
+     "3.5": 0.303
+    },
+    "btts": 0.545,
+    "clean_sheet": 0.394,
+    "failed_to_score": 0.182,
+    "ppg": 2.03,
+    "sot_pg": 5.6,
+    "sota_pg": 3.8
+   },
+   "home": {
+    "gp": 16,
+    "w": 9,
+    "d": 4,
+    "l": 3,
+    "gf_pg": 1.69,
+    "ga_pg": 0.88,
+    "total_pg": 2.56,
+    "over": {
+     "1.5": 0.562,
+     "2.5": 0.5,
+     "3.5": 0.375
+    },
+    "btts": 0.438,
+    "clean_sheet": 0.5,
+    "failed_to_score": 0.188,
+    "ppg": 1.94,
+    "sot_pg": 4.9,
+    "sota_pg": 3.3
+   },
+   "away": {
+    "gp": 17,
+    "w": 11,
+    "d": 3,
+    "l": 3,
+    "gf_pg": 2.0,
+    "ga_pg": 0.88,
+    "total_pg": 2.88,
+    "over": {
+     "1.5": 0.706,
+     "2.5": 0.647,
+     "3.5": 0.235
+    },
+    "btts": 0.647,
+    "clean_sheet": 0.294,
+    "failed_to_score": 0.176,
+    "ppg": 2.12,
+    "sot_pg": 6.3,
+    "sota_pg": 4.2
+   },
+   "last6": {
+    "gp": 6,
+    "w": 2,
+    "d": 2,
+    "l": 2,
+    "gf_pg": 1.33,
+    "ga_pg": 1.33,
+    "total_pg": 2.67,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.667,
+     "3.5": 0.167
+    },
+    "btts": 0.833,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.167,
+    "ppg": 1.33,
+    "sot_pg": 5.5,
+    "sota_pg": 4.0
+   },
+   "last6_log": [
+    "20260908 A Ulsan HD 0-1",
+    "20260912 A Jeonbuk 2-1",
+    "20260920 A Pohang 1-2",
+    "20261010 H Jeju SK 2-1",
+    "20261018 H Gimcheon Sangmu 2-2",
+    "20261024 H Gangwon 1-1"
+   ],
+   "last_game_date": "20261024",
+   "rest_days": 29,
+   "rank": 1,
+   "points": 67
+  },
+  "Ulsan HD": {
+   "season": {
+    "gp": 33,
+    "w": 15,
+    "d": 6,
+    "l": 12,
+    "gf_pg": 1.58,
+    "ga_pg": 1.42,
+    "total_pg": 3.0,
+    "over": {
+     "1.5": 0.818,
+     "2.5": 0.636,
+     "3.5": 0.364
+    },
+    "btts": 0.697,
+    "clean_sheet": 0.182,
+    "failed_to_score": 0.182,
+    "ppg": 1.55,
+    "sot_pg": 6.2,
+    "sota_pg": 5.2
+   },
+   "home": {
+    "gp": 17,
+    "w": 9,
+    "d": 2,
+    "l": 6,
+    "gf_pg": 1.76,
+    "ga_pg": 1.53,
+    "total_pg": 3.29,
+    "over": {
+     "1.5": 0.765,
+     "2.5": 0.765,
+     "3.5": 0.529
+    },
+    "btts": 0.765,
+    "clean_sheet": 0.176,
+    "failed_to_score": 0.118,
+    "ppg": 1.71,
+    "sot_pg": 7.2,
+    "sota_pg": 5.8
+   },
+   "away": {
+    "gp": 16,
+    "w": 6,
+    "d": 4,
+    "l": 6,
+    "gf_pg": 1.38,
+    "ga_pg": 1.31,
+    "total_pg": 2.69,
+    "over": {
+     "1.5": 0.875,
+     "2.5": 0.5,
+     "3.5": 0.188
+    },
+    "btts": 0.625,
+    "clean_sheet": 0.188,
+    "failed_to_score": 0.25,
+    "ppg": 1.38,
+    "sot_pg": 5.2,
+    "sota_pg": 4.6
+   },
+   "last6": {
+    "gp": 6,
+    "w": 3,
+    "d": 1,
+    "l": 2,
+    "gf_pg": 1.83,
+    "ga_pg": 1.67,
+    "total_pg": 3.5,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.833,
+     "3.5": 0.333
+    },
+    "btts": 0.833,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.0,
+    "ppg": 1.67,
+    "sot_pg": 5.7,
+    "sota_pg": 4.7
+   },
+   "last6_log": [
+    "20260908 H Seoul 1-0",
+    "20260912 H Incheon 2-1",
+    "20260919 A Anyang 1-2",
+    "20261011 A Gwangju FC 3-4",
+    "20261017 H Bucheon FC 1995 2-1",
+    "20261024 H Pohang 2-2"
+   ],
+   "last_game_date": "20261024",
+   "rest_days": 29,
+   "rank": 2,
+   "points": 51
+  },
+  "Daejeon": {
+   "season": {
+    "gp": 33,
+    "w": 13,
+    "d": 10,
+    "l": 10,
+    "gf_pg": 1.61,
+    "ga_pg": 1.24,
+    "total_pg": 2.85,
+    "over": {
+     "1.5": 0.788,
+     "2.5": 0.545,
+     "3.5": 0.364
+    },
+    "btts": 0.576,
+    "clean_sheet": 0.242,
+    "failed_to_score": 0.273,
+    "ppg": 1.48,
+    "sot_pg": 4.8,
+    "sota_pg": 4.8
+   },
+   "home": {
+    "gp": 17,
+    "w": 6,
+    "d": 6,
+    "l": 5,
+    "gf_pg": 1.41,
+    "ga_pg": 1.29,
+    "total_pg": 2.71,
+    "over": {
+     "1.5": 0.824,
+     "2.5": 0.529,
+     "3.5": 0.294
+    },
+    "btts": 0.588,
+    "clean_sheet": 0.176,
+    "failed_to_score": 0.294,
+    "ppg": 1.41,
+    "sot_pg": 4.6,
+    "sota_pg": 4.2
+   },
+   "away": {
+    "gp": 16,
+    "w": 7,
+    "d": 4,
+    "l": 5,
+    "gf_pg": 1.81,
+    "ga_pg": 1.19,
+    "total_pg": 3.0,
+    "over": {
+     "1.5": 0.75,
+     "2.5": 0.562,
+     "3.5": 0.438
+    },
+    "btts": 0.562,
+    "clean_sheet": 0.312,
+    "failed_to_score": 0.25,
+    "ppg": 1.56,
+    "sot_pg": 5.0,
+    "sota_pg": 5.4
+   },
+   "last6": {
+    "gp": 6,
+    "w": 4,
+    "d": 2,
+    "l": 0,
+    "gf_pg": 2.17,
+    "ga_pg": 1.5,
+    "total_pg": 3.67,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.833,
+     "3.5": 0.5
+    },
+    "btts": 1.0,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.0,
+    "ppg": 2.33,
+    "sot_pg": 5.7,
+    "sota_pg": 4.2
+   },
+   "last6_log": [
+    "20260909 H Anyang 3-2",
+    "20260912 H Pohang 2-2",
+    "20260920 A Incheon 1-1",
+    "20261009 H Jeonbuk 2-1",
+    "20261018 H Gwangju FC 3-2",
+    "20261024 A Gimcheon Sangmu 2-1"
+   ],
+   "last_game_date": "20261024",
+   "rest_days": 29,
+   "rank": 3,
+   "points": 49
+  },
+  "Jeonbuk": {
+   "season": {
+    "gp": 33,
+    "w": 12,
+    "d": 12,
+    "l": 9,
+    "gf_pg": 1.3,
+    "ga_pg": 1.0,
+    "total_pg": 2.3,
+    "over": {
+     "1.5": 0.697,
+     "2.5": 0.394,
+     "3.5": 0.242
+    },
+    "btts": 0.545,
+    "clean_sheet": 0.394,
+    "failed_to_score": 0.212,
+    "ppg": 1.45,
+    "sot_pg": 5.2,
+    "sota_pg": 4.2
+   },
+   "home": {
+    "gp": 16,
+    "w": 8,
+    "d": 3,
+    "l": 5,
+    "gf_pg": 1.62,
+    "ga_pg": 1.19,
+    "total_pg": 2.81,
+    "over": {
+     "1.5": 0.75,
+     "2.5": 0.625,
+     "3.5": 0.375
+    },
+    "btts": 0.562,
+    "clean_sheet": 0.438,
+    "failed_to_score": 0.125,
+    "ppg": 1.69,
+    "sot_pg": 5.4,
+    "sota_pg": 4.1
+   },
+   "away": {
+    "gp": 17,
+    "w": 4,
+    "d": 9,
+    "l": 4,
+    "gf_pg": 1.0,
+    "ga_pg": 0.82,
+    "total_pg": 1.82,
+    "over": {
+     "1.5": 0.647,
+     "2.5": 0.176,
+     "3.5": 0.118
+    },
+    "btts": 0.529,
+    "clean_sheet": 0.353,
+    "failed_to_score": 0.294,
+    "ppg": 1.24,
+    "sot_pg": 5.1,
+    "sota_pg": 4.4
+   },
+   "last6": {
+    "gp": 6,
+    "w": 1,
+    "d": 3,
+    "l": 2,
+    "gf_pg": 1.5,
+    "ga_pg": 1.67,
+    "total_pg": 3.17,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.667,
+     "3.5": 0.333
+    },
+    "btts": 1.0,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.0,
+    "ppg": 1.0,
+    "sot_pg": 4.7,
+    "sota_pg": 5.5
+   },
+   "last6_log": [
+    "20260909 A Gangwon 1-1",
+    "20260912 H Seoul 1-2",
+    "20260920 H Gwangju FC 2-2",
+    "20261009 A Daejeon 1-2",
+    "20261018 H Jeju SK 3-2",
+    "20261024 A Anyang 1-1"
+   ],
+   "last_game_date": "20261024",
+   "rest_days": 29,
+   "rank": 4,
+   "points": 48
+  },
+  "Gangwon": {
+   "season": {
+    "gp": 33,
+    "w": 11,
+    "d": 15,
+    "l": 7,
+    "gf_pg": 1.21,
+    "ga_pg": 0.91,
+    "total_pg": 2.12,
+    "over": {
+     "1.5": 0.758,
+     "2.5": 0.364,
+     "3.5": 0.121
+    },
+    "btts": 0.455,
+    "clean_sheet": 0.424,
+    "failed_to_score": 0.273,
+    "ppg": 1.45,
+    "sot_pg": 5.0,
+    "sota_pg": 3.7
+   },
+   "home": {
+    "gp": 17,
+    "w": 5,
+    "d": 9,
+    "l": 3,
+    "gf_pg": 1.18,
+    "ga_pg": 0.82,
+    "total_pg": 2.0,
+    "over": {
+     "1.5": 0.824,
+     "2.5": 0.235,
+     "3.5": 0.059
+    },
+    "btts": 0.471,
+    "clean_sheet": 0.412,
+    "failed_to_score": 0.235,
+    "ppg": 1.41,
+    "sot_pg": 5.4,
+    "sota_pg": 3.7
+   },
+   "away": {
+    "gp": 16,
+    "w": 6,
+    "d": 6,
+    "l": 4,
+    "gf_pg": 1.25,
+    "ga_pg": 1.0,
+    "total_pg": 2.25,
+    "over": {
+     "1.5": 0.688,
+     "2.5": 0.5,
+     "3.5": 0.188
+    },
+    "btts": 0.438,
+    "clean_sheet": 0.438,
+    "failed_to_score": 0.312,
+    "ppg": 1.5,
+    "sot_pg": 4.6,
+    "sota_pg": 3.6
+   },
+   "last6": {
+    "gp": 6,
+    "w": 1,
+    "d": 4,
+    "l": 1,
+    "gf_pg": 1.0,
+    "ga_pg": 0.83,
+    "total_pg": 1.83,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.167,
+     "3.5": 0.167
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.333,
+    "ppg": 1.17,
+    "sot_pg": 5.7,
+    "sota_pg": 3.3
+   },
+   "last6_log": [
+    "20260913 A Gimcheon Sangmu 2-2",
+    "20260920 H Jeju SK 0-1",
+    "20260927 H Incheon 0-0",
+    "20261009 H Bucheon FC 1995 2-0",
+    "20261018 H Incheon 1-1",
+    "20261024 A Seoul 1-1"
+   ],
+   "last_game_date": "20261024",
+   "rest_days": 29,
+   "rank": 5,
+   "points": 48
+  },
+  "Incheon": {
+   "season": {
+    "gp": 33,
+    "w": 12,
+    "d": 10,
+    "l": 11,
+    "gf_pg": 1.3,
+    "ga_pg": 1.06,
+    "total_pg": 2.36,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.485,
+     "3.5": 0.182
+    },
+    "btts": 0.576,
+    "clean_sheet": 0.273,
+    "failed_to_score": 0.212,
+    "ppg": 1.39,
+    "sot_pg": 4.5,
+    "sota_pg": 4.4
+   },
+   "home": {
+    "gp": 17,
+    "w": 7,
+    "d": 4,
+    "l": 6,
+    "gf_pg": 1.35,
+    "ga_pg": 1.0,
+    "total_pg": 2.35,
+    "over": {
+     "1.5": 0.706,
+     "2.5": 0.471,
+     "3.5": 0.176
+    },
+    "btts": 0.588,
+    "clean_sheet": 0.235,
+    "failed_to_score": 0.176,
+    "ppg": 1.47,
+    "sot_pg": 5.1,
+    "sota_pg": 4.5
+   },
+   "away": {
+    "gp": 16,
+    "w": 5,
+    "d": 6,
+    "l": 5,
+    "gf_pg": 1.25,
+    "ga_pg": 1.12,
+    "total_pg": 2.38,
+    "over": {
+     "1.5": 0.625,
+     "2.5": 0.5,
+     "3.5": 0.188
+    },
+    "btts": 0.562,
+    "clean_sheet": 0.312,
+    "failed_to_score": 0.25,
+    "ppg": 1.31,
+    "sot_pg": 3.8,
+    "sota_pg": 4.2
+   },
+   "last6": {
+    "gp": 6,
+    "w": 2,
+    "d": 3,
+    "l": 1,
+    "gf_pg": 1.5,
+    "ga_pg": 0.83,
+    "total_pg": 2.33,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.5,
+     "3.5": 0.167
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.167,
+    "ppg": 1.5,
+    "sot_pg": 4.8,
+    "sota_pg": 3.5
+   },
+   "last6_log": [
+    "20260912 A Ulsan HD 1-2",
+    "20260920 H Daejeon 1-1",
+    "20260927 A Gangwon 0-0",
+    "20261009 H Pohang 3-0",
+    "20261018 A Gangwon 1-1",
+    "20261024 H Jeju SK 3-1"
+   ],
+   "last_game_date": "20261024",
+   "rest_days": 29,
+   "rank": 6,
+   "points": 46
+  },
+  "Jeju SK": {
+   "season": {
+    "gp": 33,
+    "w": 12,
+    "d": 10,
+    "l": 11,
+    "gf_pg": 1.18,
+    "ga_pg": 1.12,
+    "total_pg": 2.3,
+    "over": {
+     "1.5": 0.697,
+     "2.5": 0.455,
+     "3.5": 0.182
+    },
+    "btts": 0.576,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.212,
+    "ppg": 1.39,
+    "sot_pg": 4.8,
+    "sota_pg": 4.7
+   },
+   "home": {
+    "gp": 17,
+    "w": 5,
+    "d": 7,
+    "l": 5,
+    "gf_pg": 1.06,
+    "ga_pg": 1.06,
+    "total_pg": 2.12,
+    "over": {
+     "1.5": 0.706,
+     "2.5": 0.412,
+     "3.5": 0.118
+    },
+    "btts": 0.529,
+    "clean_sheet": 0.353,
+    "failed_to_score": 0.353,
+    "ppg": 1.29,
+    "sot_pg": 4.9,
+    "sota_pg": 4.0
+   },
+   "away": {
+    "gp": 16,
+    "w": 7,
+    "d": 3,
+    "l": 6,
+    "gf_pg": 1.31,
+    "ga_pg": 1.19,
+    "total_pg": 2.5,
+    "over": {
+     "1.5": 0.688,
+     "2.5": 0.5,
+     "3.5": 0.25
+    },
+    "btts": 0.625,
+    "clean_sheet": 0.312,
+    "failed_to_score": 0.062,
+    "ppg": 1.5,
+    "sot_pg": 4.7,
+    "sota_pg": 5.4
+   },
+   "last6": {
+    "gp": 6,
+    "w": 2,
+    "d": 1,
+    "l": 3,
+    "gf_pg": 1.33,
+    "ga_pg": 1.67,
+    "total_pg": 3.0,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.667,
+     "3.5": 0.5
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.0,
+    "ppg": 1.17,
+    "sot_pg": 3.7,
+    "sota_pg": 6.0
+   },
+   "last6_log": [
+    "20260909 A Gwangju FC 1-0",
+    "20260912 A Bucheon FC 1995 2-2",
+    "20260920 A Gangwon 1-0",
+    "20261010 A Seoul 1-2",
+    "20261018 A Jeonbuk 2-3",
+    "20261024 A Incheon 1-3"
+   ],
+   "last_game_date": "20261024",
+   "rest_days": 29,
+   "rank": 7,
+   "points": 46
+  },
+  "Anyang": {
+   "season": {
+    "gp": 33,
+    "w": 10,
+    "d": 13,
+    "l": 10,
+    "gf_pg": 1.21,
+    "ga_pg": 1.45,
+    "total_pg": 2.67,
+    "over": {
+     "1.5": 0.788,
+     "2.5": 0.455,
+     "3.5": 0.212
+    },
+    "btts": 0.697,
+    "clean_sheet": 0.152,
+    "failed_to_score": 0.212,
+    "ppg": 1.3,
+    "sot_pg": 4.3,
+    "sota_pg": 5.3
+   },
+   "home": {
+    "gp": 16,
+    "w": 4,
+    "d": 6,
+    "l": 6,
+    "gf_pg": 1.12,
+    "ga_pg": 1.75,
+    "total_pg": 2.88,
+    "over": {
+     "1.5": 0.875,
+     "2.5": 0.562,
+     "3.5": 0.188
+    },
+    "btts": 0.75,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.25,
+    "ppg": 1.12,
+    "sot_pg": 3.9,
+    "sota_pg": 5.4
+   },
+   "away": {
+    "gp": 17,
+    "w": 6,
+    "d": 7,
+    "l": 4,
+    "gf_pg": 1.29,
+    "ga_pg": 1.18,
+    "total_pg": 2.47,
+    "over": {
+     "1.5": 0.706,
+     "2.5": 0.353,
+     "3.5": 0.235
+    },
+    "btts": 0.647,
+    "clean_sheet": 0.294,
+    "failed_to_score": 0.176,
+    "ppg": 1.47,
+    "sot_pg": 4.6,
+    "sota_pg": 5.2
+   },
+   "last6": {
+    "gp": 6,
+    "w": 2,
+    "d": 3,
+    "l": 1,
+    "gf_pg": 1.17,
+    "ga_pg": 1.0,
+    "total_pg": 2.17,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.333,
+     "3.5": 0.167
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.167,
+    "ppg": 1.5,
+    "sot_pg": 4.7,
+    "sota_pg": 4.5
+   },
+   "last6_log": [
+    "20260909 A Daejeon 2-3",
+    "20260913 A Gwangju FC 1-1",
+    "20260919 H Ulsan HD 2-1",
+    "20261010 A Gimcheon Sangmu 1-0",
+    "20261018 A Pohang 0-0",
+    "20261024 H Jeonbuk 1-1"
+   ],
+   "last_game_date": "20261024",
+   "rest_days": 29,
+   "rank": 8,
+   "points": 43
+  },
+  "Pohang": {
+   "season": {
+    "gp": 33,
+    "w": 11,
+    "d": 9,
+    "l": 13,
+    "gf_pg": 0.91,
+    "ga_pg": 1.18,
+    "total_pg": 2.09,
+    "over": {
+     "1.5": 0.636,
+     "2.5": 0.364,
+     "3.5": 0.152
+    },
+    "btts": 0.364,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.424,
+    "ppg": 1.27,
+    "sot_pg": 3.7,
+    "sota_pg": 4.6
+   },
+   "home": {
+    "gp": 14,
+    "w": 4,
+    "d": 4,
+    "l": 6,
+    "gf_pg": 0.43,
+    "ga_pg": 0.79,
+    "total_pg": 1.21,
+    "over": {
+     "1.5": 0.357,
+     "2.5": 0.071,
+     "3.5": 0.0
+    },
+    "btts": 0.143,
+    "clean_sheet": 0.429,
+    "failed_to_score": 0.643,
+    "ppg": 1.14,
+    "sot_pg": 3.4,
+    "sota_pg": 3.4
+   },
+   "away": {
+    "gp": 19,
+    "w": 7,
+    "d": 5,
+    "l": 7,
+    "gf_pg": 1.26,
+    "ga_pg": 1.47,
+    "total_pg": 2.74,
+    "over": {
+     "1.5": 0.842,
+     "2.5": 0.579,
+     "3.5": 0.263
+    },
+    "btts": 0.526,
+    "clean_sheet": 0.263,
+    "failed_to_score": 0.263,
+    "ppg": 1.37,
+    "sot_pg": 3.9,
+    "sota_pg": 5.5
+   },
+   "last6": {
+    "gp": 6,
+    "w": 1,
+    "d": 4,
+    "l": 1,
+    "gf_pg": 1.0,
+    "ga_pg": 1.33,
+    "total_pg": 2.33,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.667,
+     "3.5": 0.333
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.5,
+    "ppg": 1.17,
+    "sot_pg": 3.8,
+    "sota_pg": 5.5
+   },
+   "last6_log": [
+    "20260909 H Gimcheon Sangmu 0-0",
+    "20260912 A Daejeon 2-2",
+    "20260920 H Seoul 2-1",
+    "20261009 A Incheon 0-3",
+    "20261018 H Anyang 0-0",
+    "20261024 A Ulsan HD 2-2"
+   ],
+   "last_game_date": "20261024",
+   "rest_days": 29,
+   "rank": 9,
+   "points": 42
+  },
+  "Gimcheon Sangmu": {
+   "season": {
+    "gp": 33,
+    "w": 5,
+    "d": 19,
+    "l": 9,
+    "gf_pg": 1.0,
+    "ga_pg": 1.24,
+    "total_pg": 2.24,
+    "over": {
+     "1.5": 0.758,
+     "2.5": 0.364,
+     "3.5": 0.212
+    },
+    "btts": 0.606,
+    "clean_sheet": 0.242,
+    "failed_to_score": 0.303,
+    "ppg": 1.03,
+    "sot_pg": 4.2,
+    "sota_pg": 4.4
+   },
+   "home": {
+    "gp": 16,
+    "w": 1,
+    "d": 10,
+    "l": 5,
+    "gf_pg": 0.94,
+    "ga_pg": 1.44,
+    "total_pg": 2.38,
+    "over": {
+     "1.5": 0.812,
+     "2.5": 0.438,
+     "3.5": 0.188
+    },
+    "btts": 0.688,
+    "clean_sheet": 0.125,
+    "failed_to_score": 0.312,
+    "ppg": 0.81,
+    "sot_pg": 4.6,
+    "sota_pg": 4.1
+   },
+   "away": {
+    "gp": 17,
+    "w": 4,
+    "d": 9,
+    "l": 4,
+    "gf_pg": 1.06,
+    "ga_pg": 1.06,
+    "total_pg": 2.12,
+    "over": {
+     "1.5": 0.706,
+     "2.5": 0.294,
+     "3.5": 0.235
+    },
+    "btts": 0.529,
+    "clean_sheet": 0.353,
+    "failed_to_score": 0.294,
+    "ppg": 1.24,
+    "sot_pg": 3.9,
+    "sota_pg": 4.7
+   },
+   "last6": {
+    "gp": 6,
+    "w": 1,
+    "d": 3,
+    "l": 2,
+    "gf_pg": 1.17,
+    "ga_pg": 1.17,
+    "total_pg": 2.33,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.5,
+     "3.5": 0.333
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.333,
+    "ppg": 1.0,
+    "sot_pg": 5.2,
+    "sota_pg": 5.0
+   },
+   "last6_log": [
+    "20260909 A Pohang 0-0",
+    "20260913 H Gangwon 2-2",
+    "20260919 A Bucheon FC 1995 2-0",
+    "20261010 H Anyang 0-1",
+    "20261018 A Seoul 2-2",
+    "20261024 H Daejeon 1-2"
+   ],
+   "last_game_date": "20261024",
+   "rest_days": 29,
+   "rank": 10,
+   "points": 34
+  },
+  "Bucheon FC 1995": {
+   "season": {
+    "gp": 33,
+    "w": 7,
+    "d": 11,
+    "l": 15,
+    "gf_pg": 0.97,
+    "ga_pg": 1.42,
+    "total_pg": 2.39,
+    "over": {
+     "1.5": 0.697,
+     "2.5": 0.455,
+     "3.5": 0.242
+    },
+    "btts": 0.424,
+    "clean_sheet": 0.273,
+    "failed_to_score": 0.424,
+    "ppg": 0.97,
+    "sot_pg": 4.2,
+    "sota_pg": 5.6
+   },
+   "home": {
+    "gp": 18,
+    "w": 3,
+    "d": 7,
+    "l": 8,
+    "gf_pg": 1.0,
+    "ga_pg": 1.61,
+    "total_pg": 2.61,
+    "over": {
+     "1.5": 0.778,
+     "2.5": 0.5,
+     "3.5": 0.333
+    },
+    "btts": 0.444,
+    "clean_sheet": 0.278,
+    "failed_to_score": 0.444,
+    "ppg": 0.89,
+    "sot_pg": 4.6,
+    "sota_pg": 6.5
+   },
+   "away": {
+    "gp": 15,
+    "w": 4,
+    "d": 4,
+    "l": 7,
+    "gf_pg": 0.93,
+    "ga_pg": 1.2,
+    "total_pg": 2.13,
+    "over": {
+     "1.5": 0.6,
+     "2.5": 0.4,
+     "3.5": 0.133
+    },
+    "btts": 0.4,
+    "clean_sheet": 0.267,
+    "failed_to_score": 0.4,
+    "ppg": 1.07,
+    "sot_pg": 3.7,
+    "sota_pg": 4.5
+   },
+   "last6": {
+    "gp": 6,
+    "w": 0,
+    "d": 1,
+    "l": 5,
+    "gf_pg": 0.67,
+    "ga_pg": 2.17,
+    "total_pg": 2.83,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.667,
+     "3.5": 0.167
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.5,
+    "ppg": 0.17,
+    "sot_pg": 4.0,
+    "sota_pg": 6.0
+   },
+   "last6_log": [
+    "20260908 A Incheon 1-2",
+    "20260912 H Jeju SK 2-2",
+    "20260919 H Gimcheon Sangmu 0-2",
+    "20261009 A Gangwon 0-2",
+    "20261017 A Ulsan HD 1-2",
+    "20261024 H Gwangju FC 0-3"
+   ],
+   "last_game_date": "20261024",
+   "rest_days": 29,
+   "rank": 11,
+   "points": 32
+  },
+  "Gwangju FC": {
+   "season": {
+    "gp": 33,
+    "w": 3,
+    "d": 12,
+    "l": 18,
+    "gf_pg": 0.91,
+    "ga_pg": 2.09,
+    "total_pg": 3.0,
+    "over": {
+     "1.5": 0.727,
+     "2.5": 0.545,
+     "3.5": 0.394
+    },
+    "btts": 0.485,
+    "clean_sheet": 0.152,
+    "failed_to_score": 0.485,
+    "ppg": 0.64,
+    "sot_pg": 3.9,
+    "sota_pg": 5.8
+   },
+   "home": {
+    "gp": 17,
+    "w": 2,
+    "d": 5,
+    "l": 10,
+    "gf_pg": 0.94,
+    "ga_pg": 2.0,
+    "total_pg": 2.94,
+    "over": {
+     "1.5": 0.647,
+     "2.5": 0.471,
+     "3.5": 0.294
+    },
+    "btts": 0.529,
+    "clean_sheet": 0.118,
+    "failed_to_score": 0.471,
+    "ppg": 0.65,
+    "sot_pg": 3.8,
+    "sota_pg": 5.5
+   },
+   "away": {
+    "gp": 16,
+    "w": 1,
+    "d": 7,
+    "l": 8,
+    "gf_pg": 0.88,
+    "ga_pg": 2.19,
+    "total_pg": 3.06,
+    "over": {
+     "1.5": 0.812,
+     "2.5": 0.625,
+     "3.5": 0.5
+    },
+    "btts": 0.438,
+    "clean_sheet": 0.188,
+    "failed_to_score": 0.5,
+    "ppg": 0.62,
+    "sot_pg": 3.9,
+    "sota_pg": 6.2
+   },
+   "last6": {
+    "gp": 6,
+    "w": 2,
+    "d": 2,
+    "l": 2,
+    "gf_pg": 2.0,
+    "ga_pg": 1.67,
+    "total_pg": 3.67,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.667,
+     "3.5": 0.5
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.167,
+    "ppg": 1.33,
+    "sot_pg": 5.2,
+    "sota_pg": 6.2
+   },
+   "last6_log": [
+    "20260909 H Jeju SK 0-1",
+    "20260913 H Anyang 1-1",
+    "20260920 A Jeonbuk 2-2",
+    "20261011 H Ulsan HD 4-3",
+    "20261018 A Daejeon 2-3",
+    "20261024 A Bucheon FC 1995 3-0"
+   ],
+   "last_game_date": "20261024",
+   "rest_days": 29,
+   "rank": 12,
+   "points": 21
+  }
+ },
+ "h2h": {
+  "Incheon vs Seoul": [
+   "20260228 Incheon 1-2 Seoul",
+   "20260705 Seoul 1-0 Incheon",
+   "20260905 Seoul 1-0 Incheon"
+  ],
+  "Gangwon vs Ulsan HD": [
+   "20260228 Ulsan HD 3-1 Gangwon",
+   "20260517 Gangwon 2-0 Ulsan HD",
+   "20260816 Ulsan HD 2-3 Gangwon"
+  ],
+  "Gimcheon Sangmu vs Pohang": [
+   "20260228 Gimcheon Sangmu 1-1 Pohang",
+   "20260801 Pohang 0-1 Gimcheon Sangmu",
+   "20260909 Pohang 0-0 Gimcheon Sangmu"
+  ],
+  "Bucheon FC 1995 vs Jeonbuk": [
+   "20260301 Jeonbuk 2-3 Bucheon FC 1995",
+   "20260513 Bucheon FC 1995 0-0 Jeonbuk",
+   "20260816 Bucheon FC 1995 3-2 Jeonbuk"
+  ],
+  "Gwangju FC vs Jeju SK": [
+   "20260301 Jeju SK 0-0 Gwangju FC",
+   "20260726 Gwangju FC 1-2 Jeju SK",
+   "20260909 Gwangju FC 0-1 Jeju SK"
+  ],
+  "Anyang vs Daejeon": [
+   "20260302 Daejeon 1-1 Anyang",
+   "20260808 Anyang 1-2 Daejeon",
+   "20260909 Daejeon 3-2 Anyang"
+  ],
+  "Bucheon FC 1995 vs Daejeon": [
+   "20260307 Bucheon FC 1995 1-1 Daejeon",
+   "20260704 Daejeon 2-2 Bucheon FC 1995",
+   "20260905 Bucheon FC 1995 0-5 Daejeon"
+  ],
+  "Gwangju FC vs Incheon": [
+   "20260307 Gwangju FC 3-2 Incheon",
+   "20260516 Incheon 4-0 Gwangju FC",
+   "20260823 Gwangju FC 0-1 Incheon"
+  ],
+  "Gimcheon Sangmu vs Jeonbuk": [
+   "20260308 Gimcheon Sangmu 1-1 Jeonbuk",
+   "20260517 Jeonbuk 1-0 Gimcheon Sangmu",
+   "20260825 Gimcheon Sangmu 0-0 Jeonbuk"
+  ],
+  "Anyang vs Jeju SK": [
+   "20260308 Anyang 2-1 Jeju SK",
+   "20260517 Jeju SK 1-2 Anyang",
+   "20260815 Jeju SK 2-0 Anyang"
+  ],
+  "Gwangju FC vs Jeonbuk": [
+   "20260314 Gwangju FC 0-0 Jeonbuk",
+   "20260505 Jeonbuk 4-0 Gwangju FC",
+   "20260920 Jeonbuk 2-2 Gwangju FC"
+  ],
+  "Daejeon vs Gimcheon Sangmu": [
+   "20260314 Daejeon 1-1 Gimcheon Sangmu",
+   "20260725 Gimcheon Sangmu 3-2 Daejeon",
+   "20261024 Gimcheon Sangmu 1-2 Daejeon"
+  ],
+  "Bucheon FC 1995 vs Ulsan HD": [
+   "20260315 Bucheon FC 1995 1-2 Ulsan HD",
+   "20260510 Ulsan HD 1-0 Bucheon FC 1995",
+   "20261017 Ulsan HD 2-1 Bucheon FC 1995"
+  ],
+  "Jeju SK vs Seoul": [
+   "20260315 Jeju SK 1-2 Seoul",
+   "20260509 Jeju SK 2-1 Seoul",
+   "20261010 Seoul 2-1 Jeju SK"
+  ],
+  "Anyang vs Gangwon": [
+   "20260315 Gangwon 1-1 Anyang",
+   "20260726 Anyang 2-1 Gangwon",
+   "20260906 Anyang 0-3 Gangwon"
+  ],
+  "Incheon vs Pohang": [
+   "20260315 Pohang 1-1 Incheon",
+   "20260512 Incheon 0-1 Pohang",
+   "20261009 Incheon 3-0 Pohang"
+  ],
+  "Gimcheon Sangmu vs Gwangju FC": [
+   "20260317 Gimcheon Sangmu 1-1 Gwangju FC",
+   "20260722 Gwangju FC 1-1 Gimcheon Sangmu",
+   "20260906 Gimcheon Sangmu 2-2 Gwangju FC"
+  ],
+  "Bucheon FC 1995 vs Gangwon": [
+   "20260318 Bucheon FC 1995 0-0 Gangwon",
+   "20260801 Gangwon 0-3 Bucheon FC 1995",
+   "20261009 Gangwon 2-0 Bucheon FC 1995"
+  ],
+  "Daejeon vs Incheon": [
+   "20260318 Incheon 1-3 Daejeon",
+   "20260505 Daejeon 0-0 Incheon",
+   "20260920 Incheon 1-1 Daejeon"
+  ],
+  "Jeju SK vs Ulsan HD": [
+   "20260318 Jeju SK 0-2 Ulsan HD",
+   "20260513 Ulsan HD 2-1 Jeju SK",
+   "20260905 Jeju SK 0-0 Ulsan HD"
+  ],
+  "Anyang vs Jeonbuk": [
+   "20260318 Jeonbuk 2-1 Anyang",
+   "20260510 Anyang 1-1 Jeonbuk",
+   "20261024 Anyang 1-1 Jeonbuk"
+  ],
+  "Pohang vs Seoul": [
+   "20260318 Pohang 0-1 Seoul",
+   "20260722 Seoul 3-1 Pohang",
+   "20260920 Pohang 2-1 Seoul"
+  ],
+  "Daejeon vs Jeonbuk": [
+   "20260321 Daejeon 0-1 Jeonbuk",
+   "20260721 Jeonbuk 0-0 Daejeon",
+   "20261009 Daejeon 2-1 Jeonbuk"
+  ],
+  "Gwangju FC vs Seoul": [
+   "20260322 Seoul 5-0 Gwangju FC",
+   "20260512 Gwangju FC 0-1 Seoul",
+   "20260830 Gwangju FC 2-5 Seoul"
+  ],
+  "Gimcheon Sangmu vs Ulsan HD": [
+   "20260322 Ulsan HD 0-0 Gimcheon Sangmu",
+   "20260505 Gimcheon Sangmu 1-2 Ulsan HD",
+   "20260829 Ulsan HD 3-1 Gimcheon Sangmu"
+  ],
+  "Anyang vs Incheon": [
+   "20260322 Anyang 0-1 Incheon",
+   "20260712 Incheon 0-1 Anyang",
+   "20260826 Anyang 2-1 Incheon"
+  ],
+  "Gangwon vs Jeju SK": [
+   "20260322 Gangwon 1-1 Jeju SK",
+   "20260721 Jeju SK 1-1 Gangwon",
+   "20260920 Gangwon 0-1 Jeju SK"
+  ],
+  "Bucheon FC 1995 vs Pohang": [
+   "20260322 Pohang 0-0 Bucheon FC 1995",
+   "20260517 Bucheon FC 1995 2-0 Pohang",
+   "20260822 Bucheon FC 1995 3-0 Pohang"
+  ],
+  "Gangwon vs Pohang": [
+   "20260328 Pohang 1-0 Gangwon",
+   "20260505 Gangwon 1-1 Pohang",
+   "20260830 Gangwon 0-0 Pohang"
+  ],
+  "Bucheon FC 1995 vs Jeju SK": [
+   "20260404 Jeju SK 1-0 Bucheon FC 1995",
+   "20260505 Bucheon FC 1995 0-1 Jeju SK",
+   "20260912 Bucheon FC 1995 2-2 Jeju SK"
+  ],
+  "Jeonbuk vs Ulsan HD": [
+   "20260404 Jeonbuk 2-0 Ulsan HD",
+   "20260711 Ulsan HD 1-3 Jeonbuk",
+   "20260822 Jeonbuk 1-0 Ulsan HD"
+  ],
+  "Gangwon vs Gwangju FC": [
+   "20260404 Gangwon 3-0 Gwangju FC",
+   "20260509 Gwangju FC 0-0 Gangwon",
+   "20260826 Gangwon 2-2 Gwangju FC"
+  ],
+  "Daejeon vs Pohang": [
+   "20260404 Pohang 1-0 Daejeon",
+   "20260509 Daejeon 0-2 Pohang",
+   "20260912 Daejeon 2-2 Pohang"
+  ],
+  "Anyang vs Seoul": [
+   "20260405 Anyang 1-1 Seoul",
+   "20260505 Seoul 0-0 Anyang",
+   "20260822 Anyang 0-7 Seoul"
+  ],
+  "Gimcheon Sangmu vs Incheon": [
+   "20260405 Incheon 2-1 Gimcheon Sangmu",
+   "20260509 Gimcheon Sangmu 0-3 Incheon",
+   "20260816 Incheon 1-1 Gimcheon Sangmu"
+  ],
+  "Jeju SK vs Pohang": [
+   "20260411 Pohang 0-2 Jeju SK",
+   "20260718 Jeju SK 2-1 Pohang",
+   "20260825 Jeju SK 1-2 Pohang"
+  ],
+  "Jeonbuk vs Seoul": [
+   "20260411 Seoul 1-0 Jeonbuk",
+   "20260801 Jeonbuk 0-0 Seoul",
+   "20260912 Jeonbuk 1-2 Seoul"
+  ],
+  "Bucheon FC 1995 vs Gwangju FC": [
+   "20260411 Gwangju FC 0-1 Bucheon FC 1995",
+   "20260808 Bucheon FC 1995 0-0 Gwangju FC",
+   "20261024 Bucheon FC 1995 0-3 Gwangju FC"
+  ],
+  "Incheon vs Ulsan HD": [
+   "20260411 Incheon 1-2 Ulsan HD",
+   "20260721 Ulsan HD 1-2 Incheon",
+   "20260912 Ulsan HD 2-1 Incheon"
+  ],
+  "Daejeon vs Gangwon": [
+   "20260412 Daejeon 0-2 Gangwon",
+   "20260512 Gangwon 2-0 Daejeon",
+   "20260823 Daejeon 3-0 Gangwon"
+  ],
+  "Anyang vs Gimcheon Sangmu": [
+   "20260412 Gimcheon Sangmu 1-1 Anyang",
+   "20260513 Anyang 2-2 Gimcheon Sangmu",
+   "20261010 Gimcheon Sangmu 0-1 Anyang"
+  ],
+  "Seoul vs Ulsan HD": [
+   "20260415 Ulsan HD 1-4 Seoul",
+   "20260726 Seoul 1-3 Ulsan HD",
+   "20260908 Ulsan HD 1-0 Seoul"
+  ],
+  "Gangwon vs Jeonbuk": [
+   "20260418 Gangwon 1-1 Jeonbuk",
+   "20260704 Jeonbuk 1-2 Gangwon",
+   "20260909 Gangwon 1-1 Jeonbuk"
+  ],
+  "Daejeon vs Seoul": [
+   "20260418 Seoul 0-1 Daejeon",
+   "20260516 Daejeon 1-2 Seoul",
+   "20260815 Seoul 4-2 Daejeon"
+  ],
+  "Bucheon FC 1995 vs Incheon": [
+   "20260418 Bucheon FC 1995 2-2 Incheon",
+   "20260726 Incheon 1-1 Bucheon FC 1995",
+   "20260908 Incheon 2-1 Bucheon FC 1995"
+  ],
+  "Gimcheon Sangmu vs Jeju SK": [
+   "20260418 Jeju SK 1-1 Gimcheon Sangmu",
+   "20260705 Gimcheon Sangmu 1-1 Jeju SK",
+   "20260822 Jeju SK 0-0 Gimcheon Sangmu"
+  ],
+  "Gwangju FC vs Ulsan HD": [
+   "20260419 Ulsan HD 5-1 Gwangju FC",
+   "20260705 Gwangju FC 1-1 Ulsan HD",
+   "20261011 Gwangju FC 4-3 Ulsan HD"
+  ],
+  "Anyang vs Pohang": [
+   "20260419 Pohang 0-1 Anyang",
+   "20260704 Anyang 2-3 Pohang",
+   "20261018 Pohang 0-0 Anyang"
+  ],
+  "Gangwon vs Gimcheon Sangmu": [
+   "20260421 Gimcheon Sangmu 0-3 Gangwon",
+   "20260718 Gangwon 2-0 Gimcheon Sangmu",
+   "20260913 Gimcheon Sangmu 2-2 Gangwon"
+  ],
+  "Incheon vs Jeonbuk": [
+   "20260421 Jeonbuk 1-2 Incheon",
+   "20260718 Incheon 1-0 Jeonbuk",
+   "20260830 Incheon 1-1 Jeonbuk"
+  ],
+  "Bucheon FC 1995 vs Seoul": [
+   "20260421 Seoul 3-0 Bucheon FC 1995",
+   "20260719 Bucheon FC 1995 1-3 Seoul",
+   "20260825 Seoul 1-0 Bucheon FC 1995"
+  ],
+  "Anyang vs Ulsan HD": [
+   "20260422 Anyang 1-1 Ulsan HD",
+   "20260802 Ulsan HD 3-1 Anyang",
+   "20260919 Anyang 2-1 Ulsan HD"
+  ],
+  "Daejeon vs Jeju SK": [
+   "20260422 Daejeon 0-1 Jeju SK",
+   "20260712 Jeju SK 0-0 Daejeon",
+   "20260830 Jeju SK 3-1 Daejeon"
+  ],
+  "Gwangju FC vs Pohang": [
+   "20260422 Pohang 1-0 Gwangju FC",
+   "20260711 Gwangju FC 0-3 Pohang",
+   "20260815 Gwangju FC 1-2 Pohang"
+  ],
+  "Gangwon vs Seoul": [
+   "20260425 Gangwon 1-2 Seoul",
+   "20260712 Seoul 0-0 Gangwon",
+   "20261024 Seoul 1-1 Gangwon"
+  ],
+  "Bucheon FC 1995 vs Gimcheon Sangmu": [
+   "20260425 Bucheon FC 1995 0-2 Gimcheon Sangmu",
+   "20260711 Gimcheon Sangmu 1-1 Bucheon FC 1995",
+   "20260919 Bucheon FC 1995 0-2 Gimcheon Sangmu"
+  ],
+  "Incheon vs Jeju SK": [
+   "20260425 Incheon 1-0 Jeju SK",
+   "20260802 Jeju SK 3-3 Incheon",
+   "20261024 Incheon 3-1 Jeju SK"
+  ],
+  "Jeonbuk vs Pohang": [
+   "20260426 Jeonbuk 3-2 Pohang",
+   "20260725 Pohang 0-2 Jeonbuk",
+   "20260905 Jeonbuk 2-0 Pohang"
+  ],
+  "Anyang vs Gwangju FC": [
+   "20260426 Gwangju FC 2-5 Anyang",
+   "20260719 Anyang 1-1 Gwangju FC",
+   "20260913 Gwangju FC 1-1 Anyang"
+  ],
+  "Daejeon vs Ulsan HD": [
+   "20260426 Ulsan HD 1-4 Daejeon",
+   "20260718 Daejeon 2-2 Ulsan HD",
+   "20260826 Daejeon 2-1 Ulsan HD"
+  ],
+  "Gimcheon Sangmu vs Seoul": [
+   "20260502 Seoul 2-3 Gimcheon Sangmu",
+   "20260808 Gimcheon Sangmu 0-0 Seoul",
+   "20261018 Seoul 2-2 Gimcheon Sangmu"
+  ],
+  "Pohang vs Ulsan HD": [
+   "20260502 Ulsan HD 0-1 Pohang",
+   "20260808 Pohang 0-2 Ulsan HD",
+   "20261024 Ulsan HD 2-2 Pohang"
+  ],
+  "Gangwon vs Incheon": [
+   "20260502 Incheon 0-1 Gangwon",
+   "20260927 Gangwon 0-0 Incheon",
+   "20261018 Gangwon 1-1 Incheon"
+  ],
+  "Jeju SK vs Jeonbuk": [
+   "20260502 Jeju SK 0-2 Jeonbuk",
+   "20260808 Jeonbuk 1-3 Jeju SK",
+   "20261018 Jeonbuk 3-2 Jeju SK"
+  ],
+  "Anyang vs Bucheon FC 1995": [
+   "20260502 Anyang 0-1 Bucheon FC 1995",
+   "20260722 Bucheon FC 1995 2-3 Anyang",
+   "20260829 Bucheon FC 1995 1-1 Anyang"
+  ],
+  "Daejeon vs Gwangju FC": [
+   "20260502 Gwangju FC 0-5 Daejeon",
+   "20260802 Daejeon 2-0 Gwangju FC",
+   "20261018 Daejeon 3-2 Gwangju FC"
+  ]
+ }
+}

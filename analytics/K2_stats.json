@@ -1,0 +1,2163 @@
+{
+ "meta": {
+  "generated_kst": "2026-11-23 13:13",
+  "league": "K2",
+  "season_start": "20260201",
+  "games": 264,
+  "last_game_date": "20261122",
+  "league_avg": {
+   "games": 264,
+   "home_win": 0.375,
+   "draw": 0.307,
+   "away_win": 0.318,
+   "goals_pg": 2.74,
+   "home_gf_pg": 1.45,
+   "away_gf_pg": 1.29,
+   "over": {
+    "1.5": 0.742,
+    "2.5": 0.53,
+    "3.5": 0.337
+   },
+   "btts": 0.606
+  },
+  "notes": "REG만 집계 / over는 해당 기준점 초과 비율 / g_minus_xg +는 득점 과열(회귀 후보) / rest_days는 오늘(KST) 기준"
+ },
+ "teams": {
+  "Suwon Bluewings": {
+   "season": {
+    "gp": 31,
+    "w": 21,
+    "d": 6,
+    "l": 4,
+    "gf_pg": 1.77,
+    "ga_pg": 0.84,
+    "total_pg": 2.61,
+    "over": {
+     "1.5": 0.645,
+     "2.5": 0.516,
+     "3.5": 0.355
+    },
+    "btts": 0.484,
+    "clean_sheet": 0.484,
+    "failed_to_score": 0.129,
+    "ppg": 2.23,
+    "sot_pg": 6.3,
+    "sota_pg": 3.8
+   },
+   "home": {
+    "gp": 16,
+    "w": 11,
+    "d": 4,
+    "l": 1,
+    "gf_pg": 1.75,
+    "ga_pg": 0.75,
+    "total_pg": 2.5,
+    "over": {
+     "1.5": 0.625,
+     "2.5": 0.438,
+     "3.5": 0.375
+    },
+    "btts": 0.438,
+    "clean_sheet": 0.5,
+    "failed_to_score": 0.25,
+    "ppg": 2.31,
+    "sot_pg": 6.7,
+    "sota_pg": 3.9
+   },
+   "away": {
+    "gp": 15,
+    "w": 10,
+    "d": 2,
+    "l": 3,
+    "gf_pg": 1.8,
+    "ga_pg": 0.93,
+    "total_pg": 2.73,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.6,
+     "3.5": 0.333
+    },
+    "btts": 0.533,
+    "clean_sheet": 0.467,
+    "failed_to_score": 0.0,
+    "ppg": 2.13,
+    "sot_pg": 5.8,
+    "sota_pg": 3.6
+   },
+   "last6": {
+    "gp": 6,
+    "w": 5,
+    "d": 1,
+    "l": 0,
+    "gf_pg": 2.67,
+    "ga_pg": 1.0,
+    "total_pg": 3.67,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.667,
+     "3.5": 0.667
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.0,
+    "ppg": 2.67,
+    "sot_pg": 7.5,
+    "sota_pg": 4.8
+   },
+   "last6_log": [
+    "20261011 H Ansan Greeners 4-1",
+    "20261018 H Hwaseong 3-2",
+    "20261025 A Seongnam 2-0",
+    "20261031 A Daegu 2-2",
+    "20261108 H Yongin 2-0",
+    "20261121 H Gyeongnam 3-1"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 1,
+   "rank": 1,
+   "points": 69
+  },
+  "Suwon FC": {
+   "season": {
+    "gp": 31,
+    "w": 18,
+    "d": 9,
+    "l": 4,
+    "gf_pg": 1.87,
+    "ga_pg": 1.0,
+    "total_pg": 2.87,
+    "over": {
+     "1.5": 0.806,
+     "2.5": 0.645,
+     "3.5": 0.355
+    },
+    "btts": 0.645,
+    "clean_sheet": 0.29,
+    "failed_to_score": 0.097,
+    "ppg": 2.03,
+    "sot_pg": 5.0,
+    "sota_pg": 4.3
+   },
+   "home": {
+    "gp": 15,
+    "w": 9,
+    "d": 5,
+    "l": 1,
+    "gf_pg": 1.87,
+    "ga_pg": 0.73,
+    "total_pg": 2.6,
+    "over": {
+     "1.5": 0.733,
+     "2.5": 0.533,
+     "3.5": 0.333
+    },
+    "btts": 0.533,
+    "clean_sheet": 0.4,
+    "failed_to_score": 0.133,
+    "ppg": 2.13,
+    "sot_pg": 4.9,
+    "sota_pg": 4.2
+   },
+   "away": {
+    "gp": 16,
+    "w": 9,
+    "d": 4,
+    "l": 3,
+    "gf_pg": 1.88,
+    "ga_pg": 1.25,
+    "total_pg": 3.12,
+    "over": {
+     "1.5": 0.875,
+     "2.5": 0.75,
+     "3.5": 0.375
+    },
+    "btts": 0.75,
+    "clean_sheet": 0.188,
+    "failed_to_score": 0.062,
+    "ppg": 1.94,
+    "sot_pg": 5.1,
+    "sota_pg": 4.4
+   },
+   "last6": {
+    "gp": 6,
+    "w": 5,
+    "d": 0,
+    "l": 1,
+    "gf_pg": 1.33,
+    "ga_pg": 0.33,
+    "total_pg": 1.67,
+    "over": {
+     "1.5": 0.333,
+     "2.5": 0.333,
+     "3.5": 0.0
+    },
+    "btts": 0.167,
+    "clean_sheet": 0.667,
+    "failed_to_score": 0.167,
+    "ppg": 2.5,
+    "sot_pg": 4.7,
+    "sota_pg": 3.2
+   },
+   "last6_log": [
+    "20261009 H Hwaseong 1-0",
+    "20261017 A Seongnam 2-1",
+    "20261025 H Asan 0-1",
+    "20261101 H Ansan Greeners 1-0",
+    "20261107 H Gyeongnam 3-0",
+    "20261121 A Gimpo FC 1-0"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 1,
+   "rank": 2,
+   "points": 63
+  },
+  "Daegu": {
+   "season": {
+    "gp": 31,
+    "w": 17,
+    "d": 8,
+    "l": 6,
+    "gf_pg": 1.97,
+    "ga_pg": 1.29,
+    "total_pg": 3.26,
+    "over": {
+     "1.5": 0.806,
+     "2.5": 0.645,
+     "3.5": 0.452
+    },
+    "btts": 0.677,
+    "clean_sheet": 0.323,
+    "failed_to_score": 0.065,
+    "ppg": 1.9,
+    "sot_pg": 6.2,
+    "sota_pg": 4.9
+   },
+   "home": {
+    "gp": 16,
+    "w": 10,
+    "d": 3,
+    "l": 3,
+    "gf_pg": 2.12,
+    "ga_pg": 1.19,
+    "total_pg": 3.31,
+    "over": {
+     "1.5": 0.875,
+     "2.5": 0.688,
+     "3.5": 0.438
+    },
+    "btts": 0.625,
+    "clean_sheet": 0.375,
+    "failed_to_score": 0.0,
+    "ppg": 2.06,
+    "sot_pg": 6.9,
+    "sota_pg": 4.5
+   },
+   "away": {
+    "gp": 15,
+    "w": 7,
+    "d": 5,
+    "l": 3,
+    "gf_pg": 1.8,
+    "ga_pg": 1.4,
+    "total_pg": 3.2,
+    "over": {
+     "1.5": 0.733,
+     "2.5": 0.6,
+     "3.5": 0.467
+    },
+    "btts": 0.733,
+    "clean_sheet": 0.267,
+    "failed_to_score": 0.133,
+    "ppg": 1.73,
+    "sot_pg": 5.5,
+    "sota_pg": 5.4
+   },
+   "last6": {
+    "gp": 6,
+    "w": 4,
+    "d": 1,
+    "l": 1,
+    "gf_pg": 2.33,
+    "ga_pg": 1.17,
+    "total_pg": 3.5,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.833,
+     "3.5": 0.5
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.0,
+    "ppg": 2.17,
+    "sot_pg": 7.5,
+    "sota_pg": 5.0
+   },
+   "last6_log": [
+    "20260919 A Seoul E-Land 1-2",
+    "20261017 H Cheongju 3-1",
+    "20261024 A Jeonnam 4-2",
+    "20261031 H Suwon Bluewings 2-2",
+    "20261107 A Seongnam 1-0",
+    "20261122 H Gimhae 3-0"
+   ],
+   "last_game_date": "20261122",
+   "rest_days": 0,
+   "rank": 3,
+   "points": 59
+  },
+  "Seoul E-Land": {
+   "season": {
+    "gp": 31,
+    "w": 17,
+    "d": 7,
+    "l": 7,
+    "gf_pg": 1.87,
+    "ga_pg": 1.26,
+    "total_pg": 3.13,
+    "over": {
+     "1.5": 0.806,
+     "2.5": 0.645,
+     "3.5": 0.387
+    },
+    "btts": 0.677,
+    "clean_sheet": 0.258,
+    "failed_to_score": 0.129,
+    "ppg": 1.87,
+    "sot_pg": 6.6,
+    "sota_pg": 3.4
+   },
+   "home": {
+    "gp": 16,
+    "w": 9,
+    "d": 3,
+    "l": 4,
+    "gf_pg": 2.19,
+    "ga_pg": 1.44,
+    "total_pg": 3.62,
+    "over": {
+     "1.5": 0.875,
+     "2.5": 0.75,
+     "3.5": 0.438
+    },
+    "btts": 0.812,
+    "clean_sheet": 0.125,
+    "failed_to_score": 0.062,
+    "ppg": 1.88,
+    "sot_pg": 7.6,
+    "sota_pg": 3.8
+   },
+   "away": {
+    "gp": 15,
+    "w": 8,
+    "d": 4,
+    "l": 3,
+    "gf_pg": 1.53,
+    "ga_pg": 1.07,
+    "total_pg": 2.6,
+    "over": {
+     "1.5": 0.733,
+     "2.5": 0.533,
+     "3.5": 0.333
+    },
+    "btts": 0.533,
+    "clean_sheet": 0.4,
+    "failed_to_score": 0.2,
+    "ppg": 1.87,
+    "sot_pg": 5.5,
+    "sota_pg": 3.0
+   },
+   "last6": {
+    "gp": 6,
+    "w": 4,
+    "d": 1,
+    "l": 1,
+    "gf_pg": 2.5,
+    "ga_pg": 1.67,
+    "total_pg": 4.17,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.667,
+     "3.5": 0.5
+    },
+    "btts": 0.833,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.0,
+    "ppg": 2.17,
+    "sot_pg": 7.7,
+    "sota_pg": 3.8
+   },
+   "last6_log": [
+    "20260919 H Daegu 2-1",
+    "20261009 A Gimpo FC 1-0",
+    "20261018 H Gimhae 6-2",
+    "20261031 A Yongin 2-4",
+    "20261107 H Jeonnam 3-2",
+    "20261122 H Asan 1-1"
+   ],
+   "last_game_date": "20261122",
+   "rest_days": 0,
+   "rank": 4,
+   "points": 58
+  },
+  "Busan": {
+   "season": {
+    "gp": 31,
+    "w": 14,
+    "d": 7,
+    "l": 10,
+    "gf_pg": 1.52,
+    "ga_pg": 1.23,
+    "total_pg": 2.74,
+    "over": {
+     "1.5": 0.742,
+     "2.5": 0.516,
+     "3.5": 0.323
+    },
+    "btts": 0.613,
+    "clean_sheet": 0.226,
+    "failed_to_score": 0.226,
+    "ppg": 1.58,
+    "sot_pg": 4.8,
+    "sota_pg": 5.0
+   },
+   "home": {
+    "gp": 16,
+    "w": 9,
+    "d": 4,
+    "l": 3,
+    "gf_pg": 1.62,
+    "ga_pg": 0.94,
+    "total_pg": 2.56,
+    "over": {
+     "1.5": 0.75,
+     "2.5": 0.5,
+     "3.5": 0.312
+    },
+    "btts": 0.562,
+    "clean_sheet": 0.375,
+    "failed_to_score": 0.188,
+    "ppg": 1.94,
+    "sot_pg": 4.2,
+    "sota_pg": 3.7
+   },
+   "away": {
+    "gp": 15,
+    "w": 5,
+    "d": 3,
+    "l": 7,
+    "gf_pg": 1.4,
+    "ga_pg": 1.53,
+    "total_pg": 2.93,
+    "over": {
+     "1.5": 0.733,
+     "2.5": 0.533,
+     "3.5": 0.333
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.067,
+    "failed_to_score": 0.267,
+    "ppg": 1.2,
+    "sot_pg": 5.4,
+    "sota_pg": 6.5
+   },
+   "last6": {
+    "gp": 6,
+    "w": 2,
+    "d": 2,
+    "l": 2,
+    "gf_pg": 1.0,
+    "ga_pg": 0.83,
+    "total_pg": 1.83,
+    "over": {
+     "1.5": 0.5,
+     "2.5": 0.333,
+     "3.5": 0.167
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.5,
+    "ppg": 1.33,
+    "sot_pg": 3.2,
+    "sota_pg": 3.8
+   },
+   "last6_log": [
+    "20260919 A Gimpo FC 0-1",
+    "20261010 A Paju Frontier 1-1",
+    "20261018 H Jeonnam 2-1",
+    "20261025 H Gyeongnam 3-1",
+    "20261108 A Cheonan City 0-1",
+    "20261121 H Cheongju 0-0"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 1,
+   "rank": 5,
+   "points": 49
+  },
+  "Hwaseong": {
+   "season": {
+    "gp": 31,
+    "w": 13,
+    "d": 9,
+    "l": 9,
+    "gf_pg": 1.45,
+    "ga_pg": 1.06,
+    "total_pg": 2.52,
+    "over": {
+     "1.5": 0.677,
+     "2.5": 0.452,
+     "3.5": 0.29
+    },
+    "btts": 0.516,
+    "clean_sheet": 0.323,
+    "failed_to_score": 0.258,
+    "ppg": 1.55,
+    "sot_pg": 4.9,
+    "sota_pg": 4.4
+   },
+   "home": {
+    "gp": 16,
+    "w": 8,
+    "d": 5,
+    "l": 3,
+    "gf_pg": 1.75,
+    "ga_pg": 1.12,
+    "total_pg": 2.88,
+    "over": {
+     "1.5": 0.812,
+     "2.5": 0.562,
+     "3.5": 0.375
+    },
+    "btts": 0.625,
+    "clean_sheet": 0.375,
+    "failed_to_score": 0.125,
+    "ppg": 1.81,
+    "sot_pg": 5.9,
+    "sota_pg": 4.5
+   },
+   "away": {
+    "gp": 15,
+    "w": 5,
+    "d": 4,
+    "l": 6,
+    "gf_pg": 1.13,
+    "ga_pg": 1.0,
+    "total_pg": 2.13,
+    "over": {
+     "1.5": 0.533,
+     "2.5": 0.333,
+     "3.5": 0.2
+    },
+    "btts": 0.4,
+    "clean_sheet": 0.267,
+    "failed_to_score": 0.4,
+    "ppg": 1.27,
+    "sot_pg": 3.9,
+    "sota_pg": 4.2
+   },
+   "last6": {
+    "gp": 6,
+    "w": 1,
+    "d": 2,
+    "l": 3,
+    "gf_pg": 1.0,
+    "ga_pg": 1.33,
+    "total_pg": 2.33,
+    "over": {
+     "1.5": 0.5,
+     "2.5": 0.333,
+     "3.5": 0.333
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.333,
+    "ppg": 0.83,
+    "sot_pg": 4.2,
+    "sota_pg": 3.7
+   },
+   "last6_log": [
+    "20260920 A Seongnam 2-2",
+    "20261009 A Suwon FC 0-1",
+    "20261018 A Suwon Bluewings 2-3",
+    "20261025 A Paju Frontier 1-1",
+    "20261031 A Gyeongnam 0-1",
+    "20261107 A Gimhae 1-0"
+   ],
+   "last_game_date": "20261107",
+   "rest_days": 15,
+   "rank": 6,
+   "points": 48
+  },
+  "Asan": {
+   "season": {
+    "gp": 31,
+    "w": 11,
+    "d": 11,
+    "l": 9,
+    "gf_pg": 1.39,
+    "ga_pg": 1.13,
+    "total_pg": 2.52,
+    "over": {
+     "1.5": 0.742,
+     "2.5": 0.419,
+     "3.5": 0.29
+    },
+    "btts": 0.581,
+    "clean_sheet": 0.258,
+    "failed_to_score": 0.258,
+    "ppg": 1.42,
+    "sot_pg": 4.7,
+    "sota_pg": 4.5
+   },
+   "home": {
+    "gp": 15,
+    "w": 8,
+    "d": 4,
+    "l": 3,
+    "gf_pg": 1.93,
+    "ga_pg": 1.2,
+    "total_pg": 3.13,
+    "over": {
+     "1.5": 0.867,
+     "2.5": 0.6,
+     "3.5": 0.4
+    },
+    "btts": 0.733,
+    "clean_sheet": 0.2,
+    "failed_to_score": 0.067,
+    "ppg": 1.87,
+    "sot_pg": 5.1,
+    "sota_pg": 4.4
+   },
+   "away": {
+    "gp": 16,
+    "w": 3,
+    "d": 7,
+    "l": 6,
+    "gf_pg": 0.88,
+    "ga_pg": 1.06,
+    "total_pg": 1.94,
+    "over": {
+     "1.5": 0.625,
+     "2.5": 0.25,
+     "3.5": 0.188
+    },
+    "btts": 0.438,
+    "clean_sheet": 0.312,
+    "failed_to_score": 0.438,
+    "ppg": 1.0,
+    "sot_pg": 4.4,
+    "sota_pg": 4.7
+   },
+   "last6": {
+    "gp": 6,
+    "w": 2,
+    "d": 4,
+    "l": 0,
+    "gf_pg": 1.5,
+    "ga_pg": 0.67,
+    "total_pg": 2.17,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.167,
+     "3.5": 0.167
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.167,
+    "ppg": 1.67,
+    "sot_pg": 5.7,
+    "sota_pg": 4.2
+   },
+   "last6_log": [
+    "20261010 A Gimhae 1-1",
+    "20261017 A Gyeongnam 0-0",
+    "20261025 A Suwon FC 1-0",
+    "20261031 H Gimpo FC 5-1",
+    "20261108 A Paju Frontier 1-1",
+    "20261122 A Seoul E-Land 1-1"
+   ],
+   "last_game_date": "20261122",
+   "rest_days": 0,
+   "rank": 7,
+   "points": 44
+  },
+  "Gimpo FC": {
+   "season": {
+    "gp": 31,
+    "w": 9,
+    "d": 12,
+    "l": 10,
+    "gf_pg": 1.26,
+    "ga_pg": 1.35,
+    "total_pg": 2.61,
+    "over": {
+     "1.5": 0.71,
+     "2.5": 0.452,
+     "3.5": 0.29
+    },
+    "btts": 0.613,
+    "clean_sheet": 0.226,
+    "failed_to_score": 0.194,
+    "ppg": 1.26,
+    "sot_pg": 4.4,
+    "sota_pg": 4.7
+   },
+   "home": {
+    "gp": 15,
+    "w": 3,
+    "d": 6,
+    "l": 6,
+    "gf_pg": 1.27,
+    "ga_pg": 1.4,
+    "total_pg": 2.67,
+    "over": {
+     "1.5": 0.8,
+     "2.5": 0.467,
+     "3.5": 0.267
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.133,
+    "failed_to_score": 0.2,
+    "ppg": 1.0,
+    "sot_pg": 4.5,
+    "sota_pg": 4.3
+   },
+   "away": {
+    "gp": 16,
+    "w": 6,
+    "d": 6,
+    "l": 4,
+    "gf_pg": 1.25,
+    "ga_pg": 1.31,
+    "total_pg": 2.56,
+    "over": {
+     "1.5": 0.625,
+     "2.5": 0.438,
+     "3.5": 0.312
+    },
+    "btts": 0.562,
+    "clean_sheet": 0.312,
+    "failed_to_score": 0.188,
+    "ppg": 1.5,
+    "sot_pg": 4.2,
+    "sota_pg": 5.1
+   },
+   "last6": {
+    "gp": 6,
+    "w": 1,
+    "d": 1,
+    "l": 4,
+    "gf_pg": 1.33,
+    "ga_pg": 2.0,
+    "total_pg": 3.33,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.667,
+     "3.5": 0.5
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.333,
+    "ppg": 0.67,
+    "sot_pg": 4.3,
+    "sota_pg": 6.8
+   },
+   "last6_log": [
+    "20261009 H Seoul E-Land 0-1",
+    "20261017 H Paju Frontier 4-1",
+    "20261024 H Gimhae 1-2",
+    "20261031 A Asan 1-5",
+    "20261107 H Ansan Greeners 2-2",
+    "20261121 H Suwon FC 0-1"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 1,
+   "rank": 8,
+   "points": 39
+  },
+  "Gyeongnam": {
+   "season": {
+    "gp": 31,
+    "w": 9,
+    "d": 11,
+    "l": 11,
+    "gf_pg": 1.1,
+    "ga_pg": 1.29,
+    "total_pg": 2.39,
+    "over": {
+     "1.5": 0.677,
+     "2.5": 0.387,
+     "3.5": 0.258
+    },
+    "btts": 0.548,
+    "clean_sheet": 0.226,
+    "failed_to_score": 0.29,
+    "ppg": 1.23,
+    "sot_pg": 4.0,
+    "sota_pg": 4.6
+   },
+   "home": {
+    "gp": 15,
+    "w": 8,
+    "d": 3,
+    "l": 4,
+    "gf_pg": 1.47,
+    "ga_pg": 1.07,
+    "total_pg": 2.53,
+    "over": {
+     "1.5": 0.533,
+     "2.5": 0.533,
+     "3.5": 0.333
+    },
+    "btts": 0.467,
+    "clean_sheet": 0.4,
+    "failed_to_score": 0.2,
+    "ppg": 1.8,
+    "sot_pg": 4.1,
+    "sota_pg": 3.9
+   },
+   "away": {
+    "gp": 16,
+    "w": 1,
+    "d": 8,
+    "l": 7,
+    "gf_pg": 0.75,
+    "ga_pg": 1.5,
+    "total_pg": 2.25,
+    "over": {
+     "1.5": 0.812,
+     "2.5": 0.25,
+     "3.5": 0.188
+    },
+    "btts": 0.625,
+    "clean_sheet": 0.062,
+    "failed_to_score": 0.375,
+    "ppg": 0.69,
+    "sot_pg": 3.9,
+    "sota_pg": 5.2
+   },
+   "last6": {
+    "gp": 6,
+    "w": 1,
+    "d": 1,
+    "l": 4,
+    "gf_pg": 0.5,
+    "ga_pg": 1.67,
+    "total_pg": 2.17,
+    "over": {
+     "1.5": 0.5,
+     "2.5": 0.5,
+     "3.5": 0.333
+    },
+    "btts": 0.333,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.5,
+    "ppg": 0.67,
+    "sot_pg": 3.2,
+    "sota_pg": 5.5
+   },
+   "last6_log": [
+    "20261010 A Cheonan City 0-1",
+    "20261017 H Asan 0-0",
+    "20261025 A Busan 1-3",
+    "20261031 H Hwaseong 1-0",
+    "20261107 A Suwon FC 0-3",
+    "20261121 A Suwon Bluewings 1-3"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 1,
+   "rank": 9,
+   "points": 38
+  },
+  "Cheonan City": {
+   "season": {
+    "gp": 31,
+    "w": 8,
+    "d": 12,
+    "l": 11,
+    "gf_pg": 1.29,
+    "ga_pg": 1.35,
+    "total_pg": 2.65,
+    "over": {
+     "1.5": 0.613,
+     "2.5": 0.484,
+     "3.5": 0.387
+    },
+    "btts": 0.613,
+    "clean_sheet": 0.194,
+    "failed_to_score": 0.258,
+    "ppg": 1.16,
+    "sot_pg": 4.5,
+    "sota_pg": 4.7
+   },
+   "home": {
+    "gp": 15,
+    "w": 5,
+    "d": 7,
+    "l": 3,
+    "gf_pg": 1.0,
+    "ga_pg": 0.8,
+    "total_pg": 1.8,
+    "over": {
+     "1.5": 0.4,
+     "2.5": 0.267,
+     "3.5": 0.267
+    },
+    "btts": 0.4,
+    "clean_sheet": 0.4,
+    "failed_to_score": 0.333,
+    "ppg": 1.47,
+    "sot_pg": 4.2,
+    "sota_pg": 4.3
+   },
+   "away": {
+    "gp": 16,
+    "w": 3,
+    "d": 5,
+    "l": 8,
+    "gf_pg": 1.56,
+    "ga_pg": 1.88,
+    "total_pg": 3.44,
+    "over": {
+     "1.5": 0.812,
+     "2.5": 0.688,
+     "3.5": 0.5
+    },
+    "btts": 0.812,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.188,
+    "ppg": 0.88,
+    "sot_pg": 4.7,
+    "sota_pg": 5.2
+   },
+   "last6": {
+    "gp": 6,
+    "w": 4,
+    "d": 1,
+    "l": 1,
+    "gf_pg": 1.83,
+    "ga_pg": 1.33,
+    "total_pg": 3.17,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.667,
+     "3.5": 0.5
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.0,
+    "ppg": 2.17,
+    "sot_pg": 4.8,
+    "sota_pg": 4.5
+   },
+   "last6_log": [
+    "20260919 A Asan 1-3",
+    "20261010 H Gyeongnam 1-0",
+    "20261025 H Ansan Greeners 3-1",
+    "20261101 A Gimhae 3-3",
+    "20261108 H Busan 1-0",
+    "20261122 A Paju Frontier 2-1"
+   ],
+   "last_game_date": "20261122",
+   "rest_days": 0,
+   "rank": 10,
+   "points": 36
+  },
+  "Seongnam": {
+   "season": {
+    "gp": 31,
+    "w": 8,
+    "d": 11,
+    "l": 12,
+    "gf_pg": 1.19,
+    "ga_pg": 1.29,
+    "total_pg": 2.48,
+    "over": {
+     "1.5": 0.71,
+     "2.5": 0.484,
+     "3.5": 0.29
+    },
+    "btts": 0.613,
+    "clean_sheet": 0.161,
+    "failed_to_score": 0.323,
+    "ppg": 1.13,
+    "sot_pg": 4.2,
+    "sota_pg": 4.2
+   },
+   "home": {
+    "gp": 16,
+    "w": 4,
+    "d": 7,
+    "l": 5,
+    "gf_pg": 1.19,
+    "ga_pg": 1.06,
+    "total_pg": 2.25,
+    "over": {
+     "1.5": 0.625,
+     "2.5": 0.375,
+     "3.5": 0.25
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.25,
+    "failed_to_score": 0.375,
+    "ppg": 1.19,
+    "sot_pg": 3.9,
+    "sota_pg": 4.2
+   },
+   "away": {
+    "gp": 15,
+    "w": 4,
+    "d": 4,
+    "l": 7,
+    "gf_pg": 1.2,
+    "ga_pg": 1.53,
+    "total_pg": 2.73,
+    "over": {
+     "1.5": 0.8,
+     "2.5": 0.6,
+     "3.5": 0.333
+    },
+    "btts": 0.733,
+    "clean_sheet": 0.067,
+    "failed_to_score": 0.267,
+    "ppg": 1.07,
+    "sot_pg": 4.5,
+    "sota_pg": 4.2
+   },
+   "last6": {
+    "gp": 6,
+    "w": 1,
+    "d": 1,
+    "l": 4,
+    "gf_pg": 1.5,
+    "ga_pg": 1.67,
+    "total_pg": 3.17,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.667,
+     "3.5": 0.5
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.333,
+    "ppg": 0.67,
+    "sot_pg": 4.0,
+    "sota_pg": 5.3
+   },
+   "last6_log": [
+    "20261009 A Cheongju 1-3",
+    "20261017 H Suwon FC 1-2",
+    "20261025 H Suwon Bluewings 0-2",
+    "20261101 A Jeonnam 2-2",
+    "20261107 H Daegu 0-1",
+    "20261121 H Yongin 5-0"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 1,
+   "rank": 11,
+   "points": 35
+  },
+  "Paju Frontier": {
+   "season": {
+    "gp": 31,
+    "w": 9,
+    "d": 8,
+    "l": 14,
+    "gf_pg": 1.0,
+    "ga_pg": 1.23,
+    "total_pg": 2.23,
+    "over": {
+     "1.5": 0.613,
+     "2.5": 0.419,
+     "3.5": 0.194
+    },
+    "btts": 0.548,
+    "clean_sheet": 0.226,
+    "failed_to_score": 0.355,
+    "ppg": 1.13,
+    "sot_pg": 4.1,
+    "sota_pg": 5.1
+   },
+   "home": {
+    "gp": 16,
+    "w": 3,
+    "d": 5,
+    "l": 8,
+    "gf_pg": 0.88,
+    "ga_pg": 1.12,
+    "total_pg": 2.0,
+    "over": {
+     "1.5": 0.562,
+     "2.5": 0.312,
+     "3.5": 0.188
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.188,
+    "failed_to_score": 0.438,
+    "ppg": 0.88,
+    "sot_pg": 3.8,
+    "sota_pg": 4.7
+   },
+   "away": {
+    "gp": 15,
+    "w": 6,
+    "d": 3,
+    "l": 6,
+    "gf_pg": 1.13,
+    "ga_pg": 1.33,
+    "total_pg": 2.47,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.533,
+     "3.5": 0.2
+    },
+    "btts": 0.6,
+    "clean_sheet": 0.267,
+    "failed_to_score": 0.267,
+    "ppg": 1.4,
+    "sot_pg": 4.3,
+    "sota_pg": 5.5
+   },
+   "last6": {
+    "gp": 6,
+    "w": 1,
+    "d": 3,
+    "l": 2,
+    "gf_pg": 1.17,
+    "ga_pg": 1.67,
+    "total_pg": 2.83,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.5,
+     "3.5": 0.167
+    },
+    "btts": 1.0,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.0,
+    "ppg": 1.0,
+    "sot_pg": 4.2,
+    "sota_pg": 6.0
+   },
+   "last6_log": [
+    "20261010 H Busan 1-1",
+    "20261017 A Gimpo FC 1-4",
+    "20261025 H Hwaseong 1-1",
+    "20261101 A Cheongju 2-1",
+    "20261108 H Asan 1-1",
+    "20261122 H Cheonan City 1-2"
+   ],
+   "last_game_date": "20261122",
+   "rest_days": 0,
+   "rank": 12,
+   "points": 35
+  },
+  "Yongin": {
+   "season": {
+    "gp": 31,
+    "w": 7,
+    "d": 12,
+    "l": 12,
+    "gf_pg": 1.23,
+    "ga_pg": 1.61,
+    "total_pg": 2.84,
+    "over": {
+     "1.5": 0.839,
+     "2.5": 0.581,
+     "3.5": 0.387
+    },
+    "btts": 0.581,
+    "clean_sheet": 0.226,
+    "failed_to_score": 0.29,
+    "ppg": 1.06,
+    "sot_pg": 4.4,
+    "sota_pg": 5.4
+   },
+   "home": {
+    "gp": 15,
+    "w": 3,
+    "d": 7,
+    "l": 5,
+    "gf_pg": 1.27,
+    "ga_pg": 1.53,
+    "total_pg": 2.8,
+    "over": {
+     "1.5": 0.8,
+     "2.5": 0.533,
+     "3.5": 0.4
+    },
+    "btts": 0.6,
+    "clean_sheet": 0.2,
+    "failed_to_score": 0.333,
+    "ppg": 1.07,
+    "sot_pg": 4.1,
+    "sota_pg": 5.9
+   },
+   "away": {
+    "gp": 16,
+    "w": 4,
+    "d": 5,
+    "l": 7,
+    "gf_pg": 1.19,
+    "ga_pg": 1.69,
+    "total_pg": 2.88,
+    "over": {
+     "1.5": 0.875,
+     "2.5": 0.625,
+     "3.5": 0.375
+    },
+    "btts": 0.562,
+    "clean_sheet": 0.25,
+    "failed_to_score": 0.25,
+    "ppg": 1.06,
+    "sot_pg": 4.6,
+    "sota_pg": 4.8
+   },
+   "last6": {
+    "gp": 6,
+    "w": 2,
+    "d": 0,
+    "l": 4,
+    "gf_pg": 1.17,
+    "ga_pg": 2.5,
+    "total_pg": 3.67,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.667,
+     "3.5": 0.5
+    },
+    "btts": 0.333,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.5,
+    "ppg": 1.0,
+    "sot_pg": 4.3,
+    "sota_pg": 6.7
+   },
+   "last6_log": [
+    "20261010 A Jeonnam 1-2",
+    "20261017 H Ansan Greeners 0-4",
+    "20261025 A Cheongju 2-0",
+    "20261031 H Seoul E-Land 4-2",
+    "20261108 A Suwon Bluewings 0-2",
+    "20261121 A Seongnam 0-5"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 1,
+   "rank": 13,
+   "points": 33
+  },
+  "Cheongju": {
+   "season": {
+    "gp": 31,
+    "w": 6,
+    "d": 15,
+    "l": 10,
+    "gf_pg": 1.16,
+    "ga_pg": 1.58,
+    "total_pg": 2.74,
+    "over": {
+     "1.5": 0.806,
+     "2.5": 0.548,
+     "3.5": 0.355
+    },
+    "btts": 0.71,
+    "clean_sheet": 0.194,
+    "failed_to_score": 0.226,
+    "ppg": 1.06,
+    "sot_pg": 4.3,
+    "sota_pg": 4.0
+   },
+   "home": {
+    "gp": 16,
+    "w": 3,
+    "d": 6,
+    "l": 7,
+    "gf_pg": 1.12,
+    "ga_pg": 1.75,
+    "total_pg": 2.88,
+    "over": {
+     "1.5": 0.875,
+     "2.5": 0.5,
+     "3.5": 0.312
+    },
+    "btts": 0.75,
+    "clean_sheet": 0.125,
+    "failed_to_score": 0.188,
+    "ppg": 0.94,
+    "sot_pg": 4.9,
+    "sota_pg": 4.5
+   },
+   "away": {
+    "gp": 15,
+    "w": 3,
+    "d": 9,
+    "l": 3,
+    "gf_pg": 1.2,
+    "ga_pg": 1.4,
+    "total_pg": 2.6,
+    "over": {
+     "1.5": 0.733,
+     "2.5": 0.6,
+     "3.5": 0.4
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.267,
+    "failed_to_score": 0.267,
+    "ppg": 1.2,
+    "sot_pg": 3.6,
+    "sota_pg": 3.5
+   },
+   "last6": {
+    "gp": 6,
+    "w": 2,
+    "d": 1,
+    "l": 3,
+    "gf_pg": 1.33,
+    "ga_pg": 1.67,
+    "total_pg": 3.0,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.667,
+     "3.5": 0.5
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.333,
+    "ppg": 1.17,
+    "sot_pg": 4.2,
+    "sota_pg": 4.8
+   },
+   "last6_log": [
+    "20260920 A Ansan Greeners 3-2",
+    "20261009 H Seongnam 3-1",
+    "20261017 A Daegu 1-3",
+    "20261025 H Yongin 0-2",
+    "20261101 H Paju Frontier 1-2",
+    "20261121 A Busan 0-0"
+   ],
+   "last_game_date": "20261121",
+   "rest_days": 1,
+   "rank": 14,
+   "points": 33
+  },
+  "Ansan Greeners": {
+   "season": {
+    "gp": 32,
+    "w": 8,
+    "d": 5,
+    "l": 19,
+    "gf_pg": 1.16,
+    "ga_pg": 1.88,
+    "total_pg": 3.03,
+    "over": {
+     "1.5": 0.844,
+     "2.5": 0.656,
+     "3.5": 0.406
+    },
+    "btts": 0.656,
+    "clean_sheet": 0.125,
+    "failed_to_score": 0.219,
+    "ppg": 0.91,
+    "sot_pg": 4.6,
+    "sota_pg": 6.5
+   },
+   "home": {
+    "gp": 16,
+    "w": 2,
+    "d": 2,
+    "l": 12,
+    "gf_pg": 1.06,
+    "ga_pg": 2.06,
+    "total_pg": 3.12,
+    "over": {
+     "1.5": 0.938,
+     "2.5": 0.75,
+     "3.5": 0.375
+    },
+    "btts": 0.812,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.188,
+    "ppg": 0.5,
+    "sot_pg": 4.8,
+    "sota_pg": 6.1
+   },
+   "away": {
+    "gp": 16,
+    "w": 6,
+    "d": 3,
+    "l": 7,
+    "gf_pg": 1.25,
+    "ga_pg": 1.69,
+    "total_pg": 2.94,
+    "over": {
+     "1.5": 0.75,
+     "2.5": 0.562,
+     "3.5": 0.438
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.25,
+    "failed_to_score": 0.25,
+    "ppg": 1.31,
+    "sot_pg": 4.4,
+    "sota_pg": 7.0
+   },
+   "last6": {
+    "gp": 6,
+    "w": 2,
+    "d": 1,
+    "l": 3,
+    "gf_pg": 1.67,
+    "ga_pg": 1.83,
+    "total_pg": 3.5,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.833,
+     "3.5": 0.667
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.167,
+    "ppg": 1.17,
+    "sot_pg": 5.8,
+    "sota_pg": 6.8
+   },
+   "last6_log": [
+    "20261011 A Suwon Bluewings 1-4",
+    "20261017 A Yongin 4-0",
+    "20261025 A Cheonan City 1-3",
+    "20261101 A Suwon FC 0-1",
+    "20261107 A Gimpo FC 2-2",
+    "20261122 A Jeonnam 2-1"
+   ],
+   "last_game_date": "20261122",
+   "rest_days": 0,
+   "rank": 15,
+   "points": 29
+  },
+  "Jeonnam": {
+   "season": {
+    "gp": 31,
+    "w": 5,
+    "d": 10,
+    "l": 16,
+    "gf_pg": 1.23,
+    "ga_pg": 1.84,
+    "total_pg": 3.06,
+    "over": {
+     "1.5": 0.742,
+     "2.5": 0.645,
+     "3.5": 0.419
+    },
+    "btts": 0.613,
+    "clean_sheet": 0.129,
+    "failed_to_score": 0.29,
+    "ppg": 0.81,
+    "sot_pg": 4.5,
+    "sota_pg": 5.7
+   },
+   "home": {
+    "gp": 15,
+    "w": 4,
+    "d": 5,
+    "l": 6,
+    "gf_pg": 1.27,
+    "ga_pg": 1.6,
+    "total_pg": 2.87,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.6,
+     "3.5": 0.333
+    },
+    "btts": 0.6,
+    "clean_sheet": 0.2,
+    "failed_to_score": 0.2,
+    "ppg": 1.13,
+    "sot_pg": 5.0,
+    "sota_pg": 5.7
+   },
+   "away": {
+    "gp": 16,
+    "w": 1,
+    "d": 5,
+    "l": 10,
+    "gf_pg": 1.19,
+    "ga_pg": 2.06,
+    "total_pg": 3.25,
+    "over": {
+     "1.5": 0.812,
+     "2.5": 0.688,
+     "3.5": 0.5
+    },
+    "btts": 0.625,
+    "clean_sheet": 0.062,
+    "failed_to_score": 0.375,
+    "ppg": 0.5,
+    "sot_pg": 4.1,
+    "sota_pg": 5.7
+   },
+   "last6": {
+    "gp": 6,
+    "w": 1,
+    "d": 1,
+    "l": 4,
+    "gf_pg": 1.67,
+    "ga_pg": 2.33,
+    "total_pg": 4.0,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 1.0,
+     "3.5": 0.5
+    },
+    "btts": 1.0,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.0,
+    "ppg": 0.67,
+    "sot_pg": 6.8,
+    "sota_pg": 5.7
+   },
+   "last6_log": [
+    "20261010 H Yongin 2-1",
+    "20261018 A Busan 1-2",
+    "20261024 H Daegu 2-4",
+    "20261101 H Seongnam 2-2",
+    "20261107 A Seoul E-Land 2-3",
+    "20261122 H Ansan Greeners 1-2"
+   ],
+   "last_game_date": "20261122",
+   "rest_days": 0,
+   "rank": 16,
+   "points": 25
+  },
+  "Gimhae": {
+   "season": {
+    "gp": 31,
+    "w": 3,
+    "d": 9,
+    "l": 19,
+    "gf_pg": 0.87,
+    "ga_pg": 2.06,
+    "total_pg": 2.94,
+    "over": {
+     "1.5": 0.839,
+     "2.5": 0.516,
+     "3.5": 0.29
+    },
+    "btts": 0.613,
+    "clean_sheet": 0.065,
+    "failed_to_score": 0.323,
+    "ppg": 0.58,
+    "sot_pg": 3.9,
+    "sota_pg": 5.7
+   },
+   "home": {
+    "gp": 15,
+    "w": 0,
+    "d": 5,
+    "l": 10,
+    "gf_pg": 0.87,
+    "ga_pg": 2.2,
+    "total_pg": 3.07,
+    "over": {
+     "1.5": 0.867,
+     "2.5": 0.6,
+     "3.5": 0.333
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.333,
+    "ppg": 0.33,
+    "sot_pg": 3.5,
+    "sota_pg": 5.5
+   },
+   "away": {
+    "gp": 16,
+    "w": 3,
+    "d": 4,
+    "l": 9,
+    "gf_pg": 0.88,
+    "ga_pg": 1.94,
+    "total_pg": 2.81,
+    "over": {
+     "1.5": 0.812,
+     "2.5": 0.438,
+     "3.5": 0.25
+    },
+    "btts": 0.562,
+    "clean_sheet": 0.125,
+    "failed_to_score": 0.312,
+    "ppg": 0.81,
+    "sot_pg": 4.2,
+    "sota_pg": 6.0
+   },
+   "last6": {
+    "gp": 6,
+    "w": 1,
+    "d": 2,
+    "l": 3,
+    "gf_pg": 1.33,
+    "ga_pg": 2.5,
+    "total_pg": 3.83,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.667,
+     "3.5": 0.333
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.333,
+    "ppg": 0.83,
+    "sot_pg": 4.7,
+    "sota_pg": 5.5
+   },
+   "last6_log": [
+    "20261010 H Asan 1-1",
+    "20261018 A Seoul E-Land 2-6",
+    "20261024 A Gimpo FC 2-1",
+    "20261101 H Cheonan City 3-3",
+    "20261107 H Hwaseong 0-1",
+    "20261122 A Daegu 0-3"
+   ],
+   "last_game_date": "20261122",
+   "rest_days": 0,
+   "rank": 17,
+   "points": 18
+  }
+ },
+ "h2h": {
+  "Ansan Greeners vs Gimhae": [
+   "20260228 Gimhae 1-4 Ansan Greeners",
+   "20260802 Ansan Greeners 2-2 Gimhae"
+  ],
+  "Seoul E-Land vs Suwon Bluewings": [
+   "20260228 Suwon Bluewings 2-1 Seoul E-Land",
+   "20260912 Seoul E-Land 0-1 Suwon Bluewings"
+  ],
+  "Cheongju vs Suwon FC": [
+   "20260301 Cheongju 1-4 Suwon FC"
+  ],
+  "Daegu vs Hwaseong": [
+   "20260301 Daegu 1-0 Hwaseong",
+   "20260801 Hwaseong 5-1 Daegu"
+  ],
+  "Cheonan City vs Yongin": [
+   "20260301 Yongin 2-2 Cheonan City",
+   "20260801 Cheonan City 2-2 Yongin"
+  ],
+  "Gyeongnam vs Jeonnam": [
+   "20260301 Gyeongnam 1-4 Jeonnam",
+   "20260725 Jeonnam 1-1 Gyeongnam"
+  ],
+  "Asan vs Paju Frontier": [
+   "20260302 Asan 3-2 Paju Frontier",
+   "20261108 Paju Frontier 1-1 Asan"
+  ],
+  "Busan vs Seongnam": [
+   "20260302 Busan 1-1 Seongnam",
+   "20260718 Seongnam 1-0 Busan"
+  ],
+  "Paju Frontier vs Suwon Bluewings": [
+   "20260307 Paju Frontier 0-1 Suwon Bluewings",
+   "20260719 Suwon Bluewings 0-0 Paju Frontier"
+  ],
+  "Gyeongnam vs Seoul E-Land": [
+   "20260307 Seoul E-Land 1-0 Gyeongnam"
+  ],
+  "Daegu vs Jeonnam": [
+   "20260307 Daegu 4-2 Jeonnam",
+   "20261024 Jeonnam 2-4 Daegu"
+  ],
+  "Suwon FC vs Yongin": [
+   "20260307 Suwon FC 3-1 Yongin",
+   "20260905 Yongin 1-1 Suwon FC"
+  ],
+  "Ansan Greeners vs Busan": [
+   "20260308 Ansan Greeners 1-3 Busan",
+   "20260905 Busan 0-1 Ansan Greeners"
+  ],
+  "Cheongju vs Seongnam": [
+   "20260308 Seongnam 2-2 Cheongju",
+   "20261009 Cheongju 3-1 Seongnam"
+  ],
+  "Cheonan City vs Gimpo FC": [
+   "20260308 Cheonan City 0-1 Gimpo FC",
+   "20260816 Gimpo FC 1-1 Cheonan City"
+  ],
+  "Gimhae vs Hwaseong": [
+   "20260308 Hwaseong 2-0 Gimhae",
+   "20261107 Gimhae 0-1 Hwaseong"
+  ],
+  "Gimhae vs Suwon FC": [
+   "20260314 Gimhae 1-2 Suwon FC",
+   "20260822 Suwon FC 2-0 Gimhae"
+  ],
+  "Busan vs Seoul E-Land": [
+   "20260314 Seoul E-Land 2-3 Busan",
+   "20260802 Busan 1-2 Seoul E-Land"
+  ],
+  "Jeonnam vs Suwon Bluewings": [
+   "20260314 Suwon Bluewings 2-0 Jeonnam"
+  ],
+  "Cheongju vs Gyeongnam": [
+   "20260314 Gyeongnam 2-2 Cheongju",
+   "20260823 Cheongju 1-1 Gyeongnam"
+  ],
+  "Gimpo FC vs Yongin": [
+   "20260314 Yongin 1-3 Gimpo FC",
+   "20260726 Gimpo FC 1-1 Yongin"
+  ],
+  "Ansan Greeners vs Paju Frontier": [
+   "20260315 Ansan Greeners 1-2 Paju Frontier",
+   "20260726 Paju Frontier 0-1 Ansan Greeners"
+  ],
+  "Asan vs Daegu": [
+   "20260315 Asan 2-3 Daegu",
+   "20260816 Daegu 2-0 Asan"
+  ],
+  "Cheonan City vs Hwaseong": [
+   "20260315 Hwaseong 2-2 Cheonan City",
+   "20260905 Cheonan City 1-1 Hwaseong"
+  ],
+  "Gimhae vs Suwon Bluewings": [
+   "20260321 Gimhae 0-3 Suwon Bluewings",
+   "20260807 Suwon Bluewings 1-0 Gimhae"
+  ],
+  "Jeonnam vs Paju Frontier": [
+   "20260321 Paju Frontier 2-0 Jeonnam",
+   "20260802 Jeonnam 1-2 Paju Frontier"
+  ],
+  "Asan vs Seongnam": [
+   "20260321 Seongnam 2-1 Asan",
+   "20260801 Asan 2-0 Seongnam"
+  ],
+  "Cheonan City vs Seoul E-Land": [
+   "20260321 Cheonan City 0-0 Seoul E-Land",
+   "20260724 Seoul E-Land 4-3 Cheonan City"
+  ],
+  "Ansan Greeners vs Cheongju": [
+   "20260321 Cheongju 1-1 Ansan Greeners",
+   "20260920 Ansan Greeners 2-3 Cheongju"
+  ],
+  "Busan vs Daegu": [
+   "20260322 Busan 3-1 Daegu",
+   "20260822 Daegu 1-1 Busan"
+  ],
+  "Hwaseong vs Yongin": [
+   "20260322 Hwaseong 0-0 Yongin",
+   "20260719 Yongin 0-3 Hwaseong"
+  ],
+  "Gimpo FC vs Gyeongnam": [
+   "20260322 Gyeongnam 1-0 Gimpo FC",
+   "20260802 Gimpo FC 1-1 Gyeongnam"
+  ],
+  "Asan vs Hwaseong": [
+   "20260328 Asan 1-0 Hwaseong",
+   "20260725 Hwaseong 3-2 Asan"
+  ],
+  "Suwon Bluewings vs Yongin": [
+   "20260328 Yongin 0-1 Suwon Bluewings",
+   "20261108 Suwon Bluewings 2-0 Yongin"
+  ],
+  "Ansan Greeners vs Gyeongnam": [
+   "20260328 Ansan Greeners 1-1 Gyeongnam",
+   "20260719 Gyeongnam 5-0 Ansan Greeners"
+  ],
+  "Cheonan City vs Jeonnam": [
+   "20260328 Cheonan City 1-0 Jeonnam",
+   "20260828 Jeonnam 1-0 Cheonan City"
+  ],
+  "Gimpo FC vs Seongnam": [
+   "20260328 Seongnam 0-0 Gimpo FC",
+   "20260906 Gimpo FC 1-2 Seongnam"
+  ],
+  "Busan vs Cheongju": [
+   "20260329 Cheongju 1-2 Busan",
+   "20261121 Busan 0-0 Cheongju"
+  ],
+  "Paju Frontier vs Suwon FC": [
+   "20260329 Suwon FC 2-1 Paju Frontier",
+   "20260808 Paju Frontier 0-1 Suwon FC"
+  ],
+  "Daegu vs Seoul E-Land": [
+   "20260329 Daegu 1-3 Seoul E-Land",
+   "20260919 Seoul E-Land 2-1 Daegu"
+  ],
+  "Seoul E-Land vs Suwon FC": [
+   "20260404 Seoul E-Land 3-0 Suwon FC",
+   "20260718 Suwon FC 2-2 Seoul E-Land"
+  ],
+  "Jeonnam vs Yongin": [
+   "20260404 Yongin 2-2 Jeonnam",
+   "20261010 Jeonnam 2-1 Yongin"
+  ],
+  "Busan vs Gyeongnam": [
+   "20260404 Gyeongnam 1-2 Busan",
+   "20261025 Busan 3-1 Gyeongnam"
+  ],
+  "Hwaseong vs Seongnam": [
+   "20260404 Hwaseong 1-3 Seongnam",
+   "20260920 Seongnam 2-2 Hwaseong"
+  ],
+  "Daegu vs Gimpo FC": [
+   "20260405 Daegu 3-3 Gimpo FC",
+   "20260718 Gimpo FC 1-1 Daegu"
+  ],
+  "Cheongju vs Suwon Bluewings": [
+   "20260405 Suwon Bluewings 0-0 Cheongju",
+   "20260801 Cheongju 2-2 Suwon Bluewings"
+  ],
+  "Ansan Greeners vs Asan": [
+   "20260405 Ansan Greeners 1-3 Asan",
+   "20260807 Asan 1-1 Ansan Greeners"
+  ],
+  "Gimhae vs Paju Frontier": [
+   "20260405 Paju Frontier 3-1 Gimhae",
+   "20260920 Gimhae 0-2 Paju Frontier"
+  ],
+  "Busan vs Yongin": [
+   "20260411 Busan 2-0 Yongin",
+   "20260807 Yongin 2-0 Busan"
+  ],
+  "Daegu vs Suwon FC": [
+   "20260411 Suwon FC 2-2 Daegu",
+   "20260725 Daegu 1-2 Suwon FC"
+  ],
+  "Hwaseong vs Jeonnam": [
+   "20260411 Hwaseong 1-0 Jeonnam",
+   "20260823 Jeonnam 1-0 Hwaseong"
+  ],
+  "Paju Frontier vs Seoul E-Land": [
+   "20260411 Paju Frontier 1-3 Seoul E-Land",
+   "20260823 Seoul E-Land 1-1 Paju Frontier"
+  ],
+  "Cheonan City vs Cheongju": [
+   "20260412 Cheonan City 2-2 Cheongju",
+   "20260719 Cheongju 1-0 Cheonan City"
+  ],
+  "Gimpo FC vs Suwon Bluewings": [
+   "20260412 Suwon Bluewings 0-1 Gimpo FC",
+   "20260829 Gimpo FC 1-4 Suwon Bluewings"
+  ],
+  "Asan vs Gimhae": [
+   "20260412 Asan 1-1 Gimhae",
+   "20261010 Gimhae 1-1 Asan"
+  ],
+  "Ansan Greeners vs Seongnam": [
+   "20260412 Seongnam 0-1 Ansan Greeners",
+   "20260822 Ansan Greeners 1-2 Seongnam"
+  ],
+  "Busan vs Suwon FC": [
+   "20260418 Busan 2-1 Suwon FC",
+   "20260830 Suwon FC 2-1 Busan"
+  ],
+  "Gyeongnam vs Suwon Bluewings": [
+   "20260418 Gyeongnam 0-1 Suwon Bluewings",
+   "20261121 Suwon Bluewings 3-1 Gyeongnam"
+  ],
+  "Cheongju vs Gimhae": [
+   "20260418 Cheongju 1-1 Gimhae",
+   "20260724 Gimhae 1-1 Cheongju"
+  ],
+  "Cheonan City vs Daegu": [
+   "20260418 Daegu 1-2 Cheonan City"
+  ],
+  "Ansan Greeners vs Seoul E-Land": [
+   "20260419 Ansan Greeners 0-2 Seoul E-Land",
+   "20260816 Seoul E-Land 3-1 Ansan Greeners"
+  ],
+  "Paju Frontier vs Seongnam": [
+   "20260419 Seongnam 0-1 Paju Frontier",
+   "20260816 Paju Frontier 2-1 Seongnam"
+  ],
+  "Asan vs Jeonnam": [
+   "20260419 Asan 2-2 Jeonnam",
+   "20260718 Jeonnam 1-0 Asan"
+  ],
+  "Gimpo FC vs Hwaseong": [
+   "20260419 Hwaseong 2-2 Gimpo FC"
+  ],
+  "Gyeongnam vs Paju Frontier": [
+   "20260425 Paju Frontier 2-3 Gyeongnam",
+   "20260829 Gyeongnam 1-0 Paju Frontier"
+  ],
+  "Busan vs Suwon Bluewings": [
+   "20260425 Suwon Bluewings 3-2 Busan",
+   "20260725 Busan 1-4 Suwon Bluewings"
+  ],
+  "Ansan Greeners vs Jeonnam": [
+   "20260425 Ansan Greeners 2-1 Jeonnam",
+   "20261122 Jeonnam 1-2 Ansan Greeners"
+  ],
+  "Cheonan City vs Seongnam": [
+   "20260425 Cheonan City 1-1 Seongnam",
+   "20260808 Seongnam 3-2 Cheonan City"
+  ],
+  "Hwaseong vs Seoul E-Land": [
+   "20260426 Seoul E-Land 1-2 Hwaseong",
+   "20260807 Hwaseong 0-0 Seoul E-Land"
+  ],
+  "Gimpo FC vs Suwon FC": [
+   "20260426 Suwon FC 1-1 Gimpo FC",
+   "20261121 Gimpo FC 0-1 Suwon FC"
+  ],
+  "Asan vs Cheongju": [
+   "20260426 Cheongju 0-0 Asan",
+   "20260912 Asan 0-1 Cheongju"
+  ],
+  "Gimhae vs Yongin": [
+   "20260426 Yongin 4-1 Gimhae",
+   "20260830 Gimhae 0-3 Yongin"
+  ],
+  "Daegu vs Gyeongnam": [
+   "20260503 Daegu 2-0 Gyeongnam",
+   "20260807 Gyeongnam 0-1 Daegu"
+  ],
+  "Ansan Greeners vs Hwaseong": [
+   "20260503 Hwaseong 2-0 Ansan Greeners",
+   "20260912 Ansan Greeners 0-2 Hwaseong"
+  ],
+  "Gimpo FC vs Seoul E-Land": [
+   "20260503 Seoul E-Land 2-1 Gimpo FC",
+   "20261009 Gimpo FC 0-1 Seoul E-Land"
+  ],
+  "Asan vs Cheonan City": [
+   "20260503 Cheonan City 1-0 Asan",
+   "20260919 Asan 3-1 Cheonan City"
+  ],
+  "Busan vs Gimhae": [
+   "20260503 Gimhae 0-1 Busan",
+   "20260913 Busan 2-0 Gimhae"
+  ],
+  "Cheongju vs Paju Frontier": [
+   "20260503 Paju Frontier 0-0 Cheongju",
+   "20261101 Cheongju 1-2 Paju Frontier"
+  ],
+  "Seongnam vs Yongin": [
+   "20260503 Yongin 1-2 Seongnam",
+   "20261121 Seongnam 5-0 Yongin"
+  ],
+  "Suwon Bluewings vs Suwon FC": [
+   "20260503 Suwon FC 3-1 Suwon Bluewings",
+   "20260815 Suwon Bluewings 2-2 Suwon FC"
+  ],
+  "Asan vs Seoul E-Land": [
+   "20260509 Asan 3-0 Seoul E-Land",
+   "20261122 Seoul E-Land 1-1 Asan"
+  ],
+  "Hwaseong vs Suwon FC": [
+   "20260509 Hwaseong 1-1 Suwon FC",
+   "20261009 Suwon FC 1-0 Hwaseong"
+  ],
+  "Cheongju vs Gimpo FC": [
+   "20260509 Cheongju 1-1 Gimpo FC",
+   "20260807 Gimpo FC 3-0 Cheongju"
+  ],
+  "Daegu vs Suwon Bluewings": [
+   "20260509 Suwon Bluewings 0-0 Daegu",
+   "20261031 Daegu 2-2 Suwon Bluewings"
+  ],
+  "Jeonnam vs Seongnam": [
+   "20260510 Seongnam 0-0 Jeonnam",
+   "20261101 Jeonnam 2-2 Seongnam"
+  ],
+  "Ansan Greeners vs Yongin": [
+   "20260510 Ansan Greeners 1-2 Yongin",
+   "20261017 Yongin 0-4 Ansan Greeners"
+  ],
+  "Busan vs Cheonan City": [
+   "20260510 Busan 1-0 Cheonan City",
+   "20261108 Cheonan City 1-0 Busan"
+  ],
+  "Gimhae vs Gyeongnam": [
+   "20260510 Gyeongnam 2-1 Gimhae",
+   "20260815 Gimhae 1-1 Gyeongnam"
+  ],
+  "Cheongju vs Jeonnam": [
+   "20260516 Jeonnam 2-2 Cheongju",
+   "20260815 Cheongju 2-1 Jeonnam"
+  ],
+  "Seoul E-Land vs Yongin": [
+   "20260516 Seoul E-Land 2-2 Yongin",
+   "20261031 Yongin 4-2 Seoul E-Land"
+  ],
+  "Ansan Greeners vs Gimpo FC": [
+   "20260516 Ansan Greeners 0-1 Gimpo FC",
+   "20261107 Gimpo FC 2-2 Ansan Greeners"
+  ],
+  "Cheonan City vs Paju Frontier": [
+   "20260516 Cheonan City 0-0 Paju Frontier",
+   "20261122 Paju Frontier 1-2 Cheonan City"
+  ],
+  "Daegu vs Gimhae": [
+   "20260517 Gimhae 1-4 Daegu",
+   "20261122 Daegu 3-0 Gimhae"
+  ],
+  "Busan vs Hwaseong": [
+   "20260517 Hwaseong 3-2 Busan",
+   "20260815 Busan 0-0 Hwaseong"
+  ],
+  "Gyeongnam vs Seongnam": [
+   "20260517 Seongnam 1-1 Gyeongnam",
+   "20260913 Gyeongnam 1-0 Seongnam"
+  ],
+  "Asan vs Suwon FC": [
+   "20260517 Asan 1-3 Suwon FC",
+   "20261025 Suwon FC 0-1 Asan"
+  ],
+  "Gyeongnam vs Suwon FC": [
+   "20260523 Gyeongnam 3-2 Suwon FC",
+   "20261107 Suwon FC 3-0 Gyeongnam"
+  ],
+  "Gimhae vs Jeonnam": [
+   "20260523 Jeonnam 0-1 Gimhae",
+   "20260905 Gimhae 2-2 Jeonnam"
+  ],
+  "Cheongju vs Hwaseong": [
+   "20260523 Cheongju 2-3 Hwaseong",
+   "20260829 Hwaseong 2-1 Cheongju"
+  ],
+  "Asan vs Yongin": [
+   "20260524 Yongin 0-0 Asan",
+   "20260823 Asan 2-1 Yongin"
+  ],
+  "Ansan Greeners vs Daegu": [
+   "20260524 Daegu 3-0 Ansan Greeners",
+   "20260828 Ansan Greeners 1-2 Daegu"
+  ],
+  "Seongnam vs Seoul E-Land": [
+   "20260524 Seoul E-Land 3-1 Seongnam",
+   "20260829 Seongnam 1-1 Seoul E-Land"
+  ],
+  "Gimpo FC vs Paju Frontier": [
+   "20260525 Paju Frontier 0-1 Gimpo FC",
+   "20261017 Gimpo FC 4-1 Paju Frontier"
+  ],
+  "Cheonan City vs Suwon Bluewings": [
+   "20260525 Suwon Bluewings 3-2 Cheonan City",
+   "20260822 Cheonan City 0-1 Suwon Bluewings"
+  ],
+  "Asan vs Suwon Bluewings": [
+   "20260530 Asan 2-1 Suwon Bluewings",
+   "20260906 Suwon Bluewings 2-0 Asan"
+  ],
+  "Busan vs Paju Frontier": [
+   "20260530 Busan 4-1 Paju Frontier",
+   "20261010 Paju Frontier 1-1 Busan"
+  ],
+  "Daegu vs Yongin": [
+   "20260530 Yongin 1-1 Daegu",
+   "20260912 Daegu 3-1 Yongin"
+  ],
+  "Gimhae vs Gimpo FC": [
+   "20260530 Gimhae 1-2 Gimpo FC",
+   "20261024 Gimpo FC 1-2 Gimhae"
+  ],
+  "Seongnam vs Suwon FC": [
+   "20260530 Suwon FC 0-0 Seongnam",
+   "20261017 Seongnam 1-2 Suwon FC"
+  ],
+  "Gyeongnam vs Hwaseong": [
+   "20260531 Hwaseong 2-0 Gyeongnam",
+   "20261031 Gyeongnam 1-0 Hwaseong"
+  ],
+  "Jeonnam vs Seoul E-Land": [
+   "20260531 Jeonnam 0-1 Seoul E-Land",
+   "20261107 Seoul E-Land 3-2 Jeonnam"
+  ],
+  "Ansan Greeners vs Cheonan City": [
+   "20260531 Ansan Greeners 1-3 Cheonan City",
+   "20261025 Cheonan City 3-1 Ansan Greeners"
+  ],
+  "Asan vs Busan": [
+   "20260605 Busan 2-2 Asan"
+  ],
+  "Daegu vs Paju Frontier": [
+   "20260605 Daegu 1-0 Paju Frontier",
+   "20260904 Paju Frontier 0-0 Daegu"
+  ],
+  "Gimhae vs Seongnam": [
+   "20260605 Seongnam 1-1 Gimhae"
+  ],
+  "Gyeongnam vs Yongin": [
+   "20260606 Gyeongnam 2-2 Yongin",
+   "20260920 Yongin 0-0 Gyeongnam"
+  ],
+  "Hwaseong vs Suwon Bluewings": [
+   "20260606 Hwaseong 1-2 Suwon Bluewings",
+   "20261018 Suwon Bluewings 3-2 Hwaseong"
+  ],
+  "Cheonan City vs Suwon FC": [
+   "20260607 Cheonan City 2-2 Suwon FC",
+   "20260913 Suwon FC 1-1 Cheonan City"
+  ],
+  "Gimpo FC vs Jeonnam": [
+   "20260607 Gimpo FC 2-2 Jeonnam",
+   "20260913 Jeonnam 2-2 Gimpo FC"
+  ],
+  "Cheongju vs Seoul E-Land": [
+   "20260607 Seoul E-Land 1-2 Cheongju",
+   "20260904 Cheongju 0-2 Seoul E-Land"
+  ],
+  "Ansan Greeners vs Suwon FC": [
+   "20260704 Ansan Greeners 1-3 Suwon FC",
+   "20261101 Suwon FC 1-0 Ansan Greeners"
+  ],
+  "Cheongju vs Daegu": [
+   "20260704 Cheongju 1-5 Daegu",
+   "20261017 Daegu 3-1 Cheongju"
+  ],
+  "Paju Frontier vs Yongin": [
+   "20260704 Paju Frontier 0-1 Yongin"
+  ],
+  "Seongnam vs Suwon Bluewings": [
+   "20260704 Suwon Bluewings 1-0 Seongnam",
+   "20261025 Seongnam 0-2 Suwon Bluewings"
+  ],
+  "Gimhae vs Seoul E-Land": [
+   "20260705 Gimhae 1-3 Seoul E-Land",
+   "20261018 Seoul E-Land 6-2 Gimhae"
+  ],
+  "Asan vs Gimpo FC": [
+   "20260705 Gimpo FC 0-2 Asan",
+   "20261031 Asan 5-1 Gimpo FC"
+  ],
+  "Cheonan City vs Gyeongnam": [
+   "20260705 Gyeongnam 2-1 Cheonan City",
+   "20261010 Cheonan City 1-0 Gyeongnam"
+  ],
+  "Busan vs Jeonnam": [
+   "20260705 Jeonnam 3-3 Busan",
+   "20261018 Busan 2-1 Jeonnam"
+  ],
+  "Cheonan City vs Gimhae": [
+   "20260710 Cheonan City 0-1 Gimhae",
+   "20261101 Gimhae 3-3 Cheonan City"
+  ],
+  "Jeonnam vs Suwon FC": [
+   "20260710 Suwon FC 5-0 Jeonnam",
+   "20260919 Jeonnam 0-3 Suwon FC"
+  ],
+  "Ansan Greeners vs Suwon Bluewings": [
+   "20260711 Ansan Greeners 2-1 Suwon Bluewings",
+   "20261011 Suwon Bluewings 4-1 Ansan Greeners"
+  ],
+  "Daegu vs Seongnam": [
+   "20260711 Daegu 3-2 Seongnam",
+   "20261107 Seongnam 0-1 Daegu"
+  ],
+  "Hwaseong vs Paju Frontier": [
+   "20260711 Hwaseong 1-2 Paju Frontier",
+   "20261025 Paju Frontier 1-1 Hwaseong"
+  ],
+  "Cheongju vs Yongin": [
+   "20260711 Yongin 1-1 Cheongju",
+   "20261025 Cheongju 0-2 Yongin"
+  ],
+  "Asan vs Gyeongnam": [
+   "20260712 Asan 1-1 Gyeongnam",
+   "20261017 Gyeongnam 0-0 Asan"
+  ],
+  "Busan vs Gimpo FC": [
+   "20260712 Busan 2-0 Gimpo FC",
+   "20260919 Gimpo FC 1-0 Busan"
+  ]
+ }
+}
