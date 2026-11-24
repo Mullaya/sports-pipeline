@@ -1,24 +1,24 @@
 {
  "meta": {
-  "generated_kst": "2026-11-24 03:31",
+  "generated_kst": "2026-11-24 16:15",
   "league": "EPL",
   "season_start": "20260701",
-  "games": 109,
-  "last_game_date": "20261122",
+  "games": 110,
+  "last_game_date": "20261123",
   "league_avg": {
-   "games": 109,
-   "home_win": 0.431,
-   "draw": 0.275,
-   "away_win": 0.294,
-   "goals_pg": 2.74,
-   "home_gf_pg": 1.56,
-   "away_gf_pg": 1.18,
+   "games": 110,
+   "home_win": 0.436,
+   "draw": 0.273,
+   "away_win": 0.291,
+   "goals_pg": 2.75,
+   "home_gf_pg": 1.58,
+   "away_gf_pg": 1.17,
    "over": {
-    "1.5": 0.761,
-    "2.5": 0.468,
-    "3.5": 0.321
+    "1.5": 0.764,
+    "2.5": 0.473,
+    "3.5": 0.327
    },
-   "btts": 0.486
+   "btts": 0.482
   },
   "notes": "REG만 집계 / over는 해당 기준점 초과 비율 / g_minus_xg +는 득점 과열(회귀 후보) / rest_days는 오늘(KST) 기준"
  },
@@ -593,6 +593,120 @@
    "rank": 5,
    "points": 18
   },
+  "Brentford": {
+   "season": {
+    "gp": 11,
+    "w": 4,
+    "d": 5,
+    "l": 2,
+    "gf_pg": 1.82,
+    "ga_pg": 1.0,
+    "total_pg": 2.82,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.545,
+     "3.5": 0.273
+    },
+    "btts": 0.545,
+    "clean_sheet": 0.364,
+    "failed_to_score": 0.091,
+    "ppg": 1.55,
+    "xg_pg": 1.56,
+    "xga_pg": 1.36,
+    "xg_n": 11,
+    "g_minus_xg": 0.25,
+    "ga_minus_xga": -0.36,
+    "sot_pg": 3.9,
+    "sota_pg": 4.2
+   },
+   "home": {
+    "gp": 6,
+    "w": 4,
+    "d": 1,
+    "l": 1,
+    "gf_pg": 2.33,
+    "ga_pg": 0.5,
+    "total_pg": 2.83,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.667,
+     "3.5": 0.167
+    },
+    "btts": 0.333,
+    "clean_sheet": 0.667,
+    "failed_to_score": 0.0,
+    "ppg": 2.17,
+    "xg_pg": 1.94,
+    "xga_pg": 0.96,
+    "xg_n": 6,
+    "g_minus_xg": 0.39,
+    "ga_minus_xga": -0.46,
+    "sot_pg": 4.3,
+    "sota_pg": 3.2
+   },
+   "away": {
+    "gp": 5,
+    "w": 0,
+    "d": 4,
+    "l": 1,
+    "gf_pg": 1.2,
+    "ga_pg": 1.6,
+    "total_pg": 2.8,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.4,
+     "3.5": 0.4
+    },
+    "btts": 0.8,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.2,
+    "ppg": 0.8,
+    "xg_pg": 1.12,
+    "xga_pg": 1.83,
+    "xg_n": 5,
+    "g_minus_xg": 0.08,
+    "ga_minus_xga": -0.23,
+    "sot_pg": 3.4,
+    "sota_pg": 5.4
+   },
+   "last6": {
+    "gp": 6,
+    "w": 2,
+    "d": 2,
+    "l": 2,
+    "gf_pg": 1.67,
+    "ga_pg": 1.17,
+    "total_pg": 2.83,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.5,
+     "3.5": 0.333
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.167,
+    "ppg": 1.33,
+    "xg_pg": 1.22,
+    "xga_pg": 1.43,
+    "xg_n": 6,
+    "g_minus_xg": 0.45,
+    "ga_minus_xga": -0.26,
+    "sot_pg": 3.3,
+    "sota_pg": 3.8
+   },
+   "last6_log": [
+    "20261010 A Aston Villa 2-2 (xG 1.07-2.28)",
+    "20261017 H Liverpool 1-2 (xG 0.86-1.51)",
+    "20261025 A Hull 1-1 (xG 1.74-1.57)",
+    "20261031 H Nottingham 2-0 (xG 0.47-0.86)",
+    "20261108 A Brighton 0-2 (xG 0.59-2.11)",
+    "20261123 H Everton 4-0 (xG 2.57-0.23)"
+   ],
+   "last_game_date": "20261123",
+   "rest_days": 0,
+   "rank": 6,
+   "points": 17
+  },
   "Leeds": {
    "season": {
     "gp": 11,
@@ -704,122 +818,8 @@
    ],
    "last_game_date": "20261121",
    "rest_days": 2,
-   "rank": 6,
-   "points": 17
-  },
-  "Everton": {
-   "season": {
-    "gp": 10,
-    "w": 4,
-    "d": 4,
-    "l": 2,
-    "gf_pg": 1.2,
-    "ga_pg": 1.0,
-    "total_pg": 2.2,
-    "over": {
-     "1.5": 0.7,
-     "2.5": 0.3,
-     "3.5": 0.3
-    },
-    "btts": 0.4,
-    "clean_sheet": 0.4,
-    "failed_to_score": 0.3,
-    "ppg": 1.6,
-    "xg_pg": 1.38,
-    "xga_pg": 1.42,
-    "xg_n": 10,
-    "g_minus_xg": -0.18,
-    "ga_minus_xga": -0.42,
-    "sot_pg": 5.0,
-    "sota_pg": 4.0
-   },
-   "home": {
-    "gp": 5,
-    "w": 3,
-    "d": 1,
-    "l": 1,
-    "gf_pg": 1.6,
-    "ga_pg": 1.0,
-    "total_pg": 2.6,
-    "over": {
-     "1.5": 0.8,
-     "2.5": 0.4,
-     "3.5": 0.4
-    },
-    "btts": 0.4,
-    "clean_sheet": 0.4,
-    "failed_to_score": 0.2,
-    "ppg": 2.0,
-    "xg_pg": 1.24,
-    "xga_pg": 1.35,
-    "xg_n": 5,
-    "g_minus_xg": 0.36,
-    "ga_minus_xga": -0.35,
-    "sot_pg": 5.0,
-    "sota_pg": 4.4
-   },
-   "away": {
-    "gp": 5,
-    "w": 1,
-    "d": 3,
-    "l": 1,
-    "gf_pg": 0.8,
-    "ga_pg": 1.0,
-    "total_pg": 1.8,
-    "over": {
-     "1.5": 0.6,
-     "2.5": 0.2,
-     "3.5": 0.2
-    },
-    "btts": 0.4,
-    "clean_sheet": 0.4,
-    "failed_to_score": 0.4,
-    "ppg": 1.2,
-    "xg_pg": 1.52,
-    "xga_pg": 1.49,
-    "xg_n": 5,
-    "g_minus_xg": -0.72,
-    "ga_minus_xga": -0.49,
-    "sot_pg": 5.0,
-    "sota_pg": 3.6
-   },
-   "last6": {
-    "gp": 6,
-    "w": 3,
-    "d": 1,
-    "l": 2,
-    "gf_pg": 1.17,
-    "ga_pg": 1.17,
-    "total_pg": 2.33,
-    "over": {
-     "1.5": 0.667,
-     "2.5": 0.333,
-     "3.5": 0.333
-    },
-    "btts": 0.333,
-    "clean_sheet": 0.333,
-    "failed_to_score": 0.333,
-    "ppg": 1.67,
-    "xg_pg": 1.46,
-    "xga_pg": 1.45,
-    "xg_n": 6,
-    "g_minus_xg": -0.29,
-    "ga_minus_xga": -0.29,
-    "sot_pg": 4.8,
-    "sota_pg": 4.3
-   },
-   "last6_log": [
-    "20260919 H Ipswich 1-0 (xG 2.23-1.44)",
-    "20261011 A Hull 2-2 (xG 1.69-1.33)",
-    "20261017 H Chelsea 0-2 (xG 0.43-1.47)",
-    "20261024 A Arsenal 0-2 (xG 0.62-1.97)",
-    "20261102 A Newcastle 1-0 (xG 2.34-1.29)",
-    "20261106 H Coventry 3-1 (xG 1.42-1.21)"
-   ],
-   "last_game_date": "20261106",
-   "rest_days": 17,
    "rank": 7,
-   "points": 16
+   "points": 17
   },
   "Chelsea": {
    "season": {
@@ -935,6 +935,120 @@
    "rank": 8,
    "points": 16
   },
+  "Everton": {
+   "season": {
+    "gp": 11,
+    "w": 4,
+    "d": 4,
+    "l": 3,
+    "gf_pg": 1.09,
+    "ga_pg": 1.27,
+    "total_pg": 2.36,
+    "over": {
+     "1.5": 0.727,
+     "2.5": 0.364,
+     "3.5": 0.364
+    },
+    "btts": 0.364,
+    "clean_sheet": 0.364,
+    "failed_to_score": 0.364,
+    "ppg": 1.45,
+    "xg_pg": 1.28,
+    "xga_pg": 1.52,
+    "xg_n": 11,
+    "g_minus_xg": -0.19,
+    "ga_minus_xga": -0.25,
+    "sot_pg": 4.7,
+    "sota_pg": 4.3
+   },
+   "home": {
+    "gp": 5,
+    "w": 3,
+    "d": 1,
+    "l": 1,
+    "gf_pg": 1.6,
+    "ga_pg": 1.0,
+    "total_pg": 2.6,
+    "over": {
+     "1.5": 0.8,
+     "2.5": 0.4,
+     "3.5": 0.4
+    },
+    "btts": 0.4,
+    "clean_sheet": 0.4,
+    "failed_to_score": 0.2,
+    "ppg": 2.0,
+    "xg_pg": 1.24,
+    "xga_pg": 1.35,
+    "xg_n": 5,
+    "g_minus_xg": 0.36,
+    "ga_minus_xga": -0.35,
+    "sot_pg": 5.0,
+    "sota_pg": 4.4
+   },
+   "away": {
+    "gp": 6,
+    "w": 1,
+    "d": 3,
+    "l": 2,
+    "gf_pg": 0.67,
+    "ga_pg": 1.5,
+    "total_pg": 2.17,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.333,
+     "3.5": 0.333
+    },
+    "btts": 0.333,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.5,
+    "ppg": 1.0,
+    "xg_pg": 1.31,
+    "xga_pg": 1.67,
+    "xg_n": 6,
+    "g_minus_xg": -0.64,
+    "ga_minus_xga": -0.17,
+    "sot_pg": 4.5,
+    "sota_pg": 4.2
+   },
+   "last6": {
+    "gp": 6,
+    "w": 2,
+    "d": 1,
+    "l": 3,
+    "gf_pg": 1.0,
+    "ga_pg": 1.83,
+    "total_pg": 2.83,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.5,
+     "3.5": 0.5
+    },
+    "btts": 0.333,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.5,
+    "ppg": 1.17,
+    "xg_pg": 1.12,
+    "xga_pg": 1.64,
+    "xg_n": 6,
+    "g_minus_xg": -0.12,
+    "ga_minus_xga": 0.19,
+    "sot_pg": 4.8,
+    "sota_pg": 4.8
+   },
+   "last6_log": [
+    "20261011 A Hull 2-2 (xG 1.69-1.33)",
+    "20261017 H Chelsea 0-2 (xG 0.43-1.47)",
+    "20261024 A Arsenal 0-2 (xG 0.62-1.97)",
+    "20261102 A Newcastle 1-0 (xG 2.34-1.29)",
+    "20261106 H Coventry 3-1 (xG 1.42-1.21)",
+    "20261123 A Brentford 0-4 (xG 0.23-2.57)"
+   ],
+   "last_game_date": "20261123",
+   "rest_days": 0,
+   "rank": 9,
+   "points": 16
+  },
   "Tottenham": {
    "season": {
     "gp": 11,
@@ -1046,122 +1160,8 @@
    ],
    "last_game_date": "20261121",
    "rest_days": 2,
-   "rank": 9,
-   "points": 15
-  },
-  "Brentford": {
-   "season": {
-    "gp": 10,
-    "w": 3,
-    "d": 5,
-    "l": 2,
-    "gf_pg": 1.6,
-    "ga_pg": 1.1,
-    "total_pg": 2.7,
-    "over": {
-     "1.5": 1.0,
-     "2.5": 0.5,
-     "3.5": 0.2
-    },
-    "btts": 0.6,
-    "clean_sheet": 0.3,
-    "failed_to_score": 0.1,
-    "ppg": 1.4,
-    "xg_pg": 1.46,
-    "xga_pg": 1.47,
-    "xg_n": 10,
-    "g_minus_xg": 0.14,
-    "ga_minus_xga": -0.37,
-    "sot_pg": 3.6,
-    "sota_pg": 4.4
-   },
-   "home": {
-    "gp": 5,
-    "w": 3,
-    "d": 1,
-    "l": 1,
-    "gf_pg": 2.0,
-    "ga_pg": 0.6,
-    "total_pg": 2.6,
-    "over": {
-     "1.5": 1.0,
-     "2.5": 0.6,
-     "3.5": 0.0
-    },
-    "btts": 0.4,
-    "clean_sheet": 0.6,
-    "failed_to_score": 0.0,
-    "ppg": 2.0,
-    "xg_pg": 1.81,
-    "xga_pg": 1.1,
-    "xg_n": 5,
-    "g_minus_xg": 0.19,
-    "ga_minus_xga": -0.5,
-    "sot_pg": 3.8,
-    "sota_pg": 3.4
-   },
-   "away": {
-    "gp": 5,
-    "w": 0,
-    "d": 4,
-    "l": 1,
-    "gf_pg": 1.2,
-    "ga_pg": 1.6,
-    "total_pg": 2.8,
-    "over": {
-     "1.5": 1.0,
-     "2.5": 0.4,
-     "3.5": 0.4
-    },
-    "btts": 0.8,
-    "clean_sheet": 0.0,
-    "failed_to_score": 0.2,
-    "ppg": 0.8,
-    "xg_pg": 1.12,
-    "xga_pg": 1.83,
-    "xg_n": 5,
-    "g_minus_xg": 0.08,
-    "ga_minus_xga": -0.23,
-    "sot_pg": 3.4,
-    "sota_pg": 5.4
-   },
-   "last6": {
-    "gp": 6,
-    "w": 2,
-    "d": 2,
-    "l": 2,
-    "gf_pg": 1.5,
-    "ga_pg": 1.17,
-    "total_pg": 2.67,
-    "over": {
-     "1.5": 1.0,
-     "2.5": 0.5,
-     "3.5": 0.167
-    },
-    "btts": 0.5,
-    "clean_sheet": 0.333,
-    "failed_to_score": 0.167,
-    "ppg": 1.33,
-    "xg_pg": 1.23,
-    "xga_pg": 1.53,
-    "xg_n": 6,
-    "g_minus_xg": 0.27,
-    "ga_minus_xga": -0.36,
-    "sot_pg": 3.2,
-    "sota_pg": 3.8
-   },
-   "last6_log": [
-    "20260918 H Chelsea 3-0 (xG 2.65-0.86)",
-    "20261010 A Aston Villa 2-2 (xG 1.07-2.28)",
-    "20261017 H Liverpool 1-2 (xG 0.86-1.51)",
-    "20261025 A Hull 1-1 (xG 1.74-1.57)",
-    "20261031 H Nottingham 2-0 (xG 0.47-0.86)",
-    "20261108 A Brighton 0-2 (xG 0.59-2.11)"
-   ],
-   "last_game_date": "20261108",
-   "rest_days": 15,
    "rank": 10,
-   "points": 14
+   "points": 15
   },
   "Hull": {
    "season": {
@@ -2538,12 +2538,12 @@
    "20261107 Nottingham 3-1 Manchester City"
   ],
   "Brentford vs Everton": [
-   "20230923 Brentford 1-3 Everton",
    "20240427 Everton 1-0 Brentford",
    "20241123 Everton 0-0 Brentford",
    "20250226 Brentford 1-1 Everton",
    "20260104 Everton 2-4 Brentford",
-   "20260411 Brentford 2-2 Everton"
+   "20260411 Brentford 2-2 Everton",
+   "20261123 Brentford 4-0 Everton"
   ],
   "Arsenal vs Tottenham": [
    "20230924 Arsenal 2-2 Tottenham",
