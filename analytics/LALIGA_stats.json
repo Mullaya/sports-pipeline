@@ -1,24 +1,24 @@
 {
  "meta": {
-  "generated_kst": "2026-11-23 13:13",
+  "generated_kst": "2026-11-24 16:15",
   "league": "LALIGA",
   "season_start": "20260701",
-  "games": 128,
-  "last_game_date": "20261122",
+  "games": 129,
+  "last_game_date": "20261123",
   "league_avg": {
-   "games": 128,
-   "home_win": 0.445,
-   "draw": 0.25,
-   "away_win": 0.305,
+   "games": 129,
+   "home_win": 0.442,
+   "draw": 0.256,
+   "away_win": 0.302,
    "goals_pg": 2.88,
    "home_gf_pg": 1.6,
    "away_gf_pg": 1.28,
    "over": {
-    "1.5": 0.75,
-    "2.5": 0.555,
-    "3.5": 0.32
+    "1.5": 0.752,
+    "2.5": 0.55,
+    "3.5": 0.318
    },
-   "btts": 0.555
+   "btts": 0.558
   },
   "notes": "REG만 집계 / over는 해당 기준점 초과 비율 / g_minus_xg +는 득점 과열(회귀 후보) / rest_days는 오늘(KST) 기준"
  },
@@ -133,7 +133,7 @@
     "20261122 H Villarreal 3-2 (xG 3.23-0.2)"
    ],
    "last_game_date": "20261122",
-   "rest_days": 0,
+   "rest_days": 1,
    "rank": 1,
    "points": 36
   },
@@ -247,7 +247,7 @@
     "20261121 H Celta Vigo 2-1 (xG 3.76-1.5)"
    ],
    "last_game_date": "20261121",
-   "rest_days": 1,
+   "rest_days": 2,
    "rank": 2,
    "points": 33
   },
@@ -361,7 +361,7 @@
     "20261122 A Getafe 3-0 (xG 4.14-0.5)"
    ],
    "last_game_date": "20261122",
-   "rest_days": 0,
+   "rest_days": 1,
    "rank": 3,
    "points": 31
   },
@@ -475,7 +475,7 @@
     "20261121 A Sevilla 1-1 (xG 0.62-2.32)"
    ],
    "last_game_date": "20261121",
-   "rest_days": 1,
+   "rest_days": 2,
    "rank": 4,
    "points": 27
   },
@@ -589,7 +589,7 @@
     "20261122 A Racing Santander 2-3 (xG 3.71-2.97)"
    ],
    "last_game_date": "20261122",
-   "rest_days": 0,
+   "rest_days": 1,
    "rank": 5,
    "points": 22
   },
@@ -703,7 +703,7 @@
     "20261121 H Betis 1-1 (xG 2.32-0.62)"
    ],
    "last_game_date": "20261121",
-   "rest_days": 1,
+   "rest_days": 2,
    "rank": 6,
    "points": 19
   },
@@ -817,7 +817,7 @@
     "20261122 H Real Sociedad 3-2 (xG 2.97-3.71)"
    ],
    "last_game_date": "20261122",
-   "rest_days": 0,
+   "rest_days": 1,
    "rank": 7,
    "points": 17
   },
@@ -931,7 +931,7 @@
     "20261120 H Espanyol 0-1 (xG 1.45-0.54)"
    ],
    "last_game_date": "20261120",
-   "rest_days": 2,
+   "rest_days": 3,
    "rank": 8,
    "points": 16
   },
@@ -1045,7 +1045,7 @@
     "20261121 H Dep. A Coruna 3-1 (xG 3.33-0.31)"
    ],
    "last_game_date": "20261121",
-   "rest_days": 1,
+   "rest_days": 2,
    "rank": 9,
    "points": 16
   },
@@ -1159,7 +1159,7 @@
     "20261122 A Barcelona 2-3 (xG 0.2-3.23)"
    ],
    "last_game_date": "20261122",
-   "rest_days": 0,
+   "rest_days": 1,
    "rank": 10,
    "points": 15
   },
@@ -1273,7 +1273,7 @@
     "20261120 A Ath Bilbao 1-0 (xG 0.54-1.45)"
    ],
    "last_game_date": "20261120",
-   "rest_days": 2,
+   "rest_days": 3,
    "rank": 11,
    "points": 15
   },
@@ -1387,7 +1387,7 @@
     "20261121 A Alaves 1-3 (xG 0.31-3.33)"
    ],
    "last_game_date": "20261121",
-   "rest_days": 1,
+   "rest_days": 2,
    "rank": 12,
    "points": 15
   },
@@ -1501,7 +1501,7 @@
     "20261122 H Malaga 1-0 (xG 1.24-0.63)"
    ],
    "last_game_date": "20261122",
-   "rest_days": 0,
+   "rest_days": 1,
    "rank": 13,
    "points": 15
   },
@@ -1615,9 +1615,123 @@
     "20261121 A Real Madrid 1-2 (xG 1.5-3.76)"
    ],
    "last_game_date": "20261121",
-   "rest_days": 1,
+   "rest_days": 2,
    "rank": 14,
    "points": 13
+  },
+  "Levante": {
+   "season": {
+    "gp": 13,
+    "w": 2,
+    "d": 6,
+    "l": 5,
+    "gf_pg": 1.31,
+    "ga_pg": 1.69,
+    "total_pg": 3.0,
+    "over": {
+     "1.5": 0.769,
+     "2.5": 0.538,
+     "3.5": 0.385
+    },
+    "btts": 0.615,
+    "clean_sheet": 0.231,
+    "failed_to_score": 0.385,
+    "ppg": 0.92,
+    "xg_pg": 1.2,
+    "xga_pg": 1.87,
+    "xg_n": 13,
+    "g_minus_xg": 0.1,
+    "ga_minus_xga": -0.18,
+    "sot_pg": 3.8,
+    "sota_pg": 5.2
+   },
+   "home": {
+    "gp": 6,
+    "w": 2,
+    "d": 2,
+    "l": 2,
+    "gf_pg": 2.33,
+    "ga_pg": 2.17,
+    "total_pg": 4.5,
+    "over": {
+     "1.5": 1.0,
+     "2.5": 0.667,
+     "3.5": 0.667
+    },
+    "btts": 0.833,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.167,
+    "ppg": 1.33,
+    "xg_pg": 1.84,
+    "xga_pg": 1.63,
+    "xg_n": 6,
+    "g_minus_xg": 0.49,
+    "ga_minus_xga": 0.54,
+    "sot_pg": 6.3,
+    "sota_pg": 4.7
+   },
+   "away": {
+    "gp": 7,
+    "w": 0,
+    "d": 4,
+    "l": 3,
+    "gf_pg": 0.43,
+    "ga_pg": 1.29,
+    "total_pg": 1.71,
+    "over": {
+     "1.5": 0.571,
+     "2.5": 0.429,
+     "3.5": 0.143
+    },
+    "btts": 0.429,
+    "clean_sheet": 0.429,
+    "failed_to_score": 0.571,
+    "ppg": 0.57,
+    "xg_pg": 0.66,
+    "xga_pg": 2.08,
+    "xg_n": 7,
+    "g_minus_xg": -0.23,
+    "ga_minus_xga": -0.8,
+    "sot_pg": 1.6,
+    "sota_pg": 5.6
+   },
+   "last6": {
+    "gp": 6,
+    "w": 1,
+    "d": 3,
+    "l": 2,
+    "gf_pg": 1.0,
+    "ga_pg": 1.17,
+    "total_pg": 2.17,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.333,
+     "3.5": 0.167
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.333,
+    "ppg": 1.0,
+    "xg_pg": 0.94,
+    "xga_pg": 1.58,
+    "xg_n": 6,
+    "g_minus_xg": 0.06,
+    "ga_minus_xga": -0.42,
+    "sot_pg": 3.2,
+    "sota_pg": 4.5
+   },
+   "last6_log": [
+    "20261016 A Dep. A Coruna 1-1 (xG 0.83-1.08)",
+    "20261021 H Ath Bilbao 3-1 (xG 1.82-2.03)",
+    "20261025 A Real Sociedad 1-2 (xG 0.48-2.22)",
+    "20261031 H Atl. Madrid 0-2 (xG 1.4-0.69)",
+    "20261108 A Celta Vigo 0-0 (xG 0.28-3.16)",
+    "20261123 H Elche 1-1 (xG 0.82-0.33)"
+   ],
+   "last_game_date": "20261123",
+   "rest_days": 0,
+   "rank": 15,
+   "points": 12
   },
   "Rayo Vallecano": {
    "season": {
@@ -1729,8 +1843,8 @@
     "20261121 H Valencia 0-1 (xG 0.73-0.66)"
    ],
    "last_game_date": "20261121",
-   "rest_days": 1,
-   "rank": 15,
+   "rest_days": 2,
+   "rank": 16,
    "points": 12
   },
   "Valencia": {
@@ -1843,8 +1957,8 @@
     "20261121 A Rayo Vallecano 1-0 (xG 0.66-0.73)"
    ],
    "last_game_date": "20261121",
-   "rest_days": 1,
-   "rank": 16,
+   "rest_days": 2,
+   "rank": 17,
    "points": 12
   },
   "Getafe": {
@@ -1957,149 +2071,35 @@
     "20261122 H Atl. Madrid 0-3 (xG 0.5-4.14)"
    ],
    "last_game_date": "20261122",
-   "rest_days": 0,
-   "rank": 17,
-   "points": 12
-  },
-  "Levante": {
-   "season": {
-    "gp": 12,
-    "w": 2,
-    "d": 5,
-    "l": 5,
-    "gf_pg": 1.33,
-    "ga_pg": 1.75,
-    "total_pg": 3.08,
-    "over": {
-     "1.5": 0.75,
-     "2.5": 0.583,
-     "3.5": 0.417
-    },
-    "btts": 0.583,
-    "clean_sheet": 0.25,
-    "failed_to_score": 0.417,
-    "ppg": 0.92,
-    "xg_pg": 1.24,
-    "xga_pg": 2.0,
-    "xg_n": 12,
-    "g_minus_xg": 0.1,
-    "ga_minus_xga": -0.25,
-    "sot_pg": 3.9,
-    "sota_pg": 5.4
-   },
-   "home": {
-    "gp": 5,
-    "w": 2,
-    "d": 1,
-    "l": 2,
-    "gf_pg": 2.6,
-    "ga_pg": 2.4,
-    "total_pg": 5.0,
-    "over": {
-     "1.5": 1.0,
-     "2.5": 0.8,
-     "3.5": 0.8
-    },
-    "btts": 0.8,
-    "clean_sheet": 0.0,
-    "failed_to_score": 0.2,
-    "ppg": 1.4,
-    "xg_pg": 2.05,
-    "xga_pg": 1.89,
-    "xg_n": 5,
-    "g_minus_xg": 0.55,
-    "ga_minus_xga": 0.51,
-    "sot_pg": 7.2,
-    "sota_pg": 5.2
-   },
-   "away": {
-    "gp": 7,
-    "w": 0,
-    "d": 4,
-    "l": 3,
-    "gf_pg": 0.43,
-    "ga_pg": 1.29,
-    "total_pg": 1.71,
-    "over": {
-     "1.5": 0.571,
-     "2.5": 0.429,
-     "3.5": 0.143
-    },
-    "btts": 0.429,
-    "clean_sheet": 0.429,
-    "failed_to_score": 0.571,
-    "ppg": 0.57,
-    "xg_pg": 0.66,
-    "xga_pg": 2.08,
-    "xg_n": 7,
-    "g_minus_xg": -0.23,
-    "ga_minus_xga": -0.8,
-    "sot_pg": 1.6,
-    "sota_pg": 5.6
-   },
-   "last6": {
-    "gp": 6,
-    "w": 1,
-    "d": 3,
-    "l": 2,
-    "gf_pg": 1.33,
-    "ga_pg": 1.5,
-    "total_pg": 2.83,
-    "over": {
-     "1.5": 0.833,
-     "2.5": 0.5,
-     "3.5": 0.333
-    },
-    "btts": 0.667,
-    "clean_sheet": 0.167,
-    "failed_to_score": 0.333,
-    "ppg": 1.0,
-    "xg_pg": 1.11,
-    "xga_pg": 1.9,
-    "xg_n": 6,
-    "g_minus_xg": 0.23,
-    "ga_minus_xga": -0.4,
-    "sot_pg": 4.2,
-    "sota_pg": 5.0
-   },
-   "last6_log": [
-    "20261012 H Sevilla 3-3 (xG 1.83-2.2)",
-    "20261016 A Dep. A Coruna 1-1 (xG 0.83-1.08)",
-    "20261021 H Ath Bilbao 3-1 (xG 1.82-2.03)",
-    "20261025 A Real Sociedad 1-2 (xG 0.48-2.22)",
-    "20261031 H Atl. Madrid 0-2 (xG 1.4-0.69)",
-    "20261108 A Celta Vigo 0-0 (xG 0.28-3.16)"
-   ],
-   "last_game_date": "20261108",
-   "rest_days": 14,
+   "rest_days": 1,
    "rank": 18,
-   "points": 11
+   "points": 12
   },
   "Elche": {
    "season": {
-    "gp": 12,
+    "gp": 13,
     "w": 2,
-    "d": 4,
+    "d": 5,
     "l": 6,
-    "gf_pg": 1.17,
-    "ga_pg": 1.67,
-    "total_pg": 2.83,
+    "gf_pg": 1.15,
+    "ga_pg": 1.62,
+    "total_pg": 2.77,
     "over": {
-     "1.5": 0.75,
-     "2.5": 0.5,
-     "3.5": 0.417
+     "1.5": 0.769,
+     "2.5": 0.462,
+     "3.5": 0.385
     },
-    "btts": 0.5,
-    "clean_sheet": 0.25,
-    "failed_to_score": 0.417,
-    "ppg": 0.83,
-    "xg_pg": 1.19,
-    "xga_pg": 1.68,
-    "xg_n": 12,
-    "g_minus_xg": -0.02,
-    "ga_minus_xga": -0.02,
-    "sot_pg": 4.2,
-    "sota_pg": 4.7
+    "btts": 0.538,
+    "clean_sheet": 0.231,
+    "failed_to_score": 0.385,
+    "ppg": 0.85,
+    "xg_pg": 1.12,
+    "xga_pg": 1.62,
+    "xg_n": 13,
+    "g_minus_xg": 0.03,
+    "ga_minus_xga": -0.0,
+    "sot_pg": 4.1,
+    "sota_pg": 4.5
    },
    "home": {
     "gp": 6,
@@ -2127,67 +2127,67 @@
     "sota_pg": 4.8
    },
    "away": {
-    "gp": 6,
+    "gp": 7,
     "w": 2,
-    "d": 3,
+    "d": 4,
     "l": 1,
-    "gf_pg": 1.67,
+    "gf_pg": 1.57,
     "ga_pg": 1.0,
-    "total_pg": 2.67,
+    "total_pg": 2.57,
     "over": {
-     "1.5": 0.833,
-     "2.5": 0.5,
-     "3.5": 0.333
+     "1.5": 0.857,
+     "2.5": 0.429,
+     "3.5": 0.286
     },
-    "btts": 0.667,
-    "clean_sheet": 0.333,
-    "failed_to_score": 0.167,
-    "ppg": 1.5,
-    "xg_pg": 1.26,
-    "xga_pg": 1.43,
-    "xg_n": 6,
-    "g_minus_xg": 0.41,
-    "ga_minus_xga": -0.43,
-    "sot_pg": 5.0,
-    "sota_pg": 4.5
+    "btts": 0.714,
+    "clean_sheet": 0.286,
+    "failed_to_score": 0.143,
+    "ppg": 1.43,
+    "xg_pg": 1.13,
+    "xga_pg": 1.35,
+    "xg_n": 7,
+    "g_minus_xg": 0.45,
+    "ga_minus_xga": -0.35,
+    "sot_pg": 4.6,
+    "sota_pg": 4.1
    },
    "last6": {
     "gp": 6,
-    "w": 2,
-    "d": 2,
+    "w": 1,
+    "d": 3,
     "l": 2,
-    "gf_pg": 1.0,
+    "gf_pg": 0.67,
     "ga_pg": 0.67,
-    "total_pg": 1.67,
+    "total_pg": 1.33,
     "over": {
      "1.5": 0.5,
-     "2.5": 0.333,
-     "3.5": 0.167
+     "2.5": 0.167,
+     "3.5": 0.0
     },
     "btts": 0.167,
     "clean_sheet": 0.5,
     "failed_to_score": 0.667,
-    "ppg": 1.33,
-    "xg_pg": 1.22,
-    "xga_pg": 1.33,
+    "ppg": 1.0,
+    "xg_pg": 1.0,
+    "xga_pg": 1.29,
     "xg_n": 6,
-    "g_minus_xg": -0.22,
-    "ga_minus_xga": -0.66,
-    "sot_pg": 3.7,
-    "sota_pg": 4.7
+    "g_minus_xg": -0.34,
+    "ga_minus_xga": -0.62,
+    "sot_pg": 3.0,
+    "sota_pg": 4.3
    },
    "last6_log": [
-    "20260918 A Espanyol 3-1 (xG 1.61-1.04)",
     "20261011 H Celta Vigo 0-0 (xG 0.77-0.46)",
     "20261017 A Villarreal 0-0 (xG 0.3-2.38)",
     "20261024 A Rayo Vallecano 3-0 (xG 2.53-1.52)",
     "20261101 H Valencia 0-1 (xG 1.26-0.79)",
-    "20261108 H Betis 0-2 (xG 0.84-1.78)"
+    "20261108 H Betis 0-2 (xG 0.84-1.78)",
+    "20261123 A Levante 1-1 (xG 0.33-0.82)"
    ],
-   "last_game_date": "20261108",
-   "rest_days": 14,
+   "last_game_date": "20261123",
+   "rest_days": 0,
    "rank": 19,
-   "points": 10
+   "points": 11
   },
   "Malaga": {
    "season": {
@@ -2299,7 +2299,7 @@
     "20261122 A Osasuna 0-1 (xG 0.63-1.24)"
    ],
    "last_game_date": "20261122",
-   "rest_days": 0,
+   "rest_days": 1,
    "rank": 20,
    "points": 5
   }
@@ -3145,7 +3145,8 @@
   ],
   "Elche vs Levante": [
    "20250829 Elche 2-0 Levante",
-   "20260123 Levante 3-2 Elche"
+   "20260123 Levante 3-2 Elche",
+   "20261123 Levante 1-1 Elche"
   ],
   "Elche vs Sevilla": [
    "20250912 Sevilla 2-2 Elche",
