@@ -1,10 +1,10 @@
 {
  "meta": {
-  "generated_kst": "2026-11-24 16:15",
+  "generated_kst": "2026-11-25 14:50",
   "league": "LIIGA",
   "season_start": "20260801",
-  "games": 200,
-  "last_game_date": "20261121",
+  "games": 203,
+  "last_game_date": "20261124",
   "points_rule": {
    "reg_win": 3,
    "ot_win": 2,
@@ -12,165 +12,67 @@
   },
   "league_avg": {
    "avg_reg_total": 5.11,
-   "reg_draw_rate": 0.205,
-   "home_win_rate": 0.57,
-   "home_reg_win_rate": 0.445,
+   "reg_draw_rate": 0.207,
+   "home_win_rate": 0.576,
+   "home_reg_win_rate": 0.448,
    "over_rate_reg": {
-    "4.5": 0.54,
-    "5.5": 0.395,
-    "6.5": 0.275
+    "4.5": 0.542,
+    "5.5": 0.399,
+    "6.5": 0.276
    }
   },
   "notes": "reg_* = 정규시간(60분) 기준 (하키 언오버 사이트 정산 기준) / w = 정규승+연장승 / shot_share = 유효슈팅 점유율 / rank_pts = 전체 승점 순위"
  },
  "teams": {
-  "Lukko": {
-   "gp": 23,
+  "Ilves": {
+   "gp": 26,
    "w": 18,
    "reg_wins": 15,
    "ot_wins": 3,
    "otl": 1,
-   "l": 4,
+   "l": 7,
    "pts": 52,
    "reg_w": 15,
    "reg_d": 4,
-   "reg_l": 4,
-   "gf_pg": 3.17,
+   "reg_l": 7,
+   "gf_pg": 2.96,
    "ga_pg": 1.96,
-   "avg_reg_total": 4.96,
-   "sf_pg": 24.3,
-   "sa_pg": 23.1,
-   "shot_share": 0.513,
-   "sh_pct": 0.131,
-   "sv_pct": 0.92,
-   "pdo": 105.1,
-   "pp_pct": 0.133,
-   "pk_pct": 0.831,
-   "xg_gp": 21,
-   "xgf_pg": 2.65,
-   "xga_pg": 2.63,
-   "xg_share": 0.502,
-   "xg_share_last10": 0.486,
-   "gf_minus_xg_pg": 0.25,
-   "ga_minus_xga_pg": -0.72,
-   "reg_draw_rate": 0.174,
+   "avg_reg_total": 4.77,
+   "sf_pg": 25.8,
+   "sa_pg": 23.5,
+   "shot_share": 0.524,
+   "sh_pct": 0.115,
+   "sv_pct": 0.918,
+   "pdo": 103.3,
+   "pp_pct": 0.181,
+   "pk_pct": 0.933,
+   "xg_gp": 24,
+   "xgf_pg": 2.77,
+   "xga_pg": 2.43,
+   "xg_share": 0.533,
+   "xg_share_last10": 0.543,
+   "gf_minus_xg_pg": -0.02,
+   "ga_minus_xga_pg": -0.47,
+   "reg_draw_rate": 0.154,
    "over_rate_reg": {
-    "4.5": 0.478,
-    "5.5": 0.304,
-    "6.5": 0.217
+    "4.5": 0.538,
+    "5.5": 0.423,
+    "6.5": 0.192
    },
    "home": {
     "gp": 12,
-    "w": 8,
-    "reg_wins": 7,
-    "ot_wins": 1,
-    "otl": 0,
-    "l": 4,
-    "pts": 23,
-    "reg_w": 7,
-    "reg_d": 1,
-    "reg_l": 4,
-    "gf_pg": 2.83,
-    "ga_pg": 2.25,
-    "avg_reg_total": 5.0
-   },
-   "away": {
-    "gp": 11,
     "w": 10,
-    "reg_wins": 8,
-    "ot_wins": 2,
-    "otl": 1,
-    "l": 0,
-    "pts": 29,
-    "reg_w": 8,
-    "reg_d": 3,
-    "reg_l": 0,
-    "gf_pg": 3.55,
-    "ga_pg": 1.64,
-    "avg_reg_total": 4.91
-   },
-   "last10": {
-    "gp": 10,
-    "w": 10,
-    "reg_wins": 8,
-    "ot_wins": 2,
-    "otl": 0,
-    "l": 0,
-    "pts": 28,
-    "reg_w": 8,
-    "reg_d": 2,
-    "reg_l": 0,
-    "gf_pg": 4.0,
-    "ga_pg": 1.8,
-    "avg_reg_total": 5.6
-   },
-   "last10_log": [
-    "20261017 vs Kiekko-Espoo 3-1 W",
-    "20261020 vs IFK Helsinki 3-2 OTW",
-    "20261023 vs TPS Turku 4-1 W",
-    "20261024 @ TPS Turku 3-1 W",
-    "20261028 @ Jukurit 4-3 OTW",
-    "20261030 vs KooKoo 3-1 W",
-    "20261111 vs KalPa 4-1 W",
-    "20261118 @ KalPa 7-3 W",
-    "20261120 @ Pelicans 5-2 W",
-    "20261121 vs Hameenlinna 4-3 W"
-   ],
-   "streak": "W11",
-   "last_game_date": "20261121",
-   "days_since_last": 3,
-   "last_was_b2b": true,
-   "rank_pts": 1
-  },
-  "Ilves": {
-   "gp": 25,
-   "w": 17,
-   "reg_wins": 14,
-   "ot_wins": 3,
-   "otl": 1,
-   "l": 7,
-   "pts": 49,
-   "reg_w": 14,
-   "reg_d": 4,
-   "reg_l": 7,
-   "gf_pg": 2.92,
-   "ga_pg": 1.96,
-   "avg_reg_total": 4.72,
-   "sf_pg": 25.8,
-   "sa_pg": 23.6,
-   "shot_share": 0.523,
-   "sh_pct": 0.113,
-   "sv_pct": 0.918,
-   "pdo": 103.1,
-   "pp_pct": 0.186,
-   "pk_pct": 0.932,
-   "xg_gp": 23,
-   "xgf_pg": 2.77,
-   "xga_pg": 2.47,
-   "xg_share": 0.528,
-   "xg_share_last10": 0.522,
-   "gf_minus_xg_pg": -0.07,
-   "ga_minus_xga_pg": -0.52,
-   "reg_draw_rate": 0.16,
-   "over_rate_reg": {
-    "4.5": 0.52,
-    "5.5": 0.4,
-    "6.5": 0.2
-   },
-   "home": {
-    "gp": 11,
-    "w": 9,
-    "reg_wins": 8,
+    "reg_wins": 9,
     "ot_wins": 1,
     "otl": 1,
     "l": 1,
-    "pts": 27,
-    "reg_w": 8,
+    "pts": 30,
+    "reg_w": 9,
     "reg_d": 2,
     "reg_l": 1,
-    "gf_pg": 3.45,
+    "gf_pg": 3.5,
     "ga_pg": 2.0,
-    "avg_reg_total": 5.27
+    "avg_reg_total": 5.33
    },
    "away": {
     "gp": 14,
@@ -198,12 +100,11 @@
     "reg_w": 6,
     "reg_d": 2,
     "reg_l": 2,
-    "gf_pg": 2.9,
-    "ga_pg": 1.5,
-    "avg_reg_total": 4.2
+    "gf_pg": 3.0,
+    "ga_pg": 1.7,
+    "avg_reg_total": 4.5
    },
    "last10_log": [
-    "20261023 @ Jukurit 3-0 W",
     "20261024 vs Jukurit 1-2 OTL",
     "20261028 @ IFK Helsinki 1-2 L",
     "20261030 @ Tappara 2-1 OTW",
@@ -212,11 +113,110 @@
     "20261113 @ SaiPa 3-4 L",
     "20261115 vs SaiPa 3-1 W",
     "20261118 @ Kiekko-Espoo 5-2 W",
-    "20261120 vs Tappara 6-2 W"
+    "20261120 vs Tappara 6-2 W",
+    "20261124 vs Assat 4-2 W"
    ],
-   "streak": "W3",
-   "last_game_date": "20261120",
-   "days_since_last": 4,
+   "streak": "W4",
+   "last_game_date": "20261124",
+   "days_since_last": 1,
+   "last_was_b2b": false,
+   "rank_pts": 1
+  },
+  "Lukko": {
+   "gp": 24,
+   "w": 18,
+   "reg_wins": 15,
+   "ot_wins": 3,
+   "otl": 1,
+   "l": 5,
+   "pts": 52,
+   "reg_w": 15,
+   "reg_d": 4,
+   "reg_l": 5,
+   "gf_pg": 3.08,
+   "ga_pg": 2.12,
+   "avg_reg_total": 5.04,
+   "sf_pg": 24.2,
+   "sa_pg": 23.2,
+   "shot_share": 0.511,
+   "sh_pct": 0.127,
+   "sv_pct": 0.912,
+   "pdo": 103.9,
+   "pp_pct": 0.138,
+   "pk_pct": 0.84,
+   "xg_gp": 22,
+   "xgf_pg": 2.62,
+   "xga_pg": 2.62,
+   "xg_share": 0.5,
+   "xg_share_last10": 0.491,
+   "gf_minus_xg_pg": 0.2,
+   "ga_minus_xga_pg": -0.53,
+   "reg_draw_rate": 0.167,
+   "over_rate_reg": {
+    "4.5": 0.5,
+    "5.5": 0.333,
+    "6.5": 0.25
+   },
+   "home": {
+    "gp": 12,
+    "w": 8,
+    "reg_wins": 7,
+    "ot_wins": 1,
+    "otl": 0,
+    "l": 4,
+    "pts": 23,
+    "reg_w": 7,
+    "reg_d": 1,
+    "reg_l": 4,
+    "gf_pg": 2.83,
+    "ga_pg": 2.25,
+    "avg_reg_total": 5.0
+   },
+   "away": {
+    "gp": 12,
+    "w": 10,
+    "reg_wins": 8,
+    "ot_wins": 2,
+    "otl": 1,
+    "l": 1,
+    "pts": 29,
+    "reg_w": 8,
+    "reg_d": 3,
+    "reg_l": 1,
+    "gf_pg": 3.33,
+    "ga_pg": 2.0,
+    "avg_reg_total": 5.08
+   },
+   "last10": {
+    "gp": 10,
+    "w": 9,
+    "reg_wins": 7,
+    "ot_wins": 2,
+    "otl": 0,
+    "l": 1,
+    "pts": 25,
+    "reg_w": 7,
+    "reg_d": 2,
+    "reg_l": 1,
+    "gf_pg": 3.8,
+    "ga_pg": 2.3,
+    "avg_reg_total": 5.9
+   },
+   "last10_log": [
+    "20261020 vs IFK Helsinki 3-2 OTW",
+    "20261023 vs TPS Turku 4-1 W",
+    "20261024 @ TPS Turku 3-1 W",
+    "20261028 @ Jukurit 4-3 OTW",
+    "20261030 vs KooKoo 3-1 W",
+    "20261111 vs KalPa 4-1 W",
+    "20261118 @ KalPa 7-3 W",
+    "20261120 @ Pelicans 5-2 W",
+    "20261121 vs Hameenlinna 4-3 W",
+    "20261124 @ SaiPa 1-6 L"
+   ],
+   "streak": "L1",
+   "last_game_date": "20261124",
+   "days_since_last": 1,
    "last_was_b2b": false,
    "rank_pts": 2
   },
@@ -314,9 +314,107 @@
    ],
    "streak": "L1",
    "last_game_date": "20261120",
-   "days_since_last": 4,
+   "days_since_last": 5,
    "last_was_b2b": false,
    "rank_pts": 3
+  },
+  "SaiPa": {
+   "gp": 22,
+   "w": 15,
+   "reg_wins": 12,
+   "ot_wins": 3,
+   "otl": 1,
+   "l": 6,
+   "pts": 43,
+   "reg_w": 12,
+   "reg_d": 4,
+   "reg_l": 6,
+   "gf_pg": 3.18,
+   "ga_pg": 2.14,
+   "avg_reg_total": 5.14,
+   "sf_pg": 25.8,
+   "sa_pg": 24.9,
+   "shot_share": 0.509,
+   "sh_pct": 0.123,
+   "sv_pct": 0.916,
+   "pdo": 103.9,
+   "pp_pct": 0.189,
+   "pk_pct": 0.871,
+   "xg_gp": 21,
+   "xgf_pg": 2.78,
+   "xga_pg": 2.6,
+   "xg_share": 0.516,
+   "xg_share_last10": 0.513,
+   "gf_minus_xg_pg": 0.22,
+   "ga_minus_xga_pg": -0.46,
+   "reg_draw_rate": 0.182,
+   "over_rate_reg": {
+    "4.5": 0.591,
+    "5.5": 0.409,
+    "6.5": 0.318
+   },
+   "home": {
+    "gp": 13,
+    "w": 10,
+    "reg_wins": 7,
+    "ot_wins": 3,
+    "otl": 1,
+    "l": 2,
+    "pts": 28,
+    "reg_w": 7,
+    "reg_d": 4,
+    "reg_l": 2,
+    "gf_pg": 3.38,
+    "ga_pg": 1.92,
+    "avg_reg_total": 5.0
+   },
+   "away": {
+    "gp": 9,
+    "w": 5,
+    "reg_wins": 5,
+    "ot_wins": 0,
+    "otl": 0,
+    "l": 4,
+    "pts": 15,
+    "reg_w": 5,
+    "reg_d": 0,
+    "reg_l": 4,
+    "gf_pg": 2.89,
+    "ga_pg": 2.44,
+    "avg_reg_total": 5.33
+   },
+   "last10": {
+    "gp": 10,
+    "w": 7,
+    "reg_wins": 6,
+    "ot_wins": 1,
+    "otl": 0,
+    "l": 3,
+    "pts": 20,
+    "reg_w": 6,
+    "reg_d": 1,
+    "reg_l": 3,
+    "gf_pg": 3.8,
+    "ga_pg": 2.6,
+    "avg_reg_total": 6.3
+   },
+   "last10_log": [
+    "20261017 vs IFK Helsinki 7-1 W",
+    "20261020 vs Karpat 2-1 OTW",
+    "20261023 @ Vaasan Sport 5-3 W",
+    "20261024 @ Vaasan Sport 3-1 W",
+    "20261028 @ Pelicans 0-5 L",
+    "20261030 vs JYP 3-6 L",
+    "20261113 vs Ilves 4-3 W",
+    "20261115 @ Ilves 1-3 L",
+    "20261120 vs TPS Turku 7-2 W",
+    "20261124 vs Lukko 6-1 W"
+   ],
+   "streak": "W2",
+   "last_game_date": "20261124",
+   "days_since_last": 1,
+   "last_was_b2b": false,
+   "rank_pts": 4
   },
   "Jukurit": {
    "gp": 25,
@@ -412,104 +510,6 @@
    ],
    "streak": "L2",
    "last_game_date": "20261121",
-   "days_since_last": 3,
-   "last_was_b2b": false,
-   "rank_pts": 4
-  },
-  "SaiPa": {
-   "gp": 21,
-   "w": 14,
-   "reg_wins": 11,
-   "ot_wins": 3,
-   "otl": 1,
-   "l": 6,
-   "pts": 40,
-   "reg_w": 11,
-   "reg_d": 4,
-   "reg_l": 6,
-   "gf_pg": 3.05,
-   "ga_pg": 2.19,
-   "avg_reg_total": 5.05,
-   "sf_pg": 25.9,
-   "sa_pg": 25.0,
-   "shot_share": 0.509,
-   "sh_pct": 0.118,
-   "sv_pct": 0.914,
-   "pdo": 103.2,
-   "pp_pct": 0.2,
-   "pk_pct": 0.875,
-   "xg_gp": 20,
-   "xgf_pg": 2.79,
-   "xga_pg": 2.63,
-   "xg_share": 0.514,
-   "xg_share_last10": 0.509,
-   "gf_minus_xg_pg": 0.06,
-   "ga_minus_xga_pg": -0.43,
-   "reg_draw_rate": 0.19,
-   "over_rate_reg": {
-    "4.5": 0.571,
-    "5.5": 0.381,
-    "6.5": 0.286
-   },
-   "home": {
-    "gp": 12,
-    "w": 9,
-    "reg_wins": 6,
-    "ot_wins": 3,
-    "otl": 1,
-    "l": 2,
-    "pts": 25,
-    "reg_w": 6,
-    "reg_d": 4,
-    "reg_l": 2,
-    "gf_pg": 3.17,
-    "ga_pg": 2.0,
-    "avg_reg_total": 4.83
-   },
-   "away": {
-    "gp": 9,
-    "w": 5,
-    "reg_wins": 5,
-    "ot_wins": 0,
-    "otl": 0,
-    "l": 4,
-    "pts": 15,
-    "reg_w": 5,
-    "reg_d": 0,
-    "reg_l": 4,
-    "gf_pg": 2.89,
-    "ga_pg": 2.44,
-    "avg_reg_total": 5.33
-   },
-   "last10": {
-    "gp": 10,
-    "w": 7,
-    "reg_wins": 6,
-    "ot_wins": 1,
-    "otl": 0,
-    "l": 3,
-    "pts": 20,
-    "reg_w": 6,
-    "reg_d": 1,
-    "reg_l": 3,
-    "gf_pg": 3.4,
-    "ga_pg": 2.6,
-    "avg_reg_total": 5.9
-   },
-   "last10_log": [
-    "20261015 vs Hameenlinna 2-1 W",
-    "20261017 vs IFK Helsinki 7-1 W",
-    "20261020 vs Karpat 2-1 OTW",
-    "20261023 @ Vaasan Sport 5-3 W",
-    "20261024 @ Vaasan Sport 3-1 W",
-    "20261028 @ Pelicans 0-5 L",
-    "20261030 vs JYP 3-6 L",
-    "20261113 vs Ilves 4-3 W",
-    "20261115 @ Ilves 1-3 L",
-    "20261120 vs TPS Turku 7-2 W"
-   ],
-   "streak": "W1",
-   "last_game_date": "20261120",
    "days_since_last": 4,
    "last_was_b2b": false,
    "rank_pts": 5
@@ -608,44 +608,44 @@
    ],
    "streak": "L2",
    "last_game_date": "20261121",
-   "days_since_last": 3,
+   "days_since_last": 4,
    "last_was_b2b": true,
    "rank_pts": 6
   },
   "Assat": {
-   "gp": 25,
+   "gp": 26,
    "w": 13,
    "reg_wins": 12,
    "ot_wins": 1,
    "otl": 2,
-   "l": 10,
+   "l": 11,
    "pts": 40,
    "reg_w": 12,
    "reg_d": 3,
-   "reg_l": 10,
-   "gf_pg": 2.32,
-   "ga_pg": 2.56,
-   "avg_reg_total": 4.76,
-   "sf_pg": 22.0,
+   "reg_l": 11,
+   "gf_pg": 2.31,
+   "ga_pg": 2.62,
+   "avg_reg_total": 4.81,
+   "sf_pg": 21.9,
    "sa_pg": 24.0,
-   "shot_share": 0.478,
-   "sh_pct": 0.106,
-   "sv_pct": 0.899,
-   "pdo": 100.5,
-   "pp_pct": 0.221,
-   "pk_pct": 0.756,
-   "xg_gp": 24,
-   "xgf_pg": 2.63,
-   "xga_pg": 2.41,
-   "xg_share": 0.522,
-   "xg_share_last10": 0.454,
-   "gf_minus_xg_pg": -0.3,
-   "ga_minus_xga_pg": 0.04,
-   "reg_draw_rate": 0.12,
+   "shot_share": 0.477,
+   "sh_pct": 0.105,
+   "sv_pct": 0.896,
+   "pdo": 100.1,
+   "pp_pct": 0.218,
+   "pk_pct": 0.762,
+   "xg_gp": 25,
+   "xgf_pg": 2.58,
+   "xga_pg": 2.43,
+   "xg_share": 0.515,
+   "xg_share_last10": 0.435,
+   "gf_minus_xg_pg": -0.26,
+   "ga_minus_xga_pg": 0.09,
+   "reg_draw_rate": 0.115,
    "over_rate_reg": {
-    "4.5": 0.56,
-    "5.5": 0.4,
-    "6.5": 0.24
+    "4.5": 0.577,
+    "5.5": 0.423,
+    "6.5": 0.231
    },
    "home": {
     "gp": 11,
@@ -663,19 +663,19 @@
     "avg_reg_total": 4.82
    },
    "away": {
-    "gp": 14,
+    "gp": 15,
     "w": 7,
     "reg_wins": 6,
     "ot_wins": 1,
     "otl": 1,
-    "l": 6,
+    "l": 7,
     "pts": 21,
     "reg_w": 6,
     "reg_d": 2,
-    "reg_l": 6,
-    "gf_pg": 2.21,
-    "ga_pg": 2.64,
-    "avg_reg_total": 4.71
+    "reg_l": 7,
+    "gf_pg": 2.2,
+    "ga_pg": 2.73,
+    "avg_reg_total": 4.8
    },
    "last10": {
     "gp": 10,
@@ -688,12 +688,11 @@
     "reg_w": 4,
     "reg_d": 0,
     "reg_l": 6,
-    "gf_pg": 2.1,
-    "ga_pg": 3.1,
-    "avg_reg_total": 5.2
+    "gf_pg": 2.3,
+    "ga_pg": 3.2,
+    "avg_reg_total": 5.5
    },
    "last10_log": [
-    "20261021 @ Tappara 0-3 L",
     "20261024 @ JYP 1-4 L",
     "20261028 @ KooKoo 3-5 L",
     "20261030 vs IFK Helsinki 3-2 W",
@@ -702,11 +701,12 @@
     "20261113 @ Pelicans 5-2 W",
     "20261114 vs Jokerit 3-0 W",
     "20261118 vs Pelicans 2-5 L",
-    "20261121 @ Kiekko-Espoo 1-6 L"
+    "20261121 @ Kiekko-Espoo 1-6 L",
+    "20261124 @ Ilves 2-4 L"
    ],
-   "streak": "L2",
-   "last_game_date": "20261121",
-   "days_since_last": 3,
+   "streak": "L3",
+   "last_game_date": "20261124",
+   "days_since_last": 1,
    "last_was_b2b": false,
    "rank_pts": 7
   },
@@ -804,44 +804,44 @@
    ],
    "streak": "W1",
    "last_game_date": "20261121",
-   "days_since_last": 3,
+   "days_since_last": 4,
    "last_was_b2b": true,
    "rank_pts": 8
   },
   "Kiekko-Espoo": {
-   "gp": 24,
+   "gp": 25,
    "w": 12,
    "reg_wins": 10,
    "ot_wins": 2,
-   "otl": 3,
+   "otl": 4,
    "l": 9,
-   "pts": 37,
+   "pts": 38,
    "reg_w": 10,
-   "reg_d": 5,
+   "reg_d": 6,
    "reg_l": 9,
-   "gf_pg": 3.17,
-   "ga_pg": 2.54,
-   "avg_reg_total": 5.5,
-   "sf_pg": 27.9,
-   "sa_pg": 25.0,
-   "shot_share": 0.528,
-   "sh_pct": 0.114,
-   "sv_pct": 0.901,
-   "pdo": 101.5,
-   "pp_pct": 0.213,
-   "pk_pct": 0.819,
-   "xg_gp": 23,
-   "xgf_pg": 2.78,
+   "gf_pg": 3.12,
+   "ga_pg": 2.56,
+   "avg_reg_total": 5.44,
+   "sf_pg": 28.1,
+   "sa_pg": 25.2,
+   "shot_share": 0.527,
+   "sh_pct": 0.111,
+   "sv_pct": 0.903,
+   "pdo": 101.4,
+   "pp_pct": 0.211,
+   "pk_pct": 0.821,
+   "xg_gp": 24,
+   "xgf_pg": 2.84,
    "xga_pg": 2.54,
-   "xg_share": 0.523,
-   "xg_share_last10": 0.48,
-   "gf_minus_xg_pg": 0.44,
-   "ga_minus_xga_pg": -0.1,
-   "reg_draw_rate": 0.208,
+   "xg_share": 0.528,
+   "xg_share_last10": 0.503,
+   "gf_minus_xg_pg": 0.33,
+   "ga_minus_xga_pg": -0.08,
+   "reg_draw_rate": 0.24,
    "over_rate_reg": {
-    "4.5": 0.625,
-    "5.5": 0.5,
-    "6.5": 0.333
+    "4.5": 0.6,
+    "5.5": 0.48,
+    "6.5": 0.32
    },
    "home": {
     "gp": 13,
@@ -859,37 +859,36 @@
     "avg_reg_total": 6.0
    },
    "away": {
-    "gp": 11,
+    "gp": 12,
     "w": 4,
     "reg_wins": 3,
     "ot_wins": 1,
-    "otl": 3,
+    "otl": 4,
     "l": 4,
-    "pts": 14,
+    "pts": 15,
     "reg_w": 3,
-    "reg_d": 4,
+    "reg_d": 5,
     "reg_l": 4,
-    "gf_pg": 2.64,
-    "ga_pg": 2.64,
-    "avg_reg_total": 4.91
+    "gf_pg": 2.58,
+    "ga_pg": 2.67,
+    "avg_reg_total": 4.83
    },
    "last10": {
     "gp": 10,
     "w": 6,
     "reg_wins": 5,
     "ot_wins": 1,
-    "otl": 0,
-    "l": 4,
-    "pts": 17,
+    "otl": 1,
+    "l": 3,
+    "pts": 18,
     "reg_w": 5,
-    "reg_d": 1,
-    "reg_l": 4,
-    "gf_pg": 3.2,
+    "reg_d": 2,
+    "reg_l": 3,
+    "gf_pg": 3.3,
     "ga_pg": 2.5,
     "avg_reg_total": 5.6
    },
    "last10_log": [
-    "20261017 @ Lukko 1-3 L",
     "20261021 vs KooKoo 4-2 W",
     "20261023 vs IFK Helsinki 0-3 L",
     "20261028 vs TPS Turku 5-4 OTW",
@@ -898,11 +897,12 @@
     "20261111 vs Vaasan Sport 3-5 L",
     "20261113 @ KalPa 4-1 W",
     "20261118 vs Ilves 2-5 L",
-    "20261121 vs Assat 6-1 W"
+    "20261121 vs Assat 6-1 W",
+    "20261124 @ Vaasan Sport 2-3 OTL"
    ],
-   "streak": "W1",
-   "last_game_date": "20261121",
-   "days_since_last": 3,
+   "streak": "L1",
+   "last_game_date": "20261124",
+   "days_since_last": 1,
    "last_was_b2b": false,
    "rank_pts": 9
   },
@@ -1000,9 +1000,107 @@
    ],
    "streak": "W3",
    "last_game_date": "20261121",
-   "days_since_last": 3,
+   "days_since_last": 4,
    "last_was_b2b": true,
    "rank_pts": 10
+  },
+  "Vaasan Sport": {
+   "gp": 24,
+   "w": 11,
+   "reg_wins": 7,
+   "ot_wins": 4,
+   "otl": 3,
+   "l": 10,
+   "pts": 32,
+   "reg_w": 7,
+   "reg_d": 7,
+   "reg_l": 10,
+   "gf_pg": 2.08,
+   "ga_pg": 2.71,
+   "avg_reg_total": 4.5,
+   "sf_pg": 23.3,
+   "sa_pg": 28.0,
+   "shot_share": 0.454,
+   "sh_pct": 0.089,
+   "sv_pct": 0.9,
+   "pdo": 98.9,
+   "pp_pct": 0.173,
+   "pk_pct": 0.829,
+   "xg_gp": 22,
+   "xgf_pg": 2.6,
+   "xga_pg": 2.98,
+   "xg_share": 0.466,
+   "xg_share_last10": 0.467,
+   "gf_minus_xg_pg": -0.55,
+   "ga_minus_xga_pg": -0.25,
+   "reg_draw_rate": 0.292,
+   "over_rate_reg": {
+    "4.5": 0.375,
+    "5.5": 0.292,
+    "6.5": 0.25
+   },
+   "home": {
+    "gp": 14,
+    "w": 7,
+    "reg_wins": 4,
+    "ot_wins": 3,
+    "otl": 2,
+    "l": 5,
+    "pts": 20,
+    "reg_w": 4,
+    "reg_d": 5,
+    "reg_l": 5,
+    "gf_pg": 2.0,
+    "ga_pg": 2.29,
+    "avg_reg_total": 3.93
+   },
+   "away": {
+    "gp": 10,
+    "w": 4,
+    "reg_wins": 3,
+    "ot_wins": 1,
+    "otl": 1,
+    "l": 5,
+    "pts": 12,
+    "reg_w": 3,
+    "reg_d": 2,
+    "reg_l": 5,
+    "gf_pg": 2.2,
+    "ga_pg": 3.3,
+    "avg_reg_total": 5.3
+   },
+   "last10": {
+    "gp": 10,
+    "w": 5,
+    "reg_wins": 2,
+    "ot_wins": 3,
+    "otl": 1,
+    "l": 4,
+    "pts": 13,
+    "reg_w": 2,
+    "reg_d": 4,
+    "reg_l": 4,
+    "gf_pg": 2.4,
+    "ga_pg": 2.7,
+    "avg_reg_total": 4.7
+   },
+   "last10_log": [
+    "20261023 vs SaiPa 3-5 L",
+    "20261024 vs SaiPa 1-3 L",
+    "20261027 @ KalPa 2-5 L",
+    "20261031 vs Assat 1-2 L",
+    "20261111 @ Kiekko-Espoo 5-3 W",
+    "20261114 vs Hameenlinna 3-2 W",
+    "20261118 @ JYP 2-3 OTL",
+    "20261119 @ Tappara 3-2 OTW",
+    "20261121 vs Pelicans 1-0 OTW",
+    "20261124 vs Kiekko-Espoo 3-2 OTW"
+   ],
+   "streak": "W3",
+   "last_game_date": "20261124",
+   "days_since_last": 1,
+   "last_was_b2b": false,
+   "rank_pts": 11
   },
   "Hameenlinna": {
    "gp": 24,
@@ -1098,106 +1196,8 @@
    ],
    "streak": "L1",
    "last_game_date": "20261121",
-   "days_since_last": 3,
+   "days_since_last": 4,
    "last_was_b2b": true,
-   "rank_pts": 11
-  },
-  "Vaasan Sport": {
-   "gp": 23,
-   "w": 10,
-   "reg_wins": 7,
-   "ot_wins": 3,
-   "otl": 3,
-   "l": 10,
-   "pts": 30,
-   "reg_w": 7,
-   "reg_d": 6,
-   "reg_l": 10,
-   "gf_pg": 2.04,
-   "ga_pg": 2.74,
-   "avg_reg_total": 4.52,
-   "sf_pg": 23.0,
-   "sa_pg": 27.8,
-   "shot_share": 0.453,
-   "sh_pct": 0.089,
-   "sv_pct": 0.898,
-   "pdo": 98.7,
-   "pp_pct": 0.176,
-   "pk_pct": 0.827,
-   "xg_gp": 21,
-   "xgf_pg": 2.6,
-   "xga_pg": 2.92,
-   "xg_share": 0.471,
-   "xg_share_last10": 0.497,
-   "gf_minus_xg_pg": -0.6,
-   "ga_minus_xga_pg": -0.16,
-   "reg_draw_rate": 0.261,
-   "over_rate_reg": {
-    "4.5": 0.391,
-    "5.5": 0.304,
-    "6.5": 0.261
-   },
-   "home": {
-    "gp": 13,
-    "w": 6,
-    "reg_wins": 4,
-    "ot_wins": 2,
-    "otl": 2,
-    "l": 5,
-    "pts": 18,
-    "reg_w": 4,
-    "reg_d": 4,
-    "reg_l": 5,
-    "gf_pg": 1.92,
-    "ga_pg": 2.31,
-    "avg_reg_total": 3.92
-   },
-   "away": {
-    "gp": 10,
-    "w": 4,
-    "reg_wins": 3,
-    "ot_wins": 1,
-    "otl": 1,
-    "l": 5,
-    "pts": 12,
-    "reg_w": 3,
-    "reg_d": 2,
-    "reg_l": 5,
-    "gf_pg": 2.2,
-    "ga_pg": 3.3,
-    "avg_reg_total": 5.3
-   },
-   "last10": {
-    "gp": 10,
-    "w": 4,
-    "reg_wins": 2,
-    "ot_wins": 2,
-    "otl": 1,
-    "l": 5,
-    "pts": 11,
-    "reg_w": 2,
-    "reg_d": 3,
-    "reg_l": 5,
-    "gf_pg": 2.1,
-    "ga_pg": 2.8,
-    "avg_reg_total": 4.6
-   },
-   "last10_log": [
-    "20261020 vs Jukurit 0-3 L",
-    "20261023 vs SaiPa 3-5 L",
-    "20261024 vs SaiPa 1-3 L",
-    "20261027 @ KalPa 2-5 L",
-    "20261031 vs Assat 1-2 L",
-    "20261111 @ Kiekko-Espoo 5-3 W",
-    "20261114 vs Hameenlinna 3-2 W",
-    "20261118 @ JYP 2-3 OTL",
-    "20261119 @ Tappara 3-2 OTW",
-    "20261121 vs Pelicans 1-0 OTW"
-   ],
-   "streak": "W2",
-   "last_game_date": "20261121",
-   "days_since_last": 3,
-   "last_was_b2b": false,
    "rank_pts": 12
   },
   "Tappara": {
@@ -1294,7 +1294,7 @@
    ],
    "streak": "L6",
    "last_game_date": "20261120",
-   "days_since_last": 4,
+   "days_since_last": 5,
    "last_was_b2b": true,
    "rank_pts": 13
   },
@@ -1392,7 +1392,7 @@
    ],
    "streak": "L2",
    "last_game_date": "20261121",
-   "days_since_last": 3,
+   "days_since_last": 4,
    "last_was_b2b": true,
    "rank_pts": 14
   },
@@ -1490,7 +1490,7 @@
    ],
    "streak": "L6",
    "last_game_date": "20261121",
-   "days_since_last": 3,
+   "days_since_last": 4,
    "last_was_b2b": false,
    "rank_pts": 15
   },
@@ -1588,7 +1588,7 @@
    ],
    "streak": "W1",
    "last_game_date": "20261121",
-   "days_since_last": 3,
+   "days_since_last": 4,
    "last_was_b2b": true,
    "rank_pts": 16
   },
@@ -1686,7 +1686,7 @@
    ],
    "streak": "W1",
    "last_game_date": "20261120",
-   "days_since_last": 4,
+   "days_since_last": 5,
    "last_was_b2b": false,
    "rank_pts": 17
   }
@@ -1727,15 +1727,15 @@
   "Assat|liiga:31915960": {
    "name": "Taponen R.",
    "team": "Assat",
-   "starts": 7,
+   "starts": 8,
    "w": 5,
-   "gp_with_sv": 7,
-   "sv_pct": 0.921,
-   "gaa": 2.0,
+   "gp_with_sv": 8,
+   "sv_pct": 0.912,
+   "gaa": 2.25,
    "last5_starts": {
     "gp_with_sv": 5,
-    "sv_pct": 0.924,
-    "gaa": 1.8
+    "sv_pct": 0.911,
+    "gaa": 2.2
    },
    "home": {
     "gp_with_sv": 1,
@@ -1743,17 +1743,17 @@
     "gaa": 0.0
    },
    "away": {
-    "gp_with_sv": 6,
-    "sv_pct": 0.912,
-    "gaa": 2.33
+    "gp_with_sv": 7,
+    "sv_pct": 0.903,
+    "gaa": 2.57
    },
-   "last_start_date": "20261114",
+   "last_start_date": "20261124",
    "log": [
-    "20261016 @ Jokerit 20/22 W",
     "20261024 @ JYP 21/25 L",
     "20261031 @ Vaasan Sport 30/31 W",
     "20261113 @ Pelicans 20/22 W",
-    "20261114 vs Jokerit 19/19 W"
+    "20261114 vs Jokerit 19/19 W",
+    "20261124 @ Ilves 22/26 L"
    ]
   },
   "Hameenlinna|liiga:40107053": {
@@ -1944,33 +1944,33 @@
   "Ilves|liiga:61011727": {
    "name": "Armalis M.",
    "team": "Ilves",
-   "starts": 16,
-   "w": 13,
-   "gp_with_sv": 16,
-   "sv_pct": 0.947,
-   "gaa": 1.25,
+   "starts": 17,
+   "w": 14,
+   "gp_with_sv": 17,
+   "sv_pct": 0.944,
+   "gaa": 1.29,
    "last5_starts": {
     "gp_with_sv": 5,
-    "sv_pct": 0.959,
-    "gaa": 1.0
+    "sv_pct": 0.948,
+    "gaa": 1.2
    },
    "home": {
-    "gp_with_sv": 7,
-    "sv_pct": 0.946,
-    "gaa": 1.29
+    "gp_with_sv": 8,
+    "sv_pct": 0.942,
+    "gaa": 1.38
    },
    "away": {
     "gp_with_sv": 9,
     "sv_pct": 0.947,
     "gaa": 1.22
    },
-   "last_start_date": "20261120",
+   "last_start_date": "20261124",
    "log": [
-    "20261030 @ Tappara 27/28 W",
     "20261031 vs KalPa 22/22 W",
     "20261111 vs Pelicans 26/27 W",
     "20261115 vs SaiPa 20/21 W",
-    "20261120 vs Tappara 22/24 W"
+    "20261120 vs Tappara 22/24 W",
+    "20261124 vs Assat 19/21 W"
    ]
   },
   "Ilves|liiga:61073605": {
@@ -2355,15 +2355,15 @@
   "Kiekko-Espoo|liiga:40176719": {
    "name": "Rimpinen P.",
    "team": "Kiekko-Espoo",
-   "starts": 16,
+   "starts": 17,
    "w": 10,
-   "gp_with_sv": 16,
-   "sv_pct": 0.904,
-   "gaa": 2.44,
+   "gp_with_sv": 17,
+   "sv_pct": 0.906,
+   "gaa": 2.41,
    "last5_starts": {
     "gp_with_sv": 5,
-    "sv_pct": 0.927,
-    "gaa": 1.8
+    "sv_pct": 0.938,
+    "gaa": 1.6
    },
    "home": {
     "gp_with_sv": 8,
@@ -2371,17 +2371,17 @@
     "gaa": 1.88
    },
    "away": {
-    "gp_with_sv": 8,
-    "sv_pct": 0.878,
-    "gaa": 3.0
+    "gp_with_sv": 9,
+    "sv_pct": 0.886,
+    "gaa": 2.89
    },
-   "last_start_date": "20261121",
+   "last_start_date": "20261124",
    "log": [
-    "20261023 vs IFK Helsinki 24/27 L",
     "20261028 vs TPS Turku 27/31 W",
     "20261031 @ Pelicans 18/18 W",
     "20261113 @ KalPa 27/28 W",
-    "20261121 vs Assat 19/20 W"
+    "20261121 vs Assat 19/20 W",
+    "20261124 @ Vaasan Sport 29/31 L"
    ]
   },
   "Kiekko-Espoo|liiga:22993098": {
@@ -2539,15 +2539,15 @@
   "Lukko|liiga:40050277": {
    "name": "Salonen D.",
    "team": "Lukko",
-   "starts": 16,
+   "starts": 17,
    "w": 12,
-   "gp_with_sv": 16,
-   "sv_pct": 0.926,
-   "gaa": 1.69,
+   "gp_with_sv": 17,
+   "sv_pct": 0.916,
+   "gaa": 1.94,
    "last5_starts": {
     "gp_with_sv": 5,
-    "sv_pct": 0.933,
-    "gaa": 1.6
+    "sv_pct": 0.902,
+    "gaa": 2.4
    },
    "home": {
     "gp_with_sv": 9,
@@ -2555,17 +2555,17 @@
     "gaa": 2.11
    },
    "away": {
-    "gp_with_sv": 7,
-    "sv_pct": 0.947,
-    "gaa": 1.14
+    "gp_with_sv": 8,
+    "sv_pct": 0.92,
+    "gaa": 1.75
    },
-   "last_start_date": "20261121",
+   "last_start_date": "20261124",
    "log": [
-    "20261020 vs IFK Helsinki 21/23 W",
     "20261024 @ TPS Turku 23/24 W",
     "20261030 vs KooKoo 26/27 W",
     "20261111 vs KalPa 24/25 W",
-    "20261121 vs Hameenlinna 18/21 W"
+    "20261121 vs Hameenlinna 18/21 W",
+    "20261124 @ SaiPa 19/25 L"
    ]
   },
   "Lukko|liiga:25113956": {
@@ -2697,33 +2697,33 @@
   "SaiPa|liiga:33502782": {
    "name": "Piiroinen K.",
    "team": "SaiPa",
-   "starts": 13,
-   "w": 9,
-   "gp_with_sv": 13,
-   "sv_pct": 0.916,
-   "gaa": 2.23,
+   "starts": 14,
+   "w": 10,
+   "gp_with_sv": 14,
+   "sv_pct": 0.919,
+   "gaa": 2.14,
    "last5_starts": {
     "gp_with_sv": 5,
-    "sv_pct": 0.892,
+    "sv_pct": 0.888,
     "gaa": 3.0
    },
    "home": {
-    "gp_with_sv": 8,
-    "sv_pct": 0.918,
-    "gaa": 2.12
+    "gp_with_sv": 9,
+    "sv_pct": 0.922,
+    "gaa": 2.0
    },
    "away": {
     "gp_with_sv": 5,
     "sv_pct": 0.914,
     "gaa": 2.4
    },
-   "last_start_date": "20261120",
+   "last_start_date": "20261124",
    "log": [
-    "20261017 vs IFK Helsinki 27/28 W",
     "20261023 @ Vaasan Sport 30/33 W",
     "20261030 vs JYP 14/20 L",
     "20261115 @ Ilves 24/27 L",
-    "20261120 vs TPS Turku 29/31 W"
+    "20261120 vs TPS Turku 29/31 W",
+    "20261124 vs Lukko 22/23 W"
    ]
   },
   "SaiPa|liiga:60897658": {
@@ -2946,33 +2946,33 @@
   "Vaasan Sport|liiga:40056206": {
    "name": "Harkonen M.",
    "team": "Vaasan Sport",
-   "starts": 15,
-   "w": 7,
-   "gp_with_sv": 15,
-   "sv_pct": 0.915,
-   "gaa": 2.27,
+   "starts": 16,
+   "w": 8,
+   "gp_with_sv": 16,
+   "sv_pct": 0.917,
+   "gaa": 2.25,
    "last5_starts": {
     "gp_with_sv": 5,
-    "sv_pct": 0.902,
-    "gaa": 2.4
+    "sv_pct": 0.92,
+    "gaa": 1.8
    },
    "home": {
-    "gp_with_sv": 9,
-    "sv_pct": 0.922,
-    "gaa": 1.89
+    "gp_with_sv": 10,
+    "sv_pct": 0.925,
+    "gaa": 1.9
    },
    "away": {
     "gp_with_sv": 6,
     "sv_pct": 0.907,
     "gaa": 2.83
    },
-   "last_start_date": "20261121",
+   "last_start_date": "20261124",
    "log": [
-    "20261027 @ KalPa 39/44 L",
     "20261031 vs Assat 12/14 L",
     "20261111 @ Kiekko-Espoo 23/26 W",
     "20261114 vs Hameenlinna 11/13 W",
-    "20261121 vs Pelicans 25/25 W"
+    "20261121 vs Pelicans 25/25 W",
+    "20261124 vs Kiekko-Espoo 32/34 W"
    ]
   },
   "Vaasan Sport|liiga:23786437": {
@@ -3125,15 +3125,15 @@
   ],
   "Assat": [
    {
+    "name": "Kostilainen S.",
+    "g": 5,
+    "a": 18,
+    "pts": 23
+   },
+   {
     "name": "Pinard S.",
     "g": 9,
     "a": 13,
-    "pts": 22
-   },
-   {
-    "name": "Kostilainen S.",
-    "g": 5,
-    "a": 17,
     "pts": 22
    },
    {
@@ -3150,23 +3150,23 @@
    },
    {
     "name": "Nikkila P.",
-    "g": 0,
+    "g": 1,
     "a": 11,
-    "pts": 11
+    "pts": 12
    },
    {
     "name": "Riihinen P.",
     "g": 5,
-    "a": 3,
-    "pts": 8
+    "a": 4,
+    "pts": 9
    }
   ],
   "Kiekko-Espoo": [
    {
     "name": "Vaisanen J.",
     "g": 10,
-    "a": 12,
-    "pts": 22
+    "a": 13,
+    "pts": 23
    },
    {
     "name": "Lajunen J.",
@@ -3240,24 +3240,30 @@
   "Ilves": [
    {
     "name": "Henman L.",
-    "g": 14,
+    "g": 15,
     "a": 20,
-    "pts": 34
+    "pts": 35
    },
    {
     "name": "Looke J.",
+    "g": 9,
+    "a": 14,
+    "pts": 23
+   },
+   {
+    "name": "Jasek L.",
     "g": 7,
     "a": 13,
     "pts": 20
    },
    {
-    "name": "Jasek L.",
-    "g": 7,
-    "a": 12,
-    "pts": 19
+    "name": "Sund T.",
+    "g": 4,
+    "a": 11,
+    "pts": 15
    },
    {
-    "name": "Sund T.",
+    "name": "Torok M.",
     "g": 3,
     "a": 11,
     "pts": 14
@@ -3267,26 +3273,20 @@
     "g": 2,
     "a": 12,
     "pts": 14
-   },
-   {
-    "name": "Torok M.",
-    "g": 3,
-    "a": 10,
-    "pts": 13
    }
   ],
   "SaiPa": [
    {
     "name": "Airola S.",
     "g": 4,
-    "a": 15,
-    "pts": 19
+    "a": 17,
+    "pts": 21
    },
    {
     "name": "Intonen A.",
-    "g": 6,
-    "a": 10,
-    "pts": 16
+    "g": 7,
+    "a": 12,
+    "pts": 19
    },
    {
     "name": "Kramer B.",
@@ -3295,13 +3295,13 @@
     "pts": 16
    },
    {
-    "name": "Palmu P.",
-    "g": 8,
-    "a": 5,
-    "pts": 13
+    "name": "Fridrich P.",
+    "g": 9,
+    "a": 6,
+    "pts": 15
    },
    {
-    "name": "Fridrich P.",
+    "name": "Palmu P.",
     "g": 8,
     "a": 5,
     "pts": 13
@@ -3627,8 +3627,8 @@
    {
     "name": "Robert F.",
     "g": 10,
-    "a": 10,
-    "pts": 20
+    "a": 11,
+    "pts": 21
    },
    {
     "name": "Beaucage A.",
@@ -5294,11 +5294,11 @@
    "20261020 Pelicans 3-1 Hameenlinna"
   ],
   "Assat | Ilves": [
-   "20250926 Assat 3-2 Ilves",
    "20251205 Ilves 4-3 Assat (SO)",
    "20260116 Ilves 1-2 Assat",
    "20260117 Assat 1-5 Ilves",
-   "20260904 Ilves 1-5 Assat"
+   "20260904 Ilves 1-5 Assat",
+   "20261124 Assat 2-4 Ilves"
   ],
   "JYP | Tappara": [
    "20250926 Tappara 3-4 JYP",
@@ -5485,11 +5485,11 @@
    "20261020 Tappara 2-3 KooKoo (SO)"
   ],
   "Kiekko-Espoo | Vaasan Sport": [
-   "20251126 Kiekko-Espoo 3-2 Vaasan Sport",
    "20260228 Kiekko-Espoo 5-1 Vaasan Sport",
    "20260313 Vaasan Sport 0-7 Kiekko-Espoo",
    "20260923 Kiekko-Espoo 1-0 Vaasan Sport (OT)",
-   "20261111 Vaasan Sport 5-3 Kiekko-Espoo"
+   "20261111 Vaasan Sport 5-3 Kiekko-Espoo",
+   "20261124 Kiekko-Espoo 2-3 Vaasan Sport (SO)"
   ],
   "IFK Helsinki | Ilves": [
    "20251010 IFK Helsinki 0-3 Ilves",
@@ -5585,7 +5585,8 @@
    "20251018 SaiPa 2-4 Lukko",
    "20251115 Lukko 5-4 SaiPa",
    "20251219 Lukko 2-5 SaiPa",
-   "20260107 SaiPa 4-3 Lukko"
+   "20260107 SaiPa 4-3 Lukko",
+   "20261124 Lukko 1-6 SaiPa"
   ],
   "Assat | IFK Helsinki": [
    "20251018 IFK Helsinki 0-5 Assat",
