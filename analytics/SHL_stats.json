@@ -1,24 +1,24 @@
 {
  "meta": {
-  "generated_kst": "2026-11-25 03:02",
+  "generated_kst": "2026-11-25 14:50",
   "league": "SHL",
   "season_start": "20260801",
-  "games": 128,
-  "last_game_date": "20261121",
+  "games": 130,
+  "last_game_date": "20261124",
   "points_rule": {
    "reg_win": 3,
    "ot_win": 2,
    "ot_loss": 1
   },
   "league_avg": {
-   "avg_reg_total": 5.21,
-   "reg_draw_rate": 0.195,
-   "home_win_rate": 0.641,
+   "avg_reg_total": 5.2,
+   "reg_draw_rate": 0.2,
+   "home_win_rate": 0.638,
    "home_reg_win_rate": 0.5,
    "over_rate_reg": {
-    "4.5": 0.578,
-    "5.5": 0.352,
-    "6.5": 0.195
+    "4.5": 0.577,
+    "5.5": 0.346,
+    "6.5": 0.192
    }
   },
   "notes": "reg_* = 정규시간(60분) 기준 (하키 언오버 사이트 정산 기준) / w = 정규승+연장승 / shot_share = 유효슈팅 점유율 / rank_pts = 전체 승점 순위"
@@ -116,32 +116,32 @@
    "rank_pts": 1
   },
   "Frolunda": {
-   "gp": 20,
+   "gp": 21,
    "w": 14,
    "reg_wins": 12,
    "ot_wins": 2,
    "otl": 1,
-   "l": 5,
+   "l": 6,
    "pts": 41,
    "reg_w": 12,
    "reg_d": 3,
-   "reg_l": 5,
-   "gf_pg": 3.35,
-   "ga_pg": 2.15,
-   "avg_reg_total": 5.35,
-   "sf_pg": 23.6,
-   "sa_pg": 24.6,
-   "shot_share": 0.489,
-   "sh_pct": 0.142,
+   "reg_l": 6,
+   "gf_pg": 3.24,
+   "ga_pg": 2.24,
+   "avg_reg_total": 5.33,
+   "sf_pg": 23.9,
+   "sa_pg": 24.5,
+   "shot_share": 0.494,
+   "sh_pct": 0.135,
    "sv_pct": 0.897,
-   "pdo": 103.9,
-   "pp_pct": 0.164,
-   "pk_pct": 0.838,
-   "reg_draw_rate": 0.15,
+   "pdo": 103.2,
+   "pp_pct": 0.16,
+   "pk_pct": 0.829,
+   "reg_draw_rate": 0.143,
    "over_rate_reg": {
-    "4.5": 0.6,
-    "5.5": 0.3,
-    "6.5": 0.25
+    "4.5": 0.619,
+    "5.5": 0.286,
+    "6.5": 0.238
    },
    "home": {
     "gp": 10,
@@ -159,6 +159,21 @@
     "avg_reg_total": 5.5
    },
    "away": {
+    "gp": 11,
+    "w": 5,
+    "reg_wins": 5,
+    "ot_wins": 0,
+    "otl": 1,
+    "l": 5,
+    "pts": 16,
+    "reg_w": 5,
+    "reg_d": 1,
+    "reg_l": 5,
+    "gf_pg": 2.82,
+    "ga_pg": 2.45,
+    "avg_reg_total": 5.18
+   },
+   "last10": {
     "gp": 10,
     "w": 5,
     "reg_wins": 5,
@@ -173,23 +188,7 @@
     "ga_pg": 2.3,
     "avg_reg_total": 5.2
    },
-   "last10": {
-    "gp": 10,
-    "w": 6,
-    "reg_wins": 6,
-    "ot_wins": 0,
-    "otl": 1,
-    "l": 3,
-    "pts": 19,
-    "reg_w": 6,
-    "reg_d": 1,
-    "reg_l": 3,
-    "gf_pg": 3.5,
-    "ga_pg": 2.1,
-    "avg_reg_total": 5.5
-   },
    "last10_log": [
-    "20261020 vs Djurgarden 6-2 W",
     "20261022 @ Rogle 1-4 L",
     "20261024 @ HV 71 6-2 W",
     "20261027 vs Rogle 4-5 L",
@@ -198,11 +197,12 @@
     "20261112 vs Malmo 4-1 W",
     "20261114 @ Rogle 4-0 W",
     "20261119 @ Farjestad 2-3 OTL",
-    "20261121 vs Brynas 2-0 W"
+    "20261121 vs Brynas 2-0 W",
+    "20261124 @ Orebro 1-4 L"
    ],
-   "streak": "W1",
-   "last_game_date": "20261121",
-   "days_since_last": 4,
+   "streak": "L1",
+   "last_game_date": "20261124",
+   "days_since_last": 1,
    "last_was_b2b": false,
    "rank_pts": 2
   },
@@ -298,47 +298,47 @@
    "rank_pts": 3
   },
   "Orebro": {
-   "gp": 18,
-   "w": 10,
-   "reg_wins": 9,
+   "gp": 19,
+   "w": 11,
+   "reg_wins": 10,
    "ot_wins": 1,
    "otl": 2,
    "l": 6,
-   "pts": 31,
-   "reg_w": 9,
+   "pts": 34,
+   "reg_w": 10,
    "reg_d": 3,
    "reg_l": 6,
-   "gf_pg": 2.5,
-   "ga_pg": 2.94,
-   "avg_reg_total": 5.28,
-   "sf_pg": 24.7,
+   "gf_pg": 2.58,
+   "ga_pg": 2.84,
+   "avg_reg_total": 5.26,
+   "sf_pg": 24.5,
    "sa_pg": 30.8,
-   "shot_share": 0.445,
-   "sh_pct": 0.101,
+   "shot_share": 0.443,
+   "sh_pct": 0.105,
    "sv_pct": 0.906,
-   "pdo": 100.7,
-   "pp_pct": 0.214,
-   "pk_pct": 0.717,
-   "reg_draw_rate": 0.167,
+   "pdo": 101.1,
+   "pp_pct": 0.224,
+   "pk_pct": 0.726,
+   "reg_draw_rate": 0.158,
    "over_rate_reg": {
-    "4.5": 0.667,
-    "5.5": 0.389,
-    "6.5": 0.167
+    "4.5": 0.684,
+    "5.5": 0.368,
+    "6.5": 0.158
    },
    "home": {
-    "gp": 9,
-    "w": 7,
-    "reg_wins": 6,
+    "gp": 10,
+    "w": 8,
+    "reg_wins": 7,
     "ot_wins": 1,
     "otl": 1,
     "l": 1,
-    "pts": 21,
-    "reg_w": 6,
+    "pts": 24,
+    "reg_w": 7,
     "reg_d": 2,
     "reg_l": 1,
-    "gf_pg": 3.0,
-    "ga_pg": 2.11,
-    "avg_reg_total": 4.89
+    "gf_pg": 3.1,
+    "ga_pg": 2.0,
+    "avg_reg_total": 4.9
    },
    "away": {
     "gp": 9,
@@ -357,21 +357,20 @@
    },
    "last10": {
     "gp": 10,
-    "w": 7,
-    "reg_wins": 6,
+    "w": 8,
+    "reg_wins": 7,
     "ot_wins": 1,
     "otl": 0,
-    "l": 3,
-    "pts": 20,
-    "reg_w": 6,
+    "l": 2,
+    "pts": 23,
+    "reg_w": 7,
     "reg_d": 1,
-    "reg_l": 3,
-    "gf_pg": 2.7,
-    "ga_pg": 3.1,
-    "avg_reg_total": 5.7
+    "reg_l": 2,
+    "gf_pg": 3.1,
+    "ga_pg": 2.6,
+    "avg_reg_total": 5.6
    },
    "last10_log": [
-    "20261015 @ Malmo 0-6 L",
     "20261017 @ Rogle 2-1 W",
     "20261022 vs Brynas 3-2 W",
     "20261024 @ Linkoping 4-6 L",
@@ -380,41 +379,42 @@
     "20261112 @ IF Bjorkloven 3-1 W",
     "20261114 vs Djurgarden 4-1 W",
     "20261119 @ Timra 2-8 L",
-    "20261121 vs Skelleftea 3-2 W"
+    "20261121 vs Skelleftea 3-2 W",
+    "20261124 vs Frolunda 4-1 W"
    ],
-   "streak": "W1",
-   "last_game_date": "20261121",
-   "days_since_last": 4,
+   "streak": "W2",
+   "last_game_date": "20261124",
+   "days_since_last": 1,
    "last_was_b2b": false,
    "rank_pts": 4
   },
   "Malmo": {
-   "gp": 18,
-   "w": 10,
+   "gp": 19,
+   "w": 11,
    "reg_wins": 7,
-   "ot_wins": 3,
+   "ot_wins": 4,
    "otl": 3,
    "l": 5,
-   "pts": 30,
+   "pts": 32,
    "reg_w": 7,
-   "reg_d": 6,
+   "reg_d": 7,
    "reg_l": 5,
-   "gf_pg": 2.94,
-   "ga_pg": 2.28,
-   "avg_reg_total": 4.89,
-   "sf_pg": 30.4,
-   "sa_pg": 26.6,
-   "shot_share": 0.533,
-   "sh_pct": 0.097,
+   "gf_pg": 2.95,
+   "ga_pg": 2.26,
+   "avg_reg_total": 4.84,
+   "sf_pg": 30.0,
+   "sa_pg": 26.2,
+   "shot_share": 0.534,
+   "sh_pct": 0.098,
    "sv_pct": 0.917,
-   "pdo": 101.4,
-   "pp_pct": 0.2,
-   "pk_pct": 0.765,
-   "reg_draw_rate": 0.333,
+   "pdo": 101.5,
+   "pp_pct": 0.192,
+   "pk_pct": 0.764,
+   "reg_draw_rate": 0.368,
    "over_rate_reg": {
-    "4.5": 0.5,
-    "5.5": 0.389,
-    "6.5": 0.167
+    "4.5": 0.474,
+    "5.5": 0.368,
+    "6.5": 0.158
    },
    "home": {
     "gp": 8,
@@ -432,37 +432,36 @@
     "avg_reg_total": 4.25
    },
    "away": {
-    "gp": 10,
-    "w": 5,
-    "reg_wins": 4,
-    "ot_wins": 1,
-    "otl": 3,
-    "l": 2,
-    "pts": 17,
-    "reg_w": 4,
-    "reg_d": 4,
-    "reg_l": 2,
-    "gf_pg": 2.9,
-    "ga_pg": 2.9,
-    "avg_reg_total": 5.4
-   },
-   "last10": {
-    "gp": 10,
+    "gp": 11,
     "w": 6,
     "reg_wins": 4,
     "ot_wins": 2,
-    "otl": 1,
+    "otl": 3,
+    "l": 2,
+    "pts": 19,
+    "reg_w": 4,
+    "reg_d": 5,
+    "reg_l": 2,
+    "gf_pg": 2.91,
+    "ga_pg": 2.82,
+    "avg_reg_total": 5.27
+   },
+   "last10": {
+    "gp": 10,
+    "w": 7,
+    "reg_wins": 4,
+    "ot_wins": 3,
+    "otl": 0,
     "l": 3,
-    "pts": 17,
+    "pts": 18,
     "reg_w": 4,
     "reg_d": 3,
     "reg_l": 3,
-    "gf_pg": 2.9,
-    "ga_pg": 1.9,
+    "gf_pg": 3.0,
+    "ga_pg": 1.8,
     "avg_reg_total": 4.5
    },
    "last10_log": [
-    "20261017 @ Djurgarden 2-3 OTL",
     "20261022 @ IF Bjorkloven 4-2 W",
     "20261024 vs Timra 1-2 L",
     "20261027 vs Linkoping 8-2 W",
@@ -471,56 +470,57 @@
     "20261112 @ Frolunda 1-4 L",
     "20261114 vs Vaxjo 1-2 L",
     "20261119 vs Rogle 3-2 OTW",
-    "20261121 @ Farjestad 3-0 W"
+    "20261121 @ Farjestad 3-0 W",
+    "20261124 @ Lulea 3-2 OTW"
    ],
-   "streak": "W2",
-   "last_game_date": "20261121",
-   "days_since_last": 4,
+   "streak": "W3",
+   "last_game_date": "20261124",
+   "days_since_last": 1,
    "last_was_b2b": false,
    "rank_pts": 5
   },
   "Lulea": {
-   "gp": 18,
+   "gp": 19,
    "w": 8,
    "reg_wins": 7,
    "ot_wins": 1,
-   "otl": 3,
+   "otl": 4,
    "l": 7,
-   "pts": 26,
+   "pts": 27,
    "reg_w": 7,
-   "reg_d": 4,
+   "reg_d": 5,
    "reg_l": 7,
-   "gf_pg": 2.61,
-   "ga_pg": 2.61,
-   "avg_reg_total": 5.0,
-   "sf_pg": 21.2,
-   "sa_pg": 26.1,
+   "gf_pg": 2.58,
+   "ga_pg": 2.63,
+   "avg_reg_total": 4.95,
+   "sf_pg": 21.0,
+   "sa_pg": 25.9,
    "shot_share": 0.448,
    "sh_pct": 0.123,
    "sv_pct": 0.894,
    "pdo": 101.7,
-   "pp_pct": 0.153,
-   "pk_pct": 0.897,
-   "reg_draw_rate": 0.222,
+   "pp_pct": 0.159,
+   "pk_pct": 0.901,
+   "reg_draw_rate": 0.263,
    "over_rate_reg": {
-    "4.5": 0.556,
-    "5.5": 0.389,
-    "6.5": 0.167
+    "4.5": 0.526,
+    "5.5": 0.368,
+    "6.5": 0.158
    },
    "home": {
-    "gp": 8,
+    "gp": 9,
     "w": 3,
     "reg_wins": 3,
     "ot_wins": 0,
-    "otl": 2,
+    "otl": 3,
     "l": 3,
-    "pts": 11,
+    "pts": 12,
     "reg_w": 3,
-    "reg_d": 2,
+    "reg_d": 3,
     "reg_l": 3,
-    "gf_pg": 2.88,
-    "ga_pg": 2.88,
-    "avg_reg_total": 5.5
+    "gf_pg": 2.78,
+    "ga_pg": 2.89,
+    "avg_reg_total": 5.33
    },
    "away": {
     "gp": 10,
@@ -548,12 +548,11 @@
     "reg_w": 4,
     "reg_d": 3,
     "reg_l": 3,
-    "gf_pg": 2.7,
-    "ga_pg": 2.1,
-    "avg_reg_total": 4.5
+    "gf_pg": 2.8,
+    "ga_pg": 2.2,
+    "avg_reg_total": 4.7
    },
    "last10_log": [
-    "20261015 @ Farjestad 1-2 OTL",
     "20261017 vs HV 71 5-2 W",
     "20261022 @ Vaxjo 1-2 L",
     "20261024 vs Djurgarden 2-3 OTL",
@@ -562,11 +561,12 @@
     "20261112 @ HV 71 4-2 W",
     "20261114 vs Farjestad 1-3 L",
     "20261119 @ Brynas 2-4 L",
-    "20261121 @ Djurgarden 4-1 W"
+    "20261121 @ Djurgarden 4-1 W",
+    "20261124 vs Malmo 2-3 OTL"
    ],
-   "streak": "W1",
-   "last_game_date": "20261121",
-   "days_since_last": 4,
+   "streak": "L1",
+   "last_game_date": "20261124",
+   "days_since_last": 1,
    "last_was_b2b": false,
    "rank_pts": 6
   },
@@ -2187,15 +2187,15 @@
  "leaders": {
   "Frolunda": [
    {
+    "name": "Tommernes H.",
+    "g": 3,
+    "a": 15,
+    "pts": 18
+   },
+   {
     "name": "Clarke G.",
     "g": 6,
     "a": 11,
-    "pts": 17
-   },
-   {
-    "name": "Tommernes H.",
-    "g": 3,
-    "a": 14,
     "pts": 17
    },
    {
@@ -2211,13 +2211,13 @@
     "pts": 13
    },
    {
-    "name": "Fagemo S.",
-    "g": 4,
-    "a": 7,
+    "name": "Cederqvist F.",
+    "g": 5,
+    "a": 6,
     "pts": 11
    },
    {
-    "name": "Westergard M.",
+    "name": "Fagemo S.",
     "g": 4,
     "a": 7,
     "pts": 11
@@ -2303,14 +2303,14 @@
    {
     "name": "Kuokkanen J.",
     "g": 3,
-    "a": 16,
-    "pts": 19
+    "a": 17,
+    "pts": 20
    },
    {
     "name": "Kaski O.",
-    "g": 8,
+    "g": 9,
     "a": 7,
-    "pts": 15
+    "pts": 16
    },
    {
     "name": "Pajuniemi L.",
@@ -2326,9 +2326,9 @@
    },
    {
     "name": "Persson C.",
-    "g": 10,
+    "g": 11,
     "a": 1,
-    "pts": 11
+    "pts": 12
    },
    {
     "name": "Vesterheim P.",
@@ -2611,15 +2611,27 @@
     "pts": 11
    },
    {
+    "name": "Eriksson F.",
+    "g": 5,
+    "a": 6,
+    "pts": 11
+   },
+   {
+    "name": "Brome M.",
+    "g": 4,
+    "a": 7,
+    "pts": 11
+   },
+   {
     "name": "Nurmi M.",
     "g": 4,
     "a": 6,
     "pts": 10
    },
    {
-    "name": "Eriksson F.",
-    "g": 5,
-    "a": 4,
+    "name": "Puustinen V.",
+    "g": 6,
+    "a": 3,
     "pts": 9
    },
    {
@@ -2627,18 +2639,6 @@
     "g": 5,
     "a": 4,
     "pts": 9
-   },
-   {
-    "name": "Brome M.",
-    "g": 3,
-    "a": 6,
-    "pts": 9
-   },
-   {
-    "name": "Puustinen V.",
-    "g": 5,
-    "a": 3,
-    "pts": 8
    }
   ],
   "Djurgarden": [
@@ -2683,37 +2683,37 @@
    {
     "name": "Kossila K.",
     "g": 2,
-    "a": 18,
-    "pts": 20
+    "a": 19,
+    "pts": 21
    },
    {
     "name": "Karlkvist P.",
     "g": 5,
-    "a": 13,
-    "pts": 18
+    "a": 14,
+    "pts": 19
    },
    {
     "name": "Quenneville D.",
     "g": 3,
-    "a": 9,
-    "pts": 12
+    "a": 11,
+    "pts": 14
+   },
+   {
+    "name": "Veronneau M.",
+    "g": 7,
+    "a": 4,
+    "pts": 11
+   },
+   {
+    "name": "Stachowiak W.",
+    "g": 4,
+    "a": 7,
+    "pts": 11
    },
    {
     "name": "Oscarson M.",
     "g": 6,
     "a": 4,
-    "pts": 10
-   },
-   {
-    "name": "Veronneau M.",
-    "g": 6,
-    "a": 4,
-    "pts": 10
-   },
-   {
-    "name": "Salo R.",
-    "g": 5,
-    "a": 5,
     "pts": 10
    }
   ]
@@ -3841,11 +3841,11 @@
    "20260207 Timra 4-1 Leksand"
   ],
   "Lulea | Malmo": [
-   "20250913 Malmo 0-5 Lulea",
    "20251101 Lulea 1-3 Malmo",
    "20251220 Lulea 6-4 Malmo",
    "20260129 Malmo 3-5 Lulea",
-   "20261008 Malmo 3-2 Lulea"
+   "20261008 Malmo 3-2 Lulea",
+   "20261124 Malmo 3-2 Lulea (SO)"
   ],
   "Brynas | Lulea": [
    "20251115 Brynas 3-0 Lulea",
@@ -3916,11 +3916,11 @@
    "20260312 Leksand 2-7 Malmo"
   ],
   "Frolunda | Orebro": [
-   "20250918 Frolunda 2-1 Orebro",
    "20251113 Orebro 2-3 Frolunda",
    "20260124 Orebro 5-4 Frolunda",
    "20260219 Frolunda 4-5 Orebro (OT)",
-   "20261029 Frolunda 2-3 Orebro"
+   "20261029 Frolunda 2-3 Orebro",
+   "20261124 Frolunda 1-4 Orebro"
   ],
   "Farjestad | Skelleftea": [
    "20250918 Farjestad 5-2 Skelleftea",
