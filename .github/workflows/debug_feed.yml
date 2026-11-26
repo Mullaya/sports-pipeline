@@ -20,15 +20,16 @@ jobs:
           import re, requests
           UA={"User-Agent":"Mozilla/5.0"}
           base="https://stats.swehockey.se"
-          for path in ["/Players/Statistics/LeadingGoalkeepers/20961","/Players/Statistics/LeadingGoalies/20961","/Players/Statistics/GoalkeeperStatistics/20961","/Players/Statistics/ScoringLeaders/20961","/ScheduleAndResults/Schedule/20961"]:
-              try:
-                  r=requests.get(base+path,headers=UA,timeout=30)
-                  tt=re.sub(r"\s+"," ",re.sub(r"<[^>]+>"," ",r.text))
-                  print("P",path,r.status_code,len(r.text))
-                  for kw in ("SVS%","Sv%","GAA","Goalkeeper","Rk"):
-                      k=tt.find(kw)
-                      if k>=0: print("   ",kw,"::",tt[max(0,k-200):k+900]); break
-                  if "Schedule" in path:
-                      print("   games:",re.findall(r'/Game/Events/(\d+)',r.text)[-5:], re.findall(r'href="([^"]*Game[^"]*)"',r.text)[:5])
-              except Exception as e: print("P",path,"ERR",e)
+          r=requests.get(base+"/Players/Statistics/ScoringLeaders/20961",headers=UA,timeout=30).text
+          vals=set(re.findall(r'(?:value|href)="([^"]*(?:Goal|SVS|GAA|Keeper|keeper)[^"]*)"',r))
+          print("V",sorted(vals))
+          for v in sorted(vals)[:6]:
+              u=v if v.startswith("http") else base+("" if v.startswith("/") else "/")+v
+              t=requests.get(u,headers=UA,timeout=30).text
+              tt=re.sub(r"\s+"," ",re.sub(r"<[^>]+>"," ",t))
+              k=tt.find("Last update")
+              print("U",u,len(t),"::",tt[k:k+1500] if k>=0 else tt[:200])
+          s=requests.get(base+"/ScheduleAndResults/Schedule/20961",headers=UA,timeout=30).text
+          print("G",sorted(set(re.findall(r'href="([^"]*(?:Game|Events|Report)[^"]*)"',s)))[-8:])
+          print("G2",re.findall(r"openonlinewindow\('([^']+)'",s)[-5:])
           PY
