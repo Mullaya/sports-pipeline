@@ -17,23 +17,18 @@ jobs:
         env: {MIDS: "${{ inputs.mids }}"}
         run: |
           python - <<'PY'
-          import re, requests, html
+          import re, requests
           UA={"User-Agent":"Mozilla/5.0"}
           base="https://stats.swehockey.se"
-          t=requests.get(base+"/",headers=UA,timeout=30).text
-          for m in re.finditer(r'<a[^>]+href="([^"]+)"[^>]*>(.*?)</a>',t,re.S):
-              txt=re.sub(r"<[^>]+>","",m.group(2)).strip()
-              if re.search(r"SHL|Hockeyallsvenskan",txt): print("A",m.group(1),"|",txt[:80])
-          ids=re.findall(r'/ScheduleAndResults/Overview/(\d+)',t)
-          print("ids",ids[:40])
-          for i in ids[:6]:
-              for path in (f"/Players/Statistics/LeagueLeaders/{i}",f"/Players/Statistics/Goalkeepers/{i}"):
-                  try:
-                      r=requests.get(base+path,headers=UA,timeout=30)
-                      tt=re.sub(r"\s+"," ",re.sub(r"<[^>]+>"," ",r.text))
-                      ti=re.search(r"<title>(.*?)</title>",r.text,re.S)
-                      print("P",path,r.status_code,len(r.text),(ti.group(1).strip() if ti else "")[:80])
-                      k=tt.find("Goalkeeper")
-                      if k>=0: print("   ",tt[k:k+700])
-                  except Exception as e: print("P",path,"ERR",e)
+          for path in ["/Players/Statistics/LeadingGoalkeepers/20961","/Players/Statistics/LeadingGoalies/20961","/Players/Statistics/GoalkeeperStatistics/20961","/Players/Statistics/ScoringLeaders/20961","/ScheduleAndResults/Schedule/20961"]:
+              try:
+                  r=requests.get(base+path,headers=UA,timeout=30)
+                  tt=re.sub(r"\s+"," ",re.sub(r"<[^>]+>"," ",r.text))
+                  print("P",path,r.status_code,len(r.text))
+                  for kw in ("SVS%","Sv%","GAA","Goalkeeper","Rk"):
+                      k=tt.find(kw)
+                      if k>=0: print("   ",kw,"::",tt[max(0,k-200):k+900]); break
+                  if "Schedule" in path:
+                      print("   games:",re.findall(r'/Game/Events/(\d+)',r.text)[-5:], re.findall(r'href="([^"]*Game[^"]*)"',r.text)[:5])
+              except Exception as e: print("P",path,"ERR",e)
           PY
