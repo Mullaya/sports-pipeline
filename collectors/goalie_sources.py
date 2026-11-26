@@ -12,6 +12,7 @@
 반환 형식: {"home": [goalie...], "away": [goalie...]} — 실패/매칭 불가 시 {}
 """
 import json
+import os
 import re
 import time
 import unicodedata
@@ -266,3 +267,66 @@ def del_goalie_table(date: str) -> dict:
             "ga": _num(c[11]), "gaa": _num(c[12]), "saves": _num(c[13]), "sv_pct": sv_pct,
         })
     return {"date": date, "league": "DEL", "source": "penny-del.org", "header": head, "goalies": goalies}
+
+
+# ----------------------------------------------------------------------
+# SHL — 스웨덴 공식 기록(stats.swehockey.se) 시즌 골리표
+#   Flashscore 라인업 피드(df_li_1_)가 2026-11부터 "0"만 반환 → 경기별 선발 골리 수집 불가.
+#   대신 리그 골리표(SVS% 순)로 골리별 GPI·SV%·GAA 제공 (DEL 공식 골리표와 같은 형식)
+# ----------------------------------------------------------------------
+SWEHOCKEY = "https://stats.swehockey.se"
+SHL_SWEHOCKEY_ID = os.getenv("SHL_SWEHOCKEY_ID", "20961")     # 2026-27 SHL 시즌 id
+SHL_TEAM_CODES = {
+    "BIF": "Brynas", "DIF": "Djurgarden", "FRÖ": "Frolunda", "FBK": "Farjestad", "HV71": "HV 71",
+    "IFB": "IF Bjorkloven", "MIF": "Malmo", "LHC": "Linkoping", "LHF": "Lulea", "RBK": "Rogle",
+    "SKE": "Skelleftea", "TIK": "Timra", "VÄX": "Vaxjo", "ÖHK": "Orebro",
+}
+
+
+def _swehockey_shl_id() -> str:
+    """홈페이지에서 'SHL' 링크의 시즌 id 탐색 (실패 시 환경변수/기본값)"""
+    try:
+        t = requests.get(SWEHOCKEY + "/", headers=DEL_HEADERS, timeout=25).text
+        for href, txt in re.findall(r'<a[^>]+href="[^"]*/ScheduleAndResults/(?:Live|Overview)/(\d+)"[^>]*>(.*?)</a>', t, re.S):
+            if re.sub(r"<[^>]+>|\s|\(\d+\)", "", txt) == "SHL":
+                return href
+    except Exception:
+        pass
+    return SHL_SWEHOCKEY_ID
+
+
+def shl_goalie_table(date: str) -> dict:
+    sid = _swehockey_shl_id()
+    url = f"{SWEHOCKEY}/Players/Statistics/LeadingGoaliesSVS/{sid}"
+    r = requests.get(url, headers=DEL_HEADERS, timeout=25)
+    r.raise_for_status()
+    tables = [t for t in re.findall(r"<table.*?</table>", r.text, re.S) if "SVS%" in t]
+    if not tables:
+        raise RuntimeError("SHL 골리 표를 찾지 못함")
+    rows = re.findall(r"<tr[^>]*>(.*?)</tr>", tables[-1], re.S)
+    head, goalies = None, []
+    for tr in rows:
+        c = _cells(tr)
+        if "SVS%" in c:
+            head = c
+            continue
+        if not head or len(c) < len(head):
+            continue
+        d = dict(zip(head, c[-len(head):]))
+        raw = d.get("Name", "")
+        if not raw or not d.get("Team"):
+            continue
+        last, _, first = raw.partition(",")
+        sv = _num(d.get("SVS%"))
+        if isinstance(sv, (int, float)) and sv > 1:
+            sv = round(sv / 100, 4)
+        goalies.append({
+            "name": _short(first, last), "raw_name": raw, "team_code": d["Team"],
+            "team": SHL_TEAM_CODES.get(d["Team"], d["Team"]), "jersey": d.get("No"),
+            "gp": _num(d.get("GPI")), "team_gp": _num(d.get("GP")), "toi": d.get("MIP"),
+            "shots": _num(d.get("SOG")), "ga": _num(d.get("GA")), "gaa": _num(d.get("GAA")),
+            "saves": _num(d.get("SVS")), "sv_pct": sv, "so": _num(d.get("SO")),
+            "w": _num(d.get("W")), "l": _num(d.get("L")),
+        })
+    return {"date": date, "league": "SHL", "source": "stats.swehockey.se", "season_id": sid,
+            "header": head, "goalies": goalies}

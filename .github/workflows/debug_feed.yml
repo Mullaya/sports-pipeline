@@ -3,8 +3,10 @@ on:
   workflow_dispatch:
     inputs:
       mids:
-        description: "comma separated match ids"
+        description: "date YYYYMMDD"
         required: true
+permissions:
+  contents: write
 jobs:
   probe:
     runs-on: ubuntu-latest
@@ -12,24 +14,19 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: {python-version: "3.11"}
-      - run: pip install -q requests
-      - name: probe
-        env: {MIDS: "${{ inputs.mids }}"}
+      - run: pip install -q -r requirements.txt || pip install -q requests
+      - name: SHL goalie table
+        env:
+          D: "${{ inputs.mids }}"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
         run: |
           python - <<'PY'
-          import re, requests
-          UA={"User-Agent":"Mozilla/5.0"}
-          base="https://stats.swehockey.se"
-          r=requests.get(base+"/Players/Statistics/ScoringLeaders/20961",headers=UA,timeout=30).text
-          vals=set(re.findall(r'(?:value|href)="([^"]*(?:Goal|SVS|GAA|Keeper|keeper)[^"]*)"',r))
-          print("V",sorted(vals))
-          for v in sorted(vals)[:6]:
-              u=v if v.startswith("http") else base+("" if v.startswith("/") else "/")+v
-              t=requests.get(u,headers=UA,timeout=30).text
-              tt=re.sub(r"\s+"," ",re.sub(r"<[^>]+>"," ",t))
-              k=tt.find("Last update")
-              print("U",u,len(t),"::",tt[k:k+1500] if k>=0 else tt[:200])
-          s=requests.get(base+"/ScheduleAndResults/Schedule/20961",headers=UA,timeout=30).text
-          print("G",sorted(set(re.findall(r'href="([^"]*(?:Game|Events|Report)[^"]*)"',s)))[-8:])
-          print("G2",re.findall(r"openonlinewindow\('([^']+)'",s)[-5:])
+          import os, json
+          from collectors.goalie_sources import shl_goalie_table
+          from uploader.github_uploader import GitHubUploader
+          gt = shl_goalie_table(os.environ["D"])
+          print(gt["season_id"], len(gt["goalies"]))
+          for g in gt["goalies"]: print(g["name"], g["team"], g["gp"], g["sv_pct"], g["gaa"])
+          GitHubUploader().upload_json(gt, "SHL", os.environ["D"], "goalies")
           PY
