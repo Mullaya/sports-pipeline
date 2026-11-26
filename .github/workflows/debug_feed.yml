@@ -17,28 +17,23 @@ jobs:
         env: {MIDS: "${{ inputs.mids }}"}
         run: |
           python - <<'PY'
-          import os, re, requests
-          from collectors.flashscore_hockey_collector import FlashscoreHockeyCollector, FEED
-          c = FlashscoreHockeyCollector("SHL")
-          mid = os.environ["MIDS"].split(",")[0]
-          for kind in ("df_li_1_","df_li_2_","df_lin_1_","df_lp_1_","df_pl_1_","df_lir_1_","df_ln_1_","df_lis_1_","df_mi_1_","df_hh_1_","df_sur_1_","df_su_1_"):
-              try:
-                  t = c._get(f"{FEED}{kind}{mid}", feed=True, retries=1)
-                  print("==", kind, len(t), t[:300].replace("\n"," "))
-              except Exception as e:
-                  print("==", kind, "ERR", str(e)[:80])
+          import re, requests, html
           UA={"User-Agent":"Mozilla/5.0"}
-          for u in ["https://www.flashscore.com/match/hockey/"+mid+"/#/match-summary/lineups",
-                    "https://www.shl.se/statistik/spelare/malvakter",
-                    "https://www.shl.se/api/statistics-v2/goalkeeper/leaders",
-                    "https://stats.swehockey.se/",
-                    "https://www.shl.se/api/sports-v2/game-schedule"]:
-              try:
-                  r=requests.get(u,headers=UA,timeout=25)
-                  txt=r.text
-                  print("##",u,r.status_code,len(txt))
-                  print("   links:",sorted(set(re.findall(r'(?:href|src)="([^"]*(?:api|Statistic|Goal|goal|Leaders|ScheduleAndResults)[^"]*)"',txt)))[:30])
-                  print("   head:",txt[:400].replace("\n"," "))
-              except Exception as e:
-                  print("##",u,"ERR",e)
+          base="https://stats.swehockey.se"
+          t=requests.get(base+"/",headers=UA,timeout=30).text
+          for m in re.finditer(r'<a[^>]+href="([^"]+)"[^>]*>(.*?)</a>',t,re.S):
+              txt=re.sub(r"<[^>]+>","",m.group(2)).strip()
+              if re.search(r"SHL|Hockeyallsvenskan",txt): print("A",m.group(1),"|",txt[:80])
+          ids=re.findall(r'/ScheduleAndResults/Overview/(\d+)',t)
+          print("ids",ids[:40])
+          for i in ids[:6]:
+              for path in (f"/Players/Statistics/LeagueLeaders/{i}",f"/Players/Statistics/Goalkeepers/{i}"):
+                  try:
+                      r=requests.get(base+path,headers=UA,timeout=30)
+                      tt=re.sub(r"\s+"," ",re.sub(r"<[^>]+>"," ",r.text))
+                      ti=re.search(r"<title>(.*?)</title>",r.text,re.S)
+                      print("P",path,r.status_code,len(r.text),(ti.group(1).strip() if ti else "")[:80])
+                      k=tt.find("Goalkeeper")
+                      if k>=0: print("   ",tt[k:k+700])
+                  except Exception as e: print("P",path,"ERR",e)
           PY
