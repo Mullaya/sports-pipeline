@@ -17,15 +17,28 @@ jobs:
         env: {MIDS: "${{ inputs.mids }}"}
         run: |
           python - <<'PY'
-          import os
+          import os, re, requests
           from collectors.flashscore_hockey_collector import FlashscoreHockeyCollector, FEED
           c = FlashscoreHockeyCollector("SHL")
-          for mid in os.environ["MIDS"].split(","):
-              for kind in ("df_li_1_", "df_lu_1_", "df_lc_1_"):
-                  try:
-                      t = c._get(f"{FEED}{kind}{mid}", feed=True, retries=1)
-                      print("==", kind, mid, len(t)); print(t[:1200])
-                  except Exception as e:
-                      print("==", kind, mid, "ERR", e)
-              print("starters:", c._starting_goalies(mid))
+          mid = os.environ["MIDS"].split(",")[0]
+          for kind in ("df_li_1_","df_li_2_","df_lin_1_","df_lp_1_","df_pl_1_","df_lir_1_","df_ln_1_","df_lis_1_","df_mi_1_","df_hh_1_","df_sur_1_","df_su_1_"):
+              try:
+                  t = c._get(f"{FEED}{kind}{mid}", feed=True, retries=1)
+                  print("==", kind, len(t), t[:300].replace("\n"," "))
+              except Exception as e:
+                  print("==", kind, "ERR", str(e)[:80])
+          UA={"User-Agent":"Mozilla/5.0"}
+          for u in ["https://www.flashscore.com/match/hockey/"+mid+"/#/match-summary/lineups",
+                    "https://www.shl.se/statistik/spelare/malvakter",
+                    "https://www.shl.se/api/statistics-v2/goalkeeper/leaders",
+                    "https://stats.swehockey.se/",
+                    "https://www.shl.se/api/sports-v2/game-schedule"]:
+              try:
+                  r=requests.get(u,headers=UA,timeout=25)
+                  txt=r.text
+                  print("##",u,r.status_code,len(txt))
+                  print("   links:",sorted(set(re.findall(r'(?:href|src)="([^"]*(?:api|Statistic|Goal|goal|Leaders|ScheduleAndResults)[^"]*)"',txt)))[:30])
+                  print("   head:",txt[:400].replace("\n"," "))
+              except Exception as e:
+                  print("##",u,"ERR",e)
           PY
