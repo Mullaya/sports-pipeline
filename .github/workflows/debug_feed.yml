@@ -1,0 +1,31 @@
+name: debug flashscore feed
+on:
+  workflow_dispatch:
+    inputs:
+      mids:
+        description: "comma separated match ids"
+        required: true
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - run: pip install -q requests
+      - name: probe
+        env: {MIDS: "${{ inputs.mids }}"}
+        run: |
+          python - <<'PY'
+          import os
+          from collectors.flashscore_hockey_collector import FlashscoreHockeyCollector, FEED
+          c = FlashscoreHockeyCollector("SHL")
+          for mid in os.environ["MIDS"].split(","):
+              for kind in ("df_li_1_", "df_lu_1_", "df_lc_1_"):
+                  try:
+                      t = c._get(f"{FEED}{kind}{mid}", feed=True, retries=1)
+                      print("==", kind, mid, len(t)); print(t[:1200])
+                  except Exception as e:
+                      print("==", kind, mid, "ERR", e)
+              print("starters:", c._starting_goalies(mid))
+          PY
