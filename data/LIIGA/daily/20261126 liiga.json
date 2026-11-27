@@ -1,0 +1,162 @@
+{
+  "date": "20261126",
+  "league": "LIIGA",
+  "source": "flashscore",
+  "games": [
+    {
+      "game_id": "40SXptB5",
+      "game_type": "REG",
+      "stage": "FINLAND: Liiga",
+      "round": "",
+      "start_utc": "2026-11-26T16:30:00Z",
+      "home_team": "Vaasan Sport",
+      "away_team": "Ilves",
+      "home_team_id": "Qqy8aCTd",
+      "away_team_id": "Oh5uGzDT",
+      "home_score": 2,
+      "away_score": 3,
+      "total_goals": 5,
+      "end_type": "OT",
+      "reg_home_score": 2,
+      "reg_away_score": 2,
+      "reg_total_goals": 4,
+      "winner": "Ilves",
+      "period_scores": [
+        {
+          "period": 1,
+          "type": "REG",
+          "home": 0,
+          "away": 1
+        },
+        {
+          "period": 2,
+          "type": "REG",
+          "home": 1,
+          "away": 1
+        },
+        {
+          "period": 3,
+          "type": "REG",
+          "home": 1,
+          "away": 0
+        },
+        {
+          "period": 4,
+          "type": "OT",
+          "home": 0,
+          "away": 1
+        }
+      ],
+      "home_stats": {
+        "shots": 27,
+        "blocked": 10,
+        "saves": 30,
+        "penalties": 4,
+        "pim": 8,
+        "pp_goals": 1,
+        "sh_goals": 0,
+        "pp_opps": 4,
+        "fo_won": 35,
+        "en_goals": 0
+      },
+      "away_stats": {
+        "shots": 33,
+        "blocked": 11,
+        "saves": 25,
+        "penalties": 4,
+        "pim": 16,
+        "pp_goals": 2,
+        "sh_goals": 0,
+        "pp_opps": 4,
+        "fo_won": 26,
+        "en_goals": 0
+      },
+      "home_goalies": [
+        {
+          "name": "Ortio J.",
+          "player_id": "liiga:23786437",
+          "starter": true,
+          "shots_against": 33,
+          "goals_against": 3,
+          "saves": 30,
+          "sv_pct": 0.909,
+          "note": "팀 세이브 기준(골리 교체 시 합산값)"
+        }
+      ],
+      "away_goalies": [
+        {
+          "name": "Rifalk C.",
+          "player_id": "liiga:61073605",
+          "starter": true,
+          "shots_against": 27,
+          "goals_against": 2,
+          "saves": 25,
+          "sv_pct": 0.926,
+          "note": "팀 세이브 기준(골리 교체 시 합산값)"
+        }
+      ],
+      "goals": [
+        {
+          "period": "1st Period",
+          "time": "07:20",
+          "team": "away",
+          "score": "0:1",
+          "author": "Borg E.",
+          "assists": [
+            "Kos O.",
+            "Engberg T."
+          ]
+        },
+        {
+          "period": "2nd Period",
+          "time": "03:44",
+          "team": "home",
+          "score": "1:1",
+          "author": "Walther I.",
+          "assists": [
+            "Grainger L.",
+            "Diaco G."
+          ]
+        },
+        {
+          "period": "2nd Period",
+          "time": "07:17",
+          "team": "away",
+          "score": "1:2",
+          "author": "Strand A.",
+          "assists": [
+            "Haatanen A.",
+            "Jarvinen J."
+          ]
+        },
+        {
+          "period": "3rd Period",
+          "time": "09:42",
+          "team": "home",
+          "score": "2:2",
+          "author": "Nieminen V.",
+          "assists": [
+            "Akerstrom S.",
+            "Palve O."
+          ]
+        },
+        {
+          "period": "Overtime",
+          "time": "03:45",
+          "team": "away",
+          "score": "2:3",
+          "author": "Henman L.",
+          "assists": [
+            "Jasek L.",
+            "Jasek L.",
+            "Lakatos D.",
+            "Lakatos D."
+          ]
+        }
+      ],
+      "home_xg": 2.34,
+      "away_xg": 3.51,
+      "goalie_source": "liiga.fi"
+    }
+  ]
+}
