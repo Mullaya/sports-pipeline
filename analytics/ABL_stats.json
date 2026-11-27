@@ -1,6 +1,6 @@
 {
   "league": "ABL",
-  "updated_kst": "2026-11-26 14:36",
+  "updated_kst": "2026-11-27 14:33",
   "current_season": 2026,
   "seasons": {
     "2023": {
@@ -1699,18 +1699,18 @@
       "h2h": {}
     },
     "2026": {
-      "games": 6,
+      "games": 8,
       "league": {
-        "avg_total_9inn": 8.4,
+        "avg_total_9inn": 8.71,
         "over_rates_9inn": {
-          "7.5": 0.4,
-          "8": 0.4,
-          "8.5": 0.4,
-          "9": 0.4,
-          "9.5": 0.4,
-          "10": 0.4
+          "7.5": 0.571,
+          "8": 0.571,
+          "8.5": 0.571,
+          "9": 0.429,
+          "9.5": 0.429,
+          "10": 0.286
         },
-        "home_win_pct": 0.5,
+        "home_win_pct": 0.375,
         "seven_inning_games": 1
       },
       "venues": {
@@ -1737,26 +1737,50 @@
             "9.5": 0.667,
             "10": 0.667
           }
+        },
+        "Blacktown International Sportspark": {
+          "games": 1,
+          "avg_total": 9.0,
+          "over_rates": {
+            "7.5": 1.0,
+            "8": 1.0,
+            "8.5": 1.0,
+            "9": 0.0,
+            "9.5": 0.0,
+            "10": 0.0
+          }
+        },
+        "Viticon Stadium": {
+          "games": 1,
+          "avg_total": 10.0,
+          "over_rates": {
+            "7.5": 1.0,
+            "8": 1.0,
+            "8.5": 1.0,
+            "9": 1.0,
+            "9.5": 1.0,
+            "10": 0.0
+          }
         }
       },
       "teams": {
         "Perth Heat": {
           "season": {
-            "games": 2,
-            "w": 2,
+            "games": 3,
+            "w": 3,
             "l": 0,
             "win_pct": 1.0,
-            "rpg": 4.5,
-            "rapg": 1.0,
-            "run_diff_pg": 3.5,
-            "avg_total": 5.5,
-            "avg_total_9inn": 5.5,
+            "rpg": 5.67,
+            "rapg": 1.33,
+            "run_diff_pg": 4.33,
+            "avg_total": 7.0,
+            "avg_total_9inn": 7.0,
             "over_rates_9inn": {
-              "7.5": 0.0,
-              "8": 0.0,
-              "8.5": 0.0,
-              "9": 0.0,
-              "9.5": 0.0,
+              "7.5": 0.333,
+              "8": 0.333,
+              "8.5": 0.333,
+              "9": 0.333,
+              "9.5": 0.333,
               "10": 0.0
             }
           },
@@ -1779,52 +1803,89 @@
               "10": 0.0
             }
           },
-          "away": null,
-          "last10": {
-            "games": 2,
-            "w": 2,
+          "away": {
+            "games": 1,
+            "w": 1,
             "l": 0,
             "win_pct": 1.0,
-            "rpg": 4.5,
-            "rapg": 1.0,
-            "run_diff_pg": 3.5,
-            "avg_total": 5.5,
-            "avg_total_9inn": 5.5,
+            "rpg": 8.0,
+            "rapg": 2.0,
+            "run_diff_pg": 6.0,
+            "avg_total": 10.0,
+            "avg_total_9inn": 10.0,
             "over_rates_9inn": {
-              "7.5": 0.0,
-              "8": 0.0,
-              "8.5": 0.0,
-              "9": 0.0,
-              "9.5": 0.0,
+              "7.5": 1.0,
+              "8": 1.0,
+              "8.5": 1.0,
+              "9": 1.0,
+              "9.5": 1.0,
+              "10": 0.0
+            }
+          },
+          "last10": {
+            "games": 3,
+            "w": 3,
+            "l": 0,
+            "win_pct": 1.0,
+            "rpg": 5.67,
+            "rapg": 1.33,
+            "run_diff_pg": 4.33,
+            "avg_total": 7.0,
+            "avg_total_9inn": 7.0,
+            "over_rates_9inn": {
+              "7.5": 0.333,
+              "8": 0.333,
+              "8.5": 0.333,
+              "9": 0.333,
+              "9.5": 0.333,
               "10": 0.0
             }
           },
           "last10_log": [
             "20261119 H Sydney Blue Sox 4-0",
-            "20261122 H Sydney Blue Sox 5-2"
+            "20261122 H Sydney Blue Sox 5-2",
+            "20261126 A Brisbane Bandits 8-2"
           ]
         },
         "Sydney Blue Sox": {
           "season": {
-            "games": 2,
+            "games": 3,
             "w": 0,
-            "l": 2,
+            "l": 3,
             "win_pct": 0.0,
-            "rpg": 1.0,
-            "rapg": 4.5,
-            "run_diff_pg": -3.5,
-            "avg_total": 5.5,
-            "avg_total_9inn": 5.5,
+            "rpg": 1.67,
+            "rapg": 5.0,
+            "run_diff_pg": -3.33,
+            "avg_total": 6.67,
+            "avg_total_9inn": 6.67,
             "over_rates_9inn": {
-              "7.5": 0.0,
-              "8": 0.0,
-              "8.5": 0.0,
+              "7.5": 0.333,
+              "8": 0.333,
+              "8.5": 0.333,
               "9": 0.0,
               "9.5": 0.0,
               "10": 0.0
             }
           },
-          "home": null,
+          "home": {
+            "games": 1,
+            "w": 0,
+            "l": 1,
+            "win_pct": 0.0,
+            "rpg": 3.0,
+            "rapg": 6.0,
+            "run_diff_pg": -3.0,
+            "avg_total": 9.0,
+            "avg_total_9inn": 9.0,
+            "over_rates_9inn": {
+              "7.5": 1.0,
+              "8": 1.0,
+              "8.5": 1.0,
+              "9": 0.0,
+              "9.5": 0.0,
+              "10": 0.0
+            }
+          },
           "away": {
             "games": 2,
             "w": 0,
@@ -1845,19 +1906,19 @@
             }
           },
           "last10": {
-            "games": 2,
+            "games": 3,
             "w": 0,
-            "l": 2,
+            "l": 3,
             "win_pct": 0.0,
-            "rpg": 1.0,
-            "rapg": 4.5,
-            "run_diff_pg": -3.5,
-            "avg_total": 5.5,
-            "avg_total_9inn": 5.5,
+            "rpg": 1.67,
+            "rapg": 5.0,
+            "run_diff_pg": -3.33,
+            "avg_total": 6.67,
+            "avg_total_9inn": 6.67,
             "over_rates_9inn": {
-              "7.5": 0.0,
-              "8": 0.0,
-              "8.5": 0.0,
+              "7.5": 0.333,
+              "8": 0.333,
+              "8.5": 0.333,
               "9": 0.0,
               "9.5": 0.0,
               "10": 0.0
@@ -1865,27 +1926,28 @@
           },
           "last10_log": [
             "20261119 A Perth Heat 0-4",
-            "20261122 A Perth Heat 2-5"
+            "20261122 A Perth Heat 2-5",
+            "20261126 H Adelaide Giants 3-6"
           ]
         },
         "Adelaide Giants": {
           "season": {
-            "games": 4,
-            "w": 1,
+            "games": 5,
+            "w": 2,
             "l": 3,
-            "win_pct": 0.25,
-            "rpg": 4.25,
-            "rapg": 5.75,
-            "run_diff_pg": -1.5,
-            "avg_total": 10.0,
-            "avg_total_9inn": 10.33,
+            "win_pct": 0.4,
+            "rpg": 4.6,
+            "rapg": 5.2,
+            "run_diff_pg": -0.6,
+            "avg_total": 9.8,
+            "avg_total_9inn": 10.0,
             "over_rates_9inn": {
-              "7.5": 0.667,
-              "8": 0.667,
-              "8.5": 0.667,
-              "9": 0.667,
-              "9.5": 0.667,
-              "10": 0.667
+              "7.5": 0.75,
+              "8": 0.75,
+              "8.5": 0.75,
+              "9": 0.5,
+              "9.5": 0.5,
+              "10": 0.5
             }
           },
           "home": {
@@ -1907,54 +1969,91 @@
               "10": 0.667
             }
           },
-          "away": null,
-          "last10": {
-            "games": 4,
+          "away": {
+            "games": 1,
             "w": 1,
-            "l": 3,
-            "win_pct": 0.25,
-            "rpg": 4.25,
-            "rapg": 5.75,
-            "run_diff_pg": -1.5,
-            "avg_total": 10.0,
-            "avg_total_9inn": 10.33,
+            "l": 0,
+            "win_pct": 1.0,
+            "rpg": 6.0,
+            "rapg": 3.0,
+            "run_diff_pg": 3.0,
+            "avg_total": 9.0,
+            "avg_total_9inn": 9.0,
             "over_rates_9inn": {
-              "7.5": 0.667,
-              "8": 0.667,
-              "8.5": 0.667,
-              "9": 0.667,
-              "9.5": 0.667,
-              "10": 0.667
+              "7.5": 1.0,
+              "8": 1.0,
+              "8.5": 1.0,
+              "9": 0.0,
+              "9.5": 0.0,
+              "10": 0.0
+            }
+          },
+          "last10": {
+            "games": 5,
+            "w": 2,
+            "l": 3,
+            "win_pct": 0.4,
+            "rpg": 4.6,
+            "rapg": 5.2,
+            "run_diff_pg": -0.6,
+            "avg_total": 9.8,
+            "avg_total_9inn": 10.0,
+            "over_rates_9inn": {
+              "7.5": 0.75,
+              "8": 0.75,
+              "8.5": 0.75,
+              "9": 0.5,
+              "9.5": 0.5,
+              "10": 0.5
             }
           },
           "last10_log": [
             "20261120 H Brisbane Bandits 1-2",
             "20261121 H Brisbane Bandits 5-4",
             "20261121 H Brisbane Bandits 3-8",
-            "20261122 H Brisbane Bandits 8-9"
+            "20261122 H Brisbane Bandits 8-9",
+            "20261126 A Sydney Blue Sox 6-3"
           ]
         },
         "Brisbane Bandits": {
           "season": {
-            "games": 4,
+            "games": 5,
             "w": 3,
-            "l": 1,
-            "win_pct": 0.75,
-            "rpg": 5.75,
-            "rapg": 4.25,
-            "run_diff_pg": 1.5,
+            "l": 2,
+            "win_pct": 0.6,
+            "rpg": 5.0,
+            "rapg": 5.0,
+            "run_diff_pg": 0.0,
             "avg_total": 10.0,
-            "avg_total_9inn": 10.33,
+            "avg_total_9inn": 10.25,
             "over_rates_9inn": {
-              "7.5": 0.667,
-              "8": 0.667,
-              "8.5": 0.667,
-              "9": 0.667,
-              "9.5": 0.667,
-              "10": 0.667
+              "7.5": 0.75,
+              "8": 0.75,
+              "8.5": 0.75,
+              "9": 0.75,
+              "9.5": 0.75,
+              "10": 0.5
             }
           },
-          "home": null,
+          "home": {
+            "games": 1,
+            "w": 0,
+            "l": 1,
+            "win_pct": 0.0,
+            "rpg": 2.0,
+            "rapg": 8.0,
+            "run_diff_pg": -6.0,
+            "avg_total": 10.0,
+            "avg_total_9inn": 10.0,
+            "over_rates_9inn": {
+              "7.5": 1.0,
+              "8": 1.0,
+              "8.5": 1.0,
+              "9": 1.0,
+              "9.5": 1.0,
+              "10": 0.0
+            }
+          },
           "away": {
             "games": 4,
             "w": 3,
@@ -1975,29 +2074,30 @@
             }
           },
           "last10": {
-            "games": 4,
+            "games": 5,
             "w": 3,
-            "l": 1,
-            "win_pct": 0.75,
-            "rpg": 5.75,
-            "rapg": 4.25,
-            "run_diff_pg": 1.5,
+            "l": 2,
+            "win_pct": 0.6,
+            "rpg": 5.0,
+            "rapg": 5.0,
+            "run_diff_pg": 0.0,
             "avg_total": 10.0,
-            "avg_total_9inn": 10.33,
+            "avg_total_9inn": 10.25,
             "over_rates_9inn": {
-              "7.5": 0.667,
-              "8": 0.667,
-              "8.5": 0.667,
-              "9": 0.667,
-              "9.5": 0.667,
-              "10": 0.667
+              "7.5": 0.75,
+              "8": 0.75,
+              "8.5": 0.75,
+              "9": 0.75,
+              "9.5": 0.75,
+              "10": 0.5
             }
           },
           "last10_log": [
             "20261120 A Adelaide Giants 2-1",
             "20261121 A Adelaide Giants 4-5",
             "20261121 A Adelaide Giants 8-3",
-            "20261122 A Adelaide Giants 9-8"
+            "20261122 A Adelaide Giants 9-8",
+            "20261126 H Perth Heat 2-8"
           ]
         }
       },
@@ -2011,6 +2111,12 @@
           "20261121 Brisbane Bandits 4 @ Adelaide Giants 5",
           "20261121 Brisbane Bandits 8 @ Adelaide Giants 3",
           "20261122 Brisbane Bandits 9 @ Adelaide Giants 8"
+        ],
+        "Adelaide Giants vs Sydney Blue Sox": [
+          "20261126 Adelaide Giants 6 @ Sydney Blue Sox 3"
+        ],
+        "Brisbane Bandits vs Perth Heat": [
+          "20261126 Perth Heat 8 @ Brisbane Bandits 2"
         ]
       }
     }

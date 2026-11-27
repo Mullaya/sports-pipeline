@@ -1,56 +1,56 @@
 {
  "meta": {
-  "generated_kst": "2026-11-26 14:37",
+  "generated_kst": "2026-11-27 14:33",
   "league": "AHL",
   "season_start": "20260801",
-  "games": 257,
-  "last_game_date": "20261124",
+  "games": 266,
+  "last_game_date": "20261125",
   "points_rule": {
    "reg_win": 2,
    "ot_win": 2,
    "ot_loss": 1
   },
   "league_avg": {
-   "avg_reg_total": 5.64,
-   "reg_draw_rate": 0.198,
-   "home_win_rate": 0.49,
-   "home_reg_win_rate": 0.405,
+   "avg_reg_total": 5.67,
+   "reg_draw_rate": 0.195,
+   "home_win_rate": 0.485,
+   "home_reg_win_rate": 0.398,
    "over_rate_reg": {
-    "4.5": 0.681,
-    "5.5": 0.518,
-    "6.5": 0.35
+    "4.5": 0.68,
+    "5.5": 0.519,
+    "6.5": 0.353
    }
   },
   "notes": "reg_* = 정규시간(60분) 기준 (하키 언오버 사이트 정산 기준) / w = 정규승+연장승 / shot_share = 유효슈팅 점유율 / rank_pts = 전체 승점 순위"
  },
  "teams": {
   "Grand Rapids Griffins": {
-   "gp": 18,
+   "gp": 19,
    "w": 15,
    "reg_wins": 12,
    "ot_wins": 3,
-   "otl": 1,
+   "otl": 2,
    "l": 2,
-   "pts": 31,
+   "pts": 32,
    "reg_w": 12,
-   "reg_d": 4,
+   "reg_d": 5,
    "reg_l": 2,
-   "gf_pg": 3.83,
-   "ga_pg": 2.28,
-   "avg_reg_total": 5.89,
+   "gf_pg": 3.74,
+   "ga_pg": 2.32,
+   "avg_reg_total": 5.79,
    "sf_pg": 31.2,
-   "sa_pg": 28.8,
-   "shot_share": 0.52,
-   "sh_pct": 0.122,
-   "sv_pct": 0.929,
-   "pdo": 105.1,
-   "pp_pct": 0.202,
-   "pk_pct": 0.932,
-   "reg_draw_rate": 0.222,
+   "sa_pg": 29.6,
+   "shot_share": 0.513,
+   "sh_pct": 0.119,
+   "sv_pct": 0.931,
+   "pdo": 105.0,
+   "pp_pct": 0.205,
+   "pk_pct": 0.936,
+   "reg_draw_rate": 0.263,
    "over_rate_reg": {
-    "4.5": 0.722,
-    "5.5": 0.667,
-    "6.5": 0.333
+    "4.5": 0.684,
+    "5.5": 0.632,
+    "6.5": 0.316
    },
    "home": {
     "gp": 9,
@@ -68,37 +68,36 @@
     "avg_reg_total": 6.33
    },
    "away": {
-    "gp": 9,
+    "gp": 10,
     "w": 7,
     "reg_wins": 4,
     "ot_wins": 3,
-    "otl": 0,
+    "otl": 1,
     "l": 2,
-    "pts": 14,
+    "pts": 15,
     "reg_w": 4,
-    "reg_d": 3,
+    "reg_d": 4,
     "reg_l": 2,
-    "gf_pg": 3.33,
-    "ga_pg": 2.44,
-    "avg_reg_total": 5.44
+    "gf_pg": 3.2,
+    "ga_pg": 2.5,
+    "avg_reg_total": 5.3
    },
    "last10": {
     "gp": 10,
-    "w": 9,
-    "reg_wins": 6,
+    "w": 8,
+    "reg_wins": 5,
     "ot_wins": 3,
-    "otl": 0,
+    "otl": 1,
     "l": 1,
-    "pts": 18,
-    "reg_w": 6,
-    "reg_d": 3,
+    "pts": 17,
+    "reg_w": 5,
+    "reg_d": 4,
     "reg_l": 1,
-    "gf_pg": 4.1,
-    "ga_pg": 2.4,
-    "avg_reg_total": 6.2
+    "gf_pg": 3.8,
+    "ga_pg": 2.6,
+    "avg_reg_total": 6.0
    },
    "last10_log": [
-    "20261101 @ Chicago Wolves 5-1 W",
     "20261106 vs Milwaukee Admirals 4-2 W",
     "20261107 @ Rockford IceHogs 4-6 L",
     "20261111 vs Rockford IceHogs 6-3 W",
@@ -107,12 +106,13 @@
     "20261118 vs Manitoba Moose 6-3 W",
     "20261120 @ Colorado Eagles 4-3 OTW",
     "20261121 @ Colorado Eagles 5-4 OTW",
-    "20261124 @ Manitoba Moose 3-2 OTW"
+    "20261124 @ Manitoba Moose 3-2 OTW",
+    "20261125 @ Manitoba Moose 2-3 OTL"
    ],
-   "streak": "W7",
-   "last_game_date": "20261124",
+   "streak": "L1",
+   "last_game_date": "20261125",
    "days_since_last": 2,
-   "last_was_b2b": false,
+   "last_was_b2b": true,
    "rank_pts": 1
   },
   "Laval Rocket": {
@@ -202,7 +202,7 @@
    ],
    "streak": "L2",
    "last_game_date": "20261122",
-   "days_since_last": 4,
+   "days_since_last": 5,
    "last_was_b2b": true,
    "rank_pts": 2
   },
@@ -293,37 +293,37 @@
    ],
    "streak": "W8",
    "last_game_date": "20261121",
-   "days_since_last": 5,
+   "days_since_last": 6,
    "last_was_b2b": true,
    "rank_pts": 3
   },
   "Providence Bruins": {
-   "gp": 17,
-   "w": 11,
-   "reg_wins": 9,
+   "gp": 18,
+   "w": 12,
+   "reg_wins": 10,
    "ot_wins": 2,
    "otl": 0,
    "l": 6,
-   "pts": 22,
-   "reg_w": 9,
+   "pts": 24,
+   "reg_w": 10,
    "reg_d": 2,
    "reg_l": 6,
-   "gf_pg": 3.71,
-   "ga_pg": 2.76,
-   "avg_reg_total": 6.35,
-   "sf_pg": 32.2,
-   "sa_pg": 27.8,
-   "shot_share": 0.537,
-   "sh_pct": 0.115,
-   "sv_pct": 0.906,
-   "pdo": 102.1,
-   "pp_pct": 0.135,
-   "pk_pct": 0.86,
-   "reg_draw_rate": 0.118,
+   "gf_pg": 3.78,
+   "ga_pg": 2.78,
+   "avg_reg_total": 6.44,
+   "sf_pg": 31.7,
+   "sa_pg": 28.5,
+   "shot_share": 0.526,
+   "sh_pct": 0.119,
+   "sv_pct": 0.908,
+   "pdo": 102.7,
+   "pp_pct": 0.14,
+   "pk_pct": 0.845,
+   "reg_draw_rate": 0.111,
    "over_rate_reg": {
-    "4.5": 0.765,
-    "5.5": 0.706,
-    "6.5": 0.588
+    "4.5": 0.778,
+    "5.5": 0.722,
+    "6.5": 0.611
    },
    "home": {
     "gp": 8,
@@ -341,21 +341,82 @@
     "avg_reg_total": 5.38
    },
    "away": {
-    "gp": 9,
-    "w": 5,
-    "reg_wins": 4,
+    "gp": 10,
+    "w": 6,
+    "reg_wins": 5,
     "ot_wins": 1,
     "otl": 0,
     "l": 4,
-    "pts": 10,
-    "reg_w": 4,
+    "pts": 12,
+    "reg_w": 5,
     "reg_d": 1,
     "reg_l": 4,
-    "gf_pg": 4.11,
-    "ga_pg": 3.22,
-    "avg_reg_total": 7.22
+    "gf_pg": 4.2,
+    "ga_pg": 3.2,
+    "avg_reg_total": 7.3
    },
    "last10": {
+    "gp": 10,
+    "w": 8,
+    "reg_wins": 7,
+    "ot_wins": 1,
+    "otl": 0,
+    "l": 2,
+    "pts": 16,
+    "reg_w": 7,
+    "reg_d": 1,
+    "reg_l": 2,
+    "gf_pg": 3.9,
+    "ga_pg": 2.4,
+    "avg_reg_total": 6.2
+   },
+   "last10_log": [
+    "20261101 @ Lehigh Valley Phantoms 8-0 W",
+    "20261106 @ Hamilton Hammers 5-4 W",
+    "20261107 @ Belleville Senators 2-5 L",
+    "20261110 @ Charlotte Checkers 2-4 L",
+    "20261111 @ Charlotte Checkers 4-2 W",
+    "20261113 vs Springfield Thunderbirds 3-2 OTW",
+    "20261115 vs Toronto Marlies 4-3 W",
+    "20261121 vs Charlotte Checkers 2-0 W",
+    "20261122 vs Milwaukee Admirals 4-1 W",
+    "20261125 @ Lehigh Valley Phantoms 5-3 W"
+   ],
+   "streak": "W6",
+   "last_game_date": "20261125",
+   "days_since_last": 2,
+   "last_was_b2b": false,
+   "rank_pts": 4
+  },
+  "Henderson Silver Knights": {
+   "gp": 16,
+   "w": 11,
+   "reg_wins": 8,
+   "ot_wins": 3,
+   "otl": 1,
+   "l": 4,
+   "pts": 23,
+   "reg_w": 8,
+   "reg_d": 4,
+   "reg_l": 4,
+   "gf_pg": 2.69,
+   "ga_pg": 1.81,
+   "avg_reg_total": 4.25,
+   "sf_pg": 26.0,
+   "sa_pg": 25.8,
+   "shot_share": 0.502,
+   "sh_pct": 0.103,
+   "sv_pct": 0.936,
+   "pdo": 103.9,
+   "pp_pct": 0.122,
+   "pk_pct": 0.921,
+   "reg_draw_rate": 0.25,
+   "over_rate_reg": {
+    "4.5": 0.562,
+    "5.5": 0.25,
+    "6.5": 0.125
+   },
+   "home": {
     "gp": 10,
     "w": 8,
     "reg_wins": 6,
@@ -366,70 +427,9 @@
     "reg_w": 6,
     "reg_d": 2,
     "reg_l": 2,
-    "gf_pg": 4.1,
-    "ga_pg": 2.7,
-    "avg_reg_total": 6.6
-   },
-   "last10_log": [
-    "20261030 @ Springfield Thunderbirds 7-6 OTW",
-    "20261101 @ Lehigh Valley Phantoms 8-0 W",
-    "20261106 @ Hamilton Hammers 5-4 W",
-    "20261107 @ Belleville Senators 2-5 L",
-    "20261110 @ Charlotte Checkers 2-4 L",
-    "20261111 @ Charlotte Checkers 4-2 W",
-    "20261113 vs Springfield Thunderbirds 3-2 OTW",
-    "20261115 vs Toronto Marlies 4-3 W",
-    "20261121 vs Charlotte Checkers 2-0 W",
-    "20261122 vs Milwaukee Admirals 4-1 W"
-   ],
-   "streak": "W5",
-   "last_game_date": "20261122",
-   "days_since_last": 4,
-   "last_was_b2b": true,
-   "rank_pts": 4
-  },
-  "Henderson Silver Knights": {
-   "gp": 15,
-   "w": 10,
-   "reg_wins": 7,
-   "ot_wins": 3,
-   "otl": 1,
-   "l": 4,
-   "pts": 21,
-   "reg_w": 7,
-   "reg_d": 4,
-   "reg_l": 4,
-   "gf_pg": 2.6,
-   "ga_pg": 1.87,
-   "avg_reg_total": 4.2,
-   "sf_pg": 27.1,
-   "sa_pg": 25.9,
-   "shot_share": 0.512,
-   "sh_pct": 0.096,
-   "sv_pct": 0.934,
-   "pdo": 103.0,
-   "pp_pct": 0.096,
-   "pk_pct": 0.913,
-   "reg_draw_rate": 0.267,
-   "over_rate_reg": {
-    "4.5": 0.533,
-    "5.5": 0.267,
-    "6.5": 0.133
-   },
-   "home": {
-    "gp": 9,
-    "w": 7,
-    "reg_wins": 5,
-    "ot_wins": 2,
-    "otl": 0,
-    "l": 2,
-    "pts": 14,
-    "reg_w": 5,
-    "reg_d": 2,
-    "reg_l": 2,
-    "gf_pg": 2.67,
-    "ga_pg": 1.56,
-    "avg_reg_total": 4.0
+    "gf_pg": 2.8,
+    "ga_pg": 1.5,
+    "avg_reg_total": 4.1
    },
    "away": {
     "gp": 6,
@@ -462,7 +462,6 @@
     "avg_reg_total": 4.3
    },
    "last10_log": [
-    "20261028 vs Ontario Reign 4-1 W",
     "20261030 @ Coachella Valley Firebirds 1-5 L",
     "20261031 @ San Diego Gulls 3-2 OTW",
     "20261106 vs San Diego Gulls 1-0 W",
@@ -471,13 +470,287 @@
     "20261114 vs Calgary Wranglers 3-2 W",
     "20261118 vs San Jose Barracuda 5-2 W",
     "20261121 @ Bakersfield Condors 5-1 W",
-    "20261122 @ Ontario Reign 1-2 OTL"
+    "20261122 @ Ontario Reign 1-2 OTL",
+    "20261125 vs Abbotsford Canucks 4-1 W"
    ],
-   "streak": "L1",
-   "last_game_date": "20261122",
-   "days_since_last": 4,
-   "last_was_b2b": true,
+   "streak": "W1",
+   "last_game_date": "20261125",
+   "days_since_last": 2,
+   "last_was_b2b": false,
    "rank_pts": 5
+  },
+  "Coachella Valley Firebirds": {
+   "gp": 19,
+   "w": 10,
+   "reg_wins": 8,
+   "ot_wins": 2,
+   "otl": 3,
+   "l": 6,
+   "pts": 23,
+   "reg_w": 8,
+   "reg_d": 5,
+   "reg_l": 6,
+   "gf_pg": 3.05,
+   "ga_pg": 3.16,
+   "avg_reg_total": 5.95,
+   "sf_pg": 26.9,
+   "sa_pg": 31.9,
+   "shot_share": 0.458,
+   "sh_pct": 0.113,
+   "sv_pct": 0.906,
+   "pdo": 101.9,
+   "pp_pct": 0.092,
+   "pk_pct": 0.824,
+   "reg_draw_rate": 0.263,
+   "over_rate_reg": {
+    "4.5": 0.579,
+    "5.5": 0.474,
+    "6.5": 0.368
+   },
+   "home": {
+    "gp": 8,
+    "w": 5,
+    "reg_wins": 4,
+    "ot_wins": 1,
+    "otl": 1,
+    "l": 2,
+    "pts": 11,
+    "reg_w": 4,
+    "reg_d": 2,
+    "reg_l": 2,
+    "gf_pg": 2.75,
+    "ga_pg": 2.5,
+    "avg_reg_total": 5.0
+   },
+   "away": {
+    "gp": 11,
+    "w": 5,
+    "reg_wins": 4,
+    "ot_wins": 1,
+    "otl": 2,
+    "l": 4,
+    "pts": 12,
+    "reg_w": 4,
+    "reg_d": 3,
+    "reg_l": 4,
+    "gf_pg": 3.27,
+    "ga_pg": 3.64,
+    "avg_reg_total": 6.64
+   },
+   "last10": {
+    "gp": 10,
+    "w": 7,
+    "reg_wins": 5,
+    "ot_wins": 2,
+    "otl": 1,
+    "l": 2,
+    "pts": 15,
+    "reg_w": 5,
+    "reg_d": 3,
+    "reg_l": 2,
+    "gf_pg": 3.2,
+    "ga_pg": 2.5,
+    "avg_reg_total": 5.4
+   },
+   "last10_log": [
+    "20261104 vs Colorado Eagles 2-1 W",
+    "20261106 @ Tucson Roadrunners 1-3 L",
+    "20261107 @ Tucson Roadrunners 2-3 OTL",
+    "20261112 vs San Jose Barracuda 2-1 W",
+    "20261115 vs Abbotsford Canucks 2-1 OTW",
+    "20261117 @ Calgary Wranglers 3-2 OTW",
+    "20261118 @ Calgary Wranglers 3-4 L",
+    "20261121 @ Ontario Reign 6-4 W",
+    "20261122 @ Bakersfield Condors 4-1 W",
+    "20261125 @ San Jose Barracuda 7-5 W"
+   ],
+   "streak": "W3",
+   "last_game_date": "20261125",
+   "days_since_last": 2,
+   "last_was_b2b": false,
+   "rank_pts": 6
+  },
+  "Toronto Marlies": {
+   "gp": 17,
+   "w": 9,
+   "reg_wins": 6,
+   "ot_wins": 3,
+   "otl": 4,
+   "l": 4,
+   "pts": 22,
+   "reg_w": 6,
+   "reg_d": 7,
+   "reg_l": 4,
+   "gf_pg": 3.53,
+   "ga_pg": 2.76,
+   "avg_reg_total": 5.88,
+   "sf_pg": 24.9,
+   "sa_pg": 24.6,
+   "shot_share": 0.504,
+   "sh_pct": 0.14,
+   "sv_pct": 0.895,
+   "pdo": 103.5,
+   "pp_pct": 0.157,
+   "pk_pct": 0.835,
+   "reg_draw_rate": 0.412,
+   "over_rate_reg": {
+    "4.5": 0.706,
+    "5.5": 0.588,
+    "6.5": 0.412
+   },
+   "home": {
+    "gp": 7,
+    "w": 3,
+    "reg_wins": 3,
+    "ot_wins": 0,
+    "otl": 2,
+    "l": 2,
+    "pts": 8,
+    "reg_w": 3,
+    "reg_d": 2,
+    "reg_l": 2,
+    "gf_pg": 3.14,
+    "ga_pg": 2.43,
+    "avg_reg_total": 5.29
+   },
+   "away": {
+    "gp": 10,
+    "w": 6,
+    "reg_wins": 3,
+    "ot_wins": 3,
+    "otl": 2,
+    "l": 2,
+    "pts": 14,
+    "reg_w": 3,
+    "reg_d": 5,
+    "reg_l": 2,
+    "gf_pg": 3.8,
+    "ga_pg": 3.0,
+    "avg_reg_total": 6.3
+   },
+   "last10": {
+    "gp": 10,
+    "w": 5,
+    "reg_wins": 4,
+    "ot_wins": 1,
+    "otl": 3,
+    "l": 2,
+    "pts": 13,
+    "reg_w": 4,
+    "reg_d": 4,
+    "reg_l": 2,
+    "gf_pg": 3.7,
+    "ga_pg": 2.6,
+    "avg_reg_total": 5.9
+   },
+   "last10_log": [
+    "20261030 vs Hershey Bears 5-3 W",
+    "20261101 @ Belleville Senators 1-4 L",
+    "20261104 @ Hamilton Hammers 5-1 W",
+    "20261106 @ Manitoba Moose 1-2 OTL",
+    "20261107 @ Manitoba Moose 3-4 OTL",
+    "20261113 @ Syracuse Crunch 3-2 OTW",
+    "20261115 @ Providence Bruins 3-4 L",
+    "20261121 vs Chicago Wolves 1-2 OTL",
+    "20261122 vs Chicago Wolves 8-1 W",
+    "20261125 @ Belleville Senators 7-3 W"
+   ],
+   "streak": "W2",
+   "last_game_date": "20261125",
+   "days_since_last": 2,
+   "last_was_b2b": false,
+   "rank_pts": 7
+  },
+  "Manitoba Moose": {
+   "gp": 17,
+   "w": 10,
+   "reg_wins": 7,
+   "ot_wins": 3,
+   "otl": 1,
+   "l": 6,
+   "pts": 21,
+   "reg_w": 7,
+   "reg_d": 4,
+   "reg_l": 6,
+   "gf_pg": 2.88,
+   "ga_pg": 2.53,
+   "avg_reg_total": 5.18,
+   "sf_pg": 30.8,
+   "sa_pg": 29.6,
+   "shot_share": 0.51,
+   "sh_pct": 0.093,
+   "sv_pct": 0.919,
+   "pdo": 101.2,
+   "pp_pct": 0.114,
+   "pk_pct": 0.85,
+   "reg_draw_rate": 0.235,
+   "over_rate_reg": {
+    "4.5": 0.471,
+    "5.5": 0.471,
+    "6.5": 0.412
+   },
+   "home": {
+    "gp": 6,
+    "w": 5,
+    "reg_wins": 2,
+    "ot_wins": 3,
+    "otl": 1,
+    "l": 0,
+    "pts": 11,
+    "reg_w": 2,
+    "reg_d": 4,
+    "reg_l": 0,
+    "gf_pg": 2.5,
+    "ga_pg": 1.67,
+    "avg_reg_total": 3.5
+   },
+   "away": {
+    "gp": 11,
+    "w": 5,
+    "reg_wins": 5,
+    "ot_wins": 0,
+    "otl": 0,
+    "l": 6,
+    "pts": 10,
+    "reg_w": 5,
+    "reg_d": 0,
+    "reg_l": 6,
+    "gf_pg": 3.09,
+    "ga_pg": 3.0,
+    "avg_reg_total": 6.09
+   },
+   "last10": {
+    "gp": 10,
+    "w": 7,
+    "reg_wins": 4,
+    "ot_wins": 3,
+    "otl": 1,
+    "l": 2,
+    "pts": 15,
+    "reg_w": 4,
+    "reg_d": 4,
+    "reg_l": 2,
+    "gf_pg": 3.0,
+    "ga_pg": 2.4,
+    "avg_reg_total": 5.0
+   },
+   "last10_log": [
+    "20261030 @ Rockford IceHogs 6-3 W",
+    "20261106 vs Toronto Marlies 2-1 OTW",
+    "20261107 vs Toronto Marlies 4-3 OTW",
+    "20261114 @ Rockford IceHogs 0-2 L",
+    "20261115 @ Chicago Wolves 6-3 W",
+    "20261118 @ Grand Rapids Griffins 3-6 L",
+    "20261120 vs Rockford IceHogs 1-0 W",
+    "20261122 vs Rockford IceHogs 3-1 W",
+    "20261124 vs Grand Rapids Griffins 2-3 OTL",
+    "20261125 vs Grand Rapids Griffins 3-2 OTW"
+   ],
+   "streak": "W1",
+   "last_game_date": "20261125",
+   "days_since_last": 2,
+   "last_was_b2b": true,
+   "rank_pts": 8
   },
   "Calgary Wranglers": {
    "gp": 19,
@@ -566,100 +839,191 @@
    ],
    "streak": "W3",
    "last_game_date": "20261122",
-   "days_since_last": 4,
+   "days_since_last": 5,
    "last_was_b2b": true,
-   "rank_pts": 6
+   "rank_pts": 9
   },
-  "Abbotsford Canucks": {
-   "gp": 17,
-   "w": 9,
+  "Milwaukee Admirals": {
+   "gp": 18,
+   "w": 10,
    "reg_wins": 8,
-   "ot_wins": 1,
-   "otl": 3,
-   "l": 5,
+   "ot_wins": 2,
+   "otl": 1,
+   "l": 7,
    "pts": 21,
    "reg_w": 8,
-   "reg_d": 4,
-   "reg_l": 5,
-   "gf_pg": 3.12,
-   "ga_pg": 3.06,
-   "avg_reg_total": 5.94,
-   "sf_pg": 29.2,
-   "sa_pg": 27.6,
-   "shot_share": 0.514,
-   "sh_pct": 0.107,
-   "sv_pct": 0.904,
-   "pdo": 101.1,
-   "pp_pct": 0.152,
-   "pk_pct": 0.88,
-   "reg_draw_rate": 0.235,
+   "reg_d": 3,
+   "reg_l": 7,
+   "gf_pg": 2.39,
+   "ga_pg": 2.33,
+   "avg_reg_total": 4.56,
+   "sf_pg": 27.0,
+   "sa_pg": 27.1,
+   "shot_share": 0.499,
+   "sh_pct": 0.087,
+   "sv_pct": 0.916,
+   "pdo": 100.3,
+   "pp_pct": 0.103,
+   "pk_pct": 0.897,
+   "reg_draw_rate": 0.167,
    "over_rate_reg": {
-    "4.5": 0.765,
-    "5.5": 0.706,
-    "6.5": 0.412
+    "4.5": 0.611,
+    "5.5": 0.222,
+    "6.5": 0.111
    },
    "home": {
+    "gp": 8,
+    "w": 6,
+    "reg_wins": 4,
+    "ot_wins": 2,
+    "otl": 0,
+    "l": 2,
+    "pts": 12,
+    "reg_w": 4,
+    "reg_d": 2,
+    "reg_l": 2,
+    "gf_pg": 2.5,
+    "ga_pg": 1.62,
+    "avg_reg_total": 3.88
+   },
+   "away": {
     "gp": 10,
+    "w": 4,
+    "reg_wins": 4,
+    "ot_wins": 0,
+    "otl": 1,
+    "l": 5,
+    "pts": 9,
+    "reg_w": 4,
+    "reg_d": 1,
+    "reg_l": 5,
+    "gf_pg": 2.3,
+    "ga_pg": 2.9,
+    "avg_reg_total": 5.1
+   },
+   "last10": {
+    "gp": 10,
+    "w": 5,
+    "reg_wins": 5,
+    "ot_wins": 0,
+    "otl": 1,
+    "l": 4,
+    "pts": 11,
+    "reg_w": 5,
+    "reg_d": 1,
+    "reg_l": 4,
+    "gf_pg": 2.4,
+    "ga_pg": 2.4,
+    "avg_reg_total": 4.7
+   },
+   "last10_log": [
+    "20261031 @ Cleveland Monsters 4-1 W",
+    "20261106 @ Grand Rapids Griffins 2-4 L",
+    "20261107 vs Iowa Wild 1-3 L",
+    "20261110 vs Iowa Wild 4-1 W",
+    "20261113 @ Rockford IceHogs 2-3 OTL",
+    "20261114 vs Chicago Wolves 3-2 W",
+    "20261118 @ Wilkes-Barre/Scranton 2-1 W",
+    "20261121 @ Hartford Wolf Pack 2-5 L",
+    "20261122 @ Providence Bruins 1-4 L",
+    "20261125 @ Rockford IceHogs 3-0 W"
+   ],
+   "streak": "W1",
+   "last_game_date": "20261125",
+   "days_since_last": 2,
+   "last_was_b2b": false,
+   "rank_pts": 10
+  },
+  "Hartford Wolf Pack": {
+   "gp": 20,
+   "w": 10,
+   "reg_wins": 8,
+   "ot_wins": 2,
+   "otl": 1,
+   "l": 9,
+   "pts": 21,
+   "reg_w": 8,
+   "reg_d": 3,
+   "reg_l": 9,
+   "gf_pg": 2.65,
+   "ga_pg": 2.65,
+   "avg_reg_total": 5.15,
+   "sf_pg": 25.1,
+   "sa_pg": 28.1,
+   "shot_share": 0.472,
+   "sh_pct": 0.106,
+   "sv_pct": 0.914,
+   "pdo": 102.0,
+   "pp_pct": 0.158,
+   "pk_pct": 0.833,
+   "reg_draw_rate": 0.15,
+   "over_rate_reg": {
+    "4.5": 0.65,
+    "5.5": 0.45,
+    "6.5": 0.25
+   },
+   "home": {
+    "gp": 8,
+    "w": 4,
+    "reg_wins": 3,
+    "ot_wins": 1,
+    "otl": 0,
+    "l": 4,
+    "pts": 8,
+    "reg_w": 3,
+    "reg_d": 1,
+    "reg_l": 4,
+    "gf_pg": 2.5,
+    "ga_pg": 2.88,
+    "avg_reg_total": 5.25
+   },
+   "away": {
+    "gp": 12,
     "w": 6,
     "reg_wins": 5,
     "ot_wins": 1,
     "otl": 1,
-    "l": 3,
+    "l": 5,
     "pts": 13,
+    "reg_w": 5,
+    "reg_d": 2,
+    "reg_l": 5,
+    "gf_pg": 2.75,
+    "ga_pg": 2.5,
+    "avg_reg_total": 5.08
+   },
+   "last10": {
+    "gp": 10,
+    "w": 7,
+    "reg_wins": 5,
+    "ot_wins": 2,
+    "otl": 0,
+    "l": 3,
+    "pts": 14,
     "reg_w": 5,
     "reg_d": 2,
     "reg_l": 3,
     "gf_pg": 3.2,
-    "ga_pg": 3.1,
-    "avg_reg_total": 6.1
-   },
-   "away": {
-    "gp": 7,
-    "w": 3,
-    "reg_wins": 3,
-    "ot_wins": 0,
-    "otl": 2,
-    "l": 2,
-    "pts": 8,
-    "reg_w": 3,
-    "reg_d": 2,
-    "reg_l": 2,
-    "gf_pg": 3.0,
-    "ga_pg": 3.0,
-    "avg_reg_total": 5.71
-   },
-   "last10": {
-    "gp": 10,
-    "w": 3,
-    "reg_wins": 3,
-    "ot_wins": 0,
-    "otl": 2,
-    "l": 5,
-    "pts": 8,
-    "reg_w": 3,
-    "reg_d": 2,
-    "reg_l": 5,
-    "gf_pg": 2.2,
-    "ga_pg": 3.3,
-    "avg_reg_total": 5.3
+    "ga_pg": 2.2,
+    "avg_reg_total": 5.2
    },
    "last10_log": [
-    "20261030 @ Bakersfield Condors 5-1 W",
-    "20261106 vs Ontario Reign 2-1 W",
-    "20261107 vs Ontario Reign 0-3 L",
-    "20261110 vs Colorado Eagles 3-4 OTL",
-    "20261111 vs Colorado Eagles 4-3 W",
-    "20261114 @ Ontario Reign 2-5 L",
-    "20261115 @ Coachella Valley Firebirds 1-2 OTL",
-    "20261118 @ Ontario Reign 1-4 L",
-    "20261120 vs Tucson Roadrunners 3-5 L",
-    "20261121 vs Tucson Roadrunners 1-5 L"
+    "20261101 @ Springfield Thunderbirds 4-2 W",
+    "20261104 @ Hershey Bears 1-4 L",
+    "20261106 @ Rochester Americans 2-4 L",
+    "20261107 @ Syracuse Crunch 3-2 OTW",
+    "20261110 @ Springfield Thunderbirds 5-2 W",
+    "20261114 vs Springfield Thunderbirds 3-2 OTW",
+    "20261117 vs Charlotte Checkers 5-1 W",
+    "20261121 vs Milwaukee Admirals 5-2 W",
+    "20261122 vs Springfield Thunderbirds 1-2 L",
+    "20261125 @ Utica Comets 3-1 W"
    ],
-   "streak": "L5",
-   "last_game_date": "20261121",
-   "days_since_last": 5,
-   "last_was_b2b": true,
-   "rank_pts": 7
+   "streak": "W1",
+   "last_game_date": "20261125",
+   "days_since_last": 2,
+   "last_was_b2b": false,
+   "rank_pts": 11
   },
   "Charlotte Checkers": {
    "gp": 19,
@@ -748,100 +1112,100 @@
    ],
    "streak": "L1",
    "last_game_date": "20261121",
-   "days_since_last": 5,
+   "days_since_last": 6,
    "last_was_b2b": true,
-   "rank_pts": 8
+   "rank_pts": 12
   },
-  "Coachella Valley Firebirds": {
+  "Abbotsford Canucks": {
    "gp": 18,
    "w": 9,
-   "reg_wins": 7,
-   "ot_wins": 2,
+   "reg_wins": 8,
+   "ot_wins": 1,
    "otl": 3,
    "l": 6,
    "pts": 21,
-   "reg_w": 7,
-   "reg_d": 5,
+   "reg_w": 8,
+   "reg_d": 4,
    "reg_l": 6,
-   "gf_pg": 2.83,
-   "ga_pg": 3.06,
-   "avg_reg_total": 5.61,
-   "sf_pg": 27.9,
-   "sa_pg": 33.2,
-   "shot_share": 0.457,
-   "sh_pct": 0.101,
-   "sv_pct": 0.909,
-   "pdo": 101.0,
-   "pp_pct": 0.095,
-   "pk_pct": 0.841,
-   "reg_draw_rate": 0.278,
+   "gf_pg": 3.0,
+   "ga_pg": 3.11,
+   "avg_reg_total": 5.89,
+   "sf_pg": 29.0,
+   "sa_pg": 26.6,
+   "shot_share": 0.521,
+   "sh_pct": 0.103,
+   "sv_pct": 0.902,
+   "pdo": 100.5,
+   "pp_pct": 0.14,
+   "pk_pct": 0.855,
+   "reg_draw_rate": 0.222,
    "over_rate_reg": {
-    "4.5": 0.556,
-    "5.5": 0.444,
-    "6.5": 0.333
+    "4.5": 0.778,
+    "5.5": 0.667,
+    "6.5": 0.389
    },
    "home": {
-    "gp": 8,
-    "w": 5,
-    "reg_wins": 4,
+    "gp": 10,
+    "w": 6,
+    "reg_wins": 5,
     "ot_wins": 1,
     "otl": 1,
-    "l": 2,
-    "pts": 11,
-    "reg_w": 4,
+    "l": 3,
+    "pts": 13,
+    "reg_w": 5,
     "reg_d": 2,
-    "reg_l": 2,
-    "gf_pg": 2.75,
-    "ga_pg": 2.5,
-    "avg_reg_total": 5.0
+    "reg_l": 3,
+    "gf_pg": 3.2,
+    "ga_pg": 3.1,
+    "avg_reg_total": 6.1
    },
    "away": {
-    "gp": 10,
-    "w": 4,
+    "gp": 8,
+    "w": 3,
     "reg_wins": 3,
-    "ot_wins": 1,
+    "ot_wins": 0,
     "otl": 2,
-    "l": 4,
-    "pts": 10,
+    "l": 3,
+    "pts": 8,
     "reg_w": 3,
-    "reg_d": 3,
-    "reg_l": 4,
-    "gf_pg": 2.9,
-    "ga_pg": 3.5,
-    "avg_reg_total": 6.1
+    "reg_d": 2,
+    "reg_l": 3,
+    "gf_pg": 2.75,
+    "ga_pg": 3.12,
+    "avg_reg_total": 5.62
    },
    "last10": {
     "gp": 10,
-    "w": 7,
-    "reg_wins": 5,
-    "ot_wins": 2,
-    "otl": 1,
-    "l": 2,
-    "pts": 15,
-    "reg_w": 5,
-    "reg_d": 3,
-    "reg_l": 2,
-    "gf_pg": 3.0,
-    "ga_pg": 2.1,
-    "avg_reg_total": 4.8
+    "w": 2,
+    "reg_wins": 2,
+    "ot_wins": 0,
+    "otl": 2,
+    "l": 6,
+    "pts": 6,
+    "reg_w": 2,
+    "reg_d": 2,
+    "reg_l": 6,
+    "gf_pg": 1.8,
+    "ga_pg": 3.6,
+    "avg_reg_total": 5.2
    },
    "last10_log": [
-    "20261030 vs Henderson Silver Knights 5-1 W",
-    "20261104 vs Colorado Eagles 2-1 W",
-    "20261106 @ Tucson Roadrunners 1-3 L",
-    "20261107 @ Tucson Roadrunners 2-3 OTL",
-    "20261112 vs San Jose Barracuda 2-1 W",
-    "20261115 vs Abbotsford Canucks 2-1 OTW",
-    "20261117 @ Calgary Wranglers 3-2 OTW",
-    "20261118 @ Calgary Wranglers 3-4 L",
-    "20261121 @ Ontario Reign 6-4 W",
-    "20261122 @ Bakersfield Condors 4-1 W"
+    "20261106 vs Ontario Reign 2-1 W",
+    "20261107 vs Ontario Reign 0-3 L",
+    "20261110 vs Colorado Eagles 3-4 OTL",
+    "20261111 vs Colorado Eagles 4-3 W",
+    "20261114 @ Ontario Reign 2-5 L",
+    "20261115 @ Coachella Valley Firebirds 1-2 OTL",
+    "20261118 @ Ontario Reign 1-4 L",
+    "20261120 vs Tucson Roadrunners 3-5 L",
+    "20261121 vs Tucson Roadrunners 1-5 L",
+    "20261125 @ Henderson Silver Knights 1-4 L"
    ],
-   "streak": "W2",
-   "last_game_date": "20261122",
-   "days_since_last": 4,
-   "last_was_b2b": true,
-   "rank_pts": 9
+   "streak": "L6",
+   "last_game_date": "20261125",
+   "days_since_last": 2,
+   "last_was_b2b": false,
+   "rank_pts": 13
   },
   "Rochester Americans": {
    "gp": 16,
@@ -930,143 +1294,52 @@
    ],
    "streak": "W4",
    "last_game_date": "20261121",
-   "days_since_last": 5,
+   "days_since_last": 6,
    "last_was_b2b": true,
-   "rank_pts": 10
-  },
-  "Toronto Marlies": {
-   "gp": 16,
-   "w": 8,
-   "reg_wins": 5,
-   "ot_wins": 3,
-   "otl": 4,
-   "l": 4,
-   "pts": 20,
-   "reg_w": 5,
-   "reg_d": 7,
-   "reg_l": 4,
-   "gf_pg": 3.31,
-   "ga_pg": 2.75,
-   "avg_reg_total": 5.62,
-   "sf_pg": 25.3,
-   "sa_pg": 24.1,
-   "shot_share": 0.512,
-   "sh_pct": 0.129,
-   "sv_pct": 0.894,
-   "pdo": 102.3,
-   "pp_pct": 0.151,
-   "pk_pct": 0.835,
-   "reg_draw_rate": 0.438,
-   "over_rate_reg": {
-    "4.5": 0.688,
-    "5.5": 0.562,
-    "6.5": 0.375
-   },
-   "home": {
-    "gp": 7,
-    "w": 3,
-    "reg_wins": 3,
-    "ot_wins": 0,
-    "otl": 2,
-    "l": 2,
-    "pts": 8,
-    "reg_w": 3,
-    "reg_d": 2,
-    "reg_l": 2,
-    "gf_pg": 3.14,
-    "ga_pg": 2.43,
-    "avg_reg_total": 5.29
-   },
-   "away": {
-    "gp": 9,
-    "w": 5,
-    "reg_wins": 2,
-    "ot_wins": 3,
-    "otl": 2,
-    "l": 2,
-    "pts": 12,
-    "reg_w": 2,
-    "reg_d": 5,
-    "reg_l": 2,
-    "gf_pg": 3.44,
-    "ga_pg": 3.0,
-    "avg_reg_total": 5.89
-   },
-   "last10": {
-    "gp": 10,
-    "w": 4,
-    "reg_wins": 3,
-    "ot_wins": 1,
-    "otl": 3,
-    "l": 3,
-    "pts": 11,
-    "reg_w": 3,
-    "reg_d": 4,
-    "reg_l": 3,
-    "gf_pg": 3.0,
-    "ga_pg": 2.6,
-    "avg_reg_total": 5.2
-   },
-   "last10_log": [
-    "20261025 vs Rockford IceHogs 0-3 L",
-    "20261030 vs Hershey Bears 5-3 W",
-    "20261101 @ Belleville Senators 1-4 L",
-    "20261104 @ Hamilton Hammers 5-1 W",
-    "20261106 @ Manitoba Moose 1-2 OTL",
-    "20261107 @ Manitoba Moose 3-4 OTL",
-    "20261113 @ Syracuse Crunch 3-2 OTW",
-    "20261115 @ Providence Bruins 3-4 L",
-    "20261121 vs Chicago Wolves 1-2 OTL",
-    "20261122 vs Chicago Wolves 8-1 W"
-   ],
-   "streak": "W1",
-   "last_game_date": "20261122",
-   "days_since_last": 4,
-   "last_was_b2b": true,
-   "rank_pts": 11
+   "rank_pts": 14
   },
   "Utica Comets": {
-   "gp": 14,
+   "gp": 15,
    "w": 10,
    "reg_wins": 9,
    "ot_wins": 1,
    "otl": 0,
-   "l": 4,
+   "l": 5,
    "pts": 20,
    "reg_w": 9,
    "reg_d": 1,
-   "reg_l": 4,
-   "gf_pg": 2.93,
-   "ga_pg": 2.5,
-   "avg_reg_total": 5.36,
-   "sf_pg": 27.8,
-   "sa_pg": 21.0,
-   "shot_share": 0.57,
-   "sh_pct": 0.099,
-   "sv_pct": 0.889,
-   "pdo": 98.8,
-   "pp_pct": 0.145,
-   "pk_pct": 0.889,
-   "reg_draw_rate": 0.071,
+   "reg_l": 5,
+   "gf_pg": 2.8,
+   "ga_pg": 2.53,
+   "avg_reg_total": 5.27,
+   "sf_pg": 27.6,
+   "sa_pg": 20.6,
+   "shot_share": 0.573,
+   "sh_pct": 0.096,
+   "sv_pct": 0.887,
+   "pdo": 98.3,
+   "pp_pct": 0.141,
+   "pk_pct": 0.879,
+   "reg_draw_rate": 0.067,
    "over_rate_reg": {
-    "4.5": 0.571,
-    "5.5": 0.429,
-    "6.5": 0.357
+    "4.5": 0.533,
+    "5.5": 0.4,
+    "6.5": 0.333
    },
    "home": {
-    "gp": 8,
+    "gp": 9,
     "w": 6,
     "reg_wins": 5,
     "ot_wins": 1,
     "otl": 0,
-    "l": 2,
+    "l": 3,
     "pts": 12,
     "reg_w": 5,
     "reg_d": 1,
-    "reg_l": 2,
-    "gf_pg": 2.62,
-    "ga_pg": 2.0,
-    "avg_reg_total": 4.5
+    "reg_l": 3,
+    "gf_pg": 2.44,
+    "ga_pg": 2.11,
+    "avg_reg_total": 4.44
    },
    "away": {
     "gp": 6,
@@ -1094,12 +1367,11 @@
     "reg_w": 6,
     "reg_d": 1,
     "reg_l": 3,
-    "gf_pg": 3.0,
-    "ga_pg": 2.5,
-    "avg_reg_total": 5.4
+    "gf_pg": 2.9,
+    "ga_pg": 2.3,
+    "avg_reg_total": 5.1
    },
    "last10_log": [
-    "20261024 @ Providence Bruins 2-5 L",
     "20261030 vs Wilkes-Barre/Scranton 4-3 W",
     "20261101 vs Hamilton Hammers 3-2 OTW",
     "20261106 vs Syracuse Crunch 5-2 W",
@@ -1108,41 +1380,42 @@
     "20261111 vs Belleville Senators 1-0 W",
     "20261114 vs Syracuse Crunch 2-3 L",
     "20261121 @ Cleveland Monsters 2-1 W",
-    "20261122 @ Cleveland Monsters 3-8 L"
+    "20261122 @ Cleveland Monsters 3-8 L",
+    "20261125 vs Hartford Wolf Pack 1-3 L"
    ],
-   "streak": "L1",
-   "last_game_date": "20261122",
-   "days_since_last": 4,
-   "last_was_b2b": true,
-   "rank_pts": 12
+   "streak": "L2",
+   "last_game_date": "20261125",
+   "days_since_last": 2,
+   "last_was_b2b": false,
+   "rank_pts": 15
   },
   "Wilkes-Barre/Scranton": {
-   "gp": 17,
+   "gp": 18,
    "w": 9,
    "reg_wins": 8,
    "ot_wins": 1,
    "otl": 2,
-   "l": 6,
+   "l": 7,
    "pts": 20,
    "reg_w": 8,
    "reg_d": 3,
-   "reg_l": 6,
-   "gf_pg": 3.47,
-   "ga_pg": 3.06,
-   "avg_reg_total": 6.35,
+   "reg_l": 7,
+   "gf_pg": 3.33,
+   "ga_pg": 3.22,
+   "avg_reg_total": 6.39,
    "sf_pg": 29.3,
-   "sa_pg": 31.2,
-   "shot_share": 0.484,
-   "sh_pct": 0.118,
-   "sv_pct": 0.905,
-   "pdo": 102.3,
-   "pp_pct": 0.153,
-   "pk_pct": 0.84,
-   "reg_draw_rate": 0.176,
+   "sa_pg": 30.8,
+   "shot_share": 0.487,
+   "sh_pct": 0.114,
+   "sv_pct": 0.898,
+   "pdo": 101.2,
+   "pp_pct": 0.141,
+   "pk_pct": 0.822,
+   "reg_draw_rate": 0.167,
    "over_rate_reg": {
-    "4.5": 0.824,
-    "5.5": 0.647,
-    "6.5": 0.412
+    "4.5": 0.833,
+    "5.5": 0.667,
+    "6.5": 0.444
    },
    "home": {
     "gp": 7,
@@ -1160,37 +1433,36 @@
     "avg_reg_total": 6.0
    },
    "away": {
-    "gp": 10,
+    "gp": 11,
     "w": 7,
     "reg_wins": 6,
     "ot_wins": 1,
     "otl": 1,
-    "l": 2,
+    "l": 3,
     "pts": 15,
     "reg_w": 6,
     "reg_d": 2,
-    "reg_l": 2,
-    "gf_pg": 4.4,
-    "ga_pg": 2.4,
-    "avg_reg_total": 6.6
+    "reg_l": 3,
+    "gf_pg": 4.09,
+    "ga_pg": 2.73,
+    "avg_reg_total": 6.64
    },
    "last10": {
     "gp": 10,
-    "w": 5,
-    "reg_wins": 4,
+    "w": 4,
+    "reg_wins": 3,
     "ot_wins": 1,
     "otl": 2,
-    "l": 3,
-    "pts": 12,
-    "reg_w": 4,
+    "l": 4,
+    "pts": 10,
+    "reg_w": 3,
     "reg_d": 3,
-    "reg_l": 3,
-    "gf_pg": 2.9,
-    "ga_pg": 2.9,
-    "avg_reg_total": 5.5
+    "reg_l": 4,
+    "gf_pg": 2.5,
+    "ga_pg": 3.5,
+    "avg_reg_total": 5.7
    },
    "last10_log": [
-    "20261101 @ Hershey Bears 5-0 W",
     "20261106 @ Charlotte Checkers 4-3 OTW",
     "20261107 @ Charlotte Checkers 4-1 W",
     "20261110 vs Utica Comets 0-4 L",
@@ -1199,13 +1471,14 @@
     "20261115 vs Lehigh Valley Phantoms 5-2 W",
     "20261118 vs Milwaukee Admirals 1-2 L",
     "20261120 @ Lehigh Valley Phantoms 4-2 W",
-    "20261121 vs Rochester Americans 1-8 L"
+    "20261121 vs Rochester Americans 1-8 L",
+    "20261125 @ Hershey Bears 1-6 L"
    ],
-   "streak": "L1",
-   "last_game_date": "20261121",
-   "days_since_last": 5,
-   "last_was_b2b": true,
-   "rank_pts": 13
+   "streak": "L2",
+   "last_game_date": "20261125",
+   "days_since_last": 2,
+   "last_was_b2b": false,
+   "rank_pts": 16
   },
   "San Diego Gulls": {
    "gp": 18,
@@ -1294,100 +1567,9 @@
    ],
    "streak": "L2",
    "last_game_date": "20261124",
-   "days_since_last": 2,
+   "days_since_last": 3,
    "last_was_b2b": false,
-   "rank_pts": 14
-  },
-  "Manitoba Moose": {
-   "gp": 16,
-   "w": 9,
-   "reg_wins": 7,
-   "ot_wins": 2,
-   "otl": 1,
-   "l": 6,
-   "pts": 19,
-   "reg_w": 7,
-   "reg_d": 3,
-   "reg_l": 6,
-   "gf_pg": 2.88,
-   "ga_pg": 2.56,
-   "avg_reg_total": 5.25,
-   "sf_pg": 30.1,
-   "sa_pg": 29.6,
-   "shot_share": 0.504,
-   "sh_pct": 0.095,
-   "sv_pct": 0.918,
-   "pdo": 101.3,
-   "pp_pct": 0.122,
-   "pk_pct": 0.857,
-   "reg_draw_rate": 0.188,
-   "over_rate_reg": {
-    "4.5": 0.5,
-    "5.5": 0.5,
-    "6.5": 0.438
-   },
-   "home": {
-    "gp": 5,
-    "w": 4,
-    "reg_wins": 2,
-    "ot_wins": 2,
-    "otl": 1,
-    "l": 0,
-    "pts": 9,
-    "reg_w": 2,
-    "reg_d": 3,
-    "reg_l": 0,
-    "gf_pg": 2.4,
-    "ga_pg": 1.6,
-    "avg_reg_total": 3.4
-   },
-   "away": {
-    "gp": 11,
-    "w": 5,
-    "reg_wins": 5,
-    "ot_wins": 0,
-    "otl": 0,
-    "l": 6,
-    "pts": 10,
-    "reg_w": 5,
-    "reg_d": 0,
-    "reg_l": 6,
-    "gf_pg": 3.09,
-    "ga_pg": 3.0,
-    "avg_reg_total": 6.09
-   },
-   "last10": {
-    "gp": 10,
-    "w": 6,
-    "reg_wins": 4,
-    "ot_wins": 2,
-    "otl": 1,
-    "l": 3,
-    "pts": 13,
-    "reg_w": 4,
-    "reg_d": 3,
-    "reg_l": 3,
-    "gf_pg": 2.7,
-    "ga_pg": 2.5,
-    "avg_reg_total": 4.9
-   },
-   "last10_log": [
-    "20261028 @ Milwaukee Admirals 0-3 L",
-    "20261030 @ Rockford IceHogs 6-3 W",
-    "20261106 vs Toronto Marlies 2-1 OTW",
-    "20261107 vs Toronto Marlies 4-3 OTW",
-    "20261114 @ Rockford IceHogs 0-2 L",
-    "20261115 @ Chicago Wolves 6-3 W",
-    "20261118 @ Grand Rapids Griffins 3-6 L",
-    "20261120 vs Rockford IceHogs 1-0 W",
-    "20261122 vs Rockford IceHogs 3-1 W",
-    "20261124 vs Grand Rapids Griffins 2-3 OTL"
-   ],
-   "streak": "L1",
-   "last_game_date": "20261124",
-   "days_since_last": 2,
-   "last_was_b2b": false,
-   "rank_pts": 15
+   "rank_pts": 17
   },
   "Ontario Reign": {
    "gp": 16,
@@ -1476,281 +1658,99 @@
    ],
    "streak": "W2",
    "last_game_date": "20261124",
-   "days_since_last": 2,
+   "days_since_last": 3,
    "last_was_b2b": false,
-   "rank_pts": 16
+   "rank_pts": 18
   },
-  "Hartford Wolf Pack": {
-   "gp": 19,
+  "Hershey Bears": {
+   "gp": 15,
    "w": 9,
-   "reg_wins": 7,
-   "ot_wins": 2,
-   "otl": 1,
-   "l": 9,
-   "pts": 19,
-   "reg_w": 7,
-   "reg_d": 3,
-   "reg_l": 9,
-   "gf_pg": 2.63,
-   "ga_pg": 2.74,
-   "avg_reg_total": 5.21,
-   "sf_pg": 25.6,
-   "sa_pg": 28.3,
-   "shot_share": 0.475,
+   "reg_wins": 8,
+   "ot_wins": 1,
+   "otl": 0,
+   "l": 6,
+   "pts": 18,
+   "reg_w": 8,
+   "reg_d": 1,
+   "reg_l": 6,
+   "gf_pg": 3.4,
+   "ga_pg": 3.07,
+   "avg_reg_total": 6.4,
+   "sf_pg": 32.9,
+   "sa_pg": 24.7,
+   "shot_share": 0.571,
    "sh_pct": 0.103,
-   "sv_pct": 0.912,
-   "pdo": 101.5,
-   "pp_pct": 0.153,
-   "pk_pct": 0.83,
-   "reg_draw_rate": 0.158,
+   "sv_pct": 0.89,
+   "pdo": 99.3,
+   "pp_pct": 0.152,
+   "pk_pct": 0.882,
+   "reg_draw_rate": 0.067,
    "over_rate_reg": {
-    "4.5": 0.684,
-    "5.5": 0.474,
-    "6.5": 0.263
+    "4.5": 0.933,
+    "5.5": 0.667,
+    "6.5": 0.533
    },
    "home": {
-    "gp": 8,
-    "w": 4,
-    "reg_wins": 3,
+    "gp": 10,
+    "w": 6,
+    "reg_wins": 5,
     "ot_wins": 1,
     "otl": 0,
     "l": 4,
-    "pts": 8,
-    "reg_w": 3,
+    "pts": 12,
+    "reg_w": 5,
     "reg_d": 1,
     "reg_l": 4,
-    "gf_pg": 2.5,
-    "ga_pg": 2.88,
-    "avg_reg_total": 5.25
+    "gf_pg": 3.4,
+    "ga_pg": 3.3,
+    "avg_reg_total": 6.6
    },
    "away": {
-    "gp": 11,
-    "w": 5,
-    "reg_wins": 4,
-    "ot_wins": 1,
-    "otl": 1,
-    "l": 5,
-    "pts": 11,
-    "reg_w": 4,
-    "reg_d": 2,
-    "reg_l": 5,
-    "gf_pg": 2.73,
-    "ga_pg": 2.64,
-    "avg_reg_total": 5.18
-   },
-   "last10": {
-    "gp": 10,
-    "w": 7,
-    "reg_wins": 5,
-    "ot_wins": 2,
-    "otl": 0,
-    "l": 3,
-    "pts": 14,
-    "reg_w": 5,
-    "reg_d": 2,
-    "reg_l": 3,
-    "gf_pg": 3.3,
-    "ga_pg": 2.2,
-    "avg_reg_total": 5.3
-   },
-   "last10_log": [
-    "20261030 @ Belleville Senators 4-1 W",
-    "20261101 @ Springfield Thunderbirds 4-2 W",
-    "20261104 @ Hershey Bears 1-4 L",
-    "20261106 @ Rochester Americans 2-4 L",
-    "20261107 @ Syracuse Crunch 3-2 OTW",
-    "20261110 @ Springfield Thunderbirds 5-2 W",
-    "20261114 vs Springfield Thunderbirds 3-2 OTW",
-    "20261117 vs Charlotte Checkers 5-1 W",
-    "20261121 vs Milwaukee Admirals 5-2 W",
-    "20261122 vs Springfield Thunderbirds 1-2 L"
-   ],
-   "streak": "L1",
-   "last_game_date": "20261122",
-   "days_since_last": 4,
-   "last_was_b2b": true,
-   "rank_pts": 17
-  },
-  "Milwaukee Admirals": {
-   "gp": 17,
-   "w": 9,
-   "reg_wins": 7,
-   "ot_wins": 2,
-   "otl": 1,
-   "l": 7,
-   "pts": 19,
-   "reg_w": 7,
-   "reg_d": 3,
-   "reg_l": 7,
-   "gf_pg": 2.35,
-   "ga_pg": 2.47,
-   "avg_reg_total": 4.65,
-   "sf_pg": 27.6,
-   "sa_pg": 27.1,
-   "shot_share": 0.505,
-   "sh_pct": 0.084,
-   "sv_pct": 0.911,
-   "pdo": 99.5,
-   "pp_pct": 0.098,
-   "pk_pct": 0.889,
-   "reg_draw_rate": 0.176,
-   "over_rate_reg": {
-    "4.5": 0.647,
-    "5.5": 0.235,
-    "6.5": 0.118
-   },
-   "home": {
-    "gp": 8,
-    "w": 6,
-    "reg_wins": 4,
-    "ot_wins": 2,
-    "otl": 0,
-    "l": 2,
-    "pts": 12,
-    "reg_w": 4,
-    "reg_d": 2,
-    "reg_l": 2,
-    "gf_pg": 2.5,
-    "ga_pg": 1.62,
-    "avg_reg_total": 3.88
-   },
-   "away": {
-    "gp": 9,
+    "gp": 5,
     "w": 3,
     "reg_wins": 3,
     "ot_wins": 0,
-    "otl": 1,
-    "l": 5,
-    "pts": 7,
+    "otl": 0,
+    "l": 2,
+    "pts": 6,
     "reg_w": 3,
-    "reg_d": 1,
-    "reg_l": 5,
-    "gf_pg": 2.22,
-    "ga_pg": 3.22,
-    "avg_reg_total": 5.33
-   },
-   "last10": {
-    "gp": 10,
-    "w": 4,
-    "reg_wins": 4,
-    "ot_wins": 0,
-    "otl": 1,
-    "l": 5,
-    "pts": 9,
-    "reg_w": 4,
-    "reg_d": 1,
-    "reg_l": 5,
-    "gf_pg": 2.3,
-    "ga_pg": 2.9,
-    "avg_reg_total": 5.1
-   },
-   "last10_log": [
-    "20261030 @ Cleveland Monsters 2-5 L",
-    "20261031 @ Cleveland Monsters 4-1 W",
-    "20261106 @ Grand Rapids Griffins 2-4 L",
-    "20261107 vs Iowa Wild 1-3 L",
-    "20261110 vs Iowa Wild 4-1 W",
-    "20261113 @ Rockford IceHogs 2-3 OTL",
-    "20261114 vs Chicago Wolves 3-2 W",
-    "20261118 @ Wilkes-Barre/Scranton 2-1 W",
-    "20261121 @ Hartford Wolf Pack 2-5 L",
-    "20261122 @ Providence Bruins 1-4 L"
-   ],
-   "streak": "L2",
-   "last_game_date": "20261122",
-   "days_since_last": 4,
-   "last_was_b2b": true,
-   "rank_pts": 18
-  },
-  "Belleville Senators": {
-   "gp": 18,
-   "w": 8,
-   "reg_wins": 8,
-   "ot_wins": 0,
-   "otl": 2,
-   "l": 8,
-   "pts": 18,
-   "reg_w": 8,
-   "reg_d": 2,
-   "reg_l": 8,
-   "gf_pg": 2.83,
-   "ga_pg": 2.94,
-   "avg_reg_total": 5.67,
-   "sf_pg": 23.7,
-   "sa_pg": 29.1,
-   "shot_share": 0.449,
-   "sh_pct": 0.119,
-   "sv_pct": 0.915,
-   "pdo": 103.4,
-   "pp_pct": 0.171,
-   "pk_pct": 0.797,
-   "reg_draw_rate": 0.111,
-   "over_rate_reg": {
-    "4.5": 0.667,
-    "5.5": 0.5,
-    "6.5": 0.333
-   },
-   "home": {
-    "gp": 10,
-    "w": 4,
-    "reg_wins": 4,
-    "ot_wins": 0,
-    "otl": 2,
-    "l": 4,
-    "pts": 10,
-    "reg_w": 4,
-    "reg_d": 2,
-    "reg_l": 4,
-    "gf_pg": 3.1,
-    "ga_pg": 3.4,
-    "avg_reg_total": 6.3
-   },
-   "away": {
-    "gp": 8,
-    "w": 4,
-    "reg_wins": 4,
-    "ot_wins": 0,
-    "otl": 0,
-    "l": 4,
-    "pts": 8,
-    "reg_w": 4,
     "reg_d": 0,
-    "reg_l": 4,
-    "gf_pg": 2.5,
-    "ga_pg": 2.38,
-    "avg_reg_total": 4.88
+    "reg_l": 2,
+    "gf_pg": 3.4,
+    "ga_pg": 2.6,
+    "avg_reg_total": 6.0
    },
    "last10": {
     "gp": 10,
-    "w": 5,
+    "w": 6,
     "reg_wins": 5,
-    "ot_wins": 0,
+    "ot_wins": 1,
     "otl": 0,
-    "l": 5,
-    "pts": 10,
+    "l": 4,
+    "pts": 12,
     "reg_w": 5,
-    "reg_d": 0,
-    "reg_l": 5,
-    "gf_pg": 2.5,
-    "ga_pg": 2.5,
-    "avg_reg_total": 5.0
+    "reg_d": 1,
+    "reg_l": 4,
+    "gf_pg": 3.4,
+    "ga_pg": 2.8,
+    "avg_reg_total": 6.1
    },
    "last10_log": [
-    "20261030 vs Hartford Wolf Pack 1-4 L",
-    "20261101 vs Toronto Marlies 4-1 W",
-    "20261106 vs Lehigh Valley Phantoms 3-1 W",
-    "20261107 vs Providence Bruins 5-2 W",
-    "20261111 @ Utica Comets 0-1 L",
-    "20261114 vs Cleveland Monsters 1-3 L",
-    "20261115 vs Cleveland Monsters 3-1 W",
-    "20261118 vs Laval Rocket 4-8 L",
-    "20261120 @ Hamilton Hammers 2-0 W",
-    "20261121 @ Syracuse Crunch 2-4 L"
+    "20261101 vs Wilkes-Barre/Scranton 0-5 L",
+    "20261104 vs Hartford Wolf Pack 4-1 W",
+    "20261106 @ Springfield Thunderbirds 2-4 L",
+    "20261107 @ Springfield Thunderbirds 6-1 W",
+    "20261111 vs Hamilton Hammers 1-4 L",
+    "20261113 vs Wilkes-Barre/Scranton 4-3 OTW",
+    "20261115 vs Charlotte Checkers 4-3 W",
+    "20261120 vs Rochester Americans 4-5 L",
+    "20261121 @ Lehigh Valley Phantoms 3-1 W",
+    "20261125 vs Wilkes-Barre/Scranton 6-1 W"
    ],
-   "streak": "L1",
-   "last_game_date": "20261121",
-   "days_since_last": 5,
-   "last_was_b2b": true,
+   "streak": "W2",
+   "last_game_date": "20261125",
+   "days_since_last": 2,
+   "last_was_b2b": false,
    "rank_pts": 19
   },
   "Colorado Eagles": {
@@ -1840,100 +1840,191 @@
    ],
    "streak": "L2",
    "last_game_date": "20261121",
-   "days_since_last": 5,
+   "days_since_last": 6,
    "last_was_b2b": true,
    "rank_pts": 20
   },
-  "Hershey Bears": {
-   "gp": 14,
+  "Belleville Senators": {
+   "gp": 19,
    "w": 8,
-   "reg_wins": 7,
-   "ot_wins": 1,
-   "otl": 0,
-   "l": 6,
-   "pts": 16,
-   "reg_w": 7,
-   "reg_d": 1,
-   "reg_l": 6,
-   "gf_pg": 3.21,
-   "ga_pg": 3.21,
-   "avg_reg_total": 6.36,
-   "sf_pg": 33.6,
-   "sa_pg": 24.4,
-   "shot_share": 0.579,
-   "sh_pct": 0.096,
-   "sv_pct": 0.883,
-   "pdo": 97.9,
-   "pp_pct": 0.125,
-   "pk_pct": 0.873,
-   "reg_draw_rate": 0.071,
+   "reg_wins": 8,
+   "ot_wins": 0,
+   "otl": 2,
+   "l": 9,
+   "pts": 18,
+   "reg_w": 8,
+   "reg_d": 2,
+   "reg_l": 9,
+   "gf_pg": 2.84,
+   "ga_pg": 3.16,
+   "avg_reg_total": 5.89,
+   "sf_pg": 24.1,
+   "sa_pg": 28.5,
+   "shot_share": 0.458,
+   "sh_pct": 0.118,
+   "sv_pct": 0.906,
+   "pdo": 102.4,
+   "pp_pct": 0.171,
+   "pk_pct": 0.793,
+   "reg_draw_rate": 0.105,
    "over_rate_reg": {
-    "4.5": 0.929,
-    "5.5": 0.643,
-    "6.5": 0.5
+    "4.5": 0.684,
+    "5.5": 0.526,
+    "6.5": 0.368
    },
    "home": {
-    "gp": 9,
-    "w": 5,
+    "gp": 11,
+    "w": 4,
     "reg_wins": 4,
-    "ot_wins": 1,
-    "otl": 0,
-    "l": 4,
+    "ot_wins": 0,
+    "otl": 2,
+    "l": 5,
     "pts": 10,
     "reg_w": 4,
-    "reg_d": 1,
-    "reg_l": 4,
-    "gf_pg": 3.11,
-    "ga_pg": 3.56,
-    "avg_reg_total": 6.56
+    "reg_d": 2,
+    "reg_l": 5,
+    "gf_pg": 3.09,
+    "ga_pg": 3.73,
+    "avg_reg_total": 6.64
    },
    "away": {
-    "gp": 5,
-    "w": 3,
-    "reg_wins": 3,
+    "gp": 8,
+    "w": 4,
+    "reg_wins": 4,
     "ot_wins": 0,
     "otl": 0,
-    "l": 2,
-    "pts": 6,
-    "reg_w": 3,
+    "l": 4,
+    "pts": 8,
+    "reg_w": 4,
     "reg_d": 0,
-    "reg_l": 2,
-    "gf_pg": 3.4,
-    "ga_pg": 2.6,
-    "avg_reg_total": 6.0
+    "reg_l": 4,
+    "gf_pg": 2.5,
+    "ga_pg": 2.38,
+    "avg_reg_total": 4.88
    },
    "last10": {
     "gp": 10,
     "w": 5,
-    "reg_wins": 4,
-    "ot_wins": 1,
+    "reg_wins": 5,
+    "ot_wins": 0,
     "otl": 0,
     "l": 5,
     "pts": 10,
-    "reg_w": 4,
-    "reg_d": 1,
+    "reg_w": 5,
+    "reg_d": 0,
     "reg_l": 5,
-    "gf_pg": 3.1,
-    "ga_pg": 3.2,
-    "avg_reg_total": 6.2
+    "gf_pg": 2.7,
+    "ga_pg": 2.8,
+    "avg_reg_total": 5.5
    },
    "last10_log": [
-    "20261030 @ Toronto Marlies 3-5 L",
-    "20261101 vs Wilkes-Barre/Scranton 0-5 L",
-    "20261104 vs Hartford Wolf Pack 4-1 W",
-    "20261106 @ Springfield Thunderbirds 2-4 L",
-    "20261107 @ Springfield Thunderbirds 6-1 W",
-    "20261111 vs Hamilton Hammers 1-4 L",
-    "20261113 vs Wilkes-Barre/Scranton 4-3 OTW",
-    "20261115 vs Charlotte Checkers 4-3 W",
-    "20261120 vs Rochester Americans 4-5 L",
-    "20261121 @ Lehigh Valley Phantoms 3-1 W"
+    "20261101 vs Toronto Marlies 4-1 W",
+    "20261106 vs Lehigh Valley Phantoms 3-1 W",
+    "20261107 vs Providence Bruins 5-2 W",
+    "20261111 @ Utica Comets 0-1 L",
+    "20261114 vs Cleveland Monsters 1-3 L",
+    "20261115 vs Cleveland Monsters 3-1 W",
+    "20261118 vs Laval Rocket 4-8 L",
+    "20261120 @ Hamilton Hammers 2-0 W",
+    "20261121 @ Syracuse Crunch 2-4 L",
+    "20261125 vs Toronto Marlies 3-7 L"
    ],
-   "streak": "W1",
-   "last_game_date": "20261121",
-   "days_since_last": 5,
-   "last_was_b2b": true,
+   "streak": "L2",
+   "last_game_date": "20261125",
+   "days_since_last": 2,
+   "last_was_b2b": false,
    "rank_pts": 21
+  },
+  "Syracuse Crunch": {
+   "gp": 16,
+   "w": 7,
+   "reg_wins": 7,
+   "ot_wins": 0,
+   "otl": 3,
+   "l": 6,
+   "pts": 17,
+   "reg_w": 7,
+   "reg_d": 3,
+   "reg_l": 6,
+   "gf_pg": 2.88,
+   "ga_pg": 3.06,
+   "avg_reg_total": 5.75,
+   "sf_pg": 24.9,
+   "sa_pg": 24.7,
+   "shot_share": 0.502,
+   "sh_pct": 0.12,
+   "sv_pct": 0.884,
+   "pdo": 100.4,
+   "pp_pct": 0.102,
+   "pk_pct": 0.86,
+   "reg_draw_rate": 0.188,
+   "over_rate_reg": {
+    "4.5": 0.75,
+    "5.5": 0.562,
+    "6.5": 0.312
+   },
+   "home": {
+    "gp": 9,
+    "w": 3,
+    "reg_wins": 3,
+    "ot_wins": 0,
+    "otl": 3,
+    "l": 3,
+    "pts": 9,
+    "reg_w": 3,
+    "reg_d": 3,
+    "reg_l": 3,
+    "gf_pg": 2.67,
+    "ga_pg": 2.56,
+    "avg_reg_total": 4.89
+   },
+   "away": {
+    "gp": 7,
+    "w": 4,
+    "reg_wins": 4,
+    "ot_wins": 0,
+    "otl": 0,
+    "l": 3,
+    "pts": 8,
+    "reg_w": 4,
+    "reg_d": 0,
+    "reg_l": 3,
+    "gf_pg": 3.14,
+    "ga_pg": 3.71,
+    "avg_reg_total": 6.86
+   },
+   "last10": {
+    "gp": 10,
+    "w": 5,
+    "reg_wins": 5,
+    "ot_wins": 0,
+    "otl": 2,
+    "l": 3,
+    "pts": 12,
+    "reg_w": 5,
+    "reg_d": 2,
+    "reg_l": 3,
+    "gf_pg": 3.2,
+    "ga_pg": 2.6,
+    "avg_reg_total": 5.6
+   },
+   "last10_log": [
+    "20261024 @ Lehigh Valley Phantoms 7-2 W",
+    "20261030 vs Hamilton Hammers 7-0 W",
+    "20261106 @ Utica Comets 2-5 L",
+    "20261107 vs Hartford Wolf Pack 2-3 OTL",
+    "20261111 vs Laval Rocket 0-5 L",
+    "20261113 vs Toronto Marlies 2-3 OTL",
+    "20261114 @ Utica Comets 3-2 W",
+    "20261118 vs Rochester Americans 1-2 L",
+    "20261121 vs Belleville Senators 4-2 W",
+    "20261125 @ Hamilton Hammers 4-2 W"
+   ],
+   "streak": "W2",
+   "last_game_date": "20261125",
+   "days_since_last": 2,
+   "last_was_b2b": false,
+   "rank_pts": 22
   },
   "Cleveland Monsters": {
    "gp": 16,
@@ -2022,99 +2113,8 @@
    ],
    "streak": "W1",
    "last_game_date": "20261122",
-   "days_since_last": 4,
-   "last_was_b2b": true,
-   "rank_pts": 22
-  },
-  "Syracuse Crunch": {
-   "gp": 15,
-   "w": 6,
-   "reg_wins": 6,
-   "ot_wins": 0,
-   "otl": 3,
-   "l": 6,
-   "pts": 15,
-   "reg_w": 6,
-   "reg_d": 3,
-   "reg_l": 6,
-   "gf_pg": 2.8,
-   "ga_pg": 3.13,
-   "avg_reg_total": 5.73,
-   "sf_pg": 24.9,
-   "sa_pg": 24.6,
-   "shot_share": 0.504,
-   "sh_pct": 0.117,
-   "sv_pct": 0.881,
-   "pdo": 99.8,
-   "pp_pct": 0.108,
-   "pk_pct": 0.87,
-   "reg_draw_rate": 0.2,
-   "over_rate_reg": {
-    "4.5": 0.733,
-    "5.5": 0.533,
-    "6.5": 0.333
-   },
-   "home": {
-    "gp": 9,
-    "w": 3,
-    "reg_wins": 3,
-    "ot_wins": 0,
-    "otl": 3,
-    "l": 3,
-    "pts": 9,
-    "reg_w": 3,
-    "reg_d": 3,
-    "reg_l": 3,
-    "gf_pg": 2.67,
-    "ga_pg": 2.56,
-    "avg_reg_total": 4.89
-   },
-   "away": {
-    "gp": 6,
-    "w": 3,
-    "reg_wins": 3,
-    "ot_wins": 0,
-    "otl": 0,
-    "l": 3,
-    "pts": 6,
-    "reg_w": 3,
-    "reg_d": 0,
-    "reg_l": 3,
-    "gf_pg": 3.0,
-    "ga_pg": 4.0,
-    "avg_reg_total": 7.0
-   },
-   "last10": {
-    "gp": 10,
-    "w": 4,
-    "reg_wins": 4,
-    "ot_wins": 0,
-    "otl": 3,
-    "l": 3,
-    "pts": 11,
-    "reg_w": 4,
-    "reg_d": 3,
-    "reg_l": 3,
-    "gf_pg": 3.0,
-    "ga_pg": 2.7,
-    "avg_reg_total": 5.4
-   },
-   "last10_log": [
-    "20261023 vs Rochester Americans 2-3 OTL",
-    "20261024 @ Lehigh Valley Phantoms 7-2 W",
-    "20261030 vs Hamilton Hammers 7-0 W",
-    "20261106 @ Utica Comets 2-5 L",
-    "20261107 vs Hartford Wolf Pack 2-3 OTL",
-    "20261111 vs Laval Rocket 0-5 L",
-    "20261113 vs Toronto Marlies 2-3 OTL",
-    "20261114 @ Utica Comets 3-2 W",
-    "20261118 vs Rochester Americans 1-2 L",
-    "20261121 vs Belleville Senators 4-2 W"
-   ],
-   "streak": "W1",
-   "last_game_date": "20261121",
    "days_since_last": 5,
-   "last_was_b2b": false,
+   "last_was_b2b": true,
    "rank_pts": 23
   },
   "Iowa Wild": {
@@ -2204,52 +2204,52 @@
    ],
    "streak": "W1",
    "last_game_date": "20261121",
-   "days_since_last": 5,
+   "days_since_last": 6,
    "last_was_b2b": true,
    "rank_pts": 24
   },
   "Rockford IceHogs": {
-   "gp": 17,
+   "gp": 18,
    "w": 6,
    "reg_wins": 4,
    "ot_wins": 2,
    "otl": 1,
-   "l": 10,
+   "l": 11,
    "pts": 13,
    "reg_w": 4,
    "reg_d": 3,
-   "reg_l": 10,
-   "gf_pg": 2.29,
-   "ga_pg": 3.12,
-   "avg_reg_total": 5.24,
-   "sf_pg": 24.3,
-   "sa_pg": 27.4,
-   "shot_share": 0.47,
-   "sh_pct": 0.094,
-   "sv_pct": 0.899,
-   "pdo": 99.3,
-   "pp_pct": 0.129,
-   "pk_pct": 0.872,
-   "reg_draw_rate": 0.176,
+   "reg_l": 11,
+   "gf_pg": 2.17,
+   "ga_pg": 3.11,
+   "avg_reg_total": 5.11,
+   "sf_pg": 24.4,
+   "sa_pg": 26.9,
+   "shot_share": 0.476,
+   "sh_pct": 0.089,
+   "sv_pct": 0.898,
+   "pdo": 98.7,
+   "pp_pct": 0.12,
+   "pk_pct": 0.868,
+   "reg_draw_rate": 0.167,
    "over_rate_reg": {
-    "4.5": 0.529,
-    "5.5": 0.529,
-    "6.5": 0.294
+    "4.5": 0.5,
+    "5.5": 0.5,
+    "6.5": 0.278
    },
    "home": {
-    "gp": 8,
+    "gp": 9,
     "w": 3,
     "reg_wins": 2,
     "ot_wins": 1,
     "otl": 0,
-    "l": 5,
+    "l": 6,
     "pts": 6,
     "reg_w": 2,
     "reg_d": 1,
-    "reg_l": 5,
-    "gf_pg": 2.5,
-    "ga_pg": 3.38,
-    "avg_reg_total": 5.75
+    "reg_l": 6,
+    "gf_pg": 2.22,
+    "ga_pg": 3.33,
+    "avg_reg_total": 5.44
    },
    "away": {
     "gp": 9,
@@ -2277,12 +2277,11 @@
     "reg_w": 2,
     "reg_d": 2,
     "reg_l": 6,
-    "gf_pg": 2.5,
-    "ga_pg": 3.5,
-    "avg_reg_total": 5.8
+    "gf_pg": 2.2,
+    "ga_pg": 3.2,
+    "avg_reg_total": 5.2
    },
    "last10_log": [
-    "20261030 vs Manitoba Moose 3-6 L",
     "20261105 @ Iowa Wild 3-4 OTL",
     "20261107 vs Grand Rapids Griffins 6-4 W",
     "20261108 vs Iowa Wild 2-5 L",
@@ -2291,11 +2290,12 @@
     "20261114 vs Manitoba Moose 2-0 W",
     "20261117 vs Chicago Wolves 2-4 L",
     "20261120 @ Manitoba Moose 0-1 L",
-    "20261122 @ Manitoba Moose 1-3 L"
+    "20261122 @ Manitoba Moose 1-3 L",
+    "20261125 vs Milwaukee Admirals 0-3 L"
    ],
-   "streak": "L3",
-   "last_game_date": "20261122",
-   "days_since_last": 4,
+   "streak": "L4",
+   "last_game_date": "20261125",
+   "days_since_last": 2,
    "last_was_b2b": false,
    "rank_pts": 25
   },
@@ -2386,52 +2386,52 @@
    ],
    "streak": "L1",
    "last_game_date": "20261122",
-   "days_since_last": 4,
+   "days_since_last": 5,
    "last_was_b2b": true,
    "rank_pts": 26
   },
   "Lehigh Valley Phantoms": {
-   "gp": 17,
+   "gp": 18,
    "w": 6,
    "reg_wins": 4,
    "ot_wins": 2,
    "otl": 1,
-   "l": 10,
+   "l": 11,
    "pts": 13,
    "reg_w": 4,
    "reg_d": 3,
-   "reg_l": 10,
-   "gf_pg": 2.59,
-   "ga_pg": 3.82,
-   "avg_reg_total": 6.24,
-   "sf_pg": 27.4,
-   "sa_pg": 26.9,
-   "shot_share": 0.504,
-   "sh_pct": 0.095,
-   "sv_pct": 0.869,
-   "pdo": 96.4,
-   "pp_pct": 0.095,
-   "pk_pct": 0.86,
-   "reg_draw_rate": 0.176,
+   "reg_l": 11,
+   "gf_pg": 2.61,
+   "ga_pg": 3.89,
+   "avg_reg_total": 6.33,
+   "sf_pg": 28.1,
+   "sa_pg": 26.6,
+   "shot_share": 0.514,
+   "sh_pct": 0.093,
+   "sv_pct": 0.867,
+   "pdo": 96.0,
+   "pp_pct": 0.114,
+   "pk_pct": 0.856,
+   "reg_draw_rate": 0.167,
    "over_rate_reg": {
-    "4.5": 0.647,
-    "5.5": 0.588,
-    "6.5": 0.529
+    "4.5": 0.667,
+    "5.5": 0.611,
+    "6.5": 0.556
    },
    "home": {
-    "gp": 9,
+    "gp": 10,
     "w": 2,
     "reg_wins": 2,
     "ot_wins": 0,
     "otl": 1,
-    "l": 6,
+    "l": 7,
     "pts": 5,
     "reg_w": 2,
     "reg_d": 1,
-    "reg_l": 6,
-    "gf_pg": 1.89,
-    "ga_pg": 3.89,
-    "avg_reg_total": 5.67
+    "reg_l": 7,
+    "gf_pg": 2.0,
+    "ga_pg": 4.0,
+    "avg_reg_total": 5.9
    },
    "away": {
     "gp": 8,
@@ -2460,11 +2460,10 @@
     "reg_d": 1,
     "reg_l": 8,
     "gf_pg": 2.1,
-    "ga_pg": 4.2,
-    "avg_reg_total": 6.2
+    "ga_pg": 4.1,
+    "avg_reg_total": 6.1
    },
    "last10_log": [
-    "20261030 @ Rochester Americans 3-6 L",
     "20261101 vs Providence Bruins 0-8 L",
     "20261104 @ Laval Rocket 5-4 OTW",
     "20261106 @ Belleville Senators 1-3 L",
@@ -2473,56 +2472,57 @@
     "20261114 vs Charlotte Checkers 1-3 L",
     "20261115 @ Wilkes-Barre/Scranton 2-5 L",
     "20261120 vs Wilkes-Barre/Scranton 2-4 L",
-    "20261121 vs Hershey Bears 1-3 L"
+    "20261121 vs Hershey Bears 1-3 L",
+    "20261125 vs Providence Bruins 3-5 L"
    ],
-   "streak": "L4",
-   "last_game_date": "20261121",
-   "days_since_last": 5,
-   "last_was_b2b": true,
+   "streak": "L5",
+   "last_game_date": "20261125",
+   "days_since_last": 2,
+   "last_was_b2b": false,
    "rank_pts": 27
   },
   "San Jose Barracuda": {
-   "gp": 15,
+   "gp": 16,
    "w": 6,
    "reg_wins": 4,
    "ot_wins": 2,
    "otl": 0,
-   "l": 9,
+   "l": 10,
    "pts": 12,
    "reg_w": 4,
    "reg_d": 2,
-   "reg_l": 9,
-   "gf_pg": 2.67,
-   "ga_pg": 3.6,
-   "avg_reg_total": 6.13,
-   "sf_pg": 30.6,
-   "sa_pg": 27.7,
-   "shot_share": 0.525,
-   "sh_pct": 0.087,
-   "sv_pct": 0.885,
-   "pdo": 97.2,
-   "pp_pct": 0.127,
-   "pk_pct": 0.897,
-   "reg_draw_rate": 0.133,
+   "reg_l": 10,
+   "gf_pg": 2.81,
+   "ga_pg": 3.81,
+   "avg_reg_total": 6.5,
+   "sf_pg": 29.3,
+   "sa_pg": 26.6,
+   "shot_share": 0.524,
+   "sh_pct": 0.096,
+   "sv_pct": 0.877,
+   "pdo": 97.3,
+   "pp_pct": 0.149,
+   "pk_pct": 0.9,
+   "reg_draw_rate": 0.125,
    "over_rate_reg": {
-    "4.5": 0.733,
-    "5.5": 0.467,
-    "6.5": 0.467
+    "4.5": 0.75,
+    "5.5": 0.5,
+    "6.5": 0.5
    },
    "home": {
-    "gp": 9,
+    "gp": 10,
     "w": 4,
     "reg_wins": 3,
     "ot_wins": 1,
     "otl": 0,
-    "l": 5,
+    "l": 6,
     "pts": 8,
     "reg_w": 3,
     "reg_d": 1,
-    "reg_l": 5,
-    "gf_pg": 3.0,
-    "ga_pg": 3.89,
-    "avg_reg_total": 6.78
+    "reg_l": 6,
+    "gf_pg": 3.2,
+    "ga_pg": 4.2,
+    "avg_reg_total": 7.3
    },
    "away": {
     "gp": 6,
@@ -2550,12 +2550,11 @@
     "reg_w": 2,
     "reg_d": 2,
     "reg_l": 6,
-    "gf_pg": 2.1,
-    "ga_pg": 3.1,
-    "avg_reg_total": 5.0
+    "gf_pg": 2.5,
+    "ga_pg": 3.4,
+    "avg_reg_total": 5.7
    },
    "last10_log": [
-    "20261024 @ San Diego Gulls 1-4 L",
     "20261028 vs Abbotsford Canucks 2-5 L",
     "20261101 vs Bakersfield Condors 3-2 OTW",
     "20261104 @ Ontario Reign 3-2 OTW",
@@ -2564,56 +2563,57 @@
     "20261111 @ San Diego Gulls 1-4 L",
     "20261112 @ Coachella Valley Firebirds 1-2 L",
     "20261114 vs San Diego Gulls 5-4 W",
-    "20261118 @ Henderson Silver Knights 2-5 L"
+    "20261118 @ Henderson Silver Knights 2-5 L",
+    "20261125 vs Coachella Valley Firebirds 5-7 L"
    ],
-   "streak": "L1",
-   "last_game_date": "20261118",
-   "days_since_last": 8,
+   "streak": "L2",
+   "last_game_date": "20261125",
+   "days_since_last": 2,
    "last_was_b2b": false,
    "rank_pts": 28
   },
   "Hamilton Hammers": {
-   "gp": 18,
+   "gp": 19,
    "w": 5,
    "reg_wins": 3,
    "ot_wins": 2,
    "otl": 2,
-   "l": 11,
+   "l": 12,
    "pts": 12,
    "reg_w": 3,
    "reg_d": 4,
-   "reg_l": 11,
-   "gf_pg": 2.33,
-   "ga_pg": 3.72,
-   "avg_reg_total": 5.83,
-   "sf_pg": 23.1,
-   "sa_pg": 29.0,
-   "shot_share": 0.444,
-   "sh_pct": 0.104,
-   "sv_pct": 0.899,
-   "pdo": 100.3,
-   "pp_pct": 0.125,
-   "pk_pct": 0.864,
-   "reg_draw_rate": 0.222,
+   "reg_l": 12,
+   "gf_pg": 2.32,
+   "ga_pg": 3.74,
+   "avg_reg_total": 5.84,
+   "sf_pg": 23.3,
+   "sa_pg": 28.8,
+   "shot_share": 0.448,
+   "sh_pct": 0.102,
+   "sv_pct": 0.898,
+   "pdo": 100.0,
+   "pp_pct": 0.136,
+   "pk_pct": 0.872,
+   "reg_draw_rate": 0.211,
    "over_rate_reg": {
-    "4.5": 0.722,
-    "5.5": 0.556,
-    "6.5": 0.444
+    "4.5": 0.737,
+    "5.5": 0.579,
+    "6.5": 0.421
    },
    "home": {
-    "gp": 9,
+    "gp": 10,
     "w": 2,
     "reg_wins": 1,
     "ot_wins": 1,
     "otl": 1,
-    "l": 6,
+    "l": 7,
     "pts": 5,
     "reg_w": 1,
     "reg_d": 2,
-    "reg_l": 6,
-    "gf_pg": 2.89,
-    "ga_pg": 4.11,
-    "avg_reg_total": 6.78
+    "reg_l": 7,
+    "gf_pg": 2.8,
+    "ga_pg": 4.1,
+    "avg_reg_total": 6.7
    },
    "away": {
     "gp": 9,
@@ -2641,12 +2641,11 @@
     "reg_w": 2,
     "reg_d": 2,
     "reg_l": 6,
-    "gf_pg": 2.2,
-    "ga_pg": 3.6,
-    "avg_reg_total": 5.6
+    "gf_pg": 2.4,
+    "ga_pg": 3.3,
+    "avg_reg_total": 5.5
    },
    "last10_log": [
-    "20261030 @ Syracuse Crunch 0-7 L",
     "20261101 @ Utica Comets 2-3 OTL",
     "20261104 vs Toronto Marlies 1-5 L",
     "20261106 vs Providence Bruins 4-5 L",
@@ -2655,11 +2654,12 @@
     "20261113 @ Lehigh Valley Phantoms 0-3 L",
     "20261114 @ Wilkes-Barre/Scranton 3-2 OTW",
     "20261117 @ Cleveland Monsters 2-5 L",
-    "20261120 vs Belleville Senators 0-2 L"
+    "20261120 vs Belleville Senators 0-2 L",
+    "20261125 vs Syracuse Crunch 2-4 L"
    ],
-   "streak": "L2",
-   "last_game_date": "20261120",
-   "days_since_last": 6,
+   "streak": "L3",
+   "last_game_date": "20261125",
+   "days_since_last": 2,
    "last_was_b2b": false,
    "rank_pts": 29
   },
@@ -2750,7 +2750,7 @@
    ],
    "streak": "L4",
    "last_game_date": "20261122",
-   "days_since_last": 4,
+   "days_since_last": 5,
    "last_was_b2b": true,
    "rank_pts": 30
   },
@@ -2841,7 +2841,7 @@
    ],
    "streak": "W1",
    "last_game_date": "20261122",
-   "days_since_last": 4,
+   "days_since_last": 5,
    "last_was_b2b": false,
    "rank_pts": 31
   }
@@ -2850,15 +2850,15 @@
   "Abbotsford Canucks|ahl:9983": {
    "name": "N. Tolopilo",
    "team": "Abbotsford Canucks",
-   "starts": 10,
+   "starts": 11,
    "w": 7,
-   "gp_with_sv": 10,
-   "sv_pct": 0.9,
-   "gaa": 2.47,
+   "gp_with_sv": 11,
+   "sv_pct": 0.898,
+   "gaa": 2.6,
    "last5_starts": {
     "gp_with_sv": 5,
-    "sv_pct": 0.885,
-    "gaa": 2.57
+    "sv_pct": 0.875,
+    "gaa": 3.16
    },
    "home": {
     "gp_with_sv": 6,
@@ -2866,17 +2866,17 @@
     "gaa": 2.15
    },
    "away": {
-    "gp_with_sv": 4,
-    "sv_pct": 0.9,
-    "gaa": 2.94
+    "gp_with_sv": 5,
+    "sv_pct": 0.896,
+    "gaa": 3.15
    },
-   "last_start_date": "20261114",
+   "last_start_date": "20261125",
    "log": [
-    "20261030 @ Bakersfield Condors 18/19 W",
     "20261106 vs Ontario Reign 21/22 W",
     "20261110 vs Colorado Eagles 24/27 L",
     "20261111 vs Colorado Eagles 12/15 W",
-    "20261114 @ Ontario Reign 25/30 L"
+    "20261114 @ Ontario Reign 25/30 L",
+    "20261125 @ Henderson Silver Knights 30/34 L"
    ]
   },
   "Abbotsford Canucks|ahl:10454": {
@@ -3036,33 +3036,33 @@
   "Belleville Senators|ahl:10207": {
    "name": "J. Parsons",
    "team": "Belleville Senators",
-   "starts": 9,
+   "starts": 10,
    "w": 5,
-   "gp_with_sv": 9,
-   "sv_pct": 0.917,
-   "gaa": 2.46,
+   "gp_with_sv": 10,
+   "sv_pct": 0.901,
+   "gaa": 2.82,
    "last5_starts": {
     "gp_with_sv": 5,
-    "sv_pct": 0.947,
-    "gaa": 1.41
+    "sv_pct": 0.906,
+    "gaa": 2.21
    },
    "home": {
-    "gp_with_sv": 7,
-    "sv_pct": 0.917,
-    "gaa": 2.29
+    "gp_with_sv": 8,
+    "sv_pct": 0.896,
+    "gaa": 2.76
    },
    "away": {
     "gp_with_sv": 2,
     "sv_pct": 0.917,
     "gaa": 3.05
    },
-   "last_start_date": "20261115",
+   "last_start_date": "20261125",
    "log": [
-    "20261030 vs Hartford Wolf Pack 32/34 L",
     "20261101 vs Toronto Marlies 14/15 W",
     "20261106 vs Lehigh Valley Phantoms 34/35 W",
     "20261107 vs Providence Bruins 31/33 W",
-    "20261115 vs Cleveland Monsters 15/16 W"
+    "20261115 vs Cleveland Monsters 15/16 W",
+    "20261125 vs Toronto Marlies 12/18 L"
    ]
   },
   "Belleville Senators|ahl:6663": {
@@ -3472,15 +3472,15 @@
   "Coachella Valley Firebirds|ahl:10186": {
    "name": "N. Kokko",
    "team": "Coachella Valley Firebirds",
-   "starts": 9,
-   "w": 5,
-   "gp_with_sv": 9,
-   "sv_pct": 0.913,
-   "gaa": 2.46,
+   "starts": 10,
+   "w": 6,
+   "gp_with_sv": 10,
+   "sv_pct": 0.906,
+   "gaa": 2.72,
    "last5_starts": {
     "gp_with_sv": 5,
-    "sv_pct": 0.94,
-    "gaa": 1.85
+    "sv_pct": 0.934,
+    "gaa": 2.03
    },
    "home": {
     "gp_with_sv": 4,
@@ -3488,17 +3488,17 @@
     "gaa": 2.29
    },
    "away": {
-    "gp_with_sv": 5,
-    "sv_pct": 0.901,
-    "gaa": 2.6
+    "gp_with_sv": 6,
+    "sv_pct": 0.892,
+    "gaa": 3.0
    },
-   "last_start_date": "20261122",
+   "last_start_date": "20261125",
    "log": [
-    "20261023 vs San Jose Barracuda 29/33 L",
     "20261030 vs Henderson Silver Knights 25/26 W",
     "20261104 vs Colorado Eagles 27/28 W",
     "20261106 @ Tucson Roadrunners 28/30 L",
-    "20261122 @ Bakersfield Condors 31/32 W"
+    "20261122 @ Bakersfield Condors 31/32 W",
+    "20261125 @ San Jose Barracuda 31/36 W"
    ]
   },
   "Coachella Valley Firebirds|ahl:10126": {
@@ -3625,6 +3625,38 @@
     "20261017 @ Milwaukee Admirals 20/22 L"
    ]
   },
+  "Grand Rapids Griffins|ahl:11026": {
+   "name": "T. Augustine",
+   "team": "Grand Rapids Griffins",
+   "starts": 8,
+   "w": 5,
+   "gp_with_sv": 8,
+   "sv_pct": 0.927,
+   "gaa": 2.2,
+   "last5_starts": {
+    "gp_with_sv": 5,
+    "sv_pct": 0.938,
+    "gaa": 1.92
+   },
+   "home": {
+    "gp_with_sv": 3,
+    "sv_pct": 0.926,
+    "gaa": 2.27
+   },
+   "away": {
+    "gp_with_sv": 5,
+    "sv_pct": 0.927,
+    "gaa": 2.15
+   },
+   "last_start_date": "20261125",
+   "log": [
+    "20261023 vs Cleveland Monsters 36/38 L",
+    "20261106 vs Milwaukee Admirals 25/27 W",
+    "20261113 @ Iowa Wild 31/31 W",
+    "20261121 @ Colorado Eagles 20/24 W",
+    "20261125 @ Manitoba Moose 40/42 L"
+   ]
+  },
   "Grand Rapids Griffins|ahl:10748": {
    "name": "M. Postava",
    "team": "Grand Rapids Griffins",
@@ -3655,38 +3687,6 @@
     "20261111 vs Rockford IceHogs 25/28 W",
     "20261114 @ Iowa Wild 24/24 W",
     "20261124 @ Manitoba Moose 26/28 W"
-   ]
-  },
-  "Grand Rapids Griffins|ahl:11026": {
-   "name": "T. Augustine",
-   "team": "Grand Rapids Griffins",
-   "starts": 7,
-   "w": 5,
-   "gp_with_sv": 7,
-   "sv_pct": 0.921,
-   "gaa": 2.25,
-   "last5_starts": {
-    "gp_with_sv": 5,
-    "sv_pct": 0.926,
-    "gaa": 2.15
-   },
-   "home": {
-    "gp_with_sv": 3,
-    "sv_pct": 0.926,
-    "gaa": 2.27
-   },
-   "away": {
-    "gp_with_sv": 4,
-    "sv_pct": 0.917,
-    "gaa": 2.23
-   },
-   "last_start_date": "20261121",
-   "log": [
-    "20261021 vs Manitoba Moose 26/29 W",
-    "20261023 vs Cleveland Monsters 36/38 L",
-    "20261106 vs Milwaukee Admirals 25/27 W",
-    "20261113 @ Iowa Wild 31/31 W",
-    "20261121 @ Colorado Eagles 20/24 W"
    ]
   },
   "Grand Rapids Griffins|ahl:10038": {
@@ -3753,33 +3753,33 @@
   "Hamilton Hammers|ahl:11011": {
    "name": "J. Kotai",
    "team": "Hamilton Hammers",
-   "starts": 7,
+   "starts": 8,
    "w": 3,
-   "gp_with_sv": 7,
-   "sv_pct": 0.909,
-   "gaa": 2.84,
+   "gp_with_sv": 8,
+   "sv_pct": 0.905,
+   "gaa": 2.87,
    "last5_starts": {
     "gp_with_sv": 5,
-    "sv_pct": 0.901,
-    "gaa": 3.15
+    "sv_pct": 0.902,
+    "gaa": 2.98
    },
    "home": {
-    "gp_with_sv": 4,
-    "sv_pct": 0.881,
-    "gaa": 3.53
+    "gp_with_sv": 5,
+    "sv_pct": 0.88,
+    "gaa": 3.44
    },
    "away": {
     "gp_with_sv": 3,
     "sv_pct": 0.941,
     "gaa": 1.95
    },
-   "last_start_date": "20261113",
+   "last_start_date": "20261125",
    "log": [
-    "20261029 vs Hartford Wolf Pack 29/33 W",
     "20261101 @ Utica Comets 35/37 L",
     "20261104 vs Toronto Marlies 22/26 L",
     "20261107 vs Lehigh Valley Phantoms 33/36 W",
-    "20261113 @ Lehigh Valley Phantoms 27/30 L"
+    "20261113 @ Lehigh Valley Phantoms 27/30 L",
+    "20261125 vs Syracuse Crunch 21/24 L"
    ]
   },
   "Hartford Wolf Pack|ahl:10570": {
@@ -3874,6 +3874,35 @@
     "20261017 @ Charlotte Checkers 26/30 L"
    ]
   },
+  "Hartford Wolf Pack|ahl:8770": {
+   "name": "A. Söderblom",
+   "team": "Hartford Wolf Pack",
+   "starts": 2,
+   "w": 2,
+   "gp_with_sv": 2,
+   "sv_pct": 0.938,
+   "gaa": 1.5,
+   "last5_starts": {
+    "gp_with_sv": 2,
+    "sv_pct": 0.938,
+    "gaa": 1.5
+   },
+   "home": {
+    "gp_with_sv": 1,
+    "sv_pct": 0.917,
+    "gaa": 2.0
+   },
+   "away": {
+    "gp_with_sv": 1,
+    "sv_pct": 0.958,
+    "gaa": 1.0
+   },
+   "last_start_date": "20261125",
+   "log": [
+    "20261121 vs Milwaukee Admirals 22/24 W",
+    "20261125 @ Utica Comets 23/24 W"
+   ]
+  },
   "Hartford Wolf Pack|ahl:2519": {
    "name": "J. Reimer",
    "team": "Hartford Wolf Pack",
@@ -3930,64 +3959,36 @@
     "20261104 @ Hershey Bears 34/37 L"
    ]
   },
-  "Hartford Wolf Pack|ahl:8770": {
-   "name": "A. Söderblom",
-   "team": "Hartford Wolf Pack",
-   "starts": 1,
-   "w": 1,
-   "gp_with_sv": 1,
-   "sv_pct": 0.917,
-   "gaa": 2.0,
-   "last5_starts": {
-    "gp_with_sv": 1,
-    "sv_pct": 0.917,
-    "gaa": 2.0
-   },
-   "home": {
-    "gp_with_sv": 1,
-    "sv_pct": 0.917,
-    "gaa": 2.0
-   },
-   "away": {
-    "gp_with_sv": 0,
-    "sv_pct": null,
-    "gaa": null
-   },
-   "last_start_date": "20261121",
-   "log": [
-    "20261121 vs Milwaukee Admirals 22/24 W"
-   ]
-  },
   "Henderson Silver Knights|ahl:10279": {
    "name": "C. Lindbom",
    "team": "Henderson Silver Knights",
-   "starts": 6,
-   "w": 3,
-   "gp_with_sv": 6,
-   "sv_pct": 0.952,
+   "starts": 7,
+   "w": 4,
+   "gp_with_sv": 7,
+   "sv_pct": 0.953,
    "gaa": 1.06,
    "last5_starts": {
     "gp_with_sv": 5,
-    "sv_pct": 0.952,
-    "gaa": 1.07
+    "sv_pct": 0.942,
+    "gaa": 1.28
    },
    "home": {
-    "gp_with_sv": 3,
-    "sv_pct": 0.959,
-    "gaa": 1.02
+    "gp_with_sv": 4,
+    "sv_pct": 0.96,
+    "gaa": 1.01
    },
    "away": {
     "gp_with_sv": 3,
     "sv_pct": 0.94,
     "gaa": 1.12
    },
-   "last_start_date": "20261122",
+   "last_start_date": "20261125",
    "log": [
-    "20261014 vs Coachella Valley Firebirds 26/26 W",
     "20261017 @ Ontario Reign 9/10 W",
     "20261106 vs San Diego Gulls 31/31 W",
     "20261112 vs Calgary Wranglers 14/17 L",
-    "20261122 @ Ontario Reign 19/20 L"
+    "20261122 @ Ontario Reign 19/20 L",
+    "20261125 vs Abbotsford Canucks 24/25 W"
    ]
   },
   "Henderson Silver Knights|ahl:10578": {
@@ -4114,6 +4115,34 @@
     "20261104 vs Hartford Wolf Pack 14/15 W",
     "20261107 @ Springfield Thunderbirds 20/21 W",
     "20261111 vs Hamilton Hammers 22/25 L"
+   ]
+  },
+  "Hershey Bears|ahl:9103": {
+   "name": "C. Stevenson",
+   "team": "Hershey Bears",
+   "starts": 1,
+   "w": 1,
+   "gp_with_sv": 1,
+   "sv_pct": 0.966,
+   "gaa": 1.0,
+   "last5_starts": {
+    "gp_with_sv": 1,
+    "sv_pct": 0.966,
+    "gaa": 1.0
+   },
+   "home": {
+    "gp_with_sv": 1,
+    "sv_pct": 0.966,
+    "gaa": 1.0
+   },
+   "away": {
+    "gp_with_sv": 0,
+    "sv_pct": null,
+    "gaa": null
+   },
+   "last_start_date": "20261125",
+   "log": [
+    "20261125 vs Wilkes-Barre/Scranton 28/29 W"
    ]
   },
   "Iowa Wild|ahl:10305": {
@@ -4272,6 +4301,38 @@
     "20261113 @ Rochester Americans 25/26 W"
    ]
   },
+  "Lehigh Valley Phantoms|ahl:10092": {
+   "name": "A. Kolosov",
+   "team": "Lehigh Valley Phantoms",
+   "starts": 9,
+   "w": 3,
+   "gp_with_sv": 9,
+   "sv_pct": 0.887,
+   "gaa": 3.19,
+   "last5_starts": {
+    "gp_with_sv": 5,
+    "sv_pct": 0.892,
+    "gaa": 2.9
+   },
+   "home": {
+    "gp_with_sv": 6,
+    "sv_pct": 0.877,
+    "gaa": 3.23
+   },
+   "away": {
+    "gp_with_sv": 3,
+    "sv_pct": 0.902,
+    "gaa": 3.1
+   },
+   "last_start_date": "20261125",
+   "log": [
+    "20261106 @ Belleville Senators 28/31 L",
+    "20261113 vs Hamilton Hammers 15/15 W",
+    "20261115 @ Wilkes-Barre/Scranton 25/29 L",
+    "20261121 vs Hershey Bears 31/34 L",
+    "20261125 vs Providence Bruins 17/21 L"
+   ]
+  },
   "Lehigh Valley Phantoms|ahl:10625": {
    "name": "C. Bjarnason",
    "team": "Lehigh Valley Phantoms",
@@ -4304,68 +4365,36 @@
     "20261114 vs Charlotte Checkers 23/26 L"
    ]
   },
-  "Lehigh Valley Phantoms|ahl:10092": {
-   "name": "A. Kolosov",
-   "team": "Lehigh Valley Phantoms",
-   "starts": 8,
-   "w": 3,
-   "gp_with_sv": 8,
-   "sv_pct": 0.894,
-   "gaa": 3.07,
-   "last5_starts": {
-    "gp_with_sv": 5,
-    "sv_pct": 0.872,
-    "gaa": 3.71
-   },
-   "home": {
-    "gp_with_sv": 5,
-    "sv_pct": 0.888,
-    "gaa": 3.06
-   },
-   "away": {
-    "gp_with_sv": 3,
-    "sv_pct": 0.902,
-    "gaa": 3.1
-   },
-   "last_start_date": "20261121",
-   "log": [
-    "20261101 vs Providence Bruins 24/32 L",
-    "20261106 @ Belleville Senators 28/31 L",
-    "20261113 vs Hamilton Hammers 15/15 W",
-    "20261115 @ Wilkes-Barre/Scranton 25/29 L",
-    "20261121 vs Hershey Bears 31/34 L"
-   ]
-  },
   "Manitoba Moose|ahl:10447": {
    "name": "D. DiVincentiis",
    "team": "Manitoba Moose",
-   "starts": 7,
-   "w": 3,
-   "gp_with_sv": 7,
-   "sv_pct": 0.929,
+   "starts": 8,
+   "w": 4,
+   "gp_with_sv": 8,
+   "sv_pct": 0.93,
    "gaa": 1.88,
    "last5_starts": {
     "gp_with_sv": 5,
-    "sv_pct": 0.941,
-    "gaa": 1.41
+    "sv_pct": 0.921,
+    "gaa": 1.79
    },
    "home": {
-    "gp_with_sv": 2,
-    "sv_pct": 0.952,
-    "gaa": 1.0
+    "gp_with_sv": 3,
+    "sv_pct": 0.944,
+    "gaa": 1.3
    },
    "away": {
     "gp_with_sv": 5,
     "sv_pct": 0.922,
     "gaa": 2.24
    },
-   "last_start_date": "20261122",
+   "last_start_date": "20261125",
    "log": [
-    "20261024 @ Iowa Wild 34/34 W",
     "20261028 @ Milwaukee Admirals 22/25 L",
     "20261106 vs Toronto Marlies 23/24 W",
     "20261114 @ Rockford IceHogs 15/17 L",
-    "20261122 vs Rockford IceHogs 17/18 W"
+    "20261122 vs Rockford IceHogs 17/18 W",
+    "20261125 vs Grand Rapids Griffins 28/30 W"
    ]
   },
   "Manitoba Moose|ahl:10000": {
@@ -4403,15 +4432,15 @@
   "Milwaukee Admirals|ahl:9102": {
    "name": "M. Murray",
    "team": "Milwaukee Admirals",
-   "starts": 9,
-   "w": 6,
-   "gp_with_sv": 9,
-   "sv_pct": 0.92,
-   "gaa": 2.2,
+   "starts": 10,
+   "w": 7,
+   "gp_with_sv": 10,
+   "sv_pct": 0.928,
+   "gaa": 1.98,
    "last5_starts": {
     "gp_with_sv": 5,
-    "sv_pct": 0.881,
-    "gaa": 3.22
+    "sv_pct": 0.921,
+    "gaa": 2.21
    },
    "home": {
     "gp_with_sv": 5,
@@ -4419,17 +4448,17 @@
     "gaa": 0.98
    },
    "away": {
-    "gp_with_sv": 4,
-    "sv_pct": 0.871,
-    "gaa": 3.78
+    "gp_with_sv": 5,
+    "sv_pct": 0.895,
+    "gaa": 3.02
    },
-   "last_start_date": "20261121",
+   "last_start_date": "20261125",
    "log": [
-    "20261030 @ Cleveland Monsters 18/23 L",
     "20261106 @ Grand Rapids Griffins 22/25 L",
     "20261110 vs Iowa Wild 24/25 W",
     "20261114 vs Chicago Wolves 23/25 W",
-    "20261121 @ Hartford Wolf Pack 32/37 L"
+    "20261121 @ Hartford Wolf Pack 32/37 L",
+    "20261125 @ Rockford IceHogs 27/27 W"
    ]
   },
   "Milwaukee Admirals|ahl:10589": {
@@ -4560,15 +4589,15 @@
   "Providence Bruins|ahl:7645": {
    "name": "J. Patera",
    "team": "Providence Bruins",
-   "starts": 9,
-   "w": 6,
-   "gp_with_sv": 9,
+   "starts": 10,
+   "w": 7,
+   "gp_with_sv": 10,
    "sv_pct": 0.927,
-   "gaa": 2.1,
+   "gaa": 2.19,
    "last5_starts": {
     "gp_with_sv": 5,
-    "sv_pct": 0.937,
-    "gaa": 1.77
+    "sv_pct": 0.926,
+    "gaa": 2.36
    },
    "home": {
     "gp_with_sv": 5,
@@ -4576,17 +4605,17 @@
     "gaa": 2.18
    },
    "away": {
-    "gp_with_sv": 4,
-    "sv_pct": 0.931,
-    "gaa": 2.0
+    "gp_with_sv": 5,
+    "sv_pct": 0.93,
+    "gaa": 2.2
    },
-   "last_start_date": "20261121",
+   "last_start_date": "20261125",
    "log": [
-    "20261101 @ Lehigh Valley Phantoms 21/21 W",
     "20261107 @ Belleville Senators 27/32 L",
     "20261111 @ Charlotte Checkers 33/35 W",
     "20261113 vs Springfield Thunderbirds 19/21 W",
-    "20261121 vs Charlotte Checkers 34/34 W"
+    "20261121 vs Charlotte Checkers 34/34 W",
+    "20261125 @ Lehigh Valley Phantoms 38/41 W"
    ]
   },
   "Providence Bruins|ahl:10871": {
@@ -4686,33 +4715,33 @@
   "Rockford IceHogs|ahl:10766": {
    "name": "S. Berezhnoy",
    "team": "Rockford IceHogs",
-   "starts": 7,
+   "starts": 8,
    "w": 3,
-   "gp_with_sv": 7,
-   "sv_pct": 0.889,
-   "gaa": 3.48,
+   "gp_with_sv": 8,
+   "sv_pct": 0.888,
+   "gaa": 3.32,
    "last5_starts": {
     "gp_with_sv": 5,
-    "sv_pct": 0.869,
-    "gaa": 4.05
+    "sv_pct": 0.851,
+    "gaa": 4.11
    },
    "home": {
-    "gp_with_sv": 4,
-    "sv_pct": 0.87,
-    "gaa": 4.09
+    "gp_with_sv": 5,
+    "sv_pct": 0.871,
+    "gaa": 3.71
    },
    "away": {
     "gp_with_sv": 3,
     "sv_pct": 0.914,
     "gaa": 2.68
    },
-   "last_start_date": "20261111",
+   "last_start_date": "20261125",
    "log": [
-    "20261024 @ Toronto Marlies 34/36 W",
     "20261030 vs Manitoba Moose 26/31 L",
     "20261107 vs Grand Rapids Griffins 20/24 W",
     "20261108 vs Iowa Wild 28/32 L",
-    "20261111 @ Grand Rapids Griffins 25/30 L"
+    "20261111 @ Grand Rapids Griffins 25/30 L",
+    "20261125 vs Milwaukee Admirals 15/17 L"
    ]
   },
   "Rockford IceHogs|ahl:9717": {
@@ -4933,31 +4962,32 @@
   "San Jose Barracuda|ahl:7343": {
    "name": "I. Samsonov",
    "team": "San Jose Barracuda",
-   "starts": 3,
+   "starts": 4,
    "w": 2,
-   "gp_with_sv": 3,
-   "sv_pct": 0.917,
-   "gaa": 2.01,
+   "gp_with_sv": 4,
+   "sv_pct": 0.876,
+   "gaa": 3.3,
    "last5_starts": {
-    "gp_with_sv": 3,
-    "sv_pct": 0.917,
-    "gaa": 2.01
+    "gp_with_sv": 4,
+    "sv_pct": 0.876,
+    "gaa": 3.3
    },
    "home": {
-    "gp_with_sv": 2,
-    "sv_pct": 0.917,
-    "gaa": 2.01
+    "gp_with_sv": 3,
+    "sv_pct": 0.864,
+    "gaa": 3.75
    },
    "away": {
     "gp_with_sv": 1,
     "sv_pct": 0.917,
     "gaa": 2.0
    },
-   "last_start_date": "20261107",
+   "last_start_date": "20261125",
    "log": [
     "20261023 @ Coachella Valley Firebirds 22/24 W",
     "20261028 vs Abbotsford Canucks 21/25 L",
-    "20261107 vs Bakersfield Condors 23/23 W"
+    "20261107 vs Bakersfield Condors 23/23 W",
+    "20261125 vs Coachella Valley Firebirds 26/33 L"
    ]
   },
   "San Jose Barracuda|ahl:10646": {
@@ -5056,15 +5086,15 @@
   "Syracuse Crunch|ahl:7785": {
    "name": "M. Søgaard",
    "team": "Syracuse Crunch",
-   "starts": 8,
-   "w": 3,
-   "gp_with_sv": 8,
-   "sv_pct": 0.878,
-   "gaa": 2.96,
+   "starts": 9,
+   "w": 4,
+   "gp_with_sv": 9,
+   "sv_pct": 0.884,
+   "gaa": 2.85,
    "last5_starts": {
     "gp_with_sv": 5,
-    "sv_pct": 0.874,
-    "gaa": 2.91
+    "sv_pct": 0.885,
+    "gaa": 2.71
    },
    "home": {
     "gp_with_sv": 6,
@@ -5072,17 +5102,17 @@
     "gaa": 2.59
    },
    "away": {
-    "gp_with_sv": 2,
-    "sv_pct": 0.857,
-    "gaa": 4.05
+    "gp_with_sv": 3,
+    "sv_pct": 0.88,
+    "gaa": 3.36
    },
-   "last_start_date": "20261121",
+   "last_start_date": "20261125",
    "log": [
-    "20261023 vs Rochester Americans 22/25 L",
     "20261030 vs Hamilton Hammers 21/21 W",
     "20261106 @ Utica Comets 16/20 L",
     "20261111 vs Laval Rocket 17/22 L",
-    "20261121 vs Belleville Senators 21/23 W"
+    "20261121 vs Belleville Senators 21/23 W",
+    "20261125 @ Hamilton Hammers 25/27 W"
    ]
   },
   "Syracuse Crunch|ahl:8484": {
@@ -5117,6 +5147,38 @@
     "20261114 @ Utica Comets 31/33 W"
    ]
   },
+  "Toronto Marlies|ahl:10304": {
+   "name": "S. Hlavaj",
+   "team": "Toronto Marlies",
+   "starts": 9,
+   "w": 7,
+   "gp_with_sv": 9,
+   "sv_pct": 0.902,
+   "gaa": 2.54,
+   "last5_starts": {
+    "gp_with_sv": 5,
+    "sv_pct": 0.898,
+    "gaa": 2.58
+   },
+   "home": {
+    "gp_with_sv": 3,
+    "sv_pct": 0.932,
+    "gaa": 1.67
+   },
+   "away": {
+    "gp_with_sv": 6,
+    "sv_pct": 0.887,
+    "gaa": 2.96
+   },
+   "last_start_date": "20261125",
+   "log": [
+    "20261104 @ Hamilton Hammers 23/24 W",
+    "20261107 @ Manitoba Moose 26/30 L",
+    "20261115 @ Providence Bruins 22/26 L",
+    "20261122 vs Chicago Wolves 15/16 W",
+    "20261125 @ Belleville Senators 28/31 W"
+   ]
+  },
   "Toronto Marlies|ahl:10427": {
    "name": "A. Akhtyamov",
    "team": "Toronto Marlies",
@@ -5147,38 +5209,6 @@
     "20261106 @ Manitoba Moose 24/26 L",
     "20261113 @ Syracuse Crunch 14/16 W",
     "20261121 vs Chicago Wolves 25/26 L"
-   ]
-  },
-  "Toronto Marlies|ahl:10304": {
-   "name": "S. Hlavaj",
-   "team": "Toronto Marlies",
-   "starts": 8,
-   "w": 6,
-   "gp_with_sv": 8,
-   "sv_pct": 0.901,
-   "gaa": 2.48,
-   "last5_starts": {
-    "gp_with_sv": 5,
-    "sv_pct": 0.898,
-    "gaa": 2.58
-   },
-   "home": {
-    "gp_with_sv": 3,
-    "sv_pct": 0.932,
-    "gaa": 1.67
-   },
-   "away": {
-    "gp_with_sv": 5,
-    "sv_pct": 0.884,
-    "gaa": 2.95
-   },
-   "last_start_date": "20261122",
-   "log": [
-    "20261030 vs Hershey Bears 28/31 W",
-    "20261104 @ Hamilton Hammers 23/24 W",
-    "20261107 @ Manitoba Moose 26/30 L",
-    "20261115 @ Providence Bruins 22/26 L",
-    "20261122 vs Chicago Wolves 15/16 W"
    ]
   },
   "Tucson Roadrunners|ahl:11012": {
@@ -5248,33 +5278,33 @@
   "Utica Comets|ahl:6479": {
    "name": "D. Rittich",
    "team": "Utica Comets",
-   "starts": 8,
+   "starts": 9,
    "w": 6,
-   "gp_with_sv": 8,
-   "sv_pct": 0.905,
-   "gaa": 2.27,
+   "gp_with_sv": 9,
+   "sv_pct": 0.902,
+   "gaa": 2.25,
    "last5_starts": {
     "gp_with_sv": 5,
-    "sv_pct": 0.921,
-    "gaa": 1.81
+    "sv_pct": 0.924,
+    "gaa": 1.62
    },
    "home": {
-    "gp_with_sv": 3,
-    "sv_pct": 0.877,
-    "gaa": 2.69
+    "gp_with_sv": 4,
+    "sv_pct": 0.873,
+    "gaa": 2.54
    },
    "away": {
     "gp_with_sv": 5,
     "sv_pct": 0.92,
     "gaa": 2.02
    },
-   "last_start_date": "20261121",
+   "last_start_date": "20261125",
    "log": [
-    "20261030 vs Wilkes-Barre/Scranton 20/23 W",
     "20261106 vs Syracuse Crunch 24/26 W",
     "20261110 @ Wilkes-Barre/Scranton 25/25 W",
     "20261114 vs Syracuse Crunch 13/16 L",
-    "20261121 @ Cleveland Monsters 23/24 W"
+    "20261121 @ Cleveland Monsters 23/24 W",
+    "20261125 vs Hartford Wolf Pack 12/14 L"
    ]
   },
   "Utica Comets|ahl:10818": {
@@ -5344,15 +5374,15 @@
   "Wilkes-Barre/Scranton|ahl:9373": {
    "name": "T. Gauthier",
    "team": "Wilkes-Barre/Scranton",
-   "starts": 7,
+   "starts": 8,
    "w": 6,
-   "gp_with_sv": 7,
-   "sv_pct": 0.939,
-   "gaa": 2.25,
+   "gp_with_sv": 8,
+   "sv_pct": 0.923,
+   "gaa": 2.72,
    "last5_starts": {
     "gp_with_sv": 5,
-    "sv_pct": 0.942,
-    "gaa": 2.15
+    "sv_pct": 0.92,
+    "gaa": 2.94
    },
    "home": {
     "gp_with_sv": 2,
@@ -5360,17 +5390,17 @@
     "gaa": 2.0
    },
    "away": {
-    "gp_with_sv": 5,
-    "sv_pct": 0.938,
-    "gaa": 2.35
+    "gp_with_sv": 6,
+    "sv_pct": 0.917,
+    "gaa": 2.95
    },
-   "last_start_date": "20261115",
+   "last_start_date": "20261125",
    "log": [
-    "20261024 vs Hartford Wolf Pack 25/27 W",
     "20261101 @ Hershey Bears 43/43 W",
     "20261106 @ Charlotte Checkers 29/32 W",
     "20261113 @ Hershey Bears 43/47 L",
-    "20261115 vs Lehigh Valley Phantoms 40/42 W"
+    "20261115 vs Lehigh Valley Phantoms 40/42 W",
+    "20261125 @ Hershey Bears 18/24 L"
    ]
   }
  },
@@ -5383,13 +5413,13 @@
     "pts": 24
    },
    {
-    "name": "Bear C.",
-    "g": 6,
+    "name": "Shine D.",
+    "g": 7,
     "a": 14,
-    "pts": 20
+    "pts": 21
    },
    {
-    "name": "Shine D.",
+    "name": "Bear C.",
     "g": 6,
     "a": 14,
     "pts": 20
@@ -5401,13 +5431,13 @@
     "pts": 18
    },
    {
-    "name": "Becher O.",
+    "name": "Sandin-Pellikka A.",
     "g": 3,
-    "a": 8,
-    "pts": 11
+    "a": 9,
+    "pts": 12
    },
    {
-    "name": "Sandin-Pellikka A.",
+    "name": "Becher O.",
     "g": 3,
     "a": 8,
     "pts": 11
@@ -5416,21 +5446,21 @@
   "Manitoba Moose": [
    {
     "name": "Gregor N.",
-    "g": 9,
-    "a": 9,
-    "pts": 18
+    "g": 10,
+    "a": 10,
+    "pts": 20
    },
    {
     "name": "Zhilkin D.",
-    "g": 4,
-    "a": 11,
-    "pts": 15
+    "g": 5,
+    "a": 12,
+    "pts": 17
    },
    {
     "name": "Ford P.",
     "g": 6,
-    "a": 6,
-    "pts": 12
+    "a": 7,
+    "pts": 13
    },
    {
     "name": "Yoder C.",
@@ -5454,9 +5484,9 @@
   "Hamilton Hammers": [
    {
     "name": "Engvall P.",
-    "g": 6,
+    "g": 7,
     "a": 8,
-    "pts": 14
+    "pts": 15
    },
    {
     "name": "Foudy L.",
@@ -5473,8 +5503,8 @@
    {
     "name": "Finley Q.",
     "g": 4,
-    "a": 6,
-    "pts": 10
+    "a": 8,
+    "pts": 12
    },
    {
     "name": "Bear E.",
@@ -5493,38 +5523,38 @@
    {
     "name": "Shaw L.",
     "g": 6,
-    "a": 12,
-    "pts": 18
+    "a": 13,
+    "pts": 19
+   },
+   {
+    "name": "Lettieri V.",
+    "g": 9,
+    "a": 8,
+    "pts": 17
    },
    {
     "name": "Brisson B.",
+    "g": 7,
+    "a": 8,
+    "pts": 15
+   },
+   {
+    "name": "Haymes L.",
     "g": 6,
     "a": 8,
     "pts": 14
    },
    {
-    "name": "Lettieri V.",
-    "g": 7,
-    "a": 6,
+    "name": "Chadwick N.",
+    "g": 3,
+    "a": 10,
     "pts": 13
    },
    {
     "name": "Borgesi V.",
-    "g": 1,
+    "g": 2,
     "a": 10,
-    "pts": 11
-   },
-   {
-    "name": "Haymes L.",
-    "g": 4,
-    "a": 6,
-    "pts": 10
-   },
-   {
-    "name": "Chadwick N.",
-    "g": 3,
-    "a": 6,
-    "pts": 9
+    "pts": 12
    }
   ],
   "Hartford Wolf Pack": [
@@ -5549,20 +5579,20 @@
    {
     "name": "Del Gaizo M.",
     "g": 3,
-    "a": 8,
-    "pts": 11
+    "a": 10,
+    "pts": 13
    },
    {
     "name": "Parssinen J.",
-    "g": 3,
-    "a": 7,
-    "pts": 10
+    "g": 4,
+    "a": 8,
+    "pts": 12
    },
    {
     "name": "Aspinall N.",
     "g": 1,
-    "a": 9,
-    "pts": 10
+    "a": 11,
+    "pts": 12
    }
   ],
   "Rochester Americans": [
@@ -5606,9 +5636,9 @@
   "Syracuse Crunch": [
    {
     "name": "Abruzzese N.",
-    "g": 2,
+    "g": 3,
     "a": 14,
-    "pts": 16
+    "pts": 17
    },
    {
     "name": "Pelletier J.",
@@ -5619,26 +5649,26 @@
    {
     "name": "Mercuri L.",
     "g": 4,
-    "a": 5,
-    "pts": 9
+    "a": 6,
+    "pts": 10
    },
    {
     "name": "Duke D.",
-    "g": 2,
+    "g": 3,
     "a": 7,
-    "pts": 9
+    "pts": 10
    },
    {
     "name": "Gauthier E.",
     "g": 3,
-    "a": 4,
-    "pts": 7
+    "a": 6,
+    "pts": 9
    },
    {
-    "name": "Szturc G.",
+    "name": "James D.",
     "g": 3,
-    "a": 3,
-    "pts": 6
+    "a": 6,
+    "pts": 9
    }
   ],
   "Rockford IceHogs": [
@@ -5909,57 +5939,63 @@
   ],
   "Coachella Valley Firebirds": [
    {
+    "name": "Morrison L.",
+    "g": 5,
+    "a": 12,
+    "pts": 17
+   },
+   {
+    "name": "Firkus J.",
+    "g": 5,
+    "a": 9,
+    "pts": 14
+   },
+   {
     "name": "Avon J.",
     "g": 3,
     "a": 10,
     "pts": 13
    },
    {
-    "name": "Morrison L.",
-    "g": 4,
-    "a": 8,
-    "pts": 12
+    "name": "Jugnauth T.",
+    "g": 0,
+    "a": 11,
+    "pts": 11
    },
    {
-    "name": "Firkus J.",
-    "g": 3,
-    "a": 8,
-    "pts": 11
+    "name": "Nelson T.",
+    "g": 6,
+    "a": 4,
+    "pts": 10
    },
    {
     "name": "Miettinen J.",
     "g": 3,
     "a": 7,
     "pts": 10
-   },
-   {
-    "name": "Jugnauth T.",
-    "g": 0,
-    "a": 10,
-    "pts": 10
-   },
-   {
-    "name": "Stephens M.",
-    "g": 7,
-    "a": 1,
-    "pts": 8
    }
   ],
   "San Jose Barracuda": [
    {
     "name": "Huntington J.",
+    "g": 5,
+    "a": 7,
+    "pts": 12
+   },
+   {
+    "name": "Barre-Boulet A.",
     "g": 4,
     "a": 7,
     "pts": 11
    },
    {
-    "name": "Leason B.",
-    "g": 3,
-    "a": 6,
+    "name": "Hoffmann B.",
+    "g": 5,
+    "a": 4,
     "pts": 9
    },
    {
-    "name": "Barre-Boulet A.",
+    "name": "Leason B.",
     "g": 3,
     "a": 6,
     "pts": 9
@@ -5975,12 +6011,6 @@
     "g": 4,
     "a": 3,
     "pts": 7
-   },
-   {
-    "name": "Hoffmann B.",
-    "g": 4,
-    "a": 2,
-    "pts": 6
    }
   ],
   "Tucson Roadrunners": [
@@ -6053,10 +6083,10 @@
     "pts": 12
    },
    {
-    "name": "Zonnon B.",
-    "g": 8,
-    "a": 2,
-    "pts": 10
+    "name": "Livanavage J.",
+    "g": 3,
+    "a": 8,
+    "pts": 11
    }
   ],
   "Utica Comets": [
@@ -6074,8 +6104,14 @@
    },
    {
     "name": "Parent X.",
-    "g": 4,
+    "g": 5,
     "a": 4,
+    "pts": 9
+   },
+   {
+    "name": "Melovsky M.",
+    "g": 2,
+    "a": 6,
     "pts": 8
    },
    {
@@ -6085,16 +6121,10 @@
     "pts": 8
    },
    {
-    "name": "Klassen G.",
-    "g": 4,
-    "a": 3,
-    "pts": 7
-   },
-   {
-    "name": "Melovsky M.",
-    "g": 2,
-    "a": 5,
-    "pts": 7
+    "name": "Vilen T.",
+    "g": 1,
+    "a": 7,
+    "pts": 8
    }
   ],
   "Laval Rocket": [
@@ -6177,26 +6207,26 @@
    {
     "name": "O'Hara C.",
     "g": 7,
-    "a": 6,
-    "pts": 13
+    "a": 7,
+    "pts": 14
    },
    {
     "name": "Kemell J.",
-    "g": 6,
+    "g": 7,
     "a": 7,
-    "pts": 13
+    "pts": 14
    },
    {
     "name": "Jost T.",
-    "g": 4,
+    "g": 6,
     "a": 4,
-    "pts": 8
+    "pts": 10
    },
    {
     "name": "Fink A.",
     "g": 2,
-    "a": 6,
-    "pts": 8
+    "a": 7,
+    "pts": 9
    },
    {
     "name": "Nilsson F.",
@@ -6215,8 +6245,8 @@
    {
     "name": "Halttunen K.",
     "g": 13,
-    "a": 5,
-    "pts": 18
+    "a": 6,
+    "pts": 19
    },
    {
     "name": "Bourgault X.",
@@ -6227,14 +6257,14 @@
    {
     "name": "Daoust P.",
     "g": 1,
-    "a": 12,
-    "pts": 13
+    "a": 13,
+    "pts": 14
    },
    {
     "name": "Suzuki R.",
     "g": 4,
-    "a": 8,
-    "pts": 12
+    "a": 9,
+    "pts": 13
    },
    {
     "name": "Kyrou C.",
@@ -6252,9 +6282,15 @@
   "Lehigh Valley Phantoms": [
    {
     "name": "Bump A.",
-    "g": 9,
+    "g": 10,
     "a": 2,
-    "pts": 11
+    "pts": 12
+   },
+   {
+    "name": "Studnicka J.",
+    "g": 5,
+    "a": 5,
+    "pts": 10
    },
    {
     "name": "Gaucher J.",
@@ -6263,28 +6299,22 @@
     "pts": 10
    },
    {
-    "name": "Studnicka J.",
-    "g": 4,
-    "a": 4,
+    "name": "Murchison T.",
+    "g": 0,
+    "a": 8,
     "pts": 8
+   },
+   {
+    "name": "Foote N.",
+    "g": 4,
+    "a": 3,
+    "pts": 7
    },
    {
     "name": "Aston-Reese Z.",
     "g": 3,
     "a": 4,
     "pts": 7
-   },
-   {
-    "name": "Murchison T.",
-    "g": 0,
-    "a": 7,
-    "pts": 7
-   },
-   {
-    "name": "Foote N.",
-    "g": 4,
-    "a": 2,
-    "pts": 6
    }
   ],
   "Cleveland Monsters": [
@@ -6371,6 +6401,12 @@
     "pts": 16
    },
    {
+    "name": "Reichel L.",
+    "g": 4,
+    "a": 12,
+    "pts": 16
+   },
+   {
     "name": "Duran R.",
     "g": 4,
     "a": 12,
@@ -6379,26 +6415,20 @@
    {
     "name": "Gallagher T.",
     "g": 3,
-    "a": 12,
-    "pts": 15
+    "a": 13,
+    "pts": 16
    },
    {
     "name": "Locmelis D.",
-    "g": 5,
+    "g": 6,
     "a": 9,
+    "pts": 15
+   },
+   {
+    "name": "Steeves A.",
+    "g": 6,
+    "a": 8,
     "pts": 14
-   },
-   {
-    "name": "Reichel L.",
-    "g": 4,
-    "a": 9,
-    "pts": 13
-   },
-   {
-    "name": "Ivan I.",
-    "g": 4,
-    "a": 9,
-    "pts": 13
    }
   ],
   "Chicago Wolves": [
@@ -6481,8 +6511,8 @@
    {
     "name": "Holtz A.",
     "g": 7,
-    "a": 7,
-    "pts": 14
+    "a": 10,
+    "pts": 17
    },
    {
     "name": "Sapovaliv M.",
@@ -6493,23 +6523,23 @@
    {
     "name": "Cormier L.",
     "g": 4,
-    "a": 5,
-    "pts": 9
+    "a": 8,
+    "pts": 12
    },
    {
     "name": "Heinola V.",
     "g": 0,
-    "a": 7,
+    "a": 8,
+    "pts": 8
+   },
+   {
+    "name": "Uchacz K.",
+    "g": 5,
+    "a": 2,
     "pts": 7
    },
    {
     "name": "McLain M.",
-    "g": 4,
-    "a": 2,
-    "pts": 6
-   },
-   {
-    "name": "Uchacz K.",
     "g": 4,
     "a": 2,
     "pts": 6
@@ -6518,14 +6548,26 @@
   "Hershey Bears": [
    {
     "name": "Brodzinski J.",
-    "g": 7,
+    "g": 9,
     "a": 7,
-    "pts": 14
+    "pts": 16
+   },
+   {
+    "name": "Smallman S.",
+    "g": 3,
+    "a": 12,
+    "pts": 15
    },
    {
     "name": "Lakovic L.",
-    "g": 4,
+    "g": 6,
     "a": 8,
+    "pts": 14
+   },
+   {
+    "name": "MacDonald J.",
+    "g": 1,
+    "a": 11,
     "pts": 12
    },
    {
@@ -6535,22 +6577,10 @@
     "pts": 11
    },
    {
-    "name": "Smallman S.",
-    "g": 3,
-    "a": 7,
-    "pts": 10
-   },
-   {
-    "name": "MacDonald J.",
-    "g": 1,
-    "a": 8,
-    "pts": 9
-   },
-   {
     "name": "Cristall A.",
-    "g": 1,
-    "a": 8,
-    "pts": 9
+    "g": 2,
+    "a": 9,
+    "pts": 11
    }
   ]
  },
@@ -6560,7 +6590,8 @@
    "20261009 Manitoba Moose 1-2 Grand Rapids Griffins",
    "20261021 Manitoba Moose 3-4 Grand Rapids Griffins",
    "20261118 Manitoba Moose 3-6 Grand Rapids Griffins",
-   "20261124 Grand Rapids Griffins 3-2 Manitoba Moose (OT)"
+   "20261124 Grand Rapids Griffins 3-2 Manitoba Moose (OT)",
+   "20261125 Grand Rapids Griffins 2-3 Manitoba Moose (SO)"
   ],
   "Hamilton Hammers | Toronto Marlies": [
    "20261009 Toronto Marlies 5-4 Hamilton Hammers (SO)",
@@ -6716,7 +6747,8 @@
   "Belleville Senators | Toronto Marlies": [
    "20261017 Toronto Marlies 5-4 Belleville Senators (OT)",
    "20261018 Belleville Senators 4-2 Toronto Marlies",
-   "20261101 Toronto Marlies 1-4 Belleville Senators"
+   "20261101 Toronto Marlies 1-4 Belleville Senators",
+   "20261125 Toronto Marlies 7-3 Belleville Senators"
   ],
   "Hershey Bears | Providence Bruins": [
    "20261017 Providence Bruins 3-5 Hershey Bears",
@@ -6747,7 +6779,8 @@
   ],
   "Hamilton Hammers | Syracuse Crunch": [
    "20261018 Syracuse Crunch 4-3 Hamilton Hammers",
-   "20261030 Hamilton Hammers 0-7 Syracuse Crunch"
+   "20261030 Hamilton Hammers 0-7 Syracuse Crunch",
+   "20261125 Syracuse Crunch 4-2 Hamilton Hammers"
   ],
   "Calgary Wranglers | Ontario Reign": [
    "20261020 Calgary Wranglers 2-3 Ontario Reign"
@@ -6784,7 +6817,8 @@
   ],
   "Coachella Valley Firebirds | San Jose Barracuda": [
    "20261023 San Jose Barracuda 5-2 Coachella Valley Firebirds",
-   "20261112 San Jose Barracuda 1-2 Coachella Valley Firebirds"
+   "20261112 San Jose Barracuda 1-2 Coachella Valley Firebirds",
+   "20261125 Coachella Valley Firebirds 7-5 San Jose Barracuda"
   ],
   "Henderson Silver Knights | Tucson Roadrunners": [
    "20261023 Tucson Roadrunners 1-2 Henderson Silver Knights (OT)",
@@ -6891,7 +6925,8 @@
    "20261101 Hamilton Hammers 2-3 Utica Comets (SO)"
   ],
   "Lehigh Valley Phantoms | Providence Bruins": [
-   "20261101 Providence Bruins 8-0 Lehigh Valley Phantoms"
+   "20261101 Providence Bruins 8-0 Lehigh Valley Phantoms",
+   "20261125 Providence Bruins 5-3 Lehigh Valley Phantoms"
   ],
   "Hartford Wolf Pack | Springfield Thunderbirds": [
    "20261101 Hartford Wolf Pack 4-2 Springfield Thunderbirds",
@@ -6901,7 +6936,8 @@
   ],
   "Hershey Bears | Wilkes-Barre/Scranton": [
    "20261101 Wilkes-Barre/Scranton 5-0 Hershey Bears",
-   "20261113 Wilkes-Barre/Scranton 3-4 Hershey Bears (OT)"
+   "20261113 Wilkes-Barre/Scranton 3-4 Hershey Bears (OT)",
+   "20261125 Wilkes-Barre/Scranton 1-6 Hershey Bears"
   ],
   "Bakersfield Condors | San Jose Barracuda": [
    "20261101 Bakersfield Condors 2-3 San Jose Barracuda (OT)",
@@ -6991,7 +7027,8 @@
    "20261114 Grand Rapids Griffins 1-0 Iowa Wild"
   ],
   "Milwaukee Admirals | Rockford IceHogs": [
-   "20261113 Milwaukee Admirals 2-3 Rockford IceHogs (OT)"
+   "20261113 Milwaukee Admirals 2-3 Rockford IceHogs (OT)",
+   "20261125 Milwaukee Admirals 3-0 Rockford IceHogs"
   ],
   "Bakersfield Condors | San Diego Gulls": [
    "20261113 San Diego Gulls 3-2 Bakersfield Condors (SO)",
@@ -7076,6 +7113,12 @@
   ],
   "Bakersfield Condors | Coachella Valley Firebirds": [
    "20261122 Coachella Valley Firebirds 4-1 Bakersfield Condors"
+  ],
+  "Hartford Wolf Pack | Utica Comets": [
+   "20261125 Hartford Wolf Pack 3-1 Utica Comets"
+  ],
+  "Abbotsford Canucks | Henderson Silver Knights": [
+   "20261125 Abbotsford Canucks 1-4 Henderson Silver Knights"
   ]
  }
 }
