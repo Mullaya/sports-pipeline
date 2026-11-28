@@ -1,24 +1,24 @@
 {
  "meta": {
-  "generated_kst": "2026-11-28 01:53",
+  "generated_kst": "2026-11-28 14:08",
   "league": "LIGUE1",
   "season_start": "20260701",
-  "games": 99,
-  "last_game_date": "20261122",
+  "games": 100,
+  "last_game_date": "20261127",
   "league_avg": {
-   "games": 99,
-   "home_win": 0.444,
-   "draw": 0.232,
-   "away_win": 0.323,
-   "goals_pg": 2.95,
-   "home_gf_pg": 1.63,
-   "away_gf_pg": 1.32,
+   "games": 100,
+   "home_win": 0.45,
+   "draw": 0.23,
+   "away_win": 0.32,
+   "goals_pg": 2.93,
+   "home_gf_pg": 1.62,
+   "away_gf_pg": 1.31,
    "over": {
-    "1.5": 0.798,
-    "2.5": 0.556,
-    "3.5": 0.343
+    "1.5": 0.79,
+    "2.5": 0.55,
+    "3.5": 0.34
    },
-   "btts": 0.596
+   "btts": 0.59
   },
   "notes": "REG만 집계 / over는 해당 기준점 초과 비율 / g_minus_xg +는 득점 과열(회귀 후보) / rest_days는 오늘(KST) 기준"
  },
@@ -139,28 +139,28 @@
   },
   "Paris FC": {
    "season": {
-    "gp": 11,
+    "gp": 12,
     "w": 7,
     "d": 2,
-    "l": 2,
-    "gf_pg": 1.91,
-    "ga_pg": 0.91,
-    "total_pg": 2.82,
+    "l": 3,
+    "gf_pg": 1.75,
+    "ga_pg": 0.92,
+    "total_pg": 2.67,
     "over": {
-     "1.5": 0.636,
-     "2.5": 0.636,
-     "3.5": 0.364
+     "1.5": 0.583,
+     "2.5": 0.583,
+     "3.5": 0.333
     },
-    "btts": 0.455,
-    "clean_sheet": 0.455,
-    "failed_to_score": 0.273,
-    "ppg": 2.09,
-    "xg_pg": 1.84,
-    "xga_pg": 0.93,
-    "xg_n": 11,
-    "g_minus_xg": 0.07,
-    "ga_minus_xga": -0.02,
-    "sot_pg": 5.3,
+    "btts": 0.417,
+    "clean_sheet": 0.417,
+    "failed_to_score": 0.333,
+    "ppg": 1.92,
+    "xg_pg": 1.85,
+    "xga_pg": 1.05,
+    "xg_n": 12,
+    "g_minus_xg": -0.1,
+    "ga_minus_xga": -0.13,
+    "sot_pg": 5.5,
     "sota_pg": 3.0
    },
    "home": {
@@ -189,29 +189,29 @@
     "sota_pg": 2.7
    },
    "away": {
-    "gp": 5,
+    "gp": 6,
     "w": 2,
     "d": 1,
-    "l": 2,
-    "gf_pg": 1.0,
+    "l": 3,
+    "gf_pg": 0.83,
     "ga_pg": 1.0,
-    "total_pg": 2.0,
+    "total_pg": 1.83,
     "over": {
-     "1.5": 0.4,
-     "2.5": 0.4,
-     "3.5": 0.2
+     "1.5": 0.333,
+     "2.5": 0.333,
+     "3.5": 0.167
     },
-    "btts": 0.4,
-    "clean_sheet": 0.4,
-    "failed_to_score": 0.4,
-    "ppg": 1.4,
-    "xg_pg": 1.45,
-    "xga_pg": 0.85,
-    "xg_n": 5,
-    "g_minus_xg": -0.45,
-    "ga_minus_xga": 0.15,
-    "sot_pg": 3.0,
-    "sota_pg": 3.4
+    "btts": 0.333,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.5,
+    "ppg": 1.17,
+    "xg_pg": 1.53,
+    "xga_pg": 1.09,
+    "xg_n": 6,
+    "g_minus_xg": -0.7,
+    "ga_minus_xga": -0.1,
+    "sot_pg": 3.8,
+    "sota_pg": 3.3
    },
    "last6": {
     "gp": 6,
@@ -230,26 +230,140 @@
     "clean_sheet": 0.333,
     "failed_to_score": 0.167,
     "ppg": 2.0,
-    "xg_pg": 1.9,
-    "xga_pg": 1.15,
+    "xg_pg": 2.07,
+    "xga_pg": 1.44,
     "xg_n": 6,
-    "g_minus_xg": 0.26,
-    "ga_minus_xga": 0.01,
-    "sot_pg": 5.8,
-    "sota_pg": 3.3
+    "g_minus_xg": 0.1,
+    "ga_minus_xga": -0.28,
+    "sot_pg": 6.7,
+    "sota_pg": 3.0
    },
    "last6_log": [
-    "20261010 A Lorient 0-1 (xG 0.97-0.56)",
     "20261018 H Rennes 4-3 (xG 3.61-3.35)",
     "20261024 A Lens 1-2 (xG 0.42-1.06)",
     "20261101 H Monaco 3-1 (xG 2.15-0.67)",
     "20261107 A Auxerre 1-0 (xG 0.76-0.81)",
-    "20261122 H Angers 4-0 (xG 3.5-0.46)"
+    "20261122 H Angers 4-0 (xG 3.5-0.46)",
+    "20261127 A Brest 0-1 (xG 1.96-2.31)"
    ],
-   "last_game_date": "20261122",
-   "rest_days": 5,
+   "last_game_date": "20261127",
+   "rest_days": 0,
    "rank": 2,
    "points": 23
+  },
+  "Brest": {
+   "season": {
+    "gp": 12,
+    "w": 6,
+    "d": 3,
+    "l": 3,
+    "gf_pg": 1.67,
+    "ga_pg": 1.0,
+    "total_pg": 2.67,
+    "over": {
+     "1.5": 0.75,
+     "2.5": 0.5,
+     "3.5": 0.25
+    },
+    "btts": 0.583,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.083,
+    "ppg": 1.75,
+    "xg_pg": 1.98,
+    "xga_pg": 1.34,
+    "xg_n": 12,
+    "g_minus_xg": -0.32,
+    "ga_minus_xga": -0.34,
+    "sot_pg": 5.2,
+    "sota_pg": 3.9
+   },
+   "home": {
+    "gp": 6,
+    "w": 3,
+    "d": 1,
+    "l": 2,
+    "gf_pg": 1.83,
+    "ga_pg": 1.0,
+    "total_pg": 2.83,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.5,
+     "3.5": 0.333
+    },
+    "btts": 0.5,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.167,
+    "ppg": 1.67,
+    "xg_pg": 2.48,
+    "xga_pg": 1.1,
+    "xg_n": 6,
+    "g_minus_xg": -0.64,
+    "ga_minus_xga": -0.1,
+    "sot_pg": 6.0,
+    "sota_pg": 4.0
+   },
+   "away": {
+    "gp": 6,
+    "w": 3,
+    "d": 2,
+    "l": 1,
+    "gf_pg": 1.5,
+    "ga_pg": 1.0,
+    "total_pg": 2.5,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.5,
+     "3.5": 0.167
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.0,
+    "ppg": 1.83,
+    "xg_pg": 1.49,
+    "xga_pg": 1.57,
+    "xg_n": 6,
+    "g_minus_xg": 0.01,
+    "ga_minus_xga": -0.57,
+    "sot_pg": 4.3,
+    "sota_pg": 3.8
+   },
+   "last6": {
+    "gp": 6,
+    "w": 4,
+    "d": 1,
+    "l": 1,
+    "gf_pg": 1.33,
+    "ga_pg": 0.5,
+    "total_pg": 1.83,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.167,
+     "3.5": 0.0
+    },
+    "btts": 0.333,
+    "clean_sheet": 0.667,
+    "failed_to_score": 0.0,
+    "ppg": 2.17,
+    "xg_pg": 1.69,
+    "xga_pg": 1.47,
+    "xg_n": 6,
+    "g_minus_xg": -0.36,
+    "ga_minus_xga": -0.97,
+    "sot_pg": 4.0,
+    "sota_pg": 3.7
+   },
+   "last6_log": [
+    "20261017 A Lille 1-1 (xG 0.78-2.17)",
+    "20261023 H Nice 1-2 (xG 2.49-0.44)",
+    "20261102 A Lorient 2-0 (xG 1.31-1.74)",
+    "20261108 H Lyon 2-0 (xG 1.84-0.64)",
+    "20261121 A Strasbourg 1-0 (xG 1.42-1.87)",
+    "20261127 H Paris FC 1-0 (xG 2.31-1.96)"
+   ],
+   "last_game_date": "20261127",
+   "rest_days": 0,
+   "rank": 3,
+   "points": 21
   },
   "Lille": {
    "season": {
@@ -362,7 +476,7 @@
    ],
    "last_game_date": "20261121",
    "rest_days": 6,
-   "rank": 3,
+   "rank": 4,
    "points": 21
   },
   "Lyon": {
@@ -476,122 +590,8 @@
    ],
    "last_game_date": "20261121",
    "rest_days": 6,
-   "rank": 4,
-   "points": 20
-  },
-  "Brest": {
-   "season": {
-    "gp": 11,
-    "w": 5,
-    "d": 3,
-    "l": 3,
-    "gf_pg": 1.73,
-    "ga_pg": 1.09,
-    "total_pg": 2.82,
-    "over": {
-     "1.5": 0.818,
-     "2.5": 0.545,
-     "3.5": 0.273
-    },
-    "btts": 0.636,
-    "clean_sheet": 0.273,
-    "failed_to_score": 0.091,
-    "ppg": 1.64,
-    "xg_pg": 1.95,
-    "xga_pg": 1.28,
-    "xg_n": 11,
-    "g_minus_xg": -0.23,
-    "ga_minus_xga": -0.19,
-    "sot_pg": 5.4,
-    "sota_pg": 3.5
-   },
-   "home": {
-    "gp": 5,
-    "w": 2,
-    "d": 1,
-    "l": 2,
-    "gf_pg": 2.0,
-    "ga_pg": 1.2,
-    "total_pg": 3.2,
-    "over": {
-     "1.5": 0.8,
-     "2.5": 0.6,
-     "3.5": 0.4
-    },
-    "btts": 0.6,
-    "clean_sheet": 0.2,
-    "failed_to_score": 0.2,
-    "ppg": 1.4,
-    "xg_pg": 2.51,
-    "xga_pg": 0.93,
-    "xg_n": 5,
-    "g_minus_xg": -0.51,
-    "ga_minus_xga": 0.27,
-    "sot_pg": 6.6,
-    "sota_pg": 3.2
-   },
-   "away": {
-    "gp": 6,
-    "w": 3,
-    "d": 2,
-    "l": 1,
-    "gf_pg": 1.5,
-    "ga_pg": 1.0,
-    "total_pg": 2.5,
-    "over": {
-     "1.5": 0.833,
-     "2.5": 0.5,
-     "3.5": 0.167
-    },
-    "btts": 0.667,
-    "clean_sheet": 0.333,
-    "failed_to_score": 0.0,
-    "ppg": 1.83,
-    "xg_pg": 1.49,
-    "xga_pg": 1.57,
-    "xg_n": 6,
-    "g_minus_xg": 0.01,
-    "ga_minus_xga": -0.57,
-    "sot_pg": 4.3,
-    "sota_pg": 3.8
-   },
-   "last6": {
-    "gp": 6,
-    "w": 4,
-    "d": 1,
-    "l": 1,
-    "gf_pg": 2.0,
-    "ga_pg": 0.67,
-    "total_pg": 2.67,
-    "over": {
-     "1.5": 0.833,
-     "2.5": 0.333,
-     "3.5": 0.167
-    },
-    "btts": 0.5,
-    "clean_sheet": 0.5,
-    "failed_to_score": 0.0,
-    "ppg": 2.17,
-    "xg_pg": 1.94,
-    "xga_pg": 1.38,
-    "xg_n": 6,
-    "g_minus_xg": 0.06,
-    "ga_minus_xga": -0.71,
-    "sot_pg": 5.0,
-    "sota_pg": 2.8
-   },
-   "last6_log": [
-    "20261010 H Angers 5-1 (xG 3.82-1.39)",
-    "20261017 A Lille 1-1 (xG 0.78-2.17)",
-    "20261023 H Nice 1-2 (xG 2.49-0.44)",
-    "20261102 A Lorient 2-0 (xG 1.31-1.74)",
-    "20261108 H Lyon 2-0 (xG 1.84-0.64)",
-    "20261121 A Strasbourg 1-0 (xG 1.42-1.87)"
-   ],
-   "last_game_date": "20261121",
-   "rest_days": 6,
    "rank": 5,
-   "points": 18
+   "points": 20
   },
   "Marseille": {
    "season": {
@@ -2866,7 +2866,8 @@
   ],
   "Brest vs Paris FC": [
    "20250914 Brest 1-2 Paris FC",
-   "20260503 Paris FC 4-0 Brest"
+   "20260503 Paris FC 4-0 Brest",
+   "20261127 Brest 1-0 Paris FC"
   ],
   "Paris FC vs Strasbourg": [
    "20250921 Paris FC 2-3 Strasbourg",
