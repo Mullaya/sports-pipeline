@@ -1,24 +1,24 @@
 {
  "meta": {
-  "generated_kst": "2026-11-28 01:53",
+  "generated_kst": "2026-11-28 14:08",
   "league": "SERIEA",
   "season_start": "20260701",
-  "games": 120,
-  "last_game_date": "20261123",
+  "games": 121,
+  "last_game_date": "20261127",
   "league_avg": {
-   "games": 120,
-   "home_win": 0.475,
-   "draw": 0.175,
-   "away_win": 0.35,
-   "goals_pg": 3.16,
-   "home_gf_pg": 1.67,
-   "away_gf_pg": 1.49,
+   "games": 121,
+   "home_win": 0.471,
+   "draw": 0.182,
+   "away_win": 0.347,
+   "goals_pg": 3.13,
+   "home_gf_pg": 1.65,
+   "away_gf_pg": 1.48,
    "over": {
-    "1.5": 0.858,
-    "2.5": 0.6,
-    "3.5": 0.325
+    "1.5": 0.851,
+    "2.5": 0.595,
+    "3.5": 0.322
    },
-   "btts": 0.567
+   "btts": 0.562
   },
   "notes": "REG만 집계 / over는 해당 기준점 초과 비율 / g_minus_xg +는 득점 과열(회귀 후보) / rest_days는 오늘(KST) 기준"
  },
@@ -821,6 +821,120 @@
    "rank": 7,
    "points": 20
   },
+  "Bologna": {
+   "season": {
+    "gp": 13,
+    "w": 5,
+    "d": 4,
+    "l": 4,
+    "gf_pg": 1.31,
+    "ga_pg": 1.15,
+    "total_pg": 2.46,
+    "over": {
+     "1.5": 0.692,
+     "2.5": 0.462,
+     "3.5": 0.231
+    },
+    "btts": 0.615,
+    "clean_sheet": 0.154,
+    "failed_to_score": 0.308,
+    "ppg": 1.46,
+    "xg_pg": 1.62,
+    "xga_pg": 1.39,
+    "xg_n": 13,
+    "g_minus_xg": -0.31,
+    "ga_minus_xga": -0.24,
+    "sot_pg": 4.6,
+    "sota_pg": 3.7
+   },
+   "home": {
+    "gp": 6,
+    "w": 1,
+    "d": 3,
+    "l": 2,
+    "gf_pg": 1.17,
+    "ga_pg": 1.5,
+    "total_pg": 2.67,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.5,
+     "3.5": 0.333
+    },
+    "btts": 0.833,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.167,
+    "ppg": 1.0,
+    "xg_pg": 1.57,
+    "xga_pg": 1.71,
+    "xg_n": 6,
+    "g_minus_xg": -0.4,
+    "ga_minus_xga": -0.21,
+    "sot_pg": 4.0,
+    "sota_pg": 4.5
+   },
+   "away": {
+    "gp": 7,
+    "w": 4,
+    "d": 1,
+    "l": 2,
+    "gf_pg": 1.43,
+    "ga_pg": 0.86,
+    "total_pg": 2.29,
+    "over": {
+     "1.5": 0.571,
+     "2.5": 0.429,
+     "3.5": 0.143
+    },
+    "btts": 0.429,
+    "clean_sheet": 0.286,
+    "failed_to_score": 0.429,
+    "ppg": 1.86,
+    "xg_pg": 1.66,
+    "xga_pg": 1.12,
+    "xg_n": 7,
+    "g_minus_xg": -0.23,
+    "ga_minus_xga": -0.26,
+    "sot_pg": 5.1,
+    "sota_pg": 3.0
+   },
+   "last6": {
+    "gp": 6,
+    "w": 4,
+    "d": 2,
+    "l": 0,
+    "gf_pg": 1.83,
+    "ga_pg": 0.83,
+    "total_pg": 2.67,
+    "over": {
+     "1.5": 0.833,
+     "2.5": 0.5,
+     "3.5": 0.167
+    },
+    "btts": 0.667,
+    "clean_sheet": 0.333,
+    "failed_to_score": 0.167,
+    "ppg": 2.33,
+    "xg_pg": 2.01,
+    "xga_pg": 1.45,
+    "xg_n": 6,
+    "g_minus_xg": -0.18,
+    "ga_minus_xga": -0.62,
+    "sot_pg": 5.8,
+    "sota_pg": 3.0
+   },
+   "last6_log": [
+    "20261024 A Cagliari 2-0 (xG 1.66-0.51)",
+    "20261028 A AC Milan 4-2 (xG 2.09-1.8)",
+    "20261031 H Monza 2-1 (xG 2.03-1.79)",
+    "20261107 A Parma 2-1 (xG 3.52-1.44)",
+    "20261122 H Udinese 1-1 (xG 1.79-1.92)",
+    "20261127 A Venezia 0-0 (xG 0.97-1.26)"
+   ],
+   "last_game_date": "20261127",
+   "rest_days": 0,
+   "rank": 8,
+   "points": 19
+  },
   "Napoli": {
    "season": {
     "gp": 12,
@@ -932,120 +1046,6 @@
    ],
    "last_game_date": "20261121",
    "rest_days": 6,
-   "rank": 8,
-   "points": 18
-  },
-  "Bologna": {
-   "season": {
-    "gp": 12,
-    "w": 5,
-    "d": 3,
-    "l": 4,
-    "gf_pg": 1.42,
-    "ga_pg": 1.25,
-    "total_pg": 2.67,
-    "over": {
-     "1.5": 0.75,
-     "2.5": 0.5,
-     "3.5": 0.25
-    },
-    "btts": 0.667,
-    "clean_sheet": 0.083,
-    "failed_to_score": 0.25,
-    "ppg": 1.5,
-    "xg_pg": 1.67,
-    "xga_pg": 1.4,
-    "xg_n": 12,
-    "g_minus_xg": -0.25,
-    "ga_minus_xga": -0.15,
-    "sot_pg": 4.5,
-    "sota_pg": 3.6
-   },
-   "home": {
-    "gp": 6,
-    "w": 1,
-    "d": 3,
-    "l": 2,
-    "gf_pg": 1.17,
-    "ga_pg": 1.5,
-    "total_pg": 2.67,
-    "over": {
-     "1.5": 0.833,
-     "2.5": 0.5,
-     "3.5": 0.333
-    },
-    "btts": 0.833,
-    "clean_sheet": 0.0,
-    "failed_to_score": 0.167,
-    "ppg": 1.0,
-    "xg_pg": 1.57,
-    "xga_pg": 1.71,
-    "xg_n": 6,
-    "g_minus_xg": -0.4,
-    "ga_minus_xga": -0.21,
-    "sot_pg": 4.0,
-    "sota_pg": 4.5
-   },
-   "away": {
-    "gp": 6,
-    "w": 4,
-    "d": 0,
-    "l": 2,
-    "gf_pg": 1.67,
-    "ga_pg": 1.0,
-    "total_pg": 2.67,
-    "over": {
-     "1.5": 0.667,
-     "2.5": 0.5,
-     "3.5": 0.167
-    },
-    "btts": 0.5,
-    "clean_sheet": 0.167,
-    "failed_to_score": 0.333,
-    "ppg": 2.0,
-    "xg_pg": 1.77,
-    "xga_pg": 1.1,
-    "xg_n": 6,
-    "g_minus_xg": -0.1,
-    "ga_minus_xga": -0.1,
-    "sot_pg": 5.0,
-    "sota_pg": 2.7
-   },
-   "last6": {
-    "gp": 6,
-    "w": 4,
-    "d": 1,
-    "l": 1,
-    "gf_pg": 2.0,
-    "ga_pg": 1.33,
-    "total_pg": 3.33,
-    "over": {
-     "1.5": 1.0,
-     "2.5": 0.667,
-     "3.5": 0.333
-    },
-    "btts": 0.833,
-    "clean_sheet": 0.167,
-    "failed_to_score": 0.0,
-    "ppg": 2.17,
-    "xg_pg": 2.02,
-    "xga_pg": 1.77,
-    "xg_n": 6,
-    "g_minus_xg": -0.02,
-    "ga_minus_xga": -0.44,
-    "sot_pg": 5.5,
-    "sota_pg": 3.5
-   },
-   "last6_log": [
-    "20261017 H Inter 1-3 (xG 1.01-3.16)",
-    "20261024 A Cagliari 2-0 (xG 1.66-0.51)",
-    "20261028 A AC Milan 4-2 (xG 2.09-1.8)",
-    "20261031 H Monza 2-1 (xG 2.03-1.79)",
-    "20261107 A Parma 2-1 (xG 3.52-1.44)",
-    "20261122 H Udinese 1-1 (xG 1.79-1.92)"
-   ],
-   "last_game_date": "20261122",
-   "rest_days": 5,
    "rank": 9,
    "points": 18
   },
@@ -2075,6 +2075,120 @@
    "rank": 18,
    "points": 8
   },
+  "Venezia": {
+   "season": {
+    "gp": 13,
+    "w": 2,
+    "d": 1,
+    "l": 10,
+    "gf_pg": 0.62,
+    "ga_pg": 1.92,
+    "total_pg": 2.54,
+    "over": {
+     "1.5": 0.692,
+     "2.5": 0.385,
+     "3.5": 0.308
+    },
+    "btts": 0.308,
+    "clean_sheet": 0.154,
+    "failed_to_score": 0.615,
+    "ppg": 0.54,
+    "xg_pg": 1.4,
+    "xga_pg": 1.88,
+    "xg_n": 13,
+    "g_minus_xg": -0.79,
+    "ga_minus_xga": 0.04,
+    "sot_pg": 3.8,
+    "sota_pg": 6.2
+   },
+   "home": {
+    "gp": 7,
+    "w": 2,
+    "d": 1,
+    "l": 4,
+    "gf_pg": 0.71,
+    "ga_pg": 1.57,
+    "total_pg": 2.29,
+    "over": {
+     "1.5": 0.714,
+     "2.5": 0.286,
+     "3.5": 0.143
+    },
+    "btts": 0.286,
+    "clean_sheet": 0.286,
+    "failed_to_score": 0.571,
+    "ppg": 1.0,
+    "xg_pg": 1.4,
+    "xga_pg": 2.05,
+    "xg_n": 7,
+    "g_minus_xg": -0.68,
+    "ga_minus_xga": -0.48,
+    "sot_pg": 4.7,
+    "sota_pg": 5.7
+   },
+   "away": {
+    "gp": 6,
+    "w": 0,
+    "d": 0,
+    "l": 6,
+    "gf_pg": 0.5,
+    "ga_pg": 2.33,
+    "total_pg": 2.83,
+    "over": {
+     "1.5": 0.667,
+     "2.5": 0.5,
+     "3.5": 0.5
+    },
+    "btts": 0.333,
+    "clean_sheet": 0.0,
+    "failed_to_score": 0.667,
+    "ppg": 0.0,
+    "xg_pg": 1.41,
+    "xga_pg": 1.68,
+    "xg_n": 6,
+    "g_minus_xg": -0.91,
+    "ga_minus_xga": 0.65,
+    "sot_pg": 2.8,
+    "sota_pg": 6.7
+   },
+   "last6": {
+    "gp": 6,
+    "w": 1,
+    "d": 1,
+    "l": 4,
+    "gf_pg": 0.33,
+    "ga_pg": 1.5,
+    "total_pg": 1.83,
+    "over": {
+     "1.5": 0.5,
+     "2.5": 0.333,
+     "3.5": 0.167
+    },
+    "btts": 0.167,
+    "clean_sheet": 0.167,
+    "failed_to_score": 0.833,
+    "ppg": 0.67,
+    "xg_pg": 1.23,
+    "xga_pg": 1.36,
+    "xg_n": 6,
+    "g_minus_xg": -0.9,
+    "ga_minus_xga": 0.14,
+    "sot_pg": 3.3,
+    "sota_pg": 4.8
+   },
+   "last6_log": [
+    "20261025 A Genoa 0-1 (xG 1.98-0.34)",
+    "20261028 H Inter 0-2 (xG 1.59-2.33)",
+    "20261101 A Como 0-1 (xG 0.16-1.63)",
+    "20261106 H Udinese 2-1 (xG 1.52-1.03)",
+    "20261122 A Juventus 0-4 (xG 0.88-1.84)",
+    "20261127 H Bologna 0-0 (xG 1.26-0.97)"
+   ],
+   "last_game_date": "20261127",
+   "rest_days": 0,
+   "rank": 19,
+   "points": 7
+  },
   "Udinese": {
    "season": {
     "gp": 12,
@@ -2183,120 +2297,6 @@
     "20261031 H AS Roma 2-5 (xG 1.77-2.76)",
     "20261106 A Venezia 1-2 (xG 1.03-1.52)",
     "20261122 A Bologna 1-1 (xG 1.92-1.79)"
-   ],
-   "last_game_date": "20261122",
-   "rest_days": 5,
-   "rank": 19,
-   "points": 6
-  },
-  "Venezia": {
-   "season": {
-    "gp": 12,
-    "w": 2,
-    "d": 0,
-    "l": 10,
-    "gf_pg": 0.67,
-    "ga_pg": 2.08,
-    "total_pg": 2.75,
-    "over": {
-     "1.5": 0.75,
-     "2.5": 0.417,
-     "3.5": 0.333
-    },
-    "btts": 0.333,
-    "clean_sheet": 0.083,
-    "failed_to_score": 0.583,
-    "ppg": 0.5,
-    "xg_pg": 1.42,
-    "xga_pg": 1.96,
-    "xg_n": 12,
-    "g_minus_xg": -0.75,
-    "ga_minus_xga": 0.13,
-    "sot_pg": 3.8,
-    "sota_pg": 6.2
-   },
-   "home": {
-    "gp": 6,
-    "w": 2,
-    "d": 0,
-    "l": 4,
-    "gf_pg": 0.83,
-    "ga_pg": 1.83,
-    "total_pg": 2.67,
-    "over": {
-     "1.5": 0.833,
-     "2.5": 0.333,
-     "3.5": 0.167
-    },
-    "btts": 0.333,
-    "clean_sheet": 0.167,
-    "failed_to_score": 0.5,
-    "ppg": 1.0,
-    "xg_pg": 1.42,
-    "xga_pg": 2.23,
-    "xg_n": 6,
-    "g_minus_xg": -0.59,
-    "ga_minus_xga": -0.4,
-    "sot_pg": 4.7,
-    "sota_pg": 5.7
-   },
-   "away": {
-    "gp": 6,
-    "w": 0,
-    "d": 0,
-    "l": 6,
-    "gf_pg": 0.5,
-    "ga_pg": 2.33,
-    "total_pg": 2.83,
-    "over": {
-     "1.5": 0.667,
-     "2.5": 0.5,
-     "3.5": 0.5
-    },
-    "btts": 0.333,
-    "clean_sheet": 0.0,
-    "failed_to_score": 0.667,
-    "ppg": 0.0,
-    "xg_pg": 1.41,
-    "xga_pg": 1.68,
-    "xg_n": 6,
-    "g_minus_xg": -0.91,
-    "ga_minus_xga": 0.65,
-    "sot_pg": 2.8,
-    "sota_pg": 6.7
-   },
-   "last6": {
-    "gp": 6,
-    "w": 2,
-    "d": 0,
-    "l": 4,
-    "gf_pg": 0.5,
-    "ga_pg": 1.5,
-    "total_pg": 2.0,
-    "over": {
-     "1.5": 0.5,
-     "2.5": 0.333,
-     "3.5": 0.167
-    },
-    "btts": 0.167,
-    "clean_sheet": 0.167,
-    "failed_to_score": 0.667,
-    "ppg": 1.0,
-    "xg_pg": 1.18,
-    "xga_pg": 1.59,
-    "xg_n": 6,
-    "g_minus_xg": -0.68,
-    "ga_minus_xga": -0.09,
-    "sot_pg": 3.2,
-    "sota_pg": 5.5
-   },
-   "last6_log": [
-    "20261017 H Napoli 1-0 (xG 0.97-2.36)",
-    "20261025 A Genoa 0-1 (xG 1.98-0.34)",
-    "20261028 H Inter 0-2 (xG 1.59-2.33)",
-    "20261101 A Como 0-1 (xG 0.16-1.63)",
-    "20261106 H Udinese 2-1 (xG 1.52-1.03)",
-    "20261122 A Juventus 0-4 (xG 0.88-1.84)"
    ],
    "last_game_date": "20261122",
    "rest_days": 5,
@@ -3500,7 +3500,8 @@
   ],
   "Bologna vs Venezia": [
    "20241130 Bologna 3-0 Venezia",
-   "20250329 Venezia 0-1 Bologna"
+   "20250329 Venezia 0-1 Bologna",
+   "20261127 Venezia 0-0 Bologna"
   ],
   "Lazio vs Parma": [
    "20241201 Parma 3-1 Lazio",
